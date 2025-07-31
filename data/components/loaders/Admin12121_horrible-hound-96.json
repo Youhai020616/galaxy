@@ -1,0 +1,87 @@
+{
+  "id": "Admin12121_horrible-hound-96",
+  "name": "horrible-hound-96",
+  "category": "loaders",
+  "author": "Admin12121",
+  "description": "horrible-hound-96 组件 (loader, animated, effect loader, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "effect loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"con\">\n  <div class=\"side left\"></div>\n  <div class=\"side right\"></div>\n  <div class=\"side rightAbove\"></div>\n  <div class=\"side bottom\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Admin12121 - Tags: loader, animated, effect loader */\n.con {\n  width: 120px;\n  height: 120px;\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  margin: auto;\n  transform-origin: 60px 50px;\n  -webkit-animation: spin 3s infinite;\n  animation: spin 3s infinite;\n}\n\n.side {\n  width: 110px;\n  height: 30px;\n  background: white;\n  position: absolute;\n  overflow: hidden;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.side:before, .side:after {\n  content: \"\";\n  display: block;\n  position: absolute;\n}\n\n.side:before {\n  width: 0;\n  height: 0;\n  border-left: 0px solid transparent;\n  border-right: 20px solid #fff;\n  border-top: 35px solid #111;\n  left: 0;\n}\n\n.side:after {\n  width: 0;\n  height: 0;\n  border-left: 0px solid transparent;\n  border-right: 20px solid #111;\n  border-bottom: 35px solid transparent;\n  right: 0;\n}\n\n.left {\n  left: 0px;\n  transform: rotate(120deg);\n  z-index: 2;\n}\n\n.right, .rightAbove {\n  transform: rotate(-120deg);\n  right: -30px;\n  top: 50px;\n}\n\n.rightAbove {\n  clip: rect(0px 90px 30px 0);\n  z-index: 4;\n}\n\n.under {\n  z-index: 1;\n}\n\n.bottom {\n  left: -24px;\n  bottom: 30px;\n  z-index: 3;\n}\n\n@-webkit-keyframes spin {\n  50% {\n    transform: rotate(720deg);\n  }\n\n  100% {\n    transform: rotate(720deg);\n  }\n}\n\n@keyframes spin {\n  50% {\n    transform: rotate(720deg);\n  }\n\n  100% {\n    transform: rotate(720deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Admin12121_horrible-hound-96.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"con\"></view>\n  <view class=\"side left\"></view>\n  <view class=\"side right\"></view>\n  <view class=\"side rightAbove\"></view>\n  <view class=\"side bottom\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHorribleHound96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Admin12121 - Tags: loader, animated, effect loader */\n.con {\n  width: 240rpx;\n  height: 240rpx;\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  margin: auto;\n  transform-origin: 120rpx 100rpx;\n  -webkit-animation: spin 3s infinite;\n  animation: spin 3s infinite;\n}\n\n.side {\n  width: 220rpx;\n  height: 60rpx;\n  background: white;\n  position: absolute;\n  overflow: hidden;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.side:before, .side:after {\n  content: \"\";\n  display: block;\n  position: absolute;\n}\n\n.side:before {\n  width: 0;\n  height: 0;\n  border-left: 0rpx solid transparent;\n  border-right: 40rpx solid #fff;\n  border-top: 70rpx solid #111;\n  left: 0;\n}\n\n.side:after {\n  width: 0;\n  height: 0;\n  border-left: 0rpx solid transparent;\n  border-right: 40rpx solid #111;\n  border-bottom: 70rpx solid transparent;\n  right: 0;\n}\n\n.left {\n  left: 0rpx;\n  transform: rotate(120deg);\n  z-index: 2;\n}\n\n.right, .rightAbove {\n  transform: rotate(-120deg);\n  right: -60rpx;\n  top: 100rpx;\n}\n\n.rightAbove {\n  clip: rect(0rpx 180rpx 60rpx 0);\n  z-index: 4;\n}\n\n.under {\n  z-index: 1;\n}\n\n.bottom {\n  left: -48rpx;\n  bottom: 60rpx;\n  z-index: 3;\n}\n\n@-webkit-keyframes spin {\n  50% {\n    transform: rotate(720deg);\n  }\n\n  100% {\n    transform: rotate(720deg);\n  }\n}\n\n@keyframes spin {\n  50% {\n    transform: rotate(720deg);\n  }\n\n  100% {\n    transform: rotate(720deg);\n  }\n}\n",
+    "component_name": "GalaxyHorribleHound96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1574,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.845Z",
+  "updated_at": "2025-07-31T07:55:38.845Z"
+}

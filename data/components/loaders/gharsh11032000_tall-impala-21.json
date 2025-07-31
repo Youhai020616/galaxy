@@ -1,0 +1,90 @@
+{
+  "id": "gharsh11032000_tall-impala-21",
+  "name": "tall-impala-21",
+  "category": "loaders",
+  "author": "gharsh11032000",
+  "description": "tall-impala-21 组件 (animation, loader, rolling)",
+  "tags": [
+    "animation",
+    "loader",
+    "rolling"
+  ],
+  "original": {
+    "html": "<label class=\"loader\">\n  <span class=\"slider\"></span>\n</label>",
+    "css": "/* From Uiverse.io by gharsh11032000 - Tags: animation, loader, rolling */\n.loader {\n  font-size: 17px;\n  position: relative;\n  display: inline-block;\n  width: 8em;\n  height: 2em;\n}\n\n.slider {\n  position: absolute;\n  inset: 0;\n  background: #0974f1;\n  box-shadow: 0 0px 20px rgba(9, 117, 241, 0.4);\n}\n\n.slider:before {\n  position: absolute;\n  content: \"\";\n  height: 1.4em;\n  width: 1.4em;\n  left: 0.3em;\n  bottom: 0.3em;\n  background-color: white;\n  animation: move 1.5s cubic-bezier(0.23, 1, 0.320, 1) infinite alternate;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0em) rotate(0deg);\n  }\n\n  100% {\n    transform: translateX(6em) rotate(270deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/gharsh11032000_tall-impala-21.html"
+  },
+  "uniapp": {
+    "template": "<label class=\"loader\"></label>\n  <text class=\"slider\"></text>\n</label>",
+    "script": "export default {\n  name: 'GalaxyTallImpala21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gharsh11032000 - Tags: animation, loader, rolling */\n.loader {\n  font-size: 34rpx;\n  position: relative;\n  display: inline-block;\n  width: 8em;\n  height: 2em;\n}\n\n.slider {\n  position: absolute;\n  inset: 0;\n  background: #0974f1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0rpx 40rpx rgba(9, 117, 241, 0.4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.slider:before {\n  position: absolute;\n  content: \"\";\n  height: 1.4em;\n  width: 1.4em;\n  left: 0.3em;\n  bottom: 0.3em;\n  background-color: white;\n  animation: move 1.5s cubic-bezier(0.23, 1, 0.320, 1) infinite alternate;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0em) rotate(0deg);\n  }\n\n  100% {\n    transform: translateX(6em) rotate(270deg);\n  }\n}\n",
+    "component_name": "GalaxyTallImpala21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 728,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.162Z",
+  "updated_at": "2025-07-31T07:55:42.162Z"
+}

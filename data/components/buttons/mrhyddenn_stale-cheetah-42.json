@@ -1,0 +1,112 @@
+{
+  "id": "mrhyddenn_stale-cheetah-42",
+  "name": "stale-cheetah-42",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "stale-cheetah-42 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    Button\n</button>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: button */\nbutton {\n  position: relative;\n  padding: 10px 20px;\n  border-radius: 7px;\n  border: 1px solid rgb(61, 106, 255);\n  font-size: 14px;\n  text-transform: uppercase;\n  font-weight: 600;\n  letter-spacing: 2px;\n  background: transparent;\n  color: #fff;\n  overflow: hidden;\n  box-shadow: 0 0 0 0 transparent;\n  -webkit-transition: all 0.2s ease-in;\n  -moz-transition: all 0.2s ease-in;\n  transition: all 0.2s ease-in;\n}\n\nbutton:hover {\n  background: rgb(61, 106, 255);\n  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);\n  -webkit-transition: all 0.2s ease-out;\n  -moz-transition: all 0.2s ease-out;\n  transition: all 0.2s ease-out;\n}\n\nbutton:hover::before {\n  -webkit-animation: sh02 0.5s 0s linear;\n  -moz-animation: sh02 0.5s 0s linear;\n  animation: sh02 0.5s 0s linear;\n}\n\nbutton::before {\n  content: '';\n  display: block;\n  width: 0px;\n  height: 86%;\n  position: absolute;\n  top: 7%;\n  left: 0%;\n  opacity: 0;\n  background: #fff;\n  box-shadow: 0 0 50px 30px #fff;\n  -webkit-transform: skewX(-20deg);\n  -moz-transform: skewX(-20deg);\n  -ms-transform: skewX(-20deg);\n  -o-transform: skewX(-20deg);\n  transform: skewX(-20deg);\n}\n\n@keyframes sh02 {\n  from {\n    opacity: 0;\n    left: 0%;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    left: 100%;\n  }\n}\n\nbutton:active {\n  box-shadow: 0 0 0 0 transparent;\n  -webkit-transition: box-shadow 0.2s ease-in;\n  -moz-transition: box-shadow 0.2s ease-in;\n  transition: box-shadow 0.2s ease-in;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_stale-cheetah-42.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyStaleCheetah42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: button */\nbutton {\n  position: relative;\n  padding: 20rpx 40rpx;\n  border-radius: 14rpx;\n  border: 2rpx solid rgb(61, 106, 255);\n  font-size: 28rpx;\n  text-transform: uppercase;\n  font-weight: 600;\n  letter-spacing: 4rpx;\n  background: transparent;\n  color: #fff;\n  overflow: hidden;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 0 transparent;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transition: all 0.2s ease-in;\n  -moz-transition: all 0.2s ease-in;\n  transition: all 0.2s ease-in;\n}\n\nbutton:hover {\n  background: rgb(61, 106, 255);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 60rpx 10rpx rgba(0, 142, 236, 0.815);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transition: all 0.2s ease-out;\n  -moz-transition: all 0.2s ease-out;\n  transition: all 0.2s ease-out;\n}\n\nbutton:hover::before {\n  -webkit-animation: sh02 0.5s 0s linear;\n  -moz-animation: sh02 0.5s 0s linear;\n  animation: sh02 0.5s 0s linear;\n}\n\nbutton::before {\n  content: '';\n  display: block;\n  width: 0rpx;\n  height: 86%;\n  position: absolute;\n  top: 7%;\n  left: 0%;\n  opacity: 0;\n  background: #fff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 100rpx 60rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transform: skewX(-20deg);\n  -moz-transform: skewX(-20deg);\n  -ms-transform: skewX(-20deg);\n  -o-transform: skewX(-20deg);\n  transform: skewX(-20deg);\n}\n\n@keyframes sh02 {\n  from {\n    opacity: 0;\n    left: 0%;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    left: 100%;\n  }\n}\n\nbutton:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 0 transparent;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transition: box-shadow 0.2s ease-in;\n  -moz-transition: box-shadow 0.2s ease-in;\n  transition: box-shadow 0.2s ease-in;\n}\n\n",
+    "component_name": "GalaxyStaleCheetah42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1529,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.369Z",
+  "updated_at": "2025-07-31T07:55:37.369Z"
+}

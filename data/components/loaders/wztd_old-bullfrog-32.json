@@ -1,0 +1,90 @@
+{
+  "id": "wztd_old-bullfrog-32",
+  "name": "old-bullfrog-32",
+  "category": "loaders",
+  "author": "wztd",
+  "description": "old-bullfrog-32 组件 (effect loader, animation, gradient)",
+  "tags": [
+    "effect loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"><defs><filter id=\"goo\"><feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"6\" result=\"blur\"></feGaussianBlur><feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\"></feColorMatrix><feBlend in=\"SourceGraphic\" in2=\"goo\"></feBlend></filter></defs></svg></div>",
+    "css": "/* From Uiverse.io by wztd - Source: wztd - Tags: effect loader */\n.loader {\n  position: relative;\n  width: 1.5em;\n  aspect-ratio: 1/2;\n  filter: url(#goo);\n}\n\n#goo {\n  display: none\n}\n\n.loader:before, .loader:after {\n  content: '';\n  position: absolute;\n  inset: 0;\n  margin: auto;\n  width: 100%;\n  aspect-ratio: 1/1;\n  animation: 1.5s ease-out infinite loader;\n  border-radius: 50%;\n}\n\n.loader:before {\n  background: linear-gradient(rgb(255, 206, 58), rgb(66, 181, 73))\n}\n\n.loader:after {\n  animation-delay: 0.75s;\n  background: linear-gradient(to top, rgb(114, 223, 231), rgb(66, 181, 73))\n}\n\n@keyframes loader {\n  0%, 50%, 100% {\n    transform: translateY(0)\n  }\n\n  25% {\n    transform: translateY(70%)\n  }\n\n  75% {\n    transform: translateY(-70%)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/wztd_old-bullfrog-32.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"><view xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"><defs><filter id=\"goo\"><feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"6\" result=\"blur\"></feGaussianBlur><feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\"></feColorMatrix><feBlend in=\"SourceGraphic\" in2=\"goo\"></feBlend></filter></defs></view></view>",
+    "script": "export default {\n  name: 'GalaxyOldBullfrog32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by wztd - Source: wztd - Tags: effect loader */\n.loader {\n  position: relative;\n  width: 1.5em;\n  aspect-ratio: 1/2;\n  \n}\n\n#goo {\n  display: none\n}\n\n.loader:before, .loader:after {\n  content: '';\n  position: absolute;\n  inset: 0;\n  margin: auto;\n  width: 100%;\n  aspect-ratio: 1/1;\n  animation: 1.5s ease-out infinite loader;\n  border-radius: 50%;\n}\n\n.loader:before {\n  background: linear-gradient(rgb(255, 206, 58), rgb(66, 181, 73))\n}\n\n.loader:after {\n  animation-delay: 0.75s;\n  background: linear-gradient(to top, rgb(114, 223, 231), rgb(66, 181, 73))\n}\n\n@keyframes loader {\n  0%, 50%, 100% {\n    transform: translateY(0)\n  }\n\n  25% {\n    transform: translateY(70%)\n  }\n\n  75% {\n    transform: translateY(-70%)\n  }\n}\n",
+    "component_name": "GalaxyOldBullfrog32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1140,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.839Z",
+  "updated_at": "2025-07-31T07:55:42.839Z"
+}

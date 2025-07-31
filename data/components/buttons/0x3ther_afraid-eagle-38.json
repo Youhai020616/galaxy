@@ -1,0 +1,104 @@
+{
+  "id": "0x3ther_afraid-eagle-38",
+  "name": "afraid-eagle-38",
+  "category": "buttons",
+  "author": "0x3ther",
+  "description": "afraid-eagle-38 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex items-center justify-center h-full\">\n  <button class=\"text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\">\n    Facebook\n  </button>\n  <button class=\"text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\">\n    YouTube\n  </button>\n  <button class=\"text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\">\n    Twitter\n  </button>\n  <button class=\"text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\">\n    Instagram\n  </button>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/0x3ther_afraid-eagle-38.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex items-center justify-center h-full\"></view>\n  <button class=\"text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\"></button>\n    Facebook\n  </button>\n  <button class=\"text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\"></button>\n    YouTube\n  </button>\n  <button class=\"text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\"></button>\n    Twitter\n  </button>\n  <button class=\"text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\" type=\"button\"></button>\n    Instagram\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAfraidEagle38',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyAfraidEagle38"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1495,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.333Z",
+  "updated_at": "2025-07-31T07:55:32.333Z"
+}

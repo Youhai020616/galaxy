@@ -1,0 +1,114 @@
+{
+  "id": "R0G3RF4_hungry-termite-32",
+  "name": "hungry-termite-32",
+  "category": "buttons",
+  "author": "R0G3RF4",
+  "description": "hungry-termite-32 组件 (facebook, button, interactive)",
+  "tags": [
+    "facebook",
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <svg viewBox=\"0 0 16 16\" class=\"bi bi-facebook\" fill=\"currentColor\" height=\"16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z\"></path>\n</svg>\n    <span>Facebook</span>\n</button>",
+    "css": "/* From Uiverse.io by R0G3RF4 - Tags: facebook, button */\nbutton {\n  background: transparent;\n  position: relative;\n  padding: 5px 15px;\n  display: flex;\n  align-items: center;\n  font-size: 17px;\n  font-weight: 600;\n  text-decoration: none;\n  cursor: pointer;\n  border: 1px solid #0163E0;\n  border-radius: 25px;\n  outline: none;\n  overflow: hidden;\n  color: #0163E0;\n  transition: color 0.3s 0.1s ease-out;\n  text-align: center;\n}\n\nbutton svg {\n  fill: #0163E0;\n  height: 25px;\n  width: 25px;\n}\n\nbutton span {\n  margin: 10px;\n}\n\nbutton::before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  content: '';\n  border-radius: 50%;\n  display: block;\n  width: 20em;\n  height: 20em;\n  left: -5em;\n  text-align: center;\n  transition: box-shadow 0.5s ease-out;\n  z-index: -1;\n}\n\nbutton:hover {\n  color: #fff;\n  border: 1px solid #0163E0;\n}\n\nbutton:hover svg {\n  fill: currentColor;\n}\n\nbutton:hover::before {\n  box-shadow: inset 0 0 0 10em #0163E0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/R0G3RF4_hungry-termite-32.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view viewBox=\"0 0 16 16\" class=\"bi bi-facebook\" fill=\"currentColor\" height=\"16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  <path d=\"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z\"></path>\n</svg>\n    <text>Facebook</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHungryTermite32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by R0G3RF4 - Tags: facebook, button */\nbutton {\n  background: transparent;\n  position: relative;\n  padding: 10rpx 30rpx;\n  display: flex;\n  align-items: center;\n  font-size: 34rpx;\n  font-weight: 600;\n  text-decoration: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border: 2rpx solid #0163E0;\n  border-radius: 50rpx;\n  outline: none;\n  overflow: hidden;\n  color: #0163E0;\n  transition: color 0.3s 0.1s ease-out;\n  text-align: center;\n}\n\nbutton svg {\n  fill: #0163E0;\n  height: 50rpx;\n  width: 50rpx;\n}\n\nbutton span {\n  margin: 20rpx;\n}\n\nbutton::before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  content: '';\n  border-radius: 50%;\n  display: block;\n  width: 20em;\n  height: 20em;\n  left: -5em;\n  text-align: center;\n  transition: box-shadow 0.5s ease-out;\n  z-index: -1;\n}\n\nbutton:hover {\n  color: #fff;\n  border: 2rpx solid #0163E0;\n}\n\nbutton:hover svg {\n  fill: currentColor;\n}\n\nbutton:hover::before {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 0 10em #0163E0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyHungryTermite32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1473,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.396Z",
+  "updated_at": "2025-07-31T07:55:34.396Z"
+}

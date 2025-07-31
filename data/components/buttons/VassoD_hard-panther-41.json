@@ -1,0 +1,118 @@
+{
+  "id": "VassoD_hard-panther-41",
+  "name": "hard-panther-41",
+  "category": "buttons",
+  "author": "VassoD",
+  "description": "hard-panther-41 组件 (minimalist, button, dark, simple button, interactive)",
+  "tags": [
+    "minimalist",
+    "button",
+    "dark",
+    "simple button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Simple button</button>",
+    "css": "/* From Uiverse.io by VassoD  - Tags: minimalist, button, dark, simple button */\n.button {\n  cursor: pointer;\n  background: rgba(255, 255, 255, 0.15);\n  backdrop-filter: blur(10px);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  color: #fff;\n  padding: 10px 20px;\n  border-radius: 0.5rem;\n  transition: background 0.3s ease-in-out;\n}\n\n.button:hover {\n  background: rgba(255, 255, 255, 0.25);\n  text-decoration: underline;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/VassoD_hard-panther-41.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Simple button</button>",
+    "script": "export default {\n  name: 'GalaxyHardPanther41',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by VassoD  - Tags: minimalist, button, dark, simple button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: rgba(255, 255, 255, 0.15);\n  backdrop-\n  border: 2rpx solid rgba(255, 255, 255, 0.2);\n  color: #fff;\n  padding: 20rpx 40rpx;\n  border-radius: 0.5rem;\n  transition: background 0.3s ease-in-out;\n}\n\n.button:hover {\n  background: rgba(255, 255, 255, 0.25);\n  text-decoration: underline;\n}\n\n",
+    "component_name": "GalaxyHardPanther41"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 479,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.114Z",
+  "updated_at": "2025-07-31T07:55:35.114Z"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "RoninLJY_angry-jellyfish-76",
+  "name": "angry-jellyfish-76",
+  "category": "loaders",
+  "author": "RoninLJY",
+  "description": "angry-jellyfish-76 组件 (loader, css, easy to use, animation)",
+  "tags": [
+    "loader",
+    "css",
+    "easy to use",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span class=\"item\"></span>\n  <span class=\"item\"></span>\n  <span class=\"item\"></span>\n  <span class=\"item\"></span>\n</div>",
+    "css": "/* From Uiverse.io by RoninLJY - Tags: loader, css, easy to use */\n.loader {\n  width: 85px;\n  height: 85px;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  align-content: space-between;\n  animation: loading-rotate 3s linear infinite;\n}\n\n.item {\n  width: 40px;\n  height: 40px;\n  display: block;\n  box-sizing: border-box;\n}\n\n.item:nth-of-type(1) {\n  background-color: #50DE68;\n  border-radius: 20px 20px 0 20px;\n  border-left: #ffffff 4px solid;\n  border-top: #f7f7f7 4px solid;\n}\n\n.item:nth-of-type(2) {\n  background-color: rgb(32, 80, 46);\n  border-radius: 20px 20px 20px 0;\n  border-right: #ffffff 4px solid;\n  border-top: #f7f7f7 4px solid;\n}\n\n.item:nth-of-type(3) {\n  background-color: rgb(0, 255, 55);\n  border-radius: 20px 0 20px 20px;\n  border-left: #ffffff 4px solid;\n  border-bottom: #f7f7f7 4px solid;\n}\n\n.item:nth-of-type(4) {\n  background-color: rgb(32, 182, 32);\n  border-radius: 0 20px 20px 20px;\n  border-right: #ffffff 4px solid;\n  border-bottom: #f7f7f7 4px solid;\n}\n\n@keyframes loading-rotate {\n  0% {\n    transform: scale(1) rotate(0);\n  }\n\n  20% {\n    transform: scale(1) rotate(72deg);\n  }\n\n  40% {\n    transform: scale(0.5) rotate(144deg);\n  }\n\n  60% {\n    transform: scale(0.5) rotate(216deg);\n  }\n\n  80% {\n    transform: scale(1) rotate(288deg);\n  }\n\n  100% {\n    transform: scale(1) rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/RoninLJY_angry-jellyfish-76.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text class=\"item\"></text>\n  <text class=\"item\"></text>\n  <text class=\"item\"></text>\n  <text class=\"item\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAngryJellyfish76',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by RoninLJY - Tags: loader, css, easy to use */\n.loader {\n  width: 170rpx;\n  height: 170rpx;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  align-content: space-between;\n  animation: loading-rotate 3s linear infinite;\n}\n\n.item {\n  width: 80rpx;\n  height: 80rpx;\n  display: block;\n  box-sizing: border-box;\n}\n\n.item:nth-of-type(1) {\n  background-color: #50DE68;\n  border-radius: 40rpx 40rpx 0 40rpx;\n  border-left: #ffffff 8rpx solid;\n  border-top: #f7f7f7 8rpx solid;\n}\n\n.item:nth-of-type(2) {\n  background-color: rgb(32, 80, 46);\n  border-radius: 40rpx 40rpx 40rpx 0;\n  border-right: #ffffff 8rpx solid;\n  border-top: #f7f7f7 8rpx solid;\n}\n\n.item:nth-of-type(3) {\n  background-color: rgb(0, 255, 55);\n  border-radius: 40rpx 0 40rpx 40rpx;\n  border-left: #ffffff 8rpx solid;\n  border-bottom: #f7f7f7 8rpx solid;\n}\n\n.item:nth-of-type(4) {\n  background-color: rgb(32, 182, 32);\n  border-radius: 0 40rpx 40rpx 40rpx;\n  border-right: #ffffff 8rpx solid;\n  border-bottom: #f7f7f7 8rpx solid;\n}\n\n@keyframes loading-rotate {\n  0% {\n    transform: scale(1) rotate(0);\n  }\n\n  20% {\n    transform: scale(1) rotate(72deg);\n  }\n\n  40% {\n    transform: scale(0.5) rotate(144deg);\n  }\n\n  60% {\n    transform: scale(0.5) rotate(216deg);\n  }\n\n  80% {\n    transform: scale(1) rotate(288deg);\n  }\n\n  100% {\n    transform: scale(1) rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyAngryJellyfish76"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1499,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.186Z",
+  "updated_at": "2025-07-31T07:55:40.186Z"
+}

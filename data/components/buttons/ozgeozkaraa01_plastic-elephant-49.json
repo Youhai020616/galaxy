@@ -1,0 +1,117 @@
+{
+  "id": "ozgeozkaraa01_plastic-elephant-49",
+  "name": "plastic-elephant-49",
+  "category": "buttons",
+  "author": "ozgeozkaraa01",
+  "description": "plastic-elephant-49 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Hover\n</button>",
+    "css": "/* From Uiverse.io by ozgeozkaraa01 - Tags: button */\nbutton {\n  border: none;\n  padding: 0.8em 2.5em;\n  outline: none;\n  color: white;\n  font-style: 1.2em;\n  position: relative;\n  z-index: 1;\n  cursor: pointer;\n  background: none;\n  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);\n}\n\nbutton::before,\nbutton::after {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  border-radius: 10em;\n  -webkit-transform: translateX(-50%) translateY(-50%);\n  transform: translateX(-50%) translateY(-50%);\n  width: 105%;\n  height: 105%;\n  content: \"\";\n  z-index: -2;\n  background-size: 400% 400%;\n  background: linear-gradient(\n    100deg,\n    #f79533,\n    #f37055,\n    #ef4e7b,\n    #a166ab,\n    #5073b8,\n    #1098ad,\n    #07b39b,\n    #6fba82\n  );\n}\n\nbutton::before {\n  -webkit-filter: blur(7px);\n  filter: blur(7px);\n  -webkit-transition: all 0.25s ease;\n  transition: all 0.25s ease;\n  -webkit-animation: pulse 10s infinite ease;\n  animation: pulse 10s infinite ease;\n}\n\nbutton::after {\n  -webkit-filter: blur(0.3px);\n  filter: blur(0.3px);\n}\n\nbutton:hover::before {\n  width: 115%;\n  height: 115%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ozgeozkaraa01_plastic-elephant-49.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Hover\n</button>",
+    "script": "export default {\n  name: 'GalaxyPlasticElephant49',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ozgeozkaraa01 - Tags: button */\nbutton {\n  border: none;\n  padding: 0.8em 2.5em;\n  outline: none;\n  color: white;\n  font-style: 1.2em;\n  position: relative;\n  z-index: 1;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: none;\n  /* #ifdef H5 */\n  text-shadow: 6rpx 6rpx 20rpx rgba(0, 0, 0, 0.45);\n  /* #endif */\n}\n\nbutton::before,\nbutton::after {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  border-radius: 10em;\n  -webkit-transform: translateX(-50%) translateY(-50%);\n  transform: translateX(-50%) translateY(-50%);\n  width: 105%;\n  height: 105%;\n  content: \"\";\n  z-index: -2;\n  background-size: 400% 400%;\n  background: linear-gradient(\n    100deg,\n    #f79533,\n    #f37055,\n    #ef4e7b,\n    #a166ab,\n    #5073b8,\n    #1098ad,\n    #07b39b,\n    #6fba82\n  );\n}\n\nbutton::before {\n  -webkit-\n  \n  -webkit-transition: all 0.25s ease;\n  transition: all 0.25s ease;\n  -webkit-animation: pulse 10s infinite ease;\n  animation: pulse 10s infinite ease;\n}\n\nbutton::after {\n  -webkit-\n  \n}\n\nbutton:hover::before {\n  width: 115%;\n  height: 115%;\n}\n",
+    "component_name": "GalaxyPlasticElephant49"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1115,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.536Z",
+  "updated_at": "2025-07-31T07:55:37.536Z"
+}

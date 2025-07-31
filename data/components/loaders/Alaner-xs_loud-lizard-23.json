@@ -1,0 +1,85 @@
+{
+  "id": "Alaner-xs_loud-lizard-23",
+  "name": "loud-lizard-23",
+  "category": "loaders",
+  "author": "Alaner-xs",
+  "description": "loud-lizard-23 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"shake\">\n<div class=\"loader\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Alaner-xs - Tags: loader */\n.loader {\n --border-width: 10px;\n --size: 60px;\n border: var(--border-width) solid #f3f3f3;\n border-radius: 50%;\n border-top: var(--border-width) solid #1bbeff;\n border-bottom: var(--border-width) solid #1bbeff;\n border-left: var(--border-width) solid #147ec5;\n border-right: var(--border-width) solid #147ec5;\n width: var(--size);\n height: var(--size);\n animation: spin35112 2s linear infinite;\n}\n\n@keyframes spin35112 {\n 0% {\n  transform: rotate(0deg);\n }\n\n 100% {\n  transform: rotate(360deg);\n }\n}\n\n.shake {\n animation: shake61790 1s linear infinite;\n}\n\n@keyframes shake61790 {\n 0% {\n  transform: skewX(0deg);\n }\n\n 50% {\n  transform: skewX(20deg);\n }\n\n 100% {\n  transform: skewX(0deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Alaner-xs_loud-lizard-23.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"shake\"></view>\n<view class=\"loader\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLoudLizard23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Alaner-xs - Tags: loader */\n.loader {\n --border-width: 20rpx;\n --size: 120rpx;\n border: var(--border-width) solid #f3f3f3;\n border-radius: 50%;\n border-top: var(--border-width) solid #1bbeff;\n border-bottom: var(--border-width) solid #1bbeff;\n border-left: var(--border-width) solid #147ec5;\n border-right: var(--border-width) solid #147ec5;\n width: var(--size);\n height: var(--size);\n animation: spin35112 2s linear infinite;\n}\n\n@keyframes spin35112 {\n 0% {\n  transform: rotate(0deg);\n }\n\n 100% {\n  transform: rotate(360deg);\n }\n}\n\n.shake {\n animation: shake61790 1s linear infinite;\n}\n\n@keyframes shake61790 {\n 0% {\n  transform: skewX(0deg);\n }\n\n 50% {\n  transform: skewX(20deg);\n }\n\n 100% {\n  transform: skewX(0deg);\n }\n}\n",
+    "component_name": "GalaxyLoudLizard23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 800,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.885Z",
+  "updated_at": "2025-07-31T07:55:38.885Z"
+}

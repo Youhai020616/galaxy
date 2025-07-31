@@ -1,0 +1,92 @@
+{
+  "id": "Z4drus_average-lizard-53",
+  "name": "average-lizard-53",
+  "category": "loaders",
+  "author": "Z4drus",
+  "description": "average-lizard-53 组件 (simple, animation, blue, loading, loader, dark, animated, gradients, gradient)",
+  "tags": [
+    "simple",
+    "animation",
+    "blue",
+    "loading",
+    "loader",
+    "dark",
+    "animated",
+    "gradients",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"loader\">\n    <div class=\"crystal\"></div>\n    <div class=\"crystal\"></div>\n    <div class=\"crystal\"></div>\n    <div class=\"crystal\"></div>\n    <div class=\"crystal\"></div>\n    <div class=\"crystal\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Z4drus  - Tags: simple, animation, blue, loading, loader, dark, animated, gradients */\n.container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  position: relative;\n  width: 200px;\n  height: 200px;\n  perspective: 800px;\n}\n\n.crystal {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 60px;\n  height: 60px;\n  opacity: 0;\n  transform-origin: bottom center;\n  transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);\n  animation: spin 4s linear infinite, emerge 2s ease-in-out infinite alternate,\n    fadeIn 0.3s ease-out forwards;\n  border-radius: 10px;\n  visibility: hidden;\n}\n\n@keyframes spin {\n  from {\n    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);\n  }\n  to {\n    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(360deg);\n  }\n}\n\n@keyframes emerge {\n  0%,\n  100% {\n    transform: translate(-50%, -50%) scale(0.5);\n    opacity: 0;\n  }\n  50% {\n    transform: translate(-50%, -50%) scale(1);\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  to {\n    visibility: visible;\n    opacity: 0.8;\n  }\n}\n\n.crystal:nth-child(1) {\n  background: linear-gradient(45deg, #003366, #336699);\n  animation-delay: 0s;\n}\n\n.crystal:nth-child(2) {\n  background: linear-gradient(45deg, #003399, #3366cc);\n  animation-delay: 0.3s;\n}\n\n.crystal:nth-child(3) {\n  background: linear-gradient(45deg, #0066cc, #3399ff);\n  animation-delay: 0.6s;\n}\n\n.crystal:nth-child(4) {\n  background: linear-gradient(45deg, #0099ff, #66ccff);\n  animation-delay: 0.9s;\n}\n\n.crystal:nth-child(5) {\n  background: linear-gradient(45deg, #33ccff, #99ccff);\n  animation-delay: 1.2s;\n}\n\n.crystal:nth-child(6) {\n  background: linear-gradient(45deg, #66ffff, #ccffff);\n  animation-delay: 1.5s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Z4drus_average-lizard-53.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"loader\"></view>\n    <view class=\"crystal\"></view>\n    <view class=\"crystal\"></view>\n    <view class=\"crystal\"></view>\n    <view class=\"crystal\"></view>\n    <view class=\"crystal\"></view>\n    <view class=\"crystal\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAverageLizard53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Z4drus  - Tags: simple, animation, blue, loading, loader, dark, animated, gradients */\n.container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  position: relative;\n  width: 400rpx;\n  height: 400rpx;\n  perspective: 1600rpx;\n}\n\n.crystal {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 120rpx;\n  height: 120rpx;\n  opacity: 0;\n  transform-origin: bottom center;\n  transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);\n  animation: spin 4s linear infinite, emerge 2s ease-in-out infinite alternate,\n    fadeIn 0.3s ease-out forwards;\n  border-radius: 20rpx;\n  visibility: hidden;\n}\n\n@keyframes spin {\n  from {\n    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);\n  }\n  to {\n    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(360deg);\n  }\n}\n\n@keyframes emerge {\n  0%,\n  100% {\n    transform: translate(-50%, -50%) scale(0.5);\n    opacity: 0;\n  }\n  50% {\n    transform: translate(-50%, -50%) scale(1);\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  to {\n    visibility: visible;\n    opacity: 0.8;\n  }\n}\n\n.crystal:nth-child(1) {\n  background: linear-gradient(45deg, #003366, #336699);\n  animation-delay: 0s;\n}\n\n.crystal:nth-child(2) {\n  background: linear-gradient(45deg, #003399, #3366cc);\n  animation-delay: 0.3s;\n}\n\n.crystal:nth-child(3) {\n  background: linear-gradient(45deg, #0066cc, #3399ff);\n  animation-delay: 0.6s;\n}\n\n.crystal:nth-child(4) {\n  background: linear-gradient(45deg, #0099ff, #66ccff);\n  animation-delay: 0.9s;\n}\n\n.crystal:nth-child(5) {\n  background: linear-gradient(45deg, #33ccff, #99ccff);\n  animation-delay: 1.2s;\n}\n\n.crystal:nth-child(6) {\n  background: linear-gradient(45deg, #66ffff, #ccffff);\n  animation-delay: 1.5s;\n}\n\n",
+    "component_name": "GalaxyAverageLizard53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1996,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.807Z",
+  "updated_at": "2025-07-31T07:55:40.807Z"
+}

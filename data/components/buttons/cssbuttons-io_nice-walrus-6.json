@@ -1,0 +1,114 @@
+{
+  "id": "cssbuttons-io_nice-walrus-6",
+  "name": "nice-walrus-6",
+  "category": "buttons",
+  "author": "cssbuttons-io",
+  "description": "nice-walrus-6 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"c-button c-button--gooey\"> Hover me\n  <div class=\"c-button__blobs\">\n  <div></div>\n  <div></div>\n  <div></div>\n  </div>\n</button>\n<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" style=\"display: block; height: 0; width: 0;\">\n  <defs>\n    <filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"10\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"goo\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "css": "/* From Uiverse.io by cssbuttons-io - Tags: button */\n.c-button {\n  color: #000;\n  font-weight: 700;\n  font-size: 16px;\n  text-decoration: none;\n  padding: 0.9em 1.6em;\n  cursor: pointer;\n  display: inline-block;\n  vertical-align: middle;\n  position: relative;\n  z-index: 1;\n}\n\n.c-button--gooey {\n  color: #06c8d9;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  border: 4px solid #06c8d9;\n  border-radius: 0;\n  position: relative;\n  transition: all 700ms ease;\n}\n\n.c-button--gooey .c-button__blobs {\n  height: 100%;\n  filter: url(#goo);\n  overflow: hidden;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: -3px;\n  right: -1px;\n  z-index: -1;\n}\n\n.c-button--gooey .c-button__blobs div {\n  background-color: #06c8d9;\n  width: 34%;\n  height: 100%;\n  border-radius: 100%;\n  position: absolute;\n  transform: scale(1.4) translateY(125%) translateZ(0);\n  transition: all 700ms ease;\n}\n\n.c-button--gooey .c-button__blobs div:nth-child(1) {\n  left: -5%;\n}\n\n.c-button--gooey .c-button__blobs div:nth-child(2) {\n  left: 30%;\n  transition-delay: 60ms;\n}\n\n.c-button--gooey .c-button__blobs div:nth-child(3) {\n  left: 66%;\n  transition-delay: 25ms;\n}\n\n.c-button--gooey:hover {\n  color: #fff;\n}\n\n.c-button--gooey:hover .c-button__blobs div {\n  transform: scale(1.4) translateY(0) translateZ(0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cssbuttons-io_nice-walrus-6.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"c-button c-button--gooey\"></button> Hover me\n  <view class=\"c-button__blobs\"></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  </div>\n</button>\n<view xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" style=\"display: block; height: 0; width: 0;\"></view>\n  <defs>\n    <filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"10\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"goo\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyNiceWalrus6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cssbuttons-io - Tags: button */\n.c-button {\n  color: #000;\n  font-weight: 700;\n  font-size: 32rpx;\n  text-decoration: none;\n  padding: 0.9em 1.6em;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: inline-block;\n  vertical-align: middle;\n  position: relative;\n  z-index: 1;\n}\n\n.c-button--gooey {\n  color: #06c8d9;\n  text-transform: uppercase;\n  letter-spacing: 4rpx;\n  border: 8rpx solid #06c8d9;\n  border-radius: 0;\n  position: relative;\n  transition: all 700ms ease;\n}\n\n.c-button--gooey .c-button__blobs {\n  height: 100%;\n  \n  overflow: hidden;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: -6rpx;\n  right: -2rpx;\n  z-index: -1;\n}\n\n.c-button--gooey .c-button__blobs div {\n  background-color: #06c8d9;\n  width: 34%;\n  height: 100%;\n  border-radius: 100%;\n  position: absolute;\n  transform: scale(1.4) translateY(125%) translateZ(0);\n  transition: all 700ms ease;\n}\n\n.c-button--gooey .c-button__blobs div:nth-child(1) {\n  left: -5%;\n}\n\n.c-button--gooey .c-button__blobs div:nth-child(2) {\n  left: 30%;\n  transition-delay: 60ms;\n}\n\n.c-button--gooey .c-button__blobs div:nth-child(3) {\n  left: 66%;\n  transition-delay: 25ms;\n}\n\n.c-button--gooey:hover {\n  color: #fff;\n}\n\n.c-button--gooey:hover .c-button__blobs div {\n  transform: scale(1.4) translateY(0) translateZ(0);\n}\n",
+    "component_name": "GalaxyNiceWalrus6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1875,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.202Z",
+  "updated_at": "2025-07-31T07:55:36.202Z"
+}

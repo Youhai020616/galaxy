@@ -1,0 +1,110 @@
+{
+  "id": "JaydipPrajapati1910_honest-parrot-89",
+  "name": "honest-parrot-89",
+  "category": "buttons",
+  "author": "JaydipPrajapati1910",
+  "description": "honest-parrot-89 组件 (button, join now, buttton, animation, interactive)",
+  "tags": [
+    "button",
+    "join now",
+    "buttton",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button type=\"button\" class=\"button\">\n <svg viewBox=\"0 0 16 16\" class=\"bi bi-coin\" fill=\"currentColor\" height=\"16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z\"></path>\n  <path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"></path>\n  <path d=\"M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z\"></path>\n</svg>\n    Join Now\n</button>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, join now, buttton */\n.button {\n  color: white;\n  background-color: #222;\n  font-weight: 600;\n  border-radius: 0.5rem;\n  font-size: 1rem;\n  line-height: 2rem;\n  padding-left: 2rem;\n  padding-right: 2rem;\n  padding-top: 0.7rem;\n  padding-bottom: 0.7rem;\n  text-align: center;\n  margin-right: 0.5rem;\n  display: inline-flex;\n  align-items: center;\n  border: none;\n}\n\n.button:hover {\n  background-color: #fff;\n  color: #222;\n  border: 2px solid #222;\n}\n\n.button:hover svg {\n  fill: #222;\n}\n\n.button svg {\n  display: inline;\n  width: 1.3rem;\n  height: 1.3rem;\n  margin-right: 0.75rem;\n  color: white;\n}\n\n.button:hover svg {\n  animation: spin_357 0.5s linear;\n}\n\n@keyframes spin_357 {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotatey(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JaydipPrajapati1910_honest-parrot-89.html"
+  },
+  "uniapp": {
+    "template": "<button type=\"button\" class=\"button\"></button>\n <view viewBox=\"0 0 16 16\" class=\"bi bi-coin\" fill=\"currentColor\" height=\"16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  <path d=\"M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z\"></path>\n  <path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"></path>\n  <path d=\"M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z\"></path>\n</svg>\n    Join Now\n</button>",
+    "script": "export default {\n  name: 'GalaxyHonestParrot89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, join now, buttton */\n.button {\n  color: white;\n  background-color: #222;\n  font-weight: 600;\n  border-radius: 0.5rem;\n  font-size: 1rem;\n  line-height: 2rem;\n  padding-left: 2rem;\n  padding-right: 2rem;\n  padding-top: 0.7rem;\n  padding-bottom: 0.7rem;\n  text-align: center;\n  margin-right: 0.5rem;\n  display: inline-flex;\n  align-items: center;\n  border: none;\n}\n\n.button:hover {\n  background-color: #fff;\n  color: #222;\n  border: 4rpx solid #222;\n}\n\n.button:hover svg {\n  fill: #222;\n}\n\n.button svg {\n  display: inline;\n  width: 1.3rem;\n  height: 1.3rem;\n  margin-right: 0.75rem;\n  color: white;\n}\n\n.button:hover svg {\n  animation: spin_357 0.5s linear;\n}\n\n@keyframes spin_357 {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotatey(360deg);\n  }\n}\n\n\n",
+    "component_name": "GalaxyHonestParrot89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1705,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.466Z",
+  "updated_at": "2025-07-31T07:55:33.466Z"
+}

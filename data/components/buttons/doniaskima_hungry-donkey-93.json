@@ -1,0 +1,115 @@
+{
+  "id": "doniaskima_hungry-donkey-93",
+  "name": "hungry-donkey-93",
+  "category": "buttons",
+  "author": "doniaskima",
+  "description": "hungry-donkey-93 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-27\">\n  <span class=\"text-container\">\n    <span class=\"text\">Button</span>\n  </span>\n  <span class=\"text-container\">\n    <span aria-hidden=\"\" class=\"text\">Button</span>\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: button */\n.btn-27,\n.btn-27 *,\n.btn-27 :after,\n.btn-27 :before,\n.btn-27:after,\n.btn-27:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n\n.btn-27 {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  cursor: pointer;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  font-weight: 900;\n  line-height: 1.5;\n  margin: 0;\n  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.btn-27:disabled {\n  cursor: default;\n}\n\n.btn-27:-moz-focusring {\n  outline: auto;\n}\n\n.btn-27 svg {\n  display: block;\n  vertical-align: middle;\n}\n\n.btn-27 [hidden] {\n  display: none;\n}\n\n.btn-27 {\n  --tilt: 40deg;\n  background: none;\n  -webkit-mask-image: none;\n  padding: 2rem 5rem;\n  perspective: 500px;\n  transform-style: preserve-3d;\n}\n\n.btn-27 .text-container {\n  background: #fff;\n  display: grid;\n  inset: 0;\n  place-items: center;\n  position: absolute;\n  transform-origin: center center;\n  transition: transform 0.2s;\n}\n\n.btn-27 .text {\n  color: #000;\n}\n\n.btn-27:hover .text-container:first-child {\n  transform: rotateY(var(--tilt));\n}\n\n.btn-27:hover .text-container:nth-child(2) {\n  transform: rotateY(calc(var(--tilt) * -1));\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/doniaskima_hungry-donkey-93.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-27\"></button>\n  <text class=\"text-container\"></text>\n    <text class=\"text\">Button</text>\n  </span>\n  <text class=\"text-container\"></text>\n    <text aria-hidden=\"\" class=\"text\">Button</text>\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHungryDonkey93',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: button */\n.btn-27,\n.btn-27 *,\n.btn-27 :after,\n.btn-27 :before,\n.btn-27:after,\n.btn-27:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n\n.btn-27 {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  font-weight: 900;\n  line-height: 1.5;\n  margin: 0;\n  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.btn-27:disabled {\n  /* #ifdef H5 */\n  cursor: default;\n  /* #endif */\n}\n\n.btn-27:-moz-focusring {\n  outline: auto;\n}\n\n.btn-27 svg {\n  display: block;\n  vertical-align: middle;\n}\n\n.btn-27 [hidden] {\n  display: none;\n}\n\n.btn-27 {\n  --tilt: 40deg;\n  background: none;\n  -webkit-mask-image: none;\n  padding: 2rem 5rem;\n  perspective: 1000rpx;\n  transform-style: preserve-3d;\n}\n\n.btn-27 .text-container {\n  background: #fff;\n  display: grid;\n  inset: 0;\n  place-items: center;\n  position: absolute;\n  transform-origin: center center;\n  transition: transform 0.2s;\n}\n\n.btn-27 .text {\n  color: #000;\n}\n\n.btn-27:hover .text-container:first-child {\n  transform: rotateY(var(--tilt));\n}\n\n.btn-27:hover .text-container:nth-child(2) {\n  transform: rotateY(calc(var(--tilt) * -1));\n}\n\n",
+    "component_name": "GalaxyHungryDonkey93"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1697,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.364Z",
+  "updated_at": "2025-07-31T07:55:36.364Z"
+}

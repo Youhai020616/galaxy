@@ -1,0 +1,86 @@
+{
+  "id": "Fadhilmagass_bad-firefox-25",
+  "name": "bad-firefox-25",
+  "category": "loaders",
+  "author": "Fadhilmagass",
+  "description": "bad-firefox-25 组件 (simple, animation, loader)",
+  "tags": [
+    "simple",
+    "animation",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"dot dot-1\"></div>\n  <div class=\"dot dot-2\"></div>\n  <div class=\"dot dot-3\"></div>\n  <div class=\"dot dot-4\"></div>\n  <div class=\"dot dot-5\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Fadhilmagass - Tags: simple, animation, loader */\n.loader {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  height: 100%;\n}\n\n.dot {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  margin-right: 6px;\n  border-radius: 50%;\n  -webkit-animation: dot-pulse2 1.5s ease-in-out infinite;\n  animation: dot-pulse2 1.5s ease-in-out infinite;\n}\n\n.dot-1 {\n  background-color: #4285f4;\n  -webkit-animation-delay: 0s;\n  animation-delay: 0s;\n}\n\n.dot-2 {\n  background-color: #34a853;\n  -webkit-animation-delay: 0.3s;\n  animation-delay: 0.3s;\n}\n\n.dot-3 {\n  background-color: #fbbc05;\n  -webkit-animation-delay: 0.6s;\n  animation-delay: 0.6s;\n}\n\n.dot-4 {\n  background-color: #ea4335;\n  -webkit-animation-delay: 0.9s;\n  animation-delay: 0.9s;\n}\n\n.dot-5 {\n  background-color: #4285f4;\n  -webkit-animation-delay: 1.2s;\n  animation-delay: 1.2s;\n}\n\n@keyframes dot-pulse2 {\n  0% {\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n    opacity: 0.5;\n  }\n\n  50% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n    opacity: 1;\n  }\n\n  100% {\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n    opacity: 0.5;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Fadhilmagass_bad-firefox-25.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"dot dot-1\"></view>\n  <view class=\"dot dot-2\"></view>\n  <view class=\"dot dot-3\"></view>\n  <view class=\"dot dot-4\"></view>\n  <view class=\"dot dot-5\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBadFirefox25',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Fadhilmagass - Tags: simple, animation, loader */\n.loader {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  height: 100%;\n}\n\n.dot {\n  display: inline-block;\n  width: 20rpx;\n  height: 20rpx;\n  margin-right: 12rpx;\n  border-radius: 50%;\n  -webkit-animation: dot-pulse2 1.5s ease-in-out infinite;\n  animation: dot-pulse2 1.5s ease-in-out infinite;\n}\n\n.dot-1 {\n  background-color: #4285f4;\n  -webkit-animation-delay: 0s;\n  animation-delay: 0s;\n}\n\n.dot-2 {\n  background-color: #34a853;\n  -webkit-animation-delay: 0.3s;\n  animation-delay: 0.3s;\n}\n\n.dot-3 {\n  background-color: #fbbc05;\n  -webkit-animation-delay: 0.6s;\n  animation-delay: 0.6s;\n}\n\n.dot-4 {\n  background-color: #ea4335;\n  -webkit-animation-delay: 0.9s;\n  animation-delay: 0.9s;\n}\n\n.dot-5 {\n  background-color: #4285f4;\n  -webkit-animation-delay: 1.2s;\n  animation-delay: 1.2s;\n}\n\n@keyframes dot-pulse2 {\n  0% {\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n    opacity: 0.5;\n  }\n\n  50% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n    opacity: 1;\n  }\n\n  100% {\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n    opacity: 0.5;\n  }\n}\n\n",
+    "component_name": "GalaxyBadFirefox25"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1524,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.226Z",
+  "updated_at": "2025-07-31T07:55:39.226Z"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "Praashoo7_giant-mole-65",
+  "name": "giant-mole-65",
+  "category": "loaders",
+  "author": "Praashoo7",
+  "description": "giant-mole-65 组件 (animation, loading, loader)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loading\">\n<span class=\"l\">L</span>\n<span class=\"o\">o</span>\n<span class=\"a\">a</span>\n<span class=\"d\">d</span>\n<span class=\"i\">i</span>\n<span class=\"n\">n</span>\n<span class=\"g\">g</span>\n<span class=\"d1\">.</span>\n<span class=\"d2\">.</span>\n<div class=\"load\">\n    <div class=\"progress\"></div>\n    <div class=\"progress\"></div>\n    <div class=\"progress\"></div>\n    <div class=\"progress\"></div>\n</div>\n</div>",
+    "css": "/* From Uiverse.io by Praashoo7 - Tags: animation, loading, loader */\n.loading {\n  transform: translate(0%, -50%);\n}\n\n.l {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.2s;\n}\n\n.o {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.4s;\n}\n\n.a {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.6s;\n}\n\n.d {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.8s;\n}\n\n.i {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 1s;\n}\n\n.n {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 1.2s;\n}\n\n.g {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 1.4s;\n}\n\n.d1 {\n  color: black;\n  opacity: 0;\n  animation: op1 2s ease-in-out infinite;\n  animation-delay: 1.6s;\n}\n\n.d2 {\n  color: black;\n  opacity: 0;\n  animation: op1 2s ease-in-out infinite;\n  animation-delay: 2s;\n}\n\n.load {\n  position: relative;\n  width: 1.2em;\n  height: 1.2em;\n  border-radius: 50%;\n}\n\n.progress {\n  top: 50%;\n  left: -80%;\n  position: absolute;\n  margin-top: 2.2em;\n  transform: translate(10%, -50%);\n  content: '';\n  width: 3.1em;\n  height: 3.1em;\n  background: transparent;\n  border-radius: 50%;\n  animation: load_37100 2s ease-in-out infinite;\n  animation-delay: 1s;\n}\n\n@keyframes load_37100 {\n  0% {\n    background-color: #DB4437;\n  }\n\n  25% {\n    background-color: #F4B400;\n  }\n\n  75% {\n    background-color: #0F9D58;\n  }\n\n  100% {\n    background-color: #4285F4;\n  }\n}\n\n.progress:nth-child(2) {\n  left: 50%;\n  animation-delay: 1.3s;\n}\n\n.progress:nth-child(3) {\n  left: 180%;\n  animation-delay: 1.7s;\n}\n\n.progress:nth-child(4) {\n  left: 300%;\n  animation-delay: 2s;\n}\n\n@keyframes op {\n  0% {\n    color: black;\n    opacity: 1;\n  }\n\n  50% {\n    color: green;\n    opacity: 1;\n  }\n\n  100% {\n    color: black;\n    opacity: 1;\n  }\n}\n\n@keyframes op1 {\n  0% {\n    color: black;\n    opacity: 1;\n  }\n\n  50% {\n    color: green;\n    opacity: 0;\n  }\n\n  100% {\n    color: black;\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Praashoo7_giant-mole-65.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading\"></view>\n<text class=\"l\">L</text>\n<text class=\"o\">o</text>\n<text class=\"a\">a</text>\n<text class=\"d\">d</text>\n<text class=\"i\">i</text>\n<text class=\"n\">n</text>\n<text class=\"g\">g</text>\n<text class=\"d1\">.</text>\n<text class=\"d2\">.</text>\n<view class=\"load\"></view>\n    <view class=\"progress\"></view>\n    <view class=\"progress\"></view>\n    <view class=\"progress\"></view>\n    <view class=\"progress\"></view>\n</div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGiantMole65',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7 - Tags: animation, loading, loader */\n.loading {\n  transform: translate(0%, -50%);\n}\n\n.l {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.2s;\n}\n\n.o {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.4s;\n}\n\n.a {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.6s;\n}\n\n.d {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 0.8s;\n}\n\n.i {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 1s;\n}\n\n.n {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 1.2s;\n}\n\n.g {\n  color: black;\n  opacity: 0;\n  animation: op 2s ease-in-out infinite;\n  animation-delay: 1.4s;\n}\n\n.d1 {\n  color: black;\n  opacity: 0;\n  animation: op1 2s ease-in-out infinite;\n  animation-delay: 1.6s;\n}\n\n.d2 {\n  color: black;\n  opacity: 0;\n  animation: op1 2s ease-in-out infinite;\n  animation-delay: 2s;\n}\n\n.load {\n  position: relative;\n  width: 1.2em;\n  height: 1.2em;\n  border-radius: 50%;\n}\n\n.progress {\n  top: 50%;\n  left: -80%;\n  position: absolute;\n  margin-top: 2.2em;\n  transform: translate(10%, -50%);\n  content: '';\n  width: 3.1em;\n  height: 3.1em;\n  background: transparent;\n  border-radius: 50%;\n  animation: load_37100 2s ease-in-out infinite;\n  animation-delay: 1s;\n}\n\n@keyframes load_37100 {\n  0% {\n    background-color: #DB4437;\n  }\n\n  25% {\n    background-color: #F4B400;\n  }\n\n  75% {\n    background-color: #0F9D58;\n  }\n\n  100% {\n    background-color: #4285F4;\n  }\n}\n\n.progress:nth-child(2) {\n  left: 50%;\n  animation-delay: 1.3s;\n}\n\n.progress:nth-child(3) {\n  left: 180%;\n  animation-delay: 1.7s;\n}\n\n.progress:nth-child(4) {\n  left: 300%;\n  animation-delay: 2s;\n}\n\n@keyframes op {\n  0% {\n    color: black;\n    opacity: 1;\n  }\n\n  50% {\n    color: green;\n    opacity: 1;\n  }\n\n  100% {\n    color: black;\n    opacity: 1;\n  }\n}\n\n@keyframes op1 {\n  0% {\n    color: black;\n    opacity: 1;\n  }\n\n  50% {\n    color: green;\n    opacity: 0;\n  }\n\n  100% {\n    color: black;\n    opacity: 1;\n  }\n}\n",
+    "component_name": "GalaxyGiantMole65"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2564,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.978Z",
+  "updated_at": "2025-07-31T07:55:39.978Z"
+}

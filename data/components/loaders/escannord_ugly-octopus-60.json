@@ -1,0 +1,86 @@
+{
+  "id": "escannord_ugly-octopus-60",
+  "name": "ugly-octopus-60",
+  "category": "loaders",
+  "author": "escannord",
+  "description": "ugly-octopus-60 组件 (animation, loader, spinner)",
+  "tags": [
+    "animation",
+    "loader",
+    "spinner"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span style=\"--i:1px\" class=\"load\"></span>\n  <span style=\"--i:2px\" class=\"load\"></span>\n  <span style=\"--i:3px\" class=\"load\"></span>\n  <span style=\"--i:4px\" class=\"load\"></span>\n  <span style=\"--i:5px\" class=\"load\"></span>\n  <span style=\"--i:6px\" class=\"load\"></span>\n  <span style=\"--i:7px\" class=\"load\"></span>\n  <span style=\"--i:8px\" class=\"load\"></span>\n  <span style=\"--i:9px\" class=\"load\"></span>\n  <span style=\"--i:10px\" class=\"load\"></span>\n</div>",
+    "css": "/* From Uiverse.io by escannord  - Tags: animation, loader, spinner */\n.loader {\n  position: relative;\n}\n.load {\n  display: inline-block;\n  height: calc(var(--i) * 15);\n  width: calc(var(--i) * 15);\n  background-color: transparent;\n  position: absolute;\n  border: 5px rgb(47, 0, 255) solid;\n  border-top: none;\n  border-radius: 50%;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: turn 2s infinite linear;\n}\n\n.load:nth-child(odd) {\n  animation: turn 2s infinite linear reverse;\n}\n\n@keyframes turn {\n  100% {\n    transform: translate(-50%, -50%) rotateZ(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/escannord_ugly-octopus-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text style=\"--i:1px\" class=\"load\"></text>\n  <text style=\"--i:2px\" class=\"load\"></text>\n  <text style=\"--i:3px\" class=\"load\"></text>\n  <text style=\"--i:4px\" class=\"load\"></text>\n  <text style=\"--i:5px\" class=\"load\"></text>\n  <text style=\"--i:6px\" class=\"load\"></text>\n  <text style=\"--i:7px\" class=\"load\"></text>\n  <text style=\"--i:8px\" class=\"load\"></text>\n  <text style=\"--i:9px\" class=\"load\"></text>\n  <text style=\"--i:10px\" class=\"load\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUglyOctopus60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by escannord  - Tags: animation, loader, spinner */\n.loader {\n  position: relative;\n}\n.load {\n  display: inline-block;\n  height: calc(var(--i) * 15);\n  width: calc(var(--i) * 15);\n  background-color: transparent;\n  position: absolute;\n  border: 10rpx rgb(47, 0, 255) solid;\n  border-top: none;\n  border-radius: 50%;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: turn 2s infinite linear;\n}\n\n.load:nth-child(odd) {\n  animation: turn 2s infinite linear reverse;\n}\n\n@keyframes turn {\n  100% {\n    transform: translate(-50%, -50%) rotateZ(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyUglyOctopus60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1081,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.695Z",
+  "updated_at": "2025-07-31T07:55:41.695Z"
+}

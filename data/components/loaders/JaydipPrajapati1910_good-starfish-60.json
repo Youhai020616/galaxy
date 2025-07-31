@@ -1,0 +1,88 @@
+{
+  "id": "JaydipPrajapati1910_good-starfish-60",
+  "name": "good-starfish-60",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "good-starfish-60 组件 (red, loading, loader, animation, gradient)",
+  "tags": [
+    "red",
+    "loading",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: red, loading, loader */\n.loader {\n  box-sizing: border-box;\n  display: inline-block;\n  width: 50px;\n  height: 80px;\n  border-top: 5px solid #fff;\n  border-bottom: 5px solid #fff;\n  position: relative;\n  background: linear-gradient(#FF3D00 30px, transparent 0) no-repeat;\n  background-size: 2px 40px;\n  background-position: 50% 0px;\n  animation: spinx 5s linear infinite;\n}\n\n.loader:before, .loader:after {\n  content: \"\";\n  width: 40px;\n  left: 50%;\n  height: 35px;\n  position: absolute;\n  top: 0;\n  transform: translatex(-50%);\n  background: rgba(255, 255, 255, 0.4);\n  border-radius: 0 0 20px 20px;\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  background-position: 0 0px;\n  animation: lqt 5s linear infinite;\n}\n\n.loader:after {\n  top: auto;\n  bottom: 0;\n  border-radius: 20px 20px 0 0;\n  animation: lqb 5s linear infinite;\n}\n\n@keyframes lqt {\n  0%, 100% {\n    background-image: linear-gradient(#FF3D00 40px, transparent 0);\n    background-position: 0% 0px;\n  }\n\n  50% {\n    background-image: linear-gradient(#FF3D00 40px, transparent 0);\n    background-position: 0% 40px;\n  }\n\n  50.1% {\n    background-image: linear-gradient(#FF3D00 40px, transparent 0);\n    background-position: 0% -40px;\n  }\n}\n\n@keyframes lqb {\n  0% {\n    background-image: linear-gradient(#FF3D00 40px, transparent 0);\n    background-position: 0 40px;\n  }\n\n  100% {\n    background-image: linear-gradient(#FF3D00 40px, transparent 0);\n    background-position: 0 -40px;\n  }\n}\n\n@keyframes spinx {\n  0%, 49% {\n    transform: rotate(0deg);\n    background-position: 50% 36px;\n  }\n\n  51%, 98% {\n    transform: rotate(180deg);\n    background-position: 50% 4px;\n  }\n\n  100% {\n    transform: rotate(360deg);\n    background-position: 50% 36px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_good-starfish-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyGoodStarfish60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: red, loading, loader */\n.loader {\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100rpx;\n  height: 160rpx;\n  border-top: 10rpx solid #fff;\n  border-bottom: 10rpx solid #fff;\n  position: relative;\n  background: linear-gradient(#FF3D00 60rpx, transparent 0) no-repeat;\n  background-size: 4rpx 80rpx;\n  background-position: 50% 0rpx;\n  animation: spinx 5s linear infinite;\n}\n\n.loader:before, .loader:after {\n  content: \"\";\n  width: 80rpx;\n  left: 50%;\n  height: 70rpx;\n  position: absolute;\n  top: 0;\n  transform: translatex(-50%);\n  background: rgba(255, 255, 255, 0.4);\n  border-radius: 0 0 40rpx 40rpx;\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  background-position: 0 0rpx;\n  animation: lqt 5s linear infinite;\n}\n\n.loader:after {\n  top: auto;\n  bottom: 0;\n  border-radius: 40rpx 40rpx 0 0;\n  animation: lqb 5s linear infinite;\n}\n\n@keyframes lqt {\n  0%, 100% {\n    background-image: linear-gradient(#FF3D00 80rpx, transparent 0);\n    background-position: 0% 0rpx;\n  }\n\n  50% {\n    background-image: linear-gradient(#FF3D00 80rpx, transparent 0);\n    background-position: 0% 80rpx;\n  }\n\n  50.1% {\n    background-image: linear-gradient(#FF3D00 80rpx, transparent 0);\n    background-position: 0% -80rpx;\n  }\n}\n\n@keyframes lqb {\n  0% {\n    background-image: linear-gradient(#FF3D00 80rpx, transparent 0);\n    background-position: 0 80rpx;\n  }\n\n  100% {\n    background-image: linear-gradient(#FF3D00 80rpx, transparent 0);\n    background-position: 0 -80rpx;\n  }\n}\n\n@keyframes spinx {\n  0%, 49% {\n    transform: rotate(0deg);\n    background-position: 50% 72rpx;\n  }\n\n  51%, 98% {\n    transform: rotate(180deg);\n    background-position: 50% 8rpx;\n  }\n\n  100% {\n    transform: rotate(360deg);\n    background-position: 50% 72rpx;\n  }\n}\n    \n  \n\n",
+    "component_name": "GalaxyGoodStarfish60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1817,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.388Z",
+  "updated_at": "2025-07-31T07:55:39.388Z"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "Yashwanthnaini_dry-panther-24",
+  "name": "dry-panther-24",
+  "category": "buttons",
+  "author": "Yashwanthnaini",
+  "description": "dry-panther-24 组件 (button, gradient, interactive)",
+  "tags": [
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span> HOVER\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by Yashwanthnaini - Tags: button */\nbutton {\n border: none;\n border-radius: 20px;\n background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);\n transition: all 1.5s ease;\n font-family: 'Ropa Sans', sans-serif;\n font-weight: bold;\n letter-spacing: 0.05rem;\n padding: 0;\n}\n\nbutton span {\n display: inline-block;\n padding: 15px 35px;\n font-size: 17px;\n border-radius: 20px;\n background: #ffffff10;\n backdrop-filter: blur(20px);\n transition: 0.4s ease-in-out;\n transition-property: color;\n height: 100%;\n width: 100%;\n}\n\nbutton span:hover {\n backdrop-filter: blur(0px);\n color: #ffffff;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Yashwanthnaini_dry-panther-24.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text></text> HOVER\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyDryPanther24',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Yashwanthnaini - Tags: button */\nbutton {\n border: none;\n border-radius: 40rpx;\n background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);\n transition: all 1.5s ease;\n font-family: 'Ropa Sans', sans-serif;\n font-weight: bold;\n letter-spacing: 0.05rem;\n padding: 0;\n}\n\nbutton span {\n display: inline-block;\n padding: 30rpx 70rpx;\n font-size: 34rpx;\n border-radius: 40rpx;\n background: #ffffff10;\n backdrop-\n transition: 0.4s ease-in-out;\n transition-property: color;\n height: 100%;\n width: 100%;\n}\n\nbutton span:hover {\n backdrop-\n color: #ffffff;\n}\n",
+    "component_name": "GalaxyDryPanther24"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 658,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.197Z",
+  "updated_at": "2025-07-31T07:55:35.197Z"
+}

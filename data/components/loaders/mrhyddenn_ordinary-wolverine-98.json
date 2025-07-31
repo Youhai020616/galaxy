@@ -1,0 +1,85 @@
+{
+  "id": "mrhyddenn_ordinary-wolverine-98",
+  "name": "ordinary-wolverine-98",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "ordinary-wolverine-98 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  transform: scale(2);\n  border-radius: 50%;\n  border: 1px solid;\n  width: 30px;\n  height: 30px;\n  color: white;\n}\n\n.loader::after {\n  position: absolute;\n  width: 0px;\n  height: 10px;\n  display: block;\n  border-left: 1px solid #fff;\n  content: '';\n  left: 14px;\n  border-radius: 1px;\n  top: 4px;\n  animation-duration: 1s;\n}\n\n.loader::before {\n  position: absolute;\n  width: 0px;\n  height: 10px;\n  display: block;\n  border-left: 1px solid #fff;\n  content: '';\n  left: 14px;\n  border-radius: 1px;\n  top: 4px;\n  animation-duration: 40s;\n}\n\n.loader::before,.loader::after {\n  transform-origin: bottom;\n  animation-name: dial;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n@keyframes dial {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_ordinary-wolverine-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryWolverine98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  transform: scale(2);\n  border-radius: 50%;\n  border: 2rpx solid;\n  width: 60rpx;\n  height: 60rpx;\n  color: white;\n}\n\n.loader::after {\n  position: absolute;\n  width: 0rpx;\n  height: 20rpx;\n  display: block;\n  border-left: 2rpx solid #fff;\n  content: '';\n  left: 28rpx;\n  border-radius: 2rpx;\n  top: 8rpx;\n  animation-duration: 1s;\n}\n\n.loader::before {\n  position: absolute;\n  width: 0rpx;\n  height: 20rpx;\n  display: block;\n  border-left: 2rpx solid #fff;\n  content: '';\n  left: 28rpx;\n  border-radius: 2rpx;\n  top: 8rpx;\n  animation-duration: 40s;\n}\n\n.loader::before,.loader::after {\n  transform-origin: bottom;\n  animation-name: dial;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n@keyframes dial {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyOrdinaryWolverine98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 918,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.445Z",
+  "updated_at": "2025-07-31T07:55:42.445Z"
+}

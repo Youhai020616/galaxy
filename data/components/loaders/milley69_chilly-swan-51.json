@@ -1,0 +1,85 @@
+{
+  "id": "milley69_chilly-swan-51",
+  "name": "chilly-swan-51",
+  "category": "loaders",
+  "author": "milley69",
+  "description": "chilly-swan-51 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading\">\n  <svg width=\"64px\" height=\"48px\">\n      <polyline points=\"0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24\" id=\"back\"></polyline>\n    <polyline points=\"0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24\" id=\"front\"></polyline>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by milley69 - Tags: loader */\n.loading svg polyline {\n  fill: none;\n  stroke-width: 3;\n  stroke-linecap: round;\n  stroke-linejoin: round;\n}\n\n.loading svg polyline#back {\n  fill: none;\n  stroke: #ff4d5033;\n}\n\n.loading svg polyline#front {\n  fill: none;\n  stroke: #ff4d4f;\n  stroke-dasharray: 48, 144;\n  stroke-dashoffset: 192;\n  animation: dash_682 1.4s linear infinite;\n}\n\n@keyframes dash_682 {\n  72.5% {\n    opacity: 0;\n  }\n\n  to {\n    stroke-dashoffset: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/milley69_chilly-swan-51.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading\"></view>\n  <view width=\"64px\" height=\"48px\"></view>\n      <polyline points=\"0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24\" id=\"back\"></polyline>\n    <polyline points=\"0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24\" id=\"front\"></polyline>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyChillySwan51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by milley69 - Tags: loader */\n.loading svg polyline {\n  fill: none;\n  stroke-width: 3;\n  stroke-linecap: round;\n  stroke-linejoin: round;\n}\n\n.loading svg polyline#back {\n  fill: none;\n  stroke: #ff4d5033;\n}\n\n.loading svg polyline#front {\n  fill: none;\n  stroke: #ff4d4f;\n  stroke-dasharray: 48, 144;\n  stroke-dashoffset: 192;\n  animation: dash_682 1.4s linear infinite;\n}\n\n@keyframes dash_682 {\n  72.5% {\n    opacity: 0;\n  }\n\n  to {\n    stroke-dashoffset: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyChillySwan51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 763,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.323Z",
+  "updated_at": "2025-07-31T07:55:42.323Z"
+}

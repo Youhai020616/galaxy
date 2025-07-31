@@ -1,0 +1,109 @@
+{
+  "id": "joe-watson-sbf_swift-husky-44",
+  "name": "swift-husky-44",
+  "category": "buttons",
+  "author": "joe-watson-sbf",
+  "description": "swift-husky-44 组件 (button, hover, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n    Hover me\n</button>",
+    "css": "/* From Uiverse.io by joe-watson-sbf - Tags: button, hover */\n.btn {\n  font-size: 17px;\n  background: transparent;\n  border: none;\n  padding: 1em 1.5em;\n  color: #ffedd3;\n  text-transform: uppercase;\n  position: relative;\n  transition: .5s ease;\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 2px;\n  width: 0;\n  background-color: #ffc506;\n  transition: .5s ease;\n}\n\n.btn:hover {\n  color: #1e1e2b;\n  transition-delay: .5s;\n}\n\n.btn:hover::before {\n  width: 100%;\n}\n\n.btn::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 0;\n  width: 100%;\n  background-color: #ffc506;\n  transition: .4s ease;\n  z-index: -1;\n}\n\n.btn:hover::after {\n  height: 100%;\n  transition-delay: 0.4s;\n  color: aliceblue;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/joe-watson-sbf_swift-husky-44.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n    Hover me\n</button>",
+    "script": "export default {\n  name: 'GalaxySwiftHusky44',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by joe-watson-sbf - Tags: button, hover */\n.btn {\n  font-size: 34rpx;\n  background: transparent;\n  border: none;\n  padding: 1em 1.5em;\n  color: #ffedd3;\n  text-transform: uppercase;\n  position: relative;\n  transition: .5s ease;\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 4rpx;\n  width: 0;\n  background-color: #ffc506;\n  transition: .5s ease;\n}\n\n.btn:hover {\n  color: #1e1e2b;\n  transition-delay: .5s;\n}\n\n.btn:hover::before {\n  width: 100%;\n}\n\n.btn::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 0;\n  width: 100%;\n  background-color: #ffc506;\n  transition: .4s ease;\n  z-index: -1;\n}\n\n.btn:hover::after {\n  height: 100%;\n  transition-delay: 0.4s;\n  color: aliceblue;\n}\n",
+    "component_name": "GalaxySwiftHusky44"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 810,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.031Z",
+  "updated_at": "2025-07-31T07:55:37.031Z"
+}

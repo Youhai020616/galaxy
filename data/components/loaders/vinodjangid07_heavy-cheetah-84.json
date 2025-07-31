@@ -1,0 +1,89 @@
+{
+  "id": "vinodjangid07_heavy-cheetah-84",
+  "name": "heavy-cheetah-84",
+  "category": "loaders",
+  "author": "vinodjangid07",
+  "description": "heavy-cheetah-84 组件 (animation, purple, loading, loader, search, gradient)",
+  "tags": [
+    "animation",
+    "purple",
+    "loading",
+    "loader",
+    "search",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"loaderMiniContainer\">\n    <div class=\"barContainer\">\n      <span class=\"bar\"></span>\n      <span class=\"bar bar2\"></span>\n    </div>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 101 114\" class=\"svgIcon\">\n      <circle stroke-width=\"7\" stroke=\"black\" transform=\"rotate(36.0692 46.1726 46.1727)\" r=\"29.5497\" cy=\"46.1727\" cx=\"46.1726\"></circle>\n      <line stroke-width=\"7\" stroke=\"black\" y2=\"111.784\" x2=\"97.7088\" y1=\"67.7837\" x1=\"61.7089\"></line>\n    </svg>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: animation, purple, loading, loader, search */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.loaderMiniContainer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  width: 130px;\n  height: fit-content;\n}\n.barContainer {\n  width: 100%;\n  height: fit-content;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n  gap: 10px;\n  background-position: left;\n}\n.bar {\n  width: 100%;\n  height: 8px;\n  background: linear-gradient(\n    to right,\n    rgb(161, 94, 255),\n    rgb(217, 190, 255),\n    rgb(161, 94, 255)\n  );\n  background-size: 200% 100%;\n  border-radius: 10px;\n  animation: bar ease-in-out 3s infinite alternate-reverse;\n}\n@keyframes bar {\n  0% {\n    background-position: left;\n  }\n  100% {\n    background-position: right;\n  }\n}\n.bar2 {\n  width: 50%;\n}\n.svgIcon {\n  position: absolute;\n  left: -25px;\n  margin-top: 18px;\n  z-index: 2;\n  width: 70%;\n  animation: search ease-in-out 3s infinite alternate-reverse;\n}\n@keyframes search {\n  0% {\n    transform: translateX(0%) rotate(70deg);\n  }\n\n  100% {\n    transform: translateX(100px) rotate(10deg);\n  }\n}\n.svgIcon circle,\nline {\n  stroke: rgb(162, 55, 255);\n}\n.svgIcon circle {\n  fill: rgba(98, 65, 142, 0.238);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vinodjangid07_heavy-cheetah-84.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"loaderMiniContainer\"></view>\n    <view class=\"barContainer\"></view>\n      <text class=\"bar\"></text>\n      <text class=\"bar bar2\"></text>\n    </div>\n    <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 101 114\" class=\"svgIcon\"></view>\n      <circle stroke-width=\"7\" stroke=\"black\" transform=\"rotate(36.0692 46.1726 46.1727)\" r=\"29.5497\" cy=\"46.1727\" cx=\"46.1726\"></circle>\n      <line stroke-width=\"7\" stroke=\"black\" y2=\"111.784\" x2=\"97.7088\" y1=\"67.7837\" x1=\"61.7089\"></line>\n    </svg>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHeavyCheetah84',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: animation, purple, loading, loader, search */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.loaderMiniContainer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  width: 260rpx;\n  height: fit-content;\n}\n.barContainer {\n  width: 100%;\n  height: fit-content;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n  gap: 20rpx;\n  background-position: left;\n}\n.bar {\n  width: 100%;\n  height: 16rpx;\n  background: linear-gradient(\n    to right,\n    rgb(161, 94, 255),\n    rgb(217, 190, 255),\n    rgb(161, 94, 255)\n  );\n  background-size: 200% 100%;\n  border-radius: 20rpx;\n  animation: bar ease-in-out 3s infinite alternate-reverse;\n}\n@keyframes bar {\n  0% {\n    background-position: left;\n  }\n  100% {\n    background-position: right;\n  }\n}\n.bar2 {\n  width: 50%;\n}\n.svgIcon {\n  position: absolute;\n  left: -50rpx;\n  margin-top: 36rpx;\n  z-index: 2;\n  width: 70%;\n  animation: search ease-in-out 3s infinite alternate-reverse;\n}\n@keyframes search {\n  0% {\n    transform: translateX(0%) rotate(70deg);\n  }\n\n  100% {\n    transform: translateX(200rpx) rotate(10deg);\n  }\n}\n.svgIcon circle,\nline {\n  stroke: rgb(162, 55, 255);\n}\n.svgIcon circle {\n  fill: rgba(98, 65, 142, 0.238);\n}\n\n",
+    "component_name": "GalaxyHeavyCheetah84"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1869,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.778Z",
+  "updated_at": "2025-07-31T07:55:42.778Z"
+}

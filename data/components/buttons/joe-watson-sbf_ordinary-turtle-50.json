@@ -1,0 +1,115 @@
+{
+  "id": "joe-watson-sbf_ordinary-turtle-50",
+  "name": "ordinary-turtle-50",
+  "category": "buttons",
+  "author": "joe-watson-sbf",
+  "description": "ordinary-turtle-50 组件 (gradient, button, hover, shop, animation, interactive)",
+  "tags": [
+    "gradient",
+    "button",
+    "hover",
+    "shop",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n    <span class=\"btn__visible\">Buy Now</span>\n    <span class=\"btn__invisible\">Only 2 Left</span>\n</button>",
+    "css": "/* From Uiverse.io by joe-watson-sbf - Tags: gradient, button, hover, shop */\n.btn {\n  font-size: 14px;\n  font-weight: 300;\n  text-transform: uppercase;\n  line-height: 8px;\n  border-radius: 30px;\n  border: none;\n  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);\n  color: #fff;\n  position: relative;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.btn > * {\n  display: inline-block;\n  transition: all ease-in-out .5s;\n}\n\n.btn__visible {\n  padding: 1.2rem 3rem;\n  text-align: center;\n}\n\n.btn__invisible {\n  width: 100%;\n  position: absolute;\n  padding: 1.2rem 0;\n  left: 0;\n  top: -100%;\n}\n\n.btn:hover {\n  background-image: linear-gradient(160deg, #f093fb 0%, #f5576c 100%);\n}\n\n.btn:hover .btn__visible {\n  transform: translateY(100%);\n}\n\n.btn:hover .btn__invisible {\n  top: 0;\n}\n\n.btn:focus {\n  outline: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/joe-watson-sbf_ordinary-turtle-50.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n    <text class=\"btn__visible\">Buy Now</text>\n    <text class=\"btn__invisible\">Only 2 Left</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryTurtle50',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by joe-watson-sbf - Tags: gradient, button, hover, shop */\n.btn {\n  font-size: 28rpx;\n  font-weight: 300;\n  text-transform: uppercase;\n  line-height: 16rpx;\n  border-radius: 60rpx;\n  border: none;\n  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);\n  color: #fff;\n  position: relative;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.btn > * {\n  display: inline-block;\n  transition: all ease-in-out .5s;\n}\n\n.btn__visible {\n  padding: 1.2rem 3rem;\n  text-align: center;\n}\n\n.btn__invisible {\n  width: 100%;\n  position: absolute;\n  padding: 1.2rem 0;\n  left: 0;\n  top: -100%;\n}\n\n.btn:hover {\n  background-image: linear-gradient(160deg, #f093fb 0%, #f5576c 100%);\n}\n\n.btn:hover .btn__visible {\n  transform: translateY(100%);\n}\n\n.btn:hover .btn__invisible {\n  top: 0;\n}\n\n.btn:focus {\n  outline: none;\n}\n\n",
+    "component_name": "GalaxyOrdinaryTurtle50"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 959,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.021Z",
+  "updated_at": "2025-07-31T07:55:37.021Z"
+}

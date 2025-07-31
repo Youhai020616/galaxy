@@ -1,0 +1,91 @@
+{
+  "id": "JkHuger_new-deer-97",
+  "name": "new-deer-97",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "new-deer-97 组件 (loader, astronaut, animation, gradient)",
+  "tags": [
+    "loader",
+    "astronaut",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"box-of-star1\">\n    <div class=\"star star-position1\"></div>\n    <div class=\"star star-position2\"></div>\n    <div class=\"star star-position3\"></div>\n    <div class=\"star star-position4\"></div>\n    <div class=\"star star-position5\"></div>\n    <div class=\"star star-position6\"></div>\n    <div class=\"star star-position7\"></div>\n  </div>\n  <div class=\"box-of-star2\">\n    <div class=\"star star-position1\"></div>\n    <div class=\"star star-position2\"></div>\n    <div class=\"star star-position3\"></div>\n    <div class=\"star star-position4\"></div>\n    <div class=\"star star-position5\"></div>\n    <div class=\"star star-position6\"></div>\n    <div class=\"star star-position7\"></div>\n  </div>\n  <div class=\"box-of-star3\">\n    <div class=\"star star-position1\"></div>\n    <div class=\"star star-position2\"></div>\n    <div class=\"star star-position3\"></div>\n    <div class=\"star star-position4\"></div>\n    <div class=\"star star-position5\"></div>\n    <div class=\"star star-position6\"></div>\n    <div class=\"star star-position7\"></div>\n  </div>\n  <div class=\"box-of-star4\">\n    <div class=\"star star-position1\"></div>\n    <div class=\"star star-position2\"></div>\n    <div class=\"star star-position3\"></div>\n    <div class=\"star star-position4\"></div>\n    <div class=\"star star-position5\"></div>\n    <div class=\"star star-position6\"></div>\n    <div class=\"star star-position7\"></div>\n  </div>\n  <div data-js=\"astro\" class=\"astronaut\">\n    <div class=\"head\"></div>\n    <div class=\"arm arm-left\"></div>\n    <div class=\"arm arm-right\"></div>\n    <div class=\"body\">\n      <div class=\"panel\"></div>\n    </div>\n    <div class=\"leg leg-left\"></div>\n    <div class=\"leg leg-right\"></div>\n    <div class=\"schoolbag\"></div>\n  </div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader, astronaut */\n@keyframes snow {\n  0% {\n    opacity: 0;\n    transform: translateY(0px);\n  }\n\n  20% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(650px);\n  }\n}\n\n@keyframes astronaut {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.box-of-star1,\n.box-of-star2,\n.box-of-star3,\n.box-of-star4 {\n  width: 100%;\n  position: absolute;\n  z-index: 10;\n  left: 0;\n  top: 0;\n  transform: translateY(0px);\n  height: 700px;\n}\n\n.box-of-star1 {\n  animation: snow 5s linear infinite;\n}\n\n.box-of-star2 {\n  animation: snow 5s -1.64s linear infinite;\n}\n\n.box-of-star3 {\n  animation: snow 5s -2.30s linear infinite;\n}\n\n.box-of-star4 {\n  animation: snow 5s -3.30s linear infinite;\n}\n\n.star {\n  width: 3px;\n  height: 3px;\n  border-radius: 50%;\n  background-color: #FFF;\n  position: absolute;\n  z-index: 10;\n  opacity: 0.7;\n}\n\n.star:before {\n  content: \"\";\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  background-color: #FFF;\n  position: absolute;\n  z-index: 10;\n  top: 80px;\n  left: 70px;\n  opacity: .7;\n}\n\n.star:after {\n  content: \"\";\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background-color: #FFF;\n  position: absolute;\n  z-index: 10;\n  top: 8px;\n  left: 170px;\n  opacity: .9;\n}\n\n.star-position1 {\n  top: 30px;\n  left: 20px;\n}\n\n.star-position2 {\n  top: 110px;\n  left: 250px;\n}\n\n.star-position3 {\n  top: 60px;\n  left: 570px;\n}\n\n.star-position4 {\n  top: 120px;\n  left: 900px;\n}\n\n.star-position5 {\n  top: 20px;\n  left: 1120px;\n}\n\n.star-position6 {\n  top: 90px;\n  left: 1280px;\n}\n\n.star-position7 {\n  top: 30px;\n  left: 1480px;\n}\n\n.astronaut {\n  width: 250px;\n  height: 300px;\n  position: absolute;\n  z-index: 11;\n  top: calc(50% - 150px);\n  left: calc(50% - 125px);\n  animation: astronaut 5s linear infinite;\n}\n\n.schoolbag {\n  width: 100px;\n  height: 150px;\n  position: absolute;\n  z-index: 1;\n  top: calc(50% - 75px);\n  left: calc(50% - 50px);\n  background-color: #94b7ca;\n  border-radius: 50px 50px 0 0 / 30px 30px 0 0;\n}\n\n.head {\n  width: 97px;\n  height: 80px;\n  position: absolute;\n  z-index: 3;\n  background: -webkit-linear-gradient(left, #e3e8eb 0%, #e3e8eb 50%, #fbfdfa 50%, #fbfdfa 100%);\n  border-radius: 50%;\n  top: 34px;\n  left: calc(50% - 47.5px);\n}\n\n.head:after {\n  content: \"\";\n  width: 60px;\n  height: 50px;\n  position: absolute;\n  top: calc(50% - 25px);\n  left: calc(50% - 30px);\n  background: -webkit-linear-gradient(top, #15aece 0%, #15aece 50%, #0391bf 50%, #0391bf 100%);\n  border-radius: 15px;\n}\n\n.head:before {\n  content: \"\";\n  width: 12px;\n  height: 25px;\n  position: absolute;\n  top: calc(50% - 12.5px);\n  left: -4px;\n  background-color: #618095;\n  border-radius: 5px;\n  box-shadow: 92px 0px 0px #618095;\n}\n\n.body {\n  width: 85px;\n  height: 100px;\n  position: absolute;\n  z-index: 2;\n  background-color: #fffbff;\n  border-radius: 40px / 20px;\n  top: 105px;\n  left: calc(50% - 41px);\n  background: -webkit-linear-gradient(left, #e3e8eb 0%, #e3e8eb 50%, #fbfdfa 50%, #fbfdfa 100%);\n}\n\n.panel {\n  width: 60px;\n  height: 40px;\n  position: absolute;\n  top: 20px;\n  left: calc(50% - 30px);\n  background-color: #b7cceb;\n}\n\n.panel:before {\n  content: \"\";\n  width: 30px;\n  height: 5px;\n  position: absolute;\n  top: 9px;\n  left: 7px;\n  background-color: #fbfdfa;\n  box-shadow: 0px 9px 0px #fbfdfa, 0px 18px 0px #fbfdfa;\n}\n\n.panel:after {\n  content: \"\";\n  width: 8px;\n  height: 8px;\n  position: absolute;\n  top: 9px;\n  right: 7px;\n  background-color: #fbfdfa;\n  border-radius: 50%;\n  box-shadow: 0px 14px 0px 2px #fbfdfa;\n}\n\n.arm {\n  width: 80px;\n  height: 30px;\n  position: absolute;\n  top: 121px;\n  z-index: 2;\n}\n\n.arm-left {\n  left: 30px;\n  background-color: #e3e8eb;\n  border-radius: 0 0 0 39px;\n}\n\n.arm-right {\n  right: 30px;\n  background-color: #fbfdfa;\n  border-radius: 0 0 39px 0;\n}\n\n.arm-left:before,\n.arm-right:before {\n  content: \"\";\n  width: 30px;\n  height: 70px;\n  position: absolute;\n  top: -40px;\n}\n\n.arm-left:before {\n  border-radius: 50px 50px 0px 120px / 50px 50px 0 110px;\n  left: 0;\n  background-color: #e3e8eb;\n}\n\n.arm-right:before {\n  border-radius: 50px 50px 120px 0 / 50px 50px 110px 0;\n  right: 0;\n  background-color: #fbfdfa;\n}\n\n.arm-left:after,\n.arm-right:after {\n  content: \"\";\n  width: 30px;\n  height: 10px;\n  position: absolute;\n  top: -24px;\n}\n\n.arm-left:after {\n  background-color: #6e91a4;\n  left: 0;\n}\n\n.arm-right:after {\n  right: 0;\n  background-color: #b6d2e0;\n}\n\n.leg {\n  width: 30px;\n  height: 40px;\n  position: absolute;\n  z-index: 2;\n  bottom: 70px;\n}\n\n.leg-left {\n  left: 76px;\n  background-color: #e3e8eb;\n  transform: rotate(20deg);\n}\n\n.leg-right {\n  right: 73px;\n  background-color: #fbfdfa;\n  transform: rotate(-20deg);\n}\n\n.leg-left:before,\n.leg-right:before {\n  content: \"\";\n  width: 50px;\n  height: 25px;\n  position: absolute;\n  bottom: -26px;\n}\n\n.leg-left:before {\n  left: -20px;\n  background-color: #e3e8eb;\n  border-radius: 30px 0 0 0;\n  border-bottom: 10px solid #6d96ac;\n}\n\n.leg-right:before {\n  right: -20px;\n  background-color: #fbfdfa;\n  border-radius: 0 30px 0 0;\n  border-bottom: 10px solid #b0cfe4;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_new-deer-97.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box-of-star1\"></view>\n    <view class=\"star star-position1\"></view>\n    <view class=\"star star-position2\"></view>\n    <view class=\"star star-position3\"></view>\n    <view class=\"star star-position4\"></view>\n    <view class=\"star star-position5\"></view>\n    <view class=\"star star-position6\"></view>\n    <view class=\"star star-position7\"></view>\n  </div>\n  <view class=\"box-of-star2\"></view>\n    <view class=\"star star-position1\"></view>\n    <view class=\"star star-position2\"></view>\n    <view class=\"star star-position3\"></view>\n    <view class=\"star star-position4\"></view>\n    <view class=\"star star-position5\"></view>\n    <view class=\"star star-position6\"></view>\n    <view class=\"star star-position7\"></view>\n  </div>\n  <view class=\"box-of-star3\"></view>\n    <view class=\"star star-position1\"></view>\n    <view class=\"star star-position2\"></view>\n    <view class=\"star star-position3\"></view>\n    <view class=\"star star-position4\"></view>\n    <view class=\"star star-position5\"></view>\n    <view class=\"star star-position6\"></view>\n    <view class=\"star star-position7\"></view>\n  </div>\n  <view class=\"box-of-star4\"></view>\n    <view class=\"star star-position1\"></view>\n    <view class=\"star star-position2\"></view>\n    <view class=\"star star-position3\"></view>\n    <view class=\"star star-position4\"></view>\n    <view class=\"star star-position5\"></view>\n    <view class=\"star star-position6\"></view>\n    <view class=\"star star-position7\"></view>\n  </div>\n  <view data-js=\"astro\" class=\"astronaut\"></view>\n    <view class=\"head\"></view>\n    <view class=\"arm arm-left\"></view>\n    <view class=\"arm arm-right\"></view>\n    <view class=\"body\"></view>\n      <view class=\"panel\"></view>\n    </div>\n    <view class=\"leg leg-left\"></view>\n    <view class=\"leg leg-right\"></view>\n    <view class=\"schoolbag\"></view>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyNewDeer97',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader, astronaut */\n@keyframes snow {\n  0% {\n    opacity: 0;\n    transform: translateY(0rpx);\n  }\n\n  20% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(1300rpx);\n  }\n}\n\n@keyframes astronaut {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.box-of-star1,\n.box-of-star2,\n.box-of-star3,\n.box-of-star4 {\n  width: 100%;\n  position: absolute;\n  z-index: 10;\n  left: 0;\n  top: 0;\n  transform: translateY(0rpx);\n  height: 1400rpx;\n}\n\n.box-of-star1 {\n  animation: snow 5s linear infinite;\n}\n\n.box-of-star2 {\n  animation: snow 5s -1.64s linear infinite;\n}\n\n.box-of-star3 {\n  animation: snow 5s -2.30s linear infinite;\n}\n\n.box-of-star4 {\n  animation: snow 5s -3.30s linear infinite;\n}\n\n.star {\n  width: 6rpx;\n  height: 6rpx;\n  border-radius: 50%;\n  background-color: #FFF;\n  position: absolute;\n  z-index: 10;\n  opacity: 0.7;\n}\n\n.star:before {\n  content: \"\";\n  width: 12rpx;\n  height: 12rpx;\n  border-radius: 50%;\n  background-color: #FFF;\n  position: absolute;\n  z-index: 10;\n  top: 160rpx;\n  left: 140rpx;\n  opacity: .7;\n}\n\n.star:after {\n  content: \"\";\n  width: 16rpx;\n  height: 16rpx;\n  border-radius: 50%;\n  background-color: #FFF;\n  position: absolute;\n  z-index: 10;\n  top: 16rpx;\n  left: 340rpx;\n  opacity: .9;\n}\n\n.star-position1 {\n  top: 60rpx;\n  left: 40rpx;\n}\n\n.star-position2 {\n  top: 220rpx;\n  left: 500rpx;\n}\n\n.star-position3 {\n  top: 120rpx;\n  left: 1140rpx;\n}\n\n.star-position4 {\n  top: 240rpx;\n  left: 1800rpx;\n}\n\n.star-position5 {\n  top: 40rpx;\n  left: 2240rpx;\n}\n\n.star-position6 {\n  top: 180rpx;\n  left: 2560rpx;\n}\n\n.star-position7 {\n  top: 60rpx;\n  left: 2960rpx;\n}\n\n.astronaut {\n  width: 500rpx;\n  height: 600rpx;\n  position: absolute;\n  z-index: 11;\n  top: calc(50% - 300rpx);\n  left: calc(50% - 250rpx);\n  animation: astronaut 5s linear infinite;\n}\n\n.schoolbag {\n  width: 200rpx;\n  height: 300rpx;\n  position: absolute;\n  z-index: 1;\n  top: calc(50% - 150rpx);\n  left: calc(50% - 100rpx);\n  background-color: #94b7ca;\n  border-radius: 100rpx 100rpx 0 0 / 60rpx 60rpx 0 0;\n}\n\n.head {\n  width: 194rpx;\n  height: 160rpx;\n  position: absolute;\n  z-index: 3;\n  background: -webkit-linear-gradient(left, #e3e8eb 0%, #e3e8eb 50%, #fbfdfa 50%, #fbfdfa 100%);\n  border-radius: 50%;\n  top: 68rpx;\n  left: calc(50% - 95rpx);\n}\n\n.head:after {\n  content: \"\";\n  width: 120rpx;\n  height: 100rpx;\n  position: absolute;\n  top: calc(50% - 50rpx);\n  left: calc(50% - 60rpx);\n  background: -webkit-linear-gradient(top, #15aece 0%, #15aece 50%, #0391bf 50%, #0391bf 100%);\n  border-radius: 30rpx;\n}\n\n.head:before {\n  content: \"\";\n  width: 24rpx;\n  height: 50rpx;\n  position: absolute;\n  top: calc(50% - 25rpx);\n  left: -8rpx;\n  background-color: #618095;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 184rpx 0rpx 0rpx #618095;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.body {\n  width: 170rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: 2;\n  background-color: #fffbff;\n  border-radius: 80rpx / 40rpx;\n  top: 210rpx;\n  left: calc(50% - 82rpx);\n  background: -webkit-linear-gradient(left, #e3e8eb 0%, #e3e8eb 50%, #fbfdfa 50%, #fbfdfa 100%);\n}\n\n.panel {\n  width: 120rpx;\n  height: 80rpx;\n  position: absolute;\n  top: 40rpx;\n  left: calc(50% - 60rpx);\n  background-color: #b7cceb;\n}\n\n.panel:before {\n  content: \"\";\n  width: 60rpx;\n  height: 10rpx;\n  position: absolute;\n  top: 18rpx;\n  left: 14rpx;\n  background-color: #fbfdfa;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 18rpx 0rpx #fbfdfa, 0rpx 36rpx 0rpx #fbfdfa;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.panel:after {\n  content: \"\";\n  width: 16rpx;\n  height: 16rpx;\n  position: absolute;\n  top: 18rpx;\n  right: 14rpx;\n  background-color: #fbfdfa;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 28rpx 0rpx 4rpx #fbfdfa;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.arm {\n  width: 160rpx;\n  height: 60rpx;\n  position: absolute;\n  top: 242rpx;\n  z-index: 2;\n}\n\n.arm-left {\n  left: 60rpx;\n  background-color: #e3e8eb;\n  border-radius: 0 0 0 78rpx;\n}\n\n.arm-right {\n  right: 60rpx;\n  background-color: #fbfdfa;\n  border-radius: 0 0 78rpx 0;\n}\n\n.arm-left:before,\n.arm-right:before {\n  content: \"\";\n  width: 60rpx;\n  height: 140rpx;\n  position: absolute;\n  top: -80rpx;\n}\n\n.arm-left:before {\n  border-radius: 100rpx 100rpx 0rpx 240rpx / 100rpx 100rpx 0 220rpx;\n  left: 0;\n  background-color: #e3e8eb;\n}\n\n.arm-right:before {\n  border-radius: 100rpx 100rpx 240rpx 0 / 100rpx 100rpx 220rpx 0;\n  right: 0;\n  background-color: #fbfdfa;\n}\n\n.arm-left:after,\n.arm-right:after {\n  content: \"\";\n  width: 60rpx;\n  height: 20rpx;\n  position: absolute;\n  top: -48rpx;\n}\n\n.arm-left:after {\n  background-color: #6e91a4;\n  left: 0;\n}\n\n.arm-right:after {\n  right: 0;\n  background-color: #b6d2e0;\n}\n\n.leg {\n  width: 60rpx;\n  height: 80rpx;\n  position: absolute;\n  z-index: 2;\n  bottom: 140rpx;\n}\n\n.leg-left {\n  left: 152rpx;\n  background-color: #e3e8eb;\n  transform: rotate(20deg);\n}\n\n.leg-right {\n  right: 146rpx;\n  background-color: #fbfdfa;\n  transform: rotate(-20deg);\n}\n\n.leg-left:before,\n.leg-right:before {\n  content: \"\";\n  width: 100rpx;\n  height: 50rpx;\n  position: absolute;\n  bottom: -52rpx;\n}\n\n.leg-left:before {\n  left: -40rpx;\n  background-color: #e3e8eb;\n  border-radius: 60rpx 0 0 0;\n  border-bottom: 20rpx solid #6d96ac;\n}\n\n.leg-right:before {\n  right: -40rpx;\n  background-color: #fbfdfa;\n  border-radius: 0 60rpx 0 0;\n  border-bottom: 20rpx solid #b0cfe4;\n}\n",
+    "component_name": "GalaxyNewDeer97"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 6797,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.503Z",
+  "updated_at": "2025-07-31T07:55:39.503Z"
+}

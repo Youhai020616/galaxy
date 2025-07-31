@@ -1,0 +1,86 @@
+{
+  "id": "lenin55_sour-chipmunk-96",
+  "name": "sour-chipmunk-96",
+  "category": "loaders",
+  "author": "lenin55",
+  "description": "sour-chipmunk-96 组件 (material design, loader, animation)",
+  "tags": [
+    "material design",
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"ui-loader loader-blk\">\n    <svg viewBox=\"22 22 44 44\" class=\"multiColor-loader\">\n        <circle cx=\"44\" cy=\"44\" r=\"20.2\" fill=\"none\" stroke-width=\"3.6\" class=\"loader-circle loader-circle-animation\"></circle>\n    </svg>\n</div>",
+    "css": "/* From Uiverse.io by lenin55 - Tags: material design, loader */\n/* //codelessly loader style */\n.ui-loader {\n  display: inline-block;\n  width: 50px;\n  height: 50px;\n}\n\n.loader-blk {\n  color: #3f51b5;\n  animation: rotate-outer08 1.4s linear infinite;\n}\n\n.multiColor-loader {\n  display: block;\n  animation: color-anim08 1.4s infinite;\n}\n\n.loader-circle {\n  stroke: currentColor;\n}\n\n.MuiCircularProgress-circleStatic {\n  transition: stroke-dashoffset 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;\n}\n\n.loader-circle-animation {\n  animation: rotate-inner08 1.4s ease-in-out\n    infinite;\n  stroke-dasharray: 80px, 200px;\n  stroke-dashoffset: 0;\n}\n\n@keyframes rotate-outer08 {\n  0% {\n    transform-origin: 50% 50%;\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate-inner08 {\n  0% {\n    stroke-dasharray: 1px, 200px;\n    stroke-dashoffset: 0;\n  }\n\n  50% {\n    stroke-dasharray: 100px, 200px;\n    stroke-dashoffset: -15px;\n  }\n\n  100% {\n    stroke-dasharray: 100px, 200px;\n    stroke-dashoffset: -125px;\n  }\n}\n\n@keyframes color-anim08 {\n  0% {\n    color: #4285f4;\n  }\n\n  25% {\n    color: #ea4335;\n  }\n\n  50% {\n    color: #f9bb2d;\n  }\n\n  75% {\n    color: #34a853;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/lenin55_sour-chipmunk-96.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"ui-loader loader-blk\"></view>\n    <view viewBox=\"22 22 44 44\" class=\"multiColor-loader\"></view>\n        <circle cx=\"44\" cy=\"44\" r=\"20.2\" fill=\"none\" stroke-width=\"3.6\" class=\"loader-circle loader-circle-animation\"></circle>\n    </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxySourChipmunk96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by lenin55 - Tags: material design, loader */\n/* //codelessly loader style */\n.ui-loader {\n  display: inline-block;\n  width: 100rpx;\n  height: 100rpx;\n}\n\n.loader-blk {\n  color: #3f51b5;\n  animation: rotate-outer08 1.4s linear infinite;\n}\n\n.multiColor-loader {\n  display: block;\n  animation: color-anim08 1.4s infinite;\n}\n\n.loader-circle {\n  stroke: currentColor;\n}\n\n.MuiCircularProgress-circleStatic {\n  transition: stroke-dashoffset 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;\n}\n\n.loader-circle-animation {\n  animation: rotate-inner08 1.4s ease-in-out\n    infinite;\n  stroke-dasharray: 160rpx, 400rpx;\n  stroke-dashoffset: 0;\n}\n\n@keyframes rotate-outer08 {\n  0% {\n    transform-origin: 50% 50%;\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate-inner08 {\n  0% {\n    stroke-dasharray: 2rpx, 400rpx;\n    stroke-dashoffset: 0;\n  }\n\n  50% {\n    stroke-dasharray: 200rpx, 400rpx;\n    stroke-dashoffset: -30rpx;\n  }\n\n  100% {\n    stroke-dasharray: 200rpx, 400rpx;\n    stroke-dashoffset: -250rpx;\n  }\n}\n\n@keyframes color-anim08 {\n  0% {\n    color: #4285f4;\n  }\n\n  25% {\n    color: #ea4335;\n  }\n\n  50% {\n    color: #f9bb2d;\n  }\n\n  75% {\n    color: #34a853;\n  }\n}\n\n",
+    "component_name": "GalaxySourChipmunk96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1416,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.293Z",
+  "updated_at": "2025-07-31T07:55:42.293Z"
+}

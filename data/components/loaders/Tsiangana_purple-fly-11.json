@@ -1,0 +1,89 @@
+{
+  "id": "Tsiangana_purple-fly-11",
+  "name": "purple-fly-11",
+  "category": "loaders",
+  "author": "Tsiangana",
+  "description": "purple-fly-11 组件 (animation, loader, animated, creative, loading animation, gradient)",
+  "tags": [
+    "animation",
+    "loader",
+    "animated",
+    "creative",
+    "loading animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <svg viewBox=\"0 0 16 16\" class=\"light bi bi-lightning-charge-fill\" fill=\"currentColor\" height=\"28\" width=\"28\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z\"></path>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by Tsiangana  - Tags: animation, loader, animated, creative, loading animation */\n.light {\n  position: absolute;\n  left: 22px;\n  fill: rgba(37, 37, 37, 0.774);\n}\n\n.loader {\n  width: 80px;\n  height: 40px;\n  border: 2px solid #22f49e;\n  border-right-color: transparent;\n  padding: 3px;\n  background: repeating-linear-gradient(90deg, #22f49e 0 10px, #0000 0 15px)\n    left/0% 100% no-repeat content-box content-box;\n  position: relative;\n  animation: p5 2s infinite steps(6);\n}\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: -2px;\n  bottom: -2px;\n  left: 100%;\n  width: 10px;\n  background: linear-gradient(\n        #0000 calc(50% - 7px),\n        #22f49e 0 calc(50% - 5px),\n        #0000 0 calc(50% + 5px),\n        #22f49e 0 calc(50% + 7px),\n        #0000 0\n      )\n      left / 100% 100%,\n    linear-gradient(#22f49e calc(50% - 5px), #0000 0 calc(50% + 5px), #22f49e 0)\n      left / 2px 100%,\n    linear-gradient(#0000 calc(50% - 5px), #22f49e 0 calc(50% + 5px), #0000 0)\n      right/2px 100%;\n  background-repeat: no-repeat;\n}\n@keyframes p5 {\n  100% {\n    background-size: 120% 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Tsiangana_purple-fly-11.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view viewBox=\"0 0 16 16\" class=\"light bi bi-lightning-charge-fill\" fill=\"currentColor\" height=\"28\" width=\"28\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z\"></path>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPurpleFly11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Tsiangana  - Tags: animation, loader, animated, creative, loading animation */\n.light {\n  position: absolute;\n  left: 44rpx;\n  fill: rgba(37, 37, 37, 0.774);\n}\n\n.loader {\n  width: 160rpx;\n  height: 80rpx;\n  border: 4rpx solid #22f49e;\n  border-right-color: transparent;\n  padding: 6rpx;\n  background: repeating-linear-gradient(90deg, #22f49e 0 20rpx, #0000 0 30rpx)\n    left/0% 100% no-repeat content-box content-box;\n  position: relative;\n  animation: p5 2s infinite steps(6);\n}\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: -4rpx;\n  bottom: -4rpx;\n  left: 100%;\n  width: 20rpx;\n  background: linear-gradient(\n        #0000 calc(50% - 14rpx),\n        #22f49e 0 calc(50% - 10rpx),\n        #0000 0 calc(50% + 10rpx),\n        #22f49e 0 calc(50% + 14rpx),\n        #0000 0\n      )\n      left / 100% 100%,\n    linear-gradient(#22f49e calc(50% - 10rpx), #0000 0 calc(50% + 10rpx), #22f49e 0)\n      left / 4rpx 100%,\n    linear-gradient(#0000 calc(50% - 10rpx), #22f49e 0 calc(50% + 10rpx), #0000 0)\n      right/4rpx 100%;\n  background-repeat: no-repeat;\n}\n@keyframes p5 {\n  100% {\n    background-size: 120% 100%;\n  }\n}\n\n",
+    "component_name": "GalaxyPurpleFly11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1488,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.701Z",
+  "updated_at": "2025-07-31T07:55:40.701Z"
+}

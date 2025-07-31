@@ -1,0 +1,89 @@
+{
+  "id": "Donewenfu_massive-badger-47",
+  "name": "massive-badger-47",
+  "category": "loaders",
+  "author": "Donewenfu",
+  "description": "massive-badger-47 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"justify-content-center jimu-primary-loading\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Donewenfu - Tags: loader */\n.loader {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.jimu-primary-loading:before,\n.jimu-primary-loading:after {\n  position: absolute;\n  top: 0;\n  content: '';\n}\n\n.jimu-primary-loading:before {\n  left: -19.992px;\n}\n\n.jimu-primary-loading:after {\n  left: 19.992px;\n  -webkit-animation-delay: 0.32s !important;\n  animation-delay: 0.32s !important;\n}\n\n.jimu-primary-loading:before,\n.jimu-primary-loading:after,\n.jimu-primary-loading {\n  background: #076fe5;\n  -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;\n  animation: loading-keys-app-loading 0.8s infinite ease-in-out;\n  width: 13.6px;\n  height: 32px;\n}\n\n.jimu-primary-loading {\n  text-indent: -9999em;\n  margin: auto;\n  position: absolute;\n  right: calc(50% - 6.8px);\n  top: calc(50% - 16px);\n  -webkit-animation-delay: 0.16s !important;\n  animation-delay: 0.16s !important;\n}\n\n@-webkit-keyframes loading-keys-app-loading {\n\n  0%,\n  80%,\n  100% {\n    opacity: .75;\n    box-shadow: 0 0 #076fe5;\n    height: 32px;\n  }\n\n  40% {\n    opacity: 1;\n    box-shadow: 0 -8px #076fe5;\n    height: 40px;\n  }\n}\n\n@keyframes loading-keys-app-loading {\n\n  0%,\n  80%,\n  100% {\n    opacity: .75;\n    box-shadow: 0 0 #076fe5;\n    height: 32px;\n  }\n\n  40% {\n    opacity: 1;\n    box-shadow: 0 -8px #076fe5;\n    height: 40px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Donewenfu_massive-badger-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"justify-content-center jimu-primary-loading\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMassiveBadger47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Donewenfu - Tags: loader */\n.loader {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.jimu-primary-loading:before,\n.jimu-primary-loading:after {\n  position: absolute;\n  top: 0;\n  content: '';\n}\n\n.jimu-primary-loading:before {\n  left: -39.984rpx;\n}\n\n.jimu-primary-loading:after {\n  left: 39.984rpx;\n  -webkit-animation-delay: 0.32s !important;\n  animation-delay: 0.32s !important;\n}\n\n.jimu-primary-loading:before,\n.jimu-primary-loading:after,\n.jimu-primary-loading {\n  background: #076fe5;\n  -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;\n  animation: loading-keys-app-loading 0.8s infinite ease-in-out;\n  width: 27.2rpx;\n  height: 64rpx;\n}\n\n.jimu-primary-loading {\n  text-indent: -9999em;\n  margin: auto;\n  position: absolute;\n  right: calc(50% - 13.6rpx);\n  top: calc(50% - 32rpx);\n  -webkit-animation-delay: 0.16s !important;\n  animation-delay: 0.16s !important;\n}\n\n@-webkit-keyframes loading-keys-app-loading {\n\n  0%,\n  80%,\n  100% {\n    opacity: .75;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 #076fe5;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    height: 64rpx;\n  }\n\n  40% {\n    opacity: 1;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -16rpx #076fe5;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    height: 80rpx;\n  }\n}\n\n@keyframes loading-keys-app-loading {\n\n  0%,\n  80%,\n  100% {\n    opacity: .75;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 #076fe5;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    height: 64rpx;\n  }\n\n  40% {\n    opacity: 1;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -16rpx #076fe5;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    height: 80rpx;\n  }\n}\n",
+    "component_name": "GalaxyMassiveBadger47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1458,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.196Z",
+  "updated_at": "2025-07-31T07:55:39.196Z"
+}

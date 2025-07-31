@@ -1,0 +1,112 @@
+{
+  "id": "ossoboy_calm-kangaroo-77",
+  "name": "calm-kangaroo-77",
+  "category": "buttons",
+  "author": "ossoboy",
+  "description": "calm-kangaroo-77 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button data-label=\"Button :)\"> Button :)\n</button>",
+    "css": "/* From Uiverse.io by ossoboy - Tags: button */\nbutton {\n background-color: rgb(82, 163, 255);\n color: transparent;\n border: 0 none;\n padding: 15px 30px;\n text-decoration: none;\n display: inline-block;\n transition: background-color 300ms ease, color 300ms ease;\n font-size: 17px;\n position: relative;\n text-align: center;\n cursor: pointer;\n}\n\nbutton::before,\nbutton::after {\n content: attr(data-label);\n display: inline-block;\n position: absolute;\n transition: all 300ms ease;\n width: 100%;\n left: 0;\n top: 50%;\n color: white;\n}\n\nbutton::before {\n opacity: 0;\n transform: translateY(calc(-50% - 15px));\n}\n\nbutton::after {\n opacity: 1;\n transform: translateY(-50%);\n}\n\nbutton:hover {\n background-color: rgb(66, 133, 209);\n}\n\nbutton:hover::before {\n opacity: 1;\n transform: translateY(-50%);\n}\n\nbutton:hover::after {\n opacity: 0;\n transform: translateY(calc(-50% + 15px));\n}\n\nbutton:active {\n background-color: rgb(82, 163, 255);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ossoboy_calm-kangaroo-77.html"
+  },
+  "uniapp": {
+    "template": "<button data-label=\"Button :)\"></button> Button :)\n</button>",
+    "script": "export default {\n  name: 'GalaxyCalmKangaroo77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ossoboy - Tags: button */\nbutton {\n background-color: rgb(82, 163, 255);\n color: transparent;\n border: 0 none;\n padding: 30rpx 60rpx;\n text-decoration: none;\n display: inline-block;\n transition: background-color 300ms ease, color 300ms ease;\n font-size: 34rpx;\n position: relative;\n text-align: center;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton::before,\nbutton::after {\n content: attr(data-label);\n display: inline-block;\n position: absolute;\n transition: all 300ms ease;\n width: 100%;\n left: 0;\n top: 50%;\n color: white;\n}\n\nbutton::before {\n opacity: 0;\n transform: translateY(calc(-50% - 30rpx));\n}\n\nbutton::after {\n opacity: 1;\n transform: translateY(-50%);\n}\n\nbutton:hover {\n background-color: rgb(66, 133, 209);\n}\n\nbutton:hover::before {\n opacity: 1;\n transform: translateY(-50%);\n}\n\nbutton:hover::after {\n opacity: 0;\n transform: translateY(calc(-50% + 30rpx));\n}\n\nbutton:active {\n background-color: rgb(82, 163, 255);\n}\n",
+    "component_name": "GalaxyCalmKangaroo77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 984,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.523Z",
+  "updated_at": "2025-07-31T07:55:37.523Z"
+}

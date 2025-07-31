@@ -1,0 +1,85 @@
+{
+  "id": "bernethe_friendly-termite-42",
+  "name": "friendly-termite-42",
+  "category": "loaders",
+  "author": "bernethe",
+  "description": "friendly-termite-42 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by bernethe - Tags: loader */\n.loader {\n  width: 2rem;\n  height: 2rem;\n  clear: both;\n  margin: 1rem auto;\n  border: 0.0625rem #000 solid;\n  border-radius: .25rem;\n  overflow: hidden;\n  position: relative;\n}\n\n.loader:after, .loader:before {\n  content: '';\n  border-radius: 50%;\n  position: absolute;\n  width: inherit;\n  height: inherit;\n  animation: spVortex 2s infinite linear;\n}\n\n.loader:before {\n  border-top: 0.375rem #000 solid;\n  top: -0.1875rem;\n  left: calc( -50% - 0.1875rem );\n  transform-origin: right center;\n}\n\n.loader:after {\n  border-bottom: 0.375rem #000 solid;\n  top: 0.1875rem;\n  right: calc( -50% - 0.1875rem );\n  transform-origin: left center;\n}\n\n@keyframes spVortex {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(359deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bernethe_friendly-termite-42.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyFriendlyTermite42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bernethe - Tags: loader */\n.loader {\n  width: 2rem;\n  height: 2rem;\n  clear: both;\n  margin: 1rem auto;\n  border: 0.0625rem #000 solid;\n  border-radius: .25rem;\n  overflow: hidden;\n  position: relative;\n}\n\n.loader:after, .loader:before {\n  content: '';\n  border-radius: 50%;\n  position: absolute;\n  width: inherit;\n  height: inherit;\n  animation: spVortex 2s infinite linear;\n}\n\n.loader:before {\n  border-top: 0.375rem #000 solid;\n  top: -0.1875rem;\n  left: calc( -50% - 0.1875rem );\n  transform-origin: right center;\n}\n\n.loader:after {\n  border-bottom: 0.375rem #000 solid;\n  top: 0.1875rem;\n  right: calc( -50% - 0.1875rem );\n  transform-origin: left center;\n}\n\n@keyframes spVortex {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(359deg);\n  }\n}\n",
+    "component_name": "GalaxyFriendlyTermite42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 824,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.022Z",
+  "updated_at": "2025-07-31T07:55:41.022Z"
+}

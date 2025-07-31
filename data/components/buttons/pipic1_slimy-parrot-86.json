@@ -1,0 +1,113 @@
+{
+  "id": "pipic1_slimy-parrot-86",
+  "name": "slimy-parrot-86",
+  "category": "buttons",
+  "author": "pipic1",
+  "description": "slimy-parrot-86 组件 (skeuomorphism, button, animation, gradient)",
+  "tags": [
+    "skeuomorphism",
+    "button",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  ctrl\n</button>",
+    "css": "/* From Uiverse.io by pipic1 - Tags: skeuomorphism, button */\n.button {\n  --key-text-color: #969faf;\n  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,0.4);\n  --docsearch-key-gradient: linear-gradient(-225deg,#d5dbe4,#f8f8f8);\n  border: none;\n  background: var(--docsearch-key-gradient);\n  border-radius: 3px;\n  box-shadow: var(--docsearch-key-shadow);\n  color: var(--key-text-color);\n  height: 2.5em;\n  text-align: center;\n  padding: 0.6em;\n  margin: 0 0.6em;\n  display: inline-block;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 1em;\n  min-width: 1em;\n  line-height: 1em;\n  user-select: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/pipic1_slimy-parrot-86.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  ctrl\n</button>",
+    "script": "export default {\n  name: 'GalaxySlimyParrot86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by pipic1 - Tags: skeuomorphism, button */\n.button {\n  --key-text-color: #969faf;\n  --docsearch-key-shadow: inset 0 -4rpx 0 0 #cdcde6,inset 0 0 2rpx 2rpx #fff,0 2rpx 4rpx 2rpx rgba(30,35,90,0.4);\n  --docsearch-key-gradient: linear-gradient(-225deg,#d5dbe4,#f8f8f8);\n  border: none;\n  background: var(--docsearch-key-gradient);\n  border-radius: 6rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: var(--docsearch-key-shadow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: var(--key-text-color);\n  height: 2.5em;\n  text-align: center;\n  padding: 0.6em;\n  margin: 0 0.6em;\n  display: inline-block;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 1em;\n  min-width: 1em;\n  line-height: 1em;\n  user-select: none;\n}\n\n\n",
+    "component_name": "GalaxySlimyParrot86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 713,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.559Z",
+  "updated_at": "2025-07-31T07:55:37.559Z"
+}

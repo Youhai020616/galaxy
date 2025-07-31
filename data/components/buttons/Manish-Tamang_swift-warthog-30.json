@@ -1,0 +1,113 @@
+{
+  "id": "Manish-Tamang_swift-warthog-30",
+  "name": "swift-warthog-30",
+  "category": "buttons",
+  "author": "Manish-Tamang",
+  "description": "swift-warthog-30 组件 (button, hover effect, html, css, 3d button, button hover effect, animation, interactive)",
+  "tags": [
+    "button",
+    "hover effect",
+    "html",
+    "css",
+    "3d button",
+    "button hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<span><a href=\"#\"></a></span>",
+    "css": "/* From Uiverse.io by Manish-Tamang  - Tags: button, hover effect, html, css, 3d button, button hover effect  */\na {\n  position: relative;\n  display: inline-flex;\n  width: 180px;\n  height: 55px;\n  margin: 0 15px;\n  perspective: 1000px;\n  text-decoration: none;\n}\n\na:before,\na:after {\n  position: absolute;\n  content: \"3D HOVER\";\n  height: 55px;\n  width: 180px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 5px solid black;\n  box-sizing: border-box;\n  font-size: 19px;\n  letter-spacing: 1px;\n  font-family: \"Montserrat\", sans-serif;\n  text-align: center;\n  transition: transform 0.25s;\n}\n\na:before {\n  color: #fff;\n  background: #000;\n  transform: rotateY(0deg) translateZ(25px);\n}\n\na:after {\n  color: #000;\n  transform: rotateX(90deg) translateZ(25px);\n}\n\na:hover:before {\n  transform: translateZ(-25px) rotateX(-90deg);\n}\n\na:hover:after {\n  transform: rotateY(0deg) translateZ(25px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Manish-Tamang_swift-warthog-30.html"
+  },
+  "uniapp": {
+    "template": "<text><navigator href=\"#\"></navigator></text>",
+    "script": "export default {\n  name: 'GalaxySwiftWarthog30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Manish-Tamang  - Tags: button, hover effect, html, css, 3d button, button hover effect  */\na {\n  position: relative;\n  display: inline-flex;\n  width: 360rpx;\n  height: 110rpx;\n  margin: 0 30rpx;\n  perspective: 2000rpx;\n  text-decoration: none;\n}\n\na:before,\na:after {\n  position: absolute;\n  content: \"3D HOVER\";\n  height: 110rpx;\n  width: 360rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 10rpx solid black;\n  box-sizing: border-box;\n  font-size: 38rpx;\n  letter-spacing: 2rpx;\n  font-family: \"Montserrat\", sans-serif;\n  text-align: center;\n  transition: transform 0.25s;\n}\n\na:before {\n  color: #fff;\n  background: #000;\n  transform: rotateY(0deg) translateZ(50rpx);\n}\n\na:after {\n  color: #000;\n  transform: rotateX(90deg) translateZ(50rpx);\n}\n\na:hover:before {\n  transform: translateZ(-50rpx) rotateX(-90deg);\n}\n\na:hover:after {\n  transform: rotateY(0deg) translateZ(50rpx);\n}\n\n",
+    "component_name": "GalaxySwiftWarthog30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 957,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.909Z",
+  "updated_at": "2025-07-31T07:55:33.909Z"
+}

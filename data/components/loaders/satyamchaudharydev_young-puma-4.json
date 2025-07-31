@@ -1,0 +1,85 @@
+{
+  "id": "satyamchaudharydev_young-puma-4",
+  "name": "young-puma-4",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "young-puma-4 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n</div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n --size-of-spinner: 50px;\n --spinner-border-width: 4px;\n --spinner-color: #08c18a;\n --circle-color: #8bc34a24;\n --speed-of-animation: 2s;\n --scale: 1.3;\n width: var(--size-of-spinner);\n height: var(--size-of-spinner);\n background: var(--circle-color);\n border-radius: 50%;\n position: relative;\n}\n\n.spinner::after {\n content: \"\";\n display: block;\n position: absolute;\n border-radius: 50%;\n inset: 0;\n border: var(--spinner-border-width) solid var(--spinner-color);\n border-left-color: transparent;\n border-right-color: transparent;\n animation: spinny var(--speed-of-animation) linear infinite;\n}\n\n@keyframes spinny {\n 0% {\n  transform: rotate(0deg) scale(1)\n }\n\n 50% {\n  transform: rotate(45deg) scale(var(--scale))\n }\n\n 100% {\n  transform: rotate(360deg) scale(1)\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_young-puma-4.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyYoungPuma4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n --size-of-spinner: 100rpx;\n --spinner-border-width: 8rpx;\n --spinner-color: #08c18a;\n --circle-color: #8bc34a24;\n --speed-of-animation: 2s;\n --scale: 1.3;\n width: var(--size-of-spinner);\n height: var(--size-of-spinner);\n background: var(--circle-color);\n border-radius: 50%;\n position: relative;\n}\n\n.spinner::after {\n content: \"\";\n display: block;\n position: absolute;\n border-radius: 50%;\n inset: 0;\n border: var(--spinner-border-width) solid var(--spinner-color);\n border-left-color: transparent;\n border-right-color: transparent;\n animation: spinny var(--speed-of-animation) linear infinite;\n}\n\n@keyframes spinny {\n 0% {\n  transform: rotate(0deg) scale(1)\n }\n\n 50% {\n  transform: rotate(45deg) scale(var(--scale))\n }\n\n 100% {\n  transform: rotate(360deg) scale(1)\n }\n}\n",
+    "component_name": "GalaxyYoungPuma4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 870,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.634Z",
+  "updated_at": "2025-07-31T07:55:42.634Z"
+}

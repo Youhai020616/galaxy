@@ -1,0 +1,90 @@
+{
+  "id": "Praashoo7_funny-treefrog-32",
+  "name": "funny-treefrog-32",
+  "category": "loaders",
+  "author": "Praashoo7",
+  "description": "funny-treefrog-32 组件 (animation, loading, loader)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span class=\"l\">L</span>\n  <span class=\"o\">o</span>\n  <span class=\"a\">a</span>\n  <span class=\"d\">d</span>\n  <span class=\"i\">i</span>\n  <span class=\"n\">n</span>\n  <span class=\"g\">g</span>\n  <span class=\"d1\">.</span>\n  <span class=\"d2\">.</span>\n</div>",
+    "css": "/* From Uiverse.io by Praashoo7 - Tags: animation, loading, loader */\n.l {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.2s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.o {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.4s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.a {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.6s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.d {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.8s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.i {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 1s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.n {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 1.2s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.g {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 1.4s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.d1 {\n  color: black;\n  opacity: 0;\n  animation: pass1 2s ease-in-out infinite;\n  animation-delay: 1.6s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n.d2 {\n  color: black;\n  opacity: 0;\n  animation: pass1 2s ease-in-out infinite;\n  animation-delay: 2s;\n  letter-spacing: 0.5em;\n  text-shadow: 2px 2px 3px #919191;\n}\n\n@keyframes pass {\n  0% {\n    opacity: 1;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes pass1 {\n  0% {\n    opacity: 1;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Praashoo7_funny-treefrog-32.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text class=\"l\">L</text>\n  <text class=\"o\">o</text>\n  <text class=\"a\">a</text>\n  <text class=\"d\">d</text>\n  <text class=\"i\">i</text>\n  <text class=\"n\">n</text>\n  <text class=\"g\">g</text>\n  <text class=\"d1\">.</text>\n  <text class=\"d2\">.</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFunnyTreefrog32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7 - Tags: animation, loading, loader */\n.l {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.2s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.o {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.4s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.a {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.6s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.d {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 0.8s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.i {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 1s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.n {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 1.2s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.g {\n  color: black;\n  opacity: 0;\n  animation: pass 2s ease-in-out infinite;\n  animation-delay: 1.4s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.d1 {\n  color: black;\n  opacity: 0;\n  animation: pass1 2s ease-in-out infinite;\n  animation-delay: 1.6s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n.d2 {\n  color: black;\n  opacity: 0;\n  animation: pass1 2s ease-in-out infinite;\n  animation-delay: 2s;\n  letter-spacing: 0.5em;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #919191;\n  /* #endif */\n}\n\n@keyframes pass {\n  0% {\n    opacity: 1;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes pass1 {\n  0% {\n    opacity: 1;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n",
+    "component_name": "GalaxyFunnyTreefrog32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2062,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.963Z",
+  "updated_at": "2025-07-31T07:55:39.963Z"
+}

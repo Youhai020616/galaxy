@@ -1,0 +1,122 @@
+{
+  "id": "jeremyssocial_silly-lionfish-21",
+  "name": "silly-lionfish-21",
+  "category": "buttons",
+  "author": "jeremyssocial",
+  "description": "silly-lionfish-21 组件 (3d, red, button, hover, hover effect, hoverme, hover button, 3d button, animation, gradient, interactive)",
+  "tags": [
+    "3d",
+    "red",
+    "button",
+    "hover",
+    "hover effect",
+    "hoverme",
+    "hover button",
+    "3d button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"fancy-3d-button\">\n  <svg role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"button-icon\">\n    <path d=\"M12 .587l3.668 7.431L24 9.587l-6 5.845L19.335 24 12 20.01 4.665 24 6 15.432 0 9.587l8.332-1.569z\"></path>\n  </svg>\n  <span class=\"button-text\">3D Hover</span>\n</button>",
+    "css": "/* From Uiverse.io by jeremyssocial  - Tags: 3d, red, button, hover, hover effect, hoverme, hover button, 3d button */\n.fancy-3d-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  padding: 15px 30px;\n  font-size: 1em;\n  font-weight: 700;\n  color: #fff;\n  background: linear-gradient(45deg, #ff416c, #ff4b2b);\n  border: none;\n  border-radius: 50px;\n  cursor: pointer;\n  transition: all 0.6s ease-in-out;\n  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);\n  perspective: 500px; /* Adding perspective for 3D effect */\n  transform-style: preserve-3d; /* Preserve 3D transformations */\n}\n\n.fancy-3d-button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);\n  z-index: -1;\n  transition: all 0.6s ease-in-out;\n  transform: translateZ(-20px); /* 3D depth effect */\n  border-radius: 50px;\n}\n\n.fancy-3d-button:hover::before {\n  transform: translateZ(-40px); /* Enhance depth on hover */\n}\n\n.fancy-3d-button:hover {\n  transform: rotateX(15deg) rotateY(15deg); /* Rotate on hover for 3D effect */\n}\n\n.fancy-3d-button:focus {\n  outline: none;\n  box-shadow: 0 0 0 4px rgba(255, 75, 43, 0.5);\n}\n\n.button-icon {\n  width: 1.5em;\n  height: 1.5em;\n  margin-right: 0.5em;\n  fill: currentColor;\n  transition: transform 0.6s ease-in-out;\n  transform: translateZ(10px); /* Bring SVG out for 3D effect */\n}\n\n.fancy-3d-button:hover .button-icon {\n  transform: rotate(360deg) translateZ(10px); /* Rotate SVG on hover */\n}\n\n.button-text {\n  z-index: 2;\n  transform: translateZ(10px); /* Bring text out for 3D effect */\n  transition: transform 0.6s ease-in-out;\n}\n\n.fancy-3d-button:hover .button-text {\n  transform: translateZ(20px); /* Enhance depth on hover */\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/jeremyssocial_silly-lionfish-21.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"fancy-3d-button\"></button>\n  <view role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"button-icon\"></view>\n    <path d=\"M12 .587l3.668 7.431L24 9.587l-6 5.845L19.335 24 12 20.01 4.665 24 6 15.432 0 9.587l8.332-1.569z\"></path>\n  </svg>\n  <text class=\"button-text\">3D Hover</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySillyLionfish21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by jeremyssocial  - Tags: 3d, red, button, hover, hover effect, hoverme, hover button, 3d button */\n.fancy-3d-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  padding: 30rpx 60rpx;\n  font-size: 1em;\n  font-weight: 700;\n  color: #fff;\n  background: linear-gradient(45deg, #ff416c, #ff4b2b);\n  border: none;\n  border-radius: 100rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.6s ease-in-out;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 16rpx 30rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  perspective: 1000rpx; /* Adding perspective for 3D effect */\n  transform-style: preserve-3d; /* Preserve 3D transformations */\n}\n\n.fancy-3d-button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);\n  z-index: -1;\n  transition: all 0.6s ease-in-out;\n  transform: translateZ(-40rpx); /* 3D depth effect */\n  border-radius: 100rpx;\n}\n\n.fancy-3d-button:hover::before {\n  transform: translateZ(-80rpx); /* Enhance depth on hover */\n}\n\n.fancy-3d-button:hover {\n  transform: rotateX(15deg) rotateY(15deg); /* Rotate on hover for 3D effect */\n}\n\n.fancy-3d-button:focus {\n  outline: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx rgba(255, 75, 43, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button-icon {\n  width: 1.5em;\n  height: 1.5em;\n  margin-right: 0.5em;\n  fill: currentColor;\n  transition: transform 0.6s ease-in-out;\n  transform: translateZ(20rpx); /* Bring SVG out for 3D effect */\n}\n\n.fancy-3d-button:hover .button-icon {\n  transform: rotate(360deg) translateZ(20rpx); /* Rotate SVG on hover */\n}\n\n.button-text {\n  z-index: 2;\n  transform: translateZ(20rpx); /* Bring text out for 3D effect */\n  transition: transform 0.6s ease-in-out;\n}\n\n.fancy-3d-button:hover .button-text {\n  transform: translateZ(40rpx); /* Enhance depth on hover */\n}\n\n",
+    "component_name": "GalaxySillyLionfish21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2113,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.013Z",
+  "updated_at": "2025-07-31T07:55:37.013Z"
+}

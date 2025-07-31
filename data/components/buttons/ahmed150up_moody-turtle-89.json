@@ -1,0 +1,112 @@
+{
+  "id": "ahmed150up_moody-turtle-89",
+  "name": "moody-turtle-89",
+  "category": "buttons",
+  "author": "ahmed150up",
+  "description": "moody-turtle-89 组件 (save, btn, interactive)",
+  "tags": [
+    "save",
+    "btn",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-save\">\n    <svg viewBox=\"0 0 384 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z\"></path></svg>\n    \n  </button>",
+    "css": "/* From Uiverse.io by ahmed150up - Tags: save, btn */\n.btn-save {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 4px;\n  background-color: #f2f2f2;\n  color: #333;\n  font-size: 16px;\n  font-weight: bold;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n\n.btn-save:hover {\n  background-color: #ddd;\n}\n\n.icon {\n  width: 24px;\n  height: 24px;\n  margin-right: 8px;\n}\n\n.icon-path {\n  fill: #333;\n  transition: fill 0.3s ease;\n}\n\n.btn-save:hover .icon-path {\n  fill: #888;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ahmed150up_moody-turtle-89.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-save\"></button>\n    <view viewBox=\"0 0 384 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z\"></path></view>\n    \n  </button>",
+    "script": "export default {\n  name: 'GalaxyMoodyTurtle89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ahmed150up - Tags: save, btn */\n.btn-save {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 20rpx 40rpx;\n  border: none;\n  border-radius: 8rpx;\n  background-color: #f2f2f2;\n  color: #333;\n  font-size: 32rpx;\n  font-weight: bold;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: background-color 0.3s ease;\n}\n\n.btn-save:hover {\n  background-color: #ddd;\n}\n\n.icon {\n  width: 48rpx;\n  height: 48rpx;\n  margin-right: 16rpx;\n}\n\n.icon-path {\n  fill: #333;\n  transition: fill 0.3s ease;\n}\n\n.btn-save:hover .icon-path {\n  fill: #888;\n}\n\n",
+    "component_name": "GalaxyMoodyTurtle89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 922,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.527Z",
+  "updated_at": "2025-07-31T07:55:35.527Z"
+}

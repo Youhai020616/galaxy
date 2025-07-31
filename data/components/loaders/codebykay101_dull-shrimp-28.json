@@ -1,0 +1,93 @@
+{
+  "id": "codebykay101_dull-shrimp-28",
+  "name": "dull-shrimp-28",
+  "category": "loaders",
+  "author": "codebykay101",
+  "description": "dull-shrimp-28 组件 (animation, neon, css, effects)",
+  "tags": [
+    "animation",
+    "neon",
+    "css",
+    "effects"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"square\">\n    <span style=\"--i:0;\"></span>\n    <span style=\"--i:1;\"></span>\n    <span style=\"--i:2;\"></span>\n    <span style=\"--i:3;\"></span>\n  </div>\n  <div class=\"square\">\n    <span style=\"--i:0;\"></span>\n    <span style=\"--i:1;\"></span>\n    <span style=\"--i:2;\"></span>\n    <span style=\"--i:3;\"></span>\n  </div>\n  <div class=\"square\">\n    <span style=\"--i:0;\"></span>\n    <span style=\"--i:1;\"></span>\n    <span style=\"--i:2;\"></span>\n    <span style=\"--i:3;\"></span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by codebykay101 - Tags: animation, neon, css, effects */\n.container {\n  position: relative;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container .square {\n  position: absolute;\n  width: 200px;\n  height: 200px;\n}\n\n.container .square:nth-child(2) {\n  transform: translate(-25%, -25%) rotateX(180deg);\n  filter: hue-rotate(60deg);\n}\n\n.container .square:nth-child(3) {\n  transform: translate(25%, 25%) rotate(180deg);\n  filter: hue-rotate(180deg);\n}\n\n.container .square::before {\n  content: '';\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background: #0f0;\n  box-shadow: 0 0 0 8px #0f03, 0 0 0 15px #0f01;\n  animation: animateSquare 4s linear infinite;\n}\n\n@keyframes animateSquare {\n  0% {\n    transform: translate(2px,2px);\n  }\n\n  25% {\n    transform: translate(178px,2px);\n  }\n\n  50% {\n    transform: translate(178px,178px);\n  }\n\n  75% {\n    transform: translate(2px,178px);\n  }\n\n  100% {\n    transform: translate(2px,2px);\n  }\n}\n\n.container .square span {\n  position: absolute;\n  inset: 10px;\n  overflow: hidden;\n  transform: rotate(calc(90deg * var(--i)));\n}\n\n.container .square span::before {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 4px;\n  background: #0f0;\n  transform: translateX(-100%);\n  animation: animate 4s linear infinite;\n  animation-delay: calc(1s * var(--i));\n}\n\n@keyframes animate {\n  0% {\n    transform: translateX(-100%);\n  }\n\n  50%,100% {\n    transform: translateX(100%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/codebykay101_dull-shrimp-28.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"square\"></view>\n    <text style=\"--i:0;\"></text>\n    <text style=\"--i:1;\"></text>\n    <text style=\"--i:2;\"></text>\n    <text style=\"--i:3;\"></text>\n  </div>\n  <view class=\"square\"></view>\n    <text style=\"--i:0;\"></text>\n    <text style=\"--i:1;\"></text>\n    <text style=\"--i:2;\"></text>\n    <text style=\"--i:3;\"></text>\n  </div>\n  <view class=\"square\"></view>\n    <text style=\"--i:0;\"></text>\n    <text style=\"--i:1;\"></text>\n    <text style=\"--i:2;\"></text>\n    <text style=\"--i:3;\"></text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyDullShrimp28',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by codebykay101 - Tags: animation, neon, css, effects */\n.container {\n  position: relative;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container .square {\n  position: absolute;\n  width: 400rpx;\n  height: 400rpx;\n}\n\n.container .square:nth-child(2) {\n  transform: translate(-25%, -25%) rotateX(180deg);\n  \n}\n\n.container .square:nth-child(3) {\n  transform: translate(25%, 25%) rotate(180deg);\n  \n}\n\n.container .square::before {\n  content: '';\n  position: absolute;\n  width: 40rpx;\n  height: 40rpx;\n  background: #0f0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 16rpx #0f03, 0 0 0 30rpx #0f01;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: animateSquare 4s linear infinite;\n}\n\n@keyframes animateSquare {\n  0% {\n    transform: translate(4rpx,4rpx);\n  }\n\n  25% {\n    transform: translate(356rpx,4rpx);\n  }\n\n  50% {\n    transform: translate(356rpx,356rpx);\n  }\n\n  75% {\n    transform: translate(4rpx,356rpx);\n  }\n\n  100% {\n    transform: translate(4rpx,4rpx);\n  }\n}\n\n.container .square span {\n  position: absolute;\n  inset: 20rpx;\n  overflow: hidden;\n  transform: rotate(calc(90deg * var(--i)));\n}\n\n.container .square span::before {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 8rpx;\n  background: #0f0;\n  transform: translateX(-100%);\n  animation: animate 4s linear infinite;\n  animation-delay: calc(1s * var(--i));\n}\n\n@keyframes animate {\n  0% {\n    transform: translateX(-100%);\n  }\n\n  50%,100% {\n    transform: translateX(100%);\n  }\n}\n",
+    "component_name": "GalaxyDullShrimp28"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2014,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.116Z",
+  "updated_at": "2025-07-31T07:55:41.116Z"
+}

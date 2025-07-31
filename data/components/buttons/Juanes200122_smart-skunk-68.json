@@ -1,0 +1,112 @@
+{
+  "id": "Juanes200122_smart-skunk-68",
+  "name": "smart-skunk-68",
+  "category": "buttons",
+  "author": "Juanes200122",
+  "description": "smart-skunk-68 组件 (simple, animation, button, hover, color, hover effect, interactive)",
+  "tags": [
+    "simple",
+    "animation",
+    "button",
+    "hover",
+    "color",
+    "hover effect",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a href=\"#\" class=\"ov-btn-slide-left\">Izquierda\n</a>",
+    "css": "/* From Uiverse.io by Juanes200122 - Tags: simple, animation, button, hover, color, hover effect */\na {\n  text-decoration: none;\n}\n\n.ov-btn-slide-left {\n  background: #fff;\n  color: #4741d7;\n  border: 2px solid #4741d7;\n  padding: 16px 20px;\n  border-radius: 3px;\n  position: relative;\n  z-index: 1;\n  overflow: hidden;\n  display: inline-block;\n}\n\n.ov-btn-slide-left:hover {\n  color: #fff;\n}\n\n.ov-btn-slide-left::after {\n  content: \"\";\n  background: #4741d7;\n  position: absolute;\n  z-index: -1;\n  padding: 16px 20px;\n  display: block;\n  top: 0;\n  bottom: 0;\n  left: -100%;\n  right: 100%;\n  -webkit-transition: all 0.35s;\n  transition: all 0.35s;\n}\n\n.ov-btn-slide-left:hover::after {\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  -webkit-transition: all 0.35s;\n  transition: all 0.35s;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Juanes200122_smart-skunk-68.html"
+  },
+  "uniapp": {
+    "template": "<navigator href=\"#\" class=\"ov-btn-slide-left\"></navigator>Izquierda\n</a>",
+    "script": "export default {\n  name: 'GalaxySmartSkunk68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Juanes200122 - Tags: simple, animation, button, hover, color, hover effect */\na {\n  text-decoration: none;\n}\n\n.ov-btn-slide-left {\n  background: #fff;\n  color: #4741d7;\n  border: 4rpx solid #4741d7;\n  padding: 32rpx 40rpx;\n  border-radius: 6rpx;\n  position: relative;\n  z-index: 1;\n  overflow: hidden;\n  display: inline-block;\n}\n\n.ov-btn-slide-left:hover {\n  color: #fff;\n}\n\n.ov-btn-slide-left::after {\n  content: \"\";\n  background: #4741d7;\n  position: absolute;\n  z-index: -1;\n  padding: 32rpx 40rpx;\n  display: block;\n  top: 0;\n  bottom: 0;\n  left: -100%;\n  right: 100%;\n  -webkit-transition: all 0.35s;\n  transition: all 0.35s;\n}\n\n.ov-btn-slide-left:hover::after {\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  -webkit-transition: all 0.35s;\n  transition: all 0.35s;\n}\n",
+    "component_name": "GalaxySmartSkunk68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 845,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.608Z",
+  "updated_at": "2025-07-31T07:55:33.608Z"
+}

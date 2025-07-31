@@ -1,0 +1,110 @@
+{
+  "id": "e-coders_breezy-cobra-8",
+  "name": "breezy-cobra-8",
+  "category": "buttons",
+  "author": "e-coders",
+  "description": "breezy-cobra-8 组件 (button)",
+  "tags": [
+    "button"
+  ],
+  "original": {
+    "html": "<button class=\"button-3d button-3d-red\"> Button\n</button>",
+    "css": "/* From Uiverse.io by e-coders - Tags: button */\nbutton.button-3d {\n margin: 10px;\n border-right: 0;\n border-left: 0;\n border-top: 0;\n font-family: inherit;\n font-size: 24px;\n padding: 8px;\n color: rgba(255, 255, 255, 0.788);\n}\n\nbutton.button-3d:active {\n border-bottom: 0;\n}\n\nbutton.button-3d {\n cursor: pointer;\n}\n\n/* RED */\n.button-3d-red {\n border-bottom: 3px solid rgb(117, 28, 28);\n background-color: rgb(248, 91, 91);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/e-coders_breezy-cobra-8.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button-3d button-3d-red\"></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyBreezyCobra8',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by e-coders - Tags: button */\nbutton.button-3d {\n margin: 20rpx;\n border-right: 0;\n border-left: 0;\n border-top: 0;\n font-family: inherit;\n font-size: 48rpx;\n padding: 16rpx;\n color: rgba(255, 255, 255, 0.788);\n}\n\nbutton.button-3d:active {\n border-bottom: 0;\n}\n\nbutton.button-3d {\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n/* RED */\n.button-3d-red {\n border-bottom: 6rpx solid rgb(117, 28, 28);\n background-color: rgb(248, 91, 91);\n}\n",
+    "component_name": "GalaxyBreezyCobra8"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 487,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.424Z",
+  "updated_at": "2025-07-31T07:55:36.424Z"
+}

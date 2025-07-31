@@ -1,0 +1,85 @@
+{
+  "id": "omar-alghaish_moody-wombat-53",
+  "name": "moody-wombat-53",
+  "category": "loaders",
+  "author": "omar-alghaish",
+  "description": "moody-wombat-53 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading\">\n    <div class=\"i\"></div>\n    <div class=\"a\"></div>\n    <div class=\"u\"></div>\n</div>",
+    "css": "/* From Uiverse.io by omar-alghaish - Tags: loader */\n.loading {\n  background-color: rgba(255, 0, 0, 0);\n  align-items: center;\n  justify-content: center;\n  display: flex;\n}\n\n.loading div {\n  background-color: rgb(255, 217, 0);\n  width: 20px;\n  height: 20px;\n  margin: 20px;\n  border-radius: 50px;\n  animation-name: load912355;\n  animation-duration: .9s;\n  animation-iteration-count: infinite;\n  animation-direction: alternate;\n  text-align: center;\n  justify-content: center;\n}\n\n.loading .a {\n  animation-delay: .3s;\n}\n\n.loading .u {\n  animation-delay: .6s;\n}\n\n@keyframes load912355 {\n  0% {\n    transform: translateY(50px) scale(1);\n  }\n\n  100% {\n    transform: translateY(10px) scale(1.8) rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/omar-alghaish_moody-wombat-53.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading\"></view>\n    <view class=\"i\"></view>\n    <view class=\"a\"></view>\n    <view class=\"u\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMoodyWombat53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by omar-alghaish - Tags: loader */\n.loading {\n  background-color: rgba(255, 0, 0, 0);\n  align-items: center;\n  justify-content: center;\n  display: flex;\n}\n\n.loading div {\n  background-color: rgb(255, 217, 0);\n  width: 40rpx;\n  height: 40rpx;\n  margin: 40rpx;\n  border-radius: 100rpx;\n  animation-name: load912355;\n  animation-duration: .9s;\n  animation-iteration-count: infinite;\n  animation-direction: alternate;\n  text-align: center;\n  justify-content: center;\n}\n\n.loading .a {\n  animation-delay: .3s;\n}\n\n.loading .u {\n  animation-delay: .6s;\n}\n\n@keyframes load912355 {\n  0% {\n    transform: translateY(100rpx) scale(1);\n  }\n\n  100% {\n    transform: translateY(20rpx) scale(1.8) rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyMoodyWombat53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 823,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.497Z",
+  "updated_at": "2025-07-31T07:55:42.497Z"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "doniaskima_pretty-dolphin-47",
+  "name": "pretty-dolphin-47",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "pretty-dolphin-47 组件 (simple, material design, neumorphism, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "neumorphism",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, neumorphism, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  height: 60px;\n  aspect-ratio: 1;\n  position: relative;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  border-radius: 50%;\n  transform-origin: bottom;\n}\n\n.loader::after {\n  background: radial-gradient(at 75% 15%,#fffb,#0000 35%),\n    radial-gradient(at 80% 40%,#0000,#0008),\n    radial-gradient(circle  5px,#fff 94%,#0000),\n    radial-gradient(circle 10px,#000 94%,#0000),\n    linear-gradient(#F93318 0 0) top   /100% calc(50% - 5px),\n    linear-gradient(#fff    0 0) bottom/100% calc(50% - 5px)\n    #000;\n  background-repeat: no-repeat;\n  animation: l20 1s infinite cubic-bezier(0.5,120,0.5,-120);\n}\n\n.loader::before {\n  background: #ddd;\n  filter: blur(8px);\n  transform: scaleY(0.4) translate(-13px, 0px);\n}\n\n@keyframes l20 {\n \n  30%,70% {\n    transform: rotate(0deg)\n  }\n\n  49.99% {\n    transform: rotate(0.2deg)\n  }\n\n  50% {\n    transform: rotate(-0.2deg)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_pretty-dolphin-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyPrettyDolphin47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, neumorphism, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  height: 120rpx;\n  aspect-ratio: 1;\n  position: relative;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  border-radius: 50%;\n  transform-origin: bottom;\n}\n\n.loader::after {\n  background: radial-gradient(at 75% 15%,#fffb,#0000 35%),\n    radial-gradient(at 80% 40%,#0000,#0008),\n    radial-gradient(circle  10rpx,#fff 94%,#0000),\n    radial-gradient(circle 20rpx,#000 94%,#0000),\n    linear-gradient(#F93318 0 0) top   /100% calc(50% - 10rpx),\n    linear-gradient(#fff    0 0) bottom/100% calc(50% - 10rpx)\n    #000;\n  background-repeat: no-repeat;\n  animation: l20 1s infinite cubic-bezier(0.5,120,0.5,-120);\n}\n\n.loader::before {\n  background: #ddd;\n  \n  transform: scaleY(0.4) translate(-26rpx, 0rpx);\n}\n\n@keyframes l20 {\n \n  30%,70% {\n    transform: rotate(0deg)\n  }\n\n  49.99% {\n    transform: rotate(0.2deg)\n  }\n\n  50% {\n    transform: rotate(-0.2deg)\n  }\n}\n",
+    "component_name": "GalaxyPrettyDolphin47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1076,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.291Z",
+  "updated_at": "2025-07-31T07:55:41.291Z"
+}

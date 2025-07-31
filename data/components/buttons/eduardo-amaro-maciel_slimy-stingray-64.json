@@ -1,0 +1,114 @@
+{
+  "id": "eduardo-amaro-maciel_slimy-stingray-64",
+  "name": "slimy-stingray-64",
+  "category": "buttons",
+  "author": "eduardo-amaro-maciel",
+  "description": "slimy-stingray-64 组件 (blue, minimalist, button, hover, border, hover effect, css effect, animation, interactive)",
+  "tags": [
+    "blue",
+    "minimalist",
+    "button",
+    "hover",
+    "border",
+    "hover effect",
+    "css effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Button\n</button>",
+    "css": "/* From Uiverse.io by eduardo-amaro-maciel - Tags: blue, minimalist, button, hover, border, hover effect, css effect */\n.button {\n  width: 150px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: transparent;\n  border: 2px solid #000814;\n  overflow: hidden;\n  position: relative;\n  font-size: 16px;\n  font-weight: 500;\n  text-transform: uppercase;\n  transition: 300ms ease;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  width: 150px;\n  height: 150px;\n  border-radius: 50%;\n  background-color: #003566;\n  top: 100%;\n  left: 0;\n  transition: 500ms ease;\n}\n\n.button:hover {\n  color: #fff;\n  letter-spacing: 3px;\n}\n\n.button:hover::before {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/eduardo-amaro-maciel_slimy-stingray-64.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxySlimyStingray64',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by eduardo-amaro-maciel - Tags: blue, minimalist, button, hover, border, hover effect, css effect */\n.button {\n  width: 300rpx;\n  height: 100rpx;\n  border-radius: 100rpx;\n  background-color: transparent;\n  border: 4rpx solid #000814;\n  overflow: hidden;\n  position: relative;\n  font-size: 32rpx;\n  font-weight: 500;\n  text-transform: uppercase;\n  transition: 300ms ease;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  width: 300rpx;\n  height: 300rpx;\n  border-radius: 50%;\n  background-color: #003566;\n  top: 100%;\n  left: 0;\n  transition: 500ms ease;\n}\n\n.button:hover {\n  color: #fff;\n  letter-spacing: 6rpx;\n}\n\n.button:hover::before {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n",
+    "component_name": "GalaxySlimyStingray64"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 783,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.472Z",
+  "updated_at": "2025-07-31T07:55:36.472Z"
+}

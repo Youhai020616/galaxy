@@ -1,0 +1,114 @@
+{
+  "id": "Navarog21_ordinary-rat-19",
+  "name": "ordinary-rat-19",
+  "category": "buttons",
+  "author": "Navarog21",
+  "description": "ordinary-rat-19 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    P L A Y\n    <div id=\"clip\">\n        <div id=\"leftTop\" class=\"corner\"></div>\n        <div id=\"rightBottom\" class=\"corner\"></div>\n        <div id=\"rightTop\" class=\"corner\"></div>\n        <div id=\"leftBottom\" class=\"corner\"></div>\n    </div>\n    <span id=\"rightArrow\" class=\"arrow\"></span>\n    <span id=\"leftArrow\" class=\"arrow\"></span>\n</button>",
+    "css": "/* From Uiverse.io by Navarog21 - Tags: button */\nbutton {\n  position: relative;\n  width: 11em;\n  height: 4em;\n  outline: none;\n  transition: 0.1s;\n  background-color: transparent;\n  border: none;\n  font-size: 13px;\n  font-weight: bold;\n  color: #ddebf0;\n}\n\n#clip {\n  --color: #2761c3;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  border: 5px double var(--color);\n  box-shadow: inset 0px 0px 15px #195480;\n  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);\n}\n\n.arrow {\n  position: absolute;\n  transition: 0.2s;\n  background-color: #2761c3;\n  top: 35%;\n  width: 11%;\n  height: 30%;\n}\n\n#leftArrow {\n  left: -13.5%;\n  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);\n}\n\n#rightArrow {\n  -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);\n  left: 102%;\n}\n\nbutton:hover #rightArrow {\n  background-color: #27c39f;\n  left: -15%;\n  animation: 0.6s ease-in-out both infinite alternate rightArrow8;\n}\n\nbutton:hover #leftArrow {\n  background-color: #27c39f;\n  left: 103%;\n  animation: 0.6s ease-in-out both infinite alternate leftArrow8;\n}\n\n.corner {\n  position: absolute;\n  width: 4em;\n  height: 4em;\n  background-color: #2761c3;\n  box-shadow: inset 1px 1px 8px #2781c3;\n  transform: scale(1) rotate(45deg);\n  transition: 0.2s;\n}\n\n#rightTop {\n  top: -1.98em;\n  left: 91%;\n}\n\n#leftTop {\n  top: -1.96em;\n  left: -3.0em;\n}\n\n#leftBottom {\n  top: 2.10em;\n  left: -2.15em;\n}\n\n#rightBottom {\n  top: 45%;\n  left: 88%;\n}\n\nbutton:hover #leftTop {\n  animation: 0.1s ease-in-out 0.05s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover #rightTop {\n  animation: 0.1s ease-in-out 0.15s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover #rightBottom {\n  animation: 0.1s ease-in-out 0.25s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover #leftBottom {\n  animation: 0.1s ease-in-out 0.35s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover .corner {\n  transform: scale(1.25) rotate(45deg);\n}\n\nbutton:hover #clip {\n  animation: 0.2s ease-in-out 0.55s both greenLight8;\n  --color: #27c39f;\n}\n\n@keyframes changeColor8 {\n  from {\n    background-color: #2781c3;\n  }\n\n  to {\n    background-color: #27c39f;\n  }\n}\n\n@keyframes lightEffect8 {\n  from {\n    box-shadow: 1px 1px 5px #27c39f;\n  }\n\n  to {\n    box-shadow: 0 0 2px #27c39f;\n  }\n}\n\n@keyframes greenLight8 {\n  from {\n  }\n\n  to {\n    box-shadow: inset 0px 0px 32px #27c39f;\n  }\n}\n\n@keyframes leftArrow8 {\n  from {\n    transform: translate(0px);\n  }\n\n  to {\n    transform: translateX(10px);\n  }\n}\n\n@keyframes rightArrow8 {\n  from {\n    transform: translate(0px);\n  }\n\n  to {\n    transform: translateX(-10px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Navarog21_ordinary-rat-19.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    P L A Y\n    <view id=\"clip\"></view>\n        <view id=\"leftTop\" class=\"corner\"></view>\n        <view id=\"rightBottom\" class=\"corner\"></view>\n        <view id=\"rightTop\" class=\"corner\"></view>\n        <view id=\"leftBottom\" class=\"corner\"></view>\n    </div>\n    <text id=\"rightArrow\" class=\"arrow\"></text>\n    <text id=\"leftArrow\" class=\"arrow\"></text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryRat19',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Navarog21 - Tags: button */\nbutton {\n  position: relative;\n  width: 11em;\n  height: 4em;\n  outline: none;\n  transition: 0.1s;\n  background-color: transparent;\n  border: none;\n  font-size: 26rpx;\n  font-weight: bold;\n  color: #ddebf0;\n}\n\n#clip {\n  --color: #2761c3;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  border: 10rpx double var(--color);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 30rpx #195480;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-\n}\n\n.arrow {\n  position: absolute;\n  transition: 0.2s;\n  background-color: #2761c3;\n  top: 35%;\n  width: 11%;\n  height: 30%;\n}\n\n#leftArrow {\n  left: -13.5%;\n  -webkit-\n}\n\n#rightArrow {\n  -webkit-\n  left: 102%;\n}\n\nbutton:hover #rightArrow {\n  background-color: #27c39f;\n  left: -15%;\n  animation: 0.6s ease-in-out both infinite alternate rightArrow8;\n}\n\nbutton:hover #leftArrow {\n  background-color: #27c39f;\n  left: 103%;\n  animation: 0.6s ease-in-out both infinite alternate leftArrow8;\n}\n\n.corner {\n  position: absolute;\n  width: 4em;\n  height: 4em;\n  background-color: #2761c3;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 2rpx 2rpx 16rpx #2781c3;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: scale(1) rotate(45deg);\n  transition: 0.2s;\n}\n\n#rightTop {\n  top: -1.98em;\n  left: 91%;\n}\n\n#leftTop {\n  top: -1.96em;\n  left: -3.0em;\n}\n\n#leftBottom {\n  top: 2.10em;\n  left: -2.15em;\n}\n\n#rightBottom {\n  top: 45%;\n  left: 88%;\n}\n\nbutton:hover #leftTop {\n  animation: 0.1s ease-in-out 0.05s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover #rightTop {\n  animation: 0.1s ease-in-out 0.15s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover #rightBottom {\n  animation: 0.1s ease-in-out 0.25s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover #leftBottom {\n  animation: 0.1s ease-in-out 0.35s both changeColor8,\n  0.2s linear 0.4s both lightEffect8;\n}\n\nbutton:hover .corner {\n  transform: scale(1.25) rotate(45deg);\n}\n\nbutton:hover #clip {\n  animation: 0.2s ease-in-out 0.55s both greenLight8;\n  --color: #27c39f;\n}\n\n@keyframes changeColor8 {\n  from {\n    background-color: #2781c3;\n  }\n\n  to {\n    background-color: #27c39f;\n  }\n}\n\n@keyframes lightEffect8 {\n  from {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 10rpx #27c39f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  to {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 4rpx #27c39f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n@keyframes greenLight8 {\n  from {\n  }\n\n  to {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 64rpx #27c39f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n@keyframes leftArrow8 {\n  from {\n    transform: translate(0rpx);\n  }\n\n  to {\n    transform: translateX(20rpx);\n  }\n}\n\n@keyframes rightArrow8 {\n  from {\n    transform: translate(0rpx);\n  }\n\n  to {\n    transform: translateX(-20rpx);\n  }\n}\n\n\n\n",
+    "component_name": "GalaxyOrdinaryRat19"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3082,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.127Z",
+  "updated_at": "2025-07-31T07:55:34.127Z"
+}

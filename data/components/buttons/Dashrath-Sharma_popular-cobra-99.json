@@ -1,0 +1,121 @@
+{
+  "id": "Dashrath-Sharma_popular-cobra-99",
+  "name": "popular-cobra-99",
+  "category": "buttons",
+  "author": "Dashrath-Sharma",
+  "description": "popular-cobra-99 组件 (button, active, neon, futuristic, animated, border, advanced, transparent, animation, interactive)",
+  "tags": [
+    "button",
+    "active",
+    "neon",
+    "futuristic",
+    "animated",
+    "border",
+    "advanced",
+    "transparent",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Button\n  <span></span>\n  <span></span>\n</button>",
+    "css": "/* From Uiverse.io by Dashrath-Sharma  - Tags: button, active, neon, futuristic, animated, border, advanced, transparent */\n.button {\n  position: relative;\n  font-size: 17px;\n  font-weight: 800;\n  color: #c77dff;\n  padding: 1em 2em;\n  border: none;\n  background: none;\n  clip-path: polygon(0 0, 67% 0, 100% 100%, 33% 100%);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  transition: 0.3s 0.3s;\n}\n\nbutton:hover {\n  text-shadow: 1px 1px 20px #e0aaff, 1px 1px 60px #e0aaff;\n}\n\nbutton:active {\n  transform: scale(0.89);\n}\n\n.button::before,\n.button::after {\n  content: \"\";\n  position: absolute;\n  width: 0;\n  height: 2px;\n  background: #c77dff;\n  transition: width 0.3s 0.6s;\n}\n\n.button::before {\n  top: 0;\n  left: 0;\n  transform-origin: top;\n}\n\n.button::after {\n  bottom: 0;\n  right: 0;\n  transform-origin: bottom;\n}\n\n.button:hover::before,\n.button:hover::after {\n  width: 65%;\n}\n\n.button span {\n  position: absolute;\n  width: 0;\n  height: 2px;\n  background: #c77dff;\n  transition: width 0.3s, transform 0.3s 0.3s;\n  transform: rotate(22.3deg);\n}\n\n.button span:nth-child(1) {\n  top: 0;\n  left: 0;\n  transform-origin: left;\n}\n\n.button span:nth-child(2) {\n  bottom: 0;\n  right: 0;\n  transform-origin: right;\n}\n\n.button:hover span {\n  width: 55%;\n  transform: rotate(50deg);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Dashrath-Sharma_popular-cobra-99.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Button\n  <text></text>\n  <text></text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPopularCobra99',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Dashrath-Sharma  - Tags: button, active, neon, futuristic, animated, border, advanced, transparent */\n.button {\n  position: relative;\n  font-size: 34rpx;\n  font-weight: 800;\n  color: #c77dff;\n  padding: 1em 2em;\n  border: none;\n  background: none;\n  \n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  transition: 0.3s 0.3s;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 40rpx #e0aaff, 2rpx 2rpx 120rpx #e0aaff;\n  /* #endif */\n}\n\nbutton:active {\n  transform: scale(0.89);\n}\n\n.button::before,\n.button::after {\n  content: \"\";\n  position: absolute;\n  width: 0;\n  height: 4rpx;\n  background: #c77dff;\n  transition: width 0.3s 0.6s;\n}\n\n.button::before {\n  top: 0;\n  left: 0;\n  transform-origin: top;\n}\n\n.button::after {\n  bottom: 0;\n  right: 0;\n  transform-origin: bottom;\n}\n\n.button:hover::before,\n.button:hover::after {\n  width: 65%;\n}\n\n.button span {\n  position: absolute;\n  width: 0;\n  height: 4rpx;\n  background: #c77dff;\n  transition: width 0.3s, transform 0.3s 0.3s;\n  transform: rotate(22.3deg);\n}\n\n.button span:nth-child(1) {\n  top: 0;\n  left: 0;\n  transform-origin: left;\n}\n\n.button span:nth-child(2) {\n  bottom: 0;\n  right: 0;\n  transform-origin: right;\n}\n\n.button:hover span {\n  width: 55%;\n  transform: rotate(50deg);\n}\n\n",
+    "component_name": "GalaxyPopularCobra99"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1395,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.075Z",
+  "updated_at": "2025-07-31T07:55:33.075Z"
+}

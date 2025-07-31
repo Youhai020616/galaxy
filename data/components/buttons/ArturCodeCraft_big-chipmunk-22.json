@@ -1,0 +1,126 @@
+{
+  "id": "ArturCodeCraft_big-chipmunk-22",
+  "name": "big-chipmunk-22",
+  "category": "buttons",
+  "author": "ArturCodeCraft",
+  "description": "big-chipmunk-22 组件 (icon, button, theme, theme-switch, menu, menuicon, menu button, animation, interactive)",
+  "tags": [
+    "icon",
+    "button",
+    "theme",
+    "theme-switch",
+    "menu",
+    "menuicon",
+    "menu button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"background\">\n  <button class=\"change-theme__icon\">\n    <span class=\"icon-sun-moon\"></span>\n    <span class=\"sun-rays\">\n      <span></span>\n      <span></span>\n      <span></span>\n      <span></span>\n      <span></span>\n      <span></span>\n      <span></span>\n      <span></span>\n    </span>\n  </button>\n</div>",
+    "css": "/* From Uiverse.io by ArturCodeCraft - Tags: icon, button, theme, theme-switch, menu, menuicon, menu button  */\n/* <reset-style> ============================ */\nbutton {\n  border: none;\n  background: none;\n  padding: 0;\n  margin: 0;\n  cursor: pointer;\n  font-family: inherit;\n}\n/* ============================ */\n/* <style for bg> ======== */\n.background {\n  border-radius: 16px;\n  border: 1px solid #1a1a1a;\n  background: rgba(74, 74, 74, 0.39);\n  mix-blend-mode: luminosity;\n  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20);\n  backdrop-filter: blur(15px);\n  width: 65px;\n  height: 65px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n/* <style for change-theme__icon> ======== */\n.change-theme__icon {\n  width: 32px;\n  height: 32px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  overflow: hidden;\n}\n\n/* .icon-sun-moon */\n.change-theme__icon .icon-sun-moon {\n  width: 11.5px;\n  height: 11.5px;\n  border-radius: 100%;\n  background-color: rgb(28, 28, 30);\n  animation: ease reverse-change-theme .6s forwards;\n  transition: background-color .4s;\n  z-index: 10;\n}\n\n.change-theme__icon:hover .icon-sun-moon {\n  animation: change-theme .4s forwards;\n  background-color: #fff;\n}\n\n@keyframes change-theme {\n  0% {\n    width: 11.5px;\n    height: 11.5px;\n  }\n\n  100% {\n    width: 20px;\n    height: 20px;\n  }\n}\n\n@keyframes reverse-change-theme {\n  0% {\n    width: 20px;\n    height: 20px;\n  }\n\n  50% {\n    width: 10px;\n    height: 10px;\n  }\n\n  100% {\n    width: 11.5px;\n    height: 11.5px;\n  }\n}\n\n/* .icon-sun-moon:before */\n.change-theme__icon .icon-sun-moon:before {\n  content: '';\n  width: 20px;\n  height: 20px;\n  border-radius: 100%;\n  background-color: rgb(49,49,49);\n  position: absolute;\n  top: 2px;\n  right: -2px;\n  transform: translateX(100%) scale(.2);\n  transition: transform .4s;\n}\n\n.change-theme__icon:hover .icon-sun-moon:before {\n  transform: scale(1);\n  transition: transform .4s .12s;\n}\n\n/* sun-rays */\n.sun-rays {\n  width: 22px;\n  height: 22px;\n  position: absolute;\n}\n\n.sun-rays span {\n  width: 2px;\n  height: 4px;\n  border-radius: 2px;\n  background-color: rgb(28, 28, 30);\n  position: absolute;\n}\n\n/* ray */\n.sun-rays span:nth-child(1) {\n  left: 50%;\n  transform: translateX(-50%);\n}\n\n.sun-rays span:nth-child(2) {\n  bottom: 0;\n  left: 50%;\n  transform: translateX(-50%);\n}\n\n.sun-rays span:nth-child(3) {\n  top: 50%;\n  left: 1px;\n  transform: translateY(-50%) rotate(90deg);\n}\n\n.sun-rays span:nth-child(4) {\n  top: 50%;\n  right: 1px;\n  transform: translateY(-50%) rotate(90deg);\n}\n\n.sun-rays span:nth-child(5) {\n  top: 2px;\n  right: 2.5px;\n  transform: rotate(45deg);\n}\n\n.sun-rays span:nth-child(6) {\n  bottom: 2px;\n  left: 2.5px;\n  transform: rotate(45deg);\n}\n\n.sun-rays span:nth-child(7) {\n  top: 2px;\n  left: 2.5px;\n  transform: rotate(-45deg);\n}\n\n.sun-rays span:nth-child(8) {\n  bottom: 2px;\n  right: 2.5px;\n  transform: rotate(-45deg);\n}\n\n.sun-rays {\n  animation: reverse-sun-rays .6s forwards;\n}\n\n.change-theme__icon:hover .sun-rays {\n  animation: ease sun-rays .4s forwards;\n}\n\n@keyframes sun-rays {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(-45deg);\n    opacity: 0;\n  }\n}\n\n@keyframes reverse-sun-rays {\n  0% {\n    transform: rotate(-45deg);\n  }\n\n  50% {\n    transform: rotate(8deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ArturCodeCraft_big-chipmunk-22.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"background\"></view>\n  <button class=\"change-theme__icon\"></button>\n    <text class=\"icon-sun-moon\"></text>\n    <text class=\"sun-rays\"></text>\n      <text></text>\n      <text></text>\n      <text></text>\n      <text></text>\n      <text></text>\n      <text></text>\n      <text></text>\n      <text></text>\n    </span>\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBigChipmunk22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ArturCodeCraft - Tags: icon, button, theme, theme-switch, menu, menuicon, menu button  */\n/* <reset-style> ============================ */\nbutton {\n  border: none;\n  background: none;\n  padding: 0;\n  margin: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: inherit;\n}\n/* ============================ */\n/* <style for bg> ======== */\n.background {\n  border-radius: 32rpx;\n  border: 2rpx solid #1a1a1a;\n  background: rgba(74, 74, 74, 0.39);\n  \n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 2rpx rgba(0, 0, 0, 0.20);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  backdrop-\n  width: 130rpx;\n  height: 130rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n/* <style for change-theme__icon> ======== */\n.change-theme__icon {\n  width: 64rpx;\n  height: 64rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  overflow: hidden;\n}\n\n/* .icon-sun-moon */\n.change-theme__icon .icon-sun-moon {\n  width: 23rpx;\n  height: 23rpx;\n  border-radius: 100%;\n  background-color: rgb(28, 28, 30);\n  animation: ease reverse-change-theme .6s forwards;\n  transition: background-color .4s;\n  z-index: 10;\n}\n\n.change-theme__icon:hover .icon-sun-moon {\n  animation: change-theme .4s forwards;\n  background-color: #fff;\n}\n\n@keyframes change-theme {\n  0% {\n    width: 23rpx;\n    height: 23rpx;\n  }\n\n  100% {\n    width: 40rpx;\n    height: 40rpx;\n  }\n}\n\n@keyframes reverse-change-theme {\n  0% {\n    width: 40rpx;\n    height: 40rpx;\n  }\n\n  50% {\n    width: 20rpx;\n    height: 20rpx;\n  }\n\n  100% {\n    width: 23rpx;\n    height: 23rpx;\n  }\n}\n\n/* .icon-sun-moon:before */\n.change-theme__icon .icon-sun-moon:before {\n  content: '';\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 100%;\n  background-color: rgb(49,49,49);\n  position: absolute;\n  top: 4rpx;\n  right: -4rpx;\n  transform: translateX(100%) scale(.2);\n  transition: transform .4s;\n}\n\n.change-theme__icon:hover .icon-sun-moon:before {\n  transform: scale(1);\n  transition: transform .4s .12s;\n}\n\n/* sun-rays */\n.sun-rays {\n  width: 44rpx;\n  height: 44rpx;\n  position: absolute;\n}\n\n.sun-rays span {\n  width: 4rpx;\n  height: 8rpx;\n  border-radius: 4rpx;\n  background-color: rgb(28, 28, 30);\n  position: absolute;\n}\n\n/* ray */\n.sun-rays span:nth-child(1) {\n  left: 50%;\n  transform: translateX(-50%);\n}\n\n.sun-rays span:nth-child(2) {\n  bottom: 0;\n  left: 50%;\n  transform: translateX(-50%);\n}\n\n.sun-rays span:nth-child(3) {\n  top: 50%;\n  left: 2rpx;\n  transform: translateY(-50%) rotate(90deg);\n}\n\n.sun-rays span:nth-child(4) {\n  top: 50%;\n  right: 2rpx;\n  transform: translateY(-50%) rotate(90deg);\n}\n\n.sun-rays span:nth-child(5) {\n  top: 4rpx;\n  right: 5rpx;\n  transform: rotate(45deg);\n}\n\n.sun-rays span:nth-child(6) {\n  bottom: 4rpx;\n  left: 5rpx;\n  transform: rotate(45deg);\n}\n\n.sun-rays span:nth-child(7) {\n  top: 4rpx;\n  left: 5rpx;\n  transform: rotate(-45deg);\n}\n\n.sun-rays span:nth-child(8) {\n  bottom: 4rpx;\n  right: 5rpx;\n  transform: rotate(-45deg);\n}\n\n.sun-rays {\n  animation: reverse-sun-rays .6s forwards;\n}\n\n.change-theme__icon:hover .sun-rays {\n  animation: ease sun-rays .4s forwards;\n}\n\n@keyframes sun-rays {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(-45deg);\n    opacity: 0;\n  }\n}\n\n@keyframes reverse-sun-rays {\n  0% {\n    transform: rotate(-45deg);\n  }\n\n  50% {\n    transform: rotate(8deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}\n",
+    "component_name": "GalaxyBigChipmunk22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3672,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.673Z",
+  "updated_at": "2025-07-31T07:55:32.673Z"
+}

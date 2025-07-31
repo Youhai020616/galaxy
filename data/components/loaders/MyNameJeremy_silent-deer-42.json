@@ -1,0 +1,89 @@
+{
+  "id": "MyNameJeremy_silent-deer-42",
+  "name": "silent-deer-42",
+  "category": "loaders",
+  "author": "MyNameJeremy",
+  "description": "silent-deer-42 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner-container\">\n  <div class=\"spinner-inner\">\n    <div class=\"spinner-outer\">\n      <div class=\"spinner-inner-1\"></div>\n      <div class=\"spinner-inner-2\"></div>\n      <div class=\"spinner-inner-3\"></div>\n      <div class=\"spinner-inner-4\"></div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by MyNameJeremy - Tags: loader */\n.spinner-container {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n}\n\n.spinner-inner {\n  position: relative;\n  width: 60px;\n  height: 60px;\n  border-radius: 50%;\n  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2), -10px -10px 20px 0px rgba(255, 255, 255, 0.5);\n}\n\n.spinner-outer {\n  position: relative;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  box-shadow: -10px -10px 20px 0px rgba(255, 255, 255, 0.5), 10px 10px 20px 0px rgba(0, 0, 0, 0.2);\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-1 {\n  position: absolute;\n  top: 10px;\n  left: 10px;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0\n  0.2), -10px -10px 20px 0px rgba(255, 255, 255, 0.5);\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-2 {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2), -10px -10px 20px 0px rgba(255, 255, 255, 0.5);\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-3 {\n  position: absolute;\n  bottom: 10px;\n  left: 10px;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2), -10px -10px 20px 0px rgba(255, 255, 255, 0.5);\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-4 {\n  position: absolute;\n  bottom: 10px;\n  right: 10px;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2), -10px -10px 20px 0px rgba(255, 255, 255, 0.5);\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n@keyframes spinner-rotate_51023 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/MyNameJeremy_silent-deer-42.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner-container\"></view>\n  <view class=\"spinner-inner\"></view>\n    <view class=\"spinner-outer\"></view>\n      <view class=\"spinner-inner-1\"></view>\n      <view class=\"spinner-inner-2\"></view>\n      <view class=\"spinner-inner-3\"></view>\n      <view class=\"spinner-inner-4\"></view>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySilentDeer42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MyNameJeremy - Tags: loader */\n.spinner-container {\n  position: relative;\n  width: 200rpx;\n  height: 200rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n}\n\n.spinner-inner {\n  position: relative;\n  width: 120rpx;\n  height: 120rpx;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 40rpx 0rpx rgba(0, 0, 0, 0.2), -20rpx -20rpx 40rpx 0rpx rgba(255, 255, 255, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.spinner-outer {\n  position: relative;\n  width: 80rpx;\n  height: 80rpx;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx -20rpx 40rpx 0rpx rgba(255, 255, 255, 0.5), 20rpx 20rpx 40rpx 0rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-1 {\n  position: absolute;\n  top: 20rpx;\n  left: 20rpx;\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 40rpx 0rpx rgba(0, 0, 0\n  0.2), -20rpx -20rpx 40rpx 0rpx rgba(255, 255, 255, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-2 {\n  position: absolute;\n  top: 20rpx;\n  right: 20rpx;\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 40rpx 0rpx rgba(0, 0, 0, 0.2), -20rpx -20rpx 40rpx 0rpx rgba(255, 255, 255, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-3 {\n  position: absolute;\n  bottom: 20rpx;\n  left: 20rpx;\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 40rpx 0rpx rgba(0, 0, 0, 0.2), -20rpx -20rpx 40rpx 0rpx rgba(255, 255, 255, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n.spinner-inner-4 {\n  position: absolute;\n  bottom: 20rpx;\n  right: 20rpx;\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  background-color: rgba(0, 0, 0, 0.2);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 40rpx 0rpx rgba(0, 0, 0, 0.2), -20rpx -20rpx 40rpx 0rpx rgba(255, 255, 255, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 10;\n  animation: spinner-rotate_51023 2s ease infinite;\n}\n\n@keyframes spinner-rotate_51023 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxySilentDeer42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2409,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.718Z",
+  "updated_at": "2025-07-31T07:55:39.718Z"
+}

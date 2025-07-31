@@ -1,0 +1,120 @@
+{
+  "id": "LilaRest_chilly-moth-52",
+  "name": "chilly-moth-52",
+  "category": "buttons",
+  "author": "LilaRest",
+  "description": "chilly-moth-52 组件 (neumorphism, skeuomorphism, animation, minimalist, social, button, like, heart, realistic, favorite, interactive)",
+  "tags": [
+    "neumorphism",
+    "skeuomorphism",
+    "animation",
+    "minimalist",
+    "social",
+    "button",
+    "like",
+    "heart",
+    "realistic",
+    "favorite",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <svg height=\"32\" width=\"32\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0H24V24H0z\" fill=\"none\"></path><path d=\"M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z\"></path></svg>\n</button>",
+    "css": "/* From Uiverse.io by LilaRest - Tags: neumorphism, skeuomorphism, animation, minimalist, social, button, like, heart, realistic, favorite */\nbutton {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 20px 22px 20px 22px;\n  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;\n  background-color: #e8e8e8;\n  border-color: #ffe2e2;\n  border-style: solid;\n  border-width: 9px;\n  border-radius: 35px;\n  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), \n  border-color 400ms ease-in-out,\n  background-color 400ms ease-in-out;\n  word-spacing: -2px;\n}\n\n@keyframes movingBorders {\n  0% {\n    border-color: #fce4e4;\n  }\n\n  50% {\n    border-color: #ffd8d8;\n  }\n\n  90% {\n    border-color: #fce4e4;\n  }\n}\n\nbutton:hover {\n  background-color: #eee;\n  transform: scale(105%);\n  animation: movingBorders 3s infinite;\n}\n\nbutton svg {\n  fill: rgb(255, 110, 110);\n}\n\n@keyframes beatingHeart {\n  0% {\n    transform: scale(1);\n  }\n\n  15% {\n    transform: scale(1.15);\n  }\n\n  30% {\n    transform: scale(1);\n  }\n\n  45% {\n    transform: scale(1.15);\n  }\n\n  60% {\n    transform: scale(1);\n  }\n}\n\nbutton:hover svg {\n  transform: scale(105%);\n  border-color: #ffd8d8;\n  animation: beatingHeart 1.2s infinite;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/LilaRest_chilly-moth-52.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view height=\"32\" width=\"32\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0H24V24H0z\" fill=\"none\"></path><path d=\"M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z\"></path></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChillyMoth52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by LilaRest - Tags: neumorphism, skeuomorphism, animation, minimalist, social, button, like, heart, realistic, favorite */\nbutton {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 40rpx 44rpx 40rpx 44rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(10, 37, 64, 0.35) 0rpx -4rpx 12rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: #e8e8e8;\n  border-color: #ffe2e2;\n  border-style: solid;\n  border-width: 18rpx;\n  border-radius: 70rpx;\n  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), \n  border-color 400ms ease-in-out,\n  background-color 400ms ease-in-out;\n  word-spacing: -4rpx;\n}\n\n@keyframes movingBorders {\n  0% {\n    border-color: #fce4e4;\n  }\n\n  50% {\n    border-color: #ffd8d8;\n  }\n\n  90% {\n    border-color: #fce4e4;\n  }\n}\n\nbutton:hover {\n  background-color: #eee;\n  transform: scale(105%);\n  animation: movingBorders 3s infinite;\n}\n\nbutton svg {\n  fill: rgb(255, 110, 110);\n}\n\n@keyframes beatingHeart {\n  0% {\n    transform: scale(1);\n  }\n\n  15% {\n    transform: scale(1.15);\n  }\n\n  30% {\n    transform: scale(1);\n  }\n\n  45% {\n    transform: scale(1.15);\n  }\n\n  60% {\n    transform: scale(1);\n  }\n}\n\nbutton:hover svg {\n  transform: scale(105%);\n  border-color: #ffd8d8;\n  animation: beatingHeart 1.2s infinite;\n}\n\n",
+    "component_name": "GalaxyChillyMoth52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1523,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.833Z",
+  "updated_at": "2025-07-31T07:55:33.833Z"
+}

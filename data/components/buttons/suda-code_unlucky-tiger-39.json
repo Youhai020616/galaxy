@@ -1,0 +1,115 @@
+{
+  "id": "suda-code_unlucky-tiger-39",
+  "name": "unlucky-tiger-39",
+  "category": "buttons",
+  "author": "suda-code",
+  "description": "unlucky-tiger-39 组件 (green, button, duolingo, animation)",
+  "tags": [
+    "green",
+    "button",
+    "duolingo",
+    "animation"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Duolingo Button\n</button>",
+    "css": "/* From Uiverse.io by suda-code - Tags: green, button, duolingo */\nbutton {\n  align-items: center;\n  color: #ffffff;\n  font-size: 18px;\n  background: #58cc02;\n  border: none !important;\n  padding: 15px 16px;\n  box-shadow: 0 4px 0 #58a700;\n  border-radius: 12px;\n  cursor: pointer;\n}\n\nbutton:active {\n  box-shadow: none;\n  transform: translate(0, 4px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/suda-code_unlucky-tiger-39.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Duolingo Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyUnluckyTiger39',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by suda-code - Tags: green, button, duolingo */\nbutton {\n  align-items: center;\n  color: #ffffff;\n  font-size: 36rpx;\n  background: #58cc02;\n  border: none !important;\n  padding: 30rpx 32rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 0 #58a700;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 24rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(0, 8rpx);\n}\n",
+    "component_name": "GalaxyUnluckyTiger39"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 408,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.907Z",
+  "updated_at": "2025-07-31T07:55:37.907Z"
+}

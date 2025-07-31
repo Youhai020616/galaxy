@@ -1,0 +1,113 @@
+{
+  "id": "hnguyentrung20_slimy-dingo-46",
+  "name": "slimy-dingo-46",
+  "category": "buttons",
+  "author": "hnguyentrung20",
+  "description": "slimy-dingo-46 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <div class=\"progress\">\n     <div class=\"progress-bar\"> </div>\n  </div>\n  \n  <p class=\"before-scan\">Find aliens</p>\n  <p class=\"scaning\">Scanning</p>\n  <p class=\"complete\">No aliens found</p>\n</button>",
+    "css": "/* From Uiverse.io by hnguyentrung20 - Tags: button */\n@keyframes MoveBackground {\n  0% {\n    background-position-x: 0;\n  }\n\n  100% {\n    background-position-x: -165px;\n  }\n}\n\n@keyframes Scaning {\n  0% {\n    width: 0%;\n  }\n\n  30% {\n    width: 10%;\n  }\n\n  70% {\n    width: 40%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}\n\nbutton {\n  background: none;\n  font-size: 20px;\n  font-weight: 700;\n  color: black;\n  text-transform: uppercase;\n  padding: 10px 30px;\n  position: relative;\n  background-color: white;\n  border-radius: 10px;\n  overflow: hidden;\n  transition-duration: 300ms;\n  border: none;\n  max-width: 1370px;\n  width: fit-content;\n}\n\nbutton:hover {\n  color: white;\n  border: 4px black solid;\n  max-width: 170px;\n  padding: 5px 30px;\n}\n\nbutton:active {\n  background: none;\n  color: white;\n  border: 4px #1F8A70 solid;\n  background-color: #1F8A70;\n  max-width: 170px;\n}\n\nbutton .progress {\n  display: none;\n}\n\nbutton:active .progress .progress-bar {\n  display: none;\n}\n\nbutton:hover .progress {\n /* background-image: repeating-linear-gradient(-28deg, transparent, transparent 31px, #DC0000 19px, #DC000010 70px); */\n  display: block;\n  user-select: none;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  transition-duration: 600ms;\n  overflow: hidden;\n  animation: Scaning 3s linear;\n}\n\n.progress .progress-bar {\n  width: 165px;\n  height: 100%;\n  background-image: repeating-linear-gradient(-25deg, transparent, transparent 31px, #000000 19px, #000000ee 70px);\n  animation: MoveBackground 2s linear infinite reverse;\n}\n\nbutton::before {\n  /* content: \"<d\"; */\n  background-color: white;\n  height: 100%;\n  width: 100%;\n}\n\nbutton:hover .before-scan,\n .complete, .scaning {\n  display: none;\n}\n\nbutton:hover .scaning {\n  display: block;\n  mix-blend-mode: difference;\n  padding: 0px 0px;\n}\n\nbutton:active .scaning {\n  display: none;\n}\n\nbutton:active .complete {\n  display: block;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/hnguyentrung20_slimy-dingo-46.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view class=\"progress\"></view>\n     <view class=\"progress-bar\"> </view>\n  </div>\n  \n  <text class=\"before-scan\">Find aliens</text>\n  <text class=\"scaning\">Scanning</text>\n  <text class=\"complete\">No aliens found</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySlimyDingo46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by hnguyentrung20 - Tags: button */\n@keyframes MoveBackground {\n  0% {\n    background-position-x: 0;\n  }\n\n  100% {\n    background-position-x: -330rpx;\n  }\n}\n\n@keyframes Scaning {\n  0% {\n    width: 0%;\n  }\n\n  30% {\n    width: 10%;\n  }\n\n  70% {\n    width: 40%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}\n\nbutton {\n  background: none;\n  font-size: 40rpx;\n  font-weight: 700;\n  color: black;\n  text-transform: uppercase;\n  padding: 20rpx 60rpx;\n  position: relative;\n  background-color: white;\n  border-radius: 20rpx;\n  overflow: hidden;\n  transition-duration: 300ms;\n  border: none;\n  max-width: 2740rpx;\n  width: fit-content;\n}\n\nbutton:hover {\n  color: white;\n  border: 8rpx black solid;\n  max-width: 340rpx;\n  padding: 10rpx 60rpx;\n}\n\nbutton:active {\n  background: none;\n  color: white;\n  border: 8rpx #1F8A70 solid;\n  background-color: #1F8A70;\n  max-width: 340rpx;\n}\n\nbutton .progress {\n  display: none;\n}\n\nbutton:active .progress .progress-bar {\n  display: none;\n}\n\nbutton:hover .progress {\n /* background-image: repeating-linear-gradient(-28deg, transparent, transparent 62rpx, #DC0000 38rpx, #DC000010 140rpx); */\n  display: block;\n  user-select: none;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  transition-duration: 600ms;\n  overflow: hidden;\n  animation: Scaning 3s linear;\n}\n\n.progress .progress-bar {\n  width: 330rpx;\n  height: 100%;\n  background-image: repeating-linear-gradient(-25deg, transparent, transparent 62rpx, #000000 38rpx, #000000ee 140rpx);\n  animation: MoveBackground 2s linear infinite reverse;\n}\n\nbutton::before {\n  /* content: \"<d\"; */\n  background-color: white;\n  height: 100%;\n  width: 100%;\n}\n\nbutton:hover .before-scan,\n .complete, .scaning {\n  display: none;\n}\n\nbutton:hover .scaning {\n  display: block;\n  \n  padding: 0rpx 0rpx;\n}\n\nbutton:active .scaning {\n  display: none;\n}\n\nbutton:active .complete {\n  display: block;\n}\n",
+    "component_name": "GalaxySlimyDingo46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mix-blend-mode 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mix-blend-mode 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2140,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.933Z",
+  "updated_at": "2025-07-31T07:55:36.933Z"
+}

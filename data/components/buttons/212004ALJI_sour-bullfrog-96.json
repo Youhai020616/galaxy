@@ -1,0 +1,112 @@
+{
+  "id": "212004ALJI_sour-bullfrog-96",
+  "name": "sour-bullfrog-96",
+  "category": "buttons",
+  "author": "212004ALJI",
+  "description": "sour-bullfrog-96 组件 (button, gradient, interactive)",
+  "tags": [
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  INPUT\n</button>",
+    "css": "/* From Uiverse.io by 212004ALJI - Tags: button */\nbutton {\n  /* padding: 5px 10px; */\n  height: 50px;\n  width: 100px;\n  font-size: 20px;\n  position: relative;\n  border: navajowhite;\n  background-color: #222;\n  color: aliceblue;\n  z-index: 1;\n  overflow: hidden;\n  transition: all 0.3s;\n  box-shadow: 2px 2px 2px red;\n}\n\nbutton::before {\n  content: '';\n  height: 10px;\n  width: 30px;\n  position: absolute;\n  background-image: linear-gradient(45deg, salmon,red);\n  left: -10px;\n  top: 0;\n  z-index: -1;\n  transition: 0.3s ease-in-out;\n  border-radius: 5px;\n}\n\nbutton:hover::before {\n  height: 100px;\n  width: 100px;\n}\n\nbutton:hover {\n  border-radius: 5px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/212004ALJI_sour-bullfrog-96.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  INPUT\n</button>",
+    "script": "export default {\n  name: 'GalaxySourBullfrog96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by 212004ALJI - Tags: button */\nbutton {\n  /* padding: 10rpx 20rpx; */\n  height: 100rpx;\n  width: 200rpx;\n  font-size: 40rpx;\n  position: relative;\n  border: navajowhite;\n  background-color: #222;\n  color: aliceblue;\n  z-index: 1;\n  overflow: hidden;\n  transition: all 0.3s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 4rpx red;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton::before {\n  content: '';\n  height: 20rpx;\n  width: 60rpx;\n  position: absolute;\n  background-image: linear-gradient(45deg, salmon,red);\n  left: -20rpx;\n  top: 0;\n  z-index: -1;\n  transition: 0.3s ease-in-out;\n  border-radius: 10rpx;\n}\n\nbutton:hover::before {\n  height: 200rpx;\n  width: 200rpx;\n}\n\nbutton:hover {\n  border-radius: 10rpx;\n}\n\n",
+    "component_name": "GalaxySourBullfrog96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 687,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.424Z",
+  "updated_at": "2025-07-31T07:55:32.424Z"
+}

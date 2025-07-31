@@ -1,0 +1,116 @@
+{
+  "id": "ilyas-hadi_good-deer-47",
+  "name": "good-deer-47",
+  "category": "buttons",
+  "author": "ilyas-hadi",
+  "description": "good-deer-47 组件 (button, accessibility, 3d button, 3d form, 3d hover, animation, interactive)",
+  "tags": [
+    "button",
+    "accessibility",
+    "3d button",
+    "3d form",
+    "3d hover",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Button\n</button>",
+    "css": "/* From Uiverse.io by ilyas-hadi - Tags: button, accessibility, 3d button, 3d form , 3d hover */\n.button {\n  padding: 1.1rem 2.2rem;\n  font-size: 1rem;\n  color: #fff;\n  font-weight: 600;\n  transition: all .2s;\n  position: relative;\n  border: none;\n  background: #000;\n}\n\n.button:before,.button:after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  background: #ff3d00;\n  height: 108%;\n  width: 0;\n  z-index: -1;\n  transition: all .7s;\n  transform: translateY(-50%);\n}\n\n.button:before {\n  left: 0%;\n}\n\n.button:after {\n  right: 0%;\n}\n\n.button:hover {\n  color: #fff;\n  box-shadow: #f51a1a7f 0 30px 60px -12px inset, #ff00007f 0 18px 36px -18px inset;\n  z-index: 2;\n}\n\n.button:hover::before {\n  width: 50%;\n  left: 50%;\n}\n\n.button:hover::after {\n  width: 50%;\n  right: 50%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ilyas-hadi_good-deer-47.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyGoodDeer47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ilyas-hadi - Tags: button, accessibility, 3d button, 3d form , 3d hover */\n.button {\n  padding: 1.1rem 2.2rem;\n  font-size: 1rem;\n  color: #fff;\n  font-weight: 600;\n  transition: all .2s;\n  position: relative;\n  border: none;\n  background: #000;\n}\n\n.button:before,.button:after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  background: #ff3d00;\n  height: 108%;\n  width: 0;\n  z-index: -1;\n  transition: all .7s;\n  transform: translateY(-50%);\n}\n\n.button:before {\n  left: 0%;\n}\n\n.button:after {\n  right: 0%;\n}\n\n.button:hover {\n  color: #fff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #f51a1a7f 0 60rpx 120rpx -24rpx inset, #ff00007f 0 36rpx 72rpx -36rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 2;\n}\n\n.button:hover::before {\n  width: 50%;\n  left: 50%;\n}\n\n.button:hover::after {\n  width: 50%;\n  right: 50%;\n}\n",
+    "component_name": "GalaxyGoodDeer47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 822,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.978Z",
+  "updated_at": "2025-07-31T07:55:36.978Z"
+}

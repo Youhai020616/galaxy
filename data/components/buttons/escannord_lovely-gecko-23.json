@@ -1,0 +1,117 @@
+{
+  "id": "escannord_lovely-gecko-23",
+  "name": "lovely-gecko-23",
+  "category": "buttons",
+  "author": "escannord",
+  "description": "lovely-gecko-23 组件 (icon, button, hover, text animation, animation, interactive)",
+  "tags": [
+    "icon",
+    "button",
+    "hover",
+    "text animation",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"button\">\n  <span class=\"text\">hover me</span>\n  <span class=\"arrow\"></span>\n</div>",
+    "css": "/* From Uiverse.io by escannord  - Tags: icon, button, hover, text animation */\n.button {\n  --color: rgb(56, 55, 100);\n  padding: 1rem 2rem;\n  background-color: transparent;\n  color: var(--color);\n  font-weight: bolder;\n  text-transform: uppercase;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  cursor: pointer;\n  position: relative;\n  border-radius: 5px;\n}\n\n.arrow {\n  display: inline-flex;\n  position: relative;\n  width: 30px;\n  height: 15px;\n  margin-left: 0.5rem;\n}\n\n.arrow::after,\n.arrow::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  border-color: var(--color);\n}\n\n.arrow::after {\n  width: 10px;\n  height: 0;\n  border: 2px solid var(--color);\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n}\n\n.arrow::before {\n  width: 10px;\n  height: 10px;\n  border-top: 4px solid var(--color);\n  border-right: 4px solid var(--color);\n  left: 3px;\n  top: 50%;\n  transform: translateY(-50%) rotate(45deg);\n}\n\n.button:hover {\n  background-color: var(--color);\n  color: white;\n}\n\n.button:hover .arrow {\n  transform: translateX(10px);\n}\n\n.button:hover .text {\n  transform: translateX(10px);\n}\n\n.button:hover .arrow::after {\n  width: 25px;\n  border-color: white;\n}\n\n.button:hover .arrow::before {\n  left: 15px;\n  border-color: white;\n}\n\n.button,\n.text,\n.arrow,\n.arrow::after,\n.arrow::before,\n.button::before,\n.button::after {\n  transition: all 0.3s, box-shadow 0.2s;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  height: 100%;\n  width: 10px;\n  border-radius: 5px;\n  border: solid 3px var(--color);\n  border-right-color: transparent;\n  background-color: transparent;\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.button::after {\n  content: \"\";\n  position: absolute;\n  height: 100%;\n  width: 10px;\n  border-radius: 5px;\n  border: solid 3px var(--color);\n  border-left-color: transparent;\n  background-color: transparent;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.button:hover:before,\n.button:hover:after {\n  width: 50% !important;\n}\n\n.button:active {\n  box-shadow: 0px 0px 0px 7px rgba(79, 78, 105, 0.295);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/escannord_lovely-gecko-23.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"button\"></view>\n  <text class=\"text\">hover me</text>\n  <text class=\"arrow\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLovelyGecko23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by escannord  - Tags: icon, button, hover, text animation */\n.button {\n  --color: rgb(56, 55, 100);\n  padding: 1rem 2rem;\n  background-color: transparent;\n  color: var(--color);\n  font-weight: bolder;\n  text-transform: uppercase;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  border-radius: 10rpx;\n}\n\n.arrow {\n  display: inline-flex;\n  position: relative;\n  width: 60rpx;\n  height: 30rpx;\n  margin-left: 0.5rem;\n}\n\n.arrow::after,\n.arrow::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  border-color: var(--color);\n}\n\n.arrow::after {\n  width: 20rpx;\n  height: 0;\n  border: 4rpx solid var(--color);\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n}\n\n.arrow::before {\n  width: 20rpx;\n  height: 20rpx;\n  border-top: 8rpx solid var(--color);\n  border-right: 8rpx solid var(--color);\n  left: 6rpx;\n  top: 50%;\n  transform: translateY(-50%) rotate(45deg);\n}\n\n.button:hover {\n  background-color: var(--color);\n  color: white;\n}\n\n.button:hover .arrow {\n  transform: translateX(20rpx);\n}\n\n.button:hover .text {\n  transform: translateX(20rpx);\n}\n\n.button:hover .arrow::after {\n  width: 50rpx;\n  border-color: white;\n}\n\n.button:hover .arrow::before {\n  left: 30rpx;\n  border-color: white;\n}\n\n.button,\n.text,\n.arrow,\n.arrow::after,\n.arrow::before,\n.button::before,\n.button::after {\n  transition: all 0.3s, box-shadow 0.2s;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  height: 100%;\n  width: 20rpx;\n  border-radius: 10rpx;\n  border: solid 6rpx var(--color);\n  border-right-color: transparent;\n  background-color: transparent;\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.button::after {\n  content: \"\";\n  position: absolute;\n  height: 100%;\n  width: 20rpx;\n  border-radius: 10rpx;\n  border: solid 6rpx var(--color);\n  border-left-color: transparent;\n  background-color: transparent;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.button:hover:before,\n.button:hover:after {\n  width: 50% !important;\n}\n\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 14rpx rgba(79, 78, 105, 0.295);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyLovelyGecko23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2201,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.633Z",
+  "updated_at": "2025-07-31T07:55:36.633Z"
+}

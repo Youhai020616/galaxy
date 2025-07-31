@@ -1,0 +1,88 @@
+{
+  "id": "doniaskima_wet-parrot-70",
+  "name": "wet-parrot-70",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "wet-parrot-70 组件 (simple, material design, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 80px;\n  height: 70px;\n  border: 5px solid #000;\n  padding: 0 8px;\n  box-sizing: border-box;\n  background: linear-gradient(#fff 0 0) 0    0/8px 20px,\n    linear-gradient(#fff 0 0) 100% 0/8px 20px,\n    radial-gradient(farthest-side,#fff 90%,#0000) 0 5px/8px 8px content-box,\n    #000;\n  background-repeat: no-repeat;\n  animation: l3 2s infinite linear;\n}\n\n@keyframes l3 {\n  25% {\n    background-position: 0 0   ,100% 100%,100% calc(100% - 5px)\n  }\n\n  50% {\n    background-position: 0 100%,100% 100%,0    calc(100% - 5px)\n  }\n\n  75% {\n    background-position: 0 100%,100%    0,100% 5px\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_wet-parrot-70.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyWetParrot70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 160rpx;\n  height: 140rpx;\n  border: 10rpx solid #000;\n  padding: 0 16rpx;\n  box-sizing: border-box;\n  background: linear-gradient(#fff 0 0) 0    0/16rpx 40rpx,\n    linear-gradient(#fff 0 0) 100% 0/16rpx 40rpx,\n    radial-gradient(farthest-side,#fff 90%,#0000) 0 10rpx/16rpx 16rpx content-box,\n    #000;\n  background-repeat: no-repeat;\n  animation: l3 2s infinite linear;\n}\n\n@keyframes l3 {\n  25% {\n    background-position: 0 0   ,100% 100%,100% calc(100% - 10rpx)\n  }\n\n  50% {\n    background-position: 0 100%,100% 100%,0    calc(100% - 10rpx)\n  }\n\n  75% {\n    background-position: 0 100%,100%    0,100% 10rpx\n  }\n}\n",
+    "component_name": "GalaxyWetParrot70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 752,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.323Z",
+  "updated_at": "2025-07-31T07:55:41.323Z"
+}

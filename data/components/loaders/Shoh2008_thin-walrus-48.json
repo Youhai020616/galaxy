@@ -1,0 +1,86 @@
+{
+  "id": "Shoh2008_thin-walrus-48",
+  "name": "thin-walrus-48",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "thin-walrus-48 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 215px;\n  height: 215px;\n  display: block;\n  margin: auto;\n  position: relative;\n  background: #FFF;\n  box-sizing: border-box;\n  border-radius: 10px;\n}\n\n.loader::after {\n  content: '';\n  width: calc(100% - 30px);\n  height: calc(100% - 30px);\n  top: 15px;\n  left: 15px;\n  position: absolute;\n  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),\n   radial-gradient(circle 50px , #DDD 100%, transparent 0),\n   linear-gradient(#DDD 16px, transparent 0),\n   linear-gradient(#DDD 24px, transparent 0);\n  background-repeat: no-repeat;\n  background-size: 75px 175px, 100% 100px, 80% 16px, 80% 16px;\n  background-position: -185px 0, center 10px, center 125px, center 155px;\n  box-sizing: border-box;\n  animation: animloader 1s linear infinite;\n}\n\n@keyframes animloader {\n  to {\n    background-position: 185px 0, center 10px, center 125px, center 155px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_thin-walrus-48.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyThinWalrus48',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 430rpx;\n  height: 430rpx;\n  display: block;\n  margin: auto;\n  position: relative;\n  background: #FFF;\n  box-sizing: border-box;\n  border-radius: 20rpx;\n}\n\n.loader::after {\n  content: '';\n  width: calc(100% - 60rpx);\n  height: calc(100% - 60rpx);\n  top: 30rpx;\n  left: 30rpx;\n  position: absolute;\n  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),\n   radial-gradient(circle 100rpx , #DDD 100%, transparent 0),\n   linear-gradient(#DDD 32rpx, transparent 0),\n   linear-gradient(#DDD 48rpx, transparent 0);\n  background-repeat: no-repeat;\n  background-size: 150rpx 350rpx, 100% 200rpx, 80% 32rpx, 80% 32rpx;\n  background-position: -370rpx 0, center 20rpx, center 250rpx, center 310rpx;\n  box-sizing: border-box;\n  animation: animloader 1s linear infinite;\n}\n\n@keyframes animloader {\n  to {\n    background-position: 370rpx 0, center 20rpx, center 250rpx, center 310rpx;\n  }\n}\n  \n",
+    "component_name": "GalaxyThinWalrus48"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1001,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.466Z",
+  "updated_at": "2025-07-31T07:55:40.466Z"
+}

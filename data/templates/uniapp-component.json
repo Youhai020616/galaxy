@@ -1,0 +1,89 @@
+{
+  "id": "",
+  "name": "",
+  "category": "",
+  "author": "",
+  "description": "",
+  "tags": [],
+  "original": {
+    "html": "",
+    "css": "",
+    "file_path": ""
+  },
+  "uniapp": {
+    "template": "",
+    "script": "",
+    "style": "",
+    "component_name": ""
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "",
+      "type": "",
+      "default": "",
+      "required": false,
+      "description": "",
+      "validator": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "",
+      "description": "",
+      "parameters": []
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 0,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "",
+  "updated_at": ""
+}

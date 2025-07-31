@@ -1,0 +1,88 @@
+{
+  "id": "doniaskima_yellow-deer-12",
+  "name": "yellow-deer-12",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "yellow-deer-12 组件 (simple, material design, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 120px;\n  height: 20px;\n  background: linear-gradient(#000 50%,#0000 0),\n    linear-gradient(#0000 50%,#000 0),\n    linear-gradient(#000 50%,#0000 0),\n    linear-gradient(#0000 50%,#000 0),\n    linear-gradient(#000 50%,#0000 0),\n    linear-gradient(#0000 50%,#000 0)\n    #ddd;\n  background-size: calc(100%/6 + 1px) 200%;\n  background-repeat: no-repeat;\n  animation: l12 2s infinite;\n}\n\n@keyframes l12 {\n  0% {\n    background-position: calc(0*100%/5) 100%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  16.67% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  33.33% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  50% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  66.67% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  83.33% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5)   0%\n  }\n\n  100% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5) 100%\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_yellow-deer-12.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyYellowDeer12',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 240rpx;\n  height: 40rpx;\n  background: linear-gradient(#000 50%,#0000 0),\n    linear-gradient(#0000 50%,#000 0),\n    linear-gradient(#000 50%,#0000 0),\n    linear-gradient(#0000 50%,#000 0),\n    linear-gradient(#000 50%,#0000 0),\n    linear-gradient(#0000 50%,#000 0)\n    #ddd;\n  background-size: calc(100%/6 + 2rpx) 200%;\n  background-repeat: no-repeat;\n  animation: l12 2s infinite;\n}\n\n@keyframes l12 {\n  0% {\n    background-position: calc(0*100%/5) 100%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  16.67% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  33.33% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  50% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  66.67% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5) 100%,calc(5*100%/5)   0%\n  }\n\n  83.33% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5)   0%\n  }\n\n  100% {\n    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5) 100%\n  }\n}\n",
+    "component_name": "GalaxyYellowDeer12"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1684,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.327Z",
+  "updated_at": "2025-07-31T07:55:41.327Z"
+}

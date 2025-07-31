@@ -1,0 +1,89 @@
+{
+  "id": "BlagaDavid74257_warm-walrus-89",
+  "name": "warm-walrus-89",
+  "category": "loaders",
+  "author": "BlagaDavid74257",
+  "description": "warm-walrus-89 组件 (tooltip, icon, animation, loader, dark, theme)",
+  "tags": [
+    "tooltip",
+    "icon",
+    "animation",
+    "loader",
+    "dark",
+    "theme"
+  ],
+  "original": {
+    "html": "<div class=\"loading-container\">\n  <div class=\"loader\">\n    <div class=\"spinner\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by BlagaDavid74257  - Tags: tooltip, icon, animation, loader, dark, theme */\n.loading-container {\n  position: relative;\n  width: 100px;\n  height: 100px;\n}\n\n.loader {\n  width: 100px;\n  height: 100px;\n  border: 10px solid transparent;\n  border-top-color: #fff;\n  border-radius: 50%;\n  animation: spin 1s linear infinite;\n}\n\n.spinner {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 50px;\n  height: 50px;\n  background-color: #fff;\n  border-radius: 50%;\n  animation: pulse 1.5s infinite alternate;\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes pulse {\n  from {\n    transform: scale(1);\n    opacity: 1;\n  }\n  to {\n    transform: scale(1.2);\n    opacity: 0.5;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/BlagaDavid74257_warm-walrus-89.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading-container\"></view>\n  <view class=\"loader\"></view>\n    <view class=\"spinner\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWarmWalrus89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by BlagaDavid74257  - Tags: tooltip, icon, animation, loader, dark, theme */\n.loading-container {\n  position: relative;\n  width: 200rpx;\n  height: 200rpx;\n}\n\n.loader {\n  width: 200rpx;\n  height: 200rpx;\n  border: 20rpx solid transparent;\n  border-top-color: #fff;\n  border-radius: 50%;\n  animation: spin 1s linear infinite;\n}\n\n.spinner {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 100rpx;\n  height: 100rpx;\n  background-color: #fff;\n  border-radius: 50%;\n  animation: pulse 1.5s infinite alternate;\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes pulse {\n  from {\n    transform: scale(1);\n    opacity: 1;\n  }\n  to {\n    transform: scale(1.2);\n    opacity: 0.5;\n  }\n}\n\n",
+    "component_name": "GalaxyWarmWalrus89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 866,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.006Z",
+  "updated_at": "2025-07-31T07:55:39.006Z"
+}

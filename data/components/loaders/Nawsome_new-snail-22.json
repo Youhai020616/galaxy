@@ -1,0 +1,86 @@
+{
+  "id": "Nawsome_new-snail-22",
+  "name": "new-snail-22",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "new-snail-22 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"semicircle\">\n  <div>\n    <div>\n      <div>\n        <div>\n          <div>\n            <div>\n              <div>\n                <div>\n                  \n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.semicircle,\n.semicircle div {\n  /*  Adjust the size of the entire animation here.\n      (Remove max size below to go above 300px.) */\n  width: 170px;\n  height: 170px;\n  /* Adjust the speed or timing function of the animation here. */\n  animation: 6s rotate141 infinite linear;\n  background-repeat: no-repeat;\n  border-radius: 50%;\n  position: relative;\n  overflow: hidden;\n}\n\n.semicircle div {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  width: 90%;\n  height: 90%;\n}\n\n.semicircle:before,\n.semicircle div:before {\n  content: '';\n  width: 100%;\n  height: 50%;\n  display: block;\n  background: radial-gradient(transparent, transparent 65%, #000 65%, #000);\n  background-size: 100% 200%;\n}\n\n@keyframes rotate141 {\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_new-snail-22.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"semicircle\"></view>\n  <view></view>\n    <view></view>\n      <view></view>\n        <view></view>\n          <view></view>\n            <view></view>\n              <view></view>\n                <view></view>\n                  \n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNewSnail22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.semicircle,\n.semicircle div {\n  /*  Adjust the size of the entire animation here.\n      (Remove max size below to go above 600rpx.) */\n  width: 340rpx;\n  height: 340rpx;\n  /* Adjust the speed or timing function of the animation here. */\n  animation: 6s rotate141 infinite linear;\n  background-repeat: no-repeat;\n  border-radius: 50%;\n  position: relative;\n  overflow: hidden;\n}\n\n.semicircle div {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  width: 90%;\n  height: 90%;\n}\n\n.semicircle:before,\n.semicircle div:before {\n  content: '';\n  width: 100%;\n  height: 50%;\n  display: block;\n  background: radial-gradient(transparent, transparent 65%, #000 65%, #000);\n  background-size: 100% 200%;\n}\n\n@keyframes rotate141 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyNewSnail22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1106,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.814Z",
+  "updated_at": "2025-07-31T07:55:39.814Z"
+}

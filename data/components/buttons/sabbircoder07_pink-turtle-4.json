@@ -1,0 +1,117 @@
+{
+  "id": "sabbircoder07_pink-turtle-4",
+  "name": "pink-turtle-4",
+  "category": "buttons",
+  "author": "sabbircoder07",
+  "description": "pink-turtle-4 组件 (button, animated, read more, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animated",
+    "read more",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button><span class=\"main-text\">Next Step<span> <span>→</span> </span></span></button>",
+    "css": "/* From Uiverse.io by sabbircoder07 - Tags: button, animated, read more */\nbutton {\n  font-family: \"Lexend Deca\", sans-serif;\n  border: none;\n  background-image: linear-gradient(to right top, #5FFBF1,#D16BA5,#86A8E7);\n  color: #ffffff;\n  font-size: 17px;\n  text-transform: capitalize;\n  letter-spacing: 1px;\n  padding: 13px 26px;\n  cursor: pointer;\n  transform: skew(15deg);\n  transition: all 1s;\n}\n\n.main-text {\n  display: inline-block;\n  transform: skew(-15deg);\n}\n\nbutton:hover {\n  transform: translateY(-3px);\n  background-image: linear-gradient(to bottom, #D16BA5,#86A8E7,#5FFBF1);\n  border-radius: 26px;\n  animation: pulsate 1s infinite;\n}\n\nbutton:hover span {\n  display: inline-block;\n  transform: translateX(2px);\n  transition: all 1s;\n}\n\nbutton:focus {\n  outline: none;\n  border-radius: 26px;\n  animation: pulsate 1s infinite;\n}\n\n@keyframes pulsate {\n  0% {\n    transform: scale(1);\n    box-shadow: none;\n  }\n\n  50% {\n    transform: scale(1.03);\n    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.4);\n  }\n\n  100% {\n    transform: scale(1);\n    box-shadow: none;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/sabbircoder07_pink-turtle-4.html"
+  },
+  "uniapp": {
+    "template": "<button></button><text class=\"main-text\">Next Step<text></text> <text></text>→</text> </span></span></button>",
+    "script": "export default {\n  name: 'GalaxyPinkTurtle4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by sabbircoder07 - Tags: button, animated, read more */\nbutton {\n  font-family: \"Lexend Deca\", sans-serif;\n  border: none;\n  background-image: linear-gradient(to right top, #5FFBF1,#D16BA5,#86A8E7);\n  color: #ffffff;\n  font-size: 34rpx;\n  text-transform: capitalize;\n  letter-spacing: 2rpx;\n  padding: 26rpx 52rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transform: skew(15deg);\n  transition: all 1s;\n}\n\n.main-text {\n  display: inline-block;\n  transform: skew(-15deg);\n}\n\nbutton:hover {\n  transform: translateY(-6rpx);\n  background-image: linear-gradient(to bottom, #D16BA5,#86A8E7,#5FFBF1);\n  border-radius: 52rpx;\n  animation: pulsate 1s infinite;\n}\n\nbutton:hover span {\n  display: inline-block;\n  transform: translateX(4rpx);\n  transition: all 1s;\n}\n\nbutton:focus {\n  outline: none;\n  border-radius: 52rpx;\n  animation: pulsate 1s infinite;\n}\n\n@keyframes pulsate {\n  0% {\n    transform: scale(1);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  50% {\n    transform: scale(1.03);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 32rpx 32rpx rgba(0, 0, 0, 0.4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    transform: scale(1);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n",
+    "component_name": "GalaxyPinkTurtle4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1159,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.702Z",
+  "updated_at": "2025-07-31T07:55:37.702Z"
+}

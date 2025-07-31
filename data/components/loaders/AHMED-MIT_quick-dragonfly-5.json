@@ -1,0 +1,87 @@
+{
+  "id": "AHMED-MIT_quick-dragonfly-5",
+  "name": "quick-dragonfly-5",
+  "category": "loaders",
+  "author": "AHMED-MIT",
+  "description": "quick-dragonfly-5 组件 (about me, css, 2FA, animation)",
+  "tags": [
+    "about me",
+    "css",
+    "2FA",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <div></div>   \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n</div>",
+    "css": "/* From Uiverse.io by AHMED-MIT - Tags: about me, css, 2FA */\n.spinner {\n  position: absolute;\n  width: 9px;\n  height: 9px;\n}\n\n.spinner div {\n  position: absolute;\n  width: 50%;\n  height: 150%;\n  background: #474bff;\n  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));\n  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;\n}\n\n.spinner div:nth-child(1) {\n  --delay: 0.1;\n  --rotation: 36;\n  --translation: 150;\n}\n\n.spinner div:nth-child(2) {\n  --delay: 0.2;\n  --rotation: 72;\n  --translation: 150;\n}\n\n.spinner div:nth-child(3) {\n  --delay: 0.3;\n  --rotation: 108;\n  --translation: 150;\n}\n\n.spinner div:nth-child(4) {\n  --delay: 0.4;\n  --rotation: 144;\n  --translation: 150;\n}\n\n.spinner div:nth-child(5) {\n  --delay: 0.5;\n  --rotation: 180;\n  --translation: 150;\n}\n\n.spinner div:nth-child(6) {\n  --delay: 0.6;\n  --rotation: 216;\n  --translation: 150;\n}\n\n.spinner div:nth-child(7) {\n  --delay: 0.7;\n  --rotation: 252;\n  --translation: 150;\n}\n\n.spinner div:nth-child(8) {\n  --delay: 0.8;\n  --rotation: 288;\n  --translation: 150;\n}\n\n.spinner div:nth-child(9) {\n  --delay: 0.9;\n  --rotation: 324;\n  --translation: 150;\n}\n\n.spinner div:nth-child(10) {\n  --delay: 1;\n  --rotation: 360;\n  --translation: 150;\n}\n\n@keyframes spinner-fzua35 {\n  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {\n    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));\n  }\n\n  50% {\n    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/AHMED-MIT_quick-dragonfly-5.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <view></view>   \n  <view></view>    \n  <view></view>    \n  <view></view>    \n  <view></view>    \n  <view></view>    \n  <view></view>    \n  <view></view>    \n  <view></view>    \n  <view></view>    \n</div>",
+    "script": "export default {\n  name: 'GalaxyQuickDragonfly5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AHMED-MIT - Tags: about me, css, 2FA */\n.spinner {\n  position: absolute;\n  width: 18rpx;\n  height: 18rpx;\n}\n\n.spinner div {\n  position: absolute;\n  width: 50%;\n  height: 150%;\n  background: #474bff;\n  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));\n  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;\n}\n\n.spinner div:nth-child(1) {\n  --delay: 0.1;\n  --rotation: 36;\n  --translation: 150;\n}\n\n.spinner div:nth-child(2) {\n  --delay: 0.2;\n  --rotation: 72;\n  --translation: 150;\n}\n\n.spinner div:nth-child(3) {\n  --delay: 0.3;\n  --rotation: 108;\n  --translation: 150;\n}\n\n.spinner div:nth-child(4) {\n  --delay: 0.4;\n  --rotation: 144;\n  --translation: 150;\n}\n\n.spinner div:nth-child(5) {\n  --delay: 0.5;\n  --rotation: 180;\n  --translation: 150;\n}\n\n.spinner div:nth-child(6) {\n  --delay: 0.6;\n  --rotation: 216;\n  --translation: 150;\n}\n\n.spinner div:nth-child(7) {\n  --delay: 0.7;\n  --rotation: 252;\n  --translation: 150;\n}\n\n.spinner div:nth-child(8) {\n  --delay: 0.8;\n  --rotation: 288;\n  --translation: 150;\n}\n\n.spinner div:nth-child(9) {\n  --delay: 0.9;\n  --rotation: 324;\n  --translation: 150;\n}\n\n.spinner div:nth-child(10) {\n  --delay: 1;\n  --rotation: 360;\n  --translation: 150;\n}\n\n@keyframes spinner-fzua35 {\n  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {\n    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));\n  }\n\n  50% {\n    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));\n  }\n}\n\n",
+    "component_name": "GalaxyQuickDragonfly5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1771,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.809Z",
+  "updated_at": "2025-07-31T07:55:38.809Z"
+}

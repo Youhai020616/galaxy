@@ -1,0 +1,119 @@
+{
+  "id": "bociKond_tidy-panda-85",
+  "name": "tidy-panda-85",
+  "category": "buttons",
+  "author": "bociKond",
+  "description": "tidy-panda-85 组件 (tooltip, button, hover, click, transition, hover effect, transparent, dashed, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "button",
+    "hover",
+    "click",
+    "transition",
+    "hover effect",
+    "transparent",
+    "dashed",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span class=\"button-text\">Button</span>\n  <span class=\"tooltip\">Tooltip</span>\n</button>",
+    "css": "/* From Uiverse.io by bociKond - Tags: tooltip, button, hover, click, transition, hover effect, transparent, dashed */\n.button {\n  --clr: #DA5552;\n  --clr-white: #e3e3e3;\n  padding: .75rem 3rem;\n  border: 4px dashed var(--clr);\n  background-color: transparent;\n  color: var(--clr);\n  font-weight: bold;\n  position: relative;\n  transition: 200ms;\n  cursor: pointer;\n}\n\n.tooltip {\n  position: absolute;\n  top: calc(-100% - .75rem);\n  left: 50%;\n  transform: translateX(-50%);\n  background-color: var(--clr);\n  color: var(--clr-white);\n  padding: .5rem 2rem;\n  cursor: auto;\n  display: none;\n  animation: showTooltip 300ms ease-in-out;\n  transform-origin: bottom;\n}\n\n.tooltip::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 10px 8px 0 8px;\n  border-color: var(--clr) transparent transparent transparent;\n  bottom: -9px;\n  left: 50%;\n  transform: translate(-50%);\n}\n\n.button:hover {\n  background-color: var(--clr);\n  color: var(--clr-white);\n  border-color: transparent;\n}\n\n.button:hover .tooltip {\n  display: block;\n}\n\n@keyframes showTooltip {\n  0% {\n    opacity: 0;\n    transform: scaleY(0) translateX(-50%);\n  }\n\n  100% {\n    opacity: 1;\n    transform: scaleY(1) translateX(-50%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/bociKond_tidy-panda-85.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text class=\"button-text\">Button</text>\n  <text class=\"tooltip\">Tooltip</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyTidyPanda85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bociKond - Tags: tooltip, button, hover, click, transition, hover effect, transparent, dashed */\n.button {\n  --clr: #DA5552;\n  --clr-white: #e3e3e3;\n  padding: .75rem 3rem;\n  border: 8rpx dashed var(--clr);\n  background-color: transparent;\n  color: var(--clr);\n  font-weight: bold;\n  position: relative;\n  transition: 200ms;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.tooltip {\n  position: absolute;\n  top: calc(-100% - .75rem);\n  left: 50%;\n  transform: translateX(-50%);\n  background-color: var(--clr);\n  color: var(--clr-white);\n  padding: .5rem 2rem;\n  /* #ifdef H5 */\n  cursor: auto;\n  /* #endif */\n  display: none;\n  animation: showTooltip 300ms ease-in-out;\n  transform-origin: bottom;\n}\n\n.tooltip::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 20rpx 16rpx 0 16rpx;\n  border-color: var(--clr) transparent transparent transparent;\n  bottom: -18rpx;\n  left: 50%;\n  transform: translate(-50%);\n}\n\n.button:hover {\n  background-color: var(--clr);\n  color: var(--clr-white);\n  border-color: transparent;\n}\n\n.button:hover .tooltip {\n  display: block;\n}\n\n@keyframes showTooltip {\n  0% {\n    opacity: 0;\n    transform: scaleY(0) translateX(-50%);\n  }\n\n  100% {\n    opacity: 1;\n    transform: scaleY(1) translateX(-50%);\n  }\n}\n",
+    "component_name": "GalaxyTidyPanda85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1365,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.999Z",
+  "updated_at": "2025-07-31T07:55:35.999Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "myselfvenky_giant-impala-58",
+  "name": "giant-impala-58",
+  "category": "loaders",
+  "author": "myselfvenky",
+  "description": "giant-impala-58 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <div class=\"inner\">\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by myselfvenky - Tags: loader */\n.spinner {\n width: 40px;\n height: 40px;\n border-radius: 100%;\n background-color: aqua;\n display: grid;\n place-items: center;\n animation: zoomin 1.5s infinite alternate-reverse;\n position: relative;\n}\n\n.inner {\n background-color: #212121;\n width: 80%;\n height: 80%;\n border-radius: 100%;\n}\n\n@keyframes zoomin {\n 0% {\n  transform: scale(1);\n  box-shadow: 0 0 100px 20px rgb(16, 71, 71);\n }\n\n 100% {\n  transform: scale(1.5);\n  box-shadow: 0 0 100px 20px #000;\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/myselfvenky_giant-impala-58.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <view class=\"inner\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGiantImpala58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by myselfvenky - Tags: loader */\n.spinner {\n width: 80rpx;\n height: 80rpx;\n border-radius: 100%;\n background-color: aqua;\n display: grid;\n place-items: center;\n animation: zoomin 1.5s infinite alternate-reverse;\n position: relative;\n}\n\n.inner {\n background-color: #212121;\n width: 80%;\n height: 80%;\n border-radius: 100%;\n}\n\n@keyframes zoomin {\n 0% {\n  transform: scale(1);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 200rpx 40rpx rgb(16, 71, 71);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 100% {\n  transform: scale(1.5);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 200rpx 40rpx #000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n}\n",
+    "component_name": "GalaxyGiantImpala58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 576,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.490Z",
+  "updated_at": "2025-07-31T07:55:42.490Z"
+}

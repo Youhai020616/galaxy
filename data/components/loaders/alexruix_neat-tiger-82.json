@@ -1,0 +1,85 @@
+{
+  "id": "alexruix_neat-tiger-82",
+  "name": "neat-tiger-82",
+  "category": "loaders",
+  "author": "alexruix",
+  "description": "neat-tiger-82 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"box1\"></div>\n  <div class=\"box2\"></div>\n  <div class=\"box3\"></div>\n</div>",
+    "css": "/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  width: 112px;\n  height: 112px;\n}\n\n.box1,\n.box2,\n.box3 {\n  border: 16px solid #f5f5f5;\n  box-sizing: border-box;\n  position: absolute;\n  display: block;\n}\n\n.box1 {\n  width: 112px;\n  height: 48px;\n  margin-top: 64px;\n  margin-left: 0px;\n  animation: abox1 4s 1s forwards ease-in-out infinite;\n}\n\n.box2 {\n  width: 48px;\n  height: 48px;\n  margin-top: 0px;\n  margin-left: 0px;\n  animation: abox2 4s 1s forwards ease-in-out infinite;\n}\n\n.box3 {\n  width: 48px;\n  height: 48px;\n  margin-top: 0px;\n  margin-left: 64px;\n  animation: abox3 4s 1s forwards ease-in-out infinite;\n}\n\n@keyframes abox1 {\n  0% {\n    width: 112px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n\n  12.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n\n  25% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n\n  37.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n\n  50% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n\n  62.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n\n  75% {\n    width: 48px;\n    height: 112px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  87.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  100% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n}\n\n@keyframes abox2 {\n  0% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  12.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  25% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  37.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  50% {\n    width: 112px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 0px;\n  }\n\n  62.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n\n  75% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n\n  87.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n\n  100% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n}\n\n@keyframes abox3 {\n  0% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n\n  12.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n\n  25% {\n    width: 48px;\n    height: 112px;\n    margin-top: 0px;\n    margin-left: 64px;\n  }\n\n  37.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 64px;\n  }\n\n  50% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 64px;\n  }\n\n  62.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 64px;\n  }\n\n  75% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 64px;\n  }\n\n  87.5% {\n    width: 48px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 64px;\n  }\n\n  100% {\n    width: 112px;\n    height: 48px;\n    margin-top: 64px;\n    margin-left: 0px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/alexruix_neat-tiger-82.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"box1\"></view>\n  <view class=\"box2\"></view>\n  <view class=\"box3\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNeatTiger82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  width: 224rpx;\n  height: 224rpx;\n}\n\n.box1,\n.box2,\n.box3 {\n  border: 32rpx solid #f5f5f5;\n  box-sizing: border-box;\n  position: absolute;\n  display: block;\n}\n\n.box1 {\n  width: 224rpx;\n  height: 96rpx;\n  margin-top: 128rpx;\n  margin-left: 0rpx;\n  animation: abox1 4s 1s forwards ease-in-out infinite;\n}\n\n.box2 {\n  width: 96rpx;\n  height: 96rpx;\n  margin-top: 0rpx;\n  margin-left: 0rpx;\n  animation: abox2 4s 1s forwards ease-in-out infinite;\n}\n\n.box3 {\n  width: 96rpx;\n  height: 96rpx;\n  margin-top: 0rpx;\n  margin-left: 128rpx;\n  animation: abox3 4s 1s forwards ease-in-out infinite;\n}\n\n@keyframes abox1 {\n  0% {\n    width: 224rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n\n  12.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n\n  25% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n\n  37.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n\n  50% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n\n  62.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n\n  75% {\n    width: 96rpx;\n    height: 224rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  87.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  100% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n}\n\n@keyframes abox2 {\n  0% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  12.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  25% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  37.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  50% {\n    width: 224rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 0rpx;\n  }\n\n  62.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n\n  75% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n\n  87.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n\n  100% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n}\n\n@keyframes abox3 {\n  0% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n\n  12.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n\n  25% {\n    width: 96rpx;\n    height: 224rpx;\n    margin-top: 0rpx;\n    margin-left: 128rpx;\n  }\n\n  37.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 128rpx;\n  }\n\n  50% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 128rpx;\n  }\n\n  62.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 128rpx;\n  }\n\n  75% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 128rpx;\n  }\n\n  87.5% {\n    width: 96rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 128rpx;\n  }\n\n  100% {\n    width: 224rpx;\n    height: 96rpx;\n    margin-top: 128rpx;\n    margin-left: 0rpx;\n  }\n}\n\n",
+    "component_name": "GalaxyNeatTiger82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3314,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.924Z",
+  "updated_at": "2025-07-31T07:55:40.924Z"
+}

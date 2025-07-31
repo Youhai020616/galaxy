@@ -1,0 +1,121 @@
+{
+  "id": "gharsh11032000_loud-chicken-53",
+  "name": "loud-chicken-53",
+  "category": "buttons",
+  "author": "gharsh11032000",
+  "description": "loud-chicken-53 组件 (button, hover, active, animated, arrow, hover effect, click animation, pill, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "active",
+    "animated",
+    "arrow",
+    "hover effect",
+    "click animation",
+    "pill",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"animated-button\">\n  <svg viewBox=\"0 0 24 24\" class=\"arr-2\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n  </svg>\n  <span class=\"text\">Modern Button</span>\n  <span class=\"circle\"></span>\n  <svg viewBox=\"0 0 24 24\" class=\"arr-1\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by gharsh11032000  - Tags: button, hover, active, animated, arrow, hover effect, click animation, pill */\n.animated-button {\n  position: relative;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  padding: 16px 36px;\n  border: 4px solid;\n  border-color: transparent;\n  font-size: 16px;\n  background-color: inherit;\n  border-radius: 100px;\n  font-weight: 600;\n  color: greenyellow;\n  box-shadow: 0 0 0 2px greenyellow;\n  cursor: pointer;\n  overflow: hidden;\n  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button svg {\n  position: absolute;\n  width: 24px;\n  fill: greenyellow;\n  z-index: 9;\n  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button .arr-1 {\n  right: 16px;\n}\n\n.animated-button .arr-2 {\n  left: -25%;\n}\n\n.animated-button .circle {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 20px;\n  height: 20px;\n  background-color: greenyellow;\n  border-radius: 50%;\n  opacity: 0;\n  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button .text {\n  position: relative;\n  z-index: 1;\n  transform: translateX(-12px);\n  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button:hover {\n  box-shadow: 0 0 0 12px transparent;\n  color: #212121;\n  border-radius: 12px;\n}\n\n.animated-button:hover .arr-1 {\n  right: -25%;\n}\n\n.animated-button:hover .arr-2 {\n  left: 16px;\n}\n\n.animated-button:hover .text {\n  transform: translateX(12px);\n}\n\n.animated-button:hover svg {\n  fill: #212121;\n}\n\n.animated-button:active {\n  scale: 0.95;\n  box-shadow: 0 0 0 4px greenyellow;\n}\n\n.animated-button:hover .circle {\n  width: 220px;\n  height: 220px;\n  opacity: 1;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/gharsh11032000_loud-chicken-53.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"animated-button\"></button>\n  <view viewBox=\"0 0 24 24\" class=\"arr-2\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n  </svg>\n  <text class=\"text\">Modern Button</text>\n  <text class=\"circle\"></text>\n  <view viewBox=\"0 0 24 24\" class=\"arr-1\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLoudChicken53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gharsh11032000  - Tags: button, hover, active, animated, arrow, hover effect, click animation, pill */\n.animated-button {\n  position: relative;\n  display: flex;\n  align-items: center;\n  gap: 8rpx;\n  padding: 32rpx 72rpx;\n  border: 8rpx solid;\n  border-color: transparent;\n  font-size: 32rpx;\n  background-color: inherit;\n  border-radius: 200rpx;\n  font-weight: 600;\n  color: greenyellow;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 4rpx greenyellow;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  overflow: hidden;\n  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button svg {\n  position: absolute;\n  width: 48rpx;\n  fill: greenyellow;\n  z-index: 9;\n  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button .arr-1 {\n  right: 32rpx;\n}\n\n.animated-button .arr-2 {\n  left: -25%;\n}\n\n.animated-button .circle {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 40rpx;\n  height: 40rpx;\n  background-color: greenyellow;\n  border-radius: 50%;\n  opacity: 0;\n  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button .text {\n  position: relative;\n  z-index: 1;\n  transform: translateX(-24rpx);\n  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.animated-button:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 24rpx transparent;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: #212121;\n  border-radius: 24rpx;\n}\n\n.animated-button:hover .arr-1 {\n  right: -25%;\n}\n\n.animated-button:hover .arr-2 {\n  left: 32rpx;\n}\n\n.animated-button:hover .text {\n  transform: translateX(24rpx);\n}\n\n.animated-button:hover svg {\n  fill: #212121;\n}\n\n.animated-button:active {\n  scale: 0.95;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx greenyellow;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.animated-button:hover .circle {\n  width: 440rpx;\n  height: 440rpx;\n  opacity: 1;\n}\n\n",
+    "component_name": "GalaxyLoudChicken53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2272,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.839Z",
+  "updated_at": "2025-07-31T07:55:36.839Z"
+}

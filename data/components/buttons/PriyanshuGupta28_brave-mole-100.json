@@ -1,0 +1,122 @@
+{
+  "id": "PriyanshuGupta28_brave-mole-100",
+  "name": "brave-mole-100",
+  "category": "buttons",
+  "author": "PriyanshuGupta28",
+  "description": "brave-mole-100 组件 (simple, button, css effect, click animation, buttons, bounce animation, 3d button, 2d button, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "button",
+    "css effect",
+    "click animation",
+    "buttons",
+    "bounce animation",
+    "3d button",
+    "2d button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"pushable\">\n      <span class=\"shadow\"></span>\n      <span class=\"edge\"></span>\n      <span class=\"front\">\n        Push Me\n      </span>\n    </button>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: simple, button, css effect, click animation, buttons, bounce animation, 3d button, 2d button */\n.pushable {\n  position: relative;\n  background: transparent;\n  padding: 0px;\n  border: none;\n  cursor: pointer;\n  outline-offset: 4px;\n  outline-color: deeppink;\n  transition: filter 250ms;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n\n.shadow {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  background: hsl(226, 25%, 69%);\n  border-radius: 8px;\n  filter: blur(2px);\n  will-change: transform;\n  transform: translateY(2px);\n  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);\n}\n\n.edge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: 8px;\n  background: linear-gradient(\n    to right,\n    hsl(248, 39%, 39%) 0%,\n    hsl(248, 39%, 49%) 8%,\n    hsl(248, 39%, 39%) 92%,\n    hsl(248, 39%, 29%) 100%\n  );\n}\n\n.front {\n  display: block;\n  position: relative;\n  border-radius: 8px;\n  background: hsl(248, 53%, 58%);\n  padding: 16px 32px;\n  color: white;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\n    Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 1.5px;\n  font-size: 1rem;\n  transform: translateY(-4px);\n  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);\n}\n\n.pushable:hover {\n  filter: brightness(110%);\n}\n\n.pushable:hover .front {\n  transform: translateY(-6px);\n  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);\n}\n\n.pushable:active .front {\n  transform: translateY(-2px);\n  transition: transform 34ms;\n}\n\n.pushable:hover .shadow {\n  transform: translateY(4px);\n  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);\n}\n\n.pushable:active .shadow {\n  transform: translateY(1px);\n  transition: transform 34ms;\n}\n\n.pushable:focus:not(:focus-visible) {\n  outline: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/PriyanshuGupta28_brave-mole-100.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"pushable\"></button>\n      <text class=\"shadow\"></text>\n      <text class=\"edge\"></text>\n      <text class=\"front\"></text>\n        Push Me\n      </span>\n    </button>",
+    "script": "export default {\n  name: 'GalaxyBraveMole100',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: simple, button, css effect, click animation, buttons, bounce animation, 3d button, 2d button */\n.pushable {\n  position: relative;\n  background: transparent;\n  padding: 0rpx;\n  border: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  outline-offset: 8rpx;\n  outline-color: deeppink;\n  transition: filter 250ms;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n\n.shadow {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  background: hsl(226, 25%, 69%);\n  border-radius: 16rpx;\n  \n  will-change: transform;\n  transform: translateY(4rpx);\n  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);\n}\n\n.edge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: 16rpx;\n  background: linear-gradient(\n    to right,\n    hsl(248, 39%, 39%) 0%,\n    hsl(248, 39%, 49%) 8%,\n    hsl(248, 39%, 39%) 92%,\n    hsl(248, 39%, 29%) 100%\n  );\n}\n\n.front {\n  display: block;\n  position: relative;\n  border-radius: 16rpx;\n  background: hsl(248, 53%, 58%);\n  padding: 32rpx 64rpx;\n  color: white;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\n    Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 3rpx;\n  font-size: 1rem;\n  transform: translateY(-8rpx);\n  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);\n}\n\n.pushable:hover {\n  \n}\n\n.pushable:hover .front {\n  transform: translateY(-12rpx);\n  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);\n}\n\n.pushable:active .front {\n  transform: translateY(-4rpx);\n  transition: transform 34ms;\n}\n\n.pushable:hover .shadow {\n  transform: translateY(8rpx);\n  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);\n}\n\n.pushable:active .shadow {\n  transform: translateY(2rpx);\n  transition: transform 34ms;\n}\n\n.pushable:focus:not(:focus-visible) {\n  outline: none;\n}\n\n",
+    "component_name": "GalaxyBraveMole100"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2110,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.341Z",
+  "updated_at": "2025-07-31T07:55:34.341Z"
+}

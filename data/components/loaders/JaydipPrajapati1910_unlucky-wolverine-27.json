@@ -1,0 +1,93 @@
+{
+  "id": "JaydipPrajapati1910_unlucky-wolverine-27",
+  "name": "unlucky-wolverine-27",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "unlucky-wolverine-27 组件 (green, loader, circle loader, loader circle, animation, gradient)",
+  "tags": [
+    "green",
+    "loader",
+    "circle loader",
+    "loader circle",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: green, loader, circle loader, loader circle */\n.loader {\n  background: linear-gradient(to right, #2cc16f 50%, #fafafa 50%);\n  border-radius: 100%;\n  height: 70px;\n  width: 70px;\n  animation: loader-circle-time 8s steps(800, start) infinite;\n}\n\n.loader:after {\n  content: \"\";\n  border-radius: 100% 0 0 100% / 50% 0 0 50%;\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 50%;\n  animation: loader-circle-mask 8s steps(250, start) infinite;\n  transform-origin: 100% 50%;\n}\n\n@keyframes loader-circle-time {\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loader-circle-mask {\n  0% {\n    background: #fafafa;\n    transform: rotate(0deg);\n  }\n\n  50% {\n    background: #fafafa;\n    transform: rotate(-180deg);\n  }\n\n  50.01% {\n    background: #2cc16f;\n    transform: rotate(0deg);\n  }\n\n  100% {\n    background: #2cc16f;\n    transform: rotate(-180deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_unlucky-wolverine-27.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyUnluckyWolverine27',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: green, loader, circle loader, loader circle */\n.loader {\n  background: linear-gradient(to right, #2cc16f 50%, #fafafa 50%);\n  border-radius: 100%;\n  height: 140rpx;\n  width: 140rpx;\n  animation: loader-circle-time 8s steps(800, start) infinite;\n}\n\n.loader:after {\n  content: \"\";\n  border-radius: 100% 0 0 100% / 50% 0 0 50%;\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 50%;\n  animation: loader-circle-mask 8s steps(250, start) infinite;\n  transform-origin: 100% 50%;\n}\n\n@keyframes loader-circle-time {\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loader-circle-mask {\n  0% {\n    background: #fafafa;\n    transform: rotate(0deg);\n  }\n\n  50% {\n    background: #fafafa;\n    transform: rotate(-180deg);\n  }\n\n  50.01% {\n    background: #2cc16f;\n    transform: rotate(0deg);\n  }\n\n  100% {\n    background: #2cc16f;\n    transform: rotate(-180deg);\n  }\n}\n\n \n\n",
+    "component_name": "GalaxyUnluckyWolverine27"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 962,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.430Z",
+  "updated_at": "2025-07-31T07:55:39.430Z"
+}

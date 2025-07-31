@@ -1,0 +1,113 @@
+{
+  "id": "ShrinilDhorda_calm-lionfish-96",
+  "name": "calm-lionfish-96",
+  "category": "buttons",
+  "author": "ShrinilDhorda",
+  "description": "calm-lionfish-96 组件 (button, download, animation, interactive)",
+  "tags": [
+    "button",
+    "download",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <p class=\"text\">\n  Download \n  </p>\n  <div class=\"svg\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"white\" class=\"bi bi-download\" viewBox=\"0 0 16 16\"> <path d=\"M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z\"></path> <path d=\"M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z\"></path> </svg>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by ShrinilDhorda - Tags: button, download */\n.button {\n  padding: 0.8rem 4rem;\n  border: none;\n  outline: none;\n  font-size: 1.3rem;\n  border-radius: 0.3rem;\n  font-weight: 600;\n  background-color: rgba(255, 255, 255, 0.953);\n  position: relative;\n  overflow: hidden;\n  cursor: pointer;\n  transition: 0.4s ease-in-out;\n}\n\n.button .text {\n  position: absolute;\n  left: 1.8rem;\n  top: 1.3rem;\n  transition: 0.4s ease-in-out;\n  color: rgb(50, 50, 50);\n}\n\n.svg {\n  transform: translateY(-20px) rotate(30deg);\n  opacity: 0;\n  width: 2rem;\n  transition: 0.4s ease-in-out;\n}\n\n.button:hover {\n  background-color: rgb(50, 50, 50);\n}\n\n.button:hover .svg {\n  display: inline-block;\n  transform: translateY(0px) rotate(0deg);\n  opacity: 1;\n}\n\n.button:hover .text {\n  opacity: 0;\n}\n\n.button:active {\n  scale: 0.97;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ShrinilDhorda_calm-lionfish-96.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text class=\"text\"></text>\n  Download \n  </p>\n  <view class=\"svg\"></view>\n    <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"white\" class=\"bi bi-download\" viewBox=\"0 0 16 16\"> <path d=\"M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z\"></path> <path d=\"M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z\"></path> </view>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyCalmLionfish96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ShrinilDhorda - Tags: button, download */\n.button {\n  padding: 0.8rem 4rem;\n  border: none;\n  outline: none;\n  font-size: 1.3rem;\n  border-radius: 0.3rem;\n  font-weight: 600;\n  background-color: rgba(255, 255, 255, 0.953);\n  position: relative;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: 0.4s ease-in-out;\n}\n\n.button .text {\n  position: absolute;\n  left: 1.8rem;\n  top: 1.3rem;\n  transition: 0.4s ease-in-out;\n  color: rgb(50, 50, 50);\n}\n\n.svg {\n  transform: translateY(-40rpx) rotate(30deg);\n  opacity: 0;\n  width: 2rem;\n  transition: 0.4s ease-in-out;\n}\n\n.button:hover {\n  background-color: rgb(50, 50, 50);\n}\n\n.button:hover .svg {\n  display: inline-block;\n  transform: translateY(0rpx) rotate(0deg);\n  opacity: 1;\n}\n\n.button:hover .text {\n  opacity: 0;\n}\n\n.button:active {\n  scale: 0.97;\n}\n",
+    "component_name": "GalaxyCalmLionfish96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1336,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.691Z",
+  "updated_at": "2025-07-31T07:55:34.691Z"
+}

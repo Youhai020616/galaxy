@@ -1,0 +1,120 @@
+{
+  "id": "AqFox_fat-ladybug-84",
+  "name": "fat-ladybug-84",
+  "category": "buttons",
+  "author": "AqFox",
+  "description": "fat-ladybug-84 组件 (3d, blue, button, glossy, animation, gradient, interactive)",
+  "tags": [
+    "3d",
+    "blue",
+    "button",
+    "glossy",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>BUTTON</button>",
+    "css": "/* From Uiverse.io by AqFox - Tags: 3d, blue, button, glossy */\nbutton {\n  --c: #fff;\n /* text color */\n  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,\n    #004dff;\n /* background color */\n  color: #0000;\n  border: none;\n  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));\n  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),\n    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;\n  outline-offset: .1em;\n  transition: 0.3s;\n}\n\nbutton:hover,\nbutton:focus-visible {\n  --_p: 0%;\n  --_i: 1;\n}\n\nbutton:active {\n  text-shadow: none;\n  color: var(--c);\n  box-shadow: inset 0 0 9e9q #0005;\n  transition: 0s;\n}\n\nbutton {\n  font-family: system-ui, sans-serif;\n  font-weight: bold;\n  font-size: 2rem;\n  margin: 0;\n  cursor: pointer;\n  padding: .1em .3em;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AqFox_fat-ladybug-84.html"
+  },
+  "uniapp": {
+    "template": "<button></button>BUTTON</button>",
+    "script": "export default {\n  name: 'GalaxyFatLadybug84',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AqFox - Tags: 3d, blue, button, glossy */\nbutton {\n  --c: #fff;\n /* text color */\n  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,\n    #004dff;\n /* background color */\n  color: #0000;\n  border: none;\n  transform: perspective(1000rpx) rotateY(calc(20deg*var(--_i,-1)));\n  /* #ifdef H5 */\n  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),\n    calc(var(--_i,-1)*-0.08em)  .01em 4rpx #0004;\n  /* #endif */\n  outline-offset: .1em;\n  transition: 0.3s;\n}\n\nbutton:hover,\nbutton:focus-visible {\n  --_p: 0%;\n  --_i: 1;\n}\n\nbutton:active {\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n  color: var(--c);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 9e9q #0005;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: 0s;\n}\n\nbutton {\n  font-family: system-ui, sans-serif;\n  font-weight: bold;\n  font-size: 2rem;\n  margin: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: .1em .3em;\n}\n",
+    "component_name": "GalaxyFatLadybug84"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 841,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.628Z",
+  "updated_at": "2025-07-31T07:55:32.628Z"
+}

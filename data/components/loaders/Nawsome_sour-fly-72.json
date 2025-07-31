@@ -1,0 +1,91 @@
+{
+  "id": "Nawsome_sour-fly-72",
+  "name": "sour-fly-72",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "sour-fly-72 组件 (3d, loader, cube, animation)",
+  "tags": [
+    "3d",
+    "loader",
+    "cube",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"cube\">\n  <div class=\"topD\"></div>\n  <div>\n    <span style=\"--i:0\"></span>\n    <span style=\"--i:1\"></span>\n    <span style=\"--i:2\"></span>\n    <span style=\"--i:3\"></span>\n  </div>\n\n  <div class=\"cube2\">\n    <div>\n      <span style=\"--i:0\"></span>\n      <span style=\"--i:1\"></span>\n      <span style=\"--i:2\"></span>\n      <span style=\"--i:3\"></span>\n    </div>\n\n    <div class=\"cube3\">\n      <div class=\"top3\"></div>\n      <div>\n        <span style=\"--i:0\"></span>\n        <span style=\"--i:1\"></span>\n        <span style=\"--i:2\"></span>\n        <span style=\"--i:3\"></span>\n      </div>\n\n    </div>\n\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: 3d, loader, cube */\n.cube {\n  position: relative;\n  width: 300px;\n  height: 300px;\n  transform-style: preserve-3d;\n  transform: rotateX(-30deg);\n  animation: animateD 8s linear infinite;\n}\n\n@keyframes animateD {\n  0% {\n    transform: rotateX(-15deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(-15deg) rotateY(-360deg);\n  }\n}\n\n.cube div {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n}\n\n.cube2 {\n  position: relative;\n  width: 150px;\n  height: 150px;\n  transform-style: preserve-3d;\n  animation: animateD2 5s ease-out infinite alternate;\n}\n\n@keyframes animateD2 {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(180deg) rotateY(-360deg);\n  }\n}\n\n.cube2 div {\n  position: absolute;\n  top: 35px;\n  left: 0;\n  width: 65%;\n  height: 65%;\n  transform-style: preserve-3d;\n}\n\n.cube2 div span {\n  position: absolute;\n  top: 20%;\n  left: 20%;\n  width: 65%;\n  height: 65%;\n  background: transparent;\n  border: 2px solid #7dff99;\n  transform: rotateY(calc(90deg * var(--i))) translateZ(62px);\n}\n\n.cube3 {\n  position: absolute;\n  width: 300px;\n  height: 300px;\n  transform-style: preserve-3d;\n  transform: rotateX(-30deg);\n  animation: animateD3 1s ease-in-out infinite alternate;\n}\n\n@keyframes animateD3 {\n  0% {\n    transform: rotateX(-90deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(90deg) rotateY(45deg);\n  }\n}\n\n.cube3 div {\n  position: absolute;\n  top: 70px;\n  left: 70px;\n  width: 15%;\n  height: 15%;\n  transform-style: preserve-3d;\n}\n\n.cube3 div span {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: #7dff99;\n  transform: rotateY(calc(90deg * var(--i))) translateZ(14px);\n  box-shadow: 0px 0px 7px #7dff99;\n}\n\n.top3 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: #7dff99;\n  transform: rotateX(90deg) translateZ(14px);\n  box-shadow: 0px 0px 10px #7dff99;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_sour-fly-72.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cube\"></view>\n  <view class=\"topD\"></view>\n  <view></view>\n    <text style=\"--i:0\"></text>\n    <text style=\"--i:1\"></text>\n    <text style=\"--i:2\"></text>\n    <text style=\"--i:3\"></text>\n  </div>\n\n  <view class=\"cube2\"></view>\n    <view></view>\n      <text style=\"--i:0\"></text>\n      <text style=\"--i:1\"></text>\n      <text style=\"--i:2\"></text>\n      <text style=\"--i:3\"></text>\n    </div>\n\n    <view class=\"cube3\"></view>\n      <view class=\"top3\"></view>\n      <view></view>\n        <text style=\"--i:0\"></text>\n        <text style=\"--i:1\"></text>\n        <text style=\"--i:2\"></text>\n        <text style=\"--i:3\"></text>\n      </div>\n\n    </div>\n\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySourFly72',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: 3d, loader, cube */\n.cube {\n  position: relative;\n  width: 600rpx;\n  height: 600rpx;\n  transform-style: preserve-3d;\n  transform: rotateX(-30deg);\n  animation: animateD 8s linear infinite;\n}\n\n@keyframes animateD {\n  0% {\n    transform: rotateX(-15deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(-15deg) rotateY(-360deg);\n  }\n}\n\n.cube div {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n}\n\n.cube2 {\n  position: relative;\n  width: 300rpx;\n  height: 300rpx;\n  transform-style: preserve-3d;\n  animation: animateD2 5s ease-out infinite alternate;\n}\n\n@keyframes animateD2 {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(180deg) rotateY(-360deg);\n  }\n}\n\n.cube2 div {\n  position: absolute;\n  top: 70rpx;\n  left: 0;\n  width: 65%;\n  height: 65%;\n  transform-style: preserve-3d;\n}\n\n.cube2 div span {\n  position: absolute;\n  top: 20%;\n  left: 20%;\n  width: 65%;\n  height: 65%;\n  background: transparent;\n  border: 4rpx solid #7dff99;\n  transform: rotateY(calc(90deg * var(--i))) translateZ(124rpx);\n}\n\n.cube3 {\n  position: absolute;\n  width: 600rpx;\n  height: 600rpx;\n  transform-style: preserve-3d;\n  transform: rotateX(-30deg);\n  animation: animateD3 1s ease-in-out infinite alternate;\n}\n\n@keyframes animateD3 {\n  0% {\n    transform: rotateX(-90deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(90deg) rotateY(45deg);\n  }\n}\n\n.cube3 div {\n  position: absolute;\n  top: 140rpx;\n  left: 140rpx;\n  width: 15%;\n  height: 15%;\n  transform-style: preserve-3d;\n}\n\n.cube3 div span {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: #7dff99;\n  transform: rotateY(calc(90deg * var(--i))) translateZ(28rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 14rpx #7dff99;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.top3 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: #7dff99;\n  transform: rotateX(90deg) translateZ(28rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 20rpx #7dff99;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n\n",
+    "component_name": "GalaxySourFly72"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2591,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.844Z",
+  "updated_at": "2025-07-31T07:55:39.844Z"
+}

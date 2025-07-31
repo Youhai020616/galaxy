@@ -1,0 +1,120 @@
+{
+  "id": "John-CFO_calm-kangaroo-15",
+  "name": "calm-kangaroo-15",
+  "category": "buttons",
+  "author": "John-CFO",
+  "description": "calm-kangaroo-15 组件 (simple, button, hover, hover effect, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "button",
+    "hover",
+    "hover effect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"BTN-style\">\n  <span class=\"BTN-text\">Hover me</span>\n</button>",
+    "css": "/* From Uiverse.io by John-CFO  - Tags: simple, button, hover, hover effect */\n.BTN-style {\n  position: relative;\n  width: 12em;\n  height: 3.8em;\n  border-width: 2px;\n  border-radius: 6px;\n  border-color: #ffff;\n  display: block;\n  padding: 8px;\n  background: linear-gradient(to left, #c0c0c0, #dcdcdc);\n  color: #ffffff;\n  line-height: 1.25rem;\n  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);\n  overflow: hidden;\n}\n\n.BTN-text {\n  font-weight: 500;\n  font-size: 0.975rem;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);\n  text-transform: uppercase;\n}\n\n.BTN-style:hover {\n  -webkit-transition: all 0.2s ease-out;\n  -moz-transition: all 0.2s ease-out;\n  transition: all 0.2s ease-out;\n\n  cursor: pointer;\n}\n\n.BTN-style:hover::before {\n  -webkit-animation: sh02 0.5s 0s linear;\n  -moz-animation: sh02 0.5s 0s linear;\n  animation: sh02 0.5s 0s linear;\n}\n\n.BTN-style::before {\n  content: \"\";\n  display: block;\n  width: 0px;\n  height: 85%;\n  position: absolute;\n  top: 50%;\n  left: 0%;\n  opacity: 0;\n  background: #fff;\n  box-shadow: 0 0 50px 30px #fff;\n  -webkit-transform: skewX(-20deg);\n  -moz-transform: skewX(-20deg);\n  -ms-transform: skewX(-20deg);\n  -o-transform: skewX(-20deg);\n  transform: skewX(-20deg);\n}\n\n@keyframes sh02 {\n  from {\n    opacity: 0;\n    left: 0%;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    left: 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/John-CFO_calm-kangaroo-15.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"BTN-style\"></button>\n  <text class=\"BTN-text\">Hover me</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyCalmKangaroo15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by John-CFO  - Tags: simple, button, hover, hover effect */\n.BTN-style {\n  position: relative;\n  width: 12em;\n  height: 3.8em;\n  border-width: 4rpx;\n  border-radius: 12rpx;\n  border-color: #ffff;\n  display: block;\n  padding: 16rpx;\n  background: linear-gradient(to left, #c0c0c0, #dcdcdc);\n  color: #ffffff;\n  line-height: 1.25rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  overflow: hidden;\n}\n\n.BTN-text {\n  font-weight: 500;\n  font-size: 0.975rem;\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 2rpx rgba(0, 0, 0, 0.9);\n  /* #endif */\n  text-transform: uppercase;\n}\n\n.BTN-style:hover {\n  -webkit-transition: all 0.2s ease-out;\n  -moz-transition: all 0.2s ease-out;\n  transition: all 0.2s ease-out;\n\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.BTN-style:hover::before {\n  -webkit-animation: sh02 0.5s 0s linear;\n  -moz-animation: sh02 0.5s 0s linear;\n  animation: sh02 0.5s 0s linear;\n}\n\n.BTN-style::before {\n  content: \"\";\n  display: block;\n  width: 0rpx;\n  height: 85%;\n  position: absolute;\n  top: 50%;\n  left: 0%;\n  opacity: 0;\n  background: #fff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 100rpx 60rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transform: skewX(-20deg);\n  -moz-transform: skewX(-20deg);\n  -ms-transform: skewX(-20deg);\n  -o-transform: skewX(-20deg);\n  transform: skewX(-20deg);\n}\n\n@keyframes sh02 {\n  from {\n    opacity: 0;\n    left: 0%;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    left: 100%;\n  }\n}\n\n",
+    "component_name": "GalaxyCalmKangaroo15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1430,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.573Z",
+  "updated_at": "2025-07-31T07:55:33.573Z"
+}

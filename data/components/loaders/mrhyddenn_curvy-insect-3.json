@@ -1,0 +1,89 @@
+{
+  "id": "mrhyddenn_curvy-insect-3",
+  "name": "curvy-insect-3",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "curvy-insect-3 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"snow\">\n        <span style=\"--i:11\"></span>\n        <span style=\"--i:12\"></span>\n        <span style=\"--i:15\"></span>\n        <span style=\"--i:17\"></span>\n        <span style=\"--i:18\"></span>\n        <span style=\"--i:13\"></span>\n        <span style=\"--i:14\"></span>\n        <span style=\"--i:19\"></span>\n        <span style=\"--i:20\"></span>\n        <span style=\"--i:10\"></span>\n        <span style=\"--i:18\"></span>\n        <span style=\"--i:13\"></span>\n        <span style=\"--i:14\"></span>\n        <span style=\"--i:19\"></span>\n        <span style=\"--i:20\"></span>\n        <span style=\"--i:10\"></span>\n        <span style=\"--i:18\"></span>\n        <span style=\"--i:13\"></span>\n        <span style=\"--i:14\"></span>\n        <span style=\"--i:19\"></span>\n        <span style=\"--i:20\"></span>\n        <span style=\"--i:10\"></span>\n    </div>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  width: 110px;\n  height: 30px;\n  background: #fff;\n  border-radius: 100px;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  top: -20px;\n  left: 10px;\n  width: 30px;\n  height: 30px;\n  background: #fff;\n  border-radius: 50%;\n  box-shadow: 40px 0 0 20px #fff;\n}\n\n.snow {\n  position: relative;\n  display: flex;\n  z-index: 1;\n}\n\n.snow span {\n  position: relative;\n  width: 3px;\n  height: 3px;\n  background: #fff;\n  margin: 0 2px;\n  border-radius: 50%;\n  animation: snowing 5s linear infinite;\n  animation-duration: calc(15s / var(--i));\n  transform-origin: bottom;\n}\n\n@keyframes snowing {\n  0% {\n    transform: translateY(0px);\n  }\n\n  70% {\n    transform: translateY(100px) scale(1);\n  }\n\n  100% {\n    transform: translateY(100px) scale(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_curvy-insect-3.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"snow\"></view>\n        <text style=\"--i:11\"></text>\n        <text style=\"--i:12\"></text>\n        <text style=\"--i:15\"></text>\n        <text style=\"--i:17\"></text>\n        <text style=\"--i:18\"></text>\n        <text style=\"--i:13\"></text>\n        <text style=\"--i:14\"></text>\n        <text style=\"--i:19\"></text>\n        <text style=\"--i:20\"></text>\n        <text style=\"--i:10\"></text>\n        <text style=\"--i:18\"></text>\n        <text style=\"--i:13\"></text>\n        <text style=\"--i:14\"></text>\n        <text style=\"--i:19\"></text>\n        <text style=\"--i:20\"></text>\n        <text style=\"--i:10\"></text>\n        <text style=\"--i:18\"></text>\n        <text style=\"--i:13\"></text>\n        <text style=\"--i:14\"></text>\n        <text style=\"--i:19\"></text>\n        <text style=\"--i:20\"></text>\n        <text style=\"--i:10\"></text>\n    </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCurvyInsect3',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  width: 220rpx;\n  height: 60rpx;\n  background: #fff;\n  border-radius: 200rpx;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  top: -40rpx;\n  left: 20rpx;\n  width: 60rpx;\n  height: 60rpx;\n  background: #fff;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 80rpx 0 0 40rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.snow {\n  position: relative;\n  display: flex;\n  z-index: 1;\n}\n\n.snow span {\n  position: relative;\n  width: 6rpx;\n  height: 6rpx;\n  background: #fff;\n  margin: 0 4rpx;\n  border-radius: 50%;\n  animation: snowing 5s linear infinite;\n  animation-duration: calc(15s / var(--i));\n  transform-origin: bottom;\n}\n\n@keyframes snowing {\n  0% {\n    transform: translateY(0rpx);\n  }\n\n  70% {\n    transform: translateY(200rpx) scale(1);\n  }\n\n  100% {\n    transform: translateY(200rpx) scale(0);\n  }\n}\n",
+    "component_name": "GalaxyCurvyInsect3"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1714,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.415Z",
+  "updated_at": "2025-07-31T07:55:42.415Z"
+}

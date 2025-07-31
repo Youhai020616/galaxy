@@ -1,0 +1,108 @@
+{
+  "id": "Ali-Tahmazi99_big-stingray-4",
+  "name": "big-stingray-4",
+  "category": "buttons",
+  "author": "Ali-Tahmazi99",
+  "description": "big-stingray-4 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span> Button\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by Ali-Tahmazi99 - Tags: button */\n/* From uiverse.io by @Ali-Tahmazi99 */\nbutton {\n display: inline-block;\n width: 150px;\n height: 50px;\n border-radius: 10px;\n border: 1px solid #03045e;\n position: relative;\n overflow: hidden;\n transition: all 0.5s ease-in;\n z-index: 1;\n}\n\nbutton::before,\nbutton::after {\n content: '';\n position: absolute;\n top: 0;\n width: 0;\n height: 100%;\n transform: skew(15deg);\n transition: all 0.5s;\n overflow: hidden;\n z-index: -1;\n}\n\nbutton::before {\n left: -10px;\n background: #240046;\n}\n\nbutton::after {\n right: -10px;\n background: #5a189a;\n}\n\nbutton:hover::before,\nbutton:hover::after {\n width: 58%;\n}\n\nbutton:hover span {\n color: #e0aaff;\n transition: 0.3s;\n}\n\nbutton span {\n color: #03045e;\n font-size: 18px;\n transition: all 0.3s ease-in;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Ali-Tahmazi99_big-stingray-4.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text></text> Button\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyBigStingray4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Ali-Tahmazi99 - Tags: button */\n/* From uiverse.io by @Ali-Tahmazi99 */\nbutton {\n display: inline-block;\n width: 300rpx;\n height: 100rpx;\n border-radius: 20rpx;\n border: 2rpx solid #03045e;\n position: relative;\n overflow: hidden;\n transition: all 0.5s ease-in;\n z-index: 1;\n}\n\nbutton::before,\nbutton::after {\n content: '';\n position: absolute;\n top: 0;\n width: 0;\n height: 100%;\n transform: skew(15deg);\n transition: all 0.5s;\n overflow: hidden;\n z-index: -1;\n}\n\nbutton::before {\n left: -20rpx;\n background: #240046;\n}\n\nbutton::after {\n right: -20rpx;\n background: #5a189a;\n}\n\nbutton:hover::before,\nbutton:hover::after {\n width: 58%;\n}\n\nbutton:hover span {\n color: #e0aaff;\n transition: 0.3s;\n}\n\nbutton span {\n color: #03045e;\n font-size: 36rpx;\n transition: all 0.3s ease-in;\n}\n",
+    "component_name": "GalaxyBigStingray4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 840,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.566Z",
+  "updated_at": "2025-07-31T07:55:32.566Z"
+}

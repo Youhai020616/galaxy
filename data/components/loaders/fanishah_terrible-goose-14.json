@@ -1,0 +1,90 @@
+{
+  "id": "fanishah_terrible-goose-14",
+  "name": "terrible-goose-14",
+  "category": "loaders",
+  "author": "fanishah",
+  "description": "terrible-goose-14 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"planet\">\n</div>",
+    "css": "/* From Uiverse.io by fanishah - Tags: loader */\n.planet {\n  display: block;\n  width: 125px;\n  height: 125px;\n  position: relative;\n  transform-style: preserve-3d;\n  border-radius: 50%;\n  background: #fcc96b;\n  background: #fcc96b;\n  background: linear-gradient(\n    180deg,\n    #fcc96b 0%,\n    #fcc96b 15%,\n    #f7ae01 15%,\n    #f7ae01 19%,\n    #fcc96b 19%,\n    #fcc96b 22%,\n    #f7ae01 22%,\n    #f7ae01 28%,\n    #fcc96b 28%,\n    #fcc96b 31%,\n    #fcc96b 33%,\n    #fcc96b 36%,\n    #f7ae01 36%,\n    #f7ae01 48%,\n    #fcc96b 48%,\n    #fcc96b 55%,\n    #f7ae01 55%,\n    #f7ae01 66%,\n    #fcc96b 66%,\n    #fcc96b 70%,\n    #f7ae01 70%,\n    #f7ae01 73%,\n    #fcc96b 73%,\n    #fcc96b 82%,\n    #f7ae01 82%,\n    #c7ba9d 86%,\n    #fcc96b 86%\n  );\n  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.25),\n    inset 8px -4px 6px rgba(199, 128, 0, 0.5),\n    inset -8px 4px 8px rgba(255, 235, 199, 0.5), inset 20px -5px 12px #f7ae01,\n    0 0 100px #ffffff59;\n  transform: rotateZ(-15deg);\n}\n\n.planet::before {\n  position: absolute;\n  content: \"\";\n  display: block;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  border: 16px solid #e1a519;\n  border-top-width: 0;\n  border-radius: 50%;\n  box-shadow: 0 -2px 0 #c18620;\n  animation: rings1 0.8s infinite linear;\n}\n\n.planet::after {\n  position: absolute;\n  content: \"\";\n  display: block;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  border: 8px solid #d48b0c;\n  border-top-width: 0;\n  border-radius: 50%;\n  box-shadow: 0 -2px 0 #b99309;\n  animation: rings2 0.8s infinite linear;\n}\n\n@keyframes rings1 {\n  0% {\n    transform: rotateX(65deg) rotateZ(0deg) scale(1.75);\n  }\n\n  100% {\n    transform: rotateX(65deg) rotateZ(360deg) scale(1.75);\n  }\n}\n\n@keyframes rings2 {\n  0% {\n    transform: rotateX(65deg) rotateZ(0deg) scale(1.7);\n  }\n\n  100% {\n    transform: rotateX(65deg) rotateZ(360deg) scale(1.7);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/fanishah_terrible-goose-14.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"planet\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTerribleGoose14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by fanishah - Tags: loader */\n.planet {\n  display: block;\n  width: 250rpx;\n  height: 250rpx;\n  position: relative;\n  transform-style: preserve-3d;\n  border-radius: 50%;\n  background: #fcc96b;\n  background: #fcc96b;\n  background: linear-gradient(\n    180deg,\n    #fcc96b 0%,\n    #fcc96b 15%,\n    #f7ae01 15%,\n    #f7ae01 19%,\n    #fcc96b 19%,\n    #fcc96b 22%,\n    #f7ae01 22%,\n    #f7ae01 28%,\n    #fcc96b 28%,\n    #fcc96b 31%,\n    #fcc96b 33%,\n    #fcc96b 36%,\n    #f7ae01 36%,\n    #f7ae01 48%,\n    #fcc96b 48%,\n    #fcc96b 55%,\n    #f7ae01 55%,\n    #f7ae01 66%,\n    #fcc96b 66%,\n    #fcc96b 70%,\n    #f7ae01 70%,\n    #f7ae01 73%,\n    #fcc96b 73%,\n    #fcc96b 82%,\n    #f7ae01 82%,\n    #c7ba9d 86%,\n    #fcc96b 86%\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 50rpx rgba(0, 0, 0, 0.25),\n    inset 16rpx -8rpx 12rpx rgba(199, 128, 0, 0.5),\n    inset -16rpx 8rpx 16rpx rgba(255, 235, 199, 0.5), inset 40rpx -10rpx 24rpx #f7ae01,\n    0 0 200rpx #ffffff59;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotateZ(-15deg);\n}\n\n.planet::before {\n  position: absolute;\n  content: \"\";\n  display: block;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  border: 32rpx solid #e1a519;\n  border-top-width: 0;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -4rpx 0 #c18620;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: rings1 0.8s infinite linear;\n}\n\n.planet::after {\n  position: absolute;\n  content: \"\";\n  display: block;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  border: 16rpx solid #d48b0c;\n  border-top-width: 0;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -4rpx 0 #b99309;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: rings2 0.8s infinite linear;\n}\n\n@keyframes rings1 {\n  0% {\n    transform: rotateX(65deg) rotateZ(0deg) scale(1.75);\n  }\n\n  100% {\n    transform: rotateX(65deg) rotateZ(360deg) scale(1.75);\n  }\n}\n\n@keyframes rings2 {\n  0% {\n    transform: rotateX(65deg) rotateZ(0deg) scale(1.7);\n  }\n\n  100% {\n    transform: rotateX(65deg) rotateZ(360deg) scale(1.7);\n  }\n}\n",
+    "component_name": "GalaxyTerribleGoose14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1888,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.040Z",
+  "updated_at": "2025-07-31T07:55:42.040Z"
+}

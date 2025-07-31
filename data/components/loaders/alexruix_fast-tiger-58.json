@@ -1,0 +1,89 @@
+{
+  "id": "alexruix_fast-tiger-58",
+  "name": "fast-tiger-58",
+  "category": "loaders",
+  "author": "alexruix",
+  "description": "fast-tiger-58 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  --ballcolor: #f2f2f2;\n  --shadow: 0px 0 #ffffff00;\n  --shadowcolor: #ffffff00;\n  width: 10px;\n  height: 10px;\n  left: -120px;\n  border-radius: 50%;\n  position: relative;\n  color: var(--ballcolor);\n  animation: shadowRolling 2s linear infinite;\n}\n\n@keyframes shadowRolling {\n  \n  0% {\n    box-shadow: var(--shadow),\n        var(--shadow),\n        var(--shadow),\n        var(--shadow);\n  }\n\n  12% {\n    box-shadow: 100px 0 var(--ballcolor),\n        var(--shadow),\n        var(--shadow), \n        var(--shadow);\n  }\n\n  25% {\n    box-shadow: 110px 0 var(--ballcolor),\n        100px 0 var(--ballcolor),\n        var(--shadow), \n        var(--shadow);\n  }\n\n  36% {\n    box-shadow: 120px 0 var(--ballcolor), \n        110px 0 var(--ballcolor), \n        100px 0 var(--ballcolor), \n         var(--shadow);\n  }\n\n  50% {\n    box-shadow: 130px 0 var(--ballcolor),\n        120px 0 var(--ballcolor),\n        110px 0 var(--ballcolor),\n        100px 0 var(--ballcolor);\n  }\n\n  62% {\n    box-shadow: 200px 0 var(--shadowcolor),\n         130px 0 var(--ballcolor), \n         120px 0 var(--ballcolor), \n         110px 0 var(--ballcolor);\n  }\n\n  75% {\n    box-shadow: 200px 0 var(--shadowcolor),\n        200px 0 var(--shadowcolor),\n        130px 0 var(--ballcolor), \n        120px 0 var(--ballcolor);\n  }\n\n  87% {\n    box-shadow: 200px 0 var(--shadowcolor), \n        200px 0 var(--shadowcolor), \n        200px 0 var(--shadowcolor), \n        130px 0 var(--ballcolor);\n  }\n\n  100% {\n    box-shadow: 200px 0 var(--shadowcolor), \n        200px 0 var(--shadowcolor),\n        200px 0 var(--shadowcolor),\n        200px 0 var(--shadowcolor);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/alexruix_fast-tiger-58.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyFastTiger58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  --ballcolor: #f2f2f2;\n  --shadow: 0rpx 0 #ffffff00;\n  --shadowcolor: #ffffff00;\n  width: 20rpx;\n  height: 20rpx;\n  left: -240rpx;\n  border-radius: 50%;\n  position: relative;\n  color: var(--ballcolor);\n  animation: shadowRolling 2s linear infinite;\n}\n\n@keyframes shadowRolling {\n  \n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: var(--shadow),\n        var(--shadow),\n        var(--shadow),\n        var(--shadow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  12% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 200rpx 0 var(--ballcolor),\n        var(--shadow),\n        var(--shadow), \n        var(--shadow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  25% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 220rpx 0 var(--ballcolor),\n        200rpx 0 var(--ballcolor),\n        var(--shadow), \n        var(--shadow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  36% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 240rpx 0 var(--ballcolor), \n        220rpx 0 var(--ballcolor), \n        200rpx 0 var(--ballcolor), \n         var(--shadow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  50% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 260rpx 0 var(--ballcolor),\n        240rpx 0 var(--ballcolor),\n        220rpx 0 var(--ballcolor),\n        200rpx 0 var(--ballcolor);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  62% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 400rpx 0 var(--shadowcolor),\n         260rpx 0 var(--ballcolor), \n         240rpx 0 var(--ballcolor), \n         220rpx 0 var(--ballcolor);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  75% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 400rpx 0 var(--shadowcolor),\n        400rpx 0 var(--shadowcolor),\n        260rpx 0 var(--ballcolor), \n        240rpx 0 var(--ballcolor);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  87% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 400rpx 0 var(--shadowcolor), \n        400rpx 0 var(--shadowcolor), \n        400rpx 0 var(--shadowcolor), \n        260rpx 0 var(--ballcolor);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 400rpx 0 var(--shadowcolor), \n        400rpx 0 var(--shadowcolor),\n        400rpx 0 var(--shadowcolor),\n        400rpx 0 var(--shadowcolor);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n",
+    "component_name": "GalaxyFastTiger58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1707,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.913Z",
+  "updated_at": "2025-07-31T07:55:40.913Z"
+}

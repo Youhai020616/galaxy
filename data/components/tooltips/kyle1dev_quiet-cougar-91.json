@@ -1,0 +1,93 @@
+{
+  "id": "kyle1dev_quiet-cougar-91",
+  "name": "quiet-cougar-91",
+  "category": "tooltips",
+  "author": "kyle1dev",
+  "description": "quiet-cougar-91 组件 (tooltip, animation, gradient, interactive)",
+  "tags": [
+    "tooltip",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-wrapper\">\n  <button class=\"tooltip-button\">\n    <span class=\"tooltip-text\">Hover me</span>\n  </button>\n  <div class=\"tooltip-content\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n      <path d=\"M13 13h-2v-2h2v2zm0 4h-2v-2h2v2zm1-18h-8v2h8v-2zm0 20h-8v-2h8v2zm5.5-7h-2v-2h2v2zm-7 0h-2v-2h2v2zm1-10h-2v6h2v-6zm6.5 5.5h-1.5v1.5h1.5v-1.5zM4.5 16.5h1.5v1.5h-1.5v-1.5zm12-5h-2v-2h2v2zm-4 4h-2v-2h2v2zm5-3h-2v-2h2v2zm-7 0h-2v-2h2v2zm-3-5h-2v2h2v-2zm-4 8.5h1.5v1.5h-1.5v-1.5zm4.5-12h-2v2h2v-2zm10 1h-2v2h2v-2zm-7 3h-2v2h2v-2zm6 5h-2v-2h2v2zm-7-6h-2v-2h2v2zM6 13H4v-2h2v2zm12 6h-2v-2h2v2zM9 4H7v2h2V4zm11 0h-2v2h2V4z\"></path>\n    </svg>\n    Uiverse.io\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by kyle1dev  - Tags: tooltip */\n.tooltip-wrapper {\n  position: relative;\n  display: inline-block;\n}\n.tooltip-wrapper .tooltip-content {\n  visibility: hidden;\n  background: linear-gradient(to right, #000, #333);\n  color: #fff;\n  text-align: center;\n  border-radius: 6px;\n  padding: 8px 12px;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  transform: translateX(-50%) translateY(10px);\n  opacity: 0;\n  transition:\n    visibility 0s linear 0.4s,\n    opacity 0.4s ease,\n    transform 0.4s ease;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);\n  white-space: nowrap;\n  pointer-events: none;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 8px;\n}\n.tooltip-wrapper:hover .tooltip-content {\n  visibility: visible;\n  opacity: 1;\n  transform: translateX(-50%) translateY(0);\n  transition-delay: 0s;\n}\n.tooltip-wrapper:not(:hover) .tooltip-content {\n  visibility: visible;\n  transition-delay: 0s, 0.4s;\n}\n.tooltip-button {\n  background: linear-gradient(to right, #333, #000);\n  border: none;\n  color: white;\n  padding: 15px 30px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  border-radius: 6px;\n  position: relative;\n  overflow: hidden;\n  transition:\n    background 0.3s ease,\n    box-shadow 0.3s ease;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);\n}\n.tooltip-button:hover {\n  background: linear-gradient(to right, #000, #333);\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);\n}\n.tooltip-button:active {\n  background: #222;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);\n  transform: scale(0.95);\n}\n.tooltip-button .tooltip-text {\n  position: relative;\n  display: inline-block;\n  transition: transform 0.4s ease;\n}\n.tooltip-button:hover .tooltip-text {\n  transform: translateY(-10px);\n}\n.tooltip-content svg {\n  fill: #fff;\n  width: 16px;\n  height: 16px;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/kyle1dev_quiet-cougar-91.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-wrapper\"></view>\n  <button class=\"tooltip-button\"></button>\n    <text class=\"tooltip-text\">Hover me</text>\n  </button>\n  <view class=\"tooltip-content\"></view>\n    <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"></view>\n      <path d=\"M13 13h-2v-2h2v2zm0 4h-2v-2h2v2zm1-18h-8v2h8v-2zm0 20h-8v-2h8v2zm5.5-7h-2v-2h2v2zm-7 0h-2v-2h2v2zm1-10h-2v6h2v-6zm6.5 5.5h-1.5v1.5h1.5v-1.5zM4.5 16.5h1.5v1.5h-1.5v-1.5zm12-5h-2v-2h2v2zm-4 4h-2v-2h2v2zm5-3h-2v-2h2v2zm-7 0h-2v-2h2v2zm-3-5h-2v2h2v-2zm-4 8.5h1.5v1.5h-1.5v-1.5zm4.5-12h-2v2h2v-2zm10 1h-2v2h2v-2zm-7 3h-2v2h2v-2zm6 5h-2v-2h2v2zm-7-6h-2v-2h2v2zM6 13H4v-2h2v2zm12 6h-2v-2h2v2zM9 4H7v2h2V4zm11 0h-2v2h2V4z\"></path>\n    </svg>\n    Uiverse.io\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuietCougar91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by kyle1dev  - Tags: tooltip */\n.tooltip-wrapper {\n  position: relative;\n  display: inline-block;\n}\n.tooltip-wrapper .tooltip-content {\n  visibility: hidden;\n  background: linear-gradient(to right, #000, #333);\n  color: #fff;\n  text-align: center;\n  border-radius: 12rpx;\n  padding: 16rpx 24rpx;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  transform: translateX(-50%) translateY(20rpx);\n  opacity: 0;\n  transition:\n    visibility 0s linear 0.4s,\n    opacity 0.4s ease,\n    transform 0.4s ease;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 12rpx 24rpx rgba(0, 0, 0, 0.6);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  white-space: nowrap;\n  pointer-events: none;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 16rpx;\n}\n.tooltip-wrapper:hover .tooltip-content {\n  visibility: visible;\n  opacity: 1;\n  transform: translateX(-50%) translateY(0);\n  transition-delay: 0s;\n}\n.tooltip-wrapper:not(:hover) .tooltip-content {\n  visibility: visible;\n  transition-delay: 0s, 0.4s;\n}\n.tooltip-button {\n  background: linear-gradient(to right, #333, #000);\n  border: none;\n  color: white;\n  padding: 30rpx 60rpx;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 32rpx;\n  margin: 8rpx 4rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border-radius: 12rpx;\n  position: relative;\n  overflow: hidden;\n  transition:\n    background 0.3s ease,\n    box-shadow 0.3s ease;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.tooltip-button:hover {\n  background: linear-gradient(to right, #000, #333);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 12rpx 24rpx rgba(0, 0, 0, 0.7);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.tooltip-button:active {\n  background: #222;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: scale(0.95);\n}\n.tooltip-button .tooltip-text {\n  position: relative;\n  display: inline-block;\n  transition: transform 0.4s ease;\n}\n.tooltip-button:hover .tooltip-text {\n  transform: translateY(-20rpx);\n}\n.tooltip-content svg {\n  fill: #fff;\n  width: 32rpx;\n  height: 32rpx;\n}\n\n",
+    "component_name": "GalaxyQuietCougar91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2593,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.702Z",
+  "updated_at": "2025-07-31T07:55:38.702Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "SouravBandyopadhyay_rude-sloth-38",
+  "name": "rude-sloth-38",
+  "category": "loaders",
+  "author": "SouravBandyopadhyay",
+  "description": "rude-sloth-38 组件 (loader, spinner, glass from, sandglass, hourglass, animation)",
+  "tags": [
+    "loader",
+    "spinner",
+    "glass from",
+    "sandglass",
+    "hourglass",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"hourglassBackground\">\n      <div class=\"hourglassContainer\">\n        <div class=\"hourglassCurves\"></div>\n        <div class=\"hourglassCapTop\"></div>\n        <div class=\"hourglassGlassTop\"></div>\n        <div class=\"hourglassSand\"></div>\n        <div class=\"hourglassSandStream\"></div>\n        <div class=\"hourglassCapBottom\"></div>\n        <div class=\"hourglassGlass\"></div>\n      </div>\n    </div>",
+    "css": "/* From Uiverse.io by SouravBandyopadhyay - Tags: loader, spinner, glass from, sandglass, hourglass */\n.hourglassBackground {\n  position: relative;\n  background-color: rgb(71, 60, 60);\n  height: 130px;\n  width: 130px;\n  border-radius: 50%;\n  margin: 30px auto;\n}\n\n.hourglassContainer {\n  position: absolute;\n  top: 30px;\n  left: 40px;\n  width: 50px;\n  height: 70px;\n  -webkit-animation: hourglassRotate 2s ease-in 0s infinite;\n  animation: hourglassRotate 2s ease-in 0s infinite;\n  transform-style: preserve-3d;\n  perspective: 1000px;\n}\n\n.hourglassContainer div,\n.hourglassContainer div:before,\n.hourglassContainer div:after {\n  transform-style: preserve-3d;\n}\n\n@-webkit-keyframes hourglassRotate {\n  0% {\n    transform: rotateX(0deg);\n  }\n\n  50% {\n    transform: rotateX(180deg);\n  }\n\n  100% {\n    transform: rotateX(180deg);\n  }\n}\n\n@keyframes hourglassRotate {\n  0% {\n    transform: rotateX(0deg);\n  }\n\n  50% {\n    transform: rotateX(180deg);\n  }\n\n  100% {\n    transform: rotateX(180deg);\n  }\n}\n\n.hourglassCapTop {\n  top: 0;\n}\n\n.hourglassCapTop:before {\n  top: -25px;\n}\n\n.hourglassCapTop:after {\n  top: -20px;\n}\n\n.hourglassCapBottom {\n  bottom: 0;\n}\n\n.hourglassCapBottom:before {\n  bottom: -25px;\n}\n\n.hourglassCapBottom:after {\n  bottom: -20px;\n}\n\n.hourglassGlassTop {\n  transform: rotateX(90deg);\n  position: absolute;\n  top: -16px;\n  left: 3px;\n  border-radius: 50%;\n  width: 44px;\n  height: 44px;\n  background-color: #999999;\n}\n\n.hourglassGlass {\n  perspective: 100px;\n  position: absolute;\n  top: 32px;\n  left: 20px;\n  width: 10px;\n  height: 6px;\n  background-color: #999999;\n  opacity: 0.5;\n}\n\n.hourglassGlass:before,\n.hourglassGlass:after {\n  content: '';\n  display: block;\n  position: absolute;\n  background-color: #999999;\n  left: -17px;\n  width: 44px;\n  height: 28px;\n}\n\n.hourglassGlass:before {\n  top: -27px;\n  border-radius: 0 0 25px 25px;\n}\n\n.hourglassGlass:after {\n  bottom: -27px;\n  border-radius: 25px 25px 0 0;\n}\n\n.hourglassCurves:before,\n.hourglassCurves:after {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 32px;\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  background-color: #333;\n  animation: hideCurves 2s ease-in 0s infinite;\n}\n\n.hourglassCurves:before {\n  left: 15px;\n}\n\n.hourglassCurves:after {\n  left: 29px;\n}\n\n@-webkit-keyframes hideCurves {\n  0% {\n    opacity: 1;\n  }\n\n  25% {\n    opacity: 0;\n  }\n\n  30% {\n    opacity: 0;\n  }\n\n  40% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes hideCurves {\n  0% {\n    opacity: 1;\n  }\n\n  25% {\n    opacity: 0;\n  }\n\n  30% {\n    opacity: 0;\n  }\n\n  40% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n.hourglassSandStream:before {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 24px;\n  width: 3px;\n  background-color: white;\n  -webkit-animation: sandStream1 2s ease-in 0s infinite;\n  animation: sandStream1 2s ease-in 0s infinite;\n}\n\n.hourglassSandStream:after {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 36px;\n  left: 19px;\n  border-left: 6px solid transparent;\n  border-right: 6px solid transparent;\n  border-bottom: 6px solid #fff;\n  animation: sandStream2 2s ease-in 0s infinite;\n}\n\n@-webkit-keyframes sandStream1 {\n  0% {\n    height: 0;\n    top: 35px;\n  }\n\n  50% {\n    height: 0;\n    top: 45px;\n  }\n\n  60% {\n    height: 35px;\n    top: 8px;\n  }\n\n  85% {\n    height: 35px;\n    top: 8px;\n  }\n\n  100% {\n    height: 0;\n    top: 8px;\n  }\n}\n\n@keyframes sandStream1 {\n  0% {\n    height: 0;\n    top: 35px;\n  }\n\n  50% {\n    height: 0;\n    top: 45px;\n  }\n\n  60% {\n    height: 35px;\n    top: 8px;\n  }\n\n  85% {\n    height: 35px;\n    top: 8px;\n  }\n\n  100% {\n    height: 0;\n    top: 8px;\n  }\n}\n\n@-webkit-keyframes sandStream2 {\n  0% {\n    opacity: 0;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  51% {\n    opacity: 1;\n  }\n\n  90% {\n    opacity: 1;\n  }\n\n  91% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n\n@keyframes sandStream2 {\n  0% {\n    opacity: 0;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  51% {\n    opacity: 1;\n  }\n\n  90% {\n    opacity: 1;\n  }\n\n  91% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n\n.hourglassSand:before,\n.hourglassSand:after {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 6px;\n  background-color: white;\n  perspective: 500px;\n}\n\n.hourglassSand:before {\n  top: 8px;\n  width: 39px;\n  border-radius: 3px 3px 30px 30px;\n  animation: sandFillup 2s ease-in 0s infinite;\n}\n\n.hourglassSand:after {\n  border-radius: 30px 30px 3px 3px;\n  animation: sandDeplete 2s ease-in 0s infinite;\n}\n\n@-webkit-keyframes sandFillup {\n  0% {\n    opacity: 0;\n    height: 0;\n  }\n\n  60% {\n    opacity: 1;\n    height: 0;\n  }\n\n  100% {\n    opacity: 1;\n    height: 17px;\n  }\n}\n\n@keyframes sandFillup {\n  0% {\n    opacity: 0;\n    height: 0;\n  }\n\n  60% {\n    opacity: 1;\n    height: 0;\n  }\n\n  100% {\n    opacity: 1;\n    height: 17px;\n  }\n}\n\n@-webkit-keyframes sandDeplete {\n  0% {\n    opacity: 0;\n    top: 45px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  1% {\n    opacity: 1;\n    top: 45px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  24% {\n    opacity: 1;\n    top: 45px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  25% {\n    opacity: 1;\n    top: 41px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  50% {\n    opacity: 1;\n    top: 41px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  90% {\n    opacity: 1;\n    top: 41px;\n    height: 0;\n    width: 10px;\n    left: 20px;\n  }\n}\n\n@keyframes sandDeplete {\n  0% {\n    opacity: 0;\n    top: 45px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  1% {\n    opacity: 1;\n    top: 45px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  24% {\n    opacity: 1;\n    top: 45px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  25% {\n    opacity: 1;\n    top: 41px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  50% {\n    opacity: 1;\n    top: 41px;\n    height: 17px;\n    width: 38px;\n    left: 6px;\n  }\n\n  90% {\n    opacity: 1;\n    top: 41px;\n    height: 0;\n    width: 10px;\n    left: 20px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SouravBandyopadhyay_rude-sloth-38.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"hourglassBackground\"></view>\n      <view class=\"hourglassContainer\"></view>\n        <view class=\"hourglassCurves\"></view>\n        <view class=\"hourglassCapTop\"></view>\n        <view class=\"hourglassGlassTop\"></view>\n        <view class=\"hourglassSand\"></view>\n        <view class=\"hourglassSandStream\"></view>\n        <view class=\"hourglassCapBottom\"></view>\n        <view class=\"hourglassGlass\"></view>\n      </div>\n    </div>",
+    "script": "export default {\n  name: 'GalaxyRudeSloth38',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SouravBandyopadhyay - Tags: loader, spinner, glass from, sandglass, hourglass */\n.hourglassBackground {\n  position: relative;\n  background-color: rgb(71, 60, 60);\n  height: 260rpx;\n  width: 260rpx;\n  border-radius: 50%;\n  margin: 60rpx auto;\n}\n\n.hourglassContainer {\n  position: absolute;\n  top: 60rpx;\n  left: 80rpx;\n  width: 100rpx;\n  height: 140rpx;\n  -webkit-animation: hourglassRotate 2s ease-in 0s infinite;\n  animation: hourglassRotate 2s ease-in 0s infinite;\n  transform-style: preserve-3d;\n  perspective: 2000rpx;\n}\n\n.hourglassContainer div,\n.hourglassContainer div:before,\n.hourglassContainer div:after {\n  transform-style: preserve-3d;\n}\n\n@-webkit-keyframes hourglassRotate {\n  0% {\n    transform: rotateX(0deg);\n  }\n\n  50% {\n    transform: rotateX(180deg);\n  }\n\n  100% {\n    transform: rotateX(180deg);\n  }\n}\n\n@keyframes hourglassRotate {\n  0% {\n    transform: rotateX(0deg);\n  }\n\n  50% {\n    transform: rotateX(180deg);\n  }\n\n  100% {\n    transform: rotateX(180deg);\n  }\n}\n\n.hourglassCapTop {\n  top: 0;\n}\n\n.hourglassCapTop:before {\n  top: -50rpx;\n}\n\n.hourglassCapTop:after {\n  top: -40rpx;\n}\n\n.hourglassCapBottom {\n  bottom: 0;\n}\n\n.hourglassCapBottom:before {\n  bottom: -50rpx;\n}\n\n.hourglassCapBottom:after {\n  bottom: -40rpx;\n}\n\n.hourglassGlassTop {\n  transform: rotateX(90deg);\n  position: absolute;\n  top: -32rpx;\n  left: 6rpx;\n  border-radius: 50%;\n  width: 88rpx;\n  height: 88rpx;\n  background-color: #999999;\n}\n\n.hourglassGlass {\n  perspective: 200rpx;\n  position: absolute;\n  top: 64rpx;\n  left: 40rpx;\n  width: 20rpx;\n  height: 12rpx;\n  background-color: #999999;\n  opacity: 0.5;\n}\n\n.hourglassGlass:before,\n.hourglassGlass:after {\n  content: '';\n  display: block;\n  position: absolute;\n  background-color: #999999;\n  left: -34rpx;\n  width: 88rpx;\n  height: 56rpx;\n}\n\n.hourglassGlass:before {\n  top: -54rpx;\n  border-radius: 0 0 50rpx 50rpx;\n}\n\n.hourglassGlass:after {\n  bottom: -54rpx;\n  border-radius: 50rpx 50rpx 0 0;\n}\n\n.hourglassCurves:before,\n.hourglassCurves:after {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 64rpx;\n  width: 12rpx;\n  height: 12rpx;\n  border-radius: 50%;\n  background-color: #333;\n  animation: hideCurves 2s ease-in 0s infinite;\n}\n\n.hourglassCurves:before {\n  left: 30rpx;\n}\n\n.hourglassCurves:after {\n  left: 58rpx;\n}\n\n@-webkit-keyframes hideCurves {\n  0% {\n    opacity: 1;\n  }\n\n  25% {\n    opacity: 0;\n  }\n\n  30% {\n    opacity: 0;\n  }\n\n  40% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes hideCurves {\n  0% {\n    opacity: 1;\n  }\n\n  25% {\n    opacity: 0;\n  }\n\n  30% {\n    opacity: 0;\n  }\n\n  40% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n.hourglassSandStream:before {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 48rpx;\n  width: 6rpx;\n  background-color: white;\n  -webkit-animation: sandStream1 2s ease-in 0s infinite;\n  animation: sandStream1 2s ease-in 0s infinite;\n}\n\n.hourglassSandStream:after {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 72rpx;\n  left: 38rpx;\n  border-left: 12rpx solid transparent;\n  border-right: 12rpx solid transparent;\n  border-bottom: 12rpx solid #fff;\n  animation: sandStream2 2s ease-in 0s infinite;\n}\n\n@-webkit-keyframes sandStream1 {\n  0% {\n    height: 0;\n    top: 70rpx;\n  }\n\n  50% {\n    height: 0;\n    top: 90rpx;\n  }\n\n  60% {\n    height: 70rpx;\n    top: 16rpx;\n  }\n\n  85% {\n    height: 70rpx;\n    top: 16rpx;\n  }\n\n  100% {\n    height: 0;\n    top: 16rpx;\n  }\n}\n\n@keyframes sandStream1 {\n  0% {\n    height: 0;\n    top: 70rpx;\n  }\n\n  50% {\n    height: 0;\n    top: 90rpx;\n  }\n\n  60% {\n    height: 70rpx;\n    top: 16rpx;\n  }\n\n  85% {\n    height: 70rpx;\n    top: 16rpx;\n  }\n\n  100% {\n    height: 0;\n    top: 16rpx;\n  }\n}\n\n@-webkit-keyframes sandStream2 {\n  0% {\n    opacity: 0;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  51% {\n    opacity: 1;\n  }\n\n  90% {\n    opacity: 1;\n  }\n\n  91% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n\n@keyframes sandStream2 {\n  0% {\n    opacity: 0;\n  }\n\n  50% {\n    opacity: 0;\n  }\n\n  51% {\n    opacity: 1;\n  }\n\n  90% {\n    opacity: 1;\n  }\n\n  91% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n\n.hourglassSand:before,\n.hourglassSand:after {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 12rpx;\n  background-color: white;\n  perspective: 1000rpx;\n}\n\n.hourglassSand:before {\n  top: 16rpx;\n  width: 78rpx;\n  border-radius: 6rpx 6rpx 60rpx 60rpx;\n  animation: sandFillup 2s ease-in 0s infinite;\n}\n\n.hourglassSand:after {\n  border-radius: 60rpx 60rpx 6rpx 6rpx;\n  animation: sandDeplete 2s ease-in 0s infinite;\n}\n\n@-webkit-keyframes sandFillup {\n  0% {\n    opacity: 0;\n    height: 0;\n  }\n\n  60% {\n    opacity: 1;\n    height: 0;\n  }\n\n  100% {\n    opacity: 1;\n    height: 34rpx;\n  }\n}\n\n@keyframes sandFillup {\n  0% {\n    opacity: 0;\n    height: 0;\n  }\n\n  60% {\n    opacity: 1;\n    height: 0;\n  }\n\n  100% {\n    opacity: 1;\n    height: 34rpx;\n  }\n}\n\n@-webkit-keyframes sandDeplete {\n  0% {\n    opacity: 0;\n    top: 90rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  1% {\n    opacity: 1;\n    top: 90rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  24% {\n    opacity: 1;\n    top: 90rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  25% {\n    opacity: 1;\n    top: 82rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  50% {\n    opacity: 1;\n    top: 82rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  90% {\n    opacity: 1;\n    top: 82rpx;\n    height: 0;\n    width: 20rpx;\n    left: 40rpx;\n  }\n}\n\n@keyframes sandDeplete {\n  0% {\n    opacity: 0;\n    top: 90rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  1% {\n    opacity: 1;\n    top: 90rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  24% {\n    opacity: 1;\n    top: 90rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  25% {\n    opacity: 1;\n    top: 82rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  50% {\n    opacity: 1;\n    top: 82rpx;\n    height: 34rpx;\n    width: 76rpx;\n    left: 12rpx;\n  }\n\n  90% {\n    opacity: 1;\n    top: 82rpx;\n    height: 0;\n    width: 20rpx;\n    left: 40rpx;\n  }\n}\n\n",
+    "component_name": "GalaxyRudeSloth38"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 6383,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.541Z",
+  "updated_at": "2025-07-31T07:55:40.541Z"
+}

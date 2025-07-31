@@ -1,0 +1,93 @@
+{
+  "id": "Juanes200122_ugly-zebra-9",
+  "name": "ugly-zebra-9",
+  "category": "loaders",
+  "author": "Juanes200122",
+  "description": "ugly-zebra-9 组件 (simple, animation, loader, circle, html, css)",
+  "tags": [
+    "simple",
+    "animation",
+    "loader",
+    "circle",
+    "html",
+    "css"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Juanes200122 - Tags: simple, animation, loader, circle, html, css */\n.loader {\n  width: 15px;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: #000;\n  box-shadow: -20px 0px,20px 0px;\n  animation: l18 1s infinite;\n}\n\n@keyframes l18 {\n \n  25% {\n    box-shadow: -20px -20px, 20px 20px\n  }\n\n  50% {\n    box-shadow: 0px -20px,  0px 20px\n  }\n\n  75% {\n    box-shadow: 20px -20px,-20px 20px\n  }\n\n  100% {\n    box-shadow: 20px   0px,-20px  0px\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Juanes200122_ugly-zebra-9.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyUglyZebra9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Juanes200122 - Tags: simple, animation, loader, circle, html, css */\n.loader {\n  width: 30rpx;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: #000;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -40rpx 0rpx,40rpx 0rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: l18 1s infinite;\n}\n\n@keyframes l18 {\n \n  25% {\n    box-shadow: -40rpx -40rpx, 40rpx 40rpx\n  }\n\n  50% {\n    box-shadow: 0rpx -40rpx,  0rpx 40rpx\n  }\n\n  75% {\n    box-shadow: 40rpx -40rpx,-40rpx 40rpx\n  }\n\n  100% {\n    box-shadow: 40rpx   0rpx,-40rpx  0rpx\n  }\n}\n",
+    "component_name": "GalaxyUglyZebra9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 498,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.591Z",
+  "updated_at": "2025-07-31T07:55:39.591Z"
+}

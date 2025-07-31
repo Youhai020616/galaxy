@@ -1,0 +1,114 @@
+{
+  "id": "Yashasewi_evil-dog-33",
+  "name": "evil-dog-33",
+  "category": "buttons",
+  "author": "Yashasewi",
+  "description": "evil-dog-33 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"item button-parrot\" style=\"--bg-color: #2c3e50\">\n    <button>Click Me!\n      <div class=\"parrot\"></div>\n      <div class=\"parrot\"></div>\n      <div class=\"parrot\"></div>\n      <div class=\"parrot\"></div>\n      <div class=\"parrot\"></div>\n      <div class=\"parrot\"></div>\n    </button>\n  </div>",
+    "css": "/* From Uiverse.io by Yashasewi - Tags: button */\nbutton {\n  background: transparent;\n  color: #fff;\n  border: 3px solid #fff;\n  border-radius: 50px;\n  padding: 0.8rem 2rem;\n  font: 18px \"Margarine\", sans-serif;\n  outline: none;\n  cursor: pointer;\n  position: relative;\n  transition: 0.2s ease-in-out;\n  letter-spacing: 2px;\n}\n\n.name {\n  width: 100%;\n  text-align: center;\n  padding: 0 0 3rem;\n  padding-top: 4rem;\n  font: 500 14px \"Rubik\", sans-serif;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);\n}\n\n.button-parrot .parrot {\n  position: absolute;\n  width: 60px;\n  text-align: center;\n  animation: blink 0.8s infinite;\n  color: transparent;\n}\n\n.button-parrot .parrot:before {\n  content: \"Click Me!\";\n}\n\n.button-parrot .parrot:nth-child(1) {\n  top: -30px;\n  left: -40px;\n  font: 12px/1 \"Margarine\", sans-serif;\n  transform: rotate(-20deg);\n  animation-duration: 0.5s;\n}\n\n.button-parrot .parrot:nth-child(2) {\n  font: 12px/1 \"Margarine\", sans-serif;\n  right: -40px;\n  top: -20px;\n  transform: rotate(15deg);\n  animation-duration: 0.3s;\n}\n\n.button-parrot .parrot:nth-child(3) {\n  font: 16px/1 \"Margarine\", sans-serif;\n  top: -60px;\n  left: 15px;\n  transform: rotate(10deg);\n  animation-duration: 1s;\n}\n\n.button-parrot .parrot:nth-child(4) {\n  font: 18px/1 \"Margarine\", sans-serif;\n  top: -70px;\n  left: 95px;\n  transform: rotate(2deg);\n  animation-duration: 0.7s;\n}\n\n.button-parrot .parrot:nth-child(5) {\n  font: 14px/1 \"Margarine\", sans-serif;\n  top: 80px;\n  left: 105px;\n  transform: rotate(-20deg);\n  animation-duration: 0.8s;\n}\n\n.button-parrot .parrot:nth-child(6) {\n  font: 12px/1 \"Margarine\", sans-serif;\n  top: 80px;\n  left: 5px;\n  transform: rotate(10deg);\n  animation-duration: 1.2s;\n}\n\n.button-parrot button:hover .parrot:before {\n  content: \"Do it!\";\n  width: 70px;\n}\n\n@keyframes blink {\n  25%, 75% {\n    color: transparent;\n  }\n\n  40%, 60% {\n    color: #fff;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Yashasewi_evil-dog-33.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"item button-parrot\" style=\"--bg-color: #2c3e50\"></view>\n    <button></button>Click Me!\n      <view class=\"parrot\"></view>\n      <view class=\"parrot\"></view>\n      <view class=\"parrot\"></view>\n      <view class=\"parrot\"></view>\n      <view class=\"parrot\"></view>\n      <view class=\"parrot\"></view>\n    </button>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyEvilDog33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Yashasewi - Tags: button */\nbutton {\n  background: transparent;\n  color: #fff;\n  border: 6rpx solid #fff;\n  border-radius: 100rpx;\n  padding: 0.8rem 2rem;\n  font: 36rpx \"Margarine\", sans-serif;\n  outline: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  transition: 0.2s ease-in-out;\n  letter-spacing: 4rpx;\n}\n\n.name {\n  width: 100%;\n  text-align: center;\n  padding: 0 0 3rem;\n  padding-top: 4rem;\n  font: 500 28rpx \"Rubik\", sans-serif;\n  letter-spacing: 1rpx;\n  text-transform: uppercase;\n  /* #ifdef H5 */\n  text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.4);\n  /* #endif */\n}\n\n.button-parrot .parrot {\n  position: absolute;\n  width: 120rpx;\n  text-align: center;\n  animation: blink 0.8s infinite;\n  color: transparent;\n}\n\n.button-parrot .parrot:before {\n  content: \"Click Me!\";\n}\n\n.button-parrot .parrot:nth-child(1) {\n  top: -60rpx;\n  left: -80rpx;\n  font: 24rpx/1 \"Margarine\", sans-serif;\n  transform: rotate(-20deg);\n  animation-duration: 0.5s;\n}\n\n.button-parrot .parrot:nth-child(2) {\n  font: 24rpx/1 \"Margarine\", sans-serif;\n  right: -80rpx;\n  top: -40rpx;\n  transform: rotate(15deg);\n  animation-duration: 0.3s;\n}\n\n.button-parrot .parrot:nth-child(3) {\n  font: 32rpx/1 \"Margarine\", sans-serif;\n  top: -120rpx;\n  left: 30rpx;\n  transform: rotate(10deg);\n  animation-duration: 1s;\n}\n\n.button-parrot .parrot:nth-child(4) {\n  font: 36rpx/1 \"Margarine\", sans-serif;\n  top: -140rpx;\n  left: 190rpx;\n  transform: rotate(2deg);\n  animation-duration: 0.7s;\n}\n\n.button-parrot .parrot:nth-child(5) {\n  font: 28rpx/1 \"Margarine\", sans-serif;\n  top: 160rpx;\n  left: 210rpx;\n  transform: rotate(-20deg);\n  animation-duration: 0.8s;\n}\n\n.button-parrot .parrot:nth-child(6) {\n  font: 24rpx/1 \"Margarine\", sans-serif;\n  top: 160rpx;\n  left: 10rpx;\n  transform: rotate(10deg);\n  animation-duration: 1.2s;\n}\n\n.button-parrot button:hover .parrot:before {\n  content: \"Do it!\";\n  width: 140rpx;\n}\n\n@keyframes blink {\n  25%, 75% {\n    color: transparent;\n  }\n\n  40%, 60% {\n    color: #fff;\n  }\n}\n",
+    "component_name": "GalaxyEvilDog33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2234,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.187Z",
+  "updated_at": "2025-07-31T07:55:35.187Z"
+}

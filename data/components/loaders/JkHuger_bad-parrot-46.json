@@ -1,0 +1,85 @@
+{
+  "id": "JkHuger_bad-parrot-46",
+  "name": "bad-parrot-46",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "bad-parrot-46 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"moon\">\n  <div class=\"shadow\"></div>\n</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n.moon, .shadow {\n  margin: auto;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgb(216, 216, 216);\n  border-radius: 50%;\n  height: 50px;\n  width: 50px;\n}\n\n.shadow {\n  width: 50px;\n  height: 50px;\n  position: relative;\n  background: #212121;\n /*Change these color to the bg of your website*/\n  transition: all .3s ease;\n  animation: move_4123 1.2s infinite alternate ease-in-out;\n  transform: translate3d(8px, -8px, 0);\n}\n\n@keyframes move_4123 {\n  100% {\n    transform: translate3d(36px, -36px, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_bad-parrot-46.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"moon\"></view>\n  <view class=\"shadow\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBadParrot46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n.moon, .shadow {\n  margin: auto;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgb(216, 216, 216);\n  border-radius: 50%;\n  height: 100rpx;\n  width: 100rpx;\n}\n\n.shadow {\n  width: 100rpx;\n  height: 100rpx;\n  position: relative;\n  background: #212121;\n /*Change these color to the bg of your website*/\n  transition: all .3s ease;\n  animation: move_4123 1.2s infinite alternate ease-in-out;\n  transform: translate3d(16rpx, -16rpx, 0);\n}\n\n@keyframes move_4123 {\n  100% {\n    transform: translate3d(72rpx, -72rpx, 0);\n  }\n}\n",
+    "component_name": "GalaxyBadParrot46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 645,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.437Z",
+  "updated_at": "2025-07-31T07:55:39.437Z"
+}

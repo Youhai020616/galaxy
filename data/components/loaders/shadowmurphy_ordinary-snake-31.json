@@ -1,0 +1,88 @@
+{
+  "id": "shadowmurphy_ordinary-snake-31",
+  "name": "ordinary-snake-31",
+  "category": "loaders",
+  "author": "shadowmurphy",
+  "description": "ordinary-snake-31 组件 (green, loader, circle loader, animation, gradient)",
+  "tags": [
+    "green",
+    "loader",
+    "circle loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"circle circle-1\"></div>\n  <div class=\"circle circle-2\"></div>\n  <div class=\"circle circle-3\"></div>\n  <div class=\"circle circle-4\"></div>\n</div>",
+    "css": "/* From Uiverse.io by shadowmurphy - Tags: green, loader, circle loader */\n.loader {\n  position: relative;\n  width: 600px;\n  height: 600px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.circle {\n  position: absolute;\n  border-radius: 50%;\n  animation-duration: 1.5s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.circle-1 {\n  width: 60px;\n  height: 60px;\n  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.1855) 0%, rgba(68, 253, 38, 0.196) 100%);\n  animation-name: circle-1-animation;\n}\n\n.circle-3 {\n  width: 40px;\n  height: 40px;\n  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.265) 0%, rgba(68, 253, 38, 0.28) 100%);\n  animation-name: circle-3-animation;\n}\n\n.circle-4 {\n  width: 20px;\n  height: 20px;\n  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.265) 0%, rgba(68, 253, 38, 0.28) 100%);\n  animation-name: circle-4-animation;\n}\n\n@keyframes circle-1-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes circle-2-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes circle-3-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes circle-4-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/shadowmurphy_ordinary-snake-31.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"circle circle-1\"></view>\n  <view class=\"circle circle-2\"></view>\n  <view class=\"circle circle-3\"></view>\n  <view class=\"circle circle-4\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOrdinarySnake31',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by shadowmurphy - Tags: green, loader, circle loader */\n.loader {\n  position: relative;\n  width: 1200rpx;\n  height: 1200rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.circle {\n  position: absolute;\n  border-radius: 50%;\n  animation-duration: 1.5s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.circle-1 {\n  width: 120rpx;\n  height: 120rpx;\n  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.1855) 0%, rgba(68, 253, 38, 0.196) 100%);\n  animation-name: circle-1-animation;\n}\n\n.circle-3 {\n  width: 80rpx;\n  height: 80rpx;\n  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.265) 0%, rgba(68, 253, 38, 0.28) 100%);\n  animation-name: circle-3-animation;\n}\n\n.circle-4 {\n  width: 40rpx;\n  height: 40rpx;\n  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.265) 0%, rgba(68, 253, 38, 0.28) 100%);\n  animation-name: circle-4-animation;\n}\n\n@keyframes circle-1-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes circle-2-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes circle-3-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes circle-4-animation {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n",
+    "component_name": "GalaxyOrdinarySnake31"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1708,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.666Z",
+  "updated_at": "2025-07-31T07:55:42.666Z"
+}

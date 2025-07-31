@@ -1,0 +1,88 @@
+{
+  "id": "doniaskima_calm-yak-25",
+  "name": "calm-yak-25",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "calm-yak-25 组件 (simple, material design, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 50px;\n  aspect-ratio: 1;\n  --g: #0000 calc(100% - 5px),#000 calc(100% - 3px) 93%,#0000;\n  background: radial-gradient(farthest-side at bottom,var(--g)) top                  /100% 50%,\n    radial-gradient(farthest-side at top   ,var(--g)) bottom 18% right  0  /80%  40%,\n    radial-gradient(farthest-side at bottom,var(--g)) left   50% top    30%/60%  30%,\n    radial-gradient(farthest-side at top   ,var(--g)) right  34% bottom 37%/40%  20%,\n    radial-gradient(farthest-side at bottom,var(--g)) left   52% top    43%/24%  12%;\n  background-repeat: no-repeat;\n  animation: l20 1s infinite linear;\n}\n\n@keyframes l20 {\n  100% {\n    transform: rotate(1turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_calm-yak-25.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyCalmYak25',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 100rpx;\n  aspect-ratio: 1;\n  --g: #0000 calc(100% - 10rpx),#000 calc(100% - 6rpx) 93%,#0000;\n  background: radial-gradient(farthest-side at bottom,var(--g)) top                  /100% 50%,\n    radial-gradient(farthest-side at top   ,var(--g)) bottom 18% right  0  /80%  40%,\n    radial-gradient(farthest-side at bottom,var(--g)) left   50% top    30%/60%  30%,\n    radial-gradient(farthest-side at top   ,var(--g)) right  34% bottom 37%/40%  20%,\n    radial-gradient(farthest-side at bottom,var(--g)) left   52% top    43%/24%  12%;\n  background-repeat: no-repeat;\n  animation: l20 1s infinite linear;\n}\n\n@keyframes l20 {\n  100% {\n    transform: rotate(1turn)\n  }\n}\n",
+    "component_name": "GalaxyCalmYak25"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 824,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.254Z",
+  "updated_at": "2025-07-31T07:55:41.254Z"
+}

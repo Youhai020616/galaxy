@@ -1,0 +1,85 @@
+{
+  "id": "Ali-Tahmazi99_breezy-squid-90",
+  "name": "breezy-squid-90",
+  "category": "loaders",
+  "author": "Ali-Tahmazi99",
+  "description": "breezy-squid-90 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span class=\"hour\"></span>\n  <span class=\"min\"></span>\n  <span class=\"circel\"></span>\n</div>",
+    "css": "/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */\n.loader {\n width: 65px;\n height: 65px;\n border: 8px solid #ee9b00a6;\n border-radius: 50px;\n position: relative;\n}\n\n.loader span {\n display: block;\n background: #ee9b00;\n}\n\n.loader .hour ,\n.loader .min {\n width: 6px;\n height: 22px;\n border-radius: 50px;\n position: absolute;\n top: 24.5px;\n left: 21px;\n animation: load9243 1.2s linear infinite;\n transform-origin: top center;\n}\n\n.loader .min {\n height: 17px;\n animation: load9243 4s linear infinite;\n}\n\n.loader .circel {\n width: 10px;\n height: 10px;\n border-radius: 50px;\n position: absolute;\n top: 19px;\n left: 19px;\n}\n\n@keyframes load9243 {\n 0% {\n  transform: rotate(0deg);\n }\n\n 100% {\n  transform: rotate(360deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Ali-Tahmazi99_breezy-squid-90.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text class=\"hour\"></text>\n  <text class=\"min\"></text>\n  <text class=\"circel\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBreezySquid90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */\n.loader {\n width: 130rpx;\n height: 130rpx;\n border: 16rpx solid #ee9b00a6;\n border-radius: 100rpx;\n position: relative;\n}\n\n.loader span {\n display: block;\n background: #ee9b00;\n}\n\n.loader .hour ,\n.loader .min {\n width: 12rpx;\n height: 44rpx;\n border-radius: 100rpx;\n position: absolute;\n top: 49rpx;\n left: 42rpx;\n animation: load9243 1.2s linear infinite;\n transform-origin: top center;\n}\n\n.loader .min {\n height: 34rpx;\n animation: load9243 4s linear infinite;\n}\n\n.loader .circel {\n width: 20rpx;\n height: 20rpx;\n border-radius: 100rpx;\n position: absolute;\n top: 38rpx;\n left: 38rpx;\n}\n\n@keyframes load9243 {\n 0% {\n  transform: rotate(0deg);\n }\n\n 100% {\n  transform: rotate(360deg);\n }\n}\n",
+    "component_name": "GalaxyBreezySquid90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 843,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.892Z",
+  "updated_at": "2025-07-31T07:55:38.892Z"
+}

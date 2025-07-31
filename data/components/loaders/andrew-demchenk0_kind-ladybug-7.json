@@ -1,0 +1,86 @@
+{
+  "id": "andrew-demchenk0_kind-ladybug-7",
+  "name": "kind-ladybug-7",
+  "category": "loaders",
+  "author": "andrew-demchenk0",
+  "description": "kind-ladybug-7 组件 (loader, pacman, animation)",
+  "tags": [
+    "loader",
+    "pacman",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader-wrapper\">\n  <div class=\"packman\"></div>\n  <div class=\"dots\">\n    <div class=\"dot\"></div>\n    <div class=\"dot\"></div>\n    <div class=\"dot\"></div>\n    <div class=\"dot\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by andrew-demchenk0 - Tags: loader, pacman */\n.loader-wrapper {\n  position: relative;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n}\n\n.loader-wrapper .packman::before {\n  content: '';\n  position: absolute;\n  width: 50px;\n  height: 25px;\n  background-color: #EFF107;\n  border-radius: 100px 100px 0 0;\n  transform: translate(-50%, -50%);\n  animation: pac-top 0.5s linear infinite;\n  transform-origin: center bottom;\n}\n\n.loader-wrapper .packman::after {\n  content: '';\n  position: absolute;\n  width: 50px;\n  height: 25px;\n  background-color: #EFF107;\n  border-radius: 0 0 100px 100px;\n  transform: translate(-50%, 50%);\n  animation: pac-bot 0.5s linear infinite;\n  transform-origin: center top;\n}\n\n@keyframes pac-top {\n  0% {\n    transform: translate(-50%, -50%) rotate(0)\n  }\n\n  50% {\n    transform: translate(-50%, -50%) rotate(-30deg)\n  }\n\n  100% {\n    transform: translate(-50%, -50%) rotate(0)\n  }\n}\n\n@keyframes pac-bot {\n  0% {\n    transform: translate(-50%, 50%) rotate(0)\n  }\n\n  50% {\n    transform: translate(-50%, 50%) rotate(30deg)\n  }\n\n  100% {\n    transform: translate(-50%, 50%) rotate(0)\n  }\n}\n\n.dots .dot {\n  position: absolute;\n  z-index: -1;\n  top: 8px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background: #fff;\n}\n\n.dots .dot:nth-child(1) {\n  left: 90px;\n  animation: dot-stage1 0.5s infinite;\n}\n\n.dots .dot:nth-child(2) {\n  left: 60px;\n  animation: dot-stage1 0.5s infinite;\n}\n\n.dots .dot:nth-child(3) {\n  left: 30px;\n  animation: dot-stage1 0.5s infinite;\n}\n\n.dots .dot:nth-child(4) {\n  left: 10px;\n  animation: dot-stage2 0.5s infinite;\n}\n\n@keyframes dot-stage1 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  100% {\n    transform: translate(-24px, 0);\n  }\n}\n\n@keyframes dot-stage2 {\n  0% {\n    transform: scale(1);\n  }\n\n  5%, 100% {\n    transform: scale(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/andrew-demchenk0_kind-ladybug-7.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader-wrapper\"></view>\n  <view class=\"packman\"></view>\n  <view class=\"dots\"></view>\n    <view class=\"dot\"></view>\n    <view class=\"dot\"></view>\n    <view class=\"dot\"></view>\n    <view class=\"dot\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyKindLadybug7',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by andrew-demchenk0 - Tags: loader, pacman */\n.loader-wrapper {\n  position: relative;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n}\n\n.loader-wrapper .packman::before {\n  content: '';\n  position: absolute;\n  width: 100rpx;\n  height: 50rpx;\n  background-color: #EFF107;\n  border-radius: 200rpx 200rpx 0 0;\n  transform: translate(-50%, -50%);\n  animation: pac-top 0.5s linear infinite;\n  transform-origin: center bottom;\n}\n\n.loader-wrapper .packman::after {\n  content: '';\n  position: absolute;\n  width: 100rpx;\n  height: 50rpx;\n  background-color: #EFF107;\n  border-radius: 0 0 200rpx 200rpx;\n  transform: translate(-50%, 50%);\n  animation: pac-bot 0.5s linear infinite;\n  transform-origin: center top;\n}\n\n@keyframes pac-top {\n  0% {\n    transform: translate(-50%, -50%) rotate(0)\n  }\n\n  50% {\n    transform: translate(-50%, -50%) rotate(-30deg)\n  }\n\n  100% {\n    transform: translate(-50%, -50%) rotate(0)\n  }\n}\n\n@keyframes pac-bot {\n  0% {\n    transform: translate(-50%, 50%) rotate(0)\n  }\n\n  50% {\n    transform: translate(-50%, 50%) rotate(30deg)\n  }\n\n  100% {\n    transform: translate(-50%, 50%) rotate(0)\n  }\n}\n\n.dots .dot {\n  position: absolute;\n  z-index: -1;\n  top: 16rpx;\n  width: 20rpx;\n  height: 20rpx;\n  border-radius: 50%;\n  background: #fff;\n}\n\n.dots .dot:nth-child(1) {\n  left: 180rpx;\n  animation: dot-stage1 0.5s infinite;\n}\n\n.dots .dot:nth-child(2) {\n  left: 120rpx;\n  animation: dot-stage1 0.5s infinite;\n}\n\n.dots .dot:nth-child(3) {\n  left: 60rpx;\n  animation: dot-stage1 0.5s infinite;\n}\n\n.dots .dot:nth-child(4) {\n  left: 20rpx;\n  animation: dot-stage2 0.5s infinite;\n}\n\n@keyframes dot-stage1 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  100% {\n    transform: translate(-48rpx, 0);\n  }\n}\n\n@keyframes dot-stage2 {\n  0% {\n    transform: scale(1);\n  }\n\n  5%, 100% {\n    transform: scale(0);\n  }\n}\n\n\n\n",
+    "component_name": "GalaxyKindLadybug7"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2047,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.941Z",
+  "updated_at": "2025-07-31T07:55:40.941Z"
+}

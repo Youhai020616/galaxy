@@ -1,0 +1,116 @@
+{
+  "id": "Allyhere_strong-pug-22",
+  "name": "strong-pug-22",
+  "category": "buttons",
+  "author": "Allyhere",
+  "description": "strong-pug-22 组件 (button, css effect, hoverme, gradient, interactive)",
+  "tags": [
+    "button",
+    "css effect",
+    "hoverme",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-donate\">\n    Donate now\n</button>",
+    "css": "/* From Uiverse.io by Allyhere - Tags: button, css effect, hoverme */\n.btn-donate {\n  --clr-font-main: hsla(0 0% 20% / 100);\n  --btn-bg-1: hsla(194 100% 69% / 1);\n  --btn-bg-2: hsla(217 100% 56% / 1);\n  --btn-bg-color: hsla(360 100% 100% / 1);\n  --radii: 0.5em;\n  cursor: pointer;\n  padding: 0.9em 1.4em;\n  min-width: 120px;\n  min-height: 44px;\n  font-size: var(--size, 1rem);\n  font-family: \"Segoe UI\", system-ui, sans-serif;\n  font-weight: 500;\n  transition: 0.8s;\n  background-size: 280% auto;\n  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);\n  border: none;\n  border-radius: var(--radii);\n  color: var(--btn-bg-color);\n  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);\n}\n\n.btn-donate:hover {\n  background-position: right top;\n}\n\n.btn-donate:is(:focus, :focus-visible, :active) {\n  outline: none;\n  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .btn-donate {\n    transition: linear;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Allyhere_strong-pug-22.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-donate\"></button>\n    Donate now\n</button>",
+    "script": "export default {\n  name: 'GalaxyStrongPug22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Allyhere - Tags: button, css effect, hoverme */\n.btn-donate {\n  --clr-font-main: hsla(0 0% 20% / 100);\n  --btn-bg-1: hsla(194 100% 69% / 1);\n  --btn-bg-2: hsla(217 100% 56% / 1);\n  --btn-bg-color: hsla(360 100% 100% / 1);\n  --radii: 0.5em;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 0.9em 1.4em;\n  min-width: 240rpx;\n  min-height: 88rpx;\n  font-size: var(--size, 1rem);\n  font-family: \"Segoe UI\", system-ui, sans-serif;\n  font-weight: 500;\n  transition: 0.8s;\n  background-size: 280% auto;\n  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);\n  border: none;\n  border-radius: var(--radii);\n  color: var(--btn-bg-color);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx rgba(71, 184, 255, 0.5), 0rpx 10rpx 10rpx -2rpx rgba(58, 125, 233, 0.25), inset 8rpx 8rpx 16rpx rgba(175, 230, 255, 0.5), inset -8rpx -8rpx 16rpx rgba(19, 95, 216, 0.35);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.btn-donate:hover {\n  background-position: right top;\n}\n\n.btn-donate:is(:focus, :focus-visible, :active) {\n  outline: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 6rpx var(--btn-bg-color), 0 0 0 12rpx var(--btn-bg-2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .btn-donate {\n    transition: linear;\n  }\n}\n\n",
+    "component_name": "GalaxyStrongPug22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1211,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.583Z",
+  "updated_at": "2025-07-31T07:55:32.583Z"
+}

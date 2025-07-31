@@ -1,0 +1,85 @@
+{
+  "id": "boryanakrasteva_shy-treefrog-52",
+  "name": "shy-treefrog-52",
+  "category": "loaders",
+  "author": "boryanakrasteva",
+  "description": "shy-treefrog-52 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"follow-the-leader-line\">\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n</div>",
+    "css": "/* From Uiverse.io by boryanakrasteva - Tags: loader */\n@-webkit-keyframes follow-the-leader {\n  0% {\n    -webkit-transform: rotate(0deg) translateY(-200%);\n    transform: rotate(0deg) translateY(-200%);\n  }\n\n  60%,\n  100% {\n    -webkit-transform: rotate(360deg) translateY(-200%);\n    transform: rotate(360deg) translateY(-200%);\n  }\n}\n\n@keyframes follow-the-leader {\n  0% {\n    -webkit-transform: rotate(0deg) translateY(-200%);\n    transform: rotate(0deg) translateY(-200%);\n  }\n\n  60%,\n  100% {\n    -webkit-transform: rotate(360deg) translateY(-200%);\n    transform: rotate(360deg) translateY(-200%);\n  }\n}\n\n.follow-the-leader-line {\n  height: 14px;\n  position: relative;\n  width: 14px;\n}\n\n.follow-the-leader-line div {\n  -webkit-animation: follow-the-leader 1.25s infinite backwards;\n  animation: follow-the-leader 1.25s infinite backwards;\n  background-color: #ffffff;\n  border-radius: 100%;\n  height: 100%;\n  width: 100%;\n}\n\n.follow-the-leader-line div:nth-child(1) {\n  -webkit-animation-delay: 0.15s;\n  animation-delay: 0.15s;\n  background-color: rgba(255, 255, 255, 0.9);\n}\n\n.follow-the-leader-line div:nth-child(2) {\n  -webkit-animation-delay: 0.3s;\n  animation-delay: 0.3s;\n  background-color: rgba(255, 255, 255, 0.8);\n}\n\n.follow-the-leader-line div:nth-child(3) {\n  -webkit-animation-delay: 0.45s;\n  animation-delay: 0.45s;\n  background-color: rgba(255, 255, 255, 0.7);\n}\n\n.follow-the-leader-line div:nth-child(4) {\n  -webkit-animation-delay: 0.6s;\n  animation-delay: 0.6s;\n  background-color: rgba(255, 255, 255, 0.6);\n}\n\n.follow-the-leader-line div:nth-child(5) {\n  -webkit-animation-delay: 0.75s;\n  animation-delay: 0.75s;\n  background-color: rgba(255, 255, 255, 0.5);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/boryanakrasteva_shy-treefrog-52.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"follow-the-leader-line\"></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShyTreefrog52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by boryanakrasteva - Tags: loader */\n@-webkit-keyframes follow-the-leader {\n  0% {\n    -webkit-transform: rotate(0deg) translateY(-200%);\n    transform: rotate(0deg) translateY(-200%);\n  }\n\n  60%,\n  100% {\n    -webkit-transform: rotate(360deg) translateY(-200%);\n    transform: rotate(360deg) translateY(-200%);\n  }\n}\n\n@keyframes follow-the-leader {\n  0% {\n    -webkit-transform: rotate(0deg) translateY(-200%);\n    transform: rotate(0deg) translateY(-200%);\n  }\n\n  60%,\n  100% {\n    -webkit-transform: rotate(360deg) translateY(-200%);\n    transform: rotate(360deg) translateY(-200%);\n  }\n}\n\n.follow-the-leader-line {\n  height: 28rpx;\n  position: relative;\n  width: 28rpx;\n}\n\n.follow-the-leader-line div {\n  -webkit-animation: follow-the-leader 1.25s infinite backwards;\n  animation: follow-the-leader 1.25s infinite backwards;\n  background-color: #ffffff;\n  border-radius: 100%;\n  height: 100%;\n  width: 100%;\n}\n\n.follow-the-leader-line div:nth-child(1) {\n  -webkit-animation-delay: 0.15s;\n  animation-delay: 0.15s;\n  background-color: rgba(255, 255, 255, 0.9);\n}\n\n.follow-the-leader-line div:nth-child(2) {\n  -webkit-animation-delay: 0.3s;\n  animation-delay: 0.3s;\n  background-color: rgba(255, 255, 255, 0.8);\n}\n\n.follow-the-leader-line div:nth-child(3) {\n  -webkit-animation-delay: 0.45s;\n  animation-delay: 0.45s;\n  background-color: rgba(255, 255, 255, 0.7);\n}\n\n.follow-the-leader-line div:nth-child(4) {\n  -webkit-animation-delay: 0.6s;\n  animation-delay: 0.6s;\n  background-color: rgba(255, 255, 255, 0.6);\n}\n\n.follow-the-leader-line div:nth-child(5) {\n  -webkit-animation-delay: 0.75s;\n  animation-delay: 0.75s;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n",
+    "component_name": "GalaxyShyTreefrog52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1803,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.080Z",
+  "updated_at": "2025-07-31T07:55:41.080Z"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "Shoh2008_brown-gecko-29",
+  "name": "brown-gecko-29",
+  "category": "buttons",
+  "author": "Shoh2008",
+  "description": "brown-gecko-29 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <div>Space</div>\n    <div class=\"liquid\"></div>\n</button>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: button */\nbutton {\n  font: 18px;\n  color: #fff;\n  text-decoration: none;\n  text-transform: uppercase;\n  padding: 5px 20px;\n  position: relative;\n  overflow: hidden;\n  border-radius: 5px;\n  transition: 0.2s;\n  transform: scale(2);\n  border: 1px solid;\n}\n\nbutton span {\n  position: relative;\n  z-index: 0;\n  display: flex;\n  color: #fff;\n}\n\nbutton .liquid {\n  position: absolute;\n  top: -50px;\n  left: 0;\n  width: 100%;\n  height: 150px;\n  background: #FF229F;\n  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);\n  z-index: -1;\n  transition: 0.6s;\n}\n\nbutton .liquid::after,\nbutton .liquid::before {\n  position: absolute;\n  content: \"🪐\";\n  width: 200%;\n  height: 200%;\n  top: 0;\n  left: 0;\n  transform: translate(-25%, -75%);\n}\n\nbutton .liquid::after {\n  border-radius: 45%;\n  background: rgba(20, 20, 20, 1);\n  box-shadow: 0 0 10px 5px #33053C, inset 0 0 5px #33053C;\n  animation: animate 5s linear infinite;\n  opacity: 0.8;\n}\n\nbutton .liquid::before {\n  content: \"🚀\";\n  border-radius: 40%;\n  box-shadow: 0 0 10px rgba(26, 26, 26, 0.5),\n        inset 0 0 5px rgba(26, 26, 26, 0.5);\n  background: rgba(26, 26, 26, 0.5);\n  animation: animate_3881 7s linear infinite;\n}\n\n@keyframes animate_3881 {\n  0% {\n    transform: translate(-25%, -75%) rotate(0);\n  }\n\n  100% {\n    transform: translate(-25%, -75%) rotate(360deg);\n  }\n}\n\nbutton:hover .liquid {\n  top: -120px;\n}\n\nbutton:hover {\n  box-shadow: 0 0 5px #33053C, inset 0 0 5px #33053C;\n  transition-delay: 0.2s;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Shoh2008_brown-gecko-29.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <view>Space</view>\n    <view class=\"liquid\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyBrownGecko29',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: button */\nbutton {\n  font: 36rpx;\n  color: #fff;\n  text-decoration: none;\n  text-transform: uppercase;\n  padding: 10rpx 40rpx;\n  position: relative;\n  overflow: hidden;\n  border-radius: 10rpx;\n  transition: 0.2s;\n  transform: scale(2);\n  border: 2rpx solid;\n}\n\nbutton span {\n  position: relative;\n  z-index: 0;\n  display: flex;\n  color: #fff;\n}\n\nbutton .liquid {\n  position: absolute;\n  top: -100rpx;\n  left: 0;\n  width: 100%;\n  height: 300rpx;\n  background: #FF229F;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 100rpx rgba(0, 0, 0, 0.7);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: -1;\n  transition: 0.6s;\n}\n\nbutton .liquid::after,\nbutton .liquid::before {\n  position: absolute;\n  content: \"🪐\";\n  width: 200%;\n  height: 200%;\n  top: 0;\n  left: 0;\n  transform: translate(-25%, -75%);\n}\n\nbutton .liquid::after {\n  border-radius: 45%;\n  background: rgba(20, 20, 20, 1);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx 10rpx #33053C, inset 0 0 10rpx #33053C;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: animate 5s linear infinite;\n  opacity: 0.8;\n}\n\nbutton .liquid::before {\n  content: \"🚀\";\n  border-radius: 40%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx rgba(26, 26, 26, 0.5),\n        inset 0 0 10rpx rgba(26, 26, 26, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: rgba(26, 26, 26, 0.5);\n  animation: animate_3881 7s linear infinite;\n}\n\n@keyframes animate_3881 {\n  0% {\n    transform: translate(-25%, -75%) rotate(0);\n  }\n\n  100% {\n    transform: translate(-25%, -75%) rotate(360deg);\n  }\n}\n\nbutton:hover .liquid {\n  top: -240rpx;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx #33053C, inset 0 0 10rpx #33053C;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition-delay: 0.2s;\n}\n\n",
+    "component_name": "GalaxyBrownGecko29"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1571,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.650Z",
+  "updated_at": "2025-07-31T07:55:34.650Z"
+}

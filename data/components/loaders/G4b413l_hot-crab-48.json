@@ -1,0 +1,87 @@
+{
+  "id": "G4b413l_hot-crab-48",
+  "name": "hot-crab-48",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "hot-crab-48 组件 (animation, loading, loader, smooth)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader",
+    "smooth"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"scanner\">\n    <span>Loading...</span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: animation, loading, loader, smooth */\n.scanner span {\n  color: transparent;\n  font-size: 1.4rem;\n  position: relative;\n  overflow: hidden;\n}\n\n.scanner span::before {\n  content: \"Loading...\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0;\n  height: 100%;\n  border-right: 4px solid #17FEFF;\n  overflow: hidden;\n  color: #17FEFF;\n  animation: load91371 2s linear infinite;\n}\n\n@keyframes load91371 {\n  0%, 10%, 100% {\n    width: 0;\n  }\n\n  10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {\n    border-right-color: transparent;\n  }\n\n  11%,21%,31%,41%,51%,61%,71%,81%,91% {\n    border-right-color: #17FEFF;\n  }\n\n  60%, 80% {\n    width: 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_hot-crab-48.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"scanner\"></view>\n    <text>Loading...</text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHotCrab48',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: animation, loading, loader, smooth */\n.scanner span {\n  color: transparent;\n  font-size: 1.4rem;\n  position: relative;\n  overflow: hidden;\n}\n\n.scanner span::before {\n  content: \"Loading...\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0;\n  height: 100%;\n  border-right: 8rpx solid #17FEFF;\n  overflow: hidden;\n  color: #17FEFF;\n  animation: load91371 2s linear infinite;\n}\n\n@keyframes load91371 {\n  0%, 10%, 100% {\n    width: 0;\n  }\n\n  10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {\n    border-right-color: transparent;\n  }\n\n  11%,21%,31%,41%,51%,61%,71%,81%,91% {\n    border-right-color: #17FEFF;\n  }\n\n  60%, 80% {\n    width: 100%;\n  }\n}\n",
+    "component_name": "GalaxyHotCrab48"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 771,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.275Z",
+  "updated_at": "2025-07-31T07:55:39.275Z"
+}

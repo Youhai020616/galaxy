@@ -1,0 +1,107 @@
+{
+  "id": "mostafabazyar_horrible-goat-29",
+  "name": "horrible-goat-29",
+  "category": "buttons",
+  "author": "mostafabazyar",
+  "description": "horrible-goat-29 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>Notification By HTML Data attribute</button>",
+    "css": "/* From Uiverse.io by mostafabazyar - Tags: button */\nbutton {\n  position: relative;\n  margin: 1rem;\n  z-index: 2;\n  border-radius: 8px;\n  appearance: none;\n  padding: 1em 2em;\n  transition: all 0.2s;\n}\n\nbutton {\n  padding: 1.2rem;\n  position: relative;\n  z-index: 1;\n}\n\nbutton::before {\n  content: \"6\";\n  position: absolute;\n  display: flex;\n  top: -0.75em;\n  right: -0.75em;\n  height: 1.8em;\n  width: 1.8em;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  background-color: red;\n  color: white;\n  z-index: 999;\n  transition: all 0.2s;\n}\n\nbutton:hover {\n  border-radius: 3px;\n  border-color: red;\n}\n\nbutton:hover::before {\n  height: 2em;\n  width: 2em;\n  font-size: 1.5em;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mostafabazyar_horrible-goat-29.html"
+  },
+  "uniapp": {
+    "template": "<button></button>Notification By HTML Data attribute</button>",
+    "script": "export default {\n  name: 'GalaxyHorribleGoat29',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mostafabazyar - Tags: button */\nbutton {\n  position: relative;\n  margin: 1rem;\n  z-index: 2;\n  border-radius: 16rpx;\n  appearance: none;\n  padding: 1em 2em;\n  transition: all 0.2s;\n}\n\nbutton {\n  padding: 1.2rem;\n  position: relative;\n  z-index: 1;\n}\n\nbutton::before {\n  content: \"6\";\n  position: absolute;\n  display: flex;\n  top: -0.75em;\n  right: -0.75em;\n  height: 1.8em;\n  width: 1.8em;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  background-color: red;\n  color: white;\n  z-index: 999;\n  transition: all 0.2s;\n}\n\nbutton:hover {\n  border-radius: 6rpx;\n  border-color: red;\n}\n\nbutton:hover::before {\n  height: 2em;\n  width: 2em;\n  font-size: 1.5em;\n}\n",
+    "component_name": "GalaxyHorribleGoat29"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 756,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.308Z",
+  "updated_at": "2025-07-31T07:55:37.308Z"
+}

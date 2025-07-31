@@ -1,0 +1,88 @@
+{
+  "id": "JaydipPrajapati1910_strong-zebra-9",
+  "name": "strong-zebra-9",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "strong-zebra-9 组件 (animation, loading, loader, battery, gradient)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader",
+    "battery",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loading, loader, battery */\n.loader {\n  width: 160px;\n  height: 80px;\n  border: 4px solid #00F45B;\n  border-right-color: transparent;\n  padding: 6px;\n  background: repeating-linear-gradient(90deg,#00F45B 0 20px,#0000 0 30px) \n    left/0% 100% no-repeat content-box content-box;\n  position: relative;\n  animation: p5 2s infinite steps(6);\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: -4px;\n  bottom: -4px;\n  left: 100%;\n  width: 20px;\n  background: linear-gradient(\n        #0000   calc(50% - 14px),#00F45B 0 calc(50% - 10px),\n        #0000 0 calc(50% + 10px),#00F45B 0 calc(50% + 14px),#0000 0) left /100% 100%,\n    linear-gradient(#00F45B calc(50% - 10px),#0000        0 calc(50% + 10px),#00F45B 0) left /4px 100%,\n    linear-gradient(#0000        calc(50% - 10px),#00F45B 0 calc(50% + 10px),#0000        0) right/4px 100%;\n  background-repeat: no-repeat;\n}\n\n@keyframes p5 {\n  100% {\n    background-size: 120% 100%\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_strong-zebra-9.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyStrongZebra9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loading, loader, battery */\n.loader {\n  width: 320rpx;\n  height: 160rpx;\n  border: 8rpx solid #00F45B;\n  border-right-color: transparent;\n  padding: 12rpx;\n  background: repeating-linear-gradient(90deg,#00F45B 0 40rpx,#0000 0 60rpx) \n    left/0% 100% no-repeat content-box content-box;\n  position: relative;\n  animation: p5 2s infinite steps(6);\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: -8rpx;\n  bottom: -8rpx;\n  left: 100%;\n  width: 40rpx;\n  background: linear-gradient(\n        #0000   calc(50% - 28rpx),#00F45B 0 calc(50% - 20rpx),\n        #0000 0 calc(50% + 20rpx),#00F45B 0 calc(50% + 28rpx),#0000 0) left /100% 100%,\n    linear-gradient(#00F45B calc(50% - 20rpx),#0000        0 calc(50% + 20rpx),#00F45B 0) left /8rpx 100%,\n    linear-gradient(#0000        calc(50% - 20rpx),#00F45B 0 calc(50% + 20rpx),#0000        0) right/8rpx 100%;\n  background-repeat: no-repeat;\n}\n\n@keyframes p5 {\n  100% {\n    background-size: 120% 100%\n  }\n}\n  \n\n",
+    "component_name": "GalaxyStrongZebra9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1036,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.426Z",
+  "updated_at": "2025-07-31T07:55:39.426Z"
+}

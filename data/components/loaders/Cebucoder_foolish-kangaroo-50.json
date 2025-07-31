@@ -1,0 +1,96 @@
+{
+  "id": "Cebucoder_foolish-kangaroo-50",
+  "name": "foolish-kangaroo-50",
+  "category": "loaders",
+  "author": "Cebucoder",
+  "description": "foolish-kangaroo-50 组件 (white, loading, loader, shadow, modern, text animation, effect loader, loading animation, animation)",
+  "tags": [
+    "white",
+    "loading",
+    "loader",
+    "shadow",
+    "modern",
+    "text animation",
+    "effect loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <label>Redirecting...</label>\n  <div class=\"loading\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Cebucoder  - Tags: white, loading, loader, shadow, modern, text animation, effect loader, loading animation */\n.loader {\n  width: 350px;\n  height: 180px;\n  border-radius: 10px;\n  background: #fff;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  padding: 30px;\n  box-shadow: 2px 2px 10px -5px lightgrey;\n}\n.loading {\n  width: 100%;\n  height: 10px;\n  background: lightgrey;\n  border-radius: 10px;\n  position: relative;\n}\n.loading::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 10px;\n  background: #002;\n  border-radius: 10px;\n  z-index: 1;\n  animation: loading 0.6s alternate infinite;\n}\nlabel {\n  color: #002;\n  font-size: 18px;\n  animation: bit 0.6s alternate infinite;\n}\n\n@keyframes bit {\n  from {\n    opacity: 0.3;\n  }\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes loading {\n  0% {\n    left: 25%;\n  }\n  100% {\n    left: 50%;\n  }\n  0% {\n    left: 0%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Cebucoder_foolish-kangaroo-50.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <label></label>Redirecting...</label>\n  <view class=\"loading\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFoolishKangaroo50',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Cebucoder  - Tags: white, loading, loader, shadow, modern, text animation, effect loader, loading animation */\n.loader {\n  width: 700rpx;\n  height: 360rpx;\n  border-radius: 20rpx;\n  background: #fff;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  padding: 60rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 20rpx -10rpx lightgrey;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.loading {\n  width: 100%;\n  height: 20rpx;\n  background: lightgrey;\n  border-radius: 20rpx;\n  position: relative;\n}\n.loading::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 20rpx;\n  background: #002;\n  border-radius: 20rpx;\n  z-index: 1;\n  animation: loading 0.6s alternate infinite;\n}\nlabel {\n  color: #002;\n  font-size: 36rpx;\n  animation: bit 0.6s alternate infinite;\n}\n\n@keyframes bit {\n  from {\n    opacity: 0.3;\n  }\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes loading {\n  0% {\n    left: 25%;\n  }\n  100% {\n    left: 50%;\n  }\n  0% {\n    left: 0%;\n  }\n}\n\n",
+    "component_name": "GalaxyFoolishKangaroo50"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1070,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.020Z",
+  "updated_at": "2025-07-31T07:55:39.020Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "FWDJc_empty-fish-42",
+  "name": "empty-fish-42",
+  "category": "loaders",
+  "author": "FWDJc",
+  "description": "empty-fish-42 组件 (simple, animation, loader, heart, bounce animation, css animation)",
+  "tags": [
+    "simple",
+    "animation",
+    "loader",
+    "heart",
+    "bounce animation",
+    "css animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by FWDJc - Tags: simple, animation, loader, heart, bounce animation, css animation */\n.loader {\n  width: 7em;\n  height: 5em;\n  position: relative;\n  animation: beat 1s infinite;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  width: 50px;\n  height: 80px;\n  border-radius: 5em 5em 0 0;\n  animation: coldblue 1s infinite;\n}\n\n.loader::before {\n  left: 50px;\n  transform: rotate(-45deg);\n  transform-origin: 0 100%;\n}\n\n.loader::after {\n  left: 0;\n  transform: rotate(45deg);\n  transform-origin: 100% 100%;\n}\n\n@keyframes beat {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes coldblue {\n  0%, 100% {\n    background-color: rgb(255, 255, 255);\n  }\n\n  50% {\n    background-color: rgb(91, 91, 241);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/FWDJc_empty-fish-42.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyEmptyFish42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by FWDJc - Tags: simple, animation, loader, heart, bounce animation, css animation */\n.loader {\n  width: 7em;\n  height: 5em;\n  position: relative;\n  animation: beat 1s infinite;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  width: 100rpx;\n  height: 160rpx;\n  border-radius: 5em 5em 0 0;\n  animation: coldblue 1s infinite;\n}\n\n.loader::before {\n  left: 100rpx;\n  transform: rotate(-45deg);\n  transform-origin: 0 100%;\n}\n\n.loader::after {\n  left: 0;\n  transform: rotate(45deg);\n  transform-origin: 100% 100%;\n}\n\n@keyframes beat {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes coldblue {\n  0%, 100% {\n    background-color: rgb(255, 255, 255);\n  }\n\n  50% {\n    background-color: rgb(91, 91, 241);\n  }\n}\n",
+    "component_name": "GalaxyEmptyFish42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 863,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.214Z",
+  "updated_at": "2025-07-31T07:55:39.214Z"
+}

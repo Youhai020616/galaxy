@@ -1,0 +1,88 @@
+{
+  "id": "Tsiangana_new-owl-29",
+  "name": "new-owl-29",
+  "category": "loaders",
+  "author": "Tsiangana",
+  "description": "new-owl-29 组件 (simple, animation, loading, loader, text animation)",
+  "tags": [
+    "simple",
+    "animation",
+    "loading",
+    "loader",
+    "text animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"> \n      <span class=\"ani\">L</span> \n      <span class=\"ani\">o</span>\n      <span class=\"ani\">a</span>\n      <span class=\"ani\">d</span> \n      <span class=\"ani\">i</span> \n      <span class=\"ani\">n</span> \n      <span class=\"ani\">g</span>\n</div>",
+    "css": "/* From Uiverse.io by Tsiangana - Tags: simple, animation, loading, loader, text animation */\n.loader {\n  font-family: Roboto, sans-serif;\n  font-size: 25px;\n  font-weight: 600;\n}\n\n.ani:nth-child(1) {\n  animation: ani1 2.1s ease-in-out 14s infinite;\n}\n\n@keyframes ani1 {\n  50% {\n    font-size: 40px;\n  }\n}\n\n.ani:nth-child(2) {\n  animation: ani2 2.1s ease-in-out 12s infinite;\n}\n\n@keyframes ani2 {\n  50% {\n    font-size: 40px;\n  }\n}\n\n.ani:nth-child(3) {\n  animation: ani3 2.1s ease-in-out 10s infinite;\n}\n\n@keyframes ani3 {\n  50% {\n    font-size: 40px;\n  }\n}\n\n.ani:nth-child(4) {\n  animation: ani4 2.1s ease-in-out 8s infinite;\n}\n\n@keyframes ani4 {\n  50% {\n    font-size: 40px;\n  }\n}\n\n.ani:nth-child(5) {\n  animation: ani5 2.1s ease-in-out 6s infinite;\n}\n\n@keyframes ani5 {\n  50% {\n    font-size: 40px;\n  }\n}\n\n.ani:nth-child(6) {\n  animation: ani6 2.1s ease-in-out 4s infinite;\n}\n\n@keyframes ani6 {\n  50% {\n    font-size: 40px;\n  }\n}\n\n.ani:nth-child(7) {\n  animation: ani7 2.1s ease-in-out 2s infinite;\n}\n\n@keyframes ani7 {\n  50% {\n    font-size: 40px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Tsiangana_new-owl-29.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view> \n      <text class=\"ani\">L</text> \n      <text class=\"ani\">o</text>\n      <text class=\"ani\">a</text>\n      <text class=\"ani\">d</text> \n      <text class=\"ani\">i</text> \n      <text class=\"ani\">n</text> \n      <text class=\"ani\">g</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNewOwl29',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Tsiangana - Tags: simple, animation, loading, loader, text animation */\n.loader {\n  font-family: Roboto, sans-serif;\n  font-size: 50rpx;\n  font-weight: 600;\n}\n\n.ani:nth-child(1) {\n  animation: ani1 2.1s ease-in-out 14s infinite;\n}\n\n@keyframes ani1 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n\n.ani:nth-child(2) {\n  animation: ani2 2.1s ease-in-out 12s infinite;\n}\n\n@keyframes ani2 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n\n.ani:nth-child(3) {\n  animation: ani3 2.1s ease-in-out 10s infinite;\n}\n\n@keyframes ani3 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n\n.ani:nth-child(4) {\n  animation: ani4 2.1s ease-in-out 8s infinite;\n}\n\n@keyframes ani4 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n\n.ani:nth-child(5) {\n  animation: ani5 2.1s ease-in-out 6s infinite;\n}\n\n@keyframes ani5 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n\n.ani:nth-child(6) {\n  animation: ani6 2.1s ease-in-out 4s infinite;\n}\n\n@keyframes ani6 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n\n.ani:nth-child(7) {\n  animation: ani7 2.1s ease-in-out 2s infinite;\n}\n\n@keyframes ani7 {\n  50% {\n    font-size: 80rpx;\n  }\n}\n",
+    "component_name": "GalaxyNewOwl29"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1324,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.697Z",
+  "updated_at": "2025-07-31T07:55:40.697Z"
+}

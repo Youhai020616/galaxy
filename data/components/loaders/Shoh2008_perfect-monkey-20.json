@@ -1,0 +1,86 @@
+{
+  "id": "Shoh2008_perfect-monkey-20",
+  "name": "perfect-monkey-20",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "perfect-monkey-20 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  border-style: solid;\n  box-sizing: border-box;\n  border-width: 40px 60px 30px 60px;\n  border-color: #3760C9 #96DDFC #96DDFC #36BBF7;\n  animation: envFloating 1s ease-in infinite alternate;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  right: 62px;\n  top: -40px;\n  height: 70px;\n  width: 50px;\n  background-image: linear-gradient(#fff 45px, transparent 0),\n            linear-gradient(#fff 45px, transparent 0),\n            linear-gradient(#fff 45px, transparent 0);\n  background-repeat: no-repeat;\n  background-size: 30px 4px;\n  background-position: 0px 11px , 8px 35px, 0px 60px;\n  animation: envDropping 0.75s linear infinite;\n}\n\n@keyframes envFloating {\n  0% {\n    transform: translate(-2px, -5px)\n  }\n\n  100% {\n    transform: translate(0, 5px)\n  }\n}\n\n@keyframes envDropping {\n  0% {\n    background-position: 100px 11px , 115px 35px, 105px 60px;\n    opacity: 1;\n  }\n\n  50% {\n    background-position: 0px 11px , 20px 35px, 5px 60px;\n  }\n\n  60% {\n    background-position: -30px 11px , 0px 35px, -10px 60px;\n  }\n\n  75%, 100% {\n    background-position: -30px 11px , -30px 35px, -30px 60px;\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_perfect-monkey-20.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyPerfectMonkey20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  border-style: solid;\n  box-sizing: border-box;\n  border-width: 80rpx 120rpx 60rpx 120rpx;\n  border-color: #3760C9 #96DDFC #96DDFC #36BBF7;\n  animation: envFloating 1s ease-in infinite alternate;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  right: 124rpx;\n  top: -80rpx;\n  height: 140rpx;\n  width: 100rpx;\n  background-image: linear-gradient(#fff 90rpx, transparent 0),\n            linear-gradient(#fff 90rpx, transparent 0),\n            linear-gradient(#fff 90rpx, transparent 0);\n  background-repeat: no-repeat;\n  background-size: 60rpx 8rpx;\n  background-position: 0rpx 22rpx , 16rpx 70rpx, 0rpx 120rpx;\n  animation: envDropping 0.75s linear infinite;\n}\n\n@keyframes envFloating {\n  0% {\n    transform: translate(-4rpx, -10rpx)\n  }\n\n  100% {\n    transform: translate(0, 10rpx)\n  }\n}\n\n@keyframes envDropping {\n  0% {\n    background-position: 200rpx 22rpx , 230rpx 70rpx, 210rpx 120rpx;\n    opacity: 1;\n  }\n\n  50% {\n    background-position: 0rpx 22rpx , 40rpx 70rpx, 10rpx 120rpx;\n  }\n\n  60% {\n    background-position: -60rpx 22rpx , 0rpx 70rpx, -20rpx 120rpx;\n  }\n\n  75%, 100% {\n    background-position: -60rpx 22rpx , -60rpx 70rpx, -60rpx 120rpx;\n    opacity: 0;\n  }\n}\n      \n",
+    "component_name": "GalaxyPerfectMonkey20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1242,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.423Z",
+  "updated_at": "2025-07-31T07:55:40.423Z"
+}

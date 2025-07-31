@@ -1,0 +1,89 @@
+{
+  "id": "Shoh2008_ancient-lionfish-44",
+  "name": "ancient-lionfish-44",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "ancient-lionfish-44 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<span class=\"loader\">Loading</span>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  font-size: 48px;\n  display: inline-block;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  color: #FFF;\n  letter-spacing: 2px;\n  position: relative;\n  box-sizing: border-box;\n}\n\n.loader::after {\n  content: 'Loading';\n  position: absolute;\n  left: 0;\n  top: 0;\n  color: #263238;\n  text-shadow: 0 0 2px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  box-sizing: border-box;\n  animation: animloader 6s linear infinite;\n}\n\n@keyframes animloader {\n  0% {\n    height: 100%;\n  }\n\n  100% {\n    height: 0%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_ancient-lionfish-44.html"
+  },
+  "uniapp": {
+    "template": "<text class=\"loader\">Loading</text>",
+    "script": "export default {\n  name: 'GalaxyAncientLionfish44',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  font-size: 96rpx;\n  display: inline-block;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  color: #FFF;\n  letter-spacing: 4rpx;\n  position: relative;\n  box-sizing: border-box;\n}\n\n.loader::after {\n  content: 'Loading';\n  position: absolute;\n  left: 0;\n  top: 0;\n  color: #263238;\n  /* #ifdef H5 */\n  text-shadow: 0 0 4rpx #FFF, 0 0 2rpx #FFF, 0 0 2rpx #FFF;\n  /* #endif */\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  box-sizing: border-box;\n  animation: animloader 6s linear infinite;\n}\n\n@keyframes animloader {\n  0% {\n    height: 100%;\n  }\n\n  100% {\n    height: 0%;\n  }\n}\n",
+    "component_name": "GalaxyAncientLionfish44"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 662,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.303Z",
+  "updated_at": "2025-07-31T07:55:40.303Z"
+}

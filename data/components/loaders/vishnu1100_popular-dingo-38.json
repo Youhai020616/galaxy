@@ -1,0 +1,92 @@
+{
+  "id": "vishnu1100_popular-dingo-38",
+  "name": "popular-dingo-38",
+  "category": "loaders",
+  "author": "vishnu1100",
+  "description": "popular-dingo-38 组件 (button, loader, input, dark, theme, download, sign-up, stars, animation)",
+  "tags": [
+    "button",
+    "loader",
+    "input",
+    "dark",
+    "theme",
+    "download",
+    "sign-up",
+    "stars",
+    "animation"
+  ],
+  "original": {
+    "html": "<section>\n  <div class=\"container\">\n    <div class=\"content\">\n      <div class=\"heart-rate\">\n        <svg xml:space=\"preserve\" viewBox=\"0 0 150 73\" height=\"73px\" width=\"150px\" y=\"0px\" x=\"0px\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\">\n          <polyline points=\"0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,\n    63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486\" stroke-miterlimit=\"10\" stroke-width=\"3\" stroke=\"#009B9E\" fill=\"none\"></polyline>\n        </svg>\n\n        <div class=\"fade-in\"></div>\n\n        <div class=\"fade-out\"></div>\n      </div>\n    </div>\n  </div>\n</section>",
+    "css": "/* From Uiverse.io by vishnu1100  - Tags: button, loader, input, dark, theme, download, sign-up, stars */\n/* Specific styles for .container */\n.container {\n  background: #e8e8e8 none repeat scroll 0 0;\n  color: #999;\n  font-size: 100%;\n  line-height: 24px;\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n\n/* Specific styles for .heart-rate container */\n.container .heart-rate {\n  width: 150px;\n  height: 73px;\n  position: relative;\n  margin: 20px auto;\n}\n\n/* Styles for the fade-in animation */\n.container .heart-rate .fade-in {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: #e8e8e8;\n  top: 0;\n  right: 0;\n  animation: heartRateIn 2.5s linear infinite;\n}\n\n/* Styles for the fade-out animation */\n.container .heart-rate .fade-out {\n  position: absolute;\n  width: 120%; /* Adjusted width to ensure animation space */\n  height: 100%;\n  background-color: #e8e8e8;\n  top: 0;\n  right: -120%;\n  animation: heartRateOut 2.5s linear infinite;\n}\n\n/* Keyframes for the heartRateIn animation */\n@keyframes heartRateIn {\n  0% {\n    width: 100%;\n  }\n  50% {\n    width: 0;\n  }\n  100% {\n    width: 0;\n  }\n}\n\n/* Keyframes for the heartRateOut animation */\n@keyframes heartRateOut {\n  0% {\n    left: -120%;\n  }\n  30% {\n    left: -120%;\n  }\n  100% {\n    left: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vishnu1100_popular-dingo-38.html"
+  },
+  "uniapp": {
+    "template": "<view></view>\n  <view class=\"container\"></view>\n    <view class=\"content\"></view>\n      <view class=\"heart-rate\"></view>\n        <view xml:space=\"preserve\" viewBox=\"0 0 150 73\" height=\"73px\" width=\"150px\" y=\"0px\" x=\"0px\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\"></view>\n          <polyline points=\"0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,\n    63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486\" stroke-miterlimit=\"10\" stroke-width=\"3\" stroke=\"#009B9E\" fill=\"none\"></polyline>\n        </svg>\n\n        <view class=\"fade-in\"></view>\n\n        <view class=\"fade-out\"></view>\n      </div>\n    </div>\n  </div>\n</section>",
+    "script": "export default {\n  name: 'GalaxyPopularDingo38',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vishnu1100  - Tags: button, loader, input, dark, theme, download, sign-up, stars */\n/* Specific styles for .container */\n.container {\n  background: #e8e8e8 none repeat scroll 0 0;\n  color: #999;\n  font-size: 100%;\n  line-height: 48rpx;\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n\n/* Specific styles for .heart-rate container */\n.container .heart-rate {\n  width: 300rpx;\n  height: 146rpx;\n  position: relative;\n  margin: 40rpx auto;\n}\n\n/* Styles for the fade-in animation */\n.container .heart-rate .fade-in {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: #e8e8e8;\n  top: 0;\n  right: 0;\n  animation: heartRateIn 2.5s linear infinite;\n}\n\n/* Styles for the fade-out animation */\n.container .heart-rate .fade-out {\n  position: absolute;\n  width: 120%; /* Adjusted width to ensure animation space */\n  height: 100%;\n  background-color: #e8e8e8;\n  top: 0;\n  right: -120%;\n  animation: heartRateOut 2.5s linear infinite;\n}\n\n/* Keyframes for the heartRateIn animation */\n@keyframes heartRateIn {\n  0% {\n    width: 100%;\n  }\n  50% {\n    width: 0;\n  }\n  100% {\n    width: 0;\n  }\n}\n\n/* Keyframes for the heartRateOut animation */\n@keyframes heartRateOut {\n  0% {\n    left: -120%;\n  }\n  30% {\n    left: -120%;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyPopularDingo38"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1999,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.822Z",
+  "updated_at": "2025-07-31T07:55:42.822Z"
+}

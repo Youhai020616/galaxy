@@ -1,0 +1,85 @@
+{
+  "id": "Nawsome_odd-rat-61",
+  "name": "odd-rat-61",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "odd-rat-61 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"triangles\">\n  <div class=\"tri invert\"></div>\n  <div class=\"tri invert\"></div>\n  <div class=\"tri\"></div>\n  <div class=\"tri invert\"></div>\n  <div class=\"tri invert\"></div>\n  <div class=\"tri\"></div>\n  <div class=\"tri invert\"></div>\n  <div class=\"tri\"></div>\n  <div class=\"tri invert\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.triangles {\n  transform: translate(-50%, -50%);\n  height: 81px;\n  width: 90px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n}\n\n.tri {\n  position: absolute;\n  animation: pulse_51 750ms ease-in infinite;\n  border-top: 27px solid #215A6D;\n  border-left: 15px solid transparent;\n  border-right: 15px solid transparent;\n  border-bottom: 0px;\n}\n\n.tri.invert {\n  border-top: 0px;\n  border-bottom: 27px solid #215A6D;\n  border-left: 15px solid transparent;\n  border-right: 15px solid transparent;\n}\n\n.tri:nth-child(1) {\n  left: 30px;\n}\n\n.tri:nth-child(2) {\n  left: 15px;\n  top: 27px;\n  animation-delay: -125ms;\n}\n\n.tri:nth-child(3) {\n  left: 30px;\n  top: 27px;\n}\n\n.tri:nth-child(4) {\n  left: 45px;\n  top: 27px;\n  animation-delay: -625ms;\n}\n\n.tri:nth-child(5) {\n  top: 54px;\n  animation-delay: -250ms;\n}\n\n.tri:nth-child(6) {\n  top: 54px;\n  left: 15px;\n  animation-delay: -250ms;\n}\n\n.tri:nth-child(7) {\n  top: 54px;\n  left: 30px;\n  animation-delay: -375ms;\n}\n\n.tri:nth-child(8) {\n  top: 54px;\n  left: 45px;\n  animation-delay: -500ms;\n}\n\n.tri:nth-child(9) {\n  top: 54px;\n  left: 60px;\n  animation-delay: -500ms;\n}\n\n@keyframes pulse_51 {\n  0% {\n    opacity: 1;\n  }\n\n  16.666% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_odd-rat-61.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"triangles\"></view>\n  <view class=\"tri invert\"></view>\n  <view class=\"tri invert\"></view>\n  <view class=\"tri\"></view>\n  <view class=\"tri invert\"></view>\n  <view class=\"tri invert\"></view>\n  <view class=\"tri\"></view>\n  <view class=\"tri invert\"></view>\n  <view class=\"tri\"></view>\n  <view class=\"tri invert\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOddRat61',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.triangles {\n  transform: translate(-50%, -50%);\n  height: 162rpx;\n  width: 180rpx;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n}\n\n.tri {\n  position: absolute;\n  animation: pulse_51 750ms ease-in infinite;\n  border-top: 54rpx solid #215A6D;\n  border-left: 30rpx solid transparent;\n  border-right: 30rpx solid transparent;\n  border-bottom: 0rpx;\n}\n\n.tri.invert {\n  border-top: 0rpx;\n  border-bottom: 54rpx solid #215A6D;\n  border-left: 30rpx solid transparent;\n  border-right: 30rpx solid transparent;\n}\n\n.tri:nth-child(1) {\n  left: 60rpx;\n}\n\n.tri:nth-child(2) {\n  left: 30rpx;\n  top: 54rpx;\n  animation-delay: -125ms;\n}\n\n.tri:nth-child(3) {\n  left: 60rpx;\n  top: 54rpx;\n}\n\n.tri:nth-child(4) {\n  left: 90rpx;\n  top: 54rpx;\n  animation-delay: -625ms;\n}\n\n.tri:nth-child(5) {\n  top: 108rpx;\n  animation-delay: -250ms;\n}\n\n.tri:nth-child(6) {\n  top: 108rpx;\n  left: 30rpx;\n  animation-delay: -250ms;\n}\n\n.tri:nth-child(7) {\n  top: 108rpx;\n  left: 60rpx;\n  animation-delay: -375ms;\n}\n\n.tri:nth-child(8) {\n  top: 108rpx;\n  left: 90rpx;\n  animation-delay: -500ms;\n}\n\n.tri:nth-child(9) {\n  top: 108rpx;\n  left: 120rpx;\n  animation-delay: -500ms;\n}\n\n@keyframes pulse_51 {\n  0% {\n    opacity: 1;\n  }\n\n  16.666% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n",
+    "component_name": "GalaxyOddRat61"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1578,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.825Z",
+  "updated_at": "2025-07-31T07:55:39.825Z"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "csemszepp_ordinary-owl-54",
+  "name": "ordinary-owl-54",
+  "category": "tooltips",
+  "author": "csemszepp",
+  "description": "ordinary-owl-54 组件 (tooltip, animation, minimalist, interactive)",
+  "tags": [
+    "tooltip",
+    "animation",
+    "minimalist",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div id=\"wrapper\">\n    <header>\n      <div class=\"iconDiv\" tabindex=\"0\">\n        <div class=\"iconSVG\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z\"></path>\n          </svg>\n        </div>\n        <span class=\"text\">Load File</span>\n      </div>\n      <div class=\"iconDiv\" tabindex=\"0\">\n        <div class=\"iconSVG\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4\"></path>\n          </svg>\n        </div>\n        <span class=\"text\">Download</span>\n      </div>\n      <div class=\"spacer\"></div>\n      <div class=\"divider\"></div>\n      <div class=\"iconDiv\" tabindex=\"0\">\n        <div class=\"iconSVG\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\"></path>\n          </svg>\n        </div>\n        <span class=\"text\">Notifications</span>\n      </div>\n      <div class=\"iconDiv\" tabindex=\"0\">\n        <div class=\"iconSVG\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z\"></path>\n          </svg>\n        </div>\n        <span class=\"text\">Log out </span>\n      </div>\n    </header>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by csemszepp  - Website: https://codepen.io/Adir-SL - Name: Adir - Tags: tooltip, animation, minimalist */\n.container {\n  background-color: black;\n  color: rgb(132, 170, 218);\n  font-family: \"Inter\", sans-serif;\n  font-size: 14px;\n}\n.container::before {\n  content: \"Hover or tap the icons.\";\n  font-size: 14px;\n  position: absolute;\n  left: 50%;\n  top: calc(50% - 100px);\n  transform: translate(-50%, -50%);\n}\n.container::after {\n  position: absolute;\n  bottom: 36px;\n  right: 36px;\n}\n#wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  inset: 0;\n}\nheader {\n  width: 340px;\n  padding: 0 16px;\n  display: flex;\n  border: 1px solid rgb(83, 100, 124);\n  border-radius: 16px;\n}\n.iconDiv {\n  height: 36px;\n  width: 36px;\n  margin-top: 20px;\n  margin-bottom: 20px;\n  margin-left: 4px;\n  padding: 4px;\n  border-radius: 8px;\n  display: inline-flex;\n  align-items: center;\n  white-space: nowrap;\n  overflow: hidden;\n  cursor: pointer;\n  transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;\n}\n.iconSVG {\n  height: 36px;\n  aspect-ratio: 1 / 1;\n}\n.iconDiv:hover,\n.iconDiv:focus-visible {\n  width: 142px;\n  background-color: rgb(34, 52, 77);\n  transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;\n}\n.iconDiv:focus-visible {\n  outline: 1px solid rgb(34, 52, 77);\n  outline-offset: 4px;\n}\n.iconDiv:active {\n  opacity: 0.9;\n}\n.iconDiv::after {\n  content: attr(tooltip);\n  margin-left: 12px;\n  animation: fadeIn 600ms linear forwards;\n}\n.spacer {\n  flex-grow: 1;\n}\n.divider {\n  height: 36px;\n  width: 1px;\n  margin: 24px 18px;\n  background-color: rgb(83, 100, 124);\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  50% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.text {\n  padding-left: 10px;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/csemszepp_ordinary-owl-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view id=\"wrapper\"></view>\n    <view></view>\n      <view class=\"iconDiv\" tabindex=\"0\"></view>\n        <view class=\"iconSVG\"></view>\n          <view xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\"></view>\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z\"></path>\n          </svg>\n        </div>\n        <text class=\"text\">Load File</text>\n      </div>\n      <view class=\"iconDiv\" tabindex=\"0\"></view>\n        <view class=\"iconSVG\"></view>\n          <view xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\"></view>\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4\"></path>\n          </svg>\n        </div>\n        <text class=\"text\">Download</text>\n      </div>\n      <view class=\"spacer\"></view>\n      <view class=\"divider\"></view>\n      <view class=\"iconDiv\" tabindex=\"0\"></view>\n        <view class=\"iconSVG\"></view>\n          <view xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\"></view>\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\"></path>\n          </svg>\n        </div>\n        <text class=\"text\">Notifications</text>\n      </div>\n      <view class=\"iconDiv\" tabindex=\"0\"></view>\n        <view class=\"iconSVG\"></view>\n          <view xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1\"></view>\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z\"></path>\n          </svg>\n        </div>\n        <text class=\"text\">Log out </text>\n      </div>\n    </header>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryOwl54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp  - Website: https://codepen.io/Adir-SL - Name: Adir - Tags: tooltip, animation, minimalist */\n.container {\n  background-color: black;\n  color: rgb(132, 170, 218);\n  font-family: \"Inter\", sans-serif;\n  font-size: 28rpx;\n}\n.container::before {\n  content: \"Hover or tap the icons.\";\n  font-size: 28rpx;\n  position: absolute;\n  left: 50%;\n  top: calc(50% - 200rpx);\n  transform: translate(-50%, -50%);\n}\n.container::after {\n  position: absolute;\n  bottom: 72rpx;\n  right: 72rpx;\n}\n#wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  inset: 0;\n}\nheader {\n  width: 680rpx;\n  padding: 0 32rpx;\n  display: flex;\n  border: 2rpx solid rgb(83, 100, 124);\n  border-radius: 32rpx;\n}\n.iconDiv {\n  height: 72rpx;\n  width: 72rpx;\n  margin-top: 40rpx;\n  margin-bottom: 40rpx;\n  margin-left: 8rpx;\n  padding: 8rpx;\n  border-radius: 16rpx;\n  display: inline-flex;\n  align-items: center;\n  white-space: nowrap;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;\n}\n.iconSVG {\n  height: 72rpx;\n  aspect-ratio: 1 / 1;\n}\n.iconDiv:hover,\n.iconDiv:focus-visible {\n  width: 284rpx;\n  background-color: rgb(34, 52, 77);\n  transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;\n}\n.iconDiv:focus-visible {\n  outline: 2rpx solid rgb(34, 52, 77);\n  outline-offset: 8rpx;\n}\n.iconDiv:active {\n  opacity: 0.9;\n}\n.iconDiv::after {\n  content: attr(tooltip);\n  margin-left: 24rpx;\n  animation: fadeIn 600ms linear forwards;\n}\n.spacer {\n  flex-grow: 1;\n}\n.divider {\n  height: 72rpx;\n  width: 2rpx;\n  margin: 48rpx 36rpx;\n  background-color: rgb(83, 100, 124);\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  50% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.text {\n  padding-left: 20rpx;\n}\n\n",
+    "component_name": "GalaxyOrdinaryOwl54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 3974,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.656Z",
+  "updated_at": "2025-07-31T07:55:38.656Z"
+}

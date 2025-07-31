@@ -1,0 +1,116 @@
+{
+  "id": "TISEPSE_young-lionfish-81",
+  "name": "young-lionfish-81",
+  "category": "buttons",
+  "author": "TISEPSE",
+  "description": "young-lionfish-81 组件 (material design, button, active, animation, interactive)",
+  "tags": [
+    "material design",
+    "button",
+    "active",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\"><span></span>Bouton</button>",
+    "css": "/* From Uiverse.io by TISEPSE  - Tags: material design, button, active */\n.button {\n  background-color: #ff9b82;\n  cursor: pointer;\n  padding: 1em;\n  width: 10rem;\n  font-size: 17px;\n  box-shadow: 0 0.4rem #ffc8c8;\n  border-radius: 27px;\n  overflow: hidden;\n  z-index: 2;\n  transition: 0.2s;\n  border: 2px solid black;\n}\n\n.button:hover {\n  transform: translateY(0.2rem);\n  box-shadow: 0 0.25rem #ffc8c8;\n  letter-spacing: 2px;\n  color: #fefefe;\n}\n\n.button:active {\n  transform: translateY(0.6rem);\n  box-shadow: none;\n  transition: 0.1s;\n}\n\n.button span {\n  background: #e48586;\n  border-radius: 27px;\n  height: 100%;\n  width: 0%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  z-index: -1;\n  transition: 0.2s ease-in-out;\n}\n\n.button:hover span {\n  width: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/TISEPSE_young-lionfish-81.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button><text></text>Bouton</button>",
+    "script": "export default {\n  name: 'GalaxyYoungLionfish81',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TISEPSE  - Tags: material design, button, active */\n.button {\n  background-color: #ff9b82;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 1em;\n  width: 10rem;\n  font-size: 34rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.4rem #ffc8c8;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 54rpx;\n  overflow: hidden;\n  z-index: 2;\n  transition: 0.2s;\n  border: 4rpx solid black;\n}\n\n.button:hover {\n  transform: translateY(0.2rem);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.25rem #ffc8c8;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  letter-spacing: 4rpx;\n  color: #fefefe;\n}\n\n.button:active {\n  transform: translateY(0.6rem);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: 0.1s;\n}\n\n.button span {\n  background: #e48586;\n  border-radius: 54rpx;\n  height: 100%;\n  width: 0%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  z-index: -1;\n  transition: 0.2s ease-in-out;\n}\n\n.button:hover span {\n  width: 100%;\n}\n\n",
+    "component_name": "GalaxyYoungLionfish81"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 825,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.981Z",
+  "updated_at": "2025-07-31T07:55:34.981Z"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "ErzenXz_slimy-chicken-63",
+  "name": "slimy-chicken-63",
+  "category": "buttons",
+  "author": "ErzenXz",
+  "description": "slimy-chicken-63 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    Click\n</button>",
+    "css": "/* From Uiverse.io by ErzenXz - Tags: button */\nbutton {\n  width: fit-content;\n  min-width: 100px;\n  height: 45px;\n  padding: 8px;\n  border-radius: 5px;\n  border: 2.5px solid #E0E1E4;\n  box-shadow: 0px 0px 20px -20px;\n  cursor: pointer;\n  background-color: white;\n  transition: all 0.2s ease-in-out 0ms;\n  user-select: none;\n  font-family: 'Poppins', sans-serif;\n}\n\nbutton:hover {\n  background-color: #F2F2F2;\n  box-shadow: 0px 0px 20px -18px;\n}\n\nbutton:active {\n  transform: scale(0.95);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ErzenXz_slimy-chicken-63.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    Click\n</button>",
+    "script": "export default {\n  name: 'GalaxySlimyChicken63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ErzenXz - Tags: button */\nbutton {\n  width: fit-content;\n  min-width: 200rpx;\n  height: 90rpx;\n  padding: 16rpx;\n  border-radius: 10rpx;\n  border: 5rpx solid #E0E1E4;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx -40rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background-color: white;\n  transition: all 0.2s ease-in-out 0ms;\n  user-select: none;\n  font-family: 'Poppins', sans-serif;\n}\n\nbutton:hover {\n  background-color: #F2F2F2;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx -36rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:active {\n  transform: scale(0.95);\n}\n",
+    "component_name": "GalaxySlimyChicken63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 522,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.208Z",
+  "updated_at": "2025-07-31T07:55:33.208Z"
+}

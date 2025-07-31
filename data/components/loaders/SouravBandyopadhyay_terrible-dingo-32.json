@@ -1,0 +1,87 @@
+{
+  "id": "SouravBandyopadhyay_terrible-dingo-32",
+  "name": "terrible-dingo-32",
+  "category": "loaders",
+  "author": "SouravBandyopadhyay",
+  "description": "terrible-dingo-32 组件 (loader, spinner, colorful, animation)",
+  "tags": [
+    "loader",
+    "spinner",
+    "colorful",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"circle outer\"></div>\n  <div class=\"circle inner\"></div>\n</div>",
+    "css": "/* From Uiverse.io by SouravBandyopadhyay - Tags: loader, spinner, colorful */\n.loader {\n  width: 8em;\n  height: 4em;\n  position: relative;\n  margin: 0 auto;\n}\n\n.circle {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  border-radius: 50%;\n  border: 0.4em solid transparent;\n  animation-duration: 2s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.outer {\n  border-top-color: #ff0080;\n  border-right-color: #ffbf00;\n  border-bottom-color: #00bfff;\n  border-left-color: #80ff00;\n  animation-name: rotate-outer;\n}\n\n.inner {\n  border-top-color: #80ff00;\n  border-right-color: #00bfff;\n  border-bottom-color: #ffbf00;\n  border-left-color: #ff0080;\n  animation-name: rotate-inner;\n}\n\n@keyframes rotate-outer {\n  0% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate-inner {\n  0% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SouravBandyopadhyay_terrible-dingo-32.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"circle outer\"></view>\n  <view class=\"circle inner\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTerribleDingo32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SouravBandyopadhyay - Tags: loader, spinner, colorful */\n.loader {\n  width: 8em;\n  height: 4em;\n  position: relative;\n  margin: 0 auto;\n}\n\n.circle {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  border-radius: 50%;\n  border: 0.4em solid transparent;\n  animation-duration: 2s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.outer {\n  border-top-color: #ff0080;\n  border-right-color: #ffbf00;\n  border-bottom-color: #00bfff;\n  border-left-color: #80ff00;\n  animation-name: rotate-outer;\n}\n\n.inner {\n  border-top-color: #80ff00;\n  border-right-color: #00bfff;\n  border-bottom-color: #ffbf00;\n  border-left-color: #ff0080;\n  animation-name: rotate-inner;\n}\n\n@keyframes rotate-outer {\n  0% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate-inner {\n  0% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(0);\n  }\n}\n\n",
+    "component_name": "GalaxyTerribleDingo32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1062,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.548Z",
+  "updated_at": "2025-07-31T07:55:40.548Z"
+}

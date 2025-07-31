@@ -1,0 +1,119 @@
+{
+  "id": "tarantino421_slimy-newt-73",
+  "name": "slimy-newt-73",
+  "category": "buttons",
+  "author": "tarantino421",
+  "description": "slimy-newt-73 组件 (button, hover button, snow, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "hover button",
+    "snow",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"box\">\n  <button class=\"button\">SNOW</button>\n  <div class=\"snowfall\">\n    <span style=\"--i: 12\" class=\"snowflake\"></span>\n    <span style=\"--i: 31\" class=\"snowflake\"></span>\n    <span style=\"--i: 18\" class=\"snowflake\"></span>\n    <span style=\"--i: 9\" class=\"snowflake\"></span>\n    <span style=\"--i: 41\" class=\"snowflake\"></span>\n    <span style=\"--i: 22\" class=\"snowflake\"></span>\n    <span style=\"--i: 16\" class=\"snowflake\"></span>\n    <span style=\"--i: 35\" class=\"snowflake\"></span>\n    <span style=\"--i: 9\" class=\"snowflake\"></span>\n    <span style=\"--i: 14\" class=\"snowflake\"></span>\n    <span style=\"--i: 19\" class=\"snowflake\"></span>\n    <span style=\"--i: 6\" class=\"snowflake\"></span>\n    <span style=\"--i: 53\" class=\"snowflake\"></span>\n    <span style=\"--i: 26\" class=\"snowflake\"></span>\n    <span style=\"--i: 34\" class=\"snowflake\"></span>\n    <span style=\"--i: 18\" class=\"snowflake\"></span>\n    <span style=\"--i: 8\" class=\"snowflake\"></span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by tarantino421 - Tags: button, hover button, snow */\n.box {\n  --clr-shadow__border: #0096fa;\n  --clr-text: #F6F4EB;\n  --clr-snowflake: #F6F4EB;\n  --clr-snowfall: #91C8E4;\n  --size: 3rem;\n  position: relative;\n  outline: 1px solid var(--clr-shadow__border);\n}\n\n.button {\n  font-weight: 600;\n  font-size: 1.5rem;\n  letter-spacing: 0.2rem;\n  padding: calc(var(--size) / 3) var(--size);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  color: var(--clr-text);\n  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),\n  -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);\n}\n\n.snowfall {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  gap: 0.3rem;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  background: linear-gradient( to bottom, var(--clr-snowfall), #ffffff);\n}\n\n.box:hover .snowfall {\n  opacity: 1;\n}\n\n.snowflake {\n  height: 0.3rem;\n  width: 0.3rem;\n  box-shadow: -30px -50px var(--clr-snowflake);\n  background-color: var(--clr-snowflake);\n  animation: snowfall-animation calc(0.1s * var(--i)) linear infinite;\n  opacity: 1;\n}\n\n@keyframes snowfall-animation {\n  0% {\n    transform: translateY(calc(-103% * var(--i)));\n  }\n\n  100% {\n    transform: translateY(calc(100% * var(--i)));\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/tarantino421_slimy-newt-73.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>\n  <button class=\"button\"></button>SNOW</button>\n  <view class=\"snowfall\"></view>\n    <text style=\"--i: 12\" class=\"snowflake\"></text>\n    <text style=\"--i: 31\" class=\"snowflake\"></text>\n    <text style=\"--i: 18\" class=\"snowflake\"></text>\n    <text style=\"--i: 9\" class=\"snowflake\"></text>\n    <text style=\"--i: 41\" class=\"snowflake\"></text>\n    <text style=\"--i: 22\" class=\"snowflake\"></text>\n    <text style=\"--i: 16\" class=\"snowflake\"></text>\n    <text style=\"--i: 35\" class=\"snowflake\"></text>\n    <text style=\"--i: 9\" class=\"snowflake\"></text>\n    <text style=\"--i: 14\" class=\"snowflake\"></text>\n    <text style=\"--i: 19\" class=\"snowflake\"></text>\n    <text style=\"--i: 6\" class=\"snowflake\"></text>\n    <text style=\"--i: 53\" class=\"snowflake\"></text>\n    <text style=\"--i: 26\" class=\"snowflake\"></text>\n    <text style=\"--i: 34\" class=\"snowflake\"></text>\n    <text style=\"--i: 18\" class=\"snowflake\"></text>\n    <text style=\"--i: 8\" class=\"snowflake\"></text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySlimyNewt73',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by tarantino421 - Tags: button, hover button, snow */\n.box {\n  --clr-shadow__border: #0096fa;\n  --clr-text: #F6F4EB;\n  --clr-snowflake: #F6F4EB;\n  --clr-snowfall: #91C8E4;\n  --size: 3rem;\n  position: relative;\n  outline: 2rpx solid var(--clr-shadow__border);\n}\n\n.button {\n  font-weight: 600;\n  font-size: 1.5rem;\n  letter-spacing: 0.2rem;\n  padding: calc(var(--size) / 3) var(--size);\n  background: transparent;\n  border: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  color: var(--clr-text);\n  /* #ifdef H5 */\n  text-shadow: 4rpx 0rpx var(--clr-shadow__border), 0rpx 4rpx var(--clr-shadow__border),\n  -4rpx 0rpx var(--clr-shadow__border), 0rpx -4rpx var(--clr-shadow__border);\n  /* #endif */\n}\n\n.snowfall {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  gap: 0.3rem;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  background: linear-gradient( to bottom, var(--clr-snowfall), #ffffff);\n}\n\n.box:hover .snowfall {\n  opacity: 1;\n}\n\n.snowflake {\n  height: 0.3rem;\n  width: 0.3rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -60rpx -100rpx var(--clr-snowflake);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: var(--clr-snowflake);\n  animation: snowfall-animation calc(0.1s * var(--i)) linear infinite;\n  opacity: 1;\n}\n\n@keyframes snowfall-animation {\n  0% {\n    transform: translateY(calc(-103% * var(--i)));\n  }\n\n  100% {\n    transform: translateY(calc(100% * var(--i)));\n    opacity: 0;\n  }\n}\n\n\n\n\n\n\n\n\n",
+    "component_name": "GalaxySlimyNewt73"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2401,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.947Z",
+  "updated_at": "2025-07-31T07:55:37.947Z"
+}

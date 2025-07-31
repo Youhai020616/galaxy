@@ -1,0 +1,97 @@
+{
+  "id": "Subaashbala_ugly-lizard-47",
+  "name": "ugly-lizard-47",
+  "category": "loaders",
+  "author": "Subaashbala",
+  "description": "ugly-lizard-47 组件 (glassmorphism, animation, loader, circle loader, box-shadow, loading animation)",
+  "tags": [
+    "glassmorphism",
+    "animation",
+    "loader",
+    "circle loader",
+    "box-shadow",
+    "loading animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"clockLoader\">\n    <div class=\"clockHand minuteHand\"></div>\n    <div class=\"clockHand hourHand\"></div>\n  </div>\n  <div class=\"decorativeElementContainer\">\n    <div class=\"decorativeElement decorativeElement1\"></div>\n    <div class=\"decorativeElement decorativeElement2\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Subaashbala  - Tags: glassmorphism, animation, loader, circle loader, box-shadow, loading animation */\n.loader {\n  position: relative;\n  --duration: 1500ms; /* minute hand's rotation time duration */\n}\n.clockLoader {\n  width: 15em;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  border: 0.25em solid black;\n  background: rgba(255, 255, 255, 0.5);\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.171);\n  backdrop-filter: blur(10px);\n  z-index: 100;\n  animation: floatEffect 15s linear infinite alternate;\n}\n.clockLoader::after {\n  content: \"\";\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -65%);\n  width: 0.5em;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background-color: black;\n}\n.clockHand {\n  position: absolute;\n  background-color: black;\n  border-radius: 5em;\n  width: 0.25em;\n  transform-origin: bottom;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -100%);\n}\n.hourHand {\n  height: 20%;\n  animation: rotateHand calc(12 * var(--duration)) linear infinite;\n}\n.minuteHand {\n  height: 30%;\n  animation: rotateHand var(--duration) linear infinite;\n}\n.decorativeElementContainer {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: center center;\n  animation: rotate calc(50 * var(--duration)) linear infinite;\n  z-index: -1;\n  transform: translate(-50%, -50%);\n}\n.decorativeElement {\n  position: relative;\n  width: 7em;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  z-index: -1;\n}\n.decorativeElement1 {\n  left: 50% !important;\n  background: orangered;\n  animation: floatEffect 16ss linear infinite;\n}\n.decorativeElement2 {\n  right: 55%;\n  background: hotpink;\n}\n@keyframes rotateHand {\n  to {\n    transform: translate(-50%, -100%) rotate(360deg);\n  }\n}\n@keyframes rotate {\n  to {\n    transform: translate(-50%, -50%) rotateZ(360deg);\n  }\n}\n@keyframes floatEffect {\n  0% {\n    transform: translate(0);\n  }\n  100% {\n    transform: translate(0, 2em);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Subaashbala_ugly-lizard-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"clockLoader\"></view>\n    <view class=\"clockHand minuteHand\"></view>\n    <view class=\"clockHand hourHand\"></view>\n  </div>\n  <view class=\"decorativeElementContainer\"></view>\n    <view class=\"decorativeElement decorativeElement1\"></view>\n    <view class=\"decorativeElement decorativeElement2\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUglyLizard47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Subaashbala  - Tags: glassmorphism, animation, loader, circle loader, box-shadow, loading animation */\n.loader {\n  position: relative;\n  --duration: 1500ms; /* minute hand's rotation time duration */\n}\n.clockLoader {\n  width: 15em;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  border: 0.25em solid black;\n  background: rgba(255, 255, 255, 0.5);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 50rpx rgba(0, 0, 0, 0.171);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  backdrop-\n  z-index: 100;\n  animation: floatEffect 15s linear infinite alternate;\n}\n.clockLoader::after {\n  content: \"\";\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -65%);\n  width: 0.5em;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background-color: black;\n}\n.clockHand {\n  position: absolute;\n  background-color: black;\n  border-radius: 5em;\n  width: 0.25em;\n  transform-origin: bottom;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -100%);\n}\n.hourHand {\n  height: 20%;\n  animation: rotateHand calc(12 * var(--duration)) linear infinite;\n}\n.minuteHand {\n  height: 30%;\n  animation: rotateHand var(--duration) linear infinite;\n}\n.decorativeElementContainer {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: center center;\n  animation: rotate calc(50 * var(--duration)) linear infinite;\n  z-index: -1;\n  transform: translate(-50%, -50%);\n}\n.decorativeElement {\n  position: relative;\n  width: 7em;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  z-index: -1;\n}\n.decorativeElement1 {\n  left: 50% !important;\n  background: orangered;\n  animation: floatEffect 16ss linear infinite;\n}\n.decorativeElement2 {\n  right: 55%;\n  background: hotpink;\n}\n@keyframes rotateHand {\n  to {\n    transform: translate(-50%, -100%) rotate(360deg);\n  }\n}\n@keyframes rotate {\n  to {\n    transform: translate(-50%, -50%) rotateZ(360deg);\n  }\n}\n@keyframes floatEffect {\n  0% {\n    transform: translate(0);\n  }\n  100% {\n    transform: translate(0, 2em);\n  }\n}\n\n",
+    "component_name": "GalaxyUglyLizard47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2255,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.648Z",
+  "updated_at": "2025-07-31T07:55:40.648Z"
+}

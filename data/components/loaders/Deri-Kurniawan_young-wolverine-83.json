@@ -1,0 +1,82 @@
+{
+  "id": "Deri-Kurniawan_young-wolverine-83",
+  "name": "young-wolverine-83",
+  "category": "loaders",
+  "author": "Deri-Kurniawan",
+  "description": "young-wolverine-83 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex flex-col bg-neutral-300 w-56 h-64 animate-pulse rounded-xl p-4 gap-4\">\n  <div class=\"bg-neutral-400/50 w-full h-32 animate-pulse rounded-md\"></div>\n  <div class=\"flex flex-col gap-2\">\n    <div class=\"bg-neutral-400/50 w-full h-4 animate-pulse rounded-md\"></div>\n    <div class=\"bg-neutral-400/50 w-4/5 h-4 animate-pulse rounded-md\"></div>\n    <div class=\"bg-neutral-400/50 w-full h-4 animate-pulse rounded-md\"></div>\n    <div class=\"bg-neutral-400/50 w-2/4 h-4 animate-pulse rounded-md\"></div>\n  </div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/Deri-Kurniawan_young-wolverine-83.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex flex-col bg-neutral-300 w-56 h-64 animate-pulse rounded-xl p-4 gap-4\"></view>\n  <view class=\"bg-neutral-400/50 w-full h-32 animate-pulse rounded-md\"></view>\n  <view class=\"flex flex-col gap-2\"></view>\n    <view class=\"bg-neutral-400/50 w-full h-4 animate-pulse rounded-md\"></view>\n    <view class=\"bg-neutral-400/50 w-4/5 h-4 animate-pulse rounded-md\"></view>\n    <view class=\"bg-neutral-400/50 w-full h-4 animate-pulse rounded-md\"></view>\n    <view class=\"bg-neutral-400/50 w-2/4 h-4 animate-pulse rounded-md\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyYoungWolverine83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyYoungWolverine83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 533,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.173Z",
+  "updated_at": "2025-07-31T07:55:39.173Z"
+}

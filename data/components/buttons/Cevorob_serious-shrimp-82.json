@@ -1,0 +1,114 @@
+{
+  "id": "Cevorob_serious-shrimp-82",
+  "name": "serious-shrimp-82",
+  "category": "buttons",
+  "author": "Cevorob",
+  "description": "serious-shrimp-82 组件 (button, game, crosshair, animation, interactive)",
+  "tags": [
+    "button",
+    "game",
+    "crosshair",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span> GAME ON\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by Cevorob - Tags: button, game, crosshair */\nbutton {\n position: relative;\n height: 50px;\n padding: 0 30px;\n border: 2px solid #000;\n background: #e8e8e8;\n user-select: none;\n white-space: nowrap;\n transition: all .05s linear;\n font-family: inherit;\n}\n\nbutton:before, button:after {\n content: \"\";\n position: absolute;\n background: #e8e8e8;\n transition: all .2s linear;\n}\n\nbutton:before {\n width: calc(100% + 6px);\n height: calc(100% - 16px);\n top: 8px;\n left: -3px;\n}\n\nbutton:after {\n width: calc(100% - 16px);\n height: calc(100% + 6px);\n top: -3px;\n left: 8px;\n}\n\nbutton:hover {\n cursor: crosshair;\n}\n\nbutton:active {\n transform: scale(0.95);\n}\n\nbutton:hover:before {\n height: calc(100% - 32px);\n top: 16px;\n}\n\nbutton:hover:after {\n width: calc(100% - 32px);\n left: 16px;\n}\n\nbutton span {\n font-size: 15px;\n z-index: 3;\n position: relative;\n font-weight: 600;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Cevorob_serious-shrimp-82.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text></text> GAME ON\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxySeriousShrimp82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Cevorob - Tags: button, game, crosshair */\nbutton {\n position: relative;\n height: 100rpx;\n padding: 0 60rpx;\n border: 4rpx solid #000;\n background: #e8e8e8;\n user-select: none;\n white-space: nowrap;\n transition: all .05s linear;\n font-family: inherit;\n}\n\nbutton:before, button:after {\n content: \"\";\n position: absolute;\n background: #e8e8e8;\n transition: all .2s linear;\n}\n\nbutton:before {\n width: calc(100% + 12rpx);\n height: calc(100% - 32rpx);\n top: 16rpx;\n left: -6rpx;\n}\n\nbutton:after {\n width: calc(100% - 32rpx);\n height: calc(100% + 12rpx);\n top: -6rpx;\n left: 16rpx;\n}\n\nbutton:hover {\n /* #ifdef H5 */\n  cursor: crosshair;\n  /* #endif */\n}\n\nbutton:active {\n transform: scale(0.95);\n}\n\nbutton:hover:before {\n height: calc(100% - 64rpx);\n top: 32rpx;\n}\n\nbutton:hover:after {\n width: calc(100% - 64rpx);\n left: 32rpx;\n}\n\nbutton span {\n font-size: 30rpx;\n z-index: 3;\n position: relative;\n font-weight: 600;\n}\n",
+    "component_name": "GalaxySeriousShrimp82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 931,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.894Z",
+  "updated_at": "2025-07-31T07:55:32.894Z"
+}

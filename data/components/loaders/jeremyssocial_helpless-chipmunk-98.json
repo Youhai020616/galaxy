@@ -1,0 +1,89 @@
+{
+  "id": "jeremyssocial_helpless-chipmunk-98",
+  "name": "helpless-chipmunk-98",
+  "category": "loaders",
+  "author": "jeremyssocial",
+  "description": "helpless-chipmunk-98 组件 (animation, loader, cube, light&dark, loading animation, 3d loader)",
+  "tags": [
+    "animation",
+    "loader",
+    "cube",
+    "light&dark",
+    "loading animation",
+    "3d loader"
+  ],
+  "original": {
+    "html": "<div class=\"cube-loader\">\n  <div class=\"cube cube1\"></div>\n  <div class=\"cube cube2\"></div>\n  <div class=\"cube cube3\"></div>\n  <div class=\"cube cube4\"></div>\n</div>",
+    "css": "/* From Uiverse.io by jeremyssocial  - Tags: animation, loader, cube, light&dark, loading animation, 3d loader */\n.cube-loader {\n  position: relative;\n  width: 40px;\n  height: 40px;\n  margin: auto;\n}\n\n.cube {\n  position: absolute;\n  width: 50%;\n  height: 50%;\n  background-color: #333;\n  border: 2px solid #fff;\n  animation: foldCube 2.4s infinite linear;\n}\n\n/* Individual cube positioning */\n.cube1 {\n  top: 0;\n  left: 0;\n  transform-origin: 100% 100%;\n}\n.cube2 {\n  top: 0;\n  right: 0;\n  transform-origin: 0 100%;\n}\n.cube3 {\n  bottom: 0;\n  right: 0;\n  transform-origin: 0 0;\n}\n.cube4 {\n  bottom: 0;\n  left: 0;\n  transform-origin: 100% 0;\n}\n\n/* Keyframes for the folding animation */\n@keyframes foldCube {\n  0%,\n  10% {\n    transform: perspective(140px) rotateX(-180deg);\n    opacity: 0;\n  }\n  25%,\n  75% {\n    transform: perspective(140px) rotateX(0deg);\n    opacity: 1;\n  }\n  90%,\n  100% {\n    transform: perspective(140px) rotateY(180deg);\n    opacity: 0;\n  }\n}\n\n/* Animation delay for each cube */\n.cube1 {\n  animation-delay: 0.3s;\n}\n.cube2 {\n  animation-delay: 0.6s;\n}\n.cube3 {\n  animation-delay: 0.9s;\n}\n.cube4 {\n  animation-delay: 1.2s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/jeremyssocial_helpless-chipmunk-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cube-loader\"></view>\n  <view class=\"cube cube1\"></view>\n  <view class=\"cube cube2\"></view>\n  <view class=\"cube cube3\"></view>\n  <view class=\"cube cube4\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHelplessChipmunk98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by jeremyssocial  - Tags: animation, loader, cube, light&dark, loading animation, 3d loader */\n.cube-loader {\n  position: relative;\n  width: 80rpx;\n  height: 80rpx;\n  margin: auto;\n}\n\n.cube {\n  position: absolute;\n  width: 50%;\n  height: 50%;\n  background-color: #333;\n  border: 4rpx solid #fff;\n  animation: foldCube 2.4s infinite linear;\n}\n\n/* Individual cube positioning */\n.cube1 {\n  top: 0;\n  left: 0;\n  transform-origin: 100% 100%;\n}\n.cube2 {\n  top: 0;\n  right: 0;\n  transform-origin: 0 100%;\n}\n.cube3 {\n  bottom: 0;\n  right: 0;\n  transform-origin: 0 0;\n}\n.cube4 {\n  bottom: 0;\n  left: 0;\n  transform-origin: 100% 0;\n}\n\n/* Keyframes for the folding animation */\n@keyframes foldCube {\n  0%,\n  10% {\n    transform: perspective(280rpx) rotateX(-180deg);\n    opacity: 0;\n  }\n  25%,\n  75% {\n    transform: perspective(280rpx) rotateX(0deg);\n    opacity: 1;\n  }\n  90%,\n  100% {\n    transform: perspective(280rpx) rotateY(180deg);\n    opacity: 0;\n  }\n}\n\n/* Animation delay for each cube */\n.cube1 {\n  animation-delay: 0.3s;\n}\n.cube2 {\n  animation-delay: 0.6s;\n}\n.cube3 {\n  animation-delay: 0.9s;\n}\n.cube4 {\n  animation-delay: 1.2s;\n}\n\n",
+    "component_name": "GalaxyHelplessChipmunk98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1319,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.252Z",
+  "updated_at": "2025-07-31T07:55:42.252Z"
+}

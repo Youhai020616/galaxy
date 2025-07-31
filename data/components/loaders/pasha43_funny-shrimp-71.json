@@ -1,0 +1,88 @@
+{
+  "id": "pasha43_funny-shrimp-71",
+  "name": "funny-shrimp-71",
+  "category": "loaders",
+  "author": "pasha43",
+  "description": "funny-shrimp-71 组件 (loader, cube, effect loader, loading animation, animation)",
+  "tags": [
+    "loader",
+    "cube",
+    "effect loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"loader-cube\">\n      <div class=\"face\"></div>\n      <div class=\"face\"></div>\n      <div class=\"face\"></div>\n      <div class=\"face\"></div>\n      <div class=\"face\"></div>\n      <div class=\"face\"></div>\n    </div>\n  </div>",
+    "css": "/* From Uiverse.io by pasha43 - Tags: loader, cube, effect loader, loading animation */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  perspective: 800px;\n}\n\n.loader-cube {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  transform-style: preserve-3d;\n  transform-origin: 50% 50%;\n  animation: rotate 4s infinite linear;\n}\n\n.loader-cube:before,\n.loader-cube:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: transparent;\n}\n\n.loader-cube:before {\n  transform: rotateX(90deg) translateZ(50px);\n}\n\n.loader-cube:after {\n  transform: rotateY(90deg) translateZ(50px);\n}\n\n.loader-cube .face {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(252, 248, 248);\n  opacity: 0.8;\n  border: 2px solid rgb(252, 250, 250);\n}\n\n.loader-cube .face:nth-child(1) {\n  transform: rotateY(0deg) translateZ(50px);\n  background-color: #e74c3c;\n}\n\n.loader-cube .face:nth-child(2) {\n  transform: rotateX(90deg) translateZ(50px);\n  background-color: #3498db;\n}\n\n.loader-cube .face:nth-child(3) {\n  transform: rotateY(180deg) translateZ(50px);\n  background-color: #2ecc71;\n}\n\n.loader-cube .face:nth-child(4) {\n  transform: rotateX(-90deg) translateZ(50px);\n  background-color: #f1c40f;\n}\n\n.loader-cube .face:nth-child(5) {\n  transform: rotateY(90deg) translateZ(50px);\n  background-color: #9b59b6;\n}\n\n.loader-cube .face:nth-child(6) {\n  transform: rotateY(0deg) translateZ(-50px);\n  background-color: #1abc9c;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotateY(0deg) rotateX(0deg);\n  }\n\n  100% {\n    transform: rotateY(1turn) rotateX(1turn);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/pasha43_funny-shrimp-71.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"loader-cube\"></view>\n      <view class=\"face\"></view>\n      <view class=\"face\"></view>\n      <view class=\"face\"></view>\n      <view class=\"face\"></view>\n      <view class=\"face\"></view>\n      <view class=\"face\"></view>\n    </div>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyFunnyShrimp71',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by pasha43 - Tags: loader, cube, effect loader, loading animation */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  perspective: 1600rpx;\n}\n\n.loader-cube {\n  width: 200rpx;\n  height: 200rpx;\n  position: relative;\n  transform-style: preserve-3d;\n  transform-origin: 50% 50%;\n  animation: rotate 4s infinite linear;\n}\n\n.loader-cube:before,\n.loader-cube:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: transparent;\n}\n\n.loader-cube:before {\n  transform: rotateX(90deg) translateZ(100rpx);\n}\n\n.loader-cube:after {\n  transform: rotateY(90deg) translateZ(100rpx);\n}\n\n.loader-cube .face {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(252, 248, 248);\n  opacity: 0.8;\n  border: 4rpx solid rgb(252, 250, 250);\n}\n\n.loader-cube .face:nth-child(1) {\n  transform: rotateY(0deg) translateZ(100rpx);\n  background-color: #e74c3c;\n}\n\n.loader-cube .face:nth-child(2) {\n  transform: rotateX(90deg) translateZ(100rpx);\n  background-color: #3498db;\n}\n\n.loader-cube .face:nth-child(3) {\n  transform: rotateY(180deg) translateZ(100rpx);\n  background-color: #2ecc71;\n}\n\n.loader-cube .face:nth-child(4) {\n  transform: rotateX(-90deg) translateZ(100rpx);\n  background-color: #f1c40f;\n}\n\n.loader-cube .face:nth-child(5) {\n  transform: rotateY(90deg) translateZ(100rpx);\n  background-color: #9b59b6;\n}\n\n.loader-cube .face:nth-child(6) {\n  transform: rotateY(0deg) translateZ(-100rpx);\n  background-color: #1abc9c;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotateY(0deg) rotateX(0deg);\n  }\n\n  100% {\n    transform: rotateY(1turn) rotateX(1turn);\n  }\n}\n\n",
+    "component_name": "GalaxyFunnyShrimp71"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1911,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.526Z",
+  "updated_at": "2025-07-31T07:55:42.526Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "SouravBandyopadhyay_wise-panda-94",
+  "name": "wise-panda-94",
+  "category": "buttons",
+  "author": "SouravBandyopadhyay",
+  "description": "wise-panda-94 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"flex transform cursor-pointer items-center justify-center space-x-2 rounded-full bg-white px-4 py-2 font-semibold tracking-tight text-black shadow-md transition duration-300 hover:scale-110\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 rotate-45 transform transition duration-300\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 19l9 2-9-18-9 18 9-2zm0 0v-8\"></path>\n  </svg>\n  <span class=\"mr-2\">Send Message</span>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/SouravBandyopadhyay_wise-panda-94.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"flex transform cursor-pointer items-center justify-center space-x-2 rounded-full bg-white px-4 py-2 font-semibold tracking-tight text-black shadow-md transition duration-300 hover:scale-110\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 rotate-45 transform transition duration-300\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"></view>\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 19l9 2-9-18-9 18 9-2zm0 0v-8\"></path>\n  </svg>\n  <text class=\"mr-2\">Send Message</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWisePanda94',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyWisePanda94"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 549,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.815Z",
+  "updated_at": "2025-07-31T07:55:34.815Z"
+}

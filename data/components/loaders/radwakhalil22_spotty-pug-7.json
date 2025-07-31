@@ -1,0 +1,93 @@
+{
+  "id": "radwakhalil22_spotty-pug-7",
+  "name": "spotty-pug-7",
+  "category": "loaders",
+  "author": "radwakhalil22",
+  "description": "spotty-pug-7 组件 (loader, box, animation, gradient)",
+  "tags": [
+    "loader",
+    "box",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"cube div\">\n    <div class=\"top div\"></div>\n    <div class=\"div\">\n      <span class=\"span\" style=\"--i: 0\">\n        <p>loading..</p>\n        <p>loading..</p>\n      </span>\n      <span class=\"span\" style=\"--i: 1\">\n        <p>loading..</p>\n        <p>loading..</p>\n      </span>\n      <span class=\"span\" style=\"--i: 2\">\n        <p>loading..</p>\n        <p>loading..</p>\n      </span>\n      <span class=\"span\" style=\"--i: 3\">\n        <p>loading..</p>\n        <p>loading..</p>\n      </span>\n    </div>\n</div>",
+    "css": "/* From Uiverse.io by radwakhalil22 - Tags: loader, box */\n.cube {\n  position: relative;\n  height: 100px;\n  width: 100px;\n  transform-style: preserve-3d;\n  animation: animate 4s linear infinite;\n}\n\n@keyframes animate {\n  0% {\n    transform: rotateX(-30deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(-30deg) rotateY(360deg);\n  }\n}\n\n.cube .div {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n}\n\n.cube .div .span {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform: rotateY(calc(90deg * var(--i))) translateZ(50px);\n  background-image: linear-gradient(\n    -45deg,\n    #000000,\n    #13273f,\n    #0d1729,\n    #6a6a8d);\n  background-size: 1200% 1200%;\n  animation: AnimationName 30s ease infinite;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  transform-style: preserve-3d;\n}\n\n.cube .div .span p {\n  position: absolute;\n  font-size: 1em;\n  color: white;\n  transform: translateZ(20px);\n}\n\n.cube .div .span p:nth-child(1) {\n  transform: translateZ(0) translateY(20px);\n  color: rgba(0,0,0,0.1);\n  filter: blur(2px);\n}\n\n@keyframes AnimationName {\n  0% {\n    background-position: 0% 50%;\n  }\n\n  50% {\n    background-position: 100% 50%;\n  }\n\n  100% {\n    background-position: 0% 50%;\n  }\n}\n\n.top {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 300px;\n  height: 300px;\n  background-image: linear-gradient(\n    -45deg,\n    #000000,\n    #13273f,\n    #0d1729,\n    #6a6a8d);\n  transform: rotateX(90deg) translateZ(50px);\n  background-size: 1200% 1200%;\n  animation: AnimationName 30s ease infinite;\n}\n\n.top::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100px;\n  height: 100px;\n  background-image: linear-gradient(\n    -45deg,\n    #000000,\n    #0d0d0e,\n    #030303,\n    #000000);\n  background-size: 1200% 1200%;\n  animation: AnimationName 30s ease infinite;\n  box-shadow: 0 0 120px #3d413e,0 0 120px #302f2f,0 0 120px #413f3f;\n  transition: box-shadow 3s;\n  transform: translateZ(-200px);\n  filter: blur(40px);\n}\n\n@keyframes AnimationName2 {\n  0% {\n    background-position: 0% 50%;\n  }\n\n  50% {\n    background-position: 100% 50%;\n  }\n\n  100% {\n    background-position: 0% 50%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/radwakhalil22_spotty-pug-7.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cube div\"></view>\n    <view class=\"top div\"></view>\n    <view class=\"div\"></view>\n      <text class=\"span\" style=\"--i: 0\"></text>\n        <text>loading..</text>\n        <text>loading..</text>\n      </span>\n      <text class=\"span\" style=\"--i: 1\"></text>\n        <text>loading..</text>\n        <text>loading..</text>\n      </span>\n      <text class=\"span\" style=\"--i: 2\"></text>\n        <text>loading..</text>\n        <text>loading..</text>\n      </span>\n      <text class=\"span\" style=\"--i: 3\"></text>\n        <text>loading..</text>\n        <text>loading..</text>\n      </span>\n    </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySpottyPug7',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by radwakhalil22 - Tags: loader, box */\n.cube {\n  position: relative;\n  height: 200rpx;\n  width: 200rpx;\n  transform-style: preserve-3d;\n  animation: animate 4s linear infinite;\n}\n\n@keyframes animate {\n  0% {\n    transform: rotateX(-30deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(-30deg) rotateY(360deg);\n  }\n}\n\n.cube .div {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n}\n\n.cube .div .span {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform: rotateY(calc(90deg * var(--i))) translateZ(100rpx);\n  background-image: linear-gradient(\n    -45deg,\n    #000000,\n    #13273f,\n    #0d1729,\n    #6a6a8d);\n  background-size: 1200% 1200%;\n  animation: AnimationName 30s ease infinite;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  transform-style: preserve-3d;\n}\n\n.cube .div .span p {\n  position: absolute;\n  font-size: 1em;\n  color: white;\n  transform: translateZ(40rpx);\n}\n\n.cube .div .span p:nth-child(1) {\n  transform: translateZ(0) translateY(40rpx);\n  color: rgba(0,0,0,0.1);\n  \n}\n\n@keyframes AnimationName {\n  0% {\n    background-position: 0% 50%;\n  }\n\n  50% {\n    background-position: 100% 50%;\n  }\n\n  100% {\n    background-position: 0% 50%;\n  }\n}\n\n.top {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 600rpx;\n  height: 600rpx;\n  background-image: linear-gradient(\n    -45deg,\n    #000000,\n    #13273f,\n    #0d1729,\n    #6a6a8d);\n  transform: rotateX(90deg) translateZ(100rpx);\n  background-size: 1200% 1200%;\n  animation: AnimationName 30s ease infinite;\n}\n\n.top::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 200rpx;\n  height: 200rpx;\n  background-image: linear-gradient(\n    -45deg,\n    #000000,\n    #0d0d0e,\n    #030303,\n    #000000);\n  background-size: 1200% 1200%;\n  animation: AnimationName 30s ease infinite;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 240rpx #3d413e,0 0 240rpx #302f2f,0 0 240rpx #413f3f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: box-shadow 3s;\n  transform: translateZ(-400rpx);\n  \n}\n\n@keyframes AnimationName2 {\n  0% {\n    background-position: 0% 50%;\n  }\n\n  50% {\n    background-position: 100% 50%;\n  }\n\n  100% {\n    background-position: 0% 50%;\n  }\n}\n\n\n",
+    "component_name": "GalaxySpottyPug7"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2761,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.563Z",
+  "updated_at": "2025-07-31T07:55:42.563Z"
+}

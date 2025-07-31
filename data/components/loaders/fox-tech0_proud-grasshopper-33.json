@@ -1,0 +1,90 @@
+{
+  "id": "fox-tech0_proud-grasshopper-33",
+  "name": "proud-grasshopper-33",
+  "category": "loaders",
+  "author": "fox-tech0",
+  "description": "proud-grasshopper-33 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div aria-busy=\"true\" aria-label=\"Loading\" role=\"progressbar\" class=\"container\">\n    <div class=\"swing\">\n        <div class=\"swing-l\"></div>\n        <div></div>\n        <div></div>\n        <div></div>\n        <div></div>\n        <div></div>\n        <div class=\"swing-r\"></div>\n    </div>\n    <div class=\"shadow\">\n        <div class=\"shadow-l\"></div>\n        <div></div>\n        <div></div>\n        <div></div>\n        <div></div>\n        <div></div>\n        <div class=\"shadow-r\"></div>\n    </div>\n</div>",
+    "css": "/* From Uiverse.io by fox-tech0 - Tags: loader */\n.container {\n  left: 50%;\n  margin: auto -50px;\n  position: absolute;\n  top: 50%;\n}\n\n.swing div {\n  border-radius: 50%;\n  float: left;\n  height: 1em;\n  width: 1em;\n}\n\n.swing div:nth-of-type(1) {\n  background: -webkit-linear-gradient(left, #385c78 0%, #325774 100%);\n  background: linear-gradient(to right, #385c78 0%, #325774 100%);\n}\n\n.swing div:nth-of-type(2) {\n  background: -webkit-linear-gradient(left, #325774 0%, #47536a 100%);\n  background: linear-gradient(to right, #325774 0%, #47536a 100%);\n}\n\n.swing div:nth-of-type(3) {\n  background: -webkit-linear-gradient(left, #4a5369 0%, #6b4d59 100%);\n  background: linear-gradient(to right, #4a5369 0%, #6b4d59 100%);\n}\n\n.swing div:nth-of-type(4) {\n  background: -webkit-linear-gradient(left, #744c55 0%, #954646 100%);\n  background: linear-gradient(to right, #744c55 0%, #954646 100%);\n}\n\n.swing div:nth-of-type(5) {\n  background: -webkit-linear-gradient(left, #9c4543 0%, #bb4034 100%);\n  background: linear-gradient(to right, #9c4543 0%, #bb4034 100%);\n}\n\n.swing div:nth-of-type(6) {\n  background: -webkit-linear-gradient(left, #c33f31 0%, #d83b27 100%);\n  background: linear-gradient(to right, #c33f31 0%, #d83b27 100%);\n}\n\n.swing div:nth-of-type(7) {\n  background: -webkit-linear-gradient(left, #da3b26 0%, #db412c 100%);\n  background: linear-gradient(to right, #da3b26 0%, #db412c 100%);\n}\n\n.shadow {\n  clear: left;\n  padding-top: 1.5em;\n}\n\n.shadow div {\n  -webkit-filter: blur(1px);\n  filter: blur(1px);\n  float: left;\n  width: 1em;\n  height: .25em;\n  border-radius: 50%;\n  background: #e3dbd2;\n}\n\n.shadow .shadow-l {\n  background: #d5d8d6;\n}\n\n.shadow .shadow-r {\n  background: #eed3ca;\n}\n\n@-webkit-keyframes ball-l53 {\n  0%, 50% {\n    -webkit-transform: rotate(0) translateX(0);\n    transform: rotate(0) translateX(0);\n  }\n\n  100% {\n    -webkit-transform: rotate(50deg) translateX(-2.5em);\n    transform: rotate(50deg) translateX(-2.5em);\n  }\n}\n\n@keyframes ball-l53 {\n  0%, 50% {\n    -webkit-transform: rotate(0) translate(0);\n    transform: rotate(0) translateX(0);\n  }\n\n  100% {\n    -webkit-transform: rotate(50deg) translateX(-2.5em);\n    transform: rotate(50deg) translateX(-2.5em);\n  }\n}\n\n@-webkit-keyframes ball-r53 {\n  0% {\n    -webkit-transform: rotate(-50deg) translateX(2.5em);\n    transform: rotate(-50deg) translateX(2.5em);\n  }\n\n  50%,\n  100% {\n    -webkit-transform: rotate(0) translateX(0);\n    transform: rotate(0) translateX(0);\n  }\n}\n\n@keyframes ball-r53 {\n  0% {\n    -webkit-transform: rotate(-50deg) translateX(2.5em);\n    transform: rotate(-50deg) translateX(2.5em);\n  }\n\n  50%,\n  100% {\n    -webkit-transform: rotate(0) translateX(0);\n    transform: rotate(0) translateX(0)\n  }\n}\n\n@-webkit-keyframes shadow-l-n53 {\n  0%, 50% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n\n  100% {\n    opacity: .125;\n    -webkit-transform: translateX(-1.57em);\n    transform: translateX(-1.75em);\n  }\n}\n\n@keyframes shadow-l-n53 {\n  0%, 50% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n\n  100% {\n    opacity: .125;\n    -webkit-transform: translateX(-1.75);\n    transform: translateX(-1.75em);\n  }\n}\n\n@-webkit-keyframes shadow-r-n53 {\n  0% {\n    opacity: .125;\n    -webkit-transform: translateX(1.75em);\n    transform: translateX(1.75em);\n  }\n\n  50%,\n  100% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n}\n\n@keyframes shadow-r-n53 {\n  0% {\n    opacity: .125;\n    -webkit-transform: translateX(1.75em);\n    transform: translateX(1.75em);\n  }\n\n  50%,\n  100% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n}\n\n.swing-l {\n  -webkit-animation: ball-l53 .425s ease-in-out infinite alternate;\n  animation: ball-l53 .425s ease-in-out infinite alternate;\n}\n\n.swing-r {\n  -webkit-animation: ball-r53 .425s ease-in-out infinite alternate;\n  animation: ball-r53 .425s ease-in-out infinite alternate;\n}\n\n.shadow-l {\n  -webkit-animation: shadow-l-n53 .425s ease-in-out infinite alternate;\n  animation: shadow-l-n53 .425s ease-in-out infinite alternate;\n}\n\n.shadow-r {\n  -webkit-animation: shadow-r-n53 .425s ease-in-out infinite alternate;\n  animation: shadow-r-n53 .425s ease-in-out infinite alternate;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/fox-tech0_proud-grasshopper-33.html"
+  },
+  "uniapp": {
+    "template": "<view aria-busy=\"true\" aria-label=\"Loading\" role=\"progressbar\" class=\"container\"></view>\n    <view class=\"swing\"></view>\n        <view class=\"swing-l\"></view>\n        <view></view>\n        <view></view>\n        <view></view>\n        <view></view>\n        <view></view>\n        <view class=\"swing-r\"></view>\n    </div>\n    <view class=\"shadow\"></view>\n        <view class=\"shadow-l\"></view>\n        <view></view>\n        <view></view>\n        <view></view>\n        <view></view>\n        <view></view>\n        <view class=\"shadow-r\"></view>\n    </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyProudGrasshopper33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by fox-tech0 - Tags: loader */\n.container {\n  left: 50%;\n  margin: auto -100rpx;\n  position: absolute;\n  top: 50%;\n}\n\n.swing div {\n  border-radius: 50%;\n  float: left;\n  height: 1em;\n  width: 1em;\n}\n\n.swing div:nth-of-type(1) {\n  background: -webkit-linear-gradient(left, #385c78 0%, #325774 100%);\n  background: linear-gradient(to right, #385c78 0%, #325774 100%);\n}\n\n.swing div:nth-of-type(2) {\n  background: -webkit-linear-gradient(left, #325774 0%, #47536a 100%);\n  background: linear-gradient(to right, #325774 0%, #47536a 100%);\n}\n\n.swing div:nth-of-type(3) {\n  background: -webkit-linear-gradient(left, #4a5369 0%, #6b4d59 100%);\n  background: linear-gradient(to right, #4a5369 0%, #6b4d59 100%);\n}\n\n.swing div:nth-of-type(4) {\n  background: -webkit-linear-gradient(left, #744c55 0%, #954646 100%);\n  background: linear-gradient(to right, #744c55 0%, #954646 100%);\n}\n\n.swing div:nth-of-type(5) {\n  background: -webkit-linear-gradient(left, #9c4543 0%, #bb4034 100%);\n  background: linear-gradient(to right, #9c4543 0%, #bb4034 100%);\n}\n\n.swing div:nth-of-type(6) {\n  background: -webkit-linear-gradient(left, #c33f31 0%, #d83b27 100%);\n  background: linear-gradient(to right, #c33f31 0%, #d83b27 100%);\n}\n\n.swing div:nth-of-type(7) {\n  background: -webkit-linear-gradient(left, #da3b26 0%, #db412c 100%);\n  background: linear-gradient(to right, #da3b26 0%, #db412c 100%);\n}\n\n.shadow {\n  clear: left;\n  padding-top: 1.5em;\n}\n\n.shadow div {\n  -webkit-\n  \n  float: left;\n  width: 1em;\n  height: .25em;\n  border-radius: 50%;\n  background: #e3dbd2;\n}\n\n.shadow .shadow-l {\n  background: #d5d8d6;\n}\n\n.shadow .shadow-r {\n  background: #eed3ca;\n}\n\n@-webkit-keyframes ball-l53 {\n  0%, 50% {\n    -webkit-transform: rotate(0) translateX(0);\n    transform: rotate(0) translateX(0);\n  }\n\n  100% {\n    -webkit-transform: rotate(50deg) translateX(-2.5em);\n    transform: rotate(50deg) translateX(-2.5em);\n  }\n}\n\n@keyframes ball-l53 {\n  0%, 50% {\n    -webkit-transform: rotate(0) translate(0);\n    transform: rotate(0) translateX(0);\n  }\n\n  100% {\n    -webkit-transform: rotate(50deg) translateX(-2.5em);\n    transform: rotate(50deg) translateX(-2.5em);\n  }\n}\n\n@-webkit-keyframes ball-r53 {\n  0% {\n    -webkit-transform: rotate(-50deg) translateX(2.5em);\n    transform: rotate(-50deg) translateX(2.5em);\n  }\n\n  50%,\n  100% {\n    -webkit-transform: rotate(0) translateX(0);\n    transform: rotate(0) translateX(0);\n  }\n}\n\n@keyframes ball-r53 {\n  0% {\n    -webkit-transform: rotate(-50deg) translateX(2.5em);\n    transform: rotate(-50deg) translateX(2.5em);\n  }\n\n  50%,\n  100% {\n    -webkit-transform: rotate(0) translateX(0);\n    transform: rotate(0) translateX(0)\n  }\n}\n\n@-webkit-keyframes shadow-l-n53 {\n  0%, 50% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n\n  100% {\n    opacity: .125;\n    -webkit-transform: translateX(-1.57em);\n    transform: translateX(-1.75em);\n  }\n}\n\n@keyframes shadow-l-n53 {\n  0%, 50% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n\n  100% {\n    opacity: .125;\n    -webkit-transform: translateX(-1.75);\n    transform: translateX(-1.75em);\n  }\n}\n\n@-webkit-keyframes shadow-r-n53 {\n  0% {\n    opacity: .125;\n    -webkit-transform: translateX(1.75em);\n    transform: translateX(1.75em);\n  }\n\n  50%,\n  100% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n}\n\n@keyframes shadow-r-n53 {\n  0% {\n    opacity: .125;\n    -webkit-transform: translateX(1.75em);\n    transform: translateX(1.75em);\n  }\n\n  50%,\n  100% {\n    opacity: .5;\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n}\n\n.swing-l {\n  -webkit-animation: ball-l53 .425s ease-in-out infinite alternate;\n  animation: ball-l53 .425s ease-in-out infinite alternate;\n}\n\n.swing-r {\n  -webkit-animation: ball-r53 .425s ease-in-out infinite alternate;\n  animation: ball-r53 .425s ease-in-out infinite alternate;\n}\n\n.shadow-l {\n  -webkit-animation: shadow-l-n53 .425s ease-in-out infinite alternate;\n  animation: shadow-l-n53 .425s ease-in-out infinite alternate;\n}\n\n.shadow-r {\n  -webkit-animation: shadow-r-n53 .425s ease-in-out infinite alternate;\n  animation: shadow-r-n53 .425s ease-in-out infinite alternate;\n}\n",
+    "component_name": "GalaxyProudGrasshopper33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4792,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.084Z",
+  "updated_at": "2025-07-31T07:55:42.084Z"
+}

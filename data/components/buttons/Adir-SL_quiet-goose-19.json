@@ -1,0 +1,118 @@
+{
+  "id": "Adir-SL_quiet-goose-19",
+  "name": "quiet-goose-19",
+  "category": "buttons",
+  "author": "Adir-SL",
+  "description": "quiet-goose-19 组件 (pink, button, toy, animation, interactive)",
+  "tags": [
+    "pink",
+    "button",
+    "toy",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Click here </button>",
+    "css": "/* From Uiverse.io by Adir-SL - Tags: pink, button, toy */\nbutton {\n  --fontSize: 2rem;\n  --button: 356, 80%;\n  --buttonColor: hsl(var(--button), 70%);\n  --sideColor: hsl(var(--button), 40%);\n  --text: hsl(var(--button), 30%);\n  --bgColor: #e8e8e8;\n  position: relative;\n  font-size: 0;\n  font-family: sans-serif;\n  transition: all 300ms cubic-bezier(0.47, 1.64, 0.41, 0.8);\n  border-radius: 999px;\n  padding: calc(var(--fontSize) / 2);\n  height: calc(var(--fontSize) * 2);\n  min-width: calc(var(--fontSize) * 2);\n  line-height: calc(var(--fontSize) * 0.75);\n  border: none;\n  outline: none;\n  background-color: var(--buttonColor);\n  transform: rotate(-25deg);\n  color: var(--text);\n  white-space: nowrap;\n  cursor: pointer;\n  -webkit-tap-highlight-color: transparent;\n  box-shadow: calc(var(--fontSize) / -25) calc(var(--fontSize) / 25) calc(var(--fontSize) / 25) #ffffffbb inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / -50) calc(var(--fontSize) / 25) #ffffff88 inset,\n    0 0 calc(var(--fontSize) / 5) #0f004a77 inset, 0 0 0 calc(var(--fontSize) / 3.6) var(--buttonColor) inset,\n    0 0 calc(var(--fontSize) / 6.25) calc(var(--fontSize) / 3.125) #0f004a44 inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / 12.5) 0 var(--sideColor),\n    calc(var(--fontSize) / -8.33) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 6.25) #0f004a44, calc(var(--fontSize) / -16.666) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 25) #0f004a66;\n}\n\nbutton:hover {\n  transform: rotate(0);\n  overflow: visible;\n  font-size: var(--fontSize);\n}\n\nbutton::before,\nbutton::after {\n  content: \": \";\n  font-family: serif;\n  font-weight: bold;\n  text-shadow: calc(var(--fontSize) / 25) 0 0 var(--sideColor), 0 0 calc(var(--fontSize) / 12.5) #0f004a55,\n    calc(var(--fontSize) / 50) 0 0 var(--sideColor), calc(var(--fontSize) / 50) calc(var(--fontSize) / -50) 0 var(--sideColor);\n  color: var(--bgColor);\n  font-size: var(--fontSize);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Adir-SL_quiet-goose-19.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Click here </button>",
+    "script": "export default {\n  name: 'GalaxyQuietGoose19',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Adir-SL - Tags: pink, button, toy */\nbutton {\n  --fontSize: 2rem;\n  --button: 356, 80%;\n  --buttonColor: hsl(var(--button), 70%);\n  --sideColor: hsl(var(--button), 40%);\n  --text: hsl(var(--button), 30%);\n  --bgColor: #e8e8e8;\n  position: relative;\n  font-size: 0;\n  font-family: sans-serif;\n  transition: all 300ms cubic-bezier(0.47, 1.64, 0.41, 0.8);\n  border-radius: 1998rpx;\n  padding: calc(var(--fontSize) / 2);\n  height: calc(var(--fontSize) * 2);\n  min-width: calc(var(--fontSize) * 2);\n  line-height: calc(var(--fontSize) * 0.75);\n  border: none;\n  outline: none;\n  background-color: var(--buttonColor);\n  transform: rotate(-25deg);\n  color: var(--text);\n  white-space: nowrap;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  -webkit-tap-highlight-color: transparent;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: calc(var(--fontSize) / -25) calc(var(--fontSize) / 25) calc(var(--fontSize) / 25) #ffffffbb inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / -50) calc(var(--fontSize) / 25) #ffffff88 inset,\n    0 0 calc(var(--fontSize) / 5) #0f004a77 inset, 0 0 0 calc(var(--fontSize) / 3.6) var(--buttonColor) inset,\n    0 0 calc(var(--fontSize) / 6.25) calc(var(--fontSize) / 3.125) #0f004a44 inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / 12.5) 0 var(--sideColor),\n    calc(var(--fontSize) / -8.33) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 6.25) #0f004a44, calc(var(--fontSize) / -16.666) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 25) #0f004a66;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover {\n  transform: rotate(0);\n  overflow: visible;\n  font-size: var(--fontSize);\n}\n\nbutton::before,\nbutton::after {\n  content: \": \";\n  font-family: serif;\n  font-weight: bold;\n  /* #ifdef H5 */\n  text-shadow: calc(var(--fontSize) / 25) 0 0 var(--sideColor), 0 0 calc(var(--fontSize) / 12.5) #0f004a55,\n    calc(var(--fontSize) / 50) 0 0 var(--sideColor), calc(var(--fontSize) / 50) calc(var(--fontSize) / -50) 0 var(--sideColor);\n  /* #endif */\n  color: var(--bgColor);\n  font-size: var(--fontSize);\n}\n",
+    "component_name": "GalaxyQuietGoose19"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1969,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.523Z",
+  "updated_at": "2025-07-31T07:55:32.523Z"
+}

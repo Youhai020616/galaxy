@@ -1,0 +1,91 @@
+{
+  "id": "r7chardgh_helpless-elephant-82",
+  "name": "helpless-elephant-82",
+  "category": "loaders",
+  "author": "r7chardgh",
+  "description": "helpless-elephant-82 组件 (loading, loader, adidas, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "adidas",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"leaf\"></div>\n  <div class=\"leaf\"></div>\n  <div class=\"leaf\"></div>\n</div>",
+    "css": "/* From Uiverse.io by r7chardgh - Tags: loading, loader, adidas */\n.loader {\n  display: flex;\n  gap: .5em;\n}\n\n.leaf {\n  width: 1em;\n  height: 3em;\n  background-color: rgb(0, 0, 0,.3);\n  clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 81%);\n  transform: rotate(-30deg);\n  animation: color 1200ms infinite;\n  animation-delay: 800ms;\n}\n\n.leaf:nth-child(2) {\n  clip-path: polygon(0% 35%,100% 35%,100% 100%,0% 81%);\n  animation-delay: 400ms;\n}\n\n.leaf:nth-child(1) {\n  clip-path: polygon(0% 70%,100% 70%,100% 100%,0% 81%);\n  animation-delay: 0ms;\n}\n\n@keyframes color {\n  from {\n    background-color: lightblue;\n  }\n\n  to {\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/r7chardgh_helpless-elephant-82.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"leaf\"></view>\n  <view class=\"leaf\"></view>\n  <view class=\"leaf\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHelplessElephant82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by r7chardgh - Tags: loading, loader, adidas */\n.loader {\n  display: flex;\n  gap: .5em;\n}\n\n.leaf {\n  width: 1em;\n  height: 3em;\n  background-color: rgb(0, 0, 0,.3);\n  \n  transform: rotate(-30deg);\n  animation: color 1200ms infinite;\n  animation-delay: 800ms;\n}\n\n.leaf:nth-child(2) {\n  \n  animation-delay: 400ms;\n}\n\n.leaf:nth-child(1) {\n  \n  animation-delay: 0ms;\n}\n\n@keyframes color {\n  from {\n    background-color: lightblue;\n  }\n\n  to {\n  }\n}\n",
+    "component_name": "GalaxyHelplessElephant82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 732,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.551Z",
+  "updated_at": "2025-07-31T07:55:42.551Z"
+}

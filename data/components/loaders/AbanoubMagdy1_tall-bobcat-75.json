@@ -1,0 +1,85 @@
+{
+  "id": "AbanoubMagdy1_tall-bobcat-75",
+  "name": "tall-bobcat-75",
+  "category": "loaders",
+  "author": "AbanoubMagdy1",
+  "description": "tall-bobcat-75 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <svg class=\"loader-svg\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 47.94 47.94\" style=\"enable-background:new 0 0 47.94 47.94;\" xml:space=\"preserve\">\n<path style=\"fill:#fff;\" d=\"M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757\n\tc2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042\n\tc0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685\n\tc-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528\n\tc-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956\n\tC22.602,0.567,25.338,0.567,26.285,2.486z\"></path>\n</svg>\n</div>",
+    "css": "/* From Uiverse.io by AbanoubMagdy1 - Tags: loader */\n.loader {\n  --dim: 6rem;\n  background-color: #ED8A19;\n  width: var(--dim);\n  height: var(--dim);\n  border-radius: 50%;\n  display: grid;\n  place-items: center;\n  animation: spin_412 5s infinite;\n}\n\n.loader .loader-svg {\n  transform: translateY(-2px) scale(.7);\n}\n\n@keyframes spin_412 {\n  0% {\n    transform: rotate(0) scale(1);\n  }\n\n  50% {\n    transform: rotate(720deg) scale(1.3);\n  }\n\n  100% {\n    transform: rotate(0) scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/AbanoubMagdy1_tall-bobcat-75.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"loader-svg\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 47.94 47.94\" style=\"enable-background:new 0 0 47.94 47.94;\" xml:space=\"preserve\"></view>\n<path style=\"fill:#fff;\" d=\"M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757\n\tc2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042\n\tc0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685\n\tc-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528\n\tc-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956\n\tC22.602,0.567,25.338,0.567,26.285,2.486z\"></path>\n</svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTallBobcat75',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AbanoubMagdy1 - Tags: loader */\n.loader {\n  --dim: 6rem;\n  background-color: #ED8A19;\n  width: var(--dim);\n  height: var(--dim);\n  border-radius: 50%;\n  display: grid;\n  place-items: center;\n  animation: spin_412 5s infinite;\n}\n\n.loader .loader-svg {\n  transform: translateY(-4rpx) scale(.7);\n}\n\n@keyframes spin_412 {\n  0% {\n    transform: rotate(0) scale(1);\n  }\n\n  50% {\n    transform: rotate(720deg) scale(1.3);\n  }\n\n  100% {\n    transform: rotate(0) scale(1);\n  }\n}\n",
+    "component_name": "GalaxyTallBobcat75"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1323,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.823Z",
+  "updated_at": "2025-07-31T07:55:38.823Z"
+}

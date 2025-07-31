@@ -1,0 +1,89 @@
+{
+  "id": "xopc333_wise-fish-34",
+  "name": "wise-fish-34",
+  "category": "loaders",
+  "author": "xopc333",
+  "description": "wise-fish-34 组件 (animation, loader, svg, creative, css, loading animation)",
+  "tags": [
+    "animation",
+    "loader",
+    "svg",
+    "creative",
+    "css",
+    "loading animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <svg class=\"svg-wrap\" viewBox=\"0 0 100 50\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">\n    <circle stroke-linecap=\"round\" stroke-width=\"2\" class=\"svg-stroke\" cy=\"25\" cx=\"50\" r=\"15\"></circle>\n    <circle class=\"circle circle-one\" cy=\"25\" cx=\"35\" r=\"1\"></circle>\n    <circle class=\"circle circle-two\" cy=\"25\" cx=\"45\" r=\"1\"></circle>\n    <circle class=\"circle circle-three\" cy=\"25\" cx=\"55\" r=\"1\"></circle>\n  </svg>  \n</div>",
+    "css": "/* From Uiverse.io by xopc333 - Tags: animation, loader, svg, creative, css, loading animation */\n.loader {\n  width: 500px;\n  height: 250px;\n}\n\n.circle {\n  fill: #F25A33;\n}\n\n.circle-one {\n  opacity: 0;\n}\n\n.svg-stroke {\n  fill: transparent;\n  stroke-dasharray: 46.82, 93.64;\n  stroke-dashoffset: 46.82;\n  stroke: #F25A33;\n  opacity: 1;\n}\n\n.svg-wrap .svg-stroke {\n  animation: stroke-start 1.6s linear, stroke-end 1.6s 0.8s linear infinite;\n}\n\n.svg-wrap .circle-one {\n  animation: dot-one 0s 0.8s, move-dot 1.6s 0.8s linear infinite;\n}\n\n.svg-wrap .circle-two,\n.svg-wrap .circle-three {\n  animation: move-dot 1.6s 0.8s linear infinite;\n}\n\n@keyframes dot-one {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes stroke-start {\n  50% {\n    stroke-dashoffset: 46.82;\n  }\n\n  100% {\n    stroke-dashoffset: 0;\n  }\n}\n\n@keyframes stroke-end {\n  50% {\n    stroke-dasharray: 46.82, 93.64;\n    stroke-dashoffset: 0;\n    transform: translateX(0);\n  }\n\n  100% {\n    stroke-dasharray: 0, 93.64;\n    stroke-dashoffset: -46.82;\n    transform: translateX(10px);\n  }\n}\n\n@keyframes move-dot {\n  50% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(10px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/xopc333_wise-fish-34.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"svg-wrap\" viewBox=\"0 0 100 50\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"></view>\n    <circle stroke-linecap=\"round\" stroke-width=\"2\" class=\"svg-stroke\" cy=\"25\" cx=\"50\" r=\"15\"></circle>\n    <circle class=\"circle circle-one\" cy=\"25\" cx=\"35\" r=\"1\"></circle>\n    <circle class=\"circle circle-two\" cy=\"25\" cx=\"45\" r=\"1\"></circle>\n    <circle class=\"circle circle-three\" cy=\"25\" cx=\"55\" r=\"1\"></circle>\n  </svg>  \n</div>",
+    "script": "export default {\n  name: 'GalaxyWiseFish34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by xopc333 - Tags: animation, loader, svg, creative, css, loading animation */\n.loader {\n  width: 1000rpx;\n  height: 500rpx;\n}\n\n.circle {\n  fill: #F25A33;\n}\n\n.circle-one {\n  opacity: 0;\n}\n\n.svg-stroke {\n  fill: transparent;\n  stroke-dasharray: 46.82, 93.64;\n  stroke-dashoffset: 46.82;\n  stroke: #F25A33;\n  opacity: 1;\n}\n\n.svg-wrap .svg-stroke {\n  animation: stroke-start 1.6s linear, stroke-end 1.6s 0.8s linear infinite;\n}\n\n.svg-wrap .circle-one {\n  animation: dot-one 0s 0.8s, move-dot 1.6s 0.8s linear infinite;\n}\n\n.svg-wrap .circle-two,\n.svg-wrap .circle-three {\n  animation: move-dot 1.6s 0.8s linear infinite;\n}\n\n@keyframes dot-one {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes stroke-start {\n  50% {\n    stroke-dashoffset: 46.82;\n  }\n\n  100% {\n    stroke-dashoffset: 0;\n  }\n}\n\n@keyframes stroke-end {\n  50% {\n    stroke-dasharray: 46.82, 93.64;\n    stroke-dashoffset: 0;\n    transform: translateX(0);\n  }\n\n  100% {\n    stroke-dasharray: 0, 93.64;\n    stroke-dashoffset: -46.82;\n    transform: translateX(20rpx);\n  }\n}\n\n@keyframes move-dot {\n  50% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(20rpx);\n  }\n}\n",
+    "component_name": "GalaxyWiseFish34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1634,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.855Z",
+  "updated_at": "2025-07-31T07:55:42.855Z"
+}

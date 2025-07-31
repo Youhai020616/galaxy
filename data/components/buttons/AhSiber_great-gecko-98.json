@@ -1,0 +1,109 @@
+{
+  "id": "AhSiber_great-gecko-98",
+  "name": "great-gecko-98",
+  "category": "buttons",
+  "author": "AhSiber",
+  "description": "great-gecko-98 组件 (simple, minimalist, button, interactive)",
+  "tags": [
+    "simple",
+    "minimalist",
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Button\n</button>",
+    "css": "/* From Uiverse.io by AhSiber - Tags: simple, minimalist, button */\nbutton {\n border: 1px solid seagreen;\n border-radius: 5px;\n background: rgb(255, 255, 255);\n color: seagreen;\n font-style: italic;\n padding: 10px;\n padding-right: 14px;\n padding-left: 12px;\n font-size: 17px;\n}\n\nbutton:hover {\n background-color: seagreen;\n color: white;\n border: 1px solid  seagreen;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AhSiber_great-gecko-98.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyGreatGecko98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AhSiber - Tags: simple, minimalist, button */\nbutton {\n border: 2rpx solid seagreen;\n border-radius: 10rpx;\n background: rgb(255, 255, 255);\n color: seagreen;\n font-style: italic;\n padding: 20rpx;\n padding-right: 28rpx;\n padding-left: 24rpx;\n font-size: 34rpx;\n}\n\nbutton:hover {\n background-color: seagreen;\n color: white;\n border: 2rpx solid  seagreen;\n}\n\n",
+    "component_name": "GalaxyGreatGecko98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 399,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.552Z",
+  "updated_at": "2025-07-31T07:55:32.552Z"
+}

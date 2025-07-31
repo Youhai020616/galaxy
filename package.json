@@ -1,0 +1,36 @@
+{
+  "name": "galaxy-uniapp-converter",
+  "version": "1.0.0",
+  "description": "Galaxy组件库到UniApp组件转换器",
+  "main": "parse-components.js",
+  "scripts": {
+    "parse": "node parse-components.js",
+    "parse:buttons": "node parse-components.js --category=buttons",
+    "parse:tooltips": "node parse-components.js --category=tooltips", 
+    "parse:loaders": "node parse-components.js --category=loaders",
+    "build:index": "node build-index.js",
+    "validate": "node validate-components.js",
+    "stats": "node generate-stats.js"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "keywords": [
+    "uniapp",
+    "vue",
+    "components",
+    "ui",
+    "galaxy",
+    "converter"
+  ],
+  "author": "Galaxy UniApp Converter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galaxy/uniapp-converter.git"
+  }
+}

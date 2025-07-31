@@ -1,0 +1,115 @@
+{
+  "id": "Kabak_unlucky-treefrog-77",
+  "name": "unlucky-treefrog-77",
+  "category": "buttons",
+  "author": "Kabak",
+  "description": "unlucky-treefrog-77 组件 (button, dark, modern, sleek, gradient, interactive)",
+  "tags": [
+    "button",
+    "dark",
+    "modern",
+    "sleek",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by Kabak - Tags: button, dark, modern, sleek */\nbutton {\n  height: 50px;\n  margin: 5px;\n  width: 120px;\n  background: #333;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  font-family: Consolas, Courier New, monospace;\n  border: solid #404C5D 1px;\n  font-size: 16px;\n  color: rgb(161, 161, 161);\n  -webkit-transition: 500ms;\n  transition: 500ms;\n  border-radius: 5px;\n  background: linear-gradient(145deg, #2e2d2d, #212121);\n  -webkit-box-shadow: -1px -5px 15px #41465B, \n               5px  5px 15px #41465B, \n    inset      5px  5px 10px #212121, \n    inset     -5px -5px 10px #212121;\n  box-shadow: -1px -5px 15px #41465B, \n               5px  5px 15px #41465B, \n    inset      5px  5px 10px #212121, \n    inset     -5px -5px 10px #212121;\n}\n\nbutton:hover {\n  -webkit-box-shadow: 1px 1px 13px #20232e,\n                    -1px -1px 13px #545b78;\n  box-shadow: 1px 1px 13px #20232e,\n             -1px -1px 13px #545b78;\n  color: #d6d6d6;\n  -webkit-transition: 500ms;\n  transition: 500ms;\n}\n\nbutton:active {\n  -webkit-box-shadow: 1px 1px 13px #20232e,\n                     -1px -1px 33px #545b78;\n  box-shadow: 1px 1px 13px #20232e,\n             -1px -1px 33px #545b78;\n  color: #d6d6d6;\n  -webkit-transition: 100ms;\n  transition: 100ms;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Kabak_unlucky-treefrog-77.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyUnluckyTreefrog77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Kabak - Tags: button, dark, modern, sleek */\nbutton {\n  height: 100rpx;\n  margin: 10rpx;\n  width: 240rpx;\n  background: #333;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  font-family: Consolas, Courier New, monospace;\n  border: solid #404C5D 2rpx;\n  font-size: 32rpx;\n  color: rgb(161, 161, 161);\n  -webkit-transition: 500ms;\n  transition: 500ms;\n  border-radius: 10rpx;\n  background: linear-gradient(145deg, #2e2d2d, #212121);\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -2rpx -10rpx 30rpx #41465B, \n               10rpx  10rpx 30rpx #41465B, \n    inset      10rpx  10rpx 20rpx #212121, \n    inset     -10rpx -10rpx 20rpx #212121;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -2rpx -10rpx 30rpx #41465B, \n               10rpx  10rpx 30rpx #41465B, \n    inset      10rpx  10rpx 20rpx #212121, \n    inset     -10rpx -10rpx 20rpx #212121;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover {\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 26rpx #20232e,\n                    -2rpx -2rpx 26rpx #545b78;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 26rpx #20232e,\n             -2rpx -2rpx 26rpx #545b78;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: #d6d6d6;\n  -webkit-transition: 500ms;\n  transition: 500ms;\n}\n\nbutton:active {\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 26rpx #20232e,\n                     -2rpx -2rpx 66rpx #545b78;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 26rpx #20232e,\n             -2rpx -2rpx 66rpx #545b78;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: #d6d6d6;\n  -webkit-transition: 100ms;\n  transition: 100ms;\n}\n",
+    "component_name": "GalaxyUnluckyTreefrog77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1402,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.672Z",
+  "updated_at": "2025-07-31T07:55:33.672Z"
+}

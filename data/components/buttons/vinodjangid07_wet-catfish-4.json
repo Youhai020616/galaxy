@@ -1,0 +1,119 @@
+{
+  "id": "vinodjangid07_wet-catfish-4",
+  "name": "wet-catfish-4",
+  "category": "buttons",
+  "author": "vinodjangid07",
+  "description": "wet-catfish-4 组件 (tooltip, button, hover, hover effect, bug, report, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "button",
+    "hover",
+    "hover effect",
+    "bug",
+    "report",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"BugButton\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 43 42\" class=\"bugsvg\">\n    <path stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M20 7H23C26.866 7 30 10.134 30 14V28.5C30 33.1944 26.1944 37 21.5 37C16.8056 37 13 33.1944 13 28.5V14C13 10.134 16.134 7 20 7Z\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M18 2V7\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M25 2V7\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M31 22H41\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M2 22H12\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M12.5785 15.2681C3.5016 15.2684 4.99951 12.0004 5 4\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M12.3834 29.3877C3.20782 29.3874 4.72202 32.4736 4.72252 40.0291\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M30.0003 14.8974C39.0545 15.553 37.7958 12.1852 38.3718 4.20521\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M29.9944 29.7379C39.147 29.1188 37.8746 32.2993 38.4568 39.8355\"></path>\n  </svg>\n\n  <span class=\"tooltip\">Bug Report</span>\n</button>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, hover effect, bug, report */\n.BugButton {\n  width: 40px;\n  height: 40px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 3px;\n  background-color: transparent;\n  border: none;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  overflow: hidden;\n}\n.BugButton svg {\n  width: 44%;\n}\n.BugButton:hover {\n  background-color: rgb(61, 41, 71);\n  overflow: visible;\n}\n.bugsvg path {\n  transition: all 0.2s;\n}\n.BugButton:hover .bugsvg path {\n  stroke: #fff;\n}\n.BugButton:active {\n  transform: scale(0.98);\n}\n.tooltip {\n  --tooltip-color: rgb(41, 41, 41);\n  position: absolute;\n  top: -40px;\n  background-color: var(--tooltip-color);\n  color: white;\n  border-radius: 5px;\n  font-size: 12px;\n  padding: 8px 12px;\n  font-weight: 600;\n  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.105);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  transition: all 0.5s;\n  min-width: 100px;\n}\n.tooltip::before {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  transform: rotate(45deg);\n  content: \"\";\n  background-color: var(--tooltip-color);\n  bottom: -10%;\n}\n.BugButton:hover .tooltip {\n  opacity: 1;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vinodjangid07_wet-catfish-4.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"BugButton\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 43 42\" class=\"bugsvg\"></view>\n    <path stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M20 7H23C26.866 7 30 10.134 30 14V28.5C30 33.1944 26.1944 37 21.5 37C16.8056 37 13 33.1944 13 28.5V14C13 10.134 16.134 7 20 7Z\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M18 2V7\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M25 2V7\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M31 22H41\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M2 22H12\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M12.5785 15.2681C3.5016 15.2684 4.99951 12.0004 5 4\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M12.3834 29.3877C3.20782 29.3874 4.72202 32.4736 4.72252 40.0291\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M30.0003 14.8974C39.0545 15.553 37.7958 12.1852 38.3718 4.20521\"></path>\n    <path stroke-linecap=\"round\" stroke-width=\"4\" stroke=\"#cfcfcf\" d=\"M29.9944 29.7379C39.147 29.1188 37.8746 32.2993 38.4568 39.8355\"></path>\n  </svg>\n\n  <text class=\"tooltip\">Bug Report</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWetCatfish4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, hover effect, bug, report */\n.BugButton {\n  width: 80rpx;\n  height: 80rpx;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 6rpx;\n  background-color: transparent;\n  border: none;\n  border-radius: 16rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  position: relative;\n  overflow: hidden;\n}\n.BugButton svg {\n  width: 44%;\n}\n.BugButton:hover {\n  background-color: rgb(61, 41, 71);\n  overflow: visible;\n}\n.bugsvg path {\n  transition: all 0.2s;\n}\n.BugButton:hover .bugsvg path {\n  stroke: #fff;\n}\n.BugButton:active {\n  transform: scale(0.98);\n}\n.tooltip {\n  --tooltip-color: rgb(41, 41, 41);\n  position: absolute;\n  top: -80rpx;\n  background-color: var(--tooltip-color);\n  color: white;\n  border-radius: 10rpx;\n  font-size: 24rpx;\n  padding: 16rpx 24rpx;\n  font-weight: 600;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 20rpx 20rpx rgba(0, 0, 0, 0.105);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  transition: all 0.5s;\n  min-width: 200rpx;\n}\n.tooltip::before {\n  position: absolute;\n  width: 20rpx;\n  height: 20rpx;\n  transform: rotate(45deg);\n  content: \"\";\n  background-color: var(--tooltip-color);\n  bottom: -10%;\n}\n.BugButton:hover .tooltip {\n  opacity: 1;\n}\n\n",
+    "component_name": "GalaxyWetCatfish4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2557,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.304Z",
+  "updated_at": "2025-07-31T07:55:38.304Z"
+}

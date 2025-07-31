@@ -1,0 +1,85 @@
+{
+  "id": "satyamchaudharydev_popular-snake-36",
+  "name": "popular-snake-36",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "popular-snake-36 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n<div class=\"box\"></div>\n<div class=\"box\"></div>\n<div class=\"box\"></div>\n</div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.loader {\n --size: 40px;\n display: flex;\n gap: 0.6rem;\n}\n\n.box {\n width: var(--size);\n height: var(--size);\n background: #0270e1;\n animation: rotate 2s infinite;\n}\n\n.box:nth-child(2) {\n animation-delay: 0.25s;\n}\n\n.box:nth-child(3) {\n animation-delay: 0.5s;\n}\n\n@keyframes rotate {\n 50% {\n  transform: rotate(180deg)\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_popular-snake-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n<view class=\"box\"></view>\n<view class=\"box\"></view>\n<view class=\"box\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPopularSnake36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.loader {\n --size: 80rpx;\n display: flex;\n gap: 0.6rem;\n}\n\n.box {\n width: var(--size);\n height: var(--size);\n background: #0270e1;\n animation: rotate 2s infinite;\n}\n\n.box:nth-child(2) {\n animation-delay: 0.25s;\n}\n\n.box:nth-child(3) {\n animation-delay: 0.5s;\n}\n\n@keyframes rotate {\n 50% {\n  transform: rotate(180deg)\n }\n}\n",
+    "component_name": "GalaxyPopularSnake36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 481,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.594Z",
+  "updated_at": "2025-07-31T07:55:42.594Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "SchawnnahJ_tough-baboon-87",
+  "name": "tough-baboon-87",
+  "category": "loaders",
+  "author": "SchawnnahJ",
+  "description": "tough-baboon-87 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by SchawnnahJ - Tags: loader */\n.loader {\n position: relative;\n width: 2.5em;\n height: 2.5em;\n transform: rotate(165deg);\n}\n\n.loader:before, .loader:after {\n content: \"\";\n position: absolute;\n top: 50%;\n left: 50%;\n display: block;\n width: 0.5em;\n height: 0.5em;\n border-radius: 0.25em;\n transform: translate(-50%, -50%);\n}\n\n.loader:before {\n animation: before8 2s infinite;\n}\n\n.loader:after {\n animation: after6 2s infinite;\n}\n\n@keyframes before8 {\n 0% {\n  width: 0.5em;\n  box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);\n }\n\n 35% {\n  width: 2.5em;\n  box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);\n }\n\n 70% {\n  width: 0.5em;\n  box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);\n }\n\n 100% {\n  box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);\n }\n}\n\n@keyframes after6 {\n 0% {\n  height: 0.5em;\n  box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);\n }\n\n 35% {\n  height: 2.5em;\n  box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);\n }\n\n 70% {\n  height: 0.5em;\n  box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);\n }\n\n 100% {\n  box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);\n }\n}\n\n.loader {\n position: absolute;\n top: calc(50% - 1.25em);\n left: calc(50% - 1.25em);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SchawnnahJ_tough-baboon-87.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyToughBaboon87',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SchawnnahJ - Tags: loader */\n.loader {\n position: relative;\n width: 2.5em;\n height: 2.5em;\n transform: rotate(165deg);\n}\n\n.loader:before, .loader:after {\n content: \"\";\n position: absolute;\n top: 50%;\n left: 50%;\n display: block;\n width: 0.5em;\n height: 0.5em;\n border-radius: 0.25em;\n transform: translate(-50%, -50%);\n}\n\n.loader:before {\n animation: before8 2s infinite;\n}\n\n.loader:after {\n animation: after6 2s infinite;\n}\n\n@keyframes before8 {\n 0% {\n  width: 0.5em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 35% {\n  width: 2.5em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 70% {\n  width: 0.5em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 100% {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n}\n\n@keyframes after6 {\n 0% {\n  height: 0.5em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 35% {\n  height: 2.5em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 70% {\n  height: 0.5em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n\n 100% {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n }\n}\n\n.loader {\n position: absolute;\n top: calc(50% - 1.25em);\n left: calc(50% - 1.25em);\n}\n",
+    "component_name": "GalaxyToughBaboon87"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1489,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.254Z",
+  "updated_at": "2025-07-31T07:55:40.254Z"
+}

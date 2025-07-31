@@ -1,0 +1,114 @@
+{
+  "id": "aadium_smooth-cow-62",
+  "name": "smooth-cow-62",
+  "category": "buttons",
+  "author": "aadium",
+  "description": "smooth-cow-62 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"cti\">\n  <div class=\"CTI\">\n    Code to Infinity\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by aadium - Tags: button */\n.cti {\n  background-color: #6019bd;\n  padding: 17px 30px;\n  border: 3px solid transparent;\n  border-radius: 0.6em;\n  transition: 0.2s;\n}\n\n.cti:hover {\n  background-color: transparent;\n  border: 3px solid #6019bd;\n  box-shadow: 0px 0px 27px 5px #6019bd;\n}\n\n.CTI {\n  color: #fff;\n  font-family: 'Courier New', Courier, monospace;\n  font-size: 17px;\n  font-weight: bold;\n  overflow: hidden;\n  border-right: 4px solid transparent;\n  white-space: nowrap;\n  margin: 0 auto;\n}\n\n.cti:hover .CTI {\n  border-right: 4px solid #6019bd;\n  animation: letters 1.75s steps(22, end),\n    cursor .4s step-end infinite;\n}\n\n@keyframes letters {\n  from {\n    width: 0;\n  }\n\n  to {\n    width: 100%;\n  }\n}\n\n@keyframes cursor {\n  from {\n    border-color: transparent\n  }\n\n  50% {\n    border-color: #6019bd\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/aadium_smooth-cow-62.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cti\"></button>\n  <view class=\"CTI\"></view>\n    Code to Infinity\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxySmoothCow62',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by aadium - Tags: button */\n.cti {\n  background-color: #6019bd;\n  padding: 34rpx 60rpx;\n  border: 6rpx solid transparent;\n  border-radius: 0.6em;\n  transition: 0.2s;\n}\n\n.cti:hover {\n  background-color: transparent;\n  border: 6rpx solid #6019bd;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 54rpx 10rpx #6019bd;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.CTI {\n  color: #fff;\n  font-family: 'Courier New', Courier, monospace;\n  font-size: 34rpx;\n  font-weight: bold;\n  overflow: hidden;\n  border-right: 8rpx solid transparent;\n  white-space: nowrap;\n  margin: 0 auto;\n}\n\n.cti:hover .CTI {\n  border-right: 8rpx solid #6019bd;\n  animation: letters 1.75s steps(22, end),\n    cursor .4s step-end infinite;\n}\n\n@keyframes letters {\n  from {\n    width: 0;\n  }\n\n  to {\n    width: 100%;\n  }\n}\n\n@keyframes cursor {\n  from {\n    border-color: transparent\n  }\n\n  50% {\n    border-color: #6019bd\n  }\n}\n",
+    "component_name": "GalaxySmoothCow62"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 918,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.338Z",
+  "updated_at": "2025-07-31T07:55:35.338Z"
+}

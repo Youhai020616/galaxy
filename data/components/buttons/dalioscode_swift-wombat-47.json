@@ -1,0 +1,104 @@
+{
+  "id": "dalioscode_swift-wombat-47",
+  "name": "swift-wombat-47",
+  "category": "buttons",
+  "author": "dalioscode",
+  "description": "swift-wombat-47 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-slate-50 bg-gradient-to-tr from-slate-900/30 via-slate-900/70 to-slate-900/30 ring-4 ring-slate-900/20 rounded-full overflow-hidden hover:opacity-90 transition-opacity before:absolute before:top-4 before:left-1/2 before:-translate-x-1/2 before:w-[100px] before:h-[100px] before:rounded-full before:bg-gradient-to-b before:from-slate-50/10 before:blur-xl\">\n  Explore discoveries\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/dalioscode_swift-wombat-47.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-slate-50 bg-gradient-to-tr from-slate-900/30 via-slate-900/70 to-slate-900/30 ring-4 ring-slate-900/20 rounded-full overflow-hidden hover:opacity-90 transition-opacity before:absolute before:top-4 before:left-1/2 before:-translate-x-1/2 before:w-[100px] before:h-[100px] before:rounded-full before:bg-gradient-to-b before:from-slate-50/10 before:blur-xl\"></button>\n  Explore discoveries\n</button>",
+    "script": "export default {\n  name: 'GalaxySwiftWombat47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxySwiftWombat47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 478,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.283Z",
+  "updated_at": "2025-07-31T07:55:36.283Z"
+}

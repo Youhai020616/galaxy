@@ -1,0 +1,86 @@
+{
+  "id": "vinodjangid07_sweet-jellyfish-62",
+  "name": "sweet-jellyfish-62",
+  "category": "loaders",
+  "author": "vinodjangid07",
+  "description": "sweet-jellyfish-62 组件 (animation, loading, loader)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"wrapper\">\n    <div class=\"catContainer\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 733 673\" class=\"catbody\">\n        <path fill=\"#212121\" d=\"M111.002 139.5C270.502 -24.5001 471.503 2.4997 621.002 139.5C770.501 276.5 768.504 627.5 621.002 649.5C473.5 671.5 246 687.5 111.002 649.5C-23.9964 611.5 -48.4982 303.5 111.002 139.5Z\"></path>\n        <path fill=\"#212121\" d=\"M184 9L270.603 159H97.3975L184 9Z\"></path>\n        <path fill=\"#212121\" d=\"M541 0L627.603 150H454.397L541 0Z\"></path>\n      </svg>\n      <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 158 564\" class=\"tail\">\n        <path fill=\"#191919\" d=\"M5.97602 76.066C-11.1099 41.6747 12.9018 0 51.3036 0V0C71.5336 0 89.8636 12.2558 97.2565 31.0866C173.697 225.792 180.478 345.852 97.0691 536.666C89.7636 553.378 73.0672 564 54.8273 564V564C16.9427 564 -5.4224 521.149 13.0712 488.085C90.2225 350.15 87.9612 241.089 5.97602 76.066Z\"></path>\n      </svg>\n      <div class=\"text\">\n        <span class=\"bigzzz\">Z</span>\n        <span class=\"zzz\">Z</span>\n      </div>\n    </div>\n    <div class=\"wallContainer\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 500 126\" class=\"wall\">\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"3\" x2=\"450\" y1=\"3\" x1=\"50\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"85\" x2=\"400\" y1=\"85\" x1=\"100\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"122\" x2=\"375\" y1=\"122\" x1=\"125\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"500\" y1=\"43\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"1.99391\" x2=\"115.5\" y1=\"43.0061\" x1=\"115.5\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.00002\" x2=\"189\" y1=\"43.0122\" x1=\"189\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.00612\" x2=\"262.5\" y1=\"43.0183\" x1=\"262.5\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.01222\" x2=\"336\" y1=\"43.0244\" x1=\"336\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.01833\" x2=\"409.5\" y1=\"43.0305\" x1=\"409.5\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"153\" y1=\"84.0122\" x1=\"153\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"228\" y1=\"84.0122\" x1=\"228\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"303\" y1=\"84.0122\" x1=\"303\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"378\" y1=\"84.0122\" x1=\"378\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"84\" x2=\"192\" y1=\"125.012\" x1=\"192\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"84\" x2=\"267\" y1=\"125.012\" x1=\"267\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"84\" x2=\"342\" y1=\"125.012\" x1=\"342\"></line>\n      </svg>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader */\n.loader {\n  width: fit-content;\n  height: fit-content;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.wrapper {\n  width: fit-content;\n  height: fit-content;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.catContainer {\n  width: 100%;\n  height: fit-content;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n}\n.catbody {\n  width: 80px;\n}\n.tail {\n  position: absolute;\n  width: 17px;\n  top: 50%;\n  animation: tail 0.5s ease-in infinite alternate-reverse;\n  transform-origin: top;\n}\n@keyframes tail {\n  0% {\n    transform: rotateZ(60deg);\n  }\n  50% {\n    transform: rotateZ(0deg);\n  }\n  100% {\n    transform: rotateZ(-20deg);\n  }\n}\n.wall {\n  width: 300px;\n}\n.text {\n  display: flex;\n  flex-direction: column;\n  width: 50px;\n  position: absolute;\n  margin: 0px 0px 100px 120px;\n}\n.zzz {\n  color: black;\n  font-weight: 700;\n  font-size: 15px;\n  animation: zzz 2s linear infinite;\n}\n.bigzzz {\n  color: black;\n  font-weight: 700;\n  font-size: 25px;\n  margin-left: 10px;\n  animation: zzz 2.3s linear infinite;\n}\n@keyframes zzz {\n  0% {\n    color: transparent;\n  }\n  50% {\n    color: black;\n  }\n  100% {\n    color: transparent;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vinodjangid07_sweet-jellyfish-62.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"wrapper\"></view>\n    <view class=\"catContainer\"></view>\n      <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 733 673\" class=\"catbody\"></view>\n        <path fill=\"#212121\" d=\"M111.002 139.5C270.502 -24.5001 471.503 2.4997 621.002 139.5C770.501 276.5 768.504 627.5 621.002 649.5C473.5 671.5 246 687.5 111.002 649.5C-23.9964 611.5 -48.4982 303.5 111.002 139.5Z\"></path>\n        <path fill=\"#212121\" d=\"M184 9L270.603 159H97.3975L184 9Z\"></path>\n        <path fill=\"#212121\" d=\"M541 0L627.603 150H454.397L541 0Z\"></path>\n      </svg>\n      <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 158 564\" class=\"tail\"></view>\n        <path fill=\"#191919\" d=\"M5.97602 76.066C-11.1099 41.6747 12.9018 0 51.3036 0V0C71.5336 0 89.8636 12.2558 97.2565 31.0866C173.697 225.792 180.478 345.852 97.0691 536.666C89.7636 553.378 73.0672 564 54.8273 564V564C16.9427 564 -5.4224 521.149 13.0712 488.085C90.2225 350.15 87.9612 241.089 5.97602 76.066Z\"></path>\n      </svg>\n      <view class=\"text\"></view>\n        <text class=\"bigzzz\">Z</text>\n        <text class=\"zzz\">Z</text>\n      </div>\n    </div>\n    <view class=\"wallContainer\"></view>\n      <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 500 126\" class=\"wall\"></view>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"3\" x2=\"450\" y1=\"3\" x1=\"50\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"85\" x2=\"400\" y1=\"85\" x1=\"100\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"122\" x2=\"375\" y1=\"122\" x1=\"125\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"500\" y1=\"43\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"1.99391\" x2=\"115.5\" y1=\"43.0061\" x1=\"115.5\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.00002\" x2=\"189\" y1=\"43.0122\" x1=\"189\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.00612\" x2=\"262.5\" y1=\"43.0183\" x1=\"262.5\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.01222\" x2=\"336\" y1=\"43.0244\" x1=\"336\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"2.01833\" x2=\"409.5\" y1=\"43.0305\" x1=\"409.5\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"153\" y1=\"84.0122\" x1=\"153\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"228\" y1=\"84.0122\" x1=\"228\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"303\" y1=\"84.0122\" x1=\"303\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"43\" x2=\"378\" y1=\"84.0122\" x1=\"378\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"84\" x2=\"192\" y1=\"125.012\" x1=\"192\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"84\" x2=\"267\" y1=\"125.012\" x1=\"267\"></line>\n        <line stroke-width=\"6\" stroke=\"#7C7C7C\" y2=\"84\" x2=\"342\" y1=\"125.012\" x1=\"342\"></line>\n      </svg>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySweetJellyfish62',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader */\n.loader {\n  width: fit-content;\n  height: fit-content;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.wrapper {\n  width: fit-content;\n  height: fit-content;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.catContainer {\n  width: 100%;\n  height: fit-content;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n}\n.catbody {\n  width: 160rpx;\n}\n.tail {\n  position: absolute;\n  width: 34rpx;\n  top: 50%;\n  animation: tail 0.5s ease-in infinite alternate-reverse;\n  transform-origin: top;\n}\n@keyframes tail {\n  0% {\n    transform: rotateZ(60deg);\n  }\n  50% {\n    transform: rotateZ(0deg);\n  }\n  100% {\n    transform: rotateZ(-20deg);\n  }\n}\n.wall {\n  width: 600rpx;\n}\n.text {\n  display: flex;\n  flex-direction: column;\n  width: 100rpx;\n  position: absolute;\n  margin: 0rpx 0rpx 200rpx 240rpx;\n}\n.zzz {\n  color: black;\n  font-weight: 700;\n  font-size: 30rpx;\n  animation: zzz 2s linear infinite;\n}\n.bigzzz {\n  color: black;\n  font-weight: 700;\n  font-size: 50rpx;\n  margin-left: 20rpx;\n  animation: zzz 2.3s linear infinite;\n}\n@keyframes zzz {\n  0% {\n    color: transparent;\n  }\n  50% {\n    color: black;\n  }\n  100% {\n    color: transparent;\n  }\n}\n\n",
+    "component_name": "GalaxySweetJellyfish62"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 4123,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.794Z",
+  "updated_at": "2025-07-31T07:55:42.794Z"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "Sourcesketch_strange-catfish-68",
+  "name": "strange-catfish-68",
+  "category": "loaders",
+  "author": "Sourcesketch",
+  "description": "strange-catfish-68 组件 (neumorphism, loader, spinner, circle loader, creative, effect loader, loading animation, animation)",
+  "tags": [
+    "neumorphism",
+    "loader",
+    "spinner",
+    "circle loader",
+    "creative",
+    "effect loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"dot dot-1\"></div>\n  <div class=\"dot dot-2\"></div>\n  <div class=\"dot dot-3\"></div>\n</div>\n\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"goo\">\n      <feGaussianBlur result=\"blur\" stdDeviation=\"10\" in=\"SourceGraphic\"></feGaussianBlur>\n      <feColorMatrix values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7\" mode=\"matrix\" in=\"blur\"></feColorMatrix>\n    </filter>\n  </defs>\n</svg>",
+    "css": "/* From Uiverse.io by Sourcesketch  - Tags: neumorphism, loader, spinner, circle loader, creative, effect loader, loading animation */\n.container {\n  width: 200px;\n  height: 200px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  margin: auto;\n  filter: url(\"#goo\");\n  animation: rotate-move 2s ease-in-out infinite;\n}\n\n.dot {\n  width: 70px;\n  height: 70px;\n  border-radius: 50%;\n  background-color: #000;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: auto;\n}\n\n.dot-3 {\n  background-color: #ff1717;\n  animation: dot-3-move 2s ease infinite, index 6s ease infinite;\n}\n\n.dot-2 {\n  background-color: #0051ff;\n  animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;\n}\n\n.dot-1 {\n  background-color: #ffc400;\n  animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;\n}\n\n@keyframes dot-3-move {\n  20% {\n    transform: scale(1);\n  }\n  45% {\n    transform: translateY(-18px) scale(0.45);\n  }\n  60% {\n    transform: translateY(-90px) scale(0.45);\n  }\n  80% {\n    transform: translateY(-90px) scale(0.45);\n  }\n  100% {\n    transform: translateY(0px) scale(1);\n  }\n}\n\n@keyframes dot-2-move {\n  20% {\n    transform: scale(1);\n  }\n  45% {\n    transform: translate(-16px, 12px) scale(0.45);\n  }\n  60% {\n    transform: translate(-80px, 60px) scale(0.45);\n  }\n  80% {\n    transform: translate(-80px, 60px) scale(0.45);\n  }\n  100% {\n    transform: translateY(0px) scale(1);\n  }\n}\n\n@keyframes dot-1-move {\n  20% {\n    transform: scale(1);\n  }\n  45% {\n    transform: translate(16px, 12px) scale(0.45);\n  }\n  60% {\n    transform: translate(80px, 60px) scale(0.45);\n  }\n  80% {\n    transform: translate(80px, 60px) scale(0.45);\n  }\n  100% {\n    transform: translateY(0px) scale(1);\n  }\n}\n\n@keyframes rotate-move {\n  55% {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n  80% {\n    transform: translate(-50%, -50%) rotate(360deg);\n  }\n  100% {\n    transform: translate(-50%, -50%) rotate(360deg);\n  }\n}\n\n@keyframes index {\n  0%,\n  100% {\n    z-index: 3;\n  }\n  33.3% {\n    z-index: 2;\n  }\n  66.6% {\n    z-index: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Sourcesketch_strange-catfish-68.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"dot dot-1\"></view>\n  <view class=\"dot dot-2\"></view>\n  <view class=\"dot dot-3\"></view>\n</div>\n\n<view version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  <defs>\n    <filter id=\"goo\">\n      <feGaussianBlur result=\"blur\" stdDeviation=\"10\" in=\"SourceGraphic\"></feGaussianBlur>\n      <feColorMatrix values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7\" mode=\"matrix\" in=\"blur\"></feColorMatrix>\n    </filter>\n  </defs>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyStrangeCatfish68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Sourcesketch  - Tags: neumorphism, loader, spinner, circle loader, creative, effect loader, loading animation */\n.container {\n  width: 400rpx;\n  height: 400rpx;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  margin: auto;\n  \n  animation: rotate-move 2s ease-in-out infinite;\n}\n\n.dot {\n  width: 140rpx;\n  height: 140rpx;\n  border-radius: 50%;\n  background-color: #000;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: auto;\n}\n\n.dot-3 {\n  background-color: #ff1717;\n  animation: dot-3-move 2s ease infinite, index 6s ease infinite;\n}\n\n.dot-2 {\n  background-color: #0051ff;\n  animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;\n}\n\n.dot-1 {\n  background-color: #ffc400;\n  animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;\n}\n\n@keyframes dot-3-move {\n  20% {\n    transform: scale(1);\n  }\n  45% {\n    transform: translateY(-36rpx) scale(0.45);\n  }\n  60% {\n    transform: translateY(-180rpx) scale(0.45);\n  }\n  80% {\n    transform: translateY(-180rpx) scale(0.45);\n  }\n  100% {\n    transform: translateY(0rpx) scale(1);\n  }\n}\n\n@keyframes dot-2-move {\n  20% {\n    transform: scale(1);\n  }\n  45% {\n    transform: translate(-32rpx, 24rpx) scale(0.45);\n  }\n  60% {\n    transform: translate(-160rpx, 120rpx) scale(0.45);\n  }\n  80% {\n    transform: translate(-160rpx, 120rpx) scale(0.45);\n  }\n  100% {\n    transform: translateY(0rpx) scale(1);\n  }\n}\n\n@keyframes dot-1-move {\n  20% {\n    transform: scale(1);\n  }\n  45% {\n    transform: translate(32rpx, 24rpx) scale(0.45);\n  }\n  60% {\n    transform: translate(160rpx, 120rpx) scale(0.45);\n  }\n  80% {\n    transform: translate(160rpx, 120rpx) scale(0.45);\n  }\n  100% {\n    transform: translateY(0rpx) scale(1);\n  }\n}\n\n@keyframes rotate-move {\n  55% {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n  80% {\n    transform: translate(-50%, -50%) rotate(360deg);\n  }\n  100% {\n    transform: translate(-50%, -50%) rotate(360deg);\n  }\n}\n\n@keyframes index {\n  0%,\n  100% {\n    z-index: 3;\n  }\n  33.3% {\n    z-index: 2;\n  }\n  66.6% {\n    z-index: 1;\n  }\n}\n\n",
+    "component_name": "GalaxyStrangeCatfish68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2559,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.563Z",
+  "updated_at": "2025-07-31T07:55:40.563Z"
+}

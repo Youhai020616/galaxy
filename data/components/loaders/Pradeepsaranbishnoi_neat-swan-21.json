@@ -1,0 +1,89 @@
+{
+  "id": "Pradeepsaranbishnoi_neat-swan-21",
+  "name": "neat-swan-21",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "neat-swan-21 组件 (loader, retro, windows, xp, animation, gradient)",
+  "tags": [
+    "loader",
+    "retro",
+    "windows",
+    "xp",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"window\">\n  <div class=\"logo\">\n    <p class=\"top\">Microsoft</p>\n    <p class=\"mid\">Windows<span>XP</span></p>\n    <p class=\"bottom\">Professional</p>\n  </div>\n  <div class=\"container\">\n    <div class=\"box\"></div>\n    <div class=\"box\"></div>\n    <div class=\"box\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader, retro, windows, xp */\n.container {\n  width: 150px;\n  height: 10px;\n  border: 2px solid #b2b2b2;\n  border-radius: 7px;\n  margin: 0 auto;\n  padding: 2px 1px;\n  overflow: hidden;\n  font-size: 0;\n}\n\n.box {\n  width: 9px;\n  height: 100%;\n  background: linear-gradient(to bottom, #2838c7 0%,#5979ef 17%,#869ef3 32%,#869ef3 45%,#5979ef 59%,#2838c7 100%);\n  display: inline-block;\n  margin-right: 2px;\n  animation: loader 2s infinite;\n  animation-timing-function: linear;\n}\n\n.logo {\n  width: 220px;\n  margin: 50px auto;\n  margin-top: 20px;\n}\n\n.logo p {\n  margin: 0;\n  padding: 0;\n}\n\n.top {\n  font-size: 16px;\n  font-weight: 300;\n  line-height: 16px;\n}\n\n.top:after {\n  content: \"\\00a9\";\n  font-size: 10px;\n  position: relative;\n  top: -5px;\n  margin-left: 2px;\n}\n\n.mid {\n  font-size: 46px;\n  font-weight: 700;\n  line-height: 36px;\n}\n\n.mid span {\n  font-size: 22px;\n  display: inline-block;\n  vertical-align: top;\n  color: #FF6821;\n  margin-top: -8px;\n}\n\n.logo .bottom {\n  font-size: 30px;\n  font-weight: 300;\n  line-height: 30px;\n  margin-left: 5px;\n}\n\n@keyframes loader {\n  0% {\n    transform: translate(-30px);\n  }\n\n  100% {\n    transform: translate(150px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_neat-swan-21.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"window\"></view>\n  <view class=\"logo\"></view>\n    <text class=\"top\">Microsoft</text>\n    <text class=\"mid\">Windows<text>XP</text></text>\n    <text class=\"bottom\">Professional</text>\n  </div>\n  <view class=\"container\"></view>\n    <view class=\"box\"></view>\n    <view class=\"box\"></view>\n    <view class=\"box\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNeatSwan21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader, retro, windows, xp */\n.container {\n  width: 300rpx;\n  height: 20rpx;\n  border: 4rpx solid #b2b2b2;\n  border-radius: 14rpx;\n  margin: 0 auto;\n  padding: 4rpx 2rpx;\n  overflow: hidden;\n  font-size: 0;\n}\n\n.box {\n  width: 18rpx;\n  height: 100%;\n  background: linear-gradient(to bottom, #2838c7 0%,#5979ef 17%,#869ef3 32%,#869ef3 45%,#5979ef 59%,#2838c7 100%);\n  display: inline-block;\n  margin-right: 4rpx;\n  animation: loader 2s infinite;\n  animation-timing-function: linear;\n}\n\n.logo {\n  width: 440rpx;\n  margin: 100rpx auto;\n  margin-top: 40rpx;\n}\n\n.logo p {\n  margin: 0;\n  padding: 0;\n}\n\n.top {\n  font-size: 32rpx;\n  font-weight: 300;\n  line-height: 32rpx;\n}\n\n.top:after {\n  content: \"\\00a9\";\n  font-size: 20rpx;\n  position: relative;\n  top: -10rpx;\n  margin-left: 4rpx;\n}\n\n.mid {\n  font-size: 92rpx;\n  font-weight: 700;\n  line-height: 72rpx;\n}\n\n.mid span {\n  font-size: 44rpx;\n  display: inline-block;\n  vertical-align: top;\n  color: #FF6821;\n  margin-top: -16rpx;\n}\n\n.logo .bottom {\n  font-size: 60rpx;\n  font-weight: 300;\n  line-height: 60rpx;\n  margin-left: 10rpx;\n}\n\n@keyframes loader {\n  0% {\n    transform: translate(-60rpx);\n  }\n\n  100% {\n    transform: translate(300rpx);\n  }\n}\n\n",
+    "component_name": "GalaxyNeatSwan21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1512,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.067Z",
+  "updated_at": "2025-07-31T07:55:40.067Z"
+}

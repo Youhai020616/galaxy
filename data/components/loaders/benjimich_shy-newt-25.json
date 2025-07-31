@@ -1,0 +1,86 @@
+{
+  "id": "benjimich_shy-newt-25",
+  "name": "shy-newt-25",
+  "category": "loaders",
+  "author": "benjimich",
+  "description": "shy-newt-25 组件 (loader, color, animation)",
+  "tags": [
+    "loader",
+    "color",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"inner_loader\"></div>\n</div>",
+    "css": "/* From Uiverse.io by benjimich - Tags: loader, color */\n.loader {\n  width: 200px;\n  height: 10px;\n  background: #004643;\n  border-radius: 50px;\n  overflow: hidden;\n}\n\n.inner_loader {\n  width: 60%;\n  height: 100%;\n  background: #f9bc60;\n  border-radius: 50px;\n  animation: moveLeftRight 3s ease-in-out infinite;\n}\n\n@keyframes moveLeftRight {\n  0% {\n    transform: translateX(calc(-100% + 10px));\n  }\n\n  50% {\n    transform: translateX(calc(200px - 10px));\n  }\n\n  100% {\n    transform: translateX(calc(-100% + 10px));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/benjimich_shy-newt-25.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"inner_loader\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShyNewt25',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by benjimich - Tags: loader, color */\n.loader {\n  width: 400rpx;\n  height: 20rpx;\n  background: #004643;\n  border-radius: 100rpx;\n  overflow: hidden;\n}\n\n.inner_loader {\n  width: 60%;\n  height: 100%;\n  background: #f9bc60;\n  border-radius: 100rpx;\n  animation: moveLeftRight 3s ease-in-out infinite;\n}\n\n@keyframes moveLeftRight {\n  0% {\n    transform: translateX(calc(-100% + 20rpx));\n  }\n\n  50% {\n    transform: translateX(calc(400rpx - 20rpx));\n  }\n\n  100% {\n    transform: translateX(calc(-100% + 20rpx));\n  }\n}\n",
+    "component_name": "GalaxyShyNewt25"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 588,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.012Z",
+  "updated_at": "2025-07-31T07:55:41.012Z"
+}

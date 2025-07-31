@@ -1,0 +1,117 @@
+{
+  "id": "Artahs_yellow-skunk-98",
+  "name": "yellow-skunk-98",
+  "category": "buttons",
+  "author": "Artahs",
+  "description": "yellow-skunk-98 组件 (action, red, button, interactive)",
+  "tags": [
+    "action",
+    "red",
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Enter the game</button>",
+    "css": "/* From Uiverse.io by Artahs  - Tags: action, red, button, button */\n.button {\n  cursor: pointer;\n  border: solid;\n  border-color: #5b5958;\n  border-radius: 7px;\n  width: 200px;\n  height: 50px;\n  background-color: #730603;\n  color: #ffc900;\n  font-size: 1rem;\n  font-weight: 600;\n  text-shadow: black 2px 1px;\n  -web-kit-box-shadow: inset 0px 0px 1.5px 2px #000000, 0px 0px 15px 3px #000000;\n  box-shadow: inset 0px 0px 1.5px 2px #000000, 0px 0px 15px 3px #000000;\n}\n.button:hover {\n  background-color: #a50000;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Artahs_yellow-skunk-98.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Enter the game</button>",
+    "script": "export default {\n  name: 'GalaxyYellowSkunk98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Artahs  - Tags: action, red, button, button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border: solid;\n  border-color: #5b5958;\n  border-radius: 14rpx;\n  width: 400rpx;\n  height: 100rpx;\n  background-color: #730603;\n  color: #ffc900;\n  font-size: 1rem;\n  font-weight: 600;\n  /* #ifdef H5 */\n  text-shadow: black 4rpx 2rpx;\n  /* #endif */\n  -web-kit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 3rpx 4rpx #000000, 0rpx 0rpx 30rpx 6rpx #000000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 3rpx 4rpx #000000, 0rpx 0rpx 30rpx 6rpx #000000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.button:hover {\n  background-color: #a50000;\n}\n\n",
+    "component_name": "GalaxyYellowSkunk98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 569,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.659Z",
+  "updated_at": "2025-07-31T07:55:32.659Z"
+}

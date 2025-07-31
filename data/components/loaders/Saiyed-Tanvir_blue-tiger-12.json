@@ -1,0 +1,92 @@
+{
+  "id": "Saiyed-Tanvir_blue-tiger-12",
+  "name": "blue-tiger-12",
+  "category": "loaders",
+  "author": "Saiyed-Tanvir",
+  "description": "blue-tiger-12 组件 (loader, box, blocky, box-shadow, animation)",
+  "tags": [
+    "loader",
+    "box",
+    "blocky",
+    "box-shadow",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"box\"></div>",
+    "css": "/* From Uiverse.io by Saiyed-Tanvir - Tags: loader, box, blocky, box-shadow */\n.box {\n  height: 5cm;\n  width: 5cm;\n  border: 5px solid #ffa600;\n  box-shadow: inset 0 0 0 #ffa600;\n  animation: load 2s ease-in-out infinite;\n}\n\n@keyframes load {\n  0% {\n    box-shadow: inset -2.5cm -2.5cm 0 #ffa600;\n  }\n\n  25% {\n    box-shadow: inset 2.5cm -2.5cm 0 #ffa600;\n  }\n\n  50% {\n    box-shadow: inset 2.5cm 2.5cm 0 #ffa600;\n  }\n\n  75% {\n    box-shadow: inset -2.5cm 2.5cm 0 #ffa600;\n  }\n\n  100% {\n    box-shadow: inset -2.5cm -2.5cm 0 #ffa600;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Saiyed-Tanvir_blue-tiger-12.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>",
+    "script": "export default {\n  name: 'GalaxyBlueTiger12',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Saiyed-Tanvir - Tags: loader, box, blocky, box-shadow */\n.box {\n  height: 5cm;\n  width: 5cm;\n  border: 10rpx solid #ffa600;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 0 #ffa600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: load 2s ease-in-out infinite;\n}\n\n@keyframes load {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -2.5cm -2.5cm 0 #ffa600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  25% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 2.5cm -2.5cm 0 #ffa600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  50% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 2.5cm 2.5cm 0 #ffa600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  75% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -2.5cm 2.5cm 0 #ffa600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -2.5cm -2.5cm 0 #ffa600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n",
+    "component_name": "GalaxyBlueTiger12"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 566,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.205Z",
+  "updated_at": "2025-07-31T07:55:40.205Z"
+}

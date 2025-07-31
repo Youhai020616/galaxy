@@ -1,0 +1,91 @@
+{
+  "id": "VashonG_spicy-crab-68",
+  "name": "spicy-crab-68",
+  "category": "loaders",
+  "author": "VashonG",
+  "description": "spicy-crab-68 组件 (blue, loader, diamond, animation)",
+  "tags": [
+    "blue",
+    "loader",
+    "diamond",
+    "animation"
+  ],
+  "original": {
+    "html": "<figure>\n  <div style=\"--i: 1\"></div>\n  <div style=\"--i: 2\"></div>\n  <div style=\"--i: 3\"></div>\n  <div style=\"--i: 4\"></div>\n  <div style=\"--i: 5\"></div>\n  <div style=\"--i: 6\"></div>\n  <div style=\"--i: 7\"></div>\n  <div style=\"--i: 8\"></div>\n  <div style=\"--i: 9\"></div>\n  <div style=\"--i: 10\"></div>\n  <div style=\"--i: 11\"></div>\n  <div style=\"--i: 12\"></div>\n</figure>",
+    "css": "/* From Uiverse.io by VashonG - Tags: blue, loader, diamond */\n@media (prefers-reduced-motion) {\n}\n\nfigure {\n  --size: 15vmin;\n  --duration: 4s;\n  --direction: 1;\n  --pull: -1.25;\n  perspective: 30rem;\n  display: grid;\n  grid-template-areas: \"figure\";\n  place-items: center;\n  inline-size: var(--size);\n  aspect-ratio: 1;\n  animation: spin var(--duration) ease-in-out infinite;\n}\n\nfigure > * {\n  --radius: calc(var(--size) / 2);\n  --deg: calc(var(--i) * (360deg / 12));\n  --hs: 225 100%;\n  --transform-start: translate3d(\n      calc(cos(var(--deg)) * var(--radius)),\n      calc(sin(var(--deg)) * var(--radius)),\n      0\n    )\n    rotate(calc(var(--deg)));\n  grid-area: figure;\n  background-color: hsl(var(--hs) var(--l, 60%));\n  inline-size: calc(var(--size) / 4);\n  aspect-ratio: 1;\n  clip-path: polygon(25% 25%, 100% 50%, 25% 75%, 0% 50%);\n  transform: var(--transform-start);\n  transform-style: preserve-3d;\n  animation: diamonds var(--duration) cubic-bezier(0.87, 0, 0.13, 1) infinite;\n}\n\nfigure:nth-child(2) {\n  --size: 30vmin;\n  --direction: -1;\n  --l: 70%;\n}\n\nfigure:nth-child(3) {\n  --size: 55vmin;\n  --pull: -1.125;\n  --l: 80%;\n}\n\n@keyframes spin {\n  0%,\n  25% {\n    transform: scaleX(var(--direction)) rotate(0);\n  }\n\n  75%,\n  100% {\n    transform: scaleX(var(--direction)) rotate(1turn);\n  }\n}\n\n@keyframes diamonds {\n  0%,\n  20% {\n    transform: var(--transform-start);\n  }\n\n  50% {\n    clip-path: polygon(75% 25%, 100% 50%, 75% 75%, 0% 50%);\n    transform: translate3d(\n        calc(cos(var(--deg)) * var(--radius) * var(--pull)),\n        calc(sin(var(--deg)) * var(--radius) * var(--pull)),\n        5rem\n      )\n      rotate(calc(var(--deg) + 90deg));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/VashonG_spicy-crab-68.html"
+  },
+  "uniapp": {
+    "template": "<figure>\n  <view style=\"--i: 1\"></view>\n  <view style=\"--i: 2\"></view>\n  <view style=\"--i: 3\"></view>\n  <view style=\"--i: 4\"></view>\n  <view style=\"--i: 5\"></view>\n  <view style=\"--i: 6\"></view>\n  <view style=\"--i: 7\"></view>\n  <view style=\"--i: 8\"></view>\n  <view style=\"--i: 9\"></view>\n  <view style=\"--i: 10\"></view>\n  <view style=\"--i: 11\"></view>\n  <view style=\"--i: 12\"></view>\n</figure>",
+    "script": "export default {\n  name: 'GalaxySpicyCrab68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by VashonG - Tags: blue, loader, diamond */\n@media (prefers-reduced-motion) {\n}\n\nfigure {\n  --size: 15vmin;\n  --duration: 4s;\n  --direction: 1;\n  --pull: -1.25;\n  perspective: 30rem;\n  display: grid;\n  grid-template-areas: \"figure\";\n  place-items: center;\n  inline-size: var(--size);\n  aspect-ratio: 1;\n  animation: spin var(--duration) ease-in-out infinite;\n}\n\nfigure > * {\n  --radius: calc(var(--size) / 2);\n  --deg: calc(var(--i) * (360deg / 12));\n  --hs: 225 100%;\n  --transform-start: translate3d(\n      calc(cos(var(--deg)) * var(--radius)),\n      calc(sin(var(--deg)) * var(--radius)),\n      0\n    )\n    rotate(calc(var(--deg)));\n  grid-area: figure;\n  background-color: hsl(var(--hs) var(--l, 60%));\n  inline-size: calc(var(--size) / 4);\n  aspect-ratio: 1;\n  \n  transform: var(--transform-start);\n  transform-style: preserve-3d;\n  animation: diamonds var(--duration) cubic-bezier(0.87, 0, 0.13, 1) infinite;\n}\n\nfigure:nth-child(2) {\n  --size: 30vmin;\n  --direction: -1;\n  --l: 70%;\n}\n\nfigure:nth-child(3) {\n  --size: 55vmin;\n  --pull: -1.125;\n  --l: 80%;\n}\n\n@keyframes spin {\n  0%,\n  25% {\n    transform: scaleX(var(--direction)) rotate(0);\n  }\n\n  75%,\n  100% {\n    transform: scaleX(var(--direction)) rotate(1turn);\n  }\n}\n\n@keyframes diamonds {\n  0%,\n  20% {\n    transform: var(--transform-start);\n  }\n\n  50% {\n    \n    transform: translate3d(\n        calc(cos(var(--deg)) * var(--radius) * var(--pull)),\n        calc(sin(var(--deg)) * var(--radius) * var(--pull)),\n        5rem\n      )\n      rotate(calc(var(--deg) + 90deg));\n  }\n}\n\n",
+    "component_name": "GalaxySpicyCrab68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2046,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.752Z",
+  "updated_at": "2025-07-31T07:55:40.752Z"
+}

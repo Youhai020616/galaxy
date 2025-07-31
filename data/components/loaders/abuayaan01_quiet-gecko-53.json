@@ -1,0 +1,82 @@
+{
+  "id": "abuayaan01_quiet-gecko-53",
+  "name": "quiet-gecko-53",
+  "category": "loaders",
+  "author": "abuayaan01",
+  "description": "quiet-gecko-53 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex flex-row gap-2\">\n  <div style=\"background-image: conic-gradient(from 0deg, violet, indigo 30%, blue 50%, green 60%, yellow 70%, orange 80%, red 100%);\" class=\"w-14 h-14 rounded-full bg-radial bg-gradient-to-tr animate-spin [animation-delay:.7s]\"></div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/abuayaan01_quiet-gecko-53.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex flex-row gap-2\"></view>\n  <view style=\"background-image: conic-gradient(from 0deg, violet, indigo 30%, blue 50%, green 60%, yellow 70%, orange 80%, red 100%);\" class=\"w-14 h-14 rounded-full bg-radial bg-gradient-to-tr animate-spin [animation-delay:.7s]\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuietGecko53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyQuietGecko53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 283,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.882Z",
+  "updated_at": "2025-07-31T07:55:40.882Z"
+}

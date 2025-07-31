@@ -1,0 +1,91 @@
+{
+  "id": "Dennyhml_grumpy-squid-93",
+  "name": "grumpy-squid-93",
+  "category": "loaders",
+  "author": "Dennyhml",
+  "description": "grumpy-squid-93 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n    <div class=\"bubble\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </div>\n    <div class=\"bubble\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </div>\n    <div class=\"bubble\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </div>\n    <div class=\"bubble\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </div>\n    <div class=\"bubble\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </div>\n </div>",
+    "css": "/* From Uiverse.io by Dennyhml - Tags: loader */\n.bubble {\n  position: absolute;\n  width: 200px;\n  height: 200px;\n  border-radius: 50%;\n  box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);\n  animation: animate_4010 8s ease-in-out infinite;\n}\n\n.bubble:nth-child(2) {\n  position: relative;\n  zoom: 0.45;\n  left: -10px;\n  top: -100px;\n  animation-delay: -4s;\n}\n\n.bubble:nth-child(3) {\n  position: relative;\n  zoom: 0.45;\n  right: -80px;\n  top: -300px;\n  animation-delay: -6s;\n}\n\n.bubble:nth-child(4) {\n  position: relative;\n  zoom: 0.35;\n  left: -120px;\n  bottom: -200px;\n  animation-delay: -3s;\n}\n\n.bubble:nth-child(5) {\n  position: relative;\n  zoom: 0.5;\n  left: 0px;\n  top: 200px;\n  animation-delay: -5s;\n}\n\n@keyframes animate_4010 {\n  0%,100% {\n    transform: translateY(-20px);\n  }\n\n  50% {\n    transform: translateY(20px);\n  }\n}\n\n.bubble::before {\n  content: '';\n  position: absolute;\n  top: 50px;\n  left: 45px;\n  width: 30px;\n  height: 30px;\n  border-radius: 50%;\n  background: #fff;\n  z-index: 10;\n  filter: blur(2px);\n}\n\n.bubble::after {\n  content: '';\n  position: absolute;\n  top: 80px;\n  left: 80px;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background: #fff;\n  z-index: 10;\n  filter: blur(2px);\n}\n\n.bubble span {\n  position: absolute;\n  border-radius: 50%;\n}\n\n.bubble span:nth-child(1) {\n  inset: 10px;\n  border-left: 15px solid #0fb4ff;\n  filter: blur(8px);\n}\n\n.bubble span:nth-child(2) {\n  inset: 10px;\n  border-right: 15px solid #ff4484;\n  filter: blur(8px);\n}\n\n.bubble span:nth-child(3) {\n  inset: 10px;\n  border-top: 15px solid #ffeb3b;\n  filter: blur(8px);\n}\n\n.bubble span:nth-child(4) {\n  inset: 30px;\n  border-left: 15px solid #ff4484;\n  filter: blur(12px);\n}\n\n.bubble span:nth-child(5) {\n  inset: 10px;\n  border-bottom: 10px solid #fff;\n  filter: blur(8px);\n  transform: rotate(330deg);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Dennyhml_grumpy-squid-93.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n    <view class=\"bubble\"></view>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n    </div>\n    <view class=\"bubble\"></view>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n    </div>\n    <view class=\"bubble\"></view>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n    </div>\n    <view class=\"bubble\"></view>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n    </div>\n    <view class=\"bubble\"></view>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n    </div>\n </div>",
+    "script": "export default {\n  name: 'GalaxyGrumpySquid93',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Dennyhml - Tags: loader */\n.bubble {\n  position: absolute;\n  width: 400rpx;\n  height: 400rpx;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 50rpx rgba (255, 255, 255, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: animate_4010 8s ease-in-out infinite;\n}\n\n.bubble:nth-child(2) {\n  position: relative;\n  zoom: 0.45;\n  left: -20rpx;\n  top: -200rpx;\n  animation-delay: -4s;\n}\n\n.bubble:nth-child(3) {\n  position: relative;\n  zoom: 0.45;\n  right: -160rpx;\n  top: -600rpx;\n  animation-delay: -6s;\n}\n\n.bubble:nth-child(4) {\n  position: relative;\n  zoom: 0.35;\n  left: -240rpx;\n  bottom: -400rpx;\n  animation-delay: -3s;\n}\n\n.bubble:nth-child(5) {\n  position: relative;\n  zoom: 0.5;\n  left: 0rpx;\n  top: 400rpx;\n  animation-delay: -5s;\n}\n\n@keyframes animate_4010 {\n  0%,100% {\n    transform: translateY(-40rpx);\n  }\n\n  50% {\n    transform: translateY(40rpx);\n  }\n}\n\n.bubble::before {\n  content: '';\n  position: absolute;\n  top: 100rpx;\n  left: 90rpx;\n  width: 60rpx;\n  height: 60rpx;\n  border-radius: 50%;\n  background: #fff;\n  z-index: 10;\n  \n}\n\n.bubble::after {\n  content: '';\n  position: absolute;\n  top: 160rpx;\n  left: 160rpx;\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  background: #fff;\n  z-index: 10;\n  \n}\n\n.bubble span {\n  position: absolute;\n  border-radius: 50%;\n}\n\n.bubble span:nth-child(1) {\n  inset: 20rpx;\n  border-left: 30rpx solid #0fb4ff;\n  \n}\n\n.bubble span:nth-child(2) {\n  inset: 20rpx;\n  border-right: 30rpx solid #ff4484;\n  \n}\n\n.bubble span:nth-child(3) {\n  inset: 20rpx;\n  border-top: 30rpx solid #ffeb3b;\n  \n}\n\n.bubble span:nth-child(4) {\n  inset: 60rpx;\n  border-left: 30rpx solid #ff4484;\n  \n}\n\n.bubble span:nth-child(5) {\n  inset: 20rpx;\n  border-bottom: 20rpx solid #fff;\n  \n  transform: rotate(330deg);\n}\n",
+    "component_name": "GalaxyGrumpySquid93"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2588,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.155Z",
+  "updated_at": "2025-07-31T07:55:39.155Z"
+}

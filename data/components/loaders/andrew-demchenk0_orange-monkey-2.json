@@ -1,0 +1,92 @@
+{
+  "id": "andrew-demchenk0_orange-monkey-2",
+  "name": "orange-monkey-2",
+  "category": "loaders",
+  "author": "andrew-demchenk0",
+  "description": "orange-monkey-2 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"pyramid-loader\">\n  <div class=\"wrapper\">\n    <span class=\"side side1\"></span>\n    <span class=\"side side2\"></span>\n    <span class=\"side side3\"></span>\n    <span class=\"side side4\"></span>\n    <span class=\"shadow\"></span>\n  </div>  \n</div>",
+    "css": "/* From Uiverse.io by andrew-demchenk0 - Tags: loader */\n.pyramid-loader {\n  position: relative;\n  width: 300px;\n  height: 300px;\n  display: block;\n  transform-style: preserve-3d;\n  transform: rotateX(-20deg);\n}\n\n.wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  animation: spin 4s linear infinite;\n}\n\n@keyframes spin {\n  100% {\n    transform: rotateY(360deg);\n  }\n}\n\n.pyramid-loader .wrapper .side {\n  width: 70px;\n  height: 70px;\n/* you can choose any gradient or color you want */\n  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  transform-origin: center top;\n  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);\n}\n\n.pyramid-loader .wrapper .side1 {\n  transform: rotateZ(-30deg) rotateY(90deg);\n  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);\n}\n\n.pyramid-loader .wrapper .side2 {\n  transform: rotateZ(30deg) rotateY(90deg);\n  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);\n}\n\n.pyramid-loader .wrapper .side3 {\n  transform: rotateX(30deg);\n  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);\n}\n\n.pyramid-loader .wrapper .side4 {\n  transform: rotateX(-30deg);\n  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);\n}\n\n.pyramid-loader .wrapper .shadow {\n  width: 60px;\n  height: 60px;\n  background: #8B5AD5;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  transform: rotateX(90deg) translateZ(-40px);\n  filter: blur(12px);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/andrew-demchenk0_orange-monkey-2.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"pyramid-loader\"></view>\n  <view class=\"wrapper\"></view>\n    <text class=\"side side1\"></text>\n    <text class=\"side side2\"></text>\n    <text class=\"side side3\"></text>\n    <text class=\"side side4\"></text>\n    <text class=\"shadow\"></text>\n  </div>  \n</div>",
+    "script": "export default {\n  name: 'GalaxyOrangeMonkey2',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by andrew-demchenk0 - Tags: loader */\n.pyramid-loader {\n  position: relative;\n  width: 600rpx;\n  height: 600rpx;\n  display: block;\n  transform-style: preserve-3d;\n  transform: rotateX(-20deg);\n}\n\n.wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  animation: spin 4s linear infinite;\n}\n\n@keyframes spin {\n  100% {\n    transform: rotateY(360deg);\n  }\n}\n\n.pyramid-loader .wrapper .side {\n  width: 140rpx;\n  height: 140rpx;\n/* you can choose any gradient or color you want */\n  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  transform-origin: center top;\n  \n}\n\n.pyramid-loader .wrapper .side1 {\n  transform: rotateZ(-30deg) rotateY(90deg);\n  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);\n}\n\n.pyramid-loader .wrapper .side2 {\n  transform: rotateZ(30deg) rotateY(90deg);\n  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);\n}\n\n.pyramid-loader .wrapper .side3 {\n  transform: rotateX(30deg);\n  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);\n}\n\n.pyramid-loader .wrapper .side4 {\n  transform: rotateX(-30deg);\n  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);\n}\n\n.pyramid-loader .wrapper .shadow {\n  width: 120rpx;\n  height: 120rpx;\n  background: #8B5AD5;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  transform: rotateX(90deg) translateZ(-80rpx);\n  \n}\n",
+    "component_name": "GalaxyOrangeMonkey2"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1841,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.957Z",
+  "updated_at": "2025-07-31T07:55:40.957Z"
+}

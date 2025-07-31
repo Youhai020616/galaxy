@@ -1,0 +1,116 @@
+{
+  "id": "adamgiebl_massive-insect-65",
+  "name": "massive-insect-65",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "massive-insect-65 组件 (blue, button, modern, animation, interactive)",
+  "tags": [
+    "blue",
+    "button",
+    "modern",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\" role=\"button\">Happy Coding!</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: blue, button, modern */\n.button {\n  align-items: center;\n  appearance: none;\n  background-color: #EEF2FF;\n  border-radius: 8px;\n  border-width: 2px;\n  border-color: #536DFE;\n  box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;\n  box-sizing: border-box;\n  color: #536DFE;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: \"JetBrains Mono\", monospace;\n  height: 56px;\n  justify-content: center;\n  line-height: 1;\n  list-style: none;\n  overflow: hidden;\n  padding-left: 24px;\n  padding-right: 24px;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  transition: box-shadow 0.15s, transform 0.15s;\n  user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n  white-space: nowrap;\n  will-change: box-shadow, transform;\n  font-size: 20px;\n}\n\n.button:focus {\n  outline: none;\n  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;\n}\n\n.button:hover {\n  box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;\n  transform: translateY(-2px);\n}\n\n.button:active {\n  box-shadow: #D6D6E7 0 3px 7px inset;\n  transform: translateY(2px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_massive-insect-65.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\" role=\"button\"></button>Happy Coding!</button>",
+    "script": "export default {\n  name: 'GalaxyMassiveInsect65',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: blue, button, modern */\n.button {\n  align-items: center;\n  appearance: none;\n  background-color: #EEF2FF;\n  border-radius: 16rpx;\n  border-width: 4rpx;\n  border-color: #536DFE;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(83, 109, 254, 0.2) 0 4rpx 8rpx, rgba(83, 109, 254, 0.15) 0 14rpx 26rpx -6rpx, #D6D6E7 0 -6rpx 0 inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  box-sizing: border-box;\n  color: #536DFE;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: inline-flex;\n  font-family: \"JetBrains Mono\", monospace;\n  height: 112rpx;\n  justify-content: center;\n  line-height: 1;\n  list-style: none;\n  overflow: hidden;\n  padding-left: 48rpx;\n  padding-right: 48rpx;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  transition: box-shadow 0.15s, transform 0.15s;\n  user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n  white-space: nowrap;\n  will-change: box-shadow, transform;\n  font-size: 40rpx;\n}\n\n.button:focus {\n  outline: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #D6D6E7 0 0 0 3rpx inset, rgba(83, 109, 254, 0.4) 0 4rpx 8rpx, rgba(83, 109, 254, 0.3) 0 14rpx 26rpx -6rpx, #D6D6E7 0 -6rpx 0 inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(83, 109, 254, 0.3) 0 8rpx 16rpx, rgba(83, 109, 254, 0.2) 0 14rpx 26rpx -6rpx, #D6D6E7 0 -6rpx 0 inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(-4rpx);\n}\n\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #D6D6E7 0 6rpx 14rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(4rpx);\n}\n",
+    "component_name": "GalaxyMassiveInsect65"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1379,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.447Z",
+  "updated_at": "2025-07-31T07:55:35.447Z"
+}

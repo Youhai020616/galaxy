@@ -1,0 +1,85 @@
+{
+  "id": "ClawHack1_evil-panda-55",
+  "name": "evil-panda-55",
+  "category": "loaders",
+  "author": "ClawHack1",
+  "description": "evil-panda-55 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"loader__circle\"></div>\n  <div class=\"loader__circle\"></div>\n  <div class=\"loader__circle\"></div>\n  <div class=\"loader__circle\"></div>\n</div>",
+    "css": "/* From Uiverse.io by ClawHack1 - Tags: loader */\n.loader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n}\n\n.loader__circle {\n  width: 14px;\n  height: 14px;\n  border-radius: 50%;\n  margin: 0 4px;\n  animation: loader_901 1s ease-in-out infinite;\n}\n\n.loader__circle:nth-of-type(1) {\n  background-color: #007aff;\n  animation-delay: 0;\n}\n\n.loader__circle:nth-of-type(2) {\n  background-color: #ff2d55;\n  animation-delay: 0.25s;\n}\n\n.loader__circle:nth-of-type(3) {\n  background-color: #34c759;\n  animation-delay: 0.5s;\n}\n\n.loader__circle:nth-of-type(4) {\n  background-color: #ff9500;\n  animation-delay: 0.75s;\n}\n\n@keyframes loader_901 {\n  0% {\n    transform: scale(1);\n  }\n\n  20% {\n    transform: scale(1.2);\n  }\n\n  40% {\n    transform: scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/ClawHack1_evil-panda-55.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"loader__circle\"></view>\n  <view class=\"loader__circle\"></view>\n  <view class=\"loader__circle\"></view>\n  <view class=\"loader__circle\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyEvilPanda55',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ClawHack1 - Tags: loader */\n.loader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n}\n\n.loader__circle {\n  width: 28rpx;\n  height: 28rpx;\n  border-radius: 50%;\n  margin: 0 8rpx;\n  animation: loader_901 1s ease-in-out infinite;\n}\n\n.loader__circle:nth-of-type(1) {\n  background-color: #007aff;\n  animation-delay: 0;\n}\n\n.loader__circle:nth-of-type(2) {\n  background-color: #ff2d55;\n  animation-delay: 0.25s;\n}\n\n.loader__circle:nth-of-type(3) {\n  background-color: #34c759;\n  animation-delay: 0.5s;\n}\n\n.loader__circle:nth-of-type(4) {\n  background-color: #ff9500;\n  animation-delay: 0.75s;\n}\n\n@keyframes loader_901 {\n  0% {\n    transform: scale(1);\n  }\n\n  20% {\n    transform: scale(1.2);\n  }\n\n  40% {\n    transform: scale(1);\n  }\n}\n\n",
+    "component_name": "GalaxyEvilPanda55"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 965,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.082Z",
+  "updated_at": "2025-07-31T07:55:39.082Z"
+}

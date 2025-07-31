@@ -1,0 +1,87 @@
+{
+  "id": "mrhyddenn_tasty-crab-98",
+  "name": "tasty-crab-98",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "tasty-crab-98 组件 (progress, progress bar, loader, animation)",
+  "tags": [
+    "progress",
+    "progress bar",
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"progress-loader\">\n    <div class=\"progress\"></div>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: progress, progress bar, loader */\n.progress-loader {\n  top: 50%;\n  left: 50%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n}\n\n.progress-loader {\n  width: 150px;\n  background: rgba(236, 236, 238, 0.253);\n  height: 3px;\n  border-radius: 7px;\n}\n\n.progress {\n  content: '';\n  width: 1px;\n  height: 3px;\n  border-radius: 7px;\n  background: rgb(255, 255, 255);\n  transition: 0.5s;\n  animation: loading1274 2s ease infinite;\n}\n\n@keyframes loading1274 {\n  0% {\n    width: 0%;\n  }\n\n  10% {\n    width: 10%;\n  }\n\n  50% {\n    width: 40%;\n  }\n\n  60% {\n    width: 60%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_tasty-crab-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"progress-loader\"></view>\n    <view class=\"progress\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTastyCrab98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: progress, progress bar, loader */\n.progress-loader {\n  top: 50%;\n  left: 50%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n}\n\n.progress-loader {\n  width: 300rpx;\n  background: rgba(236, 236, 238, 0.253);\n  height: 6rpx;\n  border-radius: 14rpx;\n}\n\n.progress {\n  content: '';\n  width: 2rpx;\n  height: 6rpx;\n  border-radius: 14rpx;\n  background: rgb(255, 255, 255);\n  transition: 0.5s;\n  animation: loading1274 2s ease infinite;\n}\n\n@keyframes loading1274 {\n  0% {\n    width: 0%;\n  }\n\n  10% {\n    width: 10%;\n  }\n\n  50% {\n    width: 40%;\n  }\n\n  60% {\n    width: 60%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}\n",
+    "component_name": "GalaxyTastyCrab98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 717,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.459Z",
+  "updated_at": "2025-07-31T07:55:42.459Z"
+}

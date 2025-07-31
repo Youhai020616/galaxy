@@ -1,0 +1,98 @@
+{
+  "id": "elijahgummer_stale-panda-59",
+  "name": "stale-panda-59",
+  "category": "loaders",
+  "author": "elijahgummer",
+  "description": "stale-panda-59 组件 (simple, red, loader, diamond, fade, mitsubishi, appear, animation, gradient)",
+  "tags": [
+    "simple",
+    "red",
+    "loader",
+    "diamond",
+    "fade",
+    "mitsubishi",
+    "appear",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: simple, red, loader, diamond, fade, mitsubishi, appear */\n.loader {\n  width: 50px;\n  height: calc(50px * 0.866);\n  background: #fd135a;\n  clip-path: polygon(50% 0, 100% 100%, 0 100%);\n  --c: at 50% 66%, #000 60deg, #0000 0;\n  -webkit-mask:\n    conic-gradient(from 30deg var(--c)) right,\n    conic-gradient(from 150deg var(--c)) bottom,\n    conic-gradient(from -90deg var(--c)) left,\n    linear-gradient(#000 0 0);\n  -webkit-mask-composite: xor;\n  mask-composite: exclude;\n  -webkit-mask-repeat: no-repeat;\n  animation: appear 1.5s infinite;\n}\n@keyframes appear {\n  0% {\n    -webkit-mask-size:\n      0 0,\n      0 0,\n      0 0,\n      auto;\n  }\n  13.33% {\n    -webkit-mask-size:\n      100% 100%,\n      0 0,\n      0 0,\n      auto;\n  }\n  26.67% {\n    -webkit-mask-size:\n      100% 100%,\n      100% 100%,\n      0 0,\n      auto;\n  }\n  40%,\n  60% {\n    -webkit-mask-size:\n      100% 100%,\n      100% 100%,\n      100% 100%,\n      auto;\n  }\n  73.33% {\n    -webkit-mask-size:\n      0 0,\n      100% 100%,\n      100% 100%,\n      auto;\n  }\n  86.67% {\n    -webkit-mask-size:\n      0 0,\n      0 0,\n      100% 100%,\n      auto;\n  }\n  100% {\n    -webkit-mask-size:\n      0 0,\n      0 0,\n      0 0,\n      auto;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/elijahgummer_stale-panda-59.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyStalePanda59',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: simple, red, loader, diamond, fade, mitsubishi, appear */\n.loader {\n  width: 100rpx;\n  height: calc(100rpx * 0.866);\n  background: #fd135a;\n  \n  --c: at 50% 66%, #000 60deg, #0000 0;\n  -webkit-\n  -webkit-mask-composite: xor;\n  mask-composite: exclude;\n  -webkit-mask-repeat: no-repeat;\n  animation: appear 1.5s infinite;\n}\n@keyframes appear {\n  0% {\n    -webkit-mask-size:\n      0 0,\n      0 0,\n      0 0,\n      auto;\n  }\n  13.33% {\n    -webkit-mask-size:\n      100% 100%,\n      0 0,\n      0 0,\n      auto;\n  }\n  26.67% {\n    -webkit-mask-size:\n      100% 100%,\n      100% 100%,\n      0 0,\n      auto;\n  }\n  40%,\n  60% {\n    -webkit-mask-size:\n      100% 100%,\n      100% 100%,\n      100% 100%,\n      auto;\n  }\n  73.33% {\n    -webkit-mask-size:\n      0 0,\n      100% 100%,\n      100% 100%,\n      auto;\n  }\n  86.67% {\n    -webkit-mask-size:\n      0 0,\n      0 0,\n      100% 100%,\n      auto;\n  }\n  100% {\n    -webkit-mask-size:\n      0 0,\n      0 0,\n      0 0,\n      auto;\n  }\n}\n\n",
+    "component_name": "GalaxyStalePanda59"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性",
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性",
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1277,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.376Z",
+  "updated_at": "2025-07-31T07:55:41.376Z"
+}

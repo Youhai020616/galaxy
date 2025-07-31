@@ -1,0 +1,94 @@
+{
+  "id": "SelfMadeSystem_neat-emu-37",
+  "name": "neat-emu-37",
+  "category": "tooltips",
+  "author": "SelfMadeSystem",
+  "description": "neat-emu-37 组件 (tooltip, 3d, border, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "3d",
+    "border",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">\n    <span>\n      <svg class=\"tooltip-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <defs>\n          <linearGradient y2=\"1\" x2=\"0\" id=\"gradient\">\n            <stop stop-color=\"#96a1e8\" offset=\"0%\"></stop>\n            <stop stop-color=\"#5061be\" offset=\"100%\"></stop>\n          </linearGradient>\n        </defs>\n        <path d=\"M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z\" fill=\"url(#gradient)\"></path>\n      </svg>\n    </span>\n    <span class=\"tooltip-lines\">\n      <span class=\"tooltip-line-1\"></span>\n      <span class=\"tooltip-line-2\"></span>\n    </span>\n  </span>\n  <span class=\"text\">\n    <span class=\"tooltip-lines\">\n      <span class=\"tooltip-line-1\"></span>\n      <span class=\"tooltip-line-2\"></span>\n    </span>\n  </span>\n</div>",
+    "css": "/* From Uiverse.io by SelfMadeSystem  - Tags: tooltip, 3d, border */\n/* This is very original.\nI'm also too lazy to figure out how to add the arrow\nwithout excessive SVG. I know I'm not going to win, so\nwhy not just try to emulate the thing in the image */\n.tooltip-container {\n  --background: #fefbff;\n  --inner-shadow: #9faef9;\n  --inner-outline: #34217d;\n  --inner-outline-bottom: #fafcfe;\n  --inner-outline-middle: #8880d5;\n  --inner-outline-outer-top: #fefcff;\n  --inner-outline-outer-bottom-1: #29107b;\n  --inner-outline-outer-bottom-2: #5b42c4;\n  --inner-outline-outer-bottom-3: #200265;\n  --line-1: #8676c9;\n  --line-2: #5c69ca;\n  position: relative;\n  background: var(--background);\n  cursor: pointer;\n  transition: all 0.2s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n  border-radius: 5px;\n  box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),\n    0px 2px 0px 0px var(--inner-outline-bottom),\n    0px -2px 0px 0px var(--inner-outline),\n    -2px -2px 0px 0px var(--inner-outline),\n    2px -2px 0px 0px var(--inner-outline),\n    0px 0px 0px 6px var(--inner-outline-middle),\n    0px -2px 0px 7px var(--inner-outline-outer-top),\n    0px 4px 0px 7px var(--inner-outline-outer-bottom-1);\n}\n\n.tooltip-icon {\n  display: inline-block;\n  vertical-align: top;\n  width: 1.5em;\n}\n\n.tooltip-icon path {\n  stroke-width: 2px;\n  stroke: var(--inner-outline);\n  stroke-linejoin: round;\n}\n\n.tooltip-lines {\n  display: flex;\n  flex-direction: column;\n  gap: 0.4em;\n}\n\n.tooltip-line-1 {\n  height: 0.2em;\n  width: 4em;\n  border-radius: 10em;\n  display: inline-block;\n  background: var(--line-1);\n}\n\n.tooltip-line-2 {\n  height: 0.2em;\n  width: 3em;\n  border-radius: 10em;\n  display: inline-block;\n  background: var(--line-2);\n}\n\n.tooltip {\n  position: absolute;\n  display: flex;\n  gap: 0.4em;\n  align-items: center;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.6em 0.8em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s;\n  background: var(--background);\n  border-radius: 0.7em;\n\n  box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),\n    0px 2px 0px 0px var(--inner-outline-bottom),\n    0px -2px 0px 0px var(--inner-outline),\n    -2px -2px 0px 0px var(--inner-outline),\n    2px -2px 0px 0px var(--inner-outline),\n    0px 0px 0px 6px var(--inner-outline-middle),\n    0px -2px 0px 7px var(--inner-outline-outer-top),\n    0px 4px 0px 7px var(--inner-outline-outer-bottom-1),\n    0px 7px 0px 7px var(--inner-outline-outer-bottom-2),\n    0px 10px 0px 7px var(--inner-outline-outer-bottom-3);\n}\n\n/* .tooltip::before {\n  content: \"\";\n  position: absolute;\n  height: 1em;\n  width: 1em;\n  bottom: -0.2em;\n  left: 50%;\n  transform: translate(-50%) translateY(2px) rotate(45deg);\n  background: var(--background);\n  border-radius: 0.2em;\n} */\n\n.tooltip-container:hover .tooltip {\n  top: -4.5em;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/SelfMadeSystem_neat-emu-37.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\"></text>\n    <text></text>\n      <view class=\"tooltip-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"></view>\n        <defs>\n          <linearGradient y2=\"1\" x2=\"0\" id=\"gradient\">\n            <stop stop-color=\"#96a1e8\" offset=\"0%\"></stop>\n            <stop stop-color=\"#5061be\" offset=\"100%\"></stop>\n          </linearGradient>\n        </defs>\n        <path d=\"M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z\" fill=\"url(#gradient)\"></path>\n      </svg>\n    </span>\n    <text class=\"tooltip-lines\"></text>\n      <text class=\"tooltip-line-1\"></text>\n      <text class=\"tooltip-line-2\"></text>\n    </span>\n  </span>\n  <text class=\"text\"></text>\n    <text class=\"tooltip-lines\"></text>\n      <text class=\"tooltip-line-1\"></text>\n      <text class=\"tooltip-line-2\"></text>\n    </span>\n  </span>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNeatEmu37',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem  - Tags: tooltip, 3d, border */\n/* This is very original.\nI'm also too lazy to figure out how to add the arrow\nwithout excessive SVG. I know I'm not going to win, so\nwhy not just try to emulate the thing in the image */\n.tooltip-container {\n  --background: #fefbff;\n  --inner-shadow: #9faef9;\n  --inner-outline: #34217d;\n  --inner-outline-bottom: #fafcfe;\n  --inner-outline-middle: #8880d5;\n  --inner-outline-outer-top: #fefcff;\n  --inner-outline-outer-bottom-1: #29107b;\n  --inner-outline-outer-bottom-2: #5b42c4;\n  --inner-outline-outer-bottom-3: #200265;\n  --line-1: #8676c9;\n  --line-2: #5c69ca;\n  position: relative;\n  background: var(--background);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 2rpx 16rpx 2rpx var(--inner-shadow),\n    0rpx 4rpx 0rpx 0rpx var(--inner-outline-bottom),\n    0rpx -4rpx 0rpx 0rpx var(--inner-outline),\n    -4rpx -4rpx 0rpx 0rpx var(--inner-outline),\n    4rpx -4rpx 0rpx 0rpx var(--inner-outline),\n    0rpx 0rpx 0rpx 12rpx var(--inner-outline-middle),\n    0rpx -4rpx 0rpx 14rpx var(--inner-outline-outer-top),\n    0rpx 8rpx 0rpx 14rpx var(--inner-outline-outer-bottom-1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.tooltip-icon {\n  display: inline-block;\n  vertical-align: top;\n  width: 1.5em;\n}\n\n.tooltip-icon path {\n  stroke-width: 4rpx;\n  stroke: var(--inner-outline);\n  stroke-linejoin: round;\n}\n\n.tooltip-lines {\n  display: flex;\n  flex-direction: column;\n  gap: 0.4em;\n}\n\n.tooltip-line-1 {\n  height: 0.2em;\n  width: 4em;\n  border-radius: 10em;\n  display: inline-block;\n  background: var(--line-1);\n}\n\n.tooltip-line-2 {\n  height: 0.2em;\n  width: 3em;\n  border-radius: 10em;\n  display: inline-block;\n  background: var(--line-2);\n}\n\n.tooltip {\n  position: absolute;\n  display: flex;\n  gap: 0.4em;\n  align-items: center;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.6em 0.8em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s;\n  background: var(--background);\n  border-radius: 0.7em;\n\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 2rpx 16rpx 2rpx var(--inner-shadow),\n    0rpx 4rpx 0rpx 0rpx var(--inner-outline-bottom),\n    0rpx -4rpx 0rpx 0rpx var(--inner-outline),\n    -4rpx -4rpx 0rpx 0rpx var(--inner-outline),\n    4rpx -4rpx 0rpx 0rpx var(--inner-outline),\n    0rpx 0rpx 0rpx 12rpx var(--inner-outline-middle),\n    0rpx -4rpx 0rpx 14rpx var(--inner-outline-outer-top),\n    0rpx 8rpx 0rpx 14rpx var(--inner-outline-outer-bottom-1),\n    0rpx 14rpx 0rpx 14rpx var(--inner-outline-outer-bottom-2),\n    0rpx 20rpx 0rpx 14rpx var(--inner-outline-outer-bottom-3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n/* .tooltip::before {\n  content: \"\";\n  position: absolute;\n  height: 1em;\n  width: 1em;\n  bottom: -0.2em;\n  left: 50%;\n  transform: translate(-50%) translateY(4rpx) rotate(45deg);\n  background: var(--background);\n  border-radius: 0.2em;\n} */\n\n.tooltip-container:hover .tooltip {\n  top: -4.5em;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}\n\n",
+    "component_name": "GalaxyNeatEmu37"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3756,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.547Z",
+  "updated_at": "2025-07-31T07:55:38.547Z"
+}

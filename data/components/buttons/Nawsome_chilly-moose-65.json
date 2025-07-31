@@ -1,0 +1,112 @@
+{
+  "id": "Nawsome_chilly-moose-65",
+  "name": "chilly-moose-65",
+  "category": "buttons",
+  "author": "Nawsome",
+  "description": "chilly-moose-65 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"arrow\">\n  <div class=\"arrow-top\"></div>\n  <div class=\"arrow-bottom\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: button */\n.arrow {\n  cursor: pointer;\n  height: 60px;\n  left: 50%;\n  position: absolute;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  transition: transform 0.1s;\n  width: 50px;\n}\n\n.arrow-top, .arrow-bottom {\n  background-color: #666;\n  height: 4px;\n  left: -5px;\n  position: absolute;\n  top: 50%;\n  width: 100%;\n}\n\n.arrow-top:after, .arrow-bottom:after {\n  background-color: #fff;\n  content: \"\";\n  height: 100%;\n  position: absolute;\n  top: 0;\n  transition: all 0.15s;\n}\n\n.arrow-top {\n  transform: rotate(45deg);\n  transform-origin: bottom right;\n}\n\n.arrow-top:after {\n  left: 100%;\n  right: 0;\n  transition-delay: 0s;\n}\n\n.arrow-bottom {\n  transform: rotate(-45deg);\n  transform-origin: top right;\n}\n\n.arrow-bottom:after {\n  left: 0;\n  right: 100%;\n  transition-delay: 0.15s;\n}\n\n.arrow:hover .arrow-top:after {\n  left: 0;\n  transition-delay: 0.15s;\n}\n\n.arrow:hover .arrow-bottom:after {\n  right: 0;\n  transition-delay: 0s;\n}\n\n.arrow:active {\n  transform: translateX(-50%) translateY(-50%) scale(0.9);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Nawsome_chilly-moose-65.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"arrow\"></view>\n  <view class=\"arrow-top\"></view>\n  <view class=\"arrow-bottom\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyChillyMoose65',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: button */\n.arrow {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  height: 120rpx;\n  left: 50%;\n  position: absolute;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  transition: transform 0.1s;\n  width: 100rpx;\n}\n\n.arrow-top, .arrow-bottom {\n  background-color: #666;\n  height: 8rpx;\n  left: -10rpx;\n  position: absolute;\n  top: 50%;\n  width: 100%;\n}\n\n.arrow-top:after, .arrow-bottom:after {\n  background-color: #fff;\n  content: \"\";\n  height: 100%;\n  position: absolute;\n  top: 0;\n  transition: all 0.15s;\n}\n\n.arrow-top {\n  transform: rotate(45deg);\n  transform-origin: bottom right;\n}\n\n.arrow-top:after {\n  left: 100%;\n  right: 0;\n  transition-delay: 0s;\n}\n\n.arrow-bottom {\n  transform: rotate(-45deg);\n  transform-origin: top right;\n}\n\n.arrow-bottom:after {\n  left: 0;\n  right: 100%;\n  transition-delay: 0.15s;\n}\n\n.arrow:hover .arrow-top:after {\n  left: 0;\n  transition-delay: 0.15s;\n}\n\n.arrow:hover .arrow-bottom:after {\n  right: 0;\n  transition-delay: 0s;\n}\n\n.arrow:active {\n  transform: translateX(-50%) translateY(-50%) scale(0.9);\n}\n",
+    "component_name": "GalaxyChillyMoose65"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1154,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.135Z",
+  "updated_at": "2025-07-31T07:55:34.135Z"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "Praashoo7_green-goat-59",
+  "name": "green-goat-59",
+  "category": "loaders",
+  "author": "Praashoo7",
+  "description": "green-goat-59 组件 (animation, loader, dots)",
+  "tags": [
+    "animation",
+    "loader",
+    "dots"
+  ],
+  "original": {
+    "html": "<div class=\"load\">\n    <div class=\"progress\"></div>\n    <div class=\"progress\"></div>\n    <div class=\"progress\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Praashoo7 - Tags: animation, loader, dots */\n.load {\n  display: flex;\n  border-radius: 50%;\n  flex-direction: row;\n}\n\n.progress {\n  width: 2em;\n  height: 2em;\n  margin: 0.4em;\n  scale: 0;\n  border-radius: 50%;\n  background: rgb(255, 255, 255);\n  animation: loading_492 2s ease infinite;\n  animation-delay: 1s;\n}\n\n@keyframes loading_492 {\n  50% {\n    scale: 1;\n  }\n}\n\n.progress:nth-child(2) {\n  animation-delay: 1.3s;\n}\n\n.progress:nth-child(3) {\n  animation-delay: 1.7s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Praashoo7_green-goat-59.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"load\"></view>\n    <view class=\"progress\"></view>\n    <view class=\"progress\"></view>\n    <view class=\"progress\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGreenGoat59',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7 - Tags: animation, loader, dots */\n.load {\n  display: flex;\n  border-radius: 50%;\n  flex-direction: row;\n}\n\n.progress {\n  width: 2em;\n  height: 2em;\n  margin: 0.4em;\n  scale: 0;\n  border-radius: 50%;\n  background: rgb(255, 255, 255);\n  animation: loading_492 2s ease infinite;\n  animation-delay: 1s;\n}\n\n@keyframes loading_492 {\n  50% {\n    scale: 1;\n  }\n}\n\n.progress:nth-child(2) {\n  animation-delay: 1.3s;\n}\n\n.progress:nth-child(3) {\n  animation-delay: 1.7s;\n}\n",
+    "component_name": "GalaxyGreenGoat59"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 621,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.981Z",
+  "updated_at": "2025-07-31T07:55:39.981Z"
+}

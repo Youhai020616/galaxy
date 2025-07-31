@@ -1,0 +1,82 @@
+{
+  "id": "Javierrocadev_new-sloth-45",
+  "name": "new-sloth-45",
+  "category": "loaders",
+  "author": "Javierrocadev",
+  "description": "new-sloth-45 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex flex-row gap-2\">\n  <div class=\"w-4 h-4 rounded-full bg-blue-700 animate-bounce\"></div>\n  <div class=\"w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]\"></div>\n  <div class=\"w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]\"></div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/Javierrocadev_new-sloth-45.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex flex-row gap-2\"></view>\n  <view class=\"w-4 h-4 rounded-full bg-blue-700 animate-bounce\"></view>\n  <view class=\"w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]\"></view>\n  <view class=\"w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNewSloth45',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyNewSloth45"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 298,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.377Z",
+  "updated_at": "2025-07-31T07:55:39.377Z"
+}

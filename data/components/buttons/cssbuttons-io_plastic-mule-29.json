@@ -1,0 +1,116 @@
+{
+  "id": "cssbuttons-io_plastic-mule-29",
+  "name": "plastic-mule-29",
+  "category": "buttons",
+  "author": "cssbuttons-io",
+  "description": "plastic-mule-29 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Button\n</button>",
+    "css": "/* From Uiverse.io by cssbuttons-io - Tags: button */\nbutton {\n padding: 10px 40px;\n font-size: 18px;\n background-color: #008542;\n color: #fff;\n text-shadow: 0 2px 0 rgb(0 0 0 / 25%);\n display: inline-flex;\n align-items: center;\n justify-content: center;\n position: relative;\n border: 0;\n z-index: 1;\n user-select: none;\n cursor: pointer;\n text-transform: uppercase;\n letter-spacing: 1px;\n white-space: unset;\n padding: .8rem 1.5rem;\n text-decoration: none;\n font-weight: 900;\n transition: all 0.7s cubic-bezier(0,.8,.26,.99);\n}\n\nbutton:before {\n position: absolute;\n pointer-events: none;\n top: 0;\n left: 0;\n display: block;\n width: 100%;\n height: 100%;\n content: '';\n transition: .7s cubic-bezier(0,.8,.26,.99);\n z-index: -1;\n background-color: #008542!important;\n box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;\n}\n\nbutton:after {\n position: absolute;\n pointer-events: none;\n top: 0;\n left: 0;\n display: block;\n width: 100%;\n height: 100%;\n content: '';\n box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);\n transition: .7s cubic-bezier(0,.8,.26,.99);\n}\n\nbutton:hover:before {\n box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;\n}\n\nbutton:hover:after {\n box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);\n}\n\nbutton:active {\n transform: translateY(4px);\n}\n\nbutton:active:after {\n box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cssbuttons-io_plastic-mule-29.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyPlasticMule29',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cssbuttons-io - Tags: button */\nbutton {\n padding: 20rpx 80rpx;\n font-size: 36rpx;\n background-color: #008542;\n color: #fff;\n /* #ifdef H5 */\n  text-shadow: 0 4rpx 0 rgb(0 0 0 / 25%);\n  /* #endif */\n display: inline-flex;\n align-items: center;\n justify-content: center;\n position: relative;\n border: 0;\n z-index: 1;\n user-select: none;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n text-transform: uppercase;\n letter-spacing: 2rpx;\n white-space: unset;\n padding: .8rem 1.5rem;\n text-decoration: none;\n font-weight: 900;\n transition: all 0.7s cubic-bezier(0,.8,.26,.99);\n}\n\nbutton:before {\n position: absolute;\n pointer-events: none;\n top: 0;\n left: 0;\n display: block;\n width: 100%;\n height: 100%;\n content: '';\n transition: .7s cubic-bezier(0,.8,.26,.99);\n z-index: -1;\n background-color: #008542!important;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -8rpx rgb(21 108 0 / 50%) inset, 0 8rpx rgb(100 253 31 / 99%) inset, -8rpx 0 rgb(100 253 31 / 50%) inset, 8rpx 0 rgb(21 108 0 / 50%) inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:after {\n position: absolute;\n pointer-events: none;\n top: 0;\n left: 0;\n display: block;\n width: 100%;\n height: 100%;\n content: '';\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 0 0 rgb(0 0 0 / 15%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n transition: .7s cubic-bezier(0,.8,.26,.99);\n}\n\nbutton:hover:before {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -8rpx rgb(0 0 0 / 50%) inset, 0 8rpx rgb(255 255 255 / 20%) inset, -8rpx 0 rgb(255 255 255 / 20%) inset, 8rpx 0 rgb(0 0 0 / 50%) inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover:after {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 0 0 rgb(0 0 0 / 15%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:active {\n transform: translateY(8rpx);\n}\n\nbutton:active:after {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0rpx 0 0 rgb(0 0 0 / 15%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyPlasticMule29"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1525,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.206Z",
+  "updated_at": "2025-07-31T07:55:36.206Z"
+}

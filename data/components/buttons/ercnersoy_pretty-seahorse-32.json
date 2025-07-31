@@ -1,0 +1,115 @@
+{
+  "id": "ercnersoy_pretty-seahorse-32",
+  "name": "pretty-seahorse-32",
+  "category": "buttons",
+  "author": "ercnersoy",
+  "description": "pretty-seahorse-32 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Click me !\n</button>",
+    "css": "/* From Uiverse.io by ercnersoy - Tags: button */\nbutton {\n padding: 1em 1.6em;\n border: 0;\n transition: all .5s ease-in-out;\n font-size: 17px;\n letter-spacing: 0.1rem;\n font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n color: rgb(0, 0, 0);\n font-weight: bolder;\n backdrop-filter: blur(5px);\n background-color: rgba(255, 255, 255, 1);\n border-radius: 26px;\n box-shadow: 0px 0px 0px 0px rgba(145, 192, 255, 0.5),\n             inset -8px -8px 16px 0px rgba(145, 193, 255, 0.973),\n             inset 0px 11px 28px 0px rgb(255, 255, 255);\n}\n\nbutton:hover {\n transition: all .5s ease-in-out;\n backdrop-filter: blur(5px);\n background-color: rgba(255, 255, 255, 1);\n border-radius: 26px;\n box-shadow: 0px 0px 0px 0px rgba(145, 192, 255, 0.5),\n              inset 8px -8px 16px 10px rgb(145, 193, 255),\n              inset 0px 11px 28px 0px rgb(255, 255, 255);\n}\n\nbutton:active {\n border-radius: 26px;\n box-shadow: 0px 0px 0px 0px rgba(145, 193, 255, 0.822),\n  inset -8px -8px 16px 10px #91c0ff99,\n  inset 0px 11px 28px 50px rgb(255, 255, 255);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ercnersoy_pretty-seahorse-32.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Click me !\n</button>",
+    "script": "export default {\n  name: 'GalaxyPrettySeahorse32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ercnersoy - Tags: button */\nbutton {\n padding: 1em 1.6em;\n border: 0;\n transition: all .5s ease-in-out;\n font-size: 34rpx;\n letter-spacing: 0.1rem;\n font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n color: rgb(0, 0, 0);\n font-weight: bolder;\n backdrop-\n background-color: rgba(255, 255, 255, 1);\n border-radius: 52rpx;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 0rpx rgba(145, 192, 255, 0.5),\n             inset -16rpx -16rpx 32rpx 0rpx rgba(145, 193, 255, 0.973),\n             inset 0rpx 22rpx 56rpx 0rpx rgb(255, 255, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover {\n transition: all .5s ease-in-out;\n backdrop-\n background-color: rgba(255, 255, 255, 1);\n border-radius: 52rpx;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 0rpx rgba(145, 192, 255, 0.5),\n              inset 16rpx -16rpx 32rpx 20rpx rgb(145, 193, 255),\n              inset 0rpx 22rpx 56rpx 0rpx rgb(255, 255, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:active {\n border-radius: 52rpx;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 0rpx rgba(145, 193, 255, 0.822),\n  inset -16rpx -16rpx 32rpx 20rpx #91c0ff99,\n  inset 0rpx 22rpx 56rpx 100rpx rgb(255, 255, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyPrettySeahorse32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1084,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.606Z",
+  "updated_at": "2025-07-31T07:55:36.606Z"
+}

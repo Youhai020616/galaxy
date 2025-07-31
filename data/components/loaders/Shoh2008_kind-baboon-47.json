@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_kind-baboon-47",
+  "name": "kind-baboon-47",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "kind-baboon-47 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  border: 24px solid;\n  border-color: red  transparent red transparent;\n  animation: rotate_000 2s linear infinite;\n}\n\n.loader:before,\n      .loader:after {\n  content: \"\";\n  display: block;\n  border: 24px solid transparent;\n  border-left-color: red;\n  position: absolute;\n  left: -24px;\n  top: -24px;\n  animation: prix 1s infinite ease-in;\n  transform-origin: 0% 100%;\n}\n\n.loader:before {\n  border-color: transparent red transparent transparent;\n  transform-origin: 100% 0%;\n  animation-delay: 0.5s;\n}\n\n@keyframes rotate_000 {\n  100% {\n    transform: rotate(360deg)\n  }\n}\n\n@keyframes prix {\n  20% , 80% {\n    transform: rotate(0)\n  }\n\n  50% {\n    transform: rotate(-90deg)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_kind-baboon-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyKindBaboon47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  border: 48rpx solid;\n  border-color: red  transparent red transparent;\n  animation: rotate_000 2s linear infinite;\n}\n\n.loader:before,\n      .loader:after {\n  content: \"\";\n  display: block;\n  border: 48rpx solid transparent;\n  border-left-color: red;\n  position: absolute;\n  left: -48rpx;\n  top: -48rpx;\n  animation: prix 1s infinite ease-in;\n  transform-origin: 0% 100%;\n}\n\n.loader:before {\n  border-color: transparent red transparent transparent;\n  transform-origin: 100% 0%;\n  animation-delay: 0.5s;\n}\n\n@keyframes rotate_000 {\n  100% {\n    transform: rotate(360deg)\n  }\n}\n\n@keyframes prix {\n  20% , 80% {\n    transform: rotate(0)\n  }\n\n  50% {\n    transform: rotate(-90deg)\n  }\n}\n    \n",
+    "component_name": "GalaxyKindBaboon47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 794,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.378Z",
+  "updated_at": "2025-07-31T07:55:40.378Z"
+}

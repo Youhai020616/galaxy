@@ -1,0 +1,120 @@
+{
+  "id": "mi-series_unlucky-elephant-56",
+  "name": "unlucky-elephant-56",
+  "category": "buttons",
+  "author": "mi-series",
+  "description": "unlucky-elephant-56 组件 (simple, material design, 3d, purple, minimalist, button, hover effect, hover button, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "material design",
+    "3d",
+    "purple",
+    "minimalist",
+    "button",
+    "hover effect",
+    "hover button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"container\">\n  <a href=\"#\"></a>\n  <a href=\"#\"></a>\n  <a href=\"#\"></a>\n  <a href=\"#\"></a>\n  <div class=\"card\">\n    <div class=\"card-header\">\n      HOVER\n    </div>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by mi-series - Tags: simple, material design, 3d, purple, minimalist, button, hover effect, hover button */\n.container {\n  border: none;\n}\n\n.container .card {\n  background-color: white;\n  border-radius: 10px;\n  border: 1px solid black;\n  position: relative;\n  z-index: 0;\n  transition: all 300ms ease-out;\n  transform-origin: center center;\n  width: 150px;\n  height: 50px;\n  box-shadow: 0px;\n  outline: none;\n}\n\n.card-header {\n  padding: 10px;\n  background: linear-gradient(90deg, #CB2D6F 20px, transparent 100%) center / 22px 22px,\n\t\tlinear-gradient(#CB2D6F 20px, transparent 100%) center / 22px 22px,\n\t\t#fff;\n  color: white;\n  height: 100%;\n  font-size: 20px;\n  font-weight: 600;\n  border: 1px solid white;\n  border-radius: 10px;\n}\n\n.container .card .border {\n  transition: all 300ms ease-out;\n  transform-origin: center center;\n  position: absolute;\n  top: 6px;\n  left: 6px;\n  width: calc(100% - 0px);\n  height: calc(100% - 0px);\n  border: 1px solid black;\n  border-radius: 9px;\n}\n\n.container a {\n  opacity: 0;\n  position: absolute;\n  z-index: 1;\n  width: 50%;\n  height: 50%;\n}\n\n.container a:hover,\n.container a:focus {\n  transform: translateZ(50px);\n}\n\n.container a:hover ~ .card .card-header,\n.container a:focus ~ .card .card-header {\n  transform: translateZ(24px);\n}\n\n.container a:nth-child(1) {\n  top: 0;\n  left: 0;\n}\n\n.container a:nth-child(1):hover ~ .card,\n.container a:nth-child(1):focus ~ .card {\n  transform: rotateX(10deg) rotateY(-10deg) translateZ(0);\n  transform-origin: right bottom;\n  box-shadow: 10px 20px;\n}\n\n.container a:nth-child(2) {\n  top: 0;\n  right: 0;\n}\n\n.container a:nth-child(2):hover ~ .card,\n.container a:nth-child(2):focus ~ .card {\n  transform: rotateX(10deg) rotateY(10deg) translateZ(0);\n  transform-origin: left bottom;\n  box-shadow: -10px 20px;\n}\n\n.container a:nth-child(3) {\n  bottom: 0;\n  right: 0;\n}\n\n.container a:nth-child(3):hover ~ .card ,\n.container a:nth-child(3):focus ~ .card {\n  transform-origin: left top;\n  transform: rotateX(-10deg) rotateY(10deg) translateZ(0);\n  box-shadow: -10px -20px;\n}\n\n.container a:nth-child(4) {\n  bottom: 0;\n  left: 0;\n}\n\n.container a:nth-child(4):hover ~ .card,\n.container a:nth-child(4):focus ~ .card {\n  transform-origin: right top;\n  transform: rotateX(-10deg) rotateY(-10deg) translateZ(0);\n  box-shadow: 10px -20px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mi-series_unlucky-elephant-56.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"container\"></button>\n  <navigator href=\"#\"></navigator>\n  <navigator href=\"#\"></navigator>\n  <navigator href=\"#\"></navigator>\n  <navigator href=\"#\"></navigator>\n  <view class=\"card\"></view>\n    <view class=\"card-header\"></view>\n      HOVER\n    </div>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyUnluckyElephant56',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mi-series - Tags: simple, material design, 3d, purple, minimalist, button, hover effect, hover button */\n.container {\n  border: none;\n}\n\n.container .card {\n  background-color: white;\n  border-radius: 20rpx;\n  border: 2rpx solid black;\n  position: relative;\n  z-index: 0;\n  transition: all 300ms ease-out;\n  transform-origin: center center;\n  width: 300rpx;\n  height: 100rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  outline: none;\n}\n\n.card-header {\n  padding: 20rpx;\n  background: linear-gradient(90deg, #CB2D6F 40rpx, transparent 100%) center / 44rpx 44rpx,\n\t\tlinear-gradient(#CB2D6F 40rpx, transparent 100%) center / 44rpx 44rpx,\n\t\t#fff;\n  color: white;\n  height: 100%;\n  font-size: 40rpx;\n  font-weight: 600;\n  border: 2rpx solid white;\n  border-radius: 20rpx;\n}\n\n.container .card .border {\n  transition: all 300ms ease-out;\n  transform-origin: center center;\n  position: absolute;\n  top: 12rpx;\n  left: 12rpx;\n  width: calc(100% - 0rpx);\n  height: calc(100% - 0rpx);\n  border: 2rpx solid black;\n  border-radius: 18rpx;\n}\n\n.container a {\n  opacity: 0;\n  position: absolute;\n  z-index: 1;\n  width: 50%;\n  height: 50%;\n}\n\n.container a:hover,\n.container a:focus {\n  transform: translateZ(100rpx);\n}\n\n.container a:hover ~ .card .card-header,\n.container a:focus ~ .card .card-header {\n  transform: translateZ(48rpx);\n}\n\n.container a:nth-child(1) {\n  top: 0;\n  left: 0;\n}\n\n.container a:nth-child(1):hover ~ .card,\n.container a:nth-child(1):focus ~ .card {\n  transform: rotateX(10deg) rotateY(-10deg) translateZ(0);\n  transform-origin: right bottom;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 40rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.container a:nth-child(2) {\n  top: 0;\n  right: 0;\n}\n\n.container a:nth-child(2):hover ~ .card,\n.container a:nth-child(2):focus ~ .card {\n  transform: rotateX(10deg) rotateY(10deg) translateZ(0);\n  transform-origin: left bottom;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx 40rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.container a:nth-child(3) {\n  bottom: 0;\n  right: 0;\n}\n\n.container a:nth-child(3):hover ~ .card ,\n.container a:nth-child(3):focus ~ .card {\n  transform-origin: left top;\n  transform: rotateX(-10deg) rotateY(10deg) translateZ(0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx -40rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.container a:nth-child(4) {\n  bottom: 0;\n  left: 0;\n}\n\n.container a:nth-child(4):hover ~ .card,\n.container a:nth-child(4):focus ~ .card {\n  transform-origin: right top;\n  transform: rotateX(-10deg) rotateY(-10deg) translateZ(0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx -40rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyUnluckyElephant56"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2519,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.246Z",
+  "updated_at": "2025-07-31T07:55:37.246Z"
+}

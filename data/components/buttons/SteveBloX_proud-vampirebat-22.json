@@ -1,0 +1,118 @@
+{
+  "id": "SteveBloX_proud-vampirebat-22",
+  "name": "proud-vampirebat-22",
+  "category": "buttons",
+  "author": "SteveBloX",
+  "description": "proud-vampirebat-22 组件 (blue, black, button, hover, active, animation, interactive)",
+  "tags": [
+    "blue",
+    "black",
+    "button",
+    "hover",
+    "active",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    Button\n</button>",
+    "css": "/* From Uiverse.io by SteveBloX - Tags: blue, black, button, hover, active */\nbutton {\n  font-family: inherit;\n  width: 7.18em;\n  height: 2.81em;\n  cursor: pointer;\n  background: #000000;\n  border: 0.14em solid #0000FF;\n  box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);\n  border-radius: 0.93em;\n  transition: all 0.3s;\n  color: white;\n  font-size: 1.06em;\n  text-transform: uppercase;\n}\n\nbutton:hover {\n  width: 7.18em;\n  height: 2.81em;\n  box-shadow: 0px 0.81em 0.62em rgba(0, 0, 0, 0.25);\n  background: blue;\n  /*background: #000000;*/\n  border-radius: 0.93em;\n  transform: translate(0.38em, -0.37em);\n}\n\nbutton:active {\n  transform: scale(0.90)\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SteveBloX_proud-vampirebat-22.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyProudVampirebat22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SteveBloX - Tags: blue, black, button, hover, active */\nbutton {\n  font-family: inherit;\n  width: 7.18em;\n  height: 2.81em;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: #000000;\n  border: 0.14em solid #0000FF;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0.25em 0.25em rgba(0, 0, 0, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 0.93em;\n  transition: all 0.3s;\n  color: white;\n  font-size: 1.06em;\n  text-transform: uppercase;\n}\n\nbutton:hover {\n  width: 7.18em;\n  height: 2.81em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0.81em 0.62em rgba(0, 0, 0, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: blue;\n  /*background: #000000;*/\n  border-radius: 0.93em;\n  transform: translate(0.38em, -0.37em);\n}\n\nbutton:active {\n  transform: scale(0.90)\n}\n",
+    "component_name": "GalaxyProudVampirebat22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 685,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.909Z",
+  "updated_at": "2025-07-31T07:55:34.909Z"
+}

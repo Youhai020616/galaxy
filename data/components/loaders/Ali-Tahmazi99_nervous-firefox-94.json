@@ -1,0 +1,85 @@
+{
+  "id": "Ali-Tahmazi99_nervous-firefox-94",
+  "name": "nervous-firefox-94",
+  "category": "loaders",
+  "author": "Ali-Tahmazi99",
+  "description": "nervous-firefox-94 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"load-row\">\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n</div>",
+    "css": "/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */\n.load-row {\n  width: 100px;\n  height: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.load-row span {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  background: #f76002;\n  border-radius: 50px;\n  animation: up-down6 0.5s ease-in infinite alternate;\n}\n\n.load-row span:nth-child(2) {\n  background: #e85b04c4;\n  animation-delay: 0.16s;\n}\n\n.load-row span:nth-child(3) {\n  background: #e85b0491;\n  animation-delay: 0.32s;\n}\n\n.load-row span:nth-child(4) {\n  background: #e85b0456;\n  animation-delay: 0.48s;\n}\n\n@keyframes up-down6 {\n  0% {\n    transform: translateY(-10px);\n  }\n\n  100% {\n    transform: translateY(10px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Ali-Tahmazi99_nervous-firefox-94.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"load-row\"></view>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNervousFirefox94',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */\n.load-row {\n  width: 200rpx;\n  height: 100rpx;\n  line-height: 100rpx;\n  text-align: center;\n}\n\n.load-row span {\n  display: inline-block;\n  width: 20rpx;\n  height: 20rpx;\n  background: #f76002;\n  border-radius: 100rpx;\n  animation: up-down6 0.5s ease-in infinite alternate;\n}\n\n.load-row span:nth-child(2) {\n  background: #e85b04c4;\n  animation-delay: 0.16s;\n}\n\n.load-row span:nth-child(3) {\n  background: #e85b0491;\n  animation-delay: 0.32s;\n}\n\n.load-row span:nth-child(4) {\n  background: #e85b0456;\n  animation-delay: 0.48s;\n}\n\n@keyframes up-down6 {\n  0% {\n    transform: translateY(-20rpx);\n  }\n\n  100% {\n    transform: translateY(20rpx);\n  }\n}\n",
+    "component_name": "GalaxyNervousFirefox94"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 793,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.896Z",
+  "updated_at": "2025-07-31T07:55:38.896Z"
+}

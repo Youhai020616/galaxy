@@ -1,0 +1,85 @@
+{
+  "id": "mobinkakei_pretty-fireant-78",
+  "name": "pretty-fireant-78",
+  "category": "loaders",
+  "author": "mobinkakei",
+  "description": "pretty-fireant-78 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <span>Loading...</span>\n</div>",
+    "css": "/* From Uiverse.io by mobinkakei - Tags: loader */\n.loader {\n  width: 100px;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 50%;\n  border-top: 5px solid #e74c3c;\n  position: relative;\n  animation: load 2s linear infinite;\n}\n\n.loader::before,.loader::after {\n  content: '';\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  left: 0;\n  top: 0;\n  box-sizing: border-box;\n  border-radius: 50%;\n}\n\n.loader::before {\n  border-top: 5px solid #e67e22;\n  transform: rotate(120deg);\n}\n\n.loader::after {\n  border-top: 5px solid #3498db;\n  transform: rotate(240deg);\n}\n\n.loader span {\n  position: absolute;\n  font-size: small;\n  width: 100px;\n  height: 100px;\n  color: #fff;\n  text-align: center;\n  line-height: 100px;\n  animation: a2 2s linear infinite;\n}\n\n@keyframes load {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes a2 {\n  to {\n    transform: rotate(-360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mobinkakei_pretty-fireant-78.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <text>Loading...</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPrettyFireant78',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mobinkakei - Tags: loader */\n.loader {\n  width: 200rpx;\n  height: 200rpx;\n  box-sizing: border-box;\n  border-radius: 50%;\n  border-top: 10rpx solid #e74c3c;\n  position: relative;\n  animation: load 2s linear infinite;\n}\n\n.loader::before,.loader::after {\n  content: '';\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  left: 0;\n  top: 0;\n  box-sizing: border-box;\n  border-radius: 50%;\n}\n\n.loader::before {\n  border-top: 10rpx solid #e67e22;\n  transform: rotate(120deg);\n}\n\n.loader::after {\n  border-top: 10rpx solid #3498db;\n  transform: rotate(240deg);\n}\n\n.loader span {\n  position: absolute;\n  font-size: small;\n  width: 200rpx;\n  height: 200rpx;\n  color: #fff;\n  text-align: center;\n  line-height: 200rpx;\n  animation: a2 2s linear infinite;\n}\n\n@keyframes load {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes a2 {\n  to {\n    transform: rotate(-360deg);\n  }\n}\n",
+    "component_name": "GalaxyPrettyFireant78"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 948,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.364Z",
+  "updated_at": "2025-07-31T07:55:42.364Z"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "cssbuttons-io_purple-gecko-91",
+  "name": "purple-gecko-91",
+  "category": "buttons",
+  "author": "cssbuttons-io",
+  "description": "purple-gecko-91 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"wrapper\">\n  <button> Button\n  </button>\n</div>",
+    "css": "/* From Uiverse.io by cssbuttons-io - Tags: button */\n.wrapper {\n perspective: 500px;\n transform: rotatex(10deg);\n animation: rotateAngle 6s linear infinite;\n margin: auto;\n width: auto;\n}\n\nbutton {\n display: block;\n position: relative;\n margin: 0.5em 0;\n padding: 0.8em 2.2em;\n cursor: pointer;\n background: #FFFFFF;\n border: none;\n border-radius: 0.4em;\n text-transform: uppercase;\n font-size: 19px;\n font-family: \"Work Sans\", sans-serif;\n font-weight: 500;\n letter-spacing: 0.04em;\n mix-blend-mode: color-dodge;\n perspective: 500px;\n transform-style: preserve-3d;\n}\n\nbutton:before, button:after {\n --z: 0px;\n position: absolute;\n top: 0;\n left: 0;\n display: block;\n content: \"\";\n width: 100%;\n height: 100%;\n opacity: 0;\n mix-blend-mode: inherit;\n border-radius: inherit;\n transform-style: preserve-3d;\n transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));\n}\n\nbutton span {\n mix-blend-mode: none;\n display: block;\n}\n\nbutton:after {\n background-color: #5D00FF;\n}\n\nbutton:before {\n background-color: #FF1731;\n}\n\nbutton:hover {\n background-color: #FFF65B;\n transition: background 0.3s 0.1s;\n}\n\nbutton:hover:before {\n --z: 0.04;\n animation: translateWobble 2.2s ease forwards;\n}\n\nbutton:hover:after {\n --z: -0.06;\n animation: translateWobble 2.2s ease forwards;\n}\n\n@keyframes rotateAngle {\n 0% {\n  transform: rotateY(0deg) rotateX(10deg);\n  -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n  animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n }\n\n 25% {\n  transform: rotateY(20deg) rotateX(10deg);\n }\n\n 50% {\n  transform: rotateY(0deg) rotateX(10deg);\n  -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n  animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n }\n\n 75% {\n  transform: rotateY(-20deg) rotateX(10deg);\n }\n\n 100% {\n  transform: rotateY(0deg) rotateX(10deg);\n }\n}\n\n@keyframes translateWobble {\n 0% {\n  opacity: 0;\n  transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));\n }\n\n 16% {\n  transform: translate3d(calc(var(--z) * 160px), calc(var(--z) * 160px), calc(var(--z) * 160px));\n }\n\n 28% {\n  opacity: 1;\n  transform: translate3d(calc(var(--z) * 70px), calc(var(--z) * 70px), calc(var(--z) * 70px));\n }\n\n 44% {\n  transform: translate3d(calc(var(--z) * 130px), calc(var(--z) * 130px), calc(var(--z) * 130px));\n }\n\n 59% {\n  transform: translate3d(calc(var(--z) * 85px), calc(var(--z) * 85px), calc(var(--z) * 85px));\n }\n\n 73% {\n  transform: translate3d(calc(var(--z) * 110px), calc(var(--z) * 110px), calc(var(--z) * 110px));\n }\n\n 88% {\n  opacity: 1;\n  transform: translate3d(calc(var(--z) * 90px), calc(var(--z) * 90px), calc(var(--z) * 90px));\n }\n\n 100% {\n  opacity: 1;\n  transform: translate3d(calc(var(--z) * 100px), calc(var(--z) * 100px), calc(var(--z) * 100px));\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cssbuttons-io_purple-gecko-91.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"wrapper\"></view>\n  <button></button> Button\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPurpleGecko91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cssbuttons-io - Tags: button */\n.wrapper {\n perspective: 1000rpx;\n transform: rotatex(10deg);\n animation: rotateAngle 6s linear infinite;\n margin: auto;\n width: auto;\n}\n\nbutton {\n display: block;\n position: relative;\n margin: 0.5em 0;\n padding: 0.8em 2.2em;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n background: #FFFFFF;\n border: none;\n border-radius: 0.4em;\n text-transform: uppercase;\n font-size: 38rpx;\n font-family: \"Work Sans\", sans-serif;\n font-weight: 500;\n letter-spacing: 0.04em;\n \n perspective: 1000rpx;\n transform-style: preserve-3d;\n}\n\nbutton:before, button:after {\n --z: 0rpx;\n position: absolute;\n top: 0;\n left: 0;\n display: block;\n content: \"\";\n width: 100%;\n height: 100%;\n opacity: 0;\n \n border-radius: inherit;\n transform-style: preserve-3d;\n transform: translate3d(calc(var(--z) * 0rpx), calc(var(--z) * 0rpx), calc(var(--z) * 0rpx));\n}\n\nbutton span {\n \n display: block;\n}\n\nbutton:after {\n background-color: #5D00FF;\n}\n\nbutton:before {\n background-color: #FF1731;\n}\n\nbutton:hover {\n background-color: #FFF65B;\n transition: background 0.3s 0.1s;\n}\n\nbutton:hover:before {\n --z: 0.04;\n animation: translateWobble 2.2s ease forwards;\n}\n\nbutton:hover:after {\n --z: -0.06;\n animation: translateWobble 2.2s ease forwards;\n}\n\n@keyframes rotateAngle {\n 0% {\n  transform: rotateY(0deg) rotateX(10deg);\n  -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n  animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n }\n\n 25% {\n  transform: rotateY(20deg) rotateX(10deg);\n }\n\n 50% {\n  transform: rotateY(0deg) rotateX(10deg);\n  -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n  animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);\n }\n\n 75% {\n  transform: rotateY(-20deg) rotateX(10deg);\n }\n\n 100% {\n  transform: rotateY(0deg) rotateX(10deg);\n }\n}\n\n@keyframes translateWobble {\n 0% {\n  opacity: 0;\n  transform: translate3d(calc(var(--z) * 0rpx), calc(var(--z) * 0rpx), calc(var(--z) * 0rpx));\n }\n\n 16% {\n  transform: translate3d(calc(var(--z) * 320rpx), calc(var(--z) * 320rpx), calc(var(--z) * 320rpx));\n }\n\n 28% {\n  opacity: 1;\n  transform: translate3d(calc(var(--z) * 140rpx), calc(var(--z) * 140rpx), calc(var(--z) * 140rpx));\n }\n\n 44% {\n  transform: translate3d(calc(var(--z) * 260rpx), calc(var(--z) * 260rpx), calc(var(--z) * 260rpx));\n }\n\n 59% {\n  transform: translate3d(calc(var(--z) * 170rpx), calc(var(--z) * 170rpx), calc(var(--z) * 170rpx));\n }\n\n 73% {\n  transform: translate3d(calc(var(--z) * 220rpx), calc(var(--z) * 220rpx), calc(var(--z) * 220rpx));\n }\n\n 88% {\n  opacity: 1;\n  transform: translate3d(calc(var(--z) * 180rpx), calc(var(--z) * 180rpx), calc(var(--z) * 180rpx));\n }\n\n 100% {\n  opacity: 1;\n  transform: translate3d(calc(var(--z) * 200rpx), calc(var(--z) * 200rpx), calc(var(--z) * 200rpx));\n }\n}\n",
+    "component_name": "GalaxyPurpleGecko91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2865,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.210Z",
+  "updated_at": "2025-07-31T07:55:36.210Z"
+}

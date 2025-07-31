@@ -1,0 +1,92 @@
+{
+  "id": "elijahgummer_chatty-rattlesnake-90",
+  "name": "chatty-rattlesnake-90",
+  "category": "loaders",
+  "author": "elijahgummer",
+  "description": "chatty-rattlesnake-90 组件 (simple, white, loader, dots, circle, svg, minimal, dashofset, animation)",
+  "tags": [
+    "simple",
+    "white",
+    "loader",
+    "dots",
+    "circle",
+    "svg",
+    "minimal",
+    "dashofset",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 48 48\" class=\"loader\">\n  <g stroke-linejoin=\"round\" stroke-linecap=\"round\" fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\">\n    <line y2=\"6\" x2=\"24\" y1=\"2\" x1=\"24\"></line>\n    <line transform=\"translate(34, 6.679) rotate(30) translate(-34, -6.679)\" y2=\"8.679\" x2=\"34\" y1=\"4.679\" x1=\"34\"></line>\n    <line transform=\"translate(41.321, 14) rotate(60) translate(-41.321, -14)\" y2=\"16\" x2=\"41.321\" y1=\"12\" x1=\"41.321\"></line>\n    <line transform=\"translate(44, 24) rotate(90) translate(-44, -24)\" y2=\"26\" x2=\"44\" y1=\"22\" x1=\"44\"></line>\n    <line transform=\"translate(41.321, 34) rotate(120) translate(-41.321, -34)\" y2=\"36\" x2=\"41.321\" y1=\"32\" x1=\"41.321\"></line>\n    <line transform=\"translate(34, 41.321) rotate(150) translate(-34, -41.321)\" y2=\"43.321\" x2=\"34\" y1=\"39.321\" x1=\"34\"></line>\n    <line transform=\"translate(24, 44) rotate(180) translate(-24, -44)\" y2=\"46\" x2=\"24\" y1=\"42\" x1=\"24\"></line>\n    <line transform=\"translate(14, 41.321) rotate(210) translate(-14, -41.321)\" y2=\"43.321\" x2=\"14\" y1=\"39.321\" x1=\"14\"></line>\n    <line transform=\"translate(6.679, 34) rotate(240) translate(-6.679, -34)\" y2=\"36\" x2=\"6.679\" y1=\"32\" x1=\"6.679\"></line>\n    <line transform=\"translate(4, 24) rotate(270) translate(-4, -24)\" y2=\"26\" x2=\"4\" y1=\"22\" x1=\"4\"></line>\n    <line transform=\"translate(6.679, 14) rotate(300) translate(-6.679, -14)\" y2=\"16\" x2=\"6.679\" y1=\"12\" x1=\"6.679\"></line>\n    <line transform=\"translate(14, 6.679) rotate(330) translate(-14, -6.679)\" y2=\"8.679\" x2=\"14\" y1=\"4.679\" x1=\"14\"></line>\n  </g>\n</svg>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: simple, white, loader, dots, circle, svg, minimal, dashofset */\n.loader {\n  width: 48px;\n  height: 48px;\n  transform: rotate(0deg);\n  animation: spin 2.4s linear infinite;\n}\n\n.loader line {\n  stroke: #ffffff; /* White color for better visibility */\n  stroke-width: 4;\n  stroke-linecap: round;\n  opacity: 0.8;\n  stroke-dasharray: 10;\n  stroke-dashoffset: 10;\n  animation: dash 2.4s ease-in-out infinite;\n}\n\n@keyframes dash {\n  0% {\n    stroke-dashoffset: 10;\n    opacity: 0.8;\n  }\n  50% {\n    stroke-dashoffset: 0;\n    opacity: 0.4;\n  }\n  100% {\n    stroke-dashoffset: 10;\n    opacity: 0.8;\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/elijahgummer_chatty-rattlesnake-90.html"
+  },
+  "uniapp": {
+    "template": "<view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 48 48\" class=\"loader\"></view>\n  <g stroke-linejoin=\"round\" stroke-linecap=\"round\" fill-rule=\"evenodd\" fill=\"none\" stroke-width=\"1\" stroke=\"none\">\n    <line y2=\"6\" x2=\"24\" y1=\"2\" x1=\"24\"></line>\n    <line transform=\"translate(34, 6.679) rotate(30) translate(-34, -6.679)\" y2=\"8.679\" x2=\"34\" y1=\"4.679\" x1=\"34\"></line>\n    <line transform=\"translate(41.321, 14) rotate(60) translate(-41.321, -14)\" y2=\"16\" x2=\"41.321\" y1=\"12\" x1=\"41.321\"></line>\n    <line transform=\"translate(44, 24) rotate(90) translate(-44, -24)\" y2=\"26\" x2=\"44\" y1=\"22\" x1=\"44\"></line>\n    <line transform=\"translate(41.321, 34) rotate(120) translate(-41.321, -34)\" y2=\"36\" x2=\"41.321\" y1=\"32\" x1=\"41.321\"></line>\n    <line transform=\"translate(34, 41.321) rotate(150) translate(-34, -41.321)\" y2=\"43.321\" x2=\"34\" y1=\"39.321\" x1=\"34\"></line>\n    <line transform=\"translate(24, 44) rotate(180) translate(-24, -44)\" y2=\"46\" x2=\"24\" y1=\"42\" x1=\"24\"></line>\n    <line transform=\"translate(14, 41.321) rotate(210) translate(-14, -41.321)\" y2=\"43.321\" x2=\"14\" y1=\"39.321\" x1=\"14\"></line>\n    <line transform=\"translate(6.679, 34) rotate(240) translate(-6.679, -34)\" y2=\"36\" x2=\"6.679\" y1=\"32\" x1=\"6.679\"></line>\n    <line transform=\"translate(4, 24) rotate(270) translate(-4, -24)\" y2=\"26\" x2=\"4\" y1=\"22\" x1=\"4\"></line>\n    <line transform=\"translate(6.679, 14) rotate(300) translate(-6.679, -14)\" y2=\"16\" x2=\"6.679\" y1=\"12\" x1=\"6.679\"></line>\n    <line transform=\"translate(14, 6.679) rotate(330) translate(-14, -6.679)\" y2=\"8.679\" x2=\"14\" y1=\"4.679\" x1=\"14\"></line>\n  </g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyChattyRattlesnake90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: simple, white, loader, dots, circle, svg, minimal, dashofset */\n.loader {\n  width: 96rpx;\n  height: 96rpx;\n  transform: rotate(0deg);\n  animation: spin 2.4s linear infinite;\n}\n\n.loader line {\n  stroke: #ffffff; /* White color for better visibility */\n  stroke-width: 4;\n  stroke-linecap: round;\n  opacity: 0.8;\n  stroke-dasharray: 10;\n  stroke-dashoffset: 10;\n  animation: dash 2.4s ease-in-out infinite;\n}\n\n@keyframes dash {\n  0% {\n    stroke-dashoffset: 10;\n    opacity: 0.8;\n  }\n  50% {\n    stroke-dashoffset: 0;\n    opacity: 0.4;\n  }\n  100% {\n    stroke-dashoffset: 10;\n    opacity: 0.8;\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyChattyRattlesnake90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2344,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.353Z",
+  "updated_at": "2025-07-31T07:55:41.353Z"
+}

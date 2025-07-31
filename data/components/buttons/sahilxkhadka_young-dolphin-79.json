@@ -1,0 +1,115 @@
+{
+  "id": "sahilxkhadka_young-dolphin-79",
+  "name": "young-dolphin-79",
+  "category": "buttons",
+  "author": "sahilxkhadka",
+  "description": "young-dolphin-79 组件 (button, keyboard, keyboard style, gradient)",
+  "tags": [
+    "button",
+    "keyboard",
+    "keyboard style",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button>\n  <span>Uiverse</span>\n</button>",
+    "css": "/* From Uiverse.io by sahilxkhadka - Tags: button, keyboard, keyboard style */\nbutton {\n  all: unset;\n  position: relative;\n  height: 4em;\n  width: 10em;\n  padding: 8px 24px;\n  border-radius: 10px;\n  background: linear-gradient(180deg, #282828, #202020);\n  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),\n                inset 0 -8px 8px rgba(0, 0, 0, 0.25),\n                0 0 0 2px rgba(0, 0, 0, 0.75),\n                10px 20px 25px rgba(0, 0, 0, 0.4);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n}\n\nbutton::before {\n  content: \"\";\n  position: absolute;\n  top: 3px;\n  left: 4px;\n  bottom: 14px;\n  right: 12px;\n  background: linear-gradient(90deg, #232323, #4a4a4a);\n  border-radius: 10px;\n  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),\n                10px 5px 10px rgba(0, 0, 0, 0.15);\n  border-left: 1px solid #0004;\n  border-bottom: 1px solid #0004;\n  border-top: 1px solid #0009;\n}\n\nbutton span {\n  font-size: 1.5rem;\n  color: white;\n  position: relative;\n  margin-top: -8px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/sahilxkhadka_young-dolphin-79.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text>Uiverse</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyYoungDolphin79',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by sahilxkhadka - Tags: button, keyboard, keyboard style */\nbutton {\n  all: unset;\n  position: relative;\n  height: 4em;\n  width: 10em;\n  padding: 16rpx 48rpx;\n  border-radius: 20rpx;\n  background: linear-gradient(180deg, #282828, #202020);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -16rpx 0 16rpx rgba(0, 0, 0, 0.15),\n                inset 0 -16rpx 16rpx rgba(0, 0, 0, 0.25),\n                0 0 0 4rpx rgba(0, 0, 0, 0.75),\n                20rpx 40rpx 50rpx rgba(0, 0, 0, 0.4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton::before {\n  content: \"\";\n  position: absolute;\n  top: 6rpx;\n  left: 8rpx;\n  bottom: 28rpx;\n  right: 24rpx;\n  background: linear-gradient(90deg, #232323, #4a4a4a);\n  border-radius: 20rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx -20rpx 20rpx rgba(255, 255, 255, 0.25),\n                20rpx 10rpx 20rpx rgba(0, 0, 0, 0.15);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-left: 2rpx solid #0004;\n  border-bottom: 2rpx solid #0004;\n  border-top: 2rpx solid #0009;\n}\n\nbutton span {\n  font-size: 1.5rem;\n  color: white;\n  position: relative;\n  margin-top: -16rpx;\n}\n",
+    "component_name": "GalaxyYoungDolphin79"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1085,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.723Z",
+  "updated_at": "2025-07-31T07:55:37.723Z"
+}

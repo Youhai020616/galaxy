@@ -1,0 +1,91 @@
+{
+  "id": "Juanes200122_great-starfish-26",
+  "name": "great-starfish-26",
+  "category": "loaders",
+  "author": "Juanes200122",
+  "description": "great-starfish-26 组件 (loader, cube, dark, creative, css effect, bounce animation, card animation, animation)",
+  "tags": [
+    "loader",
+    "cube",
+    "dark",
+    "creative",
+    "css effect",
+    "bounce animation",
+    "card animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"200\" width=\"200\">\n  <g style=\"order: -1;\">\n    <polygon transform=\"rotate(45 100 100)\" stroke-width=\"1\" stroke=\"#d3a410\" fill=\"none\" points=\"70,70 148,50 130,130 50,150\" id=\"bounce\"></polygon>\n    <polygon transform=\"rotate(45 100 100)\" stroke-width=\"1\" stroke=\"#d3a410\" fill=\"none\" points=\"70,70 148,50 130,130 50,150\" id=\"bounce2\"></polygon>\n    <polygon transform=\"rotate(45 100 100)\" stroke-width=\"2\" stroke=\"\" fill=\"#414750\" points=\"70,70 150,50 130,130 50,150\"></polygon>\n    <polygon stroke-width=\"2\" stroke=\"\" fill=\"url(#gradiente)\" points=\"100,70 150,100 100,130 50,100\"></polygon>\n    <defs>\n      <linearGradient y2=\"100%\" x2=\"10%\" y1=\"0%\" x1=\"0%\" id=\"gradiente\">\n        <stop style=\"stop-color: #1e2026;stop-opacity:1\" offset=\"20%\"></stop>\n        <stop style=\"stop-color:#414750;stop-opacity:1\" offset=\"60%\"></stop>\n      </linearGradient>\n    </defs>\n    <polygon transform=\"translate(20, 31)\" stroke-width=\"2\" stroke=\"\" fill=\"#b7870f\" points=\"80,50 80,75 80,99 40,75\"></polygon>\n    <polygon transform=\"translate(20, 31)\" stroke-width=\"2\" stroke=\"\" fill=\"url(#gradiente2)\" points=\"40,-40 80,-40 80,99 40,75\"></polygon>\n    <defs>\n      <linearGradient y2=\"100%\" x2=\"0%\" y1=\"-17%\" x1=\"10%\" id=\"gradiente2\">\n        <stop style=\"stop-color: #d3a51000;stop-opacity:1\" offset=\"20%\"></stop>\n        <stop style=\"stop-color:#d3a51054;stop-opacity:1\" offset=\"100%\" id=\"animatedStop\"></stop>\n      </linearGradient>\n    </defs>\n    <polygon transform=\"rotate(180 100 100) translate(20, 20)\" stroke-width=\"2\" stroke=\"\" fill=\"#d3a410\" points=\"80,50 80,75 80,99 40,75\"></polygon>\n    <polygon transform=\"rotate(0 100 100) translate(60, 20)\" stroke-width=\"2\" stroke=\"\" fill=\"url(#gradiente3)\" points=\"40,-40 80,-40 80,85 40,110.2\"></polygon>\n    <defs>\n      <linearGradient y2=\"100%\" x2=\"10%\" y1=\"0%\" x1=\"0%\" id=\"gradiente3\">\n        <stop style=\"stop-color: #d3a51000;stop-opacity:1\" offset=\"20%\"></stop>\n        <stop style=\"stop-color:#d3a51054;stop-opacity:1\" offset=\"100%\" id=\"animatedStop\"></stop>\n      </linearGradient>\n    </defs>\n    <polygon transform=\"rotate(45 100 100) translate(80, 95)\" stroke-width=\"2\" stroke=\"\" fill=\"#ffe4a1\" points=\"5,0 5,5 0,5 0,0\" id=\"particles\"></polygon>\n    <polygon transform=\"rotate(45 100 100) translate(80, 55)\" stroke-width=\"2\" stroke=\"\" fill=\"#ccb069\" points=\"6,0 6,6 0,6 0,0\" id=\"particles\"></polygon>\n    <polygon transform=\"rotate(45 100 100) translate(70, 80)\" stroke-width=\"2\" stroke=\"\" fill=\"#fff\" points=\"2,0 2,2 0,2 0,0\" id=\"particles\"></polygon>\n    <polygon stroke-width=\"2\" stroke=\"\" fill=\"#292d34\" points=\"29.5,99.8 100,142 100,172 29.5,130\"></polygon>\n    <polygon transform=\"translate(50, 92)\" stroke-width=\"2\" stroke=\"\" fill=\"#1f2127\" points=\"50,50 120.5,8 120.5,35 50,80\"></polygon>\n  </g>\n</svg>",
+    "css": "/* From Uiverse.io by Juanes200122  - Tags: loader, cube, dark, creative, css effect, bounce animation, card animation */\n.container {\n  background-color: #414141;\n}\n@keyframes bounce {\n  0%,\n  100% {\n    translate: 0px 36px;\n  }\n  50% {\n    translate: 0px 46px;\n  }\n}\n@keyframes bounce2 {\n  0%,\n  100% {\n    translate: 0px 46px;\n  }\n  50% {\n    translate: 0px 56px;\n  }\n}\n\n@keyframes umbral {\n  0% {\n    stop-color: #d3a5102e;\n  }\n  50% {\n    stop-color: rgba(211, 165, 16, 0.519);\n  }\n  100% {\n    stop-color: #d3a5102e;\n  }\n}\n@keyframes partciles {\n  0%,\n  100% {\n    translate: 0px 16px;\n  }\n  50% {\n    translate: 0px 6px;\n  }\n}\n#particles {\n  animation: partciles 4s ease-in-out infinite;\n}\n#animatedStop {\n  animation: umbral 4s infinite;\n}\n#bounce {\n  animation: bounce 4s ease-in-out infinite;\n  translate: 0px 36px;\n}\n#bounce2 {\n  animation: bounce2 4s ease-in-out infinite;\n  translate: 0px 46px;\n  animation-delay: 0.5s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Juanes200122_great-starfish-26.html"
+  },
+  "uniapp": {
+    "template": "<view xmlns=\"http://www.w3.org/2000/svg\" height=\"200\" width=\"200\"></view>\n  <g style=\"order: -1;\">\n    <polygon transform=\"rotate(45 100 100)\" stroke-width=\"1\" stroke=\"#d3a410\" fill=\"none\" points=\"70,70 148,50 130,130 50,150\" id=\"bounce\"></polygon>\n    <polygon transform=\"rotate(45 100 100)\" stroke-width=\"1\" stroke=\"#d3a410\" fill=\"none\" points=\"70,70 148,50 130,130 50,150\" id=\"bounce2\"></polygon>\n    <polygon transform=\"rotate(45 100 100)\" stroke-width=\"2\" stroke=\"\" fill=\"#414750\" points=\"70,70 150,50 130,130 50,150\"></polygon>\n    <polygon stroke-width=\"2\" stroke=\"\" fill=\"url(#gradiente)\" points=\"100,70 150,100 100,130 50,100\"></polygon>\n    <defs>\n      <linearGradient y2=\"100%\" x2=\"10%\" y1=\"0%\" x1=\"0%\" id=\"gradiente\">\n        <stop style=\"stop-color: #1e2026;stop-opacity:1\" offset=\"20%\"></stop>\n        <stop style=\"stop-color:#414750;stop-opacity:1\" offset=\"60%\"></stop>\n      </linearGradient>\n    </defs>\n    <polygon transform=\"translate(20, 31)\" stroke-width=\"2\" stroke=\"\" fill=\"#b7870f\" points=\"80,50 80,75 80,99 40,75\"></polygon>\n    <polygon transform=\"translate(20, 31)\" stroke-width=\"2\" stroke=\"\" fill=\"url(#gradiente2)\" points=\"40,-40 80,-40 80,99 40,75\"></polygon>\n    <defs>\n      <linearGradient y2=\"100%\" x2=\"0%\" y1=\"-17%\" x1=\"10%\" id=\"gradiente2\">\n        <stop style=\"stop-color: #d3a51000;stop-opacity:1\" offset=\"20%\"></stop>\n        <stop style=\"stop-color:#d3a51054;stop-opacity:1\" offset=\"100%\" id=\"animatedStop\"></stop>\n      </linearGradient>\n    </defs>\n    <polygon transform=\"rotate(180 100 100) translate(20, 20)\" stroke-width=\"2\" stroke=\"\" fill=\"#d3a410\" points=\"80,50 80,75 80,99 40,75\"></polygon>\n    <polygon transform=\"rotate(0 100 100) translate(60, 20)\" stroke-width=\"2\" stroke=\"\" fill=\"url(#gradiente3)\" points=\"40,-40 80,-40 80,85 40,110.2\"></polygon>\n    <defs>\n      <linearGradient y2=\"100%\" x2=\"10%\" y1=\"0%\" x1=\"0%\" id=\"gradiente3\">\n        <stop style=\"stop-color: #d3a51000;stop-opacity:1\" offset=\"20%\"></stop>\n        <stop style=\"stop-color:#d3a51054;stop-opacity:1\" offset=\"100%\" id=\"animatedStop\"></stop>\n      </linearGradient>\n    </defs>\n    <polygon transform=\"rotate(45 100 100) translate(80, 95)\" stroke-width=\"2\" stroke=\"\" fill=\"#ffe4a1\" points=\"5,0 5,5 0,5 0,0\" id=\"particles\"></polygon>\n    <polygon transform=\"rotate(45 100 100) translate(80, 55)\" stroke-width=\"2\" stroke=\"\" fill=\"#ccb069\" points=\"6,0 6,6 0,6 0,0\" id=\"particles\"></polygon>\n    <polygon transform=\"rotate(45 100 100) translate(70, 80)\" stroke-width=\"2\" stroke=\"\" fill=\"#fff\" points=\"2,0 2,2 0,2 0,0\" id=\"particles\"></polygon>\n    <polygon stroke-width=\"2\" stroke=\"\" fill=\"#292d34\" points=\"29.5,99.8 100,142 100,172 29.5,130\"></polygon>\n    <polygon transform=\"translate(50, 92)\" stroke-width=\"2\" stroke=\"\" fill=\"#1f2127\" points=\"50,50 120.5,8 120.5,35 50,80\"></polygon>\n  </g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyGreatStarfish26',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Juanes200122  - Tags: loader, cube, dark, creative, css effect, bounce animation, card animation */\n.container {\n  background-color: #414141;\n}\n@keyframes bounce {\n  0%,\n  100% {\n    translate: 0rpx 72rpx;\n  }\n  50% {\n    translate: 0rpx 92rpx;\n  }\n}\n@keyframes bounce2 {\n  0%,\n  100% {\n    translate: 0rpx 92rpx;\n  }\n  50% {\n    translate: 0rpx 112rpx;\n  }\n}\n\n@keyframes umbral {\n  0% {\n    stop-color: #d3a5102e;\n  }\n  50% {\n    stop-color: rgba(211, 165, 16, 0.519);\n  }\n  100% {\n    stop-color: #d3a5102e;\n  }\n}\n@keyframes partciles {\n  0%,\n  100% {\n    translate: 0rpx 32rpx;\n  }\n  50% {\n    translate: 0rpx 12rpx;\n  }\n}\n#particles {\n  animation: partciles 4s ease-in-out infinite;\n}\n#animatedStop {\n  animation: umbral 4s infinite;\n}\n#bounce {\n  animation: bounce 4s ease-in-out infinite;\n  translate: 0rpx 72rpx;\n}\n#bounce2 {\n  animation: bounce2 4s ease-in-out infinite;\n  translate: 0rpx 92rpx;\n  animation-delay: 0.5s;\n}\n\n",
+    "component_name": "GalaxyGreatStarfish26"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 3756,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.584Z",
+  "updated_at": "2025-07-31T07:55:39.584Z"
+}

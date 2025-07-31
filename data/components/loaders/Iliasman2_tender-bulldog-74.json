@@ -1,0 +1,91 @@
+{
+  "id": "Iliasman2_tender-bulldog-74",
+  "name": "tender-bulldog-74",
+  "category": "loaders",
+  "author": "Iliasman2",
+  "description": "tender-bulldog-74 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"lamp\">\n  <div class=\"glass\">\n    <div class=\"lava\">\n      <div class=\"blob\"></div>\n      <div class=\"blob\"></div>\n      <div class=\"blob\"></div>\n      <div class=\"blob top\"></div>\n      <div class=\"blob bottom\"></div>\n    </div>\n  </div>\n</div>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">\n  <defs>\n    <filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"10\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"goo\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "css": "/* From Uiverse.io by Iliasman2 - Tags: loader */\n.lamp {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  height: 30em;\n  min-height: 300px;\n  width: 13em;\n  min-width: calc(300px * 3 / 7);\n  background: #2b4353;\n  clip-path: polygon(33% 0, 0 70%, 22% 88%, 0 100%, 100% 100%, 78% 88%, 100% 70%, 67% 0);\n}\n\n.glass {\n  background: #b6e1e0;\n  width: 100%;\n  height: 60%;\n  position: absolute;\n  bottom: 30%;\n  overflow: hidden;\n}\n\n.lava {\n  filter: url(\"#goo\");\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n\n.blob {\n  border-radius: 50%;\n  background: #e8630a;\n  position: absolute;\n}\n\n.blob.top {\n  width: 100%;\n  height: 4%;\n  top: -3.7%;\n  left: 0;\n}\n\n.blob.bottom {\n  width: 100%;\n  height: 4%;\n  bottom: -3%;\n  left: 0;\n}\n\n.blob:nth-child(1) {\n  width: calc(15% * 1.4);\n  height: 15%;\n  left: 45%;\n  bottom: -15%;\n  animation: blob-one_2 ease-in-out 7s infinite;\n}\n\n.blob:nth-child(2) {\n  width: calc(22% * 1.4);\n  height: 22%;\n  right: 14%;\n  bottom: -15%;\n  animation: blob-two_2 ease-in-out 11s infinite;\n}\n\n.blob:nth-child(3) {\n  width: calc(32% * 1.4);\n  height: 32%;\n  bottom: -15%;\n  left: 14%;\n  animation: blob-three_2 ease-in-out 16s infinite;\n}\n\n@keyframes blob-one_2 {\n  0%, 100% {\n    transform: translatey(0);\n  }\n\n  50% {\n    transform: translatey(-700%);\n  }\n}\n\n@keyframes blob-two_2 {\n  0%, 100% {\n    transform: translatey(0);\n  }\n\n  50% {\n    transform: translatey(-420%);\n  }\n}\n\n@keyframes blob-three_2 {\n  0%, 100% {\n    transform: translatey(0);\n  }\n\n  50% {\n    transform: translatey(-305%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Iliasman2_tender-bulldog-74.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"lamp\"></view>\n  <view class=\"glass\"></view>\n    <view class=\"lava\"></view>\n      <view class=\"blob\"></view>\n      <view class=\"blob\"></view>\n      <view class=\"blob\"></view>\n      <view class=\"blob top\"></view>\n      <view class=\"blob bottom\"></view>\n    </div>\n  </div>\n</div>\n\n<view xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"></view>\n  <defs>\n    <filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"10\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"goo\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyTenderBulldog74',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Iliasman2 - Tags: loader */\n.lamp {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  height: 30em;\n  min-height: 600rpx;\n  width: 13em;\n  min-width: calc(600rpx * 3 / 7);\n  background: #2b4353;\n  \n}\n\n.glass {\n  background: #b6e1e0;\n  width: 100%;\n  height: 60%;\n  position: absolute;\n  bottom: 30%;\n  overflow: hidden;\n}\n\n.lava {\n  \n  position: absolute;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n\n.blob {\n  border-radius: 50%;\n  background: #e8630a;\n  position: absolute;\n}\n\n.blob.top {\n  width: 100%;\n  height: 4%;\n  top: -3.7%;\n  left: 0;\n}\n\n.blob.bottom {\n  width: 100%;\n  height: 4%;\n  bottom: -3%;\n  left: 0;\n}\n\n.blob:nth-child(1) {\n  width: calc(15% * 1.4);\n  height: 15%;\n  left: 45%;\n  bottom: -15%;\n  animation: blob-one_2 ease-in-out 7s infinite;\n}\n\n.blob:nth-child(2) {\n  width: calc(22% * 1.4);\n  height: 22%;\n  right: 14%;\n  bottom: -15%;\n  animation: blob-two_2 ease-in-out 11s infinite;\n}\n\n.blob:nth-child(3) {\n  width: calc(32% * 1.4);\n  height: 32%;\n  bottom: -15%;\n  left: 14%;\n  animation: blob-three_2 ease-in-out 16s infinite;\n}\n\n@keyframes blob-one_2 {\n  0%, 100% {\n    transform: translatey(0);\n  }\n\n  50% {\n    transform: translatey(-700%);\n  }\n}\n\n@keyframes blob-two_2 {\n  0%, 100% {\n    transform: translatey(0);\n  }\n\n  50% {\n    transform: translatey(-420%);\n  }\n}\n\n@keyframes blob-three_2 {\n  0%, 100% {\n    transform: translatey(0);\n  }\n\n  50% {\n    transform: translatey(-305%);\n  }\n}\n",
+    "component_name": "GalaxyTenderBulldog74"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2243,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.355Z",
+  "updated_at": "2025-07-31T07:55:39.355Z"
+}

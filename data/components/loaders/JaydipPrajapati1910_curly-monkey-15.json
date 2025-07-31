@@ -1,0 +1,87 @@
+{
+  "id": "JaydipPrajapati1910_curly-monkey-15",
+  "name": "curly-monkey-15",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "curly-monkey-15 组件 (animation, loader, infinite, gradient)",
+  "tags": [
+    "animation",
+    "loader",
+    "infinite",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loader, infinite */\n.loader {\n  width: calc(160px / 0.707);\n  height: 28px;\n  background: repeating-linear-gradient(-45deg, #766DF4 0 30px,#0000 0 40px) left/200% 100%;\n  animation: i3 2s infinite linear;\n  border-radius: 10px;\n  border: 1px solid #766DF4;\n}\n\n@keyframes i3 {\n  100% {\n    background-position: right\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_curly-monkey-15.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyCurlyMonkey15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loader, infinite */\n.loader {\n  width: calc(320rpx / 0.707);\n  height: 56rpx;\n  background: repeating-linear-gradient(-45deg, #766DF4 0 60rpx,#0000 0 80rpx) left/200% 100%;\n  animation: i3 2s infinite linear;\n  border-radius: 20rpx;\n  border: 2rpx solid #766DF4;\n}\n\n@keyframes i3 {\n  100% {\n    background-position: right\n  }\n}\n  \n\n",
+    "component_name": "GalaxyCurlyMonkey15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 416,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.384Z",
+  "updated_at": "2025-07-31T07:55:39.384Z"
+}

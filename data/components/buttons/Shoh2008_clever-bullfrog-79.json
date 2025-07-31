@@ -1,0 +1,108 @@
+{
+  "id": "Shoh2008_clever-bullfrog-79",
+  "name": "clever-bullfrog-79",
+  "category": "buttons",
+  "author": "Shoh2008",
+  "description": "clever-bullfrog-79 组件 (button, gradient, interactive)",
+  "tags": [
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: button */\nbutton {\n  --b: 3px;\n   /* border thickness */\n  --s: .45em;\n /* size of the corner */\n  --color: #e2e2e2;\n  font-weight: bold;\n  padding: calc(.5em + var(--s)) calc(.9em + var(--s));\n  color: var(--color);\n  --_p: var(--s);\n  background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)\n    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));\n  transition: .3s linear, color 0s, background-color 0s;\n  outline: var(--b) solid #0000;\n  outline-offset: .6em;\n  font-size: 16px;\n  border: 0;\n  user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n}\n\nbutton:hover,\nbutton:focus-visible {\n  --_p: 0px;\n  outline-color: #ffffff;\n  outline-offset: .05em;\n}\n\nbutton:active {\n  background: #ffffff;\n  color: #000000;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Shoh2008_clever-bullfrog-79.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyCleverBullfrog79',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: button */\nbutton {\n  --b: 6rpx;\n   /* border thickness */\n  --s: .45em;\n /* size of the corner */\n  --color: #e2e2e2;\n  font-weight: bold;\n  padding: calc(.5em + var(--s)) calc(.9em + var(--s));\n  color: var(--color);\n  --_p: var(--s);\n  background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)\n    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));\n  transition: .3s linear, color 0s, background-color 0s;\n  outline: var(--b) solid #0000;\n  outline-offset: .6em;\n  font-size: 32rpx;\n  border: 0;\n  user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n}\n\nbutton:hover,\nbutton:focus-visible {\n  --_p: 0rpx;\n  outline-color: #ffffff;\n  outline-offset: .05em;\n}\n\nbutton:active {\n  background: #ffffff;\n  color: #000000;\n}\n",
+    "component_name": "GalaxyCleverBullfrog79"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 882,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.654Z",
+  "updated_at": "2025-07-31T07:55:34.654Z"
+}

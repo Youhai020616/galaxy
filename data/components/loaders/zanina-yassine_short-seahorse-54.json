@@ -1,0 +1,85 @@
+{
+  "id": "zanina-yassine_short-seahorse-54",
+  "name": "short-seahorse-54",
+  "category": "loaders",
+  "author": "zanina-yassine",
+  "description": "short-seahorse-54 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div id=\"container\">\n  <label class=\"loading-title\">Loading ...</label>\n  <span class=\"loading-circle sp1\">\n    <span class=\"loading-circle sp2\">\n      <span class=\"loading-circle sp3\"></span>\n    </span>\n  </span>\n</div>",
+    "css": "/* From Uiverse.io by zanina-yassine - Tags: loader */\n#container {\n  width: 100px;\n  height: 125px;\n  margin: auto auto;\n}\n\n.loading-title {\n  display: block;\n  text-align: center;\n  font-size: 20;\n  font-family: 'Inter', sans-serif;\n  font-weight: bold;\n  padding-bottom: 15px;\n  color: #888;\n}\n\n.loading-circle {\n  display: block;\n  border-left: 5px solid;\n  border-top-left-radius: 100%;\n  border-top: 5px solid;\n  margin: 5px;\n  animation-name: Loader_611;\n  animation-duration: 1500ms;\n  animation-timing-function: linear;\n  animation-delay: 0s;\n  animation-iteration-count: infinite;\n  animation-direction: normal;\n  animation-fill-mode: forwards;\n}\n\n.sp1 {\n  border-left-color: #F44336;\n  border-top-color: #F44336;\n  width: 40px;\n  height: 40px;\n}\n\n.sp2 {\n  border-left-color: #FFC107;\n  border-top-color: #FFC107;\n  width: 30px;\n  height: 30px;\n}\n\n.sp3 {\n  width: 20px;\n  height: 20px;\n  border-left-color: #8bc34a;\n  border-top-color: #8bc34a;\n}\n\n@keyframes Loader_611 {\n  0% {\n    transform: rotate(0deg);\n    transform-origin: right bottom;\n  }\n\n  25% {\n    transform: rotate(90deg);\n    transform-origin: right bottom;\n  }\n\n  50% {\n    transform: rotate(180deg);\n    transform-origin: right bottom;\n  }\n\n  75% {\n    transform: rotate(270deg);\n    transform-origin: right bottom;\n  }\n\n  100% {\n    transform: rotate(360deg);\n    transform-origin: right bottom;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/zanina-yassine_short-seahorse-54.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"container\"></view>\n  <label class=\"loading-title\"></label>Loading ...</label>\n  <text class=\"loading-circle sp1\"></text>\n    <text class=\"loading-circle sp2\"></text>\n      <text class=\"loading-circle sp3\"></text>\n    </span>\n  </span>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShortSeahorse54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by zanina-yassine - Tags: loader */\n#container {\n  width: 200rpx;\n  height: 250rpx;\n  margin: auto auto;\n}\n\n.loading-title {\n  display: block;\n  text-align: center;\n  font-size: 20;\n  font-family: 'Inter', sans-serif;\n  font-weight: bold;\n  padding-bottom: 30rpx;\n  color: #888;\n}\n\n.loading-circle {\n  display: block;\n  border-left: 10rpx solid;\n  border-top-left-radius: 100%;\n  border-top: 10rpx solid;\n  margin: 10rpx;\n  animation-name: Loader_611;\n  animation-duration: 1500ms;\n  animation-timing-function: linear;\n  animation-delay: 0s;\n  animation-iteration-count: infinite;\n  animation-direction: normal;\n  animation-fill-mode: forwards;\n}\n\n.sp1 {\n  border-left-color: #F44336;\n  border-top-color: #F44336;\n  width: 80rpx;\n  height: 80rpx;\n}\n\n.sp2 {\n  border-left-color: #FFC107;\n  border-top-color: #FFC107;\n  width: 60rpx;\n  height: 60rpx;\n}\n\n.sp3 {\n  width: 40rpx;\n  height: 40rpx;\n  border-left-color: #8bc34a;\n  border-top-color: #8bc34a;\n}\n\n@keyframes Loader_611 {\n  0% {\n    transform: rotate(0deg);\n    transform-origin: right bottom;\n  }\n\n  25% {\n    transform: rotate(90deg);\n    transform-origin: right bottom;\n  }\n\n  50% {\n    transform: rotate(180deg);\n    transform-origin: right bottom;\n  }\n\n  75% {\n    transform: rotate(270deg);\n    transform-origin: right bottom;\n  }\n\n  100% {\n    transform: rotate(360deg);\n    transform-origin: right bottom;\n  }\n}\n",
+    "component_name": "GalaxyShortSeahorse54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1604,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.872Z",
+  "updated_at": "2025-07-31T07:55:42.872Z"
+}

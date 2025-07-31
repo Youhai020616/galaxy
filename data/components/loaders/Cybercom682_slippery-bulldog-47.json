@@ -1,0 +1,87 @@
+{
+  "id": "Cybercom682_slippery-bulldog-47",
+  "name": "slippery-bulldog-47",
+  "category": "loaders",
+  "author": "Cybercom682",
+  "description": "slippery-bulldog-47 组件 (animation, loader, magnet, gradient)",
+  "tags": [
+    "animation",
+    "loader",
+    "magnet",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"magnetism\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Cybercom682  - Tags: animation, loader, magnet */\n.loader {\n  position: relative;\n  background-color: red;\n  height: 40px;\n  width: 10px;\n  border-radius: 6px 0px 0px 6px;\n  animation: rotate 5s infinite;\n}\n.magnetism {\n  position: absolute;\n  color: rgb(0, 151, 252);\n  bottom: 0;\n  width: 80px;\n  left: 0%;\n  height: 40px;\n  border: solid 2px currentColor;\n  border-color: currentColor transparent transparent transparent;\n  border-radius: 50%;\n  transform: rotate(90deg);\n  animation: go 0.5s ease-in-out infinite;\n}\n\n.loader::before {\n  content: \"\";\n  left: 10px;\n  position: absolute;\n  background: rgb(255, 0, 0);\n  background: linear-gradient(\n    90deg,\n    rgba(255, 0, 0, 1) 0%,\n    rgba(255, 0, 0, 1) 50%,\n    rgba(158, 158, 158, 1) 50%,\n    rgba(184, 184, 184, 1) 100%\n  );\n  height: 10px;\n  width: 20px;\n}\n.loader::after {\n  content: \"\";\n  left: 10px;\n  position: absolute;\n  bottom: 0;\n  background: rgb(255, 0, 0);\n  background: linear-gradient(\n    90deg,\n    rgba(255, 0, 0, 1) 0%,\n    rgba(255, 0, 0, 1) 50%,\n    rgba(158, 158, 158, 1) 50%,\n    rgba(184, 184, 184, 1) 100%\n  );\n  height: 10px;\n  width: 20px;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(-30deg);\n  }\n  50% {\n    transform: rotate(30deg);\n  }\n  100% {\n    transform: rotate(-30deg);\n  }\n}\n\n@keyframes go {\n  0% {\n    left: 0%;\n    width: 30px;\n    opacity: 1;\n  }\n  50% {\n    left: 100%;\n    width: 60px;\n    opacity: 0.5;\n  }\n  100% {\n    width: 90px;\n    left: 200%;\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Cybercom682_slippery-bulldog-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"magnetism\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySlipperyBulldog47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Cybercom682  - Tags: animation, loader, magnet */\n.loader {\n  position: relative;\n  background-color: red;\n  height: 80rpx;\n  width: 20rpx;\n  border-radius: 12rpx 0rpx 0rpx 12rpx;\n  animation: rotate 5s infinite;\n}\n.magnetism {\n  position: absolute;\n  color: rgb(0, 151, 252);\n  bottom: 0;\n  width: 160rpx;\n  left: 0%;\n  height: 80rpx;\n  border: solid 4rpx currentColor;\n  border-color: currentColor transparent transparent transparent;\n  border-radius: 50%;\n  transform: rotate(90deg);\n  animation: go 0.5s ease-in-out infinite;\n}\n\n.loader::before {\n  content: \"\";\n  left: 20rpx;\n  position: absolute;\n  background: rgb(255, 0, 0);\n  background: linear-gradient(\n    90deg,\n    rgba(255, 0, 0, 1) 0%,\n    rgba(255, 0, 0, 1) 50%,\n    rgba(158, 158, 158, 1) 50%,\n    rgba(184, 184, 184, 1) 100%\n  );\n  height: 20rpx;\n  width: 40rpx;\n}\n.loader::after {\n  content: \"\";\n  left: 20rpx;\n  position: absolute;\n  bottom: 0;\n  background: rgb(255, 0, 0);\n  background: linear-gradient(\n    90deg,\n    rgba(255, 0, 0, 1) 0%,\n    rgba(255, 0, 0, 1) 50%,\n    rgba(158, 158, 158, 1) 50%,\n    rgba(184, 184, 184, 1) 100%\n  );\n  height: 20rpx;\n  width: 40rpx;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(-30deg);\n  }\n  50% {\n    transform: rotate(30deg);\n  }\n  100% {\n    transform: rotate(-30deg);\n  }\n}\n\n@keyframes go {\n  0% {\n    left: 0%;\n    width: 60rpx;\n    opacity: 1;\n  }\n  50% {\n    left: 100%;\n    width: 120rpx;\n    opacity: 0.5;\n  }\n  100% {\n    width: 180rpx;\n    left: 200%;\n    opacity: 0;\n  }\n}\n\n",
+    "component_name": "GalaxySlipperyBulldog47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1572,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.139Z",
+  "updated_at": "2025-07-31T07:55:39.139Z"
+}

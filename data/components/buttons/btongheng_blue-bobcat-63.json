@@ -1,0 +1,122 @@
+{
+  "id": "btongheng_blue-bobcat-63",
+  "name": "blue-bobcat-63",
+  "category": "buttons",
+  "author": "btongheng",
+  "description": "blue-bobcat-63 组件 (simple, purple, button, download, sign-up, social media, html, css, animation)",
+  "tags": [
+    "simple",
+    "purple",
+    "button",
+    "download",
+    "sign-up",
+    "social media",
+    "html",
+    "css",
+    "animation"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  BUTTON\n</button>",
+    "css": "/* From Uiverse.io by btongheng - Tags: simple, purple, button, download, sign-up, social media, html, css */\n.button {\n  --😀: #644dff;\n  --😀😀: #4836bb;\n  --😀😀😀: #654dff63;\n  cursor: pointer;\n  width: 234px;\n  height: 58px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 1rem;\n  font-size: 1.125em;\n  font-weight: 800;\n  letter-spacing: 2px;\n  color: #fff;\n  background: var(--😀);\n  border: 2px solid var(--😀😀);\n  border-radius: .75rem;\n  box-shadow: 0 8px 0 var(--😀😀);\n  transform: skew(-10deg);\n  transition: all .1s ease;\n  filter: drop-shadow(0 15px 20px var(--😀😀😀));\n}\n\n.button:active {\n  letter-spacing: 0px;\n  transform: skew(-10deg) translateY(8px);\n  box-shadow: 0 0 0 var(--😀😀😀);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/btongheng_blue-bobcat-63.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  BUTTON\n</button>",
+    "script": "export default {\n  name: 'GalaxyBlueBobcat63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by btongheng - Tags: simple, purple, button, download, sign-up, social media, html, css */\n.button {\n  --😀: #644dff;\n  --😀😀: #4836bb;\n  --😀😀😀: #654dff63;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  width: 468rpx;\n  height: 116rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 1rem;\n  font-size: 1.125em;\n  font-weight: 800;\n  letter-spacing: 4rpx;\n  color: #fff;\n  background: var(--😀);\n  border: 4rpx solid var(--😀😀);\n  border-radius: .75rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 16rpx 0 var(--😀😀);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: skew(-10deg);\n  transition: all .1s ease;\n  \n}\n\n.button:active {\n  letter-spacing: 0rpx;\n  transform: skew(-10deg) translateY(16rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 var(--😀😀😀);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyBlueBobcat63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 781,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.055Z",
+  "updated_at": "2025-07-31T07:55:36.055Z"
+}

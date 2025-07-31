@@ -1,0 +1,87 @@
+{
+  "id": "exyreams_mean-dragon-22",
+  "name": "mean-dragon-22",
+  "category": "loaders",
+  "author": "exyreams",
+  "description": "mean-dragon-22 组件 (loading, loader, loading animation, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"cssload-container\">\n   <ul class=\"cssload-flex-container\">\n      <li>\n         <span class=\"cssload-loading cssload-one\"></span>\n         <span class=\"cssload-loading cssload-two\"></span>\n         <span class=\"cssload-loading-center\"></span>\n      </li>\n   </ul>\n</div>",
+    "css": "/* From Uiverse.io by exyreams - Source: MichaelRyanSmith - Tags: loading, loader, loading animation */\n.cssload-container * {\n  box-sizing: border-box;\n}\n\n.cssload-container {\n  margin: 38px auto 0 auto;\n  max-width: 1048px;\n}\n\n.cssload-container ul li {\n  list-style: none;\n}\n\n.cssload-flex-container {\n  display: flex;\n  display: -o-flex;\n  display: -ms-flex;\n  display: -webkit-flex;\n  display: -moz-flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n\n.cssload-flex-container li {\n  padding: 19px;\n  height: 188px;\n  width: 188px;\n  margin: 56px 38px;\n  position: relative;\n  text-align: center;\n}\n\n.cssload-loading-center {\n  display: inline-block;\n  position: absolute;\n    /* The color can be custmized, This color is for center cube.*/\n  background: #ff0000;\n  height: 56px;\n  width: 56px;\n  left: 68px;\n  top: 69px;\n  transform: rotate(45deg);\n  border-radius: 6px;\n  animation: pulse 1.3s ease infinite;\n}\n\n.cssload-loading {\n  display: inline-block;\n  position: relative;\n  width: 141px;\n  height: 141px;\n  margin-top: 6px;\n  transform: rotate(45deg);\n}\n\n.cssload-loading:after, .cssload-loading:before {\n  position: absolute;\n  content: '';\n  height: 19px;\n  width: 19px;\n  display: block;\n  top: 0;\n    /* The color can be custmized, This color is for 4 cubes.*/\n  background: #ff5252;\n  border-radius: 6px;\n}\n\n.cssload-loading:after {\n  right: 0;\n  animation: square-tr 2.6s ease infinite;\n  animation-delay: .162.5s;\n}\n\n.cssload-loading:before {\n  animation: square-tl 2.6s ease infinite;\n  animation-delay: .162.5s;\n}\n\n.cssload-loading.cssload-two {\n  position: relative;\n  top: -150px;\n}\n\n.cssload-loading.cssload-two:after, .cssload-loading.cssload-two:before {\n  bottom: 0;\n  top: initial;\n}\n\n.cssload-loading.cssload-two:after {\n  animation: square-br 2.6s ease infinite;\n  animation-direction: reverse;\n}\n\n.cssload-loading.cssload-two:before {\n  animation: square-bl 2.6s ease infinite;\n  animation-direction: reverse;\n}\n\n@keyframes square-tl {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, 117.5px);\n  }\n\n  50% {\n    transform: translate(117.5px, 117.5px);\n  }\n\n  75% {\n    transform: translate(117.5px, 0);\n  }\n}\n\n@keyframes square-bl {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, -117.5px);\n  }\n\n  50% {\n    transform: translate(117.5px, -117.5px);\n  }\n\n  75% {\n    transform: translate(117.5px, 0);\n  }\n}\n\n@keyframes square-tr {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(-117.5px, 0);\n  }\n\n  50% {\n    transform: translate(-117.5px, 117.5px);\n  }\n\n  75% {\n    transform: translate(0, 117.5px);\n  }\n}\n\n@keyframes square-br {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(-117.5px, 0);\n  }\n\n  50% {\n    transform: translate(-117.5px, -117.5px);\n  }\n\n  75% {\n    transform: translate(0, -117.5px);\n  }\n}\n\n@keyframes rotate {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes pulse {\n  0%, 100% {\n    transform: scale(inherit) rotate(45deg);\n  }\n\n  75% {\n    transform: scale(0.25) rotate(45deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/exyreams_mean-dragon-22.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cssload-container\"></view>\n   <view class=\"cssload-flex-container\"></view>\n      <view></view>\n         <text class=\"cssload-loading cssload-one\"></text>\n         <text class=\"cssload-loading cssload-two\"></text>\n         <text class=\"cssload-loading-center\"></text>\n      </li>\n   </ul>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMeanDragon22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by exyreams - Source: MichaelRyanSmith - Tags: loading, loader, loading animation */\n.cssload-container * {\n  box-sizing: border-box;\n}\n\n.cssload-container {\n  margin: 76rpx auto 0 auto;\n  max-width: 2096rpx;\n}\n\n.cssload-container ul li {\n  list-style: none;\n}\n\n.cssload-flex-container {\n  display: flex;\n  display: -o-flex;\n  display: -ms-flex;\n  display: -webkit-flex;\n  display: -moz-flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n\n.cssload-flex-container li {\n  padding: 38rpx;\n  height: 376rpx;\n  width: 376rpx;\n  margin: 112rpx 76rpx;\n  position: relative;\n  text-align: center;\n}\n\n.cssload-loading-center {\n  display: inline-block;\n  position: absolute;\n    /* The color can be custmized, This color is for center cube.*/\n  background: #ff0000;\n  height: 112rpx;\n  width: 112rpx;\n  left: 136rpx;\n  top: 138rpx;\n  transform: rotate(45deg);\n  border-radius: 12rpx;\n  animation: pulse 1.3s ease infinite;\n}\n\n.cssload-loading {\n  display: inline-block;\n  position: relative;\n  width: 282rpx;\n  height: 282rpx;\n  margin-top: 12rpx;\n  transform: rotate(45deg);\n}\n\n.cssload-loading:after, .cssload-loading:before {\n  position: absolute;\n  content: '';\n  height: 38rpx;\n  width: 38rpx;\n  display: block;\n  top: 0;\n    /* The color can be custmized, This color is for 4 cubes.*/\n  background: #ff5252;\n  border-radius: 12rpx;\n}\n\n.cssload-loading:after {\n  right: 0;\n  animation: square-tr 2.6s ease infinite;\n  animation-delay: .162.5s;\n}\n\n.cssload-loading:before {\n  animation: square-tl 2.6s ease infinite;\n  animation-delay: .162.5s;\n}\n\n.cssload-loading.cssload-two {\n  position: relative;\n  top: -300rpx;\n}\n\n.cssload-loading.cssload-two:after, .cssload-loading.cssload-two:before {\n  bottom: 0;\n  top: initial;\n}\n\n.cssload-loading.cssload-two:after {\n  animation: square-br 2.6s ease infinite;\n  animation-direction: reverse;\n}\n\n.cssload-loading.cssload-two:before {\n  animation: square-bl 2.6s ease infinite;\n  animation-direction: reverse;\n}\n\n@keyframes square-tl {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, 235rpx);\n  }\n\n  50% {\n    transform: translate(235rpx, 235rpx);\n  }\n\n  75% {\n    transform: translate(235rpx, 0);\n  }\n}\n\n@keyframes square-bl {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, -235rpx);\n  }\n\n  50% {\n    transform: translate(235rpx, -235rpx);\n  }\n\n  75% {\n    transform: translate(235rpx, 0);\n  }\n}\n\n@keyframes square-tr {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(-235rpx, 0);\n  }\n\n  50% {\n    transform: translate(-235rpx, 235rpx);\n  }\n\n  75% {\n    transform: translate(0, 235rpx);\n  }\n}\n\n@keyframes square-br {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(-235rpx, 0);\n  }\n\n  50% {\n    transform: translate(-235rpx, -235rpx);\n  }\n\n  75% {\n    transform: translate(0, -235rpx);\n  }\n}\n\n@keyframes rotate {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes pulse {\n  0%, 100% {\n    transform: scale(inherit) rotate(45deg);\n  }\n\n  75% {\n    transform: scale(0.25) rotate(45deg);\n  }\n}\n",
+    "component_name": "GalaxyMeanDragon22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3425,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.933Z",
+  "updated_at": "2025-07-31T07:55:41.933Z"
+}

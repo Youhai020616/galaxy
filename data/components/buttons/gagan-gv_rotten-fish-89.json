@@ -1,0 +1,108 @@
+{
+  "id": "gagan-gv_rotten-fish-89",
+  "name": "rotten-fish-89",
+  "category": "buttons",
+  "author": "gagan-gv",
+  "description": "rotten-fish-89 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button type=\"button\" class=\"btn cube cube-hover\">\n  <div class=\"bg-top\">\n  <div class=\"bg-inner\"></div>\n  </div>\n  <div class=\"bg-right\">\n  <div class=\"bg-inner\"></div>\n  </div>\n  <div class=\"bg\">\n  <div class=\"bg-inner\"></div>\n  </div>\n  <div class=\"text\">Hover Me</div>\n</button>",
+    "css": "/* From Uiverse.io by gagan-gv - Tags: button */\n.btn {\n display: block;\n padding: 0.7em 1em;\n background: transparent;\n outline: none;\n border: 0;\n color: #d4af37;\n letter-spacing: 0.1em;\n font-family: monospace;\n font-size: 17px;\n font-weight: bold;\n z-index: 1;\n}\n\n.cube {\n position: relative;\n transition: all 0.5s;\n}\n\n.cube .bg-top {\n position: absolute;\n height: 10px;\n background: #d4af37;\n bottom: 100%;\n left: 5px;\n right: -5px;\n transform: skew(-45deg, 0);\n margin: 0;\n transition: all 0.4s;\n}\n\n.cube .bg-top .bg-inner {\n bottom: 0;\n}\n\n.cube .bg {\n position: absolute;\n left: 0;\n bottom: 0;\n top: 0;\n right: 0;\n background: #d4af37;\n transition: all 0.4s;\n}\n\n.cube .bg-right {\n position: absolute;\n background: #d4af37;\n top: -5px;\n z-index: 0;\n bottom: 5px;\n width: 10px;\n left: 100%;\n transform: skew(0, -45deg);\n transition: all 0.4s;\n}\n\n.cube .bg-right .bg-inner {\n left: 0;\n}\n\n.cube .bg-inner {\n background: #28282d;\n position: absolute;\n left: 2px;\n right: 2px;\n top: 2px;\n bottom: 2px;\n}\n\n.cube .text {\n position: relative;\n transition: all 0.4s;\n}\n\n.cube:hover .bg-inner {\n background: #d4af37;\n transition: all 0.4s;\n}\n\n.cube:hover .text {\n color: #28282d;\n transition: all 0.4s;\n}\n\n.cube:hover .bg-right,\n.cube:hover .bg,\n.cube:hover .bg-top {\n background: #28282d;\n}\n\n.cube:active {\n z-index: 9999;\n animation: bounce .1s linear;\n}\n\n@keyframes bounce {\n 50% {\n  transform: scale(0.9);\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/gagan-gv_rotten-fish-89.html"
+  },
+  "uniapp": {
+    "template": "<button type=\"button\" class=\"btn cube cube-hover\"></button>\n  <view class=\"bg-top\"></view>\n  <view class=\"bg-inner\"></view>\n  </div>\n  <view class=\"bg-right\"></view>\n  <view class=\"bg-inner\"></view>\n  </div>\n  <view class=\"bg\"></view>\n  <view class=\"bg-inner\"></view>\n  </div>\n  <view class=\"text\">Hover Me</view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyRottenFish89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gagan-gv - Tags: button */\n.btn {\n display: block;\n padding: 0.7em 1em;\n background: transparent;\n outline: none;\n border: 0;\n color: #d4af37;\n letter-spacing: 0.1em;\n font-family: monospace;\n font-size: 34rpx;\n font-weight: bold;\n z-index: 1;\n}\n\n.cube {\n position: relative;\n transition: all 0.5s;\n}\n\n.cube .bg-top {\n position: absolute;\n height: 20rpx;\n background: #d4af37;\n bottom: 100%;\n left: 10rpx;\n right: -10rpx;\n transform: skew(-45deg, 0);\n margin: 0;\n transition: all 0.4s;\n}\n\n.cube .bg-top .bg-inner {\n bottom: 0;\n}\n\n.cube .bg {\n position: absolute;\n left: 0;\n bottom: 0;\n top: 0;\n right: 0;\n background: #d4af37;\n transition: all 0.4s;\n}\n\n.cube .bg-right {\n position: absolute;\n background: #d4af37;\n top: -10rpx;\n z-index: 0;\n bottom: 10rpx;\n width: 20rpx;\n left: 100%;\n transform: skew(0, -45deg);\n transition: all 0.4s;\n}\n\n.cube .bg-right .bg-inner {\n left: 0;\n}\n\n.cube .bg-inner {\n background: #28282d;\n position: absolute;\n left: 4rpx;\n right: 4rpx;\n top: 4rpx;\n bottom: 4rpx;\n}\n\n.cube .text {\n position: relative;\n transition: all 0.4s;\n}\n\n.cube:hover .bg-inner {\n background: #d4af37;\n transition: all 0.4s;\n}\n\n.cube:hover .text {\n color: #28282d;\n transition: all 0.4s;\n}\n\n.cube:hover .bg-right,\n.cube:hover .bg,\n.cube:hover .bg-top {\n background: #28282d;\n}\n\n.cube:active {\n z-index: 9999;\n animation: bounce .1s linear;\n}\n\n@keyframes bounce {\n 50% {\n  transform: scale(0.9);\n }\n}\n",
+    "component_name": "GalaxyRottenFish89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1696,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.761Z",
+  "updated_at": "2025-07-31T07:55:36.761Z"
+}

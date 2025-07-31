@@ -1,0 +1,119 @@
+{
+  "id": "ArturCodeCraft_new-dog-56",
+  "name": "new-dog-56",
+  "category": "buttons",
+  "author": "ArturCodeCraft",
+  "description": "new-dog-56 组件 (button, hover, btn, hover effect, hoverme, hover button, diia, Primary button, gradient, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "btn",
+    "hover effect",
+    "hoverme",
+    "hover button",
+    "diia",
+    "Primary button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"primary-button\">\n  Primary button\n</button>",
+    "css": "/* From Uiverse.io by ArturCodeCraft - Tags: button, hover, btn, hover effect, hoverme, hover button, diia, Primary button */\n/* <reset-style> ============================ */\nbutton {\n  border: none;\n  background: none;\n  padding: 0;\n  margin: 0;\n  cursor: pointer;\n  font-family: inherit;\n}\n/* <main-style> ============================ */\n.primary-button {\n  min-width: 111px;\n  height: 56px;\n  border-radius: 40px;\n  background: #000;\n  padding: 16px 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #fff;\n  font-size: 16px;\n  font-weight: 400;\n  line-height: 1.5;\n  letter-spacing: -0.32px;\n  transition: background .2s ease-in-out, color .2s ease-in-out;\n  position: relative;\n}\n\n.primary-button::before {\n  content: '';\n  width: 100%;\n  height: 100%;\n  border-radius: 40px;\n  background: linear-gradient(69deg, #c3aab2 -4.77%, #9ec 46.72%, #80c0c8 90.23%, #4B8bfa 134.46%);\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0;\n  z-index: -1;\n  transition: opacity .2s ease-in-out;\n}\n\n.primary-button:hover {\n  background: transparent;\n  color: #000;\n}\n\n.primary-button:hover::before {\n  opacity: 1;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ArturCodeCraft_new-dog-56.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"primary-button\"></button>\n  Primary button\n</button>",
+    "script": "export default {\n  name: 'GalaxyNewDog56',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ArturCodeCraft - Tags: button, hover, btn, hover effect, hoverme, hover button, diia, Primary button */\n/* <reset-style> ============================ */\nbutton {\n  border: none;\n  background: none;\n  padding: 0;\n  margin: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: inherit;\n}\n/* <main-style> ============================ */\n.primary-button {\n  min-width: 222rpx;\n  height: 112rpx;\n  border-radius: 80rpx;\n  background: #000;\n  padding: 32rpx 80rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #fff;\n  font-size: 32rpx;\n  font-weight: 400;\n  line-height: 1.5;\n  letter-spacing: -0.64rpx;\n  transition: background .2s ease-in-out, color .2s ease-in-out;\n  position: relative;\n}\n\n.primary-button::before {\n  content: '';\n  width: 100%;\n  height: 100%;\n  border-radius: 80rpx;\n  background: linear-gradient(69deg, #c3aab2 -4.77%, #9ec 46.72%, #80c0c8 90.23%, #4B8bfa 134.46%);\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0;\n  z-index: -1;\n  transition: opacity .2s ease-in-out;\n}\n\n.primary-button:hover {\n  background: transparent;\n  color: #000;\n}\n\n.primary-button:hover::before {\n  opacity: 1;\n}\n",
+    "component_name": "GalaxyNewDog56"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1204,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.708Z",
+  "updated_at": "2025-07-31T07:55:32.708Z"
+}

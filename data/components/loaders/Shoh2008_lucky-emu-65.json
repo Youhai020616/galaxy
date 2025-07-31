@@ -1,0 +1,87 @@
+{
+  "id": "Shoh2008_lucky-emu-65",
+  "name": "lucky-emu-65",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "lucky-emu-65 组件 (loader, bear, animation, gradient)",
+  "tags": [
+    "loader",
+    "bear",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader, bear */\n.loader {\n  width: 160px;\n  height: 185px;\n  position: relative;\n  background: #fff;\n  border-radius: 100px 100px 0 0;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  width: 100px;\n  height: 125px;\n  left: 50%;\n  top: 25px;\n  transform: translateX(-50%);\n  background-image: radial-gradient(circle, #000 48%, transparent 55%),\n    radial-gradient(circle, #000 48%, transparent 55%),\n    radial-gradient(circle, #fff 30%, transparent 45%),\n    radial-gradient(circle, #000 48%, transparent 51%),\n    linear-gradient(#000 20px, transparent 0),\n    linear-gradient(#cfecf9 60px, transparent 0),\n    radial-gradient(circle, #cfecf9 50%, transparent 51%),\n    radial-gradient(circle, #cfecf9 50%, transparent 51%);\n  background-repeat: no-repeat;\n  background-size: 16px 16px, 16px 16px, 10px 10px, 42px 42px, 12px 3px,\n    50px 25px, 70px 70px, 70px 70px;\n  background-position: 25px 10px, 55px 10px, 36px 44px, 50% 30px, 50% 85px,\n    50% 50px, 50% 22px, 50% 45px;\n  animation: faceLift 3s linear infinite alternate;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  width: 140%;\n  height: 125px;\n  left: -20%;\n  top: 0;\n  background-image: radial-gradient(circle, #fff 48%, transparent 50%),\n    radial-gradient(circle, #fff 48%, transparent 50%);\n  background-repeat: no-repeat;\n  background-size: 65px 65px;\n  background-position: 0px 12px, 145px 12px;\n  animation: earLift 3s linear infinite alternate;\n}\n\n@keyframes faceLift {\n  0% {\n    transform: translateX(-60%);\n  }\n\n  100% {\n    transform: translateX(-30%);\n  }\n}\n\n@keyframes earLift {\n  0% {\n    transform: translateX(10px);\n  }\n\n  100% {\n    transform: translateX(0px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_lucky-emu-65.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyLuckyEmu65',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader, bear */\n.loader {\n  width: 320rpx;\n  height: 370rpx;\n  position: relative;\n  background: #fff;\n  border-radius: 200rpx 200rpx 0 0;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  width: 200rpx;\n  height: 250rpx;\n  left: 50%;\n  top: 50rpx;\n  transform: translateX(-50%);\n  background-image: radial-gradient(circle, #000 48%, transparent 55%),\n    radial-gradient(circle, #000 48%, transparent 55%),\n    radial-gradient(circle, #fff 30%, transparent 45%),\n    radial-gradient(circle, #000 48%, transparent 51%),\n    linear-gradient(#000 40rpx, transparent 0),\n    linear-gradient(#cfecf9 120rpx, transparent 0),\n    radial-gradient(circle, #cfecf9 50%, transparent 51%),\n    radial-gradient(circle, #cfecf9 50%, transparent 51%);\n  background-repeat: no-repeat;\n  background-size: 32rpx 32rpx, 32rpx 32rpx, 20rpx 20rpx, 84rpx 84rpx, 24rpx 6rpx,\n    100rpx 50rpx, 140rpx 140rpx, 140rpx 140rpx;\n  background-position: 50rpx 20rpx, 110rpx 20rpx, 72rpx 88rpx, 50% 60rpx, 50% 170rpx,\n    50% 100rpx, 50% 44rpx, 50% 90rpx;\n  animation: faceLift 3s linear infinite alternate;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  width: 140%;\n  height: 250rpx;\n  left: -20%;\n  top: 0;\n  background-image: radial-gradient(circle, #fff 48%, transparent 50%),\n    radial-gradient(circle, #fff 48%, transparent 50%);\n  background-repeat: no-repeat;\n  background-size: 130rpx 130rpx;\n  background-position: 0rpx 24rpx, 290rpx 24rpx;\n  animation: earLift 3s linear infinite alternate;\n}\n\n@keyframes faceLift {\n  0% {\n    transform: translateX(-60%);\n  }\n\n  100% {\n    transform: translateX(-30%);\n  }\n}\n\n@keyframes earLift {\n  0% {\n    transform: translateX(20rpx);\n  }\n\n  100% {\n    transform: translateX(0rpx);\n  }\n}\n  \n",
+    "component_name": "GalaxyLuckyEmu65"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1742,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.385Z",
+  "updated_at": "2025-07-31T07:55:40.385Z"
+}

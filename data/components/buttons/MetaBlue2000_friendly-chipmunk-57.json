@@ -1,0 +1,112 @@
+{
+  "id": "MetaBlue2000_friendly-chipmunk-57",
+  "name": "friendly-chipmunk-57",
+  "category": "buttons",
+  "author": "MetaBlue2000",
+  "description": "friendly-chipmunk-57 组件 (message, challenge, effect 3d)",
+  "tags": [
+    "message",
+    "challenge",
+    "effect 3d"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" transform=\"rotate(-45)\">\n    <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n    <g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g>\n    <g id=\"SVGRepo_iconCarrier\">\n      <path d=\"M11.5003 12H5.41872M5.24634 12.7972L4.24158 15.7986C3.69128 17.4424 3.41613 18.2643 3.61359 18.7704C3.78506 19.21 4.15335 19.5432 4.6078 19.6701C5.13111 19.8161 5.92151 19.4604 7.50231 18.7491L17.6367 14.1886C19.1797 13.4942 19.9512 13.1471 20.1896 12.6648C20.3968 12.2458 20.3968 11.7541 20.1896 11.3351C19.9512 10.8529 19.1797 10.5057 17.6367 9.81135L7.48483 5.24303C5.90879 4.53382 5.12078 4.17921 4.59799 4.32468C4.14397 4.45101 3.77572 4.78336 3.60365 5.22209C3.40551 5.72728 3.67772 6.54741 4.22215 8.18767L5.24829 11.2793C5.34179 11.561 5.38855 11.7019 5.407 11.8459C5.42338 11.9738 5.42321 12.1032 5.40651 12.231C5.38768 12.375 5.34057 12.5157 5.24634 12.7972Z\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </g>\n  </svg>\n  <p class=\"text\">&nbsp;Send message&nbsp;</p>\n</button>",
+    "css": "/* From Uiverse.io by MetaBlue2000  - Tags: message, challenge, effect 3d */\n.button {\n  height: 50px;\n  width: 130px;\n  display: flex;\n  border: rgb(135, 135, 135) 2px solid;\n  align-items: center;\n  border-radius: 12px;\n  box-shadow: 1px 1px 75px 5px grey;\n  z-index: -2;\n}\n\n.icon {\n  height: 18px;\n  display: flex;\n  margin-left: 5px;\n  border-radius: l;\n  z-index: -1;\n}\n\n.text {\n  font-variant: small-caps;\n  font-weight: 700;\n  font-size: 13.123px;\n  border-radius: 10px;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding-left: 5px;\n  padding-right: 5px;\n  align-items: center;\n  box-shadow: inset 10px 4px 8px rgb(209, 209, 209),\n    inset -10px -4px 8px rgba(255, 255, 255);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/MetaBlue2000_friendly-chipmunk-57.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" transform=\"rotate(-45)\"></view>\n    <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n    <g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g>\n    <g id=\"SVGRepo_iconCarrier\">\n      <path d=\"M11.5003 12H5.41872M5.24634 12.7972L4.24158 15.7986C3.69128 17.4424 3.41613 18.2643 3.61359 18.7704C3.78506 19.21 4.15335 19.5432 4.6078 19.6701C5.13111 19.8161 5.92151 19.4604 7.50231 18.7491L17.6367 14.1886C19.1797 13.4942 19.9512 13.1471 20.1896 12.6648C20.3968 12.2458 20.3968 11.7541 20.1896 11.3351C19.9512 10.8529 19.1797 10.5057 17.6367 9.81135L7.48483 5.24303C5.90879 4.53382 5.12078 4.17921 4.59799 4.32468C4.14397 4.45101 3.77572 4.78336 3.60365 5.22209C3.40551 5.72728 3.67772 6.54741 4.22215 8.18767L5.24829 11.2793C5.34179 11.561 5.38855 11.7019 5.407 11.8459C5.42338 11.9738 5.42321 12.1032 5.40651 12.231C5.38768 12.375 5.34057 12.5157 5.24634 12.7972Z\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </g>\n  </svg>\n  <text class=\"text\">&nbsp;Send message&nbsp;</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFriendlyChipmunk57',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MetaBlue2000  - Tags: message, challenge, effect 3d */\n.button {\n  height: 100rpx;\n  width: 260rpx;\n  display: flex;\n  border: rgb(135, 135, 135) 4rpx solid;\n  align-items: center;\n  border-radius: 24rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 150rpx 10rpx grey;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: -2;\n}\n\n.icon {\n  height: 36rpx;\n  display: flex;\n  margin-left: 10rpx;\n  border-radius: l;\n  z-index: -1;\n}\n\n.text {\n  font-variant: small-caps;\n  font-weight: 700;\n  font-size: 26.246rpx;\n  border-radius: 20rpx;\n  padding-top: 10rpx;\n  padding-bottom: 10rpx;\n  padding-left: 10rpx;\n  padding-right: 10rpx;\n  align-items: center;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 20rpx 8rpx 16rpx rgb(209, 209, 209),\n    inset -20rpx -8rpx 16rpx rgba(255, 255, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyFriendlyChipmunk57"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1852,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.954Z",
+  "updated_at": "2025-07-31T07:55:33.954Z"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "benjimich_wonderful-penguin-4",
+  "name": "wonderful-penguin-4",
+  "category": "buttons",
+  "author": "benjimich",
+  "description": "wonderful-penguin-4 组件 (button, hover, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"line one\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n  <div class=\"line two\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n  <div class=\"line three\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n    <div class=\"line four\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n    \n    <div class=\"line five\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n    \n    <div class=\"line six\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n    \n    <div class=\"line seven\">\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n    <div class=\"round\"></div>\n\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by benjimich - Tags: button, hover */\n.button {\n  cursor: pointer;\n  background: none;\n  border: none;\n  display: flex;\n  flex-direction: column;\n  width: 70px;\n  gap: 4px;\n}\n\n.button:hover {\n  animation: move 2s infinite ease;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(20px);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.round {\n  width: 6px;\n  height: 6px;\n  background: #3da9fc;\n  border-radius: 50%;\n}\n\n.line {\n  display: flex;\n  gap: 4px;\n}\n\n.two {\n  transform: translateX(10px);\n}\n\n.three {\n  transform: translateX(20px);\n}\n\n.four {\n  transform: translateX(30px);\n}\n\n.five {\n  transform: translateX(20px);\n}\n\n.six {\n  transform: translateX(10px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/benjimich_wonderful-penguin-4.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"line one\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n  <view class=\"line two\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n  <view class=\"line three\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n    <view class=\"line four\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n    \n    <view class=\"line five\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n    \n    <view class=\"line six\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n    \n    <view class=\"line seven\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n    <view class=\"round\"></view>\n\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWonderfulPenguin4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by benjimich - Tags: button, hover */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: none;\n  border: none;\n  display: flex;\n  flex-direction: column;\n  width: 140rpx;\n  gap: 8rpx;\n}\n\n.button:hover {\n  animation: move 2s infinite ease;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(40rpx);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.round {\n  width: 12rpx;\n  height: 12rpx;\n  background: #3da9fc;\n  border-radius: 50%;\n}\n\n.line {\n  display: flex;\n  gap: 8rpx;\n}\n\n.two {\n  transform: translateX(20rpx);\n}\n\n.three {\n  transform: translateX(40rpx);\n}\n\n.four {\n  transform: translateX(60rpx);\n}\n\n.five {\n  transform: translateX(40rpx);\n}\n\n.six {\n  transform: translateX(20rpx);\n}\n",
+    "component_name": "GalaxyWonderfulPenguin4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1886,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.956Z",
+  "updated_at": "2025-07-31T07:55:35.956Z"
+}

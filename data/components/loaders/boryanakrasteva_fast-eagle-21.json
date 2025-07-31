@@ -1,0 +1,89 @@
+{
+  "id": "boryanakrasteva_fast-eagle-21",
+  "name": "fast-eagle-21",
+  "category": "loaders",
+  "author": "boryanakrasteva",
+  "description": "fast-eagle-21 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"circle\"></div>\n  <div class=\"circle\"></div>\n  <div class=\"circle\"></div>\n  <div class=\"circle\"></div>\n</div>",
+    "css": "/* From Uiverse.io by boryanakrasteva - Tags: loader */\n.loader {\n  position: relative;\n}\n\n.circle {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 0px;\n  height: 0px;\n  border-radius: 100%;\n  opacity: 0;\n  animation: pulse_4923 4s infinite linear;\n  border: 0.5px solid #f3f3f3;\n  box-shadow: 0px 0px 5px #eef0e5;\n}\n\n.circle:nth-child(1) {\n  animation-delay: .2s;\n}\n\n.circle:nth-child(2) {\n  animation-delay: .4s;\n}\n\n.circle:nth-child(3) {\n  animation-delay: .8s;\n}\n\n.circle:nth-child(4) {\n  animation-delay: 1s;\n}\n\n@keyframes pulse_4923 {\n  0% {\n    opacity: 0.0;\n    width: 0px;\n    height: 0px;\n    transform: translate(-50%, -50%) scale(1);\n  }\n\n  10% {\n    opacity: 0.5;\n    transform: translate(-50%, -50%) scale(2);\n  }\n\n  100% {\n    opacity: 0.0;\n    width: 100px;\n    height: 100px;\n    transform: translate(-50%, -50%) scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/boryanakrasteva_fast-eagle-21.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"circle\"></view>\n  <view class=\"circle\"></view>\n  <view class=\"circle\"></view>\n  <view class=\"circle\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastEagle21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by boryanakrasteva - Tags: loader */\n.loader {\n  position: relative;\n}\n\n.circle {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 0rpx;\n  height: 0rpx;\n  border-radius: 100%;\n  opacity: 0;\n  animation: pulse_4923 4s infinite linear;\n  border: 1rpx solid #f3f3f3;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 10rpx #eef0e5;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.circle:nth-child(1) {\n  animation-delay: .2s;\n}\n\n.circle:nth-child(2) {\n  animation-delay: .4s;\n}\n\n.circle:nth-child(3) {\n  animation-delay: .8s;\n}\n\n.circle:nth-child(4) {\n  animation-delay: 1s;\n}\n\n@keyframes pulse_4923 {\n  0% {\n    opacity: 0.0;\n    width: 0rpx;\n    height: 0rpx;\n    transform: translate(-50%, -50%) scale(1);\n  }\n\n  10% {\n    opacity: 0.5;\n    transform: translate(-50%, -50%) scale(2);\n  }\n\n  100% {\n    opacity: 0.0;\n    width: 200rpx;\n    height: 200rpx;\n    transform: translate(-50%, -50%) scale(1);\n  }\n}\n\n",
+    "component_name": "GalaxyFastEagle21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1038,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.076Z",
+  "updated_at": "2025-07-31T07:55:41.076Z"
+}

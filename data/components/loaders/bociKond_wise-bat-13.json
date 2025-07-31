@@ -1,0 +1,92 @@
+{
+  "id": "bociKond_wise-bat-13",
+  "name": "wise-bat-13",
+  "category": "loaders",
+  "author": "bociKond",
+  "description": "wise-bat-13 组件 (animation, loader, spinner, rotate, custom, opacity, color, spin, click animation)",
+  "tags": [
+    "animation",
+    "loader",
+    "spinner",
+    "rotate",
+    "custom",
+    "opacity",
+    "color",
+    "spin",
+    "click animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n</div>",
+    "css": "/* From Uiverse.io by bociKond - Source: https://10015.io - Tags: animation, loader, spinner, rotate, custom, opacity, color, spin, click animation */\n.spinner {\n  width: 70.4px;\n  height: 70.4px;\n  --clr: rgb(247, 197, 159);\n  --clr-alpha: rgb(247, 197, 159,.1);\n  animation: spinner 1.6s infinite ease;\n  transform-style: preserve-3d;\n}\n\n.spinner > div {\n  background-color: var(--clr-alpha);\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  border: 3.5px solid var(--clr);\n}\n\n.spinner div:nth-of-type(1) {\n  transform: translateZ(-35.2px) rotateY(180deg);\n}\n\n.spinner div:nth-of-type(2) {\n  transform: rotateY(-270deg) translateX(50%);\n  transform-origin: top right;\n}\n\n.spinner div:nth-of-type(3) {\n  transform: rotateY(270deg) translateX(-50%);\n  transform-origin: center left;\n}\n\n.spinner div:nth-of-type(4) {\n  transform: rotateX(90deg) translateY(-50%);\n  transform-origin: top center;\n}\n\n.spinner div:nth-of-type(5) {\n  transform: rotateX(-90deg) translateY(50%);\n  transform-origin: bottom center;\n}\n\n.spinner div:nth-of-type(6) {\n  transform: translateZ(35.2px);\n}\n\n@keyframes spinner {\n  0% {\n    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);\n  }\n\n  50% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);\n  }\n\n  100% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bociKond_wise-bat-13.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWiseBat13',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bociKond - Source: https://10015.io - Tags: animation, loader, spinner, rotate, custom, opacity, color, spin, click animation */\n.spinner {\n  width: 140.8rpx;\n  height: 140.8rpx;\n  --clr: rgb(247, 197, 159);\n  --clr-alpha: rgb(247, 197, 159,.1);\n  animation: spinner 1.6s infinite ease;\n  transform-style: preserve-3d;\n}\n\n.spinner > div {\n  background-color: var(--clr-alpha);\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  border: 7rpx solid var(--clr);\n}\n\n.spinner div:nth-of-type(1) {\n  transform: translateZ(-70.4rpx) rotateY(180deg);\n}\n\n.spinner div:nth-of-type(2) {\n  transform: rotateY(-270deg) translateX(50%);\n  transform-origin: top right;\n}\n\n.spinner div:nth-of-type(3) {\n  transform: rotateY(270deg) translateX(-50%);\n  transform-origin: center left;\n}\n\n.spinner div:nth-of-type(4) {\n  transform: rotateX(90deg) translateY(-50%);\n  transform-origin: top center;\n}\n\n.spinner div:nth-of-type(5) {\n  transform: rotateX(-90deg) translateY(50%);\n  transform-origin: bottom center;\n}\n\n.spinner div:nth-of-type(6) {\n  transform: translateZ(70.4rpx);\n}\n\n@keyframes spinner {\n  0% {\n    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);\n  }\n\n  50% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);\n  }\n\n  100% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);\n  }\n}\n",
+    "component_name": "GalaxyWiseBat13"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1445,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.061Z",
+  "updated_at": "2025-07-31T07:55:41.061Z"
+}

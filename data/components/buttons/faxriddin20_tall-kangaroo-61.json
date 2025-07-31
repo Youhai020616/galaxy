@@ -1,0 +1,116 @@
+{
+  "id": "faxriddin20_tall-kangaroo-61",
+  "name": "tall-kangaroo-61",
+  "category": "buttons",
+  "author": "faxriddin20",
+  "description": "tall-kangaroo-61 组件 (simple, neumorphism, 3d, minimalist, button)",
+  "tags": [
+    "simple",
+    "neumorphism",
+    "3d",
+    "minimalist",
+    "button"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Button</button>",
+    "css": "/* From Uiverse.io by faxriddin20  - Tags: simple, neumorphism, 3d, minimalist, button */\n.button {\n  cursor: pointer;\n  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,\n    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,\n    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,\n    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,\n    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n  border: none;\n  width: 160px;\n  height: 50px;\n  color: white;\n  background-color: transparent;\n  border-radius: 20px;\n  transition: all 0.3s ease;\n}\n.button:active {\n  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,\n    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/faxriddin20_tall-kangaroo-61.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Button</button>",
+    "script": "export default {\n  name: 'GalaxyTallKangaroo61',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by faxriddin20  - Tags: simple, neumorphism, 3d, minimalist, button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.17) 0rpx -46rpx 50rpx 0rpx inset,\n    rgba(0, 0, 0, 0.15) 0rpx -72rpx 60rpx 0rpx inset,\n    rgba(0, 0, 0, 0.1) 0rpx -158rpx 80rpx 0rpx inset, rgba(0, 0, 0, 0.06) 0rpx 4rpx 2rpx,\n    rgba(0, 0, 0, 0.09) 0rpx 8rpx 4rpx, rgba(0, 0, 0, 0.09) 0rpx 16rpx 8rpx,\n    rgba(0, 0, 0, 0.09) 0rpx 32rpx 16rpx, rgba(0, 0, 0, 0.09) 0rpx 64rpx 32rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: none;\n  width: 320rpx;\n  height: 100rpx;\n  color: white;\n  background-color: transparent;\n  border-radius: 40rpx;\n  transition: all 0.3s ease;\n}\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(50, 50, 93, 0.25) 0rpx 60rpx 120rpx -24rpx inset,\n    rgba(0, 0, 0, 0.3) 0rpx 36rpx 72rpx -36rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyTallKangaroo61"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 785,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.695Z",
+  "updated_at": "2025-07-31T07:55:36.695Z"
+}

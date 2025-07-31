@@ -1,0 +1,108 @@
+{
+  "id": "sheptalo_chatty-mule-100",
+  "name": "chatty-mule-100",
+  "category": "buttons",
+  "author": "sheptalo",
+  "description": "chatty-mule-100 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  HOVER ME!\n</button>",
+    "css": "/* From Uiverse.io by sheptalo - Tags: button */\nbutton {\n  border-style: outset;\n  font-weight: 1000;\n  height: 50px;\n  width: 150px;\n  background: inherit;\n  border: 7px solid orange;\n  transition: all 900ms;\n}\n\nbutton::before {\n  content: \"\";\n  z-index: -1;\n  position: absolute;\n  left: 50%;\n  top: 0;\n  bottom: 0%;\n  height: 100%;\n  width: 0;\n  background-color: yellow;\n  transition-timing-function: ease-in;\n  transition: all 1.3s;\n}\n\nbutton:hover {\n  color: rgb(78, 78, 78);\n  border: 2px solid yellow;\n  transform: scale(1.2);\n}\n\nbutton:hover::before {\n  left: 0%;\n  width: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/sheptalo_chatty-mule-100.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  HOVER ME!\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattyMule100',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by sheptalo - Tags: button */\nbutton {\n  border-style: outset;\n  font-weight: 1000;\n  height: 100rpx;\n  width: 300rpx;\n  background: inherit;\n  border: 14rpx solid orange;\n  transition: all 900ms;\n}\n\nbutton::before {\n  content: \"\";\n  z-index: -1;\n  position: absolute;\n  left: 50%;\n  top: 0;\n  bottom: 0%;\n  height: 100%;\n  width: 0;\n  background-color: yellow;\n  transition-timing-function: ease-in;\n  transition: all 1.3s;\n}\n\nbutton:hover {\n  color: rgb(78, 78, 78);\n  border: 4rpx solid yellow;\n  transform: scale(1.2);\n}\n\nbutton:hover::before {\n  left: 0%;\n  width: 100%;\n}\n",
+    "component_name": "GalaxyChattyMule100"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 625,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.843Z",
+  "updated_at": "2025-07-31T07:55:37.843Z"
+}

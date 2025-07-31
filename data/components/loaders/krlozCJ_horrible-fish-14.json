@@ -1,0 +1,89 @@
+{
+  "id": "krlozCJ_horrible-fish-14",
+  "name": "horrible-fish-14",
+  "category": "loaders",
+  "author": "krlozCJ",
+  "description": "horrible-fish-14 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"orbe\" style=\"--index: 0\"></div>\n    <div class=\"orbe\" style=\"--index: 1\"></div>\n    <div class=\"orbe\" style=\"--index: 2\"></div>\n    <div class=\"orbe\" style=\"--index: 3\"></div>\n    <div class=\"orbe\" style=\"--index: 4\"></div>\n</div>",
+    "css": "/* From Uiverse.io by krlozCJ - Tags: loader */\n.loader {\n  --size-loader: 50px;\n  --size-orbe: 10px;\n  width: var(--size-loader);\n  height: var(--size-loader);\n  position: relative;\n  transform: rotate(45deg);\n}\n\n.orbe {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  --delay: calc(var(--index) * 0.1s);\n  animation: orbit7456 ease-in-out 1.5s var(--delay) infinite;\n  opacity: calc(1 - calc(0.2 * var(--index)));\n}\n\n.orbe::after {\n  position: absolute;\n  content: '';\n  top: 0;\n  left: 0;\n  width: var(--size-orbe);\n  height: var(--size-orbe);\n  background-color: #3ae374;\n  box-shadow: 0px 0px 20px 2px #3ae374;\n  border-radius: 50%;\n}\n\n@keyframes orbit7456 {\n  0% {\n  }\n\n  80% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/krlozCJ_horrible-fish-14.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"orbe\" style=\"--index: 0\"></view>\n    <view class=\"orbe\" style=\"--index: 1\"></view>\n    <view class=\"orbe\" style=\"--index: 2\"></view>\n    <view class=\"orbe\" style=\"--index: 3\"></view>\n    <view class=\"orbe\" style=\"--index: 4\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHorribleFish14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by krlozCJ - Tags: loader */\n.loader {\n  --size-loader: 100rpx;\n  --size-orbe: 20rpx;\n  width: var(--size-loader);\n  height: var(--size-loader);\n  position: relative;\n  transform: rotate(45deg);\n}\n\n.orbe {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  --delay: calc(var(--index) * 0.1s);\n  animation: orbit7456 ease-in-out 1.5s var(--delay) infinite;\n  opacity: calc(1 - calc(0.2 * var(--index)));\n}\n\n.orbe::after {\n  position: absolute;\n  content: '';\n  top: 0;\n  left: 0;\n  width: var(--size-orbe);\n  height: var(--size-orbe);\n  background-color: #3ae374;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx 4rpx #3ae374;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 50%;\n}\n\n@keyframes orbit7456 {\n  0% {\n  }\n\n  80% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyHorribleFish14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1043,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.289Z",
+  "updated_at": "2025-07-31T07:55:42.289Z"
+}

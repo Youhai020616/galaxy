@@ -1,0 +1,114 @@
+{
+  "id": "Peary74_loud-warthog-20",
+  "name": "loud-warthog-20",
+  "category": "buttons",
+  "author": "Peary74",
+  "description": "loud-warthog-20 组件 (button, cloud, save, animation, interactive)",
+  "tags": [
+    "button",
+    "cloud",
+    "save",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btnCloud\">\n <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"30\" height=\"30\" class=\"icon\"><path d=\"M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z\"></path></svg>\n</button>",
+    "css": "/* From Uiverse.io by Peary74 - Tags: button, cloud, save */\n.btnCloud {\n  background-color: transparent;\n  position: relative;\n  fill: rgb(155, 153, 153);\n  border: none;\n}\n\n.btnCloud::after {\n  content: 'SAVE';\n  position: absolute;\n  top: -50%;\n  left: 50%;\n  transform: translateX(-50%);\n  background-color: #fff;\n  padding: 3px 9px;\n  border-radius: 5px;\n  transition: 200ms linear;\n  transition-delay: 200ms;\n  color: black;\n  font-size: 13px;\n  visibility: hidden;\n}\n\n.icon {\n  transform: scale(1.4);\n  transition: 200ms linear;\n}\n\n.btnCloud:hover > .icon {\n  transform: scale(1.7);\n}\n\n.btnCloud:hover > .icon path {\n  fill: #fff;\n  cursor: pointer;\n}\n\n.btnCloud:hover::after {\n  visibility: visible;\n  opacity: 1;\n  top: -100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Peary74_loud-warthog-20.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btnCloud\"></button>\n <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"30\" height=\"30\" class=\"icon\"><path d=\"M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z\"></path></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLoudWarthog20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Peary74 - Tags: button, cloud, save */\n.btnCloud {\n  background-color: transparent;\n  position: relative;\n  fill: rgb(155, 153, 153);\n  border: none;\n}\n\n.btnCloud::after {\n  content: 'SAVE';\n  position: absolute;\n  top: -50%;\n  left: 50%;\n  transform: translateX(-50%);\n  background-color: #fff;\n  padding: 6rpx 18rpx;\n  border-radius: 10rpx;\n  transition: 200ms linear;\n  transition-delay: 200ms;\n  color: black;\n  font-size: 26rpx;\n  visibility: hidden;\n}\n\n.icon {\n  transform: scale(1.4);\n  transition: 200ms linear;\n}\n\n.btnCloud:hover > .icon {\n  transform: scale(1.7);\n}\n\n.btnCloud:hover > .icon path {\n  fill: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.btnCloud:hover::after {\n  visibility: visible;\n  opacity: 1;\n  top: -100%;\n}\n\n",
+    "component_name": "GalaxyLoudWarthog20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1215,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.201Z",
+  "updated_at": "2025-07-31T07:55:34.201Z"
+}

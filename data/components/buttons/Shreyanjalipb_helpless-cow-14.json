@@ -1,0 +1,112 @@
+{
+  "id": "Shreyanjalipb_helpless-cow-14",
+  "name": "helpless-cow-14",
+  "category": "buttons",
+  "author": "Shreyanjalipb",
+  "description": "helpless-cow-14 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"emoji-button-container\">\n  <button class=\"emoji-button\">Hover Me</button>\n  <div class=\"emoji-animations\">\n    <span class=\"emoji\">😊</span>\n    <span class=\"emoji\">🎸</span>\n    <span class=\"emoji\">🚀</span>\n    <span class=\"emoji\">❤️</span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Shreyanjalipb  - Tags: button */\n.emoji-button-container {\n  position: relative;\n  display: inline-block;\n}\n\n.emoji-button {\n  background-color: yellow;\n  border: none;\n  padding: 15px 30px;\n  font-size: 30px;\n  font-weight: bold;\n  cursor: pointer;\n  position: relative;\n  z-index: 10;\n}\n\n.emoji-animations {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  display: flex;\n  gap: 20px;\n  opacity: 0;\n  pointer-events: none;\n  transition: opacity 0.3s ease;\n}\n\n.emoji {\n  font-size: 35px;\n  opacity: 0;\n  transform: translateY(0);\n  transition:\n    transform 0.5s ease,\n    opacity 0.5s ease;\n}\n\n.emoji-button:hover + .emoji-animations {\n  opacity: 1;\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(1) {\n  opacity: 1;\n  transform: translate(-50px, -50px);\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(2) {\n  opacity: 1;\n  transform: translate(50px, -50px);\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(3) {\n  opacity: 1;\n  transform: translate(-50px, 50px);\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(4) {\n  opacity: 1;\n  transform: translate(50px, 50px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Shreyanjalipb_helpless-cow-14.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"emoji-button-container\"></view>\n  <button class=\"emoji-button\"></button>Hover Me</button>\n  <view class=\"emoji-animations\"></view>\n    <text class=\"emoji\">😊</text>\n    <text class=\"emoji\">🎸</text>\n    <text class=\"emoji\">🚀</text>\n    <text class=\"emoji\">❤️</text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHelplessCow14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shreyanjalipb  - Tags: button */\n.emoji-button-container {\n  position: relative;\n  display: inline-block;\n}\n\n.emoji-button {\n  background-color: yellow;\n  border: none;\n  padding: 30rpx 60rpx;\n  font-size: 60rpx;\n  font-weight: bold;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  z-index: 10;\n}\n\n.emoji-animations {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  display: flex;\n  gap: 40rpx;\n  opacity: 0;\n  pointer-events: none;\n  transition: opacity 0.3s ease;\n}\n\n.emoji {\n  font-size: 70rpx;\n  opacity: 0;\n  transform: translateY(0);\n  transition:\n    transform 0.5s ease,\n    opacity 0.5s ease;\n}\n\n.emoji-button:hover + .emoji-animations {\n  opacity: 1;\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(1) {\n  opacity: 1;\n  transform: translate(-100rpx, -100rpx);\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(2) {\n  opacity: 1;\n  transform: translate(100rpx, -100rpx);\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(3) {\n  opacity: 1;\n  transform: translate(-100rpx, 100rpx);\n}\n\n.emoji-button:hover + .emoji-animations .emoji:nth-child(4) {\n  opacity: 1;\n  transform: translate(100rpx, 100rpx);\n}\n\n",
+    "component_name": "GalaxyHelplessCow14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1455,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.686Z",
+  "updated_at": "2025-07-31T07:55:34.686Z"
+}

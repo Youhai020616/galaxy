@@ -1,0 +1,93 @@
+{
+  "id": "StealthWorm_mighty-bear-58",
+  "name": "mighty-bear-58",
+  "category": "loaders",
+  "author": "StealthWorm",
+  "description": "mighty-bear-58 组件 (loader, bobby, dead cells, animation)",
+  "tags": [
+    "loader",
+    "bobby",
+    "dead cells",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"head\"></div>\n  \n  <div class=\"flames\">\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n    <div class=\"particle\"></div>\n  </div>\n  \n  <div class=\"eye\"></div>\n</div>",
+    "css": "/* From Uiverse.io by StealthWorm - Tags: loader, bobby, dead cells */\n.loader {\n  display: flex;\n  width: 8rem;\n  height: 8rem;\n  justify-items: center;\n  justify-content: center;\n  align-items: center;\n}\n\n.head {\n  width: 100%;\n  height: 100%;\n  background-color: #FA95FB;\n  border-radius: 50%;\n  animation: move 3s linear infinite;\n  box-shadow: 0 1rem 1rem #E220B8;\n  filter: blur(.3rem);\n  z-index: 1;\n}\n\n.eye {\n  display: flex;\n  position: absolute;\n  width: 4rem;\n  height: 4rem;\n  background-color: #EFFFC8;\n  border-radius: 50%;\n  align-items: center;\n  justify-content: center;\n  z-index: 2;\n  box-shadow: 0 0 1rem #F752F7;\n  animation: move 5s alternate infinite;\n}\n\n.eye::before {\n  content: \"\";\n  display: flex;\n  width: 1rem;\n  height: 2rem;\n  background-color: #000;\n  border-radius: 50%;\n  animation: blink 4s ease-in-out alternate infinite;\n}\n\n.flames {\n  display: flex;\n  position: absolute;\n  z-index: 0;\n}\n\n.particle {\n  display: flex;\n  position: absolute;\n  background-color: #FA95FB;\n  border-radius: 50%;\n  filter: blur(.3rem);\n  border-top: 5px solid #E220B8;\n  border-left: 5px solid #E220B8;\n}\n\n.flames::before {\n  content: \"\";\n  position: absolute;\n  width: 8rem;\n  height: 8rem;\n  background: #f865d8;\n  filter: blur(5rem);\n  opacity: 0.5;\n  border-radius: 50%;\n  top: -8rem;\n  left: -4rem;\n  z-index: 4;\n  animation: pulse 3s linear infinite;\n}\n\n.particle:nth-child(1) {\n  width: 4rem;\n  height: 4rem;\n  top: -6rem;\n  animation: move 7s alternate-reverse infinite;\n}\n\n.particle:nth-child(2) {\n  width: 1.5rem;\n  height: 1.5rem;\n  top: -8rem;\n  left: -5rem;\n  animation: move 1.5s  ease-in-out reverse infinite;\n}\n\n.particle:nth-child(3) {\n  width: 4rem;\n  height: 4rem;\n  top: -5rem;\n  left: -4rem;\n  animation: move 8s alternate-reverse infinite;\n}\n\n.particle:nth-child(4) {\n  width: 3rem;\n  height: 3rem;\n  top: -7.5rem;\n  animation: move 4s alternate-reverse infinite;\n}\n\n.particle:nth-child(5) {\n  width: 2rem;\n  height: 2rem;\n  top: -9rem;\n  left: 1rem;\n  animation: move 2.5s alternate-reverse infinite;\n}\n\n.particle:nth-child(6) {\n  width: 2rem;\n  height: 2rem;\n  top: -6.8rem;\n  left: -1.5rem;\n  animation: move 5s alternate-reverse infinite;\n}\n\n.particle:nth-child(7) {\n  width: 1rem;\n  height: 1rem;\n  top: -10rem;\n  left: -1rem;\n  animation: move 1.2s alternate-reverse infinite;\n}\n\n.particle:nth-child(8) {\n  width: 1.3rem;\n  height: 1.3rem;\n  top: -7.5rem;\n  left: -2rem;\n  animation: move 2.5s alternate-reverse infinite;\n}\n\n@keyframes move {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  50% {\n    transform: translate(4px, 6px);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes blink {\n  20% {\n    transform: translate(0, 0);\n    height: 2rem;\n  }\n\n  30% {\n    height: 0;\n  }\n\n  40% {\n    transform: translate(5px, 10px);\n    height: 0;\n  }\n\n  50% {\n    height: 2rem;\n  }\n\n  70% {\n    transform: translate(-10px, -10px);\n  }\n\n  90% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes pulse {\n  0% {\n    opacity: 0.5;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0.5;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/StealthWorm_mighty-bear-58.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"head\"></view>\n  \n  <view class=\"flames\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n    <view class=\"particle\"></view>\n  </div>\n  \n  <view class=\"eye\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMightyBear58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by StealthWorm - Tags: loader, bobby, dead cells */\n.loader {\n  display: flex;\n  width: 8rem;\n  height: 8rem;\n  justify-items: center;\n  justify-content: center;\n  align-items: center;\n}\n\n.head {\n  width: 100%;\n  height: 100%;\n  background-color: #FA95FB;\n  border-radius: 50%;\n  animation: move 3s linear infinite;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 1rem 1rem #E220B8;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  \n  z-index: 1;\n}\n\n.eye {\n  display: flex;\n  position: absolute;\n  width: 4rem;\n  height: 4rem;\n  background-color: #EFFFC8;\n  border-radius: 50%;\n  align-items: center;\n  justify-content: center;\n  z-index: 2;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 1rem #F752F7;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: move 5s alternate infinite;\n}\n\n.eye::before {\n  content: \"\";\n  display: flex;\n  width: 1rem;\n  height: 2rem;\n  background-color: #000;\n  border-radius: 50%;\n  animation: blink 4s ease-in-out alternate infinite;\n}\n\n.flames {\n  display: flex;\n  position: absolute;\n  z-index: 0;\n}\n\n.particle {\n  display: flex;\n  position: absolute;\n  background-color: #FA95FB;\n  border-radius: 50%;\n  \n  border-top: 10rpx solid #E220B8;\n  border-left: 10rpx solid #E220B8;\n}\n\n.flames::before {\n  content: \"\";\n  position: absolute;\n  width: 8rem;\n  height: 8rem;\n  background: #f865d8;\n  \n  opacity: 0.5;\n  border-radius: 50%;\n  top: -8rem;\n  left: -4rem;\n  z-index: 4;\n  animation: pulse 3s linear infinite;\n}\n\n.particle:nth-child(1) {\n  width: 4rem;\n  height: 4rem;\n  top: -6rem;\n  animation: move 7s alternate-reverse infinite;\n}\n\n.particle:nth-child(2) {\n  width: 1.5rem;\n  height: 1.5rem;\n  top: -8rem;\n  left: -5rem;\n  animation: move 1.5s  ease-in-out reverse infinite;\n}\n\n.particle:nth-child(3) {\n  width: 4rem;\n  height: 4rem;\n  top: -5rem;\n  left: -4rem;\n  animation: move 8s alternate-reverse infinite;\n}\n\n.particle:nth-child(4) {\n  width: 3rem;\n  height: 3rem;\n  top: -7.5rem;\n  animation: move 4s alternate-reverse infinite;\n}\n\n.particle:nth-child(5) {\n  width: 2rem;\n  height: 2rem;\n  top: -9rem;\n  left: 1rem;\n  animation: move 2.5s alternate-reverse infinite;\n}\n\n.particle:nth-child(6) {\n  width: 2rem;\n  height: 2rem;\n  top: -6.8rem;\n  left: -1.5rem;\n  animation: move 5s alternate-reverse infinite;\n}\n\n.particle:nth-child(7) {\n  width: 1rem;\n  height: 1rem;\n  top: -10rem;\n  left: -1rem;\n  animation: move 1.2s alternate-reverse infinite;\n}\n\n.particle:nth-child(8) {\n  width: 1.3rem;\n  height: 1.3rem;\n  top: -7.5rem;\n  left: -2rem;\n  animation: move 2.5s alternate-reverse infinite;\n}\n\n@keyframes move {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  50% {\n    transform: translate(8rpx, 12rpx);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes blink {\n  20% {\n    transform: translate(0, 0);\n    height: 2rem;\n  }\n\n  30% {\n    height: 0;\n  }\n\n  40% {\n    transform: translate(10rpx, 20rpx);\n    height: 0;\n  }\n\n  50% {\n    height: 2rem;\n  }\n\n  70% {\n    transform: translate(-20rpx, -20rpx);\n  }\n\n  90% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes pulse {\n  0% {\n    opacity: 0.5;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0.5;\n  }\n}\n\n",
+    "component_name": "GalaxyMightyBear58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3431,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.584Z",
+  "updated_at": "2025-07-31T07:55:40.584Z"
+}

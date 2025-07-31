@@ -1,0 +1,118 @@
+{
+  "id": "tarantino421_swift-zebra-86",
+  "name": "swift-zebra-86",
+  "category": "buttons",
+  "author": "tarantino421",
+  "description": "swift-zebra-86 组件 (button, hover button, fall, animation, interactive)",
+  "tags": [
+    "button",
+    "hover button",
+    "fall",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"box\">\n  <button class=\"button\">FALL</button>\n  <div class=\"falling-leaves\">\n    <span class=\"leaf\" style=\"--i: 13; --hue:20\"></span>\n    <span class=\"leaf\" style=\"--i: 16; --hue:10\"></span>\n    <span class=\"leaf\" style=\"--i: 17; --hue:0\"></span>\n    <span class=\"leaf\" style=\"--i: 21; --hue:10\"></span>\n    <span class=\"leaf\" style=\"--i: 13; --hue:90\"></span>\n    <span class=\"leaf\" style=\"--i: 11; --hue:70\"></span>\n    <span class=\"leaf\" style=\"--i: 14; --hue:40\"></span>\n    <span class=\"leaf\" style=\"--i: 17; --hue:60\"></span>\n    <span class=\"leaf\" style=\"--i: 19; --hue:0\"></span>\n    <span class=\"leaf\" style=\"--i: 26; --hue:90\"></span>\n    <span class=\"leaf\" style=\"--i: 17; --hue:60\"></span>\n    <span class=\"leaf\" style=\"--i: 20; --hue:10\"></span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by tarantino421 - Tags: button, hover button, fall */\n.box {\n  --clr-shadow__border: #ef7305;\n  --clr-text: #F6F4EB;\n  --clr-falling-leaves: #441a12;\n  --size: 3rem;\n  position: relative;\n  outline: 1px solid var(--clr-shadow__border);\n}\n\n.button {\n  background: transparent;\n  padding: calc(var(--size) / 3) var(--size);\n  font-weight: 600;\n  font-size: 1.5rem;\n  border: none;\n  cursor: pointer;\n  color: var(--clr-text);\n  letter-spacing: 0.2rem;\n  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),\n    -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);\n}\n\n.falling-leaves {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  display: flex;\n  background: var(--clr-falling-leaves);\n}\n\n.box:hover .falling-leaves {\n  opacity: 1;\n}\n\n.leaf {\n  height: 1rem;\n  width: 1rem;\n  clip-path: polygon(\n    45% 0%,\n    45% 10%,\n    15% 30%,\n    35% 60%,\n    20% 80%,\n    45% 100%,\n    70% 80%,\n    55% 60%,\n    85% 30%,\n    55% 10%,\n    55% 0%\n  );\n  background-color: hsl(var(--hue), 70%, 50%);\n  animation: falling-leaves-animation linear infinite;\n  animation-duration: calc(0.5s * var(--i));\n}\n\n@keyframes falling-leaves-animation {\n  0% {\n    transform: rotate(-10deg) translateY(calc(-51% * var(--i)));\n  }\n\n  50% {\n    transform: rotate(-40deg) translateY(calc(0% * var(--i)));\n  }\n\n  100% {\n    transform: rotate(150deg) translateY(calc(100% * var(--i)));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/tarantino421_swift-zebra-86.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>\n  <button class=\"button\"></button>FALL</button>\n  <view class=\"falling-leaves\"></view>\n    <text class=\"leaf\" style=\"--i: 13; --hue:20\"></text>\n    <text class=\"leaf\" style=\"--i: 16; --hue:10\"></text>\n    <text class=\"leaf\" style=\"--i: 17; --hue:0\"></text>\n    <text class=\"leaf\" style=\"--i: 21; --hue:10\"></text>\n    <text class=\"leaf\" style=\"--i: 13; --hue:90\"></text>\n    <text class=\"leaf\" style=\"--i: 11; --hue:70\"></text>\n    <text class=\"leaf\" style=\"--i: 14; --hue:40\"></text>\n    <text class=\"leaf\" style=\"--i: 17; --hue:60\"></text>\n    <text class=\"leaf\" style=\"--i: 19; --hue:0\"></text>\n    <text class=\"leaf\" style=\"--i: 26; --hue:90\"></text>\n    <text class=\"leaf\" style=\"--i: 17; --hue:60\"></text>\n    <text class=\"leaf\" style=\"--i: 20; --hue:10\"></text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySwiftZebra86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by tarantino421 - Tags: button, hover button, fall */\n.box {\n  --clr-shadow__border: #ef7305;\n  --clr-text: #F6F4EB;\n  --clr-falling-leaves: #441a12;\n  --size: 3rem;\n  position: relative;\n  outline: 2rpx solid var(--clr-shadow__border);\n}\n\n.button {\n  background: transparent;\n  padding: calc(var(--size) / 3) var(--size);\n  font-weight: 600;\n  font-size: 1.5rem;\n  border: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  color: var(--clr-text);\n  letter-spacing: 0.2rem;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 0rpx var(--clr-shadow__border), 0rpx 4rpx var(--clr-shadow__border),\n    -4rpx 0rpx var(--clr-shadow__border), 0rpx -4rpx var(--clr-shadow__border);\n  /* #endif */\n}\n\n.falling-leaves {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  display: flex;\n  background: var(--clr-falling-leaves);\n}\n\n.box:hover .falling-leaves {\n  opacity: 1;\n}\n\n.leaf {\n  height: 1rem;\n  width: 1rem;\n  \n  background-color: hsl(var(--hue), 70%, 50%);\n  animation: falling-leaves-animation linear infinite;\n  animation-duration: calc(0.5s * var(--i));\n}\n\n@keyframes falling-leaves-animation {\n  0% {\n    transform: rotate(-10deg) translateY(calc(-51% * var(--i)));\n  }\n\n  50% {\n    transform: rotate(-40deg) translateY(calc(0% * var(--i)));\n  }\n\n  100% {\n    transform: rotate(150deg) translateY(calc(100% * var(--i)));\n  }\n}\n\n\n\n\n\n\n\n\n",
+    "component_name": "GalaxySwiftZebra86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2330,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.957Z",
+  "updated_at": "2025-07-31T07:55:37.957Z"
+}

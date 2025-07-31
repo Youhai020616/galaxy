@@ -1,0 +1,85 @@
+{
+  "id": "satyamchaudharydev_red-cow-21",
+  "name": "red-cow-21",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "red-cow-21 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.loader {\n  display: block;\n  --height-of-loader: 4px;\n  --loader-color: #0071e2;\n  width: 130px;\n  height: var(--height-of-loader);\n  border-radius: 30px;\n  background-color: rgba(0,0,0,0.2);\n  position: relative;\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  background: var(--loader-color);\n  top: 0;\n  left: 0;\n  width: 0%;\n  height: 100%;\n  border-radius: 30px;\n  animation: moving 1s ease-in-out infinite;\n  ;\n}\n\n@keyframes moving {\n  50% {\n    width: 100%;\n  }\n\n  100% {\n    width: 0;\n    right: 0;\n    left: unset;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_red-cow-21.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyRedCow21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.loader {\n  display: block;\n  --height-of-loader: 8rpx;\n  --loader-color: #0071e2;\n  width: 260rpx;\n  height: var(--height-of-loader);\n  border-radius: 60rpx;\n  background-color: rgba(0,0,0,0.2);\n  position: relative;\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  background: var(--loader-color);\n  top: 0;\n  left: 0;\n  width: 0%;\n  height: 100%;\n  border-radius: 60rpx;\n  animation: moving 1s ease-in-out infinite;\n  ;\n}\n\n@keyframes moving {\n  50% {\n    width: 100%;\n  }\n\n  100% {\n    width: 0;\n    right: 0;\n    left: unset;\n  }\n}\n",
+    "component_name": "GalaxyRedCow21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 631,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.606Z",
+  "updated_at": "2025-07-31T07:55:42.606Z"
+}

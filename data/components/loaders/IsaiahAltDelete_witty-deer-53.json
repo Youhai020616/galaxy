@@ -1,0 +1,90 @@
+{
+  "id": "IsaiahAltDelete_witty-deer-53",
+  "name": "witty-deer-53",
+  "category": "loaders",
+  "author": "IsaiahAltDelete",
+  "description": "witty-deer-53 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"space-loader\">\n  <div id=\"stars\" class=\"stars\"></div>\n  <div class=\"orbit\"></div>\n  <div class=\"ring\"></div>\n  <div class=\"planet\"></div>\n  <div class=\"satellite\"></div>\n</div>",
+    "css": "/* From Uiverse.io by IsaiahAltDelete  - Tags: loader */\n.space-loader {\n  width: 200px;\n  height: 200px;\n  position: relative;\n  background-color: #000;\n  border-radius: 50%;\n  overflow: hidden;\n  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);\n}\n\n.planet {\n  width: 80px;\n  height: 80px;\n  background: radial-gradient(circle at 30% 30%, #fff, #888);\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);\n}\n\n.ring {\n  width: 120px;\n  height: 120px;\n  border: 4px solid rgba(255, 255, 255, 0.3);\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) rotateX(75deg) rotateY(15deg);\n  animation: rotate 12s linear infinite;\n}\n\n.orbit {\n  width: 160px;\n  height: 160px;\n  border: 1px dashed rgba(255, 255, 255, 0.3);\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n.satellite {\n  width: 10px;\n  height: 10px;\n  background-color: #fff;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: orbit 8s linear infinite;\n}\n\n.stars {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  animation: twinkle 4s ease-in-out infinite;\n}\n\n.star {\n  position: absolute;\n  background-color: #fff;\n  border-radius: 50%;\n}\n\n@keyframes rotate {\n  0% {\n    transform: translate(-50%, -50%) rotateX(75deg) rotateY(15deg) rotate(0deg);\n  }\n  100% {\n    transform: translate(-50%, -50%) rotateX(75deg) rotateY(15deg)\n      rotate(360deg);\n  }\n}\n\n@keyframes orbit {\n  0% {\n    transform: rotate(0deg) translateX(80px) rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg) translateX(80px) rotate(-360deg);\n  }\n}\n\n@keyframes twinkle {\n  0%,\n  100% {\n    opacity: 0.3;\n  }\n  50% {\n    opacity: 0.8;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/IsaiahAltDelete_witty-deer-53.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"space-loader\"></view>\n  <view id=\"stars\" class=\"stars\"></view>\n  <view class=\"orbit\"></view>\n  <view class=\"ring\"></view>\n  <view class=\"planet\"></view>\n  <view class=\"satellite\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWittyDeer53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by IsaiahAltDelete  - Tags: loader */\n.space-loader {\n  width: 400rpx;\n  height: 400rpx;\n  position: relative;\n  background-color: #000;\n  border-radius: 50%;\n  overflow: hidden;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 60rpx rgba(255, 255, 255, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.planet {\n  width: 160rpx;\n  height: 160rpx;\n  background: radial-gradient(circle at 30% 30%, #fff, #888);\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx rgba(255, 255, 255, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.ring {\n  width: 240rpx;\n  height: 240rpx;\n  border: 8rpx solid rgba(255, 255, 255, 0.3);\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) rotateX(75deg) rotateY(15deg);\n  animation: rotate 12s linear infinite;\n}\n\n.orbit {\n  width: 320rpx;\n  height: 320rpx;\n  border: 2rpx dashed rgba(255, 255, 255, 0.3);\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n.satellite {\n  width: 20rpx;\n  height: 20rpx;\n  background-color: #fff;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: orbit 8s linear infinite;\n}\n\n.stars {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  animation: twinkle 4s ease-in-out infinite;\n}\n\n.star {\n  position: absolute;\n  background-color: #fff;\n  border-radius: 50%;\n}\n\n@keyframes rotate {\n  0% {\n    transform: translate(-50%, -50%) rotateX(75deg) rotateY(15deg) rotate(0deg);\n  }\n  100% {\n    transform: translate(-50%, -50%) rotateX(75deg) rotateY(15deg)\n      rotate(360deg);\n  }\n}\n\n@keyframes orbit {\n  0% {\n    transform: rotate(0deg) translateX(160rpx) rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg) translateX(160rpx) rotate(-360deg);\n  }\n}\n\n@keyframes twinkle {\n  0%,\n  100% {\n    opacity: 0.3;\n  }\n  50% {\n    opacity: 0.8;\n  }\n}\n\n",
+    "component_name": "GalaxyWittyDeer53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2053,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.359Z",
+  "updated_at": "2025-07-31T07:55:39.359Z"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "Vaperene_afraid-stingray-79",
+  "name": "afraid-stingray-79",
+  "category": "buttons",
+  "author": "Vaperene",
+  "description": "afraid-stingray-79 组件 (simple, material design, neumorphism, icon, button, #button, button hover effect, 2d button, gradient, interactive)",
+  "tags": [
+    "simple",
+    "material design",
+    "neumorphism",
+    "icon",
+    "button",
+    "#button",
+    "button hover effect",
+    "2d button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"send-message-button\">\n  <div class=\"send-message-content\">\n    <svg height=\"24\" width=\"24\" viewBox=\"0 0 23.19 19.89\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M0,19.89l23.19-9.95L0,0v7.74l16.58,2.21L0,12.16v7.74Z\" fill=\"#ccc\"></path>\n      <path d=\"M.42,19.53l22.36-9.59L.42.36v7.46l15.98,2.13L.42,12.08v7.46Z\" fill=\"#fff\"></path>\n      <path d=\"M1.1,18.95l20.99-9L1.1.95v7l15,2L1.1,11.95v7Z\" fill=\"#000\"></path>\n    </svg>\n    <span>Send Message</span>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by Vaperene  - Tags: simple, material design, neumorphism, icon, button, #button, button hover effect , 2d button */\n.send-message-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f3f3f300;\n  border: 2px solid #a5a5a500;\n  border-radius: 10px;\n  padding: 5px;\n  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n  font-family: Arial, sans-serif;\n  cursor: pointer;\n  transition: background-color 0.3s, box-shadow 0.5s, border-color 0.4s,\n    padding 0.3s;\n}\n\n.send-message-button:hover {\n  background-image: linear-gradient(59deg, #f3f3f3, #d7d6d6c0);\n  border-color: #e9e9e9;\n}\n\n.send-message-button:active {\n}\n\n.send-message-content {\n  display: inline-flex;\n  align-items: center;\n  background-color: #ffffff;\n  border-radius: 25px;\n  padding: 8px 16px;\n  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);\n  transition: box-shadow 0.3s;\n}\n\n.send-message-button:active .send-message-content {\n  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.3);\n}\n\n.send-message-content svg {\n  margin-right: 10px;\n  fill: #1d0c0c;\n  transition: fill 0.3s;\n}\n\n.send-message-content span {\n  font-size: 16px;\n  font-weight: bold;\n  color: #000;\n  transition: color 0.3s;\n}\n\n.send-message-button:hover .send-message-content span {\n  color: #1d0c0c;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Vaperene_afraid-stingray-79.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"send-message-button\"></button>\n  <view class=\"send-message-content\"></view>\n    <view height=\"24\" width=\"24\" viewBox=\"0 0 23.19 19.89\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M0,19.89l23.19-9.95L0,0v7.74l16.58,2.21L0,12.16v7.74Z\" fill=\"#ccc\"></path>\n      <path d=\"M.42,19.53l22.36-9.59L.42.36v7.46l15.98,2.13L.42,12.08v7.46Z\" fill=\"#fff\"></path>\n      <path d=\"M1.1,18.95l20.99-9L1.1.95v7l15,2L1.1,11.95v7Z\" fill=\"#000\"></path>\n    </svg>\n    <text>Send Message</text>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyAfraidStingray79',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Vaperene  - Tags: simple, material design, neumorphism, icon, button, #button, button hover effect , 2d button */\n.send-message-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f3f3f300;\n  border: 4rpx solid #a5a5a500;\n  border-radius: 20rpx;\n  padding: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 8rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  font-family: Arial, sans-serif;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: background-color 0.3s, box-shadow 0.5s, border-color 0.4s,\n    padding 0.3s;\n}\n\n.send-message-button:hover {\n  background-image: linear-gradient(59deg, #f3f3f3, #d7d6d6c0);\n  border-color: #e9e9e9;\n}\n\n.send-message-button:active {\n}\n\n.send-message-content {\n  display: inline-flex;\n  align-items: center;\n  background-color: #ffffff;\n  border-radius: 50rpx;\n  padding: 16rpx 32rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 6rpx 6rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: box-shadow 0.3s;\n}\n\n.send-message-button:active .send-message-content {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 4rpx 4rpx 4rpx 4rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.send-message-content svg {\n  margin-right: 20rpx;\n  fill: #1d0c0c;\n  transition: fill 0.3s;\n}\n\n.send-message-content span {\n  font-size: 32rpx;\n  font-weight: bold;\n  color: #000;\n  transition: color 0.3s;\n}\n\n.send-message-button:hover .send-message-content span {\n  color: #1d0c0c;\n}\n\n",
+    "component_name": "GalaxyAfraidStingray79"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1805,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.080Z",
+  "updated_at": "2025-07-31T07:55:35.080Z"
+}

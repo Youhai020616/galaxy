@@ -1,0 +1,114 @@
+{
+  "id": "MusKRI_wise-pig-77",
+  "name": "wise-pig-77",
+  "category": "buttons",
+  "author": "MusKRI",
+  "description": "wise-pig-77 组件 (button, active, ripple, animation, gradient)",
+  "tags": [
+    "button",
+    "active",
+    "ripple",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span></span>\n  Button\n  <span></span>\n</button>",
+    "css": "/* From Uiverse.io by MusKRI - Source: https://www.youtube.com/watch?v=e3w9liPXSi4 - Tags: button, active, ripple */\n.button {\n  padding: 15px 40px;\n  background: linear-gradient(to right, #09021c, #0c061d);\n  color: white;\n  border: 1px solid transparent;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 300ms ease-in-out;\n  position: relative;\n  isolation: isolate;\n  overflow: hidden;\n}\n\n.button > span {\n  position: absolute;\n  z-index: -1;\n  background: transparent;\n  opacity: 0.5;\n  width: 33.333%;\n  height: 100%;\n}\n\n.button > :first-child {\n  left: 0;\n  top: 0;\n}\n\n.button > :last-child {\n  right: 0;\n  top: 0;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  background: hsl(236, 19%, 25%);\n  opacity: 0;\n  width: 10%;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  inset: 0;\n  margin: auto;\n  transition: opacity 1000ms 200ms ease-in-out, transform 200ms ease-in-out;\n}\n\n.button:active::before {\n  transform: scale(13);\n  opacity: 1;\n  transition: all 400ms ease-in-out;\n}\n\n.button:has(:first-child:active)::before {\n  margin-left: 0;\n}\n\n.button:has(:last-child:active)::before {\n  margin-right: 0;\n}\n\n.button:has(:first-child:active)::before,\n.button:has(:last-child:active)::before {\n  transition: all 400ms ease-in-out;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/MusKRI_wise-pig-77.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text></text>\n  Button\n  <text></text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWisePig77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MusKRI - Source: https://www.youtube.com/watch?v=e3w9liPXSi4 - Tags: button, active, ripple */\n.button {\n  padding: 30rpx 80rpx;\n  background: linear-gradient(to right, #09021c, #0c061d);\n  color: white;\n  border: 2rpx solid transparent;\n  border-radius: 16rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 300ms ease-in-out;\n  position: relative;\n  isolation: isolate;\n  overflow: hidden;\n}\n\n.button > span {\n  position: absolute;\n  z-index: -1;\n  background: transparent;\n  opacity: 0.5;\n  width: 33.333%;\n  height: 100%;\n}\n\n.button > :first-child {\n  left: 0;\n  top: 0;\n}\n\n.button > :last-child {\n  right: 0;\n  top: 0;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  background: hsl(236, 19%, 25%);\n  opacity: 0;\n  width: 10%;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  inset: 0;\n  margin: auto;\n  transition: opacity 1000ms 200ms ease-in-out, transform 200ms ease-in-out;\n}\n\n.button:active::before {\n  transform: scale(13);\n  opacity: 1;\n  transition: all 400ms ease-in-out;\n}\n\n.button:has(:first-child:active)::before {\n  margin-left: 0;\n}\n\n.button:has(:last-child:active)::before {\n  margin-right: 0;\n}\n\n.button:has(:first-child:active)::before,\n.button:has(:last-child:active)::before {\n  transition: all 400ms ease-in-out;\n}\n",
+    "component_name": "GalaxyWisePig77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1346,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.091Z",
+  "updated_at": "2025-07-31T07:55:34.091Z"
+}

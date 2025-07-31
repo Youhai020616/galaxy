@@ -1,0 +1,98 @@
+{
+  "id": "MohamedAboSeada_bitter-skunk-14",
+  "name": "bitter-skunk-14",
+  "category": "tooltips",
+  "author": "MohamedAboSeada",
+  "description": "bitter-skunk-14 组件 (simple, tooltip, animation, minimalist, hover, rounded, cube, modern, interactive)",
+  "tags": [
+    "simple",
+    "tooltip",
+    "animation",
+    "minimalist",
+    "hover",
+    "rounded",
+    "cube",
+    "modern",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <div class=\"tooltip\">\n    <p>This is a test</p>\n    <button>Got It</button>\n    <div class=\"line\"></div>\n  </div>\n  <span class=\"text\">Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by MohamedAboSeada  - Tags: simple, tooltip, animation, minimalist, hover, rounded, cube, modern */\n.tooltip-container {\n  position: relative;\n  height: 50px;\n  display: flex;\n  background-color: darkgray;\n  border-radius: 5px;\n  box-shadow: 0 3px 0 rgb(0 0 0 / 80%);\n  width: 200px;\n  cursor: pointer;\n  align-items: center;\n  justify-content: center;\n}\n.tooltip {\n  position: absolute;\n  top: -110px;\n  left: 50%;\n  opacity: 0;\n  transition: 300ms ease;\n  background-color: #000;\n  color: #fff;\n  border-radius: 5px;\n  display: flex;\n  gap: 10px 0;\n  cursor: auto;\n  box-shadow: 0 0 10px rgb(0 0 0 / 50%);\n  font-style: oblique;\n  flex-direction: column;\n  padding: 10px;\n  width: 200px;\n  animation: opacity;\n  transform: translateX(-50%);\n}\n.tooltip button {\n  outline: none;\n  border: 1px solid #fff;\n  background-color: transparent;\n  color: #fff;\n  width: 70px;\n  height: 30px;\n  border-radius: 5px;\n  font-family: inherit;\n  font-size: 1rem;\n  align-self: flex-end;\n  cursor: pointer;\n}\n.line {\n  position: absolute;\n  width: 3px;\n  height: 25px;\n  background-color: #000;\n  top: 100%;\n  left: 50%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n  transform: translateX(-50%);\n}\n.line::before {\n  content: \"\";\n  position: absolute;\n  bottom: -5px;\n  width: 10px;\n  height: 10px;\n  background-color: #000;\n  border-radius: 50%;\n}\n.tooltip-container:hover > .tooltip {\n  opacity: 1;\n}\n.tooltip-container:hover > .tooltip > .line {\n  animation: HeightUP 400ms ease;\n}\n@keyframes HeightUP {\n  0% {\n    height: 0;\n  }\n  100% {\n    height: 25px;\n  }\n}\n@keyframes opcaityUp {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/MohamedAboSeada_bitter-skunk-14.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <view class=\"tooltip\"></view>\n    <text>This is a test</text>\n    <button></button>Got It</button>\n    <view class=\"line\"></view>\n  </div>\n  <text class=\"text\">Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBitterSkunk14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MohamedAboSeada  - Tags: simple, tooltip, animation, minimalist, hover, rounded, cube, modern */\n.tooltip-container {\n  position: relative;\n  height: 100rpx;\n  display: flex;\n  background-color: darkgray;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 6rpx 0 rgb(0 0 0 / 80%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  width: 400rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  align-items: center;\n  justify-content: center;\n}\n.tooltip {\n  position: absolute;\n  top: -220rpx;\n  left: 50%;\n  opacity: 0;\n  transition: 300ms ease;\n  background-color: #000;\n  color: #fff;\n  border-radius: 10rpx;\n  display: flex;\n  gap: 20rpx 0;\n  /* #ifdef H5 */\n  cursor: auto;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx rgb(0 0 0 / 50%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  font-style: oblique;\n  flex-direction: column;\n  padding: 20rpx;\n  width: 400rpx;\n  animation: opacity;\n  transform: translateX(-50%);\n}\n.tooltip button {\n  outline: none;\n  border: 2rpx solid #fff;\n  background-color: transparent;\n  color: #fff;\n  width: 140rpx;\n  height: 60rpx;\n  border-radius: 10rpx;\n  font-family: inherit;\n  font-size: 1rem;\n  align-self: flex-end;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n.line {\n  position: absolute;\n  width: 6rpx;\n  height: 50rpx;\n  background-color: #000;\n  top: 100%;\n  left: 50%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n  transform: translateX(-50%);\n}\n.line::before {\n  content: \"\";\n  position: absolute;\n  bottom: -10rpx;\n  width: 20rpx;\n  height: 20rpx;\n  background-color: #000;\n  border-radius: 50%;\n}\n.tooltip-container:hover > .tooltip {\n  opacity: 1;\n}\n.tooltip-container:hover > .tooltip > .line {\n  animation: HeightUP 400ms ease;\n}\n@keyframes HeightUP {\n  0% {\n    height: 0;\n  }\n  100% {\n    height: 50rpx;\n  }\n}\n@keyframes opcaityUp {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n",
+    "component_name": "GalaxyBitterSkunk14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1875,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.509Z",
+  "updated_at": "2025-07-31T07:55:38.509Z"
+}

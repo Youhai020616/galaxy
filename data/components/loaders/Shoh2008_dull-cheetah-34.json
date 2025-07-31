@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_dull-cheetah-34",
+  "name": "dull-cheetah-34",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "dull-cheetah-34 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 48px;\n  height: 48px;\n  display: flex;\n  transform-origin: 50% 125%;\n  animation: mov-y 1s infinite linear;\n}\n\n.loader:before,\n      .loader:after {\n  content: \"\";\n  flex: 1;\n  background: #fff;\n  transform-origin: 0% 100%;\n  animation: rtr-x 1s infinite linear;\n}\n\n.loader:before {\n  transform-origin: 100% 100%;\n  animation-name: rtr-rx;\n}\n\n@keyframes mov-y {\n  0%,25% {\n    transform: translateY(0)     scaleY(1)\n  }\n\n  49% {\n    transform: translateY(-75%)  scaleY(1)\n  }\n\n  50% {\n    transform: translateY(-75%)  scaleY(-1)\n  }\n\n  75%,100% {\n    transform: translateY(-150%) scaleY(-1)\n  }\n}\n\n@keyframes rtr-x {\n  25%,75% {\n    transform: rotate(0deg)\n  }\n\n  50% {\n    transform: rotate(90deg)\n  }\n}\n\n@keyframes rtr-rx {\n  25%,75% {\n    transform: rotate(0deg)\n  }\n\n  50% {\n    transform: rotate(-90deg)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_dull-cheetah-34.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyDullCheetah34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 96rpx;\n  height: 96rpx;\n  display: flex;\n  transform-origin: 50% 125%;\n  animation: mov-y 1s infinite linear;\n}\n\n.loader:before,\n      .loader:after {\n  content: \"\";\n  flex: 1;\n  background: #fff;\n  transform-origin: 0% 100%;\n  animation: rtr-x 1s infinite linear;\n}\n\n.loader:before {\n  transform-origin: 100% 100%;\n  animation-name: rtr-rx;\n}\n\n@keyframes mov-y {\n  0%,25% {\n    transform: translateY(0)     scaleY(1)\n  }\n\n  49% {\n    transform: translateY(-75%)  scaleY(1)\n  }\n\n  50% {\n    transform: translateY(-75%)  scaleY(-1)\n  }\n\n  75%,100% {\n    transform: translateY(-150%) scaleY(-1)\n  }\n}\n\n@keyframes rtr-x {\n  25%,75% {\n    transform: rotate(0deg)\n  }\n\n  50% {\n    transform: rotate(90deg)\n  }\n}\n\n@keyframes rtr-rx {\n  25%,75% {\n    transform: rotate(0deg)\n  }\n\n  50% {\n    transform: rotate(-90deg)\n  }\n}\n    \n",
+    "component_name": "GalaxyDullCheetah34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 917,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.347Z",
+  "updated_at": "2025-07-31T07:55:40.347Z"
+}

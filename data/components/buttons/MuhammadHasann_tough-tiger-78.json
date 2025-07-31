@@ -1,0 +1,123 @@
+{
+  "id": "MuhammadHasann_tough-tiger-78",
+  "name": "tough-tiger-78",
+  "category": "buttons",
+  "author": "MuhammadHasann",
+  "description": "tough-tiger-78 组件 (simple, glassmorphism, blue, button, shadow, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "glassmorphism",
+    "blue",
+    "button",
+    "shadow",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"button-cont\">\n  <button class=\"button\">Light Button</button>\n</div>",
+    "css": "/* From Uiverse.io by MuhammadHasann  - Tags: simple, glassmorphism, blue, button, shadow */\n.button-cont {\n  position: relative;\n  width: fit-content;\n  height: fit-content;\n  border-radius: 9999px;\n}\n\n.button-cont::before {\n  content: \"\";\n  position: absolute;\n  top: 0%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 0;\n  height: 0;\n  background: #06b5d4;\n  border-radius: 50%;\n  filter: blur(30px);\n  opacity: 0.8;\n  transition: all 0.6s cubic-bezier(1, 0, 0, 1);\n}\n\n.button-cont:hover::before {\n  width: 100%;\n  height: 25px;\n}\n\n.button {\n  cursor: pointer;\n  position: relative;\n  padding: 20px 48px;\n  background-color: #083344;\n  font-size: 16px;\n  color: #fefefe;\n  font-weight: 500;\n  border: none;\n  border-radius: 9999px;\n  backdrop-filter: blur(4px);\n  box-shadow: inset 0px 1px 1px #67e8f9;\n  transition: all 0.3s ease-in-out, box-shadow 0.1s ease-in-out;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, 0%);\n  width: 0;\n  height: 0;\n  border-radius: 50%;\n  box-shadow: 0px 0px 25px 3px #67e8f97e;\n  transition: all 0.5s cubic-bezier(1, 0, 0, 1);\n}\n\n.button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, 0%);\n  width: 0;\n  height: 0;\n  background-image: linear-gradient(\n    to right,\n    #06b5d400,\n    #4ec4db00,\n    #72d0e200,\n    #90ddea3d,\n    #ace9f277,\n    #ace9f2,\n    #ace9f2,\n    #ace9f277,\n    #90ddea3d,\n    #72d0e200,\n    #4ec3db00,\n    #06b6d400\n  );\n  border-radius: 0 0 50% 50%;\n  opacity: 0.8;\n  filter: drop-shadow(0px 0px 30px #06b6d4);\n  transition: all 0.5s cubic-bezier(1, 0, 0, 1);\n}\n\n.button-cont:hover .button {\n  background: #18181898;\n  box-shadow: inset 0px 0px 0px #fefefe;\n}\n\n.button-cont:hover .button::before {\n  width: 30%;\n  height: 2px;\n}\n\n.button-cont:hover .button::after {\n  width: 100%;\n  height: 2px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/MuhammadHasann_tough-tiger-78.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"button-cont\"></view>\n  <button class=\"button\"></button>Light Button</button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyToughTiger78',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MuhammadHasann  - Tags: simple, glassmorphism, blue, button, shadow */\n.button-cont {\n  position: relative;\n  width: fit-content;\n  height: fit-content;\n  border-radius: 19998rpx;\n}\n\n.button-cont::before {\n  content: \"\";\n  position: absolute;\n  top: 0%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 0;\n  height: 0;\n  background: #06b5d4;\n  border-radius: 50%;\n  \n  opacity: 0.8;\n  transition: all 0.6s cubic-bezier(1, 0, 0, 1);\n}\n\n.button-cont:hover::before {\n  width: 100%;\n  height: 50rpx;\n}\n\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  padding: 40rpx 96rpx;\n  background-color: #083344;\n  font-size: 32rpx;\n  color: #fefefe;\n  font-weight: 500;\n  border: none;\n  border-radius: 19998rpx;\n  backdrop-\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 2rpx 2rpx #67e8f9;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease-in-out, box-shadow 0.1s ease-in-out;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, 0%);\n  width: 0;\n  height: 0;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 50rpx 6rpx #67e8f97e;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.5s cubic-bezier(1, 0, 0, 1);\n}\n\n.button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, 0%);\n  width: 0;\n  height: 0;\n  background-image: linear-gradient(\n    to right,\n    #06b5d400,\n    #4ec4db00,\n    #72d0e200,\n    #90ddea3d,\n    #ace9f277,\n    #ace9f2,\n    #ace9f2,\n    #ace9f277,\n    #90ddea3d,\n    #72d0e200,\n    #4ec3db00,\n    #06b6d400\n  );\n  border-radius: 0 0 50% 50%;\n  opacity: 0.8;\n  \n  transition: all 0.5s cubic-bezier(1, 0, 0, 1);\n}\n\n.button-cont:hover .button {\n  background: #18181898;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 0rpx #fefefe;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button-cont:hover .button::before {\n  width: 30%;\n  height: 4rpx;\n}\n\n.button-cont:hover .button::after {\n  width: 100%;\n  height: 4rpx;\n}\n\n",
+    "component_name": "GalaxyToughTiger78"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1971,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.087Z",
+  "updated_at": "2025-07-31T07:55:34.087Z"
+}

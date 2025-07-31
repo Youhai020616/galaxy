@@ -1,0 +1,91 @@
+{
+  "id": "LightAndy1_helpless-fireant-0",
+  "name": "helpless-fireant-0",
+  "category": "loaders",
+  "author": "LightAndy1",
+  "description": "helpless-fireant-0 组件 (simple, icon, animation, yellow, loader, smooth, dark, stars)",
+  "tags": [
+    "simple",
+    "icon",
+    "animation",
+    "yellow",
+    "loader",
+    "smooth",
+    "dark",
+    "stars"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <svg viewBox=\"0 0 256 256\" class=\"star star1\" height=\"32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z\"></path>\n  </svg>\n  <svg viewBox=\"0 0 256 256\" class=\"star star2\" height=\"32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z\"></path>\n  </svg>\n  <svg viewBox=\"0 0 256 256\" class=\"star star3\" height=\"32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z\"></path>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by LightAndy1  - Tags: simple, icon, animation, yellow, loader, smooth, dark, stars */\n.loader {\n  user-select: none;\n}\n\n.star {\n  opacity: 0;\n  fill: #f8de7e;\n  animation: loader 2s infinite alternate;\n}\n\n.star2 {\n  height: 20px;\n  margin-left: -10px;\n  animation-delay: 0.25s;\n}\n\n.star3 {\n  height: 16px;\n  margin-left: -15px;\n  animation-delay: 0.5s;\n}\n\n@keyframes loader {\n  0% {\n    opacity: 0;\n    transform: translateY(0) translateX(50px) rotate (0deg);\n  }\n  10% {\n    opacity: 0;\n    transform: translateY(0) translateX(50px) rotate(0deg);\n  }\n  100% {\n    opacity: 1;\n    transform: translateY(-20px) translateX(0) rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/LightAndy1_helpless-fireant-0.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view viewBox=\"0 0 256 256\" class=\"star star1\" height=\"32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z\"></path>\n  </svg>\n  <view viewBox=\"0 0 256 256\" class=\"star star2\" height=\"32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z\"></path>\n  </svg>\n  <view viewBox=\"0 0 256 256\" class=\"star star3\" height=\"32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z\"></path>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHelplessFireant0',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by LightAndy1  - Tags: simple, icon, animation, yellow, loader, smooth, dark, stars */\n.loader {\n  user-select: none;\n}\n\n.star {\n  opacity: 0;\n  fill: #f8de7e;\n  animation: loader 2s infinite alternate;\n}\n\n.star2 {\n  height: 40rpx;\n  margin-left: -20rpx;\n  animation-delay: 0.25s;\n}\n\n.star3 {\n  height: 32rpx;\n  margin-left: -30rpx;\n  animation-delay: 0.5s;\n}\n\n@keyframes loader {\n  0% {\n    opacity: 0;\n    transform: translateY(0) translateX(100rpx) rotate (0deg);\n  }\n  10% {\n    opacity: 0;\n    transform: translateY(0) translateX(100rpx) rotate(0deg);\n  }\n  100% {\n    opacity: 1;\n    transform: translateY(-40rpx) translateX(0) rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyHelplessFireant0"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1848,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.642Z",
+  "updated_at": "2025-07-31T07:55:39.642Z"
+}

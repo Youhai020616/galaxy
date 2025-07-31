@@ -1,0 +1,113 @@
+{
+  "id": "PranabKumarSahoo_popular-fish-62",
+  "name": "popular-fish-62",
+  "category": "buttons",
+  "author": "PranabKumarSahoo",
+  "description": "popular-fish-62 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span>Button</span>\n</button>",
+    "css": "/* From Uiverse.io by PranabKumarSahoo - Tags: button */\nbutton {\n  display: inline-block;\n  border-radius: 4px;\n  background-color: #560af0;\n  border: none;\n  color: #FFFFFF;\n  text-align: center;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 16px;\n  width: 130px;\n  transition: all 0.2s;\n  cursor: pointer;\n  margin: 5px;\n}\n\nbutton span {\n  cursor: pointer;\n  display: inline-block;\n  position: relative;\n  transition: 0.2s;\n}\n\nbutton span:after {\n  content: '»';\n  position: absolute;\n  opacity: 0;\n  top: 0;\n  right: -15px;\n  transition: 0.2s;\n}\n\nbutton:hover span {\n  padding-right: 15px;\n}\n\nbutton:hover span:after {\n  opacity: 1;\n  right: 0;\n}\n\nbutton:hover {\n  color: #560af0;\n  background-color: #FFFFFF;\n  box-shadow: 4px 5px 17px -4px #560af0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/PranabKumarSahoo_popular-fish-62.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text>Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPopularFish62',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PranabKumarSahoo - Tags: button */\nbutton {\n  display: inline-block;\n  border-radius: 8rpx;\n  background-color: #560af0;\n  border: none;\n  color: #FFFFFF;\n  text-align: center;\n  font-size: 28rpx;\n  font-weight: bold;\n  padding: 32rpx;\n  width: 260rpx;\n  transition: all 0.2s;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  margin: 10rpx;\n}\n\nbutton span {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: inline-block;\n  position: relative;\n  transition: 0.2s;\n}\n\nbutton span:after {\n  content: '»';\n  position: absolute;\n  opacity: 0;\n  top: 0;\n  right: -30rpx;\n  transition: 0.2s;\n}\n\nbutton:hover span {\n  padding-right: 30rpx;\n}\n\nbutton:hover span:after {\n  opacity: 1;\n  right: 0;\n}\n\nbutton:hover {\n  color: #560af0;\n  background-color: #FFFFFF;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 10rpx 34rpx -8rpx #560af0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyPopularFish62"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 805,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.337Z",
+  "updated_at": "2025-07-31T07:55:34.337Z"
+}

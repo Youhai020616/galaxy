@@ -1,0 +1,112 @@
+{
+  "id": "Showbizfleet_sweet-squid-86",
+  "name": "sweet-squid-86",
+  "category": "buttons",
+  "author": "Showbizfleet",
+  "description": "sweet-squid-86 组件 (button, gradient, interactive)",
+  "tags": [
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by Showbizfleet - Tags: button */\nbutton {\n  height: 50px;\n  margin: 5px;\n  width: 120px;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: 600;\n  font-size: 16px;\n  color: #fff;\n  border: none;\n  border-radius: 5px;\n  background: linear-gradient(145deg, #9c27b0, #f44336, #ff9800, #ffc107, #8bc34a, #4caf50, #2196f3, #03a9f4, #00bcd4, #009688);\n  background-size: 200%;\n  background-position: 0%;\n  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);\n  transition: all 0.3s ease-in-out;\n}\n\nbutton:hover {\n  background-position: 100%;\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), inset 0px -2px 0px rgba(255, 255, 255, 0.2);\n}\n\nbutton:focus {\n  outline: none;\n}\n\nbutton:active {\n  background-size: 100%;\n  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Showbizfleet_sweet-squid-86.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxySweetSquid86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Showbizfleet - Tags: button */\nbutton {\n  height: 100rpx;\n  margin: 10rpx;\n  width: 240rpx;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: 600;\n  font-size: 32rpx;\n  color: #fff;\n  border: none;\n  border-radius: 10rpx;\n  background: linear-gradient(145deg, #9c27b0, #f44336, #ff9800, #ffc107, #8bc34a, #4caf50, #2196f3, #03a9f4, #00bcd4, #009688);\n  background-size: 200%;\n  background-position: 0%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 10rpx rgba(0, 0, 0, 0.25), inset 0rpx -2rpx 0rpx rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease-in-out;\n}\n\nbutton:hover {\n  background-position: 100%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 8rpx 16rpx rgba(0, 0, 0, 0.25), inset 0rpx -4rpx 0rpx rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:focus {\n  outline: none;\n}\n\nbutton:active {\n  background-size: 100%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 2rpx 6rpx rgba(0, 0, 0, 0.25), inset 0rpx -2rpx 0rpx rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxySweetSquid86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 894,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.681Z",
+  "updated_at": "2025-07-31T07:55:34.681Z"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_orange-mouse-40",
+  "name": "orange-mouse-40",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "orange-mouse-40 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 96px;\n  height: 48px;\n  display: inline-block;\n  position: relative;\n  background: #5e5e5e;\n  border-radius: 48px 48px 0 0;\n  box-sizing: border-box;\n  overflow: hidden;\n}\n\n.loader::after {\n  content: '';\n  box-sizing: border-box;\n  position: absolute;\n  width: 24px;\n  height: 12px;\n  border-radius: 24px 24px 0 0;\n  background: yellow;\n  left: 50%;\n  transform: translateX(-50%);\n  bottom: 0;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  width: 4px;\n  height: 32px;\n  left: 0;\n  right: 0;\n  margin: auto;\n  bottom: 0;\n  background: yellow;\n  transform-origin: 50% 100%;\n  box-sizing: border-box;\n  animation: animloader 2s linear infinite alternate;\n}\n\n@keyframes animloader {\n  0% {\n    transform: rotate(-70deg);\n  }\n\n  10% {\n    transform: rotate(-40deg);\n  }\n\n  20%, 45%, 35% {\n    transform: rotate(-10deg);\n  }\n\n  40%, 30% {\n    transform: rotate(-30deg);\n  }\n\n  50%, 60% {\n    transform: rotate(20deg);\n  }\n\n  55%, 65%, 75% {\n    transform: rotate(40deg);\n  }\n\n  70% {\n    transform: rotate(45deg);\n  }\n\n  85%, 90% {\n    transform: rotate(50deg);\n  }\n\n  95% {\n    transform: rotate(75deg);\n  }\n\n  100%, 93% {\n    transform: rotate(70deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_orange-mouse-40.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyOrangeMouse40',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 192rpx;\n  height: 96rpx;\n  display: inline-block;\n  position: relative;\n  background: #5e5e5e;\n  border-radius: 96rpx 96rpx 0 0;\n  box-sizing: border-box;\n  overflow: hidden;\n}\n\n.loader::after {\n  content: '';\n  box-sizing: border-box;\n  position: absolute;\n  width: 48rpx;\n  height: 24rpx;\n  border-radius: 48rpx 48rpx 0 0;\n  background: yellow;\n  left: 50%;\n  transform: translateX(-50%);\n  bottom: 0;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  width: 8rpx;\n  height: 64rpx;\n  left: 0;\n  right: 0;\n  margin: auto;\n  bottom: 0;\n  background: yellow;\n  transform-origin: 50% 100%;\n  box-sizing: border-box;\n  animation: animloader 2s linear infinite alternate;\n}\n\n@keyframes animloader {\n  0% {\n    transform: rotate(-70deg);\n  }\n\n  10% {\n    transform: rotate(-40deg);\n  }\n\n  20%, 45%, 35% {\n    transform: rotate(-10deg);\n  }\n\n  40%, 30% {\n    transform: rotate(-30deg);\n  }\n\n  50%, 60% {\n    transform: rotate(20deg);\n  }\n\n  55%, 65%, 75% {\n    transform: rotate(40deg);\n  }\n\n  70% {\n    transform: rotate(45deg);\n  }\n\n  85%, 90% {\n    transform: rotate(50deg);\n  }\n\n  95% {\n    transform: rotate(75deg);\n  }\n\n  100%, 93% {\n    transform: rotate(70deg);\n  }\n}\n",
+    "component_name": "GalaxyOrangeMouse40"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1266,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.411Z",
+  "updated_at": "2025-07-31T07:55:40.411Z"
+}

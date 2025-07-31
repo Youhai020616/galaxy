@@ -1,0 +1,90 @@
+{
+  "id": "youngjid_gentle-dragonfly-99",
+  "name": "gentle-dragonfly-99",
+  "category": "loaders",
+  "author": "youngjid",
+  "description": "gentle-dragonfly-99 组件 (loader, dark, glitch, text animation, css effect, glitch Effect, animation)",
+  "tags": [
+    "loader",
+    "dark",
+    "glitch",
+    "text animation",
+    "css effect",
+    "glitch Effect",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"glitch\" data-text=\"Loading ...\">Loading ...</div>",
+    "css": "/* From Uiverse.io by youngjid  - Tags: loader, dark, glitch, text animation, css effect, glitch Effect */\n.glitch {\n  position: relative;\n  font-size: 60px;\n  font-weight: bold;\n  color: #ffffff;\n  letter-spacing: 3px;\n  z-index: 1;\n}\n\n.glitch:before,\n.glitch:after {\n  display: block;\n  content: attr(data-text);\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.8;\n}\n\n.glitch:before {\n  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;\n  color: #00ffff;\n  z-index: -1;\n}\n\n.glitch:after {\n  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both\n    infinite;\n  color: #ff00ff;\n  z-index: -2;\n}\n\n@keyframes glitch-it {\n  0% {\n    transform: translate(0);\n  }\n  20% {\n    transform: translate(-2px, 2px);\n  }\n  40% {\n    transform: translate(-2px, -2px);\n  }\n  60% {\n    transform: translate(2px, 2px);\n  }\n  80% {\n    transform: translate(2px, -2px);\n  }\n  to {\n    transform: translate(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/youngjid_gentle-dragonfly-99.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"glitch\" data-text=\"Loading ...\">Loading ...</view>",
+    "script": "export default {\n  name: 'GalaxyGentleDragonfly99',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by youngjid  - Tags: loader, dark, glitch, text animation, css effect, glitch Effect */\n.glitch {\n  position: relative;\n  font-size: 120rpx;\n  font-weight: bold;\n  color: #ffffff;\n  letter-spacing: 6rpx;\n  z-index: 1;\n}\n\n.glitch:before,\n.glitch:after {\n  display: block;\n  content: attr(data-text);\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.8;\n}\n\n.glitch:before {\n  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;\n  color: #00ffff;\n  z-index: -1;\n}\n\n.glitch:after {\n  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both\n    infinite;\n  color: #ff00ff;\n  z-index: -2;\n}\n\n@keyframes glitch-it {\n  0% {\n    transform: translate(0);\n  }\n  20% {\n    transform: translate(-4rpx, 4rpx);\n  }\n  40% {\n    transform: translate(-4rpx, -4rpx);\n  }\n  60% {\n    transform: translate(4rpx, 4rpx);\n  }\n  80% {\n    transform: translate(4rpx, -4rpx);\n  }\n  to {\n    transform: translate(0);\n  }\n}\n\n",
+    "component_name": "GalaxyGentleDragonfly99"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1025,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.859Z",
+  "updated_at": "2025-07-31T07:55:42.859Z"
+}

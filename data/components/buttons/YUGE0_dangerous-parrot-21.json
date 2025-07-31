@@ -1,0 +1,104 @@
+{
+  "id": "YUGE0_dangerous-parrot-21",
+  "name": "dangerous-parrot-21",
+  "category": "buttons",
+  "author": "YUGE0",
+  "description": "dangerous-parrot-21 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"cursor-pointer p-2 px-5 text-white rounded-lg shadow-lg shadow-black bg-gradient-to-b from-[#c654ff] to-[#b319ff] hover:shadow-inner hover:shadow-black hover:bg-[#b319ff]\">\n  <div class=\"flex justify-around align-baseline\">\n    <h1 class=\"px-2 text-xl\">Join Today</h1>\n    <svg stroke-width=\"22.016\" transform=\"rotate(0)\" stroke=\"#ffffff\" xml:space=\"preserve\" viewBox=\"180 -220 100 800\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" id=\"Layer_1\" version=\"1.1\" width=\"25px\" height=\"25px\" fill=\"#ffffff\">\n      <g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g>\n      <g stroke-width=\"2.048\" stroke=\"#CCCCCC\" stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g>\n      <g id=\"SVGRepo_iconCarrier\">\n        <g>\n          <g>\n            <path d=\"M388.418,240.915L153.752,6.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L343.163,256 L123.582,475.582c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l234.667-234.667 C396.749,262.754,396.749,249.246,388.418,240.915z\"></path>\n          </g>\n        </g>\n      </g>\n    </svg>\n  </div>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/YUGE0_dangerous-parrot-21.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cursor-pointer p-2 px-5 text-white rounded-lg shadow-lg shadow-black bg-gradient-to-b from-[#c654ff] to-[#b319ff] hover:shadow-inner hover:shadow-black hover:bg-[#b319ff]\"></button>\n  <view class=\"flex justify-around align-baseline\"></view>\n    <text class=\"px-2 text-xl\">Join Today</text>\n    <view stroke-width=\"22.016\" transform=\"rotate(0)\" stroke=\"#ffffff\" xml:space=\"preserve\" viewBox=\"180 -220 100 800\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" id=\"Layer_1\" version=\"1.1\" width=\"25px\" height=\"25px\" fill=\"#ffffff\"></view>\n      <g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g>\n      <g stroke-width=\"2.048\" stroke=\"#CCCCCC\" stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g>\n      <g id=\"SVGRepo_iconCarrier\">\n        <g>\n          <g>\n            <path d=\"M388.418,240.915L153.752,6.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L343.163,256 L123.582,475.582c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l234.667-234.667 C396.749,262.754,396.749,249.246,388.418,240.915z\"></path>\n          </g>\n        </g>\n      </g>\n    </svg>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyDangerousParrot21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyDangerousParrot21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1157,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.173Z",
+  "updated_at": "2025-07-31T07:55:35.173Z"
+}

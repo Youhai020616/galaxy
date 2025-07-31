@@ -1,0 +1,122 @@
+{
+  "id": "vishal2231179_breezy-insect-31",
+  "name": "breezy-insect-31",
+  "category": "buttons",
+  "author": "vishal2231179",
+  "description": "breezy-insect-31 组件 (black, button, game, click animation, hover button, #button, 3d button, button hover effect, animation, gradient, interactive)",
+  "tags": [
+    "black",
+    "button",
+    "game",
+    "click animation",
+    "hover button",
+    "#button",
+    "3d button",
+    "button hover effect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Play it</button>",
+    "css": "/* From Uiverse.io by vishal2231179  - Tags: black, button, game, click animation, hover button, #button, 3d button, button hover effect  */\n.button {\n  cursor: pointer;\n  padding: 15px 40px 15px 40px;\n  border-radius: 10px;\n  border-style: double;\n  font-weight: 600;\n  background-image: linear-gradient(\n    rgb(54, 53, 53),\n    rgb(0, 0, 0),\n    rgb(54, 54, 54)\n  );\n  color: rgb(164, 164, 162);\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  border-color: rgb(0, 0, 0);\n  transition: 400ms;\n}\n\n.button:hover {\n  transition: 400ms;\n  border-style: double;\n  border-color: rgb(208, 207, 207);\n  color: rgb(219, 216, 216);\n  font-size: 16px;\n  text-shadow: 1px 10px 5px rgb(61, 61, 61);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vishal2231179_breezy-insect-31.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Play it</button>",
+    "script": "export default {\n  name: 'GalaxyBreezyInsect31',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vishal2231179  - Tags: black, button, game, click animation, hover button, #button, 3d button, button hover effect  */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 30rpx 80rpx 30rpx 80rpx;\n  border-radius: 20rpx;\n  border-style: double;\n  font-weight: 600;\n  background-image: linear-gradient(\n    rgb(54, 53, 53),\n    rgb(0, 0, 0),\n    rgb(54, 54, 54)\n  );\n  color: rgb(164, 164, 162);\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  border-color: rgb(0, 0, 0);\n  transition: 400ms;\n}\n\n.button:hover {\n  transition: 400ms;\n  border-style: double;\n  border-color: rgb(208, 207, 207);\n  color: rgb(219, 216, 216);\n  font-size: 32rpx;\n  /* #ifdef H5 */\n  text-shadow: 2rpx 20rpx 10rpx rgb(61, 61, 61);\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyBreezyInsect31"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 745,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.331Z",
+  "updated_at": "2025-07-31T07:55:38.331Z"
+}

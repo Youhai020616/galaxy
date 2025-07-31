@@ -1,0 +1,117 @@
+{
+  "id": "vinodjangid07_brave-goose-29",
+  "name": "brave-goose-29",
+  "category": "buttons",
+  "author": "vinodjangid07",
+  "description": "brave-goose-29 组件 (button, add, hover effect, add to cart, animation, interactive)",
+  "tags": [
+    "button",
+    "add",
+    "hover effect",
+    "add to cart",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"CartBtn\">\n  <span class=\"IconContainer\"> \n    <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"1em\" viewBox=\"0 0 576 512\" fill=\"rgb(17, 17, 17)\" class=\"cart\"><path d=\"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"></path></svg>\n  </span>\n  <p class=\"text\">Add to Cart</p>\n</button>",
+    "css": "/* From Uiverse.io by vinodjangid07 - Tags: button, add, hover effect, add to cart */\n.CartBtn {\n  width: 140px;\n  height: 40px;\n  border-radius: 12px;\n  border: none;\n  background-color: rgb(255, 208, 0);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  transition-duration: .5s;\n  overflow: hidden;\n  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);\n  position: relative;\n}\n\n.IconContainer {\n  position: absolute;\n  left: -50px;\n  width: 30px;\n  height: 30px;\n  background-color: transparent;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 2;\n  transition-duration: .5s;\n}\n\n.icon {\n  border-radius: 1px;\n}\n\n.text {\n  height: 100%;\n  width: fit-content;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: rgb(17, 17, 17);\n  z-index: 1;\n  transition-duration: .5s;\n  font-size: 1.04em;\n  font-weight: 600;\n}\n\n.CartBtn:hover .IconContainer {\n  transform: translateX(58px);\n  border-radius: 40px;\n  transition-duration: .5s;\n}\n\n.CartBtn:hover .text {\n  transform: translate(10px,0px);\n  transition-duration: .5s;\n}\n\n.CartBtn:active {\n  transform: scale(0.95);\n  transition-duration: .5s;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vinodjangid07_brave-goose-29.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"CartBtn\"></button>\n  <text class=\"IconContainer\"></text> \n    <view xmlns=\"http://www.w3.org/2000/svg\" height=\"1em\" viewBox=\"0 0 576 512\" fill=\"rgb(17, 17, 17)\" class=\"cart\"><path d=\"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"></path></view>\n  </span>\n  <text class=\"text\">Add to Cart</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyBraveGoose29',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07 - Tags: button, add, hover effect, add to cart */\n.CartBtn {\n  width: 280rpx;\n  height: 80rpx;\n  border-radius: 24rpx;\n  border: none;\n  background-color: rgb(255, 208, 0);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition-duration: .5s;\n  overflow: hidden;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 10rpx 20rpx rgba(0, 0, 0, 0.103);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: relative;\n}\n\n.IconContainer {\n  position: absolute;\n  left: -100rpx;\n  width: 60rpx;\n  height: 60rpx;\n  background-color: transparent;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 2;\n  transition-duration: .5s;\n}\n\n.icon {\n  border-radius: 2rpx;\n}\n\n.text {\n  height: 100%;\n  width: fit-content;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: rgb(17, 17, 17);\n  z-index: 1;\n  transition-duration: .5s;\n  font-size: 1.04em;\n  font-weight: 600;\n}\n\n.CartBtn:hover .IconContainer {\n  transform: translateX(116rpx);\n  border-radius: 80rpx;\n  transition-duration: .5s;\n}\n\n.CartBtn:hover .text {\n  transform: translate(20rpx,0rpx);\n  transition-duration: .5s;\n}\n\n.CartBtn:active {\n  transform: scale(0.95);\n  transition-duration: .5s;\n}\n",
+    "component_name": "GalaxyBraveGoose29"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1855,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.042Z",
+  "updated_at": "2025-07-31T07:55:38.042Z"
+}

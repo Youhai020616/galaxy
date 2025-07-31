@@ -1,0 +1,113 @@
+{
+  "id": "gksckt_young-eagle-60",
+  "name": "young-eagle-60",
+  "category": "buttons",
+  "author": "gksckt",
+  "description": "young-eagle-60 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Button\n</button>",
+    "css": "/* From Uiverse.io by gksckt - Tags: button */\nbutton {\n background-color: #444141;\n border-radius: 4px;\n color: #fff;\n cursor: pointer;\n padding: 15px 30px;\n font-size: 18px;\n font-weight: bold;\n letter-spacing: 1px;\n border: none;\n}\n\nbutton:hover {\n background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);\n animation: slidernbw 5s linear infinite;\n color: #000;\n}\n\n@keyframes slidernbw {\n to {\n  background-position: 20vw;\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/gksckt_young-eagle-60.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyYoungEagle60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gksckt - Tags: button */\nbutton {\n background-color: #444141;\n border-radius: 8rpx;\n color: #fff;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n padding: 30rpx 60rpx;\n font-size: 36rpx;\n font-weight: bold;\n letter-spacing: 2rpx;\n border: none;\n}\n\nbutton:hover {\n background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);\n animation: slidernbw 5s linear infinite;\n color: #000;\n}\n\n@keyframes slidernbw {\n to {\n  background-position: 20vw;\n }\n}\n",
+    "component_name": "GalaxyYoungEagle60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 496,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.888Z",
+  "updated_at": "2025-07-31T07:55:36.888Z"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "csemszepp_bright-vampirebat-35",
+  "name": "bright-vampirebat-35",
+  "category": "loaders",
+  "author": "csemszepp",
+  "description": "bright-vampirebat-35 组件 (loader, animated, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg viewBox=\"0 0 100 100\" class=\"loader\">\n<g class=\"points\"> \n  <circle fill=\"#fff\" r=\"50\" cy=\"50\" cx=\"50\" class=\"ciw\"></circle>\n<circle r=\"4\" cy=\"50\" cx=\"5\" class=\"ci2\"></circle>\n<circle r=\"4\" cy=\"50\" cx=\"95\" class=\"ci1\"></circle>\n</g>\n</svg>",
+    "css": "/* From Uiverse.io by csemszepp - Source: https://codepen.io/uchardon/pen/VEBbdw - Tags: loader, animated */\n.loader {\n  width: 200px;\n  max-height: 900px;\n  transform-origin: 50% 50%;\n  overflow: visible;\n}\n\n.ci1 {\n  fill: var(--higru);\n  animation: toBig 3s infinite -1.5s;\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n}\n\n.ciw {\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n  animation: breath 3s infinite;\n}\n\n.ci2 {\n  fill: var(--higru);\n  animation: toBig2 3s infinite;\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n}\n\n.points {\n  animation: rot 3s infinite;\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n}\n\n@keyframes rot {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  30% {\n    transform: rotate(360deg);\n  }\n\n  50% {\n    transform: rotate(360deg);\n  }\n\n  80% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}\n\n@keyframes toBig {\n  0% {\n    transform: scale(1) translateX(0px);\n  }\n\n  30% {\n    transform: scale(1) translateX(0px);\n  }\n\n  50% {\n    transform: scale(10) translateX(-4.5px);\n  }\n\n  80% {\n    transform: scale(10) translateX(-4.5px);\n  }\n\n  100% {\n    transform: scale(1) translateX(0px);\n  }\n}\n\n@keyframes toBig2 {\n  0% {\n    transform: scale(1) translateX(0px);\n  }\n\n  30% {\n    transform: scale(1) translateX(0px);\n  }\n\n  50% {\n    transform: scale(10) translateX(4.5px);\n  }\n\n  80% {\n    transform: scale(10) translateX(4.5px);\n  }\n\n  100% {\n    transform: scale(1) translateX(0px);\n  }\n}\n\n@keyframes breath {\n  15% {\n    transform: scale(1);\n  }\n\n  40% {\n    transform: scale(1.1);\n  }\n\n  65% {\n    transform: scale(1);\n  }\n\n  90% {\n    transform: scale(1.1);\n  }\n}\n\n.dwf, .share {\n  position: fixed;\n  bottom: 4px;\n  right: 10px;\n  background-color: #0003;\n  padding: 3px;\n  border-radius: 3px;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csemszepp_bright-vampirebat-35.html"
+  },
+  "uniapp": {
+    "template": "<view viewBox=\"0 0 100 100\" class=\"loader\"></view>\n<g class=\"points\"> \n  <circle fill=\"#fff\" r=\"50\" cy=\"50\" cx=\"50\" class=\"ciw\"></circle>\n<circle r=\"4\" cy=\"50\" cx=\"5\" class=\"ci2\"></circle>\n<circle r=\"4\" cy=\"50\" cx=\"95\" class=\"ci1\"></circle>\n</g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyBrightVampirebat35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp - Source: https://codepen.io/uchardon/pen/VEBbdw - Tags: loader, animated */\n.loader {\n  width: 400rpx;\n  max-height: 1800rpx;\n  transform-origin: 50% 50%;\n  overflow: visible;\n}\n\n.ci1 {\n  fill: var(--higru);\n  animation: toBig 3s infinite -1.5s;\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n}\n\n.ciw {\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n  animation: breath 3s infinite;\n}\n\n.ci2 {\n  fill: var(--higru);\n  animation: toBig2 3s infinite;\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n}\n\n.points {\n  animation: rot 3s infinite;\n  transform-box: fill-box;\n  transform-origin: 50% 50%;\n}\n\n@keyframes rot {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  30% {\n    transform: rotate(360deg);\n  }\n\n  50% {\n    transform: rotate(360deg);\n  }\n\n  80% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}\n\n@keyframes toBig {\n  0% {\n    transform: scale(1) translateX(0rpx);\n  }\n\n  30% {\n    transform: scale(1) translateX(0rpx);\n  }\n\n  50% {\n    transform: scale(10) translateX(-9rpx);\n  }\n\n  80% {\n    transform: scale(10) translateX(-9rpx);\n  }\n\n  100% {\n    transform: scale(1) translateX(0rpx);\n  }\n}\n\n@keyframes toBig2 {\n  0% {\n    transform: scale(1) translateX(0rpx);\n  }\n\n  30% {\n    transform: scale(1) translateX(0rpx);\n  }\n\n  50% {\n    transform: scale(10) translateX(9rpx);\n  }\n\n  80% {\n    transform: scale(10) translateX(9rpx);\n  }\n\n  100% {\n    transform: scale(1) translateX(0rpx);\n  }\n}\n\n@keyframes breath {\n  15% {\n    transform: scale(1);\n  }\n\n  40% {\n    transform: scale(1.1);\n  }\n\n  65% {\n    transform: scale(1);\n  }\n\n  90% {\n    transform: scale(1.1);\n  }\n}\n\n.dwf, .share {\n  position: fixed;\n  bottom: 8rpx;\n  right: 20rpx;\n  background-color: #0003;\n  padding: 6rpx;\n  border-radius: 6rpx;\n}\n",
+    "component_name": "GalaxyBrightVampirebat35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2040,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.137Z",
+  "updated_at": "2025-07-31T07:55:41.137Z"
+}

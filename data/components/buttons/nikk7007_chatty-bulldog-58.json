@@ -1,0 +1,108 @@
+{
+  "id": "nikk7007_chatty-bulldog-58",
+  "name": "chatty-bulldog-58",
+  "category": "buttons",
+  "author": "nikk7007",
+  "description": "chatty-bulldog-58 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Hover me\n</button>",
+    "css": "/* From Uiverse.io by nikk7007 - Tags: button */\nbutton {\n padding: 0.8em 1.8em;\n border: 2px solid #17C3B2;\n position: relative;\n overflow: hidden;\n background-color: transparent;\n text-align: center;\n text-transform: uppercase;\n font-size: 16px;\n transition: .3s;\n z-index: 1;\n font-family: inherit;\n color: #17C3B2;\n}\n\nbutton::before {\n content: '';\n width: 0;\n height: 300%;\n position: absolute;\n top: 50%;\n left: 50%;\n transform: translate(-50%, -50%) rotate(45deg);\n background: #17C3B2;\n transition: .5s ease;\n display: block;\n z-index: -1;\n}\n\nbutton:hover::before {\n width: 105%;\n}\n\nbutton:hover {\n color: #111;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/nikk7007_chatty-bulldog-58.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Hover me\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattyBulldog58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by nikk7007 - Tags: button */\nbutton {\n padding: 0.8em 1.8em;\n border: 4rpx solid #17C3B2;\n position: relative;\n overflow: hidden;\n background-color: transparent;\n text-align: center;\n text-transform: uppercase;\n font-size: 32rpx;\n transition: .3s;\n z-index: 1;\n font-family: inherit;\n color: #17C3B2;\n}\n\nbutton::before {\n content: '';\n width: 0;\n height: 300%;\n position: absolute;\n top: 50%;\n left: 50%;\n transform: translate(-50%, -50%) rotate(45deg);\n background: #17C3B2;\n transition: .5s ease;\n display: block;\n z-index: -1;\n}\n\nbutton:hover::before {\n width: 105%;\n}\n\nbutton:hover {\n color: #111;\n}\n\n",
+    "component_name": "GalaxyChattyBulldog58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 653,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.486Z",
+  "updated_at": "2025-07-31T07:55:37.486Z"
+}

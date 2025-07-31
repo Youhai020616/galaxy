@@ -1,0 +1,117 @@
+{
+  "id": "MuhammadHasann_quick-goose-5",
+  "name": "quick-goose-5",
+  "category": "buttons",
+  "author": "MuhammadHasann",
+  "description": "quick-goose-5 组件 (complex, 3d, button, hover, animation, interactive)",
+  "tags": [
+    "complex",
+    "3d",
+    "button",
+    "hover",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container-button\">\n  <div class=\"hover bt-1\"></div>\n  <div class=\"hover bt-2\"></div>\n  <div class=\"hover bt-3\"></div>\n  <div class=\"hover bt-4\"></div>\n  <div class=\"hover bt-5\"></div>\n  <div class=\"hover bt-6\"></div>\n  <button></button>\n</div>",
+    "css": "/* From Uiverse.io by MuhammadHasann - Tags: complex, 3d, button, hover */\n.container-button {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-template-rows: 1fr 1fr;\n  grid-template-areas: \"bt-1 bt-2 bt-3\"\n    \"bt-4 bt-5 bt-6\";\n  position: relative;\n  perspective: 800;\n  padding: 0;\n  width: 135px;\n  height: 47px;\n  transition: all 0.3s ease-in-out;\n}\n\n.container-button:active {\n  transform: scale(0.95);\n}\n\n.hover {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  z-index: 200;\n}\n\n.bt-1 {\n  grid-area: bt-1;\n}\n\n.bt-2 {\n  grid-area: bt-2;\n}\n\n.bt-3 {\n  grid-area: bt-3;\n}\n\n.bt-4 {\n  grid-area: bt-4;\n}\n\n.bt-5 {\n  grid-area: bt-5;\n}\n\n.bt-6 {\n  grid-area: bt-6;\n}\n\n.bt-1:hover ~ button {\n  transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);\n  box-shadow: -2px -2px #18181888;\n}\n\n.bt-1:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  text-shadow: -2px -2px #18181888;\n}\n\n.bt-3:hover ~ button {\n  transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);\n  box-shadow: 2px -2px #18181888;\n}\n\n.bt-3:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  text-shadow: 2px -2px #18181888;\n}\n\n.bt-4:hover ~ button {\n  transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);\n  box-shadow: -2px 2px #18181888;\n}\n\n.bt-4:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  text-shadow: -2px 2px #18181888;\n}\n\n.bt-6:hover ~ button {\n  transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);\n  box-shadow: 2px 2px #18181888;\n}\n\n.bt-6:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  text-shadow: 2px 2px #18181888;\n}\n\n.hover:hover ~ button::before {\n  background: transparent;\n}\n\n.hover:hover ~ button::after {\n  content: \"Click\";\n  top: -150%;\n  transform: translate(-50%, 0);\n  font-size: 34px;\n  color: #f19c2b;\n}\n\nbutton {\n  position: absolute;\n  padding: 0;\n  width: 135px;\n  height: 47px;\n  background: transparent;\n  font-size: 17px;\n  font-weight: 900;\n  border: 3px solid #f39923;\n  border-radius: 12px;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 135px;\n  height: 47px;\n  background-color: #f5ae51;\n  border-radius: 12px;\n  transition: all 0.3s ease-in-out;\n  z-index: -1;\n}\n\nbutton::after {\n  content: \"Hover\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 135px;\n  height: 47px;\n  background-color: transparent;\n  font-size: 17px;\n  font-weight: 900;\n  line-height: 47px;\n  color: #ffffff;\n  border: none;\n  border-radius: 12px;\n  transition: all 0.3s ease-in-out;\n  z-index: 2;\n}\n\n@keyframes shake {\n  0% {\n    left: 45%;\n  }\n\n  25% {\n    left: 54%;\n  }\n\n  50% {\n    left: 48%;\n  }\n\n  75% {\n    left: 52%;\n  }\n\n  100% {\n    left: 50%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/MuhammadHasann_quick-goose-5.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container-button\"></view>\n  <view class=\"hover bt-1\"></view>\n  <view class=\"hover bt-2\"></view>\n  <view class=\"hover bt-3\"></view>\n  <view class=\"hover bt-4\"></view>\n  <view class=\"hover bt-5\"></view>\n  <view class=\"hover bt-6\"></view>\n  <button></button></button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuickGoose5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MuhammadHasann - Tags: complex, 3d, button, hover */\n.container-button {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-template-rows: 1fr 1fr;\n  grid-template-areas: \"bt-1 bt-2 bt-3\"\n    \"bt-4 bt-5 bt-6\";\n  position: relative;\n  perspective: 800;\n  padding: 0;\n  width: 270rpx;\n  height: 94rpx;\n  transition: all 0.3s ease-in-out;\n}\n\n.container-button:active {\n  transform: scale(0.95);\n}\n\n.hover {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  z-index: 200;\n}\n\n.bt-1 {\n  grid-area: bt-1;\n}\n\n.bt-2 {\n  grid-area: bt-2;\n}\n\n.bt-3 {\n  grid-area: bt-3;\n}\n\n.bt-4 {\n  grid-area: bt-4;\n}\n\n.bt-5 {\n  grid-area: bt-5;\n}\n\n.bt-6 {\n  grid-area: bt-6;\n}\n\n.bt-1:hover ~ button {\n  transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -4rpx -4rpx #18181888;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.bt-1:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  /* #ifdef H5 */\n  text-shadow: -4rpx -4rpx #18181888;\n  /* #endif */\n}\n\n.bt-3:hover ~ button {\n  transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx -4rpx #18181888;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.bt-3:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  /* #ifdef H5 */\n  text-shadow: 4rpx -4rpx #18181888;\n  /* #endif */\n}\n\n.bt-4:hover ~ button {\n  transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -4rpx 4rpx #18181888;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.bt-4:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  /* #ifdef H5 */\n  text-shadow: -4rpx 4rpx #18181888;\n  /* #endif */\n}\n\n.bt-6:hover ~ button {\n  transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx #18181888;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.bt-6:hover ~ button::after {\n  animation: shake 0.5s ease-in-out 0.3s;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx #18181888;\n  /* #endif */\n}\n\n.hover:hover ~ button::before {\n  background: transparent;\n}\n\n.hover:hover ~ button::after {\n  content: \"Click\";\n  top: -150%;\n  transform: translate(-50%, 0);\n  font-size: 68rpx;\n  color: #f19c2b;\n}\n\nbutton {\n  position: absolute;\n  padding: 0;\n  width: 270rpx;\n  height: 94rpx;\n  background: transparent;\n  font-size: 34rpx;\n  font-weight: 900;\n  border: 6rpx solid #f39923;\n  border-radius: 24rpx;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 270rpx;\n  height: 94rpx;\n  background-color: #f5ae51;\n  border-radius: 24rpx;\n  transition: all 0.3s ease-in-out;\n  z-index: -1;\n}\n\nbutton::after {\n  content: \"Hover\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 270rpx;\n  height: 94rpx;\n  background-color: transparent;\n  font-size: 34rpx;\n  font-weight: 900;\n  line-height: 94rpx;\n  color: #ffffff;\n  border: none;\n  border-radius: 24rpx;\n  transition: all 0.3s ease-in-out;\n  z-index: 2;\n}\n\n@keyframes shake {\n  0% {\n    left: 45%;\n  }\n\n  25% {\n    left: 54%;\n  }\n\n  50% {\n    left: 48%;\n  }\n\n  75% {\n    left: 52%;\n  }\n\n  100% {\n    left: 50%;\n  }\n}\n",
+    "component_name": "GalaxyQuickGoose5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3062,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.058Z",
+  "updated_at": "2025-07-31T07:55:34.058Z"
+}

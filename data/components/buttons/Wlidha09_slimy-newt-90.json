@@ -1,0 +1,107 @@
+{
+  "id": "Wlidha09_slimy-newt-90",
+  "name": "slimy-newt-90",
+  "category": "buttons",
+  "author": "Wlidha09",
+  "description": "slimy-newt-90 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-slice\" href=\"#\">\n  <div class=\"top\"><span>Sliced Button</span></div>\n  <div class=\"bottom\"><span>Sliced Button</span></div>\n</button>",
+    "css": "/* From Uiverse.io by Wlidha09 - Tags: button */\n.btn-slice {\n  background-color: transparent;\n  padding: 1.2rem 2.5rem;\n  border: 2px solid #ffffff;\n  border-radius: 0rem;\n  color: #ffffff;\n  font-size: 0.6875rem;\n  font-weight: 700;\n  letter-spacing: 0.3rem;\n  position: relative;\n  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n}\n\n.btn-slice .top {\n  position: relative;\n  height: 6px;\n  overflow: hidden;\n  top: 0;\n  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice .bottom {\n  position: relative;\n  height: 6px;\n  overflow: hidden;\n  bottom: 0;\n  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice .bottom span {\n  top: -6px;\n  position: absolute;\n  left: 0;\n}\n\n.btn-slice:hover .top {\n  top: -5px;\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice:hover .bottom {\n  bottom: -5px;\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice:hover, .btn-slice:focus, .btn-slice:active {\n  margin-left: 10px;\n}\n\n.btn-slice:before {\n  content: '';\n  height: 1px;\n  width: 60px;\n  background-color: #ffffff;\n  position: absolute;\n  margin-top: 6px;\n  right: -35px;\n  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n}\n\n.btn-slice:hover:before {\n  width: 130%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Wlidha09_slimy-newt-90.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-slice\" href=\"#\"></button>\n  <view class=\"top\"><text>Sliced Button</text></view>\n  <view class=\"bottom\"><text>Sliced Button</text></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxySlimyNewt90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Wlidha09 - Tags: button */\n.btn-slice {\n  background-color: transparent;\n  padding: 1.2rem 2.5rem;\n  border: 4rpx solid #ffffff;\n  border-radius: 0rem;\n  color: #ffffff;\n  font-size: 0.6875rem;\n  font-weight: 700;\n  letter-spacing: 0.3rem;\n  position: relative;\n  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n}\n\n.btn-slice .top {\n  position: relative;\n  height: 12rpx;\n  overflow: hidden;\n  top: 0;\n  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice .bottom {\n  position: relative;\n  height: 12rpx;\n  overflow: hidden;\n  bottom: 0;\n  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);\n /* custom */\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice .bottom span {\n  top: -12rpx;\n  position: absolute;\n  left: 0;\n}\n\n.btn-slice:hover .top {\n  top: -10rpx;\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice:hover .bottom {\n  bottom: -10rpx;\n  -webkit-transition-delay: 0.35s;\n  -moz-transition-delay: 0.35s;\n  -ms-transition-delay: 0.35s;\n  -o-transition-delay: 0.35s;\n  transition-delay: 0.35s;\n}\n\n.btn-slice:hover, .btn-slice:focus, .btn-slice:active {\n  margin-left: 20rpx;\n}\n\n.btn-slice:before {\n  content: '';\n  height: 2rpx;\n  width: 120rpx;\n  background-color: #ffffff;\n  position: absolute;\n  margin-top: 12rpx;\n  right: -70rpx;\n  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);\n /* custom */\n}\n\n.btn-slice:hover:before {\n  width: 130%;\n}\n",
+    "component_name": "GalaxySlimyNewt90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3543,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.165Z",
+  "updated_at": "2025-07-31T07:55:35.165Z"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "Li-Deheng_dangerous-bulldog-28",
+  "name": "dangerous-bulldog-28",
+  "category": "buttons",
+  "author": "Li-Deheng",
+  "description": "dangerous-bulldog-28 组件 (icon, animation, button, message, animated, btn, hover effect, username, account, alert message, interactive)",
+  "tags": [
+    "icon",
+    "animation",
+    "button",
+    "message",
+    "animated",
+    "btn",
+    "hover effect",
+    "username",
+    "account",
+    "alert message",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button id=\"btn-message\" class=\"button-message\">\n\t<div class=\"content-avatar\">\n\t\t<div class=\"status-user\"></div>\n\t\t<div class=\"avatar\">\n\t\t\t<svg class=\"user-img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z\"></path></svg>\n\t\t</div>\n\t</div>\n\t<div class=\"notice-content\">\n\t\t<div class=\"username\">Jessica Sanders</div>\n\t\t<div class=\"lable-message\">Message<span class=\"number-message\">3</span></div>\n\t\t<div class=\"user-id\">@jessisanders</div>\n\t</div>\n</button>",
+    "css": "/* From Uiverse.io by Li-Deheng - Source: Li-Deheng - Tags: icon, animation, button, message, animated, btn, hover effect, username, account, alert message */\n#btn-message {\n  --text-color: #000;\n  --bg-color-sup: #d2d2d2;\n  --bg-color: #f4f4f4;\n  --bg-hover-color: #ffffff;\n  --online-status: #00da00;\n  --font-size: 16px;\n  --btn-transition: all 0.2s ease-out;\n}\n\n.button-message {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font: 400 var(--font-size) Helvetica Neue, sans-serif;\n  box-shadow: 0 0 2.17382px rgba(0,0,0,.049),0 1.75px 6.01034px rgba(0,0,0,.07),0 3.63px 14.4706px rgba(0,0,0,.091),0 22px 48px rgba(0,0,0,.14);\n  background-color: var(--bg-color);\n  border-radius: 68px;\n  cursor: pointer;\n  padding: 6px 10px 6px 6px;\n  width: fit-content;\n  height: 40px;\n  border: 0;\n  overflow: hidden;\n  position: relative;\n  transition: var(--btn-transition);\n}\n\n.button-message:hover {\n  height: 56px;\n  padding: 8px 20px 8px 8px;\n  background-color: var(--bg-hover-color);\n  transition: var(--btn-transition);\n}\n\n.button-message:active {\n  transform: scale(0.99);\n}\n\n.content-avatar {\n  width: 30px;\n  height: 30px;\n  margin: 0;\n  transition: var(--btn-transition);\n  position: relative;\n}\n\n.button-message:hover .content-avatar {\n  width: 40px;\n  height: 40px;\n}\n\n.avatar {\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  overflow: hidden;\n  background-color: var(--bg-color-sup);\n}\n\n.user-img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n.status-user {\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  right: 1px;\n  bottom: 1px;\n  border-radius: 50%;\n  outline: solid 2px var(--bg-color);\n  background-color: var(--online-status);\n  transition: var(--btn-transition);\n  animation: active-status 2s ease-in-out infinite;\n}\n\n.button-message:hover .status-user {\n  width: 10px;\n  height: 10px;\n  right: 1px;\n  bottom: 1px;\n  outline: solid 3px var(--bg-hover-color);\n}\n\n.notice-content {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n  padding-left: 8px;\n  text-align: initial;\n  color: var(--text-color);\n}\n\n.username {\n  letter-spacing: -6px;\n  height: 0;\n  opacity: 0;\n  transform: translateY(-20px);\n  transition: var(--btn-transition);\n}\n\n.user-id {\n  font-size: 12px;\n  letter-spacing: -6px;\n  height: 0;\n  opacity: 0;\n  transform: translateY(10px);\n  transition: var(--btn-transition);\n}\n\n.lable-message {\n  display: flex;\n  align-items: center;\n  opacity: 1;\n  transform: scaleY(1);\n  transition: var(--btn-transition);\n}\n\n.button-message:hover .username {\n  height: auto;\n  letter-spacing: normal;\n  opacity: 1;\n  transform: translateY(0);\n  transition: var(--btn-transition);\n}\n\n.button-message:hover .user-id {\n  height: auto;\n  letter-spacing: normal;\n  opacity: 1;\n  transform: translateY(0);\n  transition: var(--btn-transition);\n}\n\n.button-message:hover .lable-message {\n  height: 0;\n  transform: scaleY(0);\n  transition: var(--btn-transition);\n}\n\n.lable-message, .username {\n  font-weight: 600;\n}\n\n.number-message {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  margin-left: 8px;\n  font-size: 12px;\n  width: 16px;\n  height: 16px;\n  background-color: var(--bg-color-sup);\n  border-radius: 20px;\n}\n\n/*==============================================*/\n@keyframes active-status {\n  0% {\n    background-color: var(--online-status);\n  }\n\n  33.33% {\n    background-color: #93e200;\n  }\n\n  66.33% {\n    background-color: #93e200;\n  }\n\n  100% {\n    background-color: var(--online-status);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Li-Deheng_dangerous-bulldog-28.html"
+  },
+  "uniapp": {
+    "template": "<button id=\"btn-message\" class=\"button-message\"></button>\n\t<view class=\"content-avatar\"></view>\n\t\t<view class=\"status-user\"></view>\n\t\t<view class=\"avatar\"></view>\n\t\t\t<view class=\"user-img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z\"></path></view>\n\t\t</div>\n\t</div>\n\t<view class=\"notice-content\"></view>\n\t\t<view class=\"username\">Jessica Sanders</view>\n\t\t<view class=\"lable-message\">Message<text class=\"number-message\">3</text></view>\n\t\t<view class=\"user-id\">@jessisanders</view>\n\t</div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyDangerousBulldog28',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Li-Deheng - Source: Li-Deheng - Tags: icon, animation, button, message, animated, btn, hover effect, username, account, alert message */\n#btn-message {\n  --text-color: #000;\n  --bg-color-sup: #d2d2d2;\n  --bg-color: #f4f4f4;\n  --bg-hover-color: #ffffff;\n  --online-status: #00da00;\n  --font-size: 32rpx;\n  --btn-transition: all 0.2s ease-out;\n}\n\n.button-message {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font: 400 var(--font-size) Helvetica Neue, sans-serif;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 4.34764rpx rgba(0,0,0,.049),0 3.5rpx 12.02068rpx rgba(0,0,0,.07),0 7.26rpx 28.9412rpx rgba(0,0,0,.091),0 44rpx 96rpx rgba(0,0,0,.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: var(--bg-color);\n  border-radius: 136rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 12rpx 20rpx 12rpx 12rpx;\n  width: fit-content;\n  height: 80rpx;\n  border: 0;\n  overflow: hidden;\n  position: relative;\n  transition: var(--btn-transition);\n}\n\n.button-message:hover {\n  height: 112rpx;\n  padding: 16rpx 40rpx 16rpx 16rpx;\n  background-color: var(--bg-hover-color);\n  transition: var(--btn-transition);\n}\n\n.button-message:active {\n  transform: scale(0.99);\n}\n\n.content-avatar {\n  width: 60rpx;\n  height: 60rpx;\n  margin: 0;\n  transition: var(--btn-transition);\n  position: relative;\n}\n\n.button-message:hover .content-avatar {\n  width: 80rpx;\n  height: 80rpx;\n}\n\n.avatar {\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  overflow: hidden;\n  background-color: var(--bg-color-sup);\n}\n\n.user-img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n.status-user {\n  position: absolute;\n  width: 12rpx;\n  height: 12rpx;\n  right: 2rpx;\n  bottom: 2rpx;\n  border-radius: 50%;\n  outline: solid 4rpx var(--bg-color);\n  background-color: var(--online-status);\n  transition: var(--btn-transition);\n  animation: active-status 2s ease-in-out infinite;\n}\n\n.button-message:hover .status-user {\n  width: 20rpx;\n  height: 20rpx;\n  right: 2rpx;\n  bottom: 2rpx;\n  outline: solid 6rpx var(--bg-hover-color);\n}\n\n.notice-content {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n  padding-left: 16rpx;\n  text-align: initial;\n  color: var(--text-color);\n}\n\n.username {\n  letter-spacing: -12rpx;\n  height: 0;\n  opacity: 0;\n  transform: translateY(-40rpx);\n  transition: var(--btn-transition);\n}\n\n.user-id {\n  font-size: 24rpx;\n  letter-spacing: -12rpx;\n  height: 0;\n  opacity: 0;\n  transform: translateY(20rpx);\n  transition: var(--btn-transition);\n}\n\n.lable-message {\n  display: flex;\n  align-items: center;\n  opacity: 1;\n  transform: scaleY(1);\n  transition: var(--btn-transition);\n}\n\n.button-message:hover .username {\n  height: auto;\n  letter-spacing: normal;\n  opacity: 1;\n  transform: translateY(0);\n  transition: var(--btn-transition);\n}\n\n.button-message:hover .user-id {\n  height: auto;\n  letter-spacing: normal;\n  opacity: 1;\n  transform: translateY(0);\n  transition: var(--btn-transition);\n}\n\n.button-message:hover .lable-message {\n  height: 0;\n  transform: scaleY(0);\n  transition: var(--btn-transition);\n}\n\n.lable-message, .username {\n  font-weight: 600;\n}\n\n.number-message {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  margin-left: 16rpx;\n  font-size: 24rpx;\n  width: 32rpx;\n  height: 32rpx;\n  background-color: var(--bg-color-sup);\n  border-radius: 40rpx;\n}\n\n/*==============================================*/\n@keyframes active-status {\n  0% {\n    background-color: var(--online-status);\n  }\n\n  33.33% {\n    background-color: #93e200;\n  }\n\n  66.33% {\n    background-color: #93e200;\n  }\n\n  100% {\n    background-color: var(--online-status);\n  }\n}\n",
+    "component_name": "GalaxyDangerousBulldog28"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4170,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.815Z",
+  "updated_at": "2025-07-31T07:55:33.815Z"
+}

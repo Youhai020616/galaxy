@@ -1,0 +1,90 @@
+{
+  "id": "PriyanshuGupta28_chilly-lion-59",
+  "name": "chilly-lion-59",
+  "category": "loaders",
+  "author": "PriyanshuGupta28",
+  "description": "chilly-lion-59 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"custom-loader\"></div>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: loader */\n.custom-loader {\n  width: 50px;\n  height: 50px;\n  --c: radial-gradient(farthest-side,#000000 92%,#0000);\n  background: var(--c) 50%  0, \n    var(--c) 50%  100%, \n    var(--c) 100% 50%, \n    var(--c) 0    50%;\n  background-size: 10px 10px;\n  background-repeat: no-repeat;\n  animation: s8 1s infinite;\n  position: relative;\n}\n\n.custom-loader::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  margin: 3px;\n  background: repeating-conic-gradient(#0000 0 35deg,#000000 0 90deg);\n  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);\n  border-radius: 50%;\n}\n\n@keyframes s8 {\n \n  100% {\n    transform: rotate(.5turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/PriyanshuGupta28_chilly-lion-59.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"custom-loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyChillyLion59',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: loader */\n.custom-loader {\n  width: 100rpx;\n  height: 100rpx;\n  --c: radial-gradient(farthest-side,#000000 92%,#0000);\n  background: var(--c) 50%  0, \n    var(--c) 50%  100%, \n    var(--c) 100% 50%, \n    var(--c) 0    50%;\n  background-size: 20rpx 20rpx;\n  background-repeat: no-repeat;\n  animation: s8 1s infinite;\n  position: relative;\n}\n\n.custom-loader::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  margin: 6rpx;\n  background: repeating-conic-gradient(#0000 0 35deg,#000000 0 90deg);\n  -webkit-\n  border-radius: 50%;\n}\n\n@keyframes s8 {\n \n  100% {\n    transform: rotate(.5turn)\n  }\n}\n",
+    "component_name": "GalaxyChillyLion59"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 744,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.124Z",
+  "updated_at": "2025-07-31T07:55:40.124Z"
+}

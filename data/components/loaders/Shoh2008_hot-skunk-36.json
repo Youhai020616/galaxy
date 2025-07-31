@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_hot-skunk-36",
+  "name": "hot-skunk-36",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "hot-skunk-36 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  border: 10px solid;\n  box-sizing: border-box;\n  animation: animloader 1s linear infinite alternate;\n}\n\n@keyframes animloader {\n  0% {\n    border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);\n  }\n\n  33% {\n    border-color: white white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);\n  }\n\n  66% {\n    border-color: white white white rgba(255, 255, 255, 0);\n  }\n\n  100% {\n    border-color: white white white white;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_hot-skunk-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyHotSkunk36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 96rpx;\n  height: 96rpx;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  border: 20rpx solid;\n  box-sizing: border-box;\n  animation: animloader 1s linear infinite alternate;\n}\n\n@keyframes animloader {\n  0% {\n    border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);\n  }\n\n  33% {\n    border-color: white white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);\n  }\n\n  66% {\n    border-color: white white white rgba(255, 255, 255, 0);\n  }\n\n  100% {\n    border-color: white white white white;\n  }\n} \n",
+    "component_name": "GalaxyHotSkunk36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 645,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.373Z",
+  "updated_at": "2025-07-31T07:55:40.373Z"
+}

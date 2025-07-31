@@ -1,0 +1,98 @@
+{
+  "id": "htwarriors108_massive-dodo-50",
+  "name": "massive-dodo-50",
+  "category": "loaders",
+  "author": "htwarriors108",
+  "description": "massive-dodo-50 组件 (animation, 3d, loader, cube, rotate, animated, color, hover effect, css effect, rubik's cube, interactive)",
+  "tags": [
+    "animation",
+    "3d",
+    "loader",
+    "cube",
+    "rotate",
+    "animated",
+    "color",
+    "hover effect",
+    "css effect",
+    "rubik's cube",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"cube\">\n                <div class=\"cube__face\" id=\"cube__face--front\">\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                </div>\n\n                <div class=\"cube__face\" id=\"cube__face--back\">\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                </div>\n\n                <div class=\"cube__face\" id=\"cube__face--right\">\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                </div>\n\n                <div class=\"cube__face\" id=\"cube__face--left\">\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                </div>\n\n                <div class=\"cube__face\" id=\"cube__face--top\">\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                </div>\n\n                <div class=\"cube__face\" id=\"cube__face--bottom\">\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                    <span class=\"faceBox\"></span>\n                </div>\n            </div>",
+    "css": "/* From Uiverse.io by htwarriors108 - Tags: animation, 3d, loader, cube, rotate, animated, color, hover effect, css effect, rubik's cube */\n.cube {\n  width: 100px;\n  height: 100px;\n  transform-style: preserve-3d;\n  animation: animate 4s linear infinite;\n  cursor: pointer;\n  transition: 0.5s;\n}\n\n.cube:hover {\n  scale: 1.2;\n  animation: animate 3s linear infinite;\n}\n\n.cube__face {\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  display: flex;\n  align-items: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n\n.faceBox {\n  border: calc(100px / 1000) solid rgba(0, 0, 0, 0.8);\n  width: calc(100px / 3);\n  height: calc(100px / 3);\n  opacity: 1;\n}\n\n#cube__face--front span {\n  background-color: #FF4949;\n}\n\n#cube__face--right span {\n  background-color: #13CE66;\n}\n\n#cube__face--left span {\n  background-color: #2D8EFF;\n}\n\n#cube__face--top span {\n  background-color: #FFCC3D;\n}\n\n#cube__face--bottom span {\n  background-color: #fefefe;\n}\n\n#cube__face--back span {\n  background-color: #f1f03e;\n}\n\n#cube__face--front {\n  transform: rotateY(0deg) translateZ(calc(100px / 2));\n}\n\n#cube__face--right {\n  transform: rotateY(90deg) translateZ(calc(100px / 2));\n}\n\n#cube__face--back {\n  transform: rotateY(180deg) translateZ(calc(100px / 2));\n}\n\n#cube__face--left {\n  transform: rotateY(-90deg) translateZ(calc(100px / 2));\n}\n\n#cube__face--top {\n  transform: rotateX(90deg) translateZ(calc(100px / 2));\n}\n\n#cube__face--bottom {\n  transform: rotateX(-90deg) translateZ(calc(100px / 2));\n}\n\n@keyframes animate {\n  0% {\n    transform: rotateX(-30deg) rotateY(0deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(-30deg) rotateY(360deg) rotateZ(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/htwarriors108_massive-dodo-50.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cube\"></view>\n                <view class=\"cube__face\" id=\"cube__face--front\"></view>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                </div>\n\n                <view class=\"cube__face\" id=\"cube__face--back\"></view>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                </div>\n\n                <view class=\"cube__face\" id=\"cube__face--right\"></view>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                </div>\n\n                <view class=\"cube__face\" id=\"cube__face--left\"></view>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                </div>\n\n                <view class=\"cube__face\" id=\"cube__face--top\"></view>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                </div>\n\n                <view class=\"cube__face\" id=\"cube__face--bottom\"></view>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                    <text class=\"faceBox\"></text>\n                </div>\n            </div>",
+    "script": "export default {\n  name: 'GalaxyMassiveDodo50',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by htwarriors108 - Tags: animation, 3d, loader, cube, rotate, animated, color, hover effect, css effect, rubik's cube */\n.cube {\n  width: 200rpx;\n  height: 200rpx;\n  transform-style: preserve-3d;\n  animation: animate 4s linear infinite;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: 0.5s;\n}\n\n.cube:hover {\n  scale: 1.2;\n  animation: animate 3s linear infinite;\n}\n\n.cube__face {\n  position: absolute;\n  width: 200rpx;\n  height: 200rpx;\n  display: flex;\n  align-items: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n\n.faceBox {\n  border: calc(200rpx / 1000) solid rgba(0, 0, 0, 0.8);\n  width: calc(200rpx / 3);\n  height: calc(200rpx / 3);\n  opacity: 1;\n}\n\n#cube__face--front span {\n  background-color: #FF4949;\n}\n\n#cube__face--right span {\n  background-color: #13CE66;\n}\n\n#cube__face--left span {\n  background-color: #2D8EFF;\n}\n\n#cube__face--top span {\n  background-color: #FFCC3D;\n}\n\n#cube__face--bottom span {\n  background-color: #fefefe;\n}\n\n#cube__face--back span {\n  background-color: #f1f03e;\n}\n\n#cube__face--front {\n  transform: rotateY(0deg) translateZ(calc(200rpx / 2));\n}\n\n#cube__face--right {\n  transform: rotateY(90deg) translateZ(calc(200rpx / 2));\n}\n\n#cube__face--back {\n  transform: rotateY(180deg) translateZ(calc(200rpx / 2));\n}\n\n#cube__face--left {\n  transform: rotateY(-90deg) translateZ(calc(200rpx / 2));\n}\n\n#cube__face--top {\n  transform: rotateX(90deg) translateZ(calc(200rpx / 2));\n}\n\n#cube__face--bottom {\n  transform: rotateX(-90deg) translateZ(calc(200rpx / 2));\n}\n\n@keyframes animate {\n  0% {\n    transform: rotateX(-30deg) rotateY(0deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(-30deg) rotateY(360deg) rotateZ(360deg);\n  }\n}\n",
+    "component_name": "GalaxyMassiveDodo50"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 4924,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.203Z",
+  "updated_at": "2025-07-31T07:55:42.203Z"
+}

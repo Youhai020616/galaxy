@@ -1,0 +1,111 @@
+{
+  "id": "mrhyddenn_mighty-duck-73",
+  "name": "mighty-duck-73",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "mighty-duck-73 组件 (button, animation)",
+  "tags": [
+    "button",
+    "animation"
+  ],
+  "original": {
+    "html": "<button>\n    GET STARTED\n</button>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: button */\nbutton {\n  background-color: #1197cc;\n  box-shadow: #094c66 4px 4px 0px;\n  border-radius: 8px;\n  padding: 15px 10px;\n  color: #fff;\n  border: none;\n  font-weight: bold;\n  font-size: 15px;\n  text-transform: uppercase;\n  min-width: 120px;\n  transition: transform 200ms, box-shadow 200ms;\n}\n\nbutton:active {\n  transform: translateY(4px) translateX(4px);\n  box-shadow: #094c66 0px 0px 0px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_mighty-duck-73.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    GET STARTED\n</button>",
+    "script": "export default {\n  name: 'GalaxyMightyDuck73',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: button */\nbutton {\n  background-color: #1197cc;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #094c66 8rpx 8rpx 0rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 16rpx;\n  padding: 30rpx 20rpx;\n  color: #fff;\n  border: none;\n  font-weight: bold;\n  font-size: 30rpx;\n  text-transform: uppercase;\n  min-width: 240rpx;\n  transition: transform 200ms, box-shadow 200ms;\n}\n\nbutton:active {\n  transform: translateY(8rpx) translateX(8rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #094c66 0rpx 0rpx 0rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyMightyDuck73"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 475,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.330Z",
+  "updated_at": "2025-07-31T07:55:37.330Z"
+}

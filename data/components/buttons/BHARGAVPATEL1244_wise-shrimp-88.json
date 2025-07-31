@@ -1,0 +1,112 @@
+{
+  "id": "BHARGAVPATEL1244_wise-shrimp-88",
+  "name": "wise-shrimp-88",
+  "category": "buttons",
+  "author": "BHARGAVPATEL1244",
+  "description": "wise-shrimp-88 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"space-button\">\n  <span>Explore space</span>\n  <svg viewBox=\"0 0 24 24\">\n    <path d=\"M5.5 16.5l5-5-5-5\"></path>\n    <path d=\"M11 11h8v2h-8z\"></path>\n    <path d=\"M16.5 7.5l5-5-5-5\"></path>\n    <path d=\"M19 4v8h-2v-8z\"></path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by BHARGAVPATEL1244 - Tags: button */\n.space-button {\n  display: inline-block;\n  background-color: #111;\n  color: #fff;\n  border: none;\n  border-radius: 30px;\n  padding: 12px 32px;\n  font-size: 1.2em;\n  font-weight: bold;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  position: relative;\n  overflow: hidden;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n\n.space-button span {\n  position: relative;\n  z-index: 1;\n}\n\n.space-button svg {\n  position: absolute;\n  top: 50%;\n  right: 12px;\n  transform: translateY(-50%);\n  width: 16px;\n  height: 16px;\n  fill: #fff;\n  transition: transform 0.3s ease;\n}\n\n.space-button:hover {\n  background-color: #f8f8f8;\n  color: #111;\n}\n\n.space-button:hover svg {\n  transform: translateX(4px);\n}\n\n.space-button:active {\n  background-color: #f94b4c;\n  color: #fff;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/BHARGAVPATEL1244_wise-shrimp-88.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"space-button\"></button>\n  <text>Explore space</text>\n  <view viewBox=\"0 0 24 24\"></view>\n    <path d=\"M5.5 16.5l5-5-5-5\"></path>\n    <path d=\"M11 11h8v2h-8z\"></path>\n    <path d=\"M16.5 7.5l5-5-5-5\"></path>\n    <path d=\"M19 4v8h-2v-8z\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWiseShrimp88',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by BHARGAVPATEL1244 - Tags: button */\n.space-button {\n  display: inline-block;\n  background-color: #111;\n  color: #fff;\n  border: none;\n  border-radius: 60rpx;\n  padding: 24rpx 64rpx;\n  font-size: 1.2em;\n  font-weight: bold;\n  text-transform: uppercase;\n  letter-spacing: 4rpx;\n  position: relative;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: background-color 0.3s ease;\n}\n\n.space-button span {\n  position: relative;\n  z-index: 1;\n}\n\n.space-button svg {\n  position: absolute;\n  top: 50%;\n  right: 24rpx;\n  transform: translateY(-50%);\n  width: 32rpx;\n  height: 32rpx;\n  fill: #fff;\n  transition: transform 0.3s ease;\n}\n\n.space-button:hover {\n  background-color: #f8f8f8;\n  color: #111;\n}\n\n.space-button:hover svg {\n  transform: translateX(8rpx);\n}\n\n.space-button:active {\n  background-color: #f94b4c;\n  color: #fff;\n}\n\n",
+    "component_name": "GalaxyWiseShrimp88"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1103,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.739Z",
+  "updated_at": "2025-07-31T07:55:32.739Z"
+}

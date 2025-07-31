@@ -1,0 +1,92 @@
+{
+  "id": "fanishah_selfish-goose-88",
+  "name": "selfish-goose-88",
+  "category": "loaders",
+  "author": "fanishah",
+  "description": "selfish-goose-88 组件 (loading, loader, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading-bar\">\n    Loading\n</div>",
+    "css": "/* From Uiverse.io by fanishah - Tags: loading, loader */\n.loading-bar {\n  position: absolute;\n  transform: translate(-50%,-50%);\n  width: 110px;\n  height: 110px;\n  background: transparent;\n  border: px solid #3c3c3c;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 111px;\n  font-family: sans-serif;\n  font-size: 15px;\n  color: #fff000;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-shadow: 0 0 20px #fff000;\n  box-shadow: 0 0 20px rgba(0,0,0,.5);\n}\n\n.loading-bar:before {\n  content: '';\n  position: absolute;\n  top: -3px;\n  left: -3px;\n  width: 100%;\n  height: 100%;\n  border: 3px solid transparent;\n  border-top: 5px solid #fff000;\n  border-right: 5px solid #fff000;\n  border-radius: 50%;\n  animation: animateC 2s linear infinite;\n}\n\n@keyframes animateC {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(45deg);\n  }\n\n  100% {\n    transform: rotate(405deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/fanishah_selfish-goose-88.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading-bar\"></view>\n    Loading\n</div>",
+    "script": "export default {\n  name: 'GalaxySelfishGoose88',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by fanishah - Tags: loading, loader */\n.loading-bar {\n  position: absolute;\n  transform: translate(-50%,-50%);\n  width: 220rpx;\n  height: 220rpx;\n  background: transparent;\n  border: px solid #3c3c3c;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 222rpx;\n  font-family: sans-serif;\n  font-size: 30rpx;\n  color: #fff000;\n  letter-spacing: 6rpx;\n  text-transform: uppercase;\n  /* #ifdef H5 */\n  text-shadow: 0 0 40rpx #fff000;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx rgba(0,0,0,.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loading-bar:before {\n  content: '';\n  position: absolute;\n  top: -6rpx;\n  left: -6rpx;\n  width: 100%;\n  height: 100%;\n  border: 6rpx solid transparent;\n  border-top: 10rpx solid #fff000;\n  border-right: 10rpx solid #fff000;\n  border-radius: 50%;\n  animation: animateC 2s linear infinite;\n}\n\n@keyframes animateC {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(45deg);\n  }\n\n  100% {\n    transform: rotate(405deg);\n  }\n}\n",
+    "component_name": "GalaxySelfishGoose88"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1026,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.031Z",
+  "updated_at": "2025-07-31T07:55:42.031Z"
+}

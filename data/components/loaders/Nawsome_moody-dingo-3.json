@@ -1,0 +1,85 @@
+{
+  "id": "Nawsome_moody-dingo-3",
+  "name": "moody-dingo-3",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "moody-dingo-3 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg height=\"0\" width=\"0\">\n    <defs>\n        <filter color-interpolation-filters=\"sRGB\" height=\"200%\" y=\"-50%\" width=\"200%\" x=\"-50%\" id=\"goo\">\n            <feGaussianBlur result=\"blur\" stdDeviation=\"8\" in=\"SourceGraphic\"></feGaussianBlur>\n            <feColorMatrix result=\"cm\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7\" mode=\"matrix\" in=\"blur\"></feColorMatrix>\n        </filter>\n    </defs>\n</svg>\n\n<svg height=\"180\" width=\"320\" viewBox=\"0 0 320 180\">\n    <g filter=\"url(#goo)\">\n        <circle cy=\"90\" cx=\"160\" r=\"24\" fill=\"#275EFE\" class=\"circle\"></circle>\n        <circle cy=\"90\" cx=\"160\" r=\"24\" fill=\"#275EFE\" class=\"circle right\"></circle>\n    </g>\n</svg>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.circle {\n  animation: move571 4s linear infinite;\n}\n\n.circle.right {\n  animation-direction: reverse;\n}\n\n@keyframes move571 {\n  25% {\n    transform: translateX(-32px);\n  }\n\n  75% {\n    transform: translateX(32px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_moody-dingo-3.html"
+  },
+  "uniapp": {
+    "template": "<view height=\"0\" width=\"0\"></view>\n    <defs>\n        <filter color-interpolation-filters=\"sRGB\" height=\"200%\" y=\"-50%\" width=\"200%\" x=\"-50%\" id=\"goo\">\n            <feGaussianBlur result=\"blur\" stdDeviation=\"8\" in=\"SourceGraphic\"></feGaussianBlur>\n            <feColorMatrix result=\"cm\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7\" mode=\"matrix\" in=\"blur\"></feColorMatrix>\n        </filter>\n    </defs>\n</svg>\n\n<view height=\"180\" width=\"320\" viewBox=\"0 0 320 180\"></view>\n    <g filter=\"url(#goo)\">\n        <circle cy=\"90\" cx=\"160\" r=\"24\" fill=\"#275EFE\" class=\"circle\"></circle>\n        <circle cy=\"90\" cx=\"160\" r=\"24\" fill=\"#275EFE\" class=\"circle right\"></circle>\n    </g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyMoodyDingo3',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.circle {\n  animation: move571 4s linear infinite;\n}\n\n.circle.right {\n  animation-direction: reverse;\n}\n\n@keyframes move571 {\n  25% {\n    transform: translateX(-64rpx);\n  }\n\n  75% {\n    transform: translateX(64rpx);\n  }\n}\n",
+    "component_name": "GalaxyMoodyDingo3"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 944,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.810Z",
+  "updated_at": "2025-07-31T07:55:39.810Z"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "vikramsinghnegi_curly-mole-58",
+  "name": "curly-mole-58",
+  "category": "loaders",
+  "author": "vikramsinghnegi",
+  "description": "curly-mole-58 组件 (simple, loader, blob, animation)",
+  "tags": [
+    "simple",
+    "loader",
+    "blob",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"blob\"></div>",
+    "css": "/* From Uiverse.io by vikramsinghnegi  - Tags: simple, loader, blob */\n.blob {\n  width: 112px;\n  height: 112px;\n  display: grid;\n  background: #fff;\n  filter: blur(5.6px) contrast(10);\n  padding: 11.2px;\n  mix-blend-mode: darken;\n}\n\n.blob:before,\n.blob:after {\n  content: \"\";\n  grid-area: 1/1;\n  width: 44.8px;\n  height: 44.8px;\n  background: #474bff;\n  animation: blob-rhf26m 2s infinite;\n}\n\n.blob:after {\n  animation-delay: -1s;\n}\n\n@keyframes blob-rhf26m {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(100%, 0);\n  }\n\n  50% {\n    transform: translate(100%, 100%);\n  }\n\n  75% {\n    transform: translate(0, 100%);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vikramsinghnegi_curly-mole-58.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"blob\"></view>",
+    "script": "export default {\n  name: 'GalaxyCurlyMole58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vikramsinghnegi  - Tags: simple, loader, blob */\n.blob {\n  width: 224rpx;\n  height: 224rpx;\n  display: grid;\n  background: #fff;\n  \n  padding: 22.4rpx;\n  \n}\n\n.blob:before,\n.blob:after {\n  content: \"\";\n  grid-area: 1/1;\n  width: 89.6rpx;\n  height: 89.6rpx;\n  background: #474bff;\n  animation: blob-rhf26m 2s infinite;\n}\n\n.blob:after {\n  animation-delay: -1s;\n}\n\n@keyframes blob-rhf26m {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(100%, 0);\n  }\n\n  50% {\n    transform: translate(100%, 100%);\n  }\n\n  75% {\n    transform: translate(0, 100%);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n",
+    "component_name": "GalaxyCurlyMole58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 mix-blend-mode 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 mix-blend-mode 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 730,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.717Z",
+  "updated_at": "2025-07-31T07:55:42.717Z"
+}

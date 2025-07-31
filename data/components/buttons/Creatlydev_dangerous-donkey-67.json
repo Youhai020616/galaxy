@@ -1,0 +1,115 @@
+{
+  "id": "Creatlydev_dangerous-donkey-67",
+  "name": "dangerous-donkey-67",
+  "category": "buttons",
+  "author": "Creatlydev",
+  "description": "dangerous-donkey-67 组件 (neumorphism, button, simple button, gradient)",
+  "tags": [
+    "neumorphism",
+    "button",
+    "simple button",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n            <span class=\"btn__icon\">\n                <svg stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill=\"none\" d=\"M0 0h24v24H0z\" stroke=\"none\"></path>\n                    <path d=\"M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1\"></path>\n                    <path d=\"M9 15l3 -3l3 3\"></path>\n                    <path d=\"M12 12l0 9\"></path>\n                </svg>\n            </span>\n            <span class=\"btn__text\">Upload</span>\n        </button>",
+    "css": "/* From Uiverse.io by Creatlydev - Tags: neumorphism, button, simple button */\n.button {\n  --bg: linear-gradient(180deg,\n            hsla(0, 0%, 100%, .1),\n            hsla(0, 0%, 100%, 0)),\n        hsl(128, 52%, 45%);\n  box-shadow: 0 1px 2px #25114f66, 0 0 0 1px hsla(128, 50%, 45%, 0.761);\n  background-color: transparent;\n  border: none;\n  line-height: 1;\n  display: flex;\n  align-items: center;\n  gap: .5rem;\n  padding: .25rem .5rem;\n  cursor: pointer;\n  padding-right: 1rem;\n  font-weight: 600;\n  color: #fff;\n  background: var(--bg);\n  white-space: nowrap;\n  border-radius: 6px;\n  border: 1px solid #fff3;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Creatlydev_dangerous-donkey-67.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n            <text class=\"btn__icon\"></text>\n                <view stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n                    <path fill=\"none\" d=\"M0 0h24v24H0z\" stroke=\"none\"></path>\n                    <path d=\"M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1\"></path>\n                    <path d=\"M9 15l3 -3l3 3\"></path>\n                    <path d=\"M12 12l0 9\"></path>\n                </svg>\n            </span>\n            <text class=\"btn__text\">Upload</text>\n        </button>",
+    "script": "export default {\n  name: 'GalaxyDangerousDonkey67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Creatlydev - Tags: neumorphism, button, simple button */\n.button {\n  --bg: linear-gradient(180deg,\n            hsla(0, 0%, 100%, .1),\n            hsla(0, 0%, 100%, 0)),\n        hsl(128, 52%, 45%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 2rpx 4rpx #25114f66, 0 0 0 2rpx hsla(128, 50%, 45%, 0.761);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: transparent;\n  border: none;\n  line-height: 1;\n  display: flex;\n  align-items: center;\n  gap: .5rem;\n  padding: .25rem .5rem;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding-right: 1rem;\n  font-weight: 600;\n  color: #fff;\n  background: var(--bg);\n  white-space: nowrap;\n  border-radius: 12rpx;\n  border: 2rpx solid #fff3;\n}\n",
+    "component_name": "GalaxyDangerousDonkey67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1271,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.982Z",
+  "updated_at": "2025-07-31T07:55:32.982Z"
+}

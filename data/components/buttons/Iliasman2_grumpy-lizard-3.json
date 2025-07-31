@@ -1,0 +1,115 @@
+{
+  "id": "Iliasman2_grumpy-lizard-3",
+  "name": "grumpy-lizard-3",
+  "category": "buttons",
+  "author": "Iliasman2",
+  "description": "grumpy-lizard-3 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"designer-btn\">Click me</button>",
+    "css": "/* From Uiverse.io by Iliasman2 - Tags: button */\n.designer-btn {\n  display: inline-block;\n  padding: 14px 40px;\n  font-size: 20px;\n  font-weight: bold;\n  text-align: center;\n  border-radius: 30px;\n  cursor: pointer;\n  border: 2px solid black;\n  transition: all 0.3s ease;\n  background: linear-gradient(to bottom, #b2b5b3, #a5a7a6);\n  color: rgb(57, 53, 53);\n}\n\n.designer-btn:hover {\n  border: 2px solid rgb(109, 107, 107);\n  color: #a5a7a6;\n  box-shadow: 0 5px #666;\n  transform: translateY(-5px);\n  background: linear-gradient(to bottom, #2e2f2e, #323433);\n}\n\n.designer-btn:focus,\n.designer-btn:active {\n  transform: translateY(4px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Iliasman2_grumpy-lizard-3.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"designer-btn\"></button>Click me</button>",
+    "script": "export default {\n  name: 'GalaxyGrumpyLizard3',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Iliasman2 - Tags: button */\n.designer-btn {\n  display: inline-block;\n  padding: 28rpx 80rpx;\n  font-size: 40rpx;\n  font-weight: bold;\n  text-align: center;\n  border-radius: 60rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border: 4rpx solid black;\n  transition: all 0.3s ease;\n  background: linear-gradient(to bottom, #b2b5b3, #a5a7a6);\n  color: rgb(57, 53, 53);\n}\n\n.designer-btn:hover {\n  border: 4rpx solid rgb(109, 107, 107);\n  color: #a5a7a6;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 10rpx #666;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(-10rpx);\n  background: linear-gradient(to bottom, #2e2f2e, #323433);\n}\n\n.designer-btn:focus,\n.designer-btn:active {\n  transform: translateY(8rpx);\n}\n  \n\n",
+    "component_name": "GalaxyGrumpyLizard3"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 692,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.328Z",
+  "updated_at": "2025-07-31T07:55:33.328Z"
+}

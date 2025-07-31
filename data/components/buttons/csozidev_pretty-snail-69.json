@@ -1,0 +1,117 @@
+{
+  "id": "csozidev_pretty-snail-69",
+  "name": "pretty-snail-69",
+  "category": "buttons",
+  "author": "csozidev",
+  "description": "pretty-snail-69 组件 (simple, button, light, challenge, simple button, gradient)",
+  "tags": [
+    "simple",
+    "button",
+    "light",
+    "challenge",
+    "simple button",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg viewBox=\"2.5 -15 13 13\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill=\"none\" stroke-width=\"1\" stroke=\"#000000\" d=\"M 8 -7 C 9 -1 11.368 -2.531 12 -4 C 13 -6.6667 14 -9.3333 14.763 -11.565 C 15.381 -13.129 13.796 -14.529 12 -14 C 9.3333 -13 6.6667 -12 4.144 -10.825 C 1.613 -9.096 5.77 -7.45 7.828 -7.1 C 8.5757 -7.9023 9.3233 -8.7047 10.071 -9.507 C 9.385 -8.6703 8.699 -7.8337 8.013 -6.997\"></path>\n  </svg>\n  <p>Send message</p>\n</button>",
+    "css": "/* From Uiverse.io by csozidev  - Tags: simple, button, light, challenge, simple button */\n.button {\n  cursor: pointer;\n  display: flex;\n  height: 70px;\n  width: 205px;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  border: none;\n  background: linear-gradient(0deg, #ebedeb, #ffffff);\n  border-radius: 15px;\n  position: relative;\n  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.3);\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  width: 96%;\n  background: linear-gradient(180deg, #ebedeb, #ffffff);\n  height: 80%;\n  border-radius: 100px;\n  z-index: 5;\n}\n\nbutton::after {\n  content: \"\";\n  position: absolute;\n  width: calc(100% + 6px);\n  background: linear-gradient(0deg, #7e807e, #e3e6e4);\n  height: calc(100% + 6px);\n  z-index: -1;\n  border-radius: 18px;\n  top: -3px;\n  left: -3px;\n}\n\n.button svg {\n  stroke-linecap: round;\n  width: 20px;\n  z-index: 10;\n}\n\n.button p {\n  white-space: nowrap;\n  font-weight: 600;\n  font-size: 20px;\n  z-index: 10;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/csozidev_pretty-snail-69.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view viewBox=\"2.5 -15 13 13\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path fill=\"none\" stroke-width=\"1\" stroke=\"#000000\" d=\"M 8 -7 C 9 -1 11.368 -2.531 12 -4 C 13 -6.6667 14 -9.3333 14.763 -11.565 C 15.381 -13.129 13.796 -14.529 12 -14 C 9.3333 -13 6.6667 -12 4.144 -10.825 C 1.613 -9.096 5.77 -7.45 7.828 -7.1 C 8.5757 -7.9023 9.3233 -8.7047 10.071 -9.507 C 9.385 -8.6703 8.699 -7.8337 8.013 -6.997\"></path>\n  </svg>\n  <text>Send message</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPrettySnail69',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csozidev  - Tags: simple, button, light, challenge, simple button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  height: 140rpx;\n  width: 410rpx;\n  align-items: center;\n  justify-content: center;\n  gap: 20rpx;\n  border: none;\n  background: linear-gradient(0deg, #ebedeb, #ffffff);\n  border-radius: 30rpx;\n  position: relative;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 24rpx 80rpx 0rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  width: 96%;\n  background: linear-gradient(180deg, #ebedeb, #ffffff);\n  height: 80%;\n  border-radius: 200rpx;\n  z-index: 5;\n}\n\nbutton::after {\n  content: \"\";\n  position: absolute;\n  width: calc(100% + 12rpx);\n  background: linear-gradient(0deg, #7e807e, #e3e6e4);\n  height: calc(100% + 12rpx);\n  z-index: -1;\n  border-radius: 36rpx;\n  top: -6rpx;\n  left: -6rpx;\n}\n\n.button svg {\n  stroke-linecap: round;\n  width: 40rpx;\n  z-index: 10;\n}\n\n.button p {\n  white-space: nowrap;\n  font-weight: 600;\n  font-size: 40rpx;\n  z-index: 10;\n}\n\n",
+    "component_name": "GalaxyPrettySnail69"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1463,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.156Z",
+  "updated_at": "2025-07-31T07:55:36.156Z"
+}

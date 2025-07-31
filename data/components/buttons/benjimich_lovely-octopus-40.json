@@ -1,0 +1,113 @@
+{
+  "id": "benjimich_lovely-octopus-40",
+  "name": "lovely-octopus-40",
+  "category": "buttons",
+  "author": "benjimich",
+  "description": "lovely-octopus-40 组件 (icon, button, arrow, interactive)",
+  "tags": [
+    "icon",
+    "button",
+    "arrow",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <button class=\"button\">Button</button>\n  <span class=\"arrow first\">\n    <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n    </svg>\n  </span>\n  <span class=\"arrow second\">\n    <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n    </svg>\n  </span>\n  <span class=\"arrow third\">\n    <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n    </svg>\n  </span>\n</div>",
+    "css": "/* From Uiverse.io by benjimich - Tags: icon, button, arrow */\n.container {\n  display: flex;\n  position: relative;\n}\n\n.button {\n  cursor: pointer;\n  background: none;\n  border: none;\n  border-radius: 8px;\n  padding: .5em 1.5em;\n  font-size: 20px;\n  font-weight: 600;\n  color: #7f5af0;\n  transition: all .3s ease;\n}\n\n.arrow {\n  fill: #94a1b2;\n  position: absolute;\n  pointer-events: none;\n  width: 24px;\n  right: 0;\n  top: 25%;\n  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);\n}\n\n.button:hover {\n  letter-spacing: 2px;\n}\n\n.button:hover ~.second {\n  opacity: .66;\n  right: -20px;\n  transition-delay: 50ms;\n}\n\n.button:hover ~.third {\n  opacity: .33;\n  right: -40px;\n  transition-delay: 100ms;\n}\n\n.second, \n.third {\n  opacity: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/benjimich_lovely-octopus-40.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <button class=\"button\"></button>Button</button>\n  <text class=\"arrow first\"></text>\n    <view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n    </svg>\n  </span>\n  <text class=\"arrow second\"></text>\n    <view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n    </svg>\n  </span>\n  <text class=\"arrow third\"></text>\n    <view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z\"></path>\n    </svg>\n  </span>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLovelyOctopus40',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by benjimich - Tags: icon, button, arrow */\n.container {\n  display: flex;\n  position: relative;\n}\n\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: none;\n  border: none;\n  border-radius: 16rpx;\n  padding: .5em 1.5em;\n  font-size: 40rpx;\n  font-weight: 600;\n  color: #7f5af0;\n  transition: all .3s ease;\n}\n\n.arrow {\n  fill: #94a1b2;\n  position: absolute;\n  pointer-events: none;\n  width: 48rpx;\n  right: 0;\n  top: 25%;\n  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);\n}\n\n.button:hover {\n  letter-spacing: 4rpx;\n}\n\n.button:hover ~.second {\n  opacity: .66;\n  right: -40rpx;\n  transition-delay: 50ms;\n}\n\n.button:hover ~.third {\n  opacity: .33;\n  right: -80rpx;\n  transition-delay: 100ms;\n}\n\n.second, \n.third {\n  opacity: 0;\n}\n",
+    "component_name": "GalaxyLovelyOctopus40"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1609,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.952Z",
+  "updated_at": "2025-07-31T07:55:35.952Z"
+}

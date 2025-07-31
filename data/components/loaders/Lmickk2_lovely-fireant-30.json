@@ -1,0 +1,91 @@
+{
+  "id": "Lmickk2_lovely-fireant-30",
+  "name": "lovely-fireant-30",
+  "category": "loaders",
+  "author": "Lmickk2",
+  "description": "lovely-fireant-30 组件 (loading, loader, light&dark, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "light&dark",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"box-load1\"></div>\n  <div class=\"box-load2\"></div>\n  <div class=\"box-load3\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Lmickk2 - Tags: loading, loader, light&dark */\n.loader {\n  display: flex;\n  transition: all 0.4s;\n}\n\n.loader div {\n  margin-left: 0.8rem;\n  background-color: rgb(34, 34, 34);\n  box-shadow: inset 2px 2px 10px black;\n  border-radius: 100%;\n  height: 1rem;\n  width: 1rem;\n}\n\n.box-load1 {\n  animation: brighten 1.2s infinite;\n}\n\n.box-load2 {\n  animation: brighten 1.2s infinite;\n  animation-delay: .2s;\n}\n\n.box-load3 {\n  animation: brighten 1.2s infinite;\n  animation-delay: .4s;\n}\n\n@keyframes brighten {\n  100% {\n    background-color: rgb(165, 165, 165);\n    box-shadow: none;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Lmickk2_lovely-fireant-30.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"box-load1\"></view>\n  <view class=\"box-load2\"></view>\n  <view class=\"box-load3\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLovelyFireant30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Lmickk2 - Tags: loading, loader, light&dark */\n.loader {\n  display: flex;\n  transition: all 0.4s;\n}\n\n.loader div {\n  margin-left: 0.8rem;\n  background-color: rgb(34, 34, 34);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 4rpx 4rpx 20rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 100%;\n  height: 1rem;\n  width: 1rem;\n}\n\n.box-load1 {\n  animation: brighten 1.2s infinite;\n}\n\n.box-load2 {\n  animation: brighten 1.2s infinite;\n  animation-delay: .2s;\n}\n\n.box-load3 {\n  animation: brighten 1.2s infinite;\n  animation-delay: .4s;\n}\n\n@keyframes brighten {\n  100% {\n    background-color: rgb(165, 165, 165);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n",
+    "component_name": "GalaxyLovelyFireant30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 729,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.662Z",
+  "updated_at": "2025-07-31T07:55:39.662Z"
+}

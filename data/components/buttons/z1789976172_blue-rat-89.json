@@ -1,0 +1,114 @@
+{
+  "id": "z1789976172_blue-rat-89",
+  "name": "blue-rat-89",
+  "category": "buttons",
+  "author": "z1789976172",
+  "description": "blue-rat-89 组件 (button, animal, hover button, animation, interactive)",
+  "tags": [
+    "button",
+    "animal",
+    "hover button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"btn btn--huge\">\n  <div class=\"btn--huge__text\">\n    <div>\n      Explore More\n      <span>Explore More</span>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by z1789976172 - Source: https://www.respawn.com/ - Tags: button, animal, hover button */\n:after,:before {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.btn--huge {\n  cursor: pointer;\n  position: relative;\n  height: 45px;\n  background-color: #ff4e33;\n  text-transform: uppercase;\n  display: inline-block;\n  color: fff;\n  font-family: Arial;\n  font-weight: 800;\n  font-size: 12px;\n  letter-spacing: 1px;\n  padding: 0 20px 0 50px;\n  white-space: nowrap;\n}\n\n.btn--huge:before {\n  -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.15 , 0.15, 0.86);\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 30px;\n  height: 100%;\n  background-color: #D6D4D3;\n}\n\n.btn--huge:after {\n  -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.15 , 0.15, 0.86);\n  content: '→';\n  font-size: 14px;\n  line-height: 1;\n  color: #D6D4D3;\n  position: absolute;\n  left: 20px;\n  top: 50%;\n  width: 22px;\n  height: 22px;\n  margin-top: -11px;\n  background: #FF4E33;\n  z-index: 2;\n  border-radius: 50%;\n  border: 1px solid #D6D4D3;\n}\n\n.btn--huge__text {\n  position: relative;\n  top: -1px;\n  -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  height: 100%;\n  display: flex;\n  align-items: center;\n}\n\n.btn--huge__text div {\n  position: relative;\n  color: #fff;\n}\n\n.btn--huge__text span {\n  -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  overflow: hidden;\n  position: absolute;\n  white-space: nowrap;\n  top: 0;\n  left: 0;\n  color: #000;\n  width: 0;\n}\n\n.btn--huge:hover:after {\n  -webkit-transform: translateX(-30px);\n  transform: translateX(-30px);\n}\n\n.btn--huge:hover:before {\n  width: 0;\n}\n\n.btn--huge:hover .btn--huge__text span {\n  width: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/z1789976172_blue-rat-89.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"btn btn--huge\"></view>\n  <view class=\"btn--huge__text\"></view>\n    <view></view>\n      Explore More\n      <text>Explore More</text>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBlueRat89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by z1789976172 - Source: https://www.respawn.com/ - Tags: button, animal, hover button */\n:after,:before {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.btn--huge {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  height: 90rpx;\n  background-color: #ff4e33;\n  text-transform: uppercase;\n  display: inline-block;\n  color: fff;\n  font-family: Arial;\n  font-weight: 800;\n  font-size: 24rpx;\n  letter-spacing: 2rpx;\n  padding: 0 40rpx 0 100rpx;\n  white-space: nowrap;\n}\n\n.btn--huge:before {\n  -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.15 , 0.15, 0.86);\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 60rpx;\n  height: 100%;\n  background-color: #D6D4D3;\n}\n\n.btn--huge:after {\n  -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.15 , 0.15, 0.86);\n  content: '→';\n  font-size: 28rpx;\n  line-height: 1;\n  color: #D6D4D3;\n  position: absolute;\n  left: 40rpx;\n  top: 50%;\n  width: 44rpx;\n  height: 44rpx;\n  margin-top: -22rpx;\n  background: #FF4E33;\n  z-index: 2;\n  border-radius: 50%;\n  border: 2rpx solid #D6D4D3;\n}\n\n.btn--huge__text {\n  position: relative;\n  top: -2rpx;\n  -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  height: 100%;\n  display: flex;\n  align-items: center;\n}\n\n.btn--huge__text div {\n  position: relative;\n  color: #fff;\n}\n\n.btn--huge__text span {\n  -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);\n  overflow: hidden;\n  position: absolute;\n  white-space: nowrap;\n  top: 0;\n  left: 0;\n  color: #000;\n  width: 0;\n}\n\n.btn--huge:hover:after {\n  -webkit-transform: translateX(-60rpx);\n  transform: translateX(-60rpx);\n}\n\n.btn--huge:hover:before {\n  width: 0;\n}\n\n.btn--huge:hover .btn--huge__text span {\n  width: 100%;\n}\n",
+    "component_name": "GalaxyBlueRat89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2090,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.412Z",
+  "updated_at": "2025-07-31T07:55:38.412Z"
+}

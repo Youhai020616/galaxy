@@ -1,0 +1,116 @@
+{
+  "id": "Yaya12085_horrible-pug-35",
+  "name": "horrible-pug-35",
+  "category": "buttons",
+  "author": "Yaya12085",
+  "description": "horrible-pug-35 组件 (icon, twitter, button, connect, animation, gradient, interactive)",
+  "tags": [
+    "icon",
+    "twitter",
+    "button",
+    "connect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Sign in with Twitter\n  <span>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\">\n  <path fill=\"#fff\" d=\"M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z\"></path>\n</svg>\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by Yaya12085 - Tags: icon, twitter, button, connect */\nbutton {\n  max-width: 320px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  padding: 0.875rem 72px 0.875rem 1.75rem;\n  background-color: #039be5;\n  background-image: linear-gradient(to top right, #039be5,#29b6f6);\n  color: #ffffff;\n  font-size: 15px;\n  line-height: 1.25rem;\n  font-weight: 700;\n  text-align: center;\n  text-transform: uppercase;\n  vertical-align: middle;\n  align-items: center;\n  border-radius: 0.5rem;\n  gap: 0.75rem;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border: none;\n  transition: all .6s  ease;\n}\n\nbutton span {\n  background-color: rgb(3 155 229);\n  display: grid;\n  position: absolute;\n  right: 0;\n  place-items: center;\n  width: 3rem;\n  height: 100%;\n}\n\nbutton span svg {\n  width: 1.5rem;\n  height: 1.5rem;\n}\n\nbutton:hover {\n  box-shadow: 0 4px 30px  rgba(4, 175, 255, .1), 0 2px 30px rgba(11, 158, 255, 0.06);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Yaya12085_horrible-pug-35.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Sign in with Twitter\n  <text></text>\n    <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"></view>\n  <path fill=\"#fff\" d=\"M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z\"></path>\n</svg>\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHorriblePug35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Yaya12085 - Tags: icon, twitter, button, connect */\nbutton {\n  max-width: 640rpx;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  padding: 0.875rem 144rpx 0.875rem 1.75rem;\n  background-color: #039be5;\n  background-image: linear-gradient(to top right, #039be5,#29b6f6);\n  color: #ffffff;\n  font-size: 30rpx;\n  line-height: 1.25rem;\n  font-weight: 700;\n  text-align: center;\n  text-transform: uppercase;\n  vertical-align: middle;\n  align-items: center;\n  border-radius: 0.5rem;\n  gap: 0.75rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 12rpx -2rpx rgba(0, 0, 0, 0.1), 0 4rpx 8rpx -2rpx rgba(0, 0, 0, 0.06);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: none;\n  transition: all .6s  ease;\n}\n\nbutton span {\n  background-color: rgb(3 155 229);\n  display: grid;\n  position: absolute;\n  right: 0;\n  place-items: center;\n  width: 3rem;\n  height: 100%;\n}\n\nbutton span svg {\n  width: 1.5rem;\n  height: 1.5rem;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 60rpx  rgba(4, 175, 255, .1), 0 4rpx 60rpx rgba(11, 158, 255, 0.06);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyHorriblePug35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1651,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.220Z",
+  "updated_at": "2025-07-31T07:55:35.220Z"
+}

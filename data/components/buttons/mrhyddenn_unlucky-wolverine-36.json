@@ -1,0 +1,108 @@
+{
+  "id": "mrhyddenn_unlucky-wolverine-36",
+  "name": "unlucky-wolverine-36",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "unlucky-wolverine-36 组件 (button, animation, gradient)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"container_mouse\">\n    <span class=\"mouse-btn\">\n        <span class=\"mouse-scroll\"></span>\n    </span>\n    <span>Scroll Down</span>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: button */\n.mouse-btn {\n  margin: 10px auto;\n  width: 40px;\n  height: 80px;\n  border: 3px solid rgba(122, 122, 124, 0.918);\n  border-radius: 20px;\n  display: flex;\n}\n\n.mouse-scroll {\n  display: block;\n  width: 20px;\n  height: 20px;\n  background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));\n  border-radius: 50%;\n  margin: auto;\n  animation: scrolling13 1s linear infinite;\n}\n\n@keyframes scrolling13 {\n  0% {\n    opacity: 0;\n    transform: translateY(-20px);\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(20px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_unlucky-wolverine-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container_mouse\"></view>\n    <text class=\"mouse-btn\"></text>\n        <text class=\"mouse-scroll\"></text>\n    </span>\n    <text>Scroll Down</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUnluckyWolverine36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: button */\n.mouse-btn {\n  margin: 20rpx auto;\n  width: 80rpx;\n  height: 160rpx;\n  border: 6rpx solid rgba(122, 122, 124, 0.918);\n  border-radius: 40rpx;\n  display: flex;\n}\n\n.mouse-scroll {\n  display: block;\n  width: 40rpx;\n  height: 40rpx;\n  background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));\n  border-radius: 50%;\n  margin: auto;\n  animation: scrolling13 1s linear infinite;\n}\n\n@keyframes scrolling13 {\n  0% {\n    opacity: 0;\n    transform: translateY(-40rpx);\n  }\n\n  100% {\n    opacity: 1;\n    transform: translateY(40rpx);\n  }\n}\n",
+    "component_name": "GalaxyUnluckyWolverine36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 747,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.388Z",
+  "updated_at": "2025-07-31T07:55:37.388Z"
+}

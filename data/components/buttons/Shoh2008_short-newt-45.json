@@ -1,0 +1,116 @@
+{
+  "id": "Shoh2008_short-newt-45",
+  "name": "short-newt-45",
+  "category": "buttons",
+  "author": "Shoh2008",
+  "description": "short-newt-45 组件 (skeuomorphism, button, animation, gradient, interactive)",
+  "tags": [
+    "skeuomorphism",
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: skeuomorphism, button */\nbutton {\n  background-color: #0078d0;\n  border: 0;\n  border-radius: 56px;\n  color: #fff;\n  cursor: pointer;\n  display: inline-block;\n  font-family: system-ui,-apple-system,system-ui,\"Segoe UI\",Roboto,Ubuntu,\"Helvetica Neue\",sans-serif;\n  font-size: 18px;\n  font-weight: 600;\n  outline: 0;\n  padding: 16px 32px;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-user-select: none;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n}\n\nbutton:before {\n  background-color: initial;\n  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(rgba(255, 255, 255, 0)));\n  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);\n  border-radius: 125px;\n  content: \"\";\n  height: 50%;\n  left: 4%;\n  opacity: .5;\n  position: absolute;\n  top: 0;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  width: 92%;\n}\n\nbutton:hover {\n  -webkit-box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;\n  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;\n  -webkit-transform: scale(1.05);\n  -ms-transform: scale(1.05);\n  transform: scale(1.05);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Shoh2008_short-newt-45.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyShortNewt45',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: skeuomorphism, button */\nbutton {\n  background-color: #0078d0;\n  border: 0;\n  border-radius: 112rpx;\n  color: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: inline-block;\n  font-family: system-ui,-apple-system,system-ui,\"Segoe UI\",Roboto,Ubuntu,\"Helvetica Neue\",sans-serif;\n  font-size: 36rpx;\n  font-weight: 600;\n  outline: 0;\n  padding: 32rpx 64rpx;\n  position: relative;\n  text-align: center;\n  text-decoration: none;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-user-select: none;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n}\n\nbutton:before {\n  background-color: initial;\n  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(rgba(255, 255, 255, 0)));\n  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);\n  border-radius: 250rpx;\n  content: \"\";\n  height: 50%;\n  left: 4%;\n  opacity: .5;\n  position: absolute;\n  top: 0;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  width: 92%;\n}\n\nbutton:hover {\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(255, 255, 255, .2) 0 6rpx 30rpx inset, rgba(0, 0, 0, .1) 0 6rpx 10rpx, rgba(0, 0, 0, .1) 0 20rpx 26rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(255, 255, 255, .2) 0 6rpx 30rpx inset, rgba(0, 0, 0, .1) 0 6rpx 10rpx, rgba(0, 0, 0, .1) 0 20rpx 26rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transform: scale(1.05);\n  -ms-transform: scale(1.05);\n  transform: scale(1.05);\n}\n",
+    "component_name": "GalaxyShortNewt45"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1464,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.676Z",
+  "updated_at": "2025-07-31T07:55:34.676Z"
+}

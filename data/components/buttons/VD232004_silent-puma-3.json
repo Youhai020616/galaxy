@@ -1,0 +1,116 @@
+{
+  "id": "VD232004_silent-puma-3",
+  "name": "silent-puma-3",
+  "category": "buttons",
+  "author": "VD232004",
+  "description": "silent-puma-3 组件 (button, hover button, button hover effect, animation, interactive)",
+  "tags": [
+    "button",
+    "hover button",
+    "button hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"unique-button\">\n  <div class=\"svg-wrap\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\">\n      <path fill=\"none\" d=\"M0 0h24v24H0z\"></path>\n      <path fill=\"currentColor\" d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\"></path>\n    </svg>\n  </div>\n  <span>Hover Me</span>\n</button>",
+    "css": "/* From Uiverse.io by VD232004  - Tags: button, hover button, button hover effect  */\n.unique-button {\n  display: flex;\n  align-items: center;\n  position: relative;\n  width: 180px;\n  height: 60px;\n  padding: 15px 30px;\n  font-size: 18px;\n  text-decoration: none;\n  color: #fff;\n  background-color: #a634db;\n  border: none;\n  border-radius: 10px;\n  overflow: hidden;\n  cursor: pointer;\n  transition: 0.3s all ease-in-out;\n}\n\n.unique-button:hover {\n  transition: 0.3s all ease-in-out;\n  box-shadow: 5px 10px 30px #a634db;\n}\n\n.unique-button span {\n  display: block;\n  margin-left: 0.3em;\n  transition: all 0.3s ease-in-out;\n}\n\n.unique-button:hover span {\n  transform: translateX(7em);\n}\n\n.unique-button:hover .svg-wrap {\n  animation: fly-1 0.6s ease-in-out infinite alternate;\n  z-index: 1;\n}\n\n.unique-button svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\n.unique-button:hover svg {\n  transform: translateX(2.5em) rotate(45deg) scale(1.2);\n}\n\n.unique-button:active {\n  transform: scale(0.95);\n}\n\n@keyframes fly-1 {\n  from {\n    transform: translateY(0.1em);\n  }\n\n  to {\n    transform: translateY(-0.1em);\n  }\n}\n\n.unique-button::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 0;\n  height: 80%;\n  border-bottom-left-radius: 60px;\n  border-top-right-radius: 60px;\n  border-top-left-radius: 20px;\n  border-bottom-right-radius: 20px;\n  background-color: #2c3e50;\n  transition: all 0.2s ease-in-out;\n}\n\n.unique-button:hover::before {\n  width: 100%;\n}\n\n.unique-button::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 80%;\n  height: 0;\n  border-bottom-left-radius: 20px;\n  border-top-right-radius: 20px;\n  border-top-left-radius: 60px;\n  border-bottom-right-radius: 60px;\n  background-color: #2c3e50;\n  transition: all 0.3s ease-in-out;\n}\n\n.unique-button:hover::after {\n  height: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/VD232004_silent-puma-3.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"unique-button\"></button>\n  <view class=\"svg-wrap\"></view>\n    <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\"></view>\n      <path fill=\"none\" d=\"M0 0h24v24H0z\"></path>\n      <path fill=\"currentColor\" d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\"></path>\n    </svg>\n  </div>\n  <text>Hover Me</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySilentPuma3',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by VD232004  - Tags: button, hover button, button hover effect  */\n.unique-button {\n  display: flex;\n  align-items: center;\n  position: relative;\n  width: 360rpx;\n  height: 120rpx;\n  padding: 30rpx 60rpx;\n  font-size: 36rpx;\n  text-decoration: none;\n  color: #fff;\n  background-color: #a634db;\n  border: none;\n  border-radius: 20rpx;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: 0.3s all ease-in-out;\n}\n\n.unique-button:hover {\n  transition: 0.3s all ease-in-out;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 20rpx 60rpx #a634db;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.unique-button span {\n  display: block;\n  margin-left: 0.3em;\n  transition: all 0.3s ease-in-out;\n}\n\n.unique-button:hover span {\n  transform: translateX(7em);\n}\n\n.unique-button:hover .svg-wrap {\n  animation: fly-1 0.6s ease-in-out infinite alternate;\n  z-index: 1;\n}\n\n.unique-button svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\n.unique-button:hover svg {\n  transform: translateX(2.5em) rotate(45deg) scale(1.2);\n}\n\n.unique-button:active {\n  transform: scale(0.95);\n}\n\n@keyframes fly-1 {\n  from {\n    transform: translateY(0.1em);\n  }\n\n  to {\n    transform: translateY(-0.1em);\n  }\n}\n\n.unique-button::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 0;\n  height: 80%;\n  border-bottom-left-radius: 120rpx;\n  border-top-right-radius: 120rpx;\n  border-top-left-radius: 40rpx;\n  border-bottom-right-radius: 40rpx;\n  background-color: #2c3e50;\n  transition: all 0.2s ease-in-out;\n}\n\n.unique-button:hover::before {\n  width: 100%;\n}\n\n.unique-button::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 80%;\n  height: 0;\n  border-bottom-left-radius: 40rpx;\n  border-top-right-radius: 40rpx;\n  border-top-left-radius: 120rpx;\n  border-bottom-right-radius: 120rpx;\n  background-color: #2c3e50;\n  transition: all 0.3s ease-in-out;\n}\n\n.unique-button:hover::after {\n  height: 100%;\n}\n\n",
+    "component_name": "GalaxySilentPuma3"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2418,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.076Z",
+  "updated_at": "2025-07-31T07:55:35.076Z"
+}

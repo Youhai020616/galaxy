@@ -1,0 +1,86 @@
+{
+  "id": "JkHuger_heavy-walrus-48",
+  "name": "heavy-walrus-48",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "heavy-walrus-48 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  Loading\n</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n.loader {\n  font-size: 2rem;\n  font-family: sans-serif;\n  font-variant: small-caps;\n  font-weight: 900;\n  background: conic-gradient(\n    #dff2ae 0 25%,\n    #ff904f 25% 50%,\n    #feefe7 50% 75%,\n    #ffde2b 75%\n  );\n  background-size: 200% 200%;\n  animation: animateBackground 4.5s ease-in-out infinite;\n  color: transparent;\n  background-clip: text;\n  -webkit-background-clip: text;\n}\n\n@keyframes animateBackground {\n  25% {\n    background-position: 0 100%;\n  }\n\n  50% {\n    background-position: 100% 100%;\n  }\n\n  75% {\n    background-position: 100% 0%;\n  }\n\n  100% {\n    background-position: 0 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_heavy-walrus-48.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  Loading\n</div>",
+    "script": "export default {\n  name: 'GalaxyHeavyWalrus48',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n.loader {\n  font-size: 2rem;\n  font-family: sans-serif;\n  font-variant: small-caps;\n  font-weight: 900;\n  background: conic-gradient(\n    #dff2ae 0 25%,\n    #ff904f 25% 50%,\n    #feefe7 50% 75%,\n    #ffde2b 75%\n  );\n  background-size: 200% 200%;\n  animation: animateBackground 4.5s ease-in-out infinite;\n  color: transparent;\n  background-clip: text;\n  -webkit-background-clip: text;\n}\n\n@keyframes animateBackground {\n  25% {\n    background-position: 0 100%;\n  }\n\n  50% {\n    background-position: 100% 100%;\n  }\n\n  75% {\n    background-position: 100% 0%;\n  }\n\n  100% {\n    background-position: 0 0;\n  }\n}\n\n",
+    "component_name": "GalaxyHeavyWalrus48"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 694,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.470Z",
+  "updated_at": "2025-07-31T07:55:39.470Z"
+}

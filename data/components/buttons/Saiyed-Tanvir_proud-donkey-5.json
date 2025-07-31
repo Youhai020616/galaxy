@@ -1,0 +1,113 @@
+{
+  "id": "Saiyed-Tanvir_proud-donkey-5",
+  "name": "proud-donkey-5",
+  "category": "buttons",
+  "author": "Saiyed-Tanvir",
+  "description": "proud-donkey-5 组件 (button, box, animation, gradient)",
+  "tags": [
+    "button",
+    "box",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"btn\">\n    <div class=\"sides top\">\n      BUTTON\n    </div>\n    <div class=\"sides front\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Saiyed-Tanvir - Tags: button, box */\n.btn {\n  transform-style: preserve-3d;\n  perspective: 1000px;\n}\n\n.sides {\n  transition: all 0.07s;\n  cursor: pointer;\n}\n\n.top {\n  background: linear-gradient(259.35deg, #FF6B00 0%, #BD00FF 100%);\n  height: 2cm;\n  width: 4cm;\n  transform: rotateX(60deg);\n  font-weight: bolder;\n  padding: 0.5cm 1cm;\n  color: white;\n}\n\n.front {\n  background: linear-gradient(280.65deg, #BD5000 0%, #8C00BD 100%);\n  height: 2cm;\n  width: 4cm;\n  transform: translateY(-38px) rotateX(-60deg);\n}\n\n.btn:active .top {\n  transform: rotateX(60deg) translateZ(0px);\n}\n\n.btn:active .front {\n  height: 0.1cm;\n  transform: rotateX(-60deg) translateZ(-26px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Saiyed-Tanvir_proud-donkey-5.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"btn\"></view>\n    <view class=\"sides top\"></view>\n      BUTTON\n    </div>\n    <view class=\"sides front\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyProudDonkey5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Saiyed-Tanvir - Tags: button, box */\n.btn {\n  transform-style: preserve-3d;\n  perspective: 2000rpx;\n}\n\n.sides {\n  transition: all 0.07s;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.top {\n  background: linear-gradient(259.35deg, #FF6B00 0%, #BD00FF 100%);\n  height: 2cm;\n  width: 4cm;\n  transform: rotateX(60deg);\n  font-weight: bolder;\n  padding: 0.5cm 1cm;\n  color: white;\n}\n\n.front {\n  background: linear-gradient(280.65deg, #BD5000 0%, #8C00BD 100%);\n  height: 2cm;\n  width: 4cm;\n  transform: translateY(-76rpx) rotateX(-60deg);\n}\n\n.btn:active .top {\n  transform: rotateX(60deg) translateZ(0rpx);\n}\n\n.btn:active .front {\n  height: 0.1cm;\n  transform: rotateX(-60deg) translateZ(-52rpx);\n}\n",
+    "component_name": "GalaxyProudDonkey5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 839,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.483Z",
+  "updated_at": "2025-07-31T07:55:34.483Z"
+}

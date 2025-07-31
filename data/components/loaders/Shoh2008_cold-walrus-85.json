@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_cold-walrus-85",
+  "name": "cold-walrus-85",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "cold-walrus-85 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  font-size: 16px;\n  width: 5.5em;\n  height: 5.5em;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  transform: translate(-50%, -50%) rotate(45deg);\n  height: 100%;\n  width: 4px;\n  background: #fff;\n  left: 50%;\n  top: 50%;\n}\n\n.loader:after {\n  content: '';\n  position: absolute;\n  left: 0.2em;\n  bottom: 0.18em;\n  width: 1em;\n  height: 1em;\n  background-color: orange;\n  border-radius: 15%;\n  animation: rollingRock 2.5s cubic-bezier(.79, 0, .47, .97) infinite;\n}\n\n@keyframes rollingRock {\n  0% {\n    transform: translate(0, -1em) rotate(-45deg)\n  }\n\n  5% {\n    transform: translate(0, -1em) rotate(-50deg)\n  }\n\n  20% {\n    transform: translate(1em, -2em) rotate(47deg)\n  }\n\n  25% {\n    transform: translate(1em, -2em) rotate(45deg)\n  }\n\n  30% {\n    transform: translate(1em, -2em) rotate(40deg)\n  }\n\n  45% {\n    transform: translate(2em, -3em) rotate(137deg)\n  }\n\n  50% {\n    transform: translate(2em, -3em) rotate(135deg)\n  }\n\n  55% {\n    transform: translate(2em, -3em) rotate(130deg)\n  }\n\n  70% {\n    transform: translate(3em, -4em) rotate(217deg)\n  }\n\n  75% {\n    transform: translate(3em, -4em) rotate(220deg)\n  }\n\n  100% {\n    transform: translate(0, -1em) rotate(-225deg)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_cold-walrus-85.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyColdWalrus85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  font-size: 32rpx;\n  width: 5.5em;\n  height: 5.5em;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  transform: translate(-50%, -50%) rotate(45deg);\n  height: 100%;\n  width: 8rpx;\n  background: #fff;\n  left: 50%;\n  top: 50%;\n}\n\n.loader:after {\n  content: '';\n  position: absolute;\n  left: 0.2em;\n  bottom: 0.18em;\n  width: 1em;\n  height: 1em;\n  background-color: orange;\n  border-radius: 15%;\n  animation: rollingRock 2.5s cubic-bezier(.79, 0, .47, .97) infinite;\n}\n\n@keyframes rollingRock {\n  0% {\n    transform: translate(0, -1em) rotate(-45deg)\n  }\n\n  5% {\n    transform: translate(0, -1em) rotate(-50deg)\n  }\n\n  20% {\n    transform: translate(1em, -2em) rotate(47deg)\n  }\n\n  25% {\n    transform: translate(1em, -2em) rotate(45deg)\n  }\n\n  30% {\n    transform: translate(1em, -2em) rotate(40deg)\n  }\n\n  45% {\n    transform: translate(2em, -3em) rotate(137deg)\n  }\n\n  50% {\n    transform: translate(2em, -3em) rotate(135deg)\n  }\n\n  55% {\n    transform: translate(2em, -3em) rotate(130deg)\n  }\n\n  70% {\n    transform: translate(3em, -4em) rotate(217deg)\n  }\n\n  75% {\n    transform: translate(3em, -4em) rotate(220deg)\n  }\n\n  100% {\n    transform: translate(0, -1em) rotate(-225deg)\n  }\n}\n      \n",
+    "component_name": "GalaxyColdWalrus85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1314,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.332Z",
+  "updated_at": "2025-07-31T07:55:40.332Z"
+}

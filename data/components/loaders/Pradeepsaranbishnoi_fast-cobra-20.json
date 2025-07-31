@@ -1,0 +1,89 @@
+{
+  "id": "Pradeepsaranbishnoi_fast-cobra-20",
+  "name": "fast-cobra-20",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "fast-cobra-20 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"dot\"></div>\n  <div class=\"dot\"></div>\n  <div class=\"dot\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n/* The loader container */\n.loader {\n  width: 200px;\n  height: 200px;\n  perspective: 200px;\n}\n\n\n/* The dot */\n.dot {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 120px;\n  height: 120px;\n  margin-top: -60px;\n  margin-left: -60px;\n  border-radius: 100px;\n  border: 40px outset #1e3f57;\n  transform-origin: 50% 50%;\n  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  background-color: transparent;\n  animation: dot1 1000ms cubic-bezier(.49,.06,.43,.85) infinite;\n}\n\n.dot:nth-child(2) {\n  width: 140px;\n  height: 140px;\n  margin-top: -70px;\n  margin-left: -70px;\n  border-width: 30px;\n  border-color: #447891;\n  animation-name: dot2;\n  animation-delay: 75ms;\n  box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);\n  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n}\n\n.dot:nth-child(3) {\n  width: 160px;\n  height: 160px;\n  margin-top: -80px;\n  margin-left: -80px;\n  border-width: 20px;\n  border-color: #6bb2cd;\n  animation-name: dot3;\n  animation-delay: 150ms;\n  box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);\n  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n}\n\n@keyframes dot1 {\n  0% {\n    border-color: #1e3f57;\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  }\n\n  50% {\n    border-color: #1e574f;\n    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);\n  }\n\n  100% {\n    border-color: #1e3f57;\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  }\n}\n\n@keyframes dot2 {\n  0% {\n    border-color: #447891;\n    box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  }\n\n  50% {\n    border-color: #449180;\n    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);\n    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);\n  }\n\n  100% {\n    border-color: #447891;\n    box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  }\n}\n\n@keyframes dot3 {\n  0% {\n    border-color: #6bb2cd;\n    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  }\n\n  50% {\n    border-color: #6bcdb2;\n    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);\n    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);\n  }\n\n  100% {\n    border-color: #6bb2cd;\n    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_fast-cobra-20.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"dot\"></view>\n  <view class=\"dot\"></view>\n  <view class=\"dot\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastCobra20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n/* The loader container */\n.loader {\n  width: 400rpx;\n  height: 400rpx;\n  perspective: 400rpx;\n}\n\n\n/* The dot */\n.dot {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 240rpx;\n  height: 240rpx;\n  margin-top: -120rpx;\n  margin-left: -120rpx;\n  border-radius: 200rpx;\n  border: 80rpx outset #1e3f57;\n  transform-origin: 50% 50%;\n  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  background-color: transparent;\n  animation: dot1 1000ms cubic-bezier(.49,.06,.43,.85) infinite;\n}\n\n.dot:nth-child(2) {\n  width: 280rpx;\n  height: 280rpx;\n  margin-top: -140rpx;\n  margin-left: -140rpx;\n  border-width: 60rpx;\n  border-color: #447891;\n  animation-name: dot2;\n  animation-delay: 75ms;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n}\n\n.dot:nth-child(3) {\n  width: 320rpx;\n  height: 320rpx;\n  margin-top: -160rpx;\n  margin-left: -160rpx;\n  border-width: 40rpx;\n  border-color: #6bb2cd;\n  animation-name: dot3;\n  animation-delay: 150ms;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n}\n\n@keyframes dot1 {\n  0% {\n    border-color: #1e3f57;\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  }\n\n  50% {\n    border-color: #1e574f;\n    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0rpx);\n  }\n\n  100% {\n    border-color: #1e3f57;\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  }\n}\n\n@keyframes dot2 {\n  0% {\n    border-color: #447891;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  }\n\n  50% {\n    border-color: #449180;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(0, 0, 0, 0.8);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0rpx);\n  }\n\n  100% {\n    border-color: #447891;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  }\n}\n\n@keyframes dot3 {\n  0% {\n    border-color: #6bb2cd;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  }\n\n  50% {\n    border-color: #6bcdb2;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(0, 0, 0, 0.8);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0rpx);\n  }\n\n  100% {\n    border-color: #6bb2cd;\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx 0 rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-50rpx);\n  }\n}\n",
+    "component_name": "GalaxyFastCobra20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2762,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.056Z",
+  "updated_at": "2025-07-31T07:55:40.056Z"
+}

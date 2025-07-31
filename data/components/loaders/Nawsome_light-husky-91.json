@@ -1,0 +1,87 @@
+{
+  "id": "Nawsome_light-husky-91",
+  "name": "light-husky-91",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "light-husky-91 组件 (loader, placeholder, animation, gradient)",
+  "tags": [
+    "loader",
+    "placeholder",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"wrapper\">\n    <div class=\"circle\"></div>\n    <div class=\"line-1\"></div>\n    <div class=\"line-2\"></div>\n    <div class=\"line-3\"></div>\n    <div class=\"line-4\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader, placeholder */\n.loader {\n  position: relative;\n  width: 240px;\n  height: 130px;\n  margin-bottom: 10px;\n  border: 1px solid #d3d3d3;\n  padding: 15px;\n  background-color: #e3e3e3;\n  overflow: hidden;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: linear-gradient(110deg, rgba(227, 227, 227, 0) 0%, rgba(227, 227, 227, 0) 40%, rgba(227, 227, 227, 0.5) 50%, rgba(227, 227, 227, 0) 60%, rgba(227, 227, 227, 0) 100%);\n  animation: gradient-animation_2 1.2s linear infinite;\n}\n\n.loader .wrapper {\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n\n.loader .wrapper > div {\n  background-color: #cacaca;\n}\n\n.loader .circle {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n}\n\n.loader .button {\n  display: inline-block;\n  height: 32px;\n  width: 75px;\n}\n\n.loader .line-1 {\n  position: absolute;\n  top: 11px;\n  left: 58px;\n  height: 10px;\n  width: 100px;\n}\n\n.loader .line-2 {\n  position: absolute;\n  top: 34px;\n  left: 58px;\n  height: 10px;\n  width: 150px;\n}\n\n.loader .line-3 {\n  position: absolute;\n  top: 57px;\n  left: 0px;\n  height: 10px;\n  width: 100%;\n}\n\n.loader .line-4 {\n  position: absolute;\n  top: 80px;\n  left: 0px;\n  height: 10px;\n  width: 92%;\n}\n\n@keyframes gradient-animation_2 {\n  0% {\n    transform: translateX(-100%);\n  }\n\n  100% {\n    transform: translateX(100%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_light-husky-91.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"wrapper\"></view>\n    <view class=\"circle\"></view>\n    <view class=\"line-1\"></view>\n    <view class=\"line-2\"></view>\n    <view class=\"line-3\"></view>\n    <view class=\"line-4\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLightHusky91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader, placeholder */\n.loader {\n  position: relative;\n  width: 480rpx;\n  height: 260rpx;\n  margin-bottom: 20rpx;\n  border: 2rpx solid #d3d3d3;\n  padding: 30rpx;\n  background-color: #e3e3e3;\n  overflow: hidden;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: linear-gradient(110deg, rgba(227, 227, 227, 0) 0%, rgba(227, 227, 227, 0) 40%, rgba(227, 227, 227, 0.5) 50%, rgba(227, 227, 227, 0) 60%, rgba(227, 227, 227, 0) 100%);\n  animation: gradient-animation_2 1.2s linear infinite;\n}\n\n.loader .wrapper {\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n\n.loader .wrapper > div {\n  background-color: #cacaca;\n}\n\n.loader .circle {\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n}\n\n.loader .button {\n  display: inline-block;\n  height: 64rpx;\n  width: 150rpx;\n}\n\n.loader .line-1 {\n  position: absolute;\n  top: 22rpx;\n  left: 116rpx;\n  height: 20rpx;\n  width: 200rpx;\n}\n\n.loader .line-2 {\n  position: absolute;\n  top: 68rpx;\n  left: 116rpx;\n  height: 20rpx;\n  width: 300rpx;\n}\n\n.loader .line-3 {\n  position: absolute;\n  top: 114rpx;\n  left: 0rpx;\n  height: 20rpx;\n  width: 100%;\n}\n\n.loader .line-4 {\n  position: absolute;\n  top: 160rpx;\n  left: 0rpx;\n  height: 20rpx;\n  width: 92%;\n}\n\n@keyframes gradient-animation_2 {\n  0% {\n    transform: translateX(-100%);\n  }\n\n  100% {\n    transform: translateX(100%);\n  }\n}\n",
+    "component_name": "GalaxyLightHusky91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1624,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.807Z",
+  "updated_at": "2025-07-31T07:55:39.807Z"
+}

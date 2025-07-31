@@ -1,0 +1,89 @@
+{
+  "id": "SelfMadeSystem_jolly-pig-52",
+  "name": "jolly-pig-52",
+  "category": "loaders",
+  "author": "SelfMadeSystem",
+  "description": "jolly-pig-52 组件 (material design, loader, spinner, smooth, spin, animation)",
+  "tags": [
+    "material design",
+    "loader",
+    "spinner",
+    "smooth",
+    "spin",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg class=\"loader\" viewBox=\"0 0 384 384\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle class=\"active\" pathLength=\"360\" fill=\"transparent\" stroke-width=\"32\" cx=\"192\" cy=\"192\" r=\"176\"></circle>\n  <circle class=\"track\" pathLength=\"360\" fill=\"transparent\" stroke-width=\"32\" cx=\"192\" cy=\"192\" r=\"176\"></circle>\n</svg>",
+    "css": "/* From Uiverse.io by SelfMadeSystem  - Tags: material design, loader, spinner, smooth, spin */\n/* Inspired by: m3.material.io/components/progress-indicators/overview */\n\n.loader {\n  width: 48px;\n  /* Subpixels get cut off */\n  overflow: visible;\n  transform: rotate(-90deg);\n  transform-origin: center;\n\n  --active: #7627a3;\n  --track: #f2d4fe;\n\n  --duration: 8s;\n\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% {\n    rotate: 0deg;\n  }\n\n  100% {\n    rotate: 360deg;\n  }\n}\n\n.active {\n  stroke: var(--active);\n  stroke-linecap: round;\n  stroke-dashoffset: 360;\n  animation: active-animation var(--duration) ease-in-out infinite;\n}\n\n@keyframes active-animation {\n  0% {\n    stroke-dasharray: 0 0 0 360 0 360;\n  }\n  12.5% {\n    stroke-dasharray: 0 0 270 90 270 90;\n  }\n  25% {\n    stroke-dasharray: 0 270 0 360 0 360;\n  }\n  37.5% {\n    stroke-dasharray: 0 270 270 90 270 90;\n  }\n  50% {\n    stroke-dasharray: 0 540 0 360 0 360;\n  }\n  50.001% {\n    stroke-dasharray: 0 180 0 360 0 360;\n  }\n  62.5% {\n    stroke-dasharray: 0 180 270 90 270 90;\n  }\n  75% {\n    stroke-dasharray: 0 450 0 360 0 360;\n  }\n  87.5% {\n    stroke-dasharray: 0 450 270 90 270 90;\n  }\n  87.501% {\n    stroke-dasharray: 0 90 270 90 270 90;\n  }\n  100% {\n    stroke-dasharray: 0 360 1 360 0 360;\n  }\n}\n\n.track {\n  stroke: var(--track);\n  stroke-linecap: round;\n  stroke-dashoffset: 360;\n  animation: track-animation var(--duration) ease-in-out infinite;\n}\n\n@keyframes track-animation {\n  0% {\n    stroke-dasharray: 0 20 320 40 320 40;\n  }\n  12.5% {\n    stroke-dasharray: 0 290 50 310 50 310;\n  }\n  25% {\n    stroke-dasharray: 0 290 320 40 320 40;\n  }\n  37.5% {\n    stroke-dasharray: 0 560 50 310 50 310;\n  }\n  37.501% {\n    stroke-dasharray: 0 200 50 310 50 310;\n  }\n  50% {\n    stroke-dasharray: 0 200 320 40 320 40;\n  }\n  62.5% {\n    stroke-dasharray: 0 470 50 310 50 310;\n  }\n  62.501% {\n    stroke-dasharray: 0 110 50 310 50 310;\n  }\n  75% {\n    stroke-dasharray: 0 110 320 40 320 40;\n  }\n  87.5% {\n    stroke-dasharray: 0 380 50 310 50 310;\n  }\n  100% {\n    stroke-dasharray: 0 380 320 40 320 40;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SelfMadeSystem_jolly-pig-52.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\" viewBox=\"0 0 384 384\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  <circle class=\"active\" pathLength=\"360\" fill=\"transparent\" stroke-width=\"32\" cx=\"192\" cy=\"192\" r=\"176\"></circle>\n  <circle class=\"track\" pathLength=\"360\" fill=\"transparent\" stroke-width=\"32\" cx=\"192\" cy=\"192\" r=\"176\"></circle>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyJollyPig52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem  - Tags: material design, loader, spinner, smooth, spin */\n/* Inspired by: m3.material.io/components/progress-indicators/overview */\n\n.loader {\n  width: 96rpx;\n  /* Subpixels get cut off */\n  overflow: visible;\n  transform: rotate(-90deg);\n  transform-origin: center;\n\n  --active: #7627a3;\n  --track: #f2d4fe;\n\n  --duration: 8s;\n\n  animation: spin 2s linear infinite;\n}\n\n@keyframes spin {\n  0% {\n    rotate: 0deg;\n  }\n\n  100% {\n    rotate: 360deg;\n  }\n}\n\n.active {\n  stroke: var(--active);\n  stroke-linecap: round;\n  stroke-dashoffset: 360;\n  animation: active-animation var(--duration) ease-in-out infinite;\n}\n\n@keyframes active-animation {\n  0% {\n    stroke-dasharray: 0 0 0 360 0 360;\n  }\n  12.5% {\n    stroke-dasharray: 0 0 270 90 270 90;\n  }\n  25% {\n    stroke-dasharray: 0 270 0 360 0 360;\n  }\n  37.5% {\n    stroke-dasharray: 0 270 270 90 270 90;\n  }\n  50% {\n    stroke-dasharray: 0 540 0 360 0 360;\n  }\n  50.001% {\n    stroke-dasharray: 0 180 0 360 0 360;\n  }\n  62.5% {\n    stroke-dasharray: 0 180 270 90 270 90;\n  }\n  75% {\n    stroke-dasharray: 0 450 0 360 0 360;\n  }\n  87.5% {\n    stroke-dasharray: 0 450 270 90 270 90;\n  }\n  87.501% {\n    stroke-dasharray: 0 90 270 90 270 90;\n  }\n  100% {\n    stroke-dasharray: 0 360 1 360 0 360;\n  }\n}\n\n.track {\n  stroke: var(--track);\n  stroke-linecap: round;\n  stroke-dashoffset: 360;\n  animation: track-animation var(--duration) ease-in-out infinite;\n}\n\n@keyframes track-animation {\n  0% {\n    stroke-dasharray: 0 20 320 40 320 40;\n  }\n  12.5% {\n    stroke-dasharray: 0 290 50 310 50 310;\n  }\n  25% {\n    stroke-dasharray: 0 290 320 40 320 40;\n  }\n  37.5% {\n    stroke-dasharray: 0 560 50 310 50 310;\n  }\n  37.501% {\n    stroke-dasharray: 0 200 50 310 50 310;\n  }\n  50% {\n    stroke-dasharray: 0 200 320 40 320 40;\n  }\n  62.5% {\n    stroke-dasharray: 0 470 50 310 50 310;\n  }\n  62.501% {\n    stroke-dasharray: 0 110 50 310 50 310;\n  }\n  75% {\n    stroke-dasharray: 0 110 320 40 320 40;\n  }\n  87.5% {\n    stroke-dasharray: 0 380 50 310 50 310;\n  }\n  100% {\n    stroke-dasharray: 0 380 320 40 320 40;\n  }\n}\n\n",
+    "component_name": "GalaxyJollyPig52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2412,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.269Z",
+  "updated_at": "2025-07-31T07:55:40.269Z"
+}

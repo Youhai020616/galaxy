@@ -1,0 +1,92 @@
+{
+  "id": "vk-uiux_light-vampirebat-28",
+  "name": "light-vampirebat-28",
+  "category": "loaders",
+  "author": "vk-uiux",
+  "description": "light-vampirebat-28 组件 (animation, loader, animated, circle loader, rainbow, html, css, css effect, multicolor)",
+  "tags": [
+    "animation",
+    "loader",
+    "animated",
+    "circle loader",
+    "rainbow",
+    "html",
+    "css",
+    "css effect",
+    "multicolor"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"loader-inner\">\n    <div class=\"loader-line-wrap\">\n      <div class=\"loader-line\"></div>\n    </div>\n    <div class=\"loader-line-wrap\">\n      <div class=\"loader-line\"></div>\n    </div>\n    <div class=\"loader-line-wrap\">\n      <div class=\"loader-line\"></div>\n    </div>\n    <div class=\"loader-line-wrap\">\n      <div class=\"loader-line\"></div>\n    </div>\n    <div class=\"loader-line-wrap\">\n      <div class=\"loader-line\"></div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by vk-uiux - Tags: animation, loader, animated, circle loader, rainbow, html, css, css effect, multicolor */\n.loader-inner {\n  width: 100px;\n  height: 60px;\n  margin: auto;\n  position: absolute;\n  inset: 0;\n}\n\n.loader-line-wrap {\n  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;\n  width: 100px;\n  height: 50px;\n  left: 0;\n  overflow: hidden;\n  position: absolute;\n  top: 0;\n  transform-origin: 50% 100%;\n}\n\n.loader-line {\n  border: 4px solid transparent;\n  border-radius: 100%;\n  width: 100px;\n  height: 100px;\n  margin: 0 auto;\n  position: absolute;\n  inset: 0;\n}\n\n.loader-line-wrap:nth-child(1) {\n  animation-delay: -50ms;\n}\n\n.loader-line-wrap:nth-child(2) {\n  animation-delay: -100ms;\n}\n\n.loader-line-wrap:nth-child(3) {\n  animation-delay: -150ms;\n}\n\n.loader-line-wrap:nth-child(4) {\n  animation-delay: -200ms;\n}\n\n.loader-line-wrap:nth-child(5) {\n  animation-delay: -250ms;\n}\n\n.loader-line-wrap:nth-child(1) .loader-line {\n  border-color: #eb4747;\n  height: 90px;\n  width: 90px;\n  top: 7px;\n}\n\n.loader-line-wrap:nth-child(2) .loader-line {\n  border-color: #ebeb47;\n  height: 76px;\n  width: 76px;\n  top: 14px;\n}\n\n.loader-line-wrap:nth-child(3) .loader-line {\n  border-color: #47eb47;\n  height: 62px;\n  width: 62px;\n  top: 21px;\n}\n\n.loader-line-wrap:nth-child(4) .loader-line {\n  border-color: #47ebeb;\n  height: 48px;\n  width: 48px;\n  top: 28px;\n}\n\n.loader-line-wrap:nth-child(5) .loader-line {\n  border-color: #4747eb;\n  height: 34px;\n  width: 34px;\n  top: 35px;\n}\n\n@keyframes spin {\n  0%,\n  15% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vk-uiux_light-vampirebat-28.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"loader-inner\"></view>\n    <view class=\"loader-line-wrap\"></view>\n      <view class=\"loader-line\"></view>\n    </div>\n    <view class=\"loader-line-wrap\"></view>\n      <view class=\"loader-line\"></view>\n    </div>\n    <view class=\"loader-line-wrap\"></view>\n      <view class=\"loader-line\"></view>\n    </div>\n    <view class=\"loader-line-wrap\"></view>\n      <view class=\"loader-line\"></view>\n    </div>\n    <view class=\"loader-line-wrap\"></view>\n      <view class=\"loader-line\"></view>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLightVampirebat28',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vk-uiux - Tags: animation, loader, animated, circle loader, rainbow, html, css, css effect, multicolor */\n.loader-inner {\n  width: 200rpx;\n  height: 120rpx;\n  margin: auto;\n  position: absolute;\n  inset: 0;\n}\n\n.loader-line-wrap {\n  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;\n  width: 200rpx;\n  height: 100rpx;\n  left: 0;\n  overflow: hidden;\n  position: absolute;\n  top: 0;\n  transform-origin: 50% 100%;\n}\n\n.loader-line {\n  border: 8rpx solid transparent;\n  border-radius: 100%;\n  width: 200rpx;\n  height: 200rpx;\n  margin: 0 auto;\n  position: absolute;\n  inset: 0;\n}\n\n.loader-line-wrap:nth-child(1) {\n  animation-delay: -50ms;\n}\n\n.loader-line-wrap:nth-child(2) {\n  animation-delay: -100ms;\n}\n\n.loader-line-wrap:nth-child(3) {\n  animation-delay: -150ms;\n}\n\n.loader-line-wrap:nth-child(4) {\n  animation-delay: -200ms;\n}\n\n.loader-line-wrap:nth-child(5) {\n  animation-delay: -250ms;\n}\n\n.loader-line-wrap:nth-child(1) .loader-line {\n  border-color: #eb4747;\n  height: 180rpx;\n  width: 180rpx;\n  top: 14rpx;\n}\n\n.loader-line-wrap:nth-child(2) .loader-line {\n  border-color: #ebeb47;\n  height: 152rpx;\n  width: 152rpx;\n  top: 28rpx;\n}\n\n.loader-line-wrap:nth-child(3) .loader-line {\n  border-color: #47eb47;\n  height: 124rpx;\n  width: 124rpx;\n  top: 42rpx;\n}\n\n.loader-line-wrap:nth-child(4) .loader-line {\n  border-color: #47ebeb;\n  height: 96rpx;\n  width: 96rpx;\n  top: 56rpx;\n}\n\n.loader-line-wrap:nth-child(5) .loader-line {\n  border-color: #4747eb;\n  height: 68rpx;\n  width: 68rpx;\n  top: 70rpx;\n}\n\n@keyframes spin {\n  0%,\n  15% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyLightVampirebat28"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2111,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.830Z",
+  "updated_at": "2025-07-31T07:55:42.830Z"
+}

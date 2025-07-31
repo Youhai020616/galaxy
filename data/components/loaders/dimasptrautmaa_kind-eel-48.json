@@ -1,0 +1,87 @@
+{
+  "id": "dimasptrautmaa_kind-eel-48",
+  "name": "kind-eel-48",
+  "category": "loaders",
+  "author": "dimasptrautmaa",
+  "description": "kind-eel-48 组件 (3d, loader, colorful, animation)",
+  "tags": [
+    "3d",
+    "loader",
+    "colorful",
+    "animation"
+  ],
+  "original": {
+    "html": "<div id=\"page\">\n        <div id=\"container\">\n            <div id=\"ring\"></div>\n            <div id=\"ring\"></div>\n            <div id=\"ring\"></div>\n            <div id=\"ring\"></div>\n            <div id=\"h3\">loading</div>\n        </div>\n</div>",
+    "css": "/* From Uiverse.io by dimasptrautmaa - Tags: 3d, loader, colorful */\n#page {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n\n#h3 {\n  color: white;\n}\n\n#ring {\n  width: 190px;\n  height: 190px;\n  border: 1px solid transparent;\n  border-radius: 50%;\n  position: absolute;\n}\n\n#ring:nth-child(1) {\n  border-bottom: 8px solid rgb(255, 141, 249);\n  animation: rotate1 2s linear infinite;\n}\n\n@keyframes rotate1 {\n  from {\n    transform: rotateX(50deg) rotateZ(110deg);\n  }\n\n  to {\n    transform: rotateX(50deg) rotateZ(470deg);\n  }\n}\n\n#ring:nth-child(2) {\n  border-bottom: 8px solid rgb(255,65,106);\n  animation: rotate2 2s linear infinite;\n}\n\n@keyframes rotate2 {\n  from {\n    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);\n  }\n\n  to {\n    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);\n  }\n}\n\n#ring:nth-child(3) {\n  border-bottom: 8px solid rgb(0,255,255);\n  animation: rotate3 2s linear infinite;\n}\n\n@keyframes rotate3 {\n  from {\n    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);\n  }\n\n  to {\n    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);\n  }\n}\n\n#ring:nth-child(4) {\n  border-bottom: 8px solid rgb(252, 183, 55);\n  animation: rotate4 2s linear infinite;\n}\n\n@keyframes rotate4 {\n  from {\n    transform: rotateX(70deg) rotateZ(270deg);\n  }\n\n  to {\n    transform: rotateX(70deg) rotateZ(630deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/dimasptrautmaa_kind-eel-48.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"page\"></view>\n        <view id=\"container\"></view>\n            <view id=\"ring\"></view>\n            <view id=\"ring\"></view>\n            <view id=\"ring\"></view>\n            <view id=\"ring\"></view>\n            <view id=\"h3\">loading</view>\n        </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyKindEel48',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by dimasptrautmaa - Tags: 3d, loader, colorful */\n#page {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n\n#h3 {\n  color: white;\n}\n\n#ring {\n  width: 380rpx;\n  height: 380rpx;\n  border: 2rpx solid transparent;\n  border-radius: 50%;\n  position: absolute;\n}\n\n#ring:nth-child(1) {\n  border-bottom: 16rpx solid rgb(255, 141, 249);\n  animation: rotate1 2s linear infinite;\n}\n\n@keyframes rotate1 {\n  from {\n    transform: rotateX(50deg) rotateZ(110deg);\n  }\n\n  to {\n    transform: rotateX(50deg) rotateZ(470deg);\n  }\n}\n\n#ring:nth-child(2) {\n  border-bottom: 16rpx solid rgb(255,65,106);\n  animation: rotate2 2s linear infinite;\n}\n\n@keyframes rotate2 {\n  from {\n    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);\n  }\n\n  to {\n    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);\n  }\n}\n\n#ring:nth-child(3) {\n  border-bottom: 16rpx solid rgb(0,255,255);\n  animation: rotate3 2s linear infinite;\n}\n\n@keyframes rotate3 {\n  from {\n    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);\n  }\n\n  to {\n    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);\n  }\n}\n\n#ring:nth-child(4) {\n  border-bottom: 16rpx solid rgb(252, 183, 55);\n  animation: rotate4 2s linear infinite;\n}\n\n@keyframes rotate4 {\n  from {\n    transform: rotateX(70deg) rotateZ(270deg);\n  }\n\n  to {\n    transform: rotateX(70deg) rotateZ(630deg);\n  }\n}\n",
+    "component_name": "GalaxyKindEel48"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1713,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.247Z",
+  "updated_at": "2025-07-31T07:55:41.247Z"
+}

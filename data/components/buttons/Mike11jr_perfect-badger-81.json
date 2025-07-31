@@ -1,0 +1,114 @@
+{
+  "id": "Mike11jr_perfect-badger-81",
+  "name": "perfect-badger-81",
+  "category": "buttons",
+  "author": "Mike11jr",
+  "description": "perfect-badger-81 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"scene\">\n  <div class=\"cube\">\n    <span class=\"side top\">Easter</span>\n    <span class=\"side front\">Happy</span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Mike11jr - Tags: button */\n.scene {\n width: 10em;\n justify-content: center;\n align-items: center;\n}\n\n.cube {\n color: #ccc;\n cursor: pointer;\n font-family: 'Roboto', sans-serif;\n transition: all 0.85s cubic-bezier(.17,.67,.14,.93);\n transform-style: preserve-3d;\n transform-origin: 100% 50%;\n width: 10em;\n height: 4em;\n}\n\n.cube:hover {\n transform: rotateX(-90deg);\n}\n\n.side {\n box-sizing: border-box;\n position: absolute;\n display: inline-block;\n height: 4em;\n width: 10em;\n text-align: center;\n text-transform: uppercase;\n padding-top: 1.5em;\n font-weight: bold;\n}\n\n.top {\n background: wheat;\n color: #222229;\n transform: rotateX(90deg) translate3d(0, 0, 2em);\n box-shadow: inset 0 0 0 5px #fff;\n}\n\n.front {\n background: #222229;\n color: #fff;\n box-shadow: inset 0 0 0 5px #fff;\n transform: translate3d(0, 0, 2em);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Mike11jr_perfect-badger-81.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"scene\"></view>\n  <view class=\"cube\"></view>\n    <text class=\"side top\">Easter</text>\n    <text class=\"side front\">Happy</text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPerfectBadger81',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Mike11jr - Tags: button */\n.scene {\n width: 10em;\n justify-content: center;\n align-items: center;\n}\n\n.cube {\n color: #ccc;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n font-family: 'Roboto', sans-serif;\n transition: all 0.85s cubic-bezier(.17,.67,.14,.93);\n transform-style: preserve-3d;\n transform-origin: 100% 50%;\n width: 10em;\n height: 4em;\n}\n\n.cube:hover {\n transform: rotateX(-90deg);\n}\n\n.side {\n box-sizing: border-box;\n position: absolute;\n display: inline-block;\n height: 4em;\n width: 10em;\n text-align: center;\n text-transform: uppercase;\n padding-top: 1.5em;\n font-weight: bold;\n}\n\n.top {\n background: wheat;\n color: #222229;\n transform: rotateX(90deg) translate3d(0, 0, 2em);\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 0 10rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.front {\n background: #222229;\n color: #fff;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 0 10rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n transform: translate3d(0, 0, 2em);\n}\n",
+    "component_name": "GalaxyPerfectBadger81"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 982,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.965Z",
+  "updated_at": "2025-07-31T07:55:33.965Z"
+}

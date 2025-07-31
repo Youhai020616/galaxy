@@ -1,0 +1,92 @@
+{
+  "id": "vinodjangid07_odd-cow-41",
+  "name": "odd-cow-41",
+  "category": "loaders",
+  "author": "vinodjangid07",
+  "description": "odd-cow-41 组件 (animation, loading, loader, multicolor, loading animation)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader",
+    "multicolor",
+    "loading animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"wrapper\">\n    <div class=\"text\">LOADING</div>\n    <div class=\"box\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader, multicolor, loading animation */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.wrapper {\n  width: 180px;\n  height: 50px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 2;\n}\n.text {\n  z-index: 3;\n  font-family: Whitney, -apple-system, Helvetica;\n  letter-spacing: 1px;\n  font-weight: 700;\n  font-size: 20px;\n  color: white;\n  filter: drop-shadow(2px 2px 0px #ff9e02);\n}\n.box {\n  width: 100%;\n  height: 100%;\n  background-color: #ef5d2e;\n  position: absolute;\n  z-index: 2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation: loading ease-in-out 0.9s infinite alternate-reverse;\n}\n@keyframes loading {\n  0% {\n    transform: translateX(-20px);\n  }\n  100% {\n    transform: translateX(20px);\n  }\n}\n.box::before {\n  content: \"\";\n  width: 20px;\n  height: 170%;\n  background-color: #ff9d0089;\n  position: absolute;\n  z-index: 1;\n  animation: loading2 ease-in-out 0.9s infinite alternate-reverse;\n}\n@keyframes loading2 {\n  0% {\n    transform: translateX(-50px);\n  }\n  100% {\n    transform: translateX(50px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vinodjangid07_odd-cow-41.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"wrapper\"></view>\n    <view class=\"text\">LOADING</view>\n    <view class=\"box\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOddCow41',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader, multicolor, loading animation */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.wrapper {\n  width: 360rpx;\n  height: 100rpx;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 2;\n}\n.text {\n  z-index: 3;\n  font-family: Whitney, -apple-system, Helvetica;\n  letter-spacing: 2rpx;\n  font-weight: 700;\n  font-size: 40rpx;\n  color: white;\n  \n}\n.box {\n  width: 100%;\n  height: 100%;\n  background-color: #ef5d2e;\n  position: absolute;\n  z-index: 2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation: loading ease-in-out 0.9s infinite alternate-reverse;\n}\n@keyframes loading {\n  0% {\n    transform: translateX(-40rpx);\n  }\n  100% {\n    transform: translateX(40rpx);\n  }\n}\n.box::before {\n  content: \"\";\n  width: 40rpx;\n  height: 170%;\n  background-color: #ff9d0089;\n  position: absolute;\n  z-index: 1;\n  animation: loading2 ease-in-out 0.9s infinite alternate-reverse;\n}\n@keyframes loading2 {\n  0% {\n    transform: translateX(-100rpx);\n  }\n  100% {\n    transform: translateX(100rpx);\n  }\n}\n\n",
+    "component_name": "GalaxyOddCow41"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1326,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.781Z",
+  "updated_at": "2025-07-31T07:55:42.781Z"
+}

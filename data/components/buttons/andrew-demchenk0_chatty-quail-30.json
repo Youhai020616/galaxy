@@ -1,0 +1,116 @@
+{
+  "id": "andrew-demchenk0_chatty-quail-30",
+  "name": "chatty-quail-30",
+  "category": "buttons",
+  "author": "andrew-demchenk0",
+  "description": "chatty-quail-30 组件 (animation, blue, twitter, button, hover effect, tweet, interactive)",
+  "tags": [
+    "animation",
+    "blue",
+    "twitter",
+    "button",
+    "hover effect",
+    "tweet",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n<svg data-name=\"Layer 1\" id=\"aa26e0be-9258-4431-8251-1228b9aad27b\" viewBox=\"0 0 750 750\" xmlns=\"http://www.w3.org/2000/svg\"><defs></defs><path class=\"fadd0b15-a3b0-4734-9170-bc99721260e1\" d=\"M310.41,517.86c133.11,0,205.5-109.56,205.5-205.5v-9.79a159.14,159.14,0,0,0,35.23-37.18A162.88,162.88,0,0,1,510,277.16,76.14,76.14,0,0,0,541.35,238a179.78,179.78,0,0,1-45,17.61,69.88,69.88,0,0,0-52.84-23.51,73.54,73.54,0,0,0-72.44,72.44,38.14,38.14,0,0,0,2,15.65A202.33,202.33,0,0,1,224.3,243.89,74.93,74.93,0,0,0,214.52,281a77.73,77.73,0,0,0,31.31,60.66,66,66,0,0,1-33.27-9.79h0a71.54,71.54,0,0,0,58.74,70.46,60.34,60.34,0,0,1-19.57,1.95,33.28,33.28,0,0,1-13.7-1.95,74.14,74.14,0,0,0,68.5,50.88,147.72,147.72,0,0,1-90,31.31,54.14,54.14,0,0,1-17.64-1.91,184.79,184.79,0,0,0,111.55,35.23\" data-name=\"Path 2\" id=\"a6d1175e-77c9-496c-afd2-62b5f211431b\"></path></svg>\n  <span class=\"label\">Tweet</span>\n</button>",
+    "css": "/* From Uiverse.io by andrew-demchenk0 - Tags: animation, blue, twitter, button, hover effect, tweet */\nbutton {\n  width: 100px;\n  height: 32px;\n  background-color: #55acee;\n  border-radius: 4px;\n  border: none;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  padding: 0 8px;\n  justify-content: space-between;\n  transition: all 0.3s;\n}\n\nbutton:hover {\n  opacity: 0.85;\n  transform: translateY(-4px);\n}\n\nbutton .label {\n  font-size: 12px;\n  line-height: 32px;\n  color: #fff;\n  font-weight: 700;\n  letter-spacing: 1px;\n  margin: 0 auto;\n}\n\nbutton svg {\n  fill: #fff;\n  width: 30px;\n  height: 30px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/andrew-demchenk0_chatty-quail-30.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n<view data-name=\"Layer 1\" id=\"aa26e0be-9258-4431-8251-1228b9aad27b\" viewBox=\"0 0 750 750\" xmlns=\"http://www.w3.org/2000/svg\"><defs></defs><path class=\"fadd0b15-a3b0-4734-9170-bc99721260e1\" d=\"M310.41,517.86c133.11,0,205.5-109.56,205.5-205.5v-9.79a159.14,159.14,0,0,0,35.23-37.18A162.88,162.88,0,0,1,510,277.16,76.14,76.14,0,0,0,541.35,238a179.78,179.78,0,0,1-45,17.61,69.88,69.88,0,0,0-52.84-23.51,73.54,73.54,0,0,0-72.44,72.44,38.14,38.14,0,0,0,2,15.65A202.33,202.33,0,0,1,224.3,243.89,74.93,74.93,0,0,0,214.52,281a77.73,77.73,0,0,0,31.31,60.66,66,66,0,0,1-33.27-9.79h0a71.54,71.54,0,0,0,58.74,70.46,60.34,60.34,0,0,1-19.57,1.95,33.28,33.28,0,0,1-13.7-1.95,74.14,74.14,0,0,0,68.5,50.88,147.72,147.72,0,0,1-90,31.31,54.14,54.14,0,0,1-17.64-1.91,184.79,184.79,0,0,0,111.55,35.23\" data-name=\"Path 2\" id=\"a6d1175e-77c9-496c-afd2-62b5f211431b\"></path></view>\n  <text class=\"label\">Tweet</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattyQuail30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by andrew-demchenk0 - Tags: animation, blue, twitter, button, hover effect, tweet */\nbutton {\n  width: 200rpx;\n  height: 64rpx;\n  background-color: #55acee;\n  border-radius: 8rpx;\n  border: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  align-items: center;\n  padding: 0 16rpx;\n  justify-content: space-between;\n  transition: all 0.3s;\n}\n\nbutton:hover {\n  opacity: 0.85;\n  transform: translateY(-8rpx);\n}\n\nbutton .label {\n  font-size: 24rpx;\n  line-height: 64rpx;\n  color: #fff;\n  font-weight: 700;\n  letter-spacing: 2rpx;\n  margin: 0 auto;\n}\n\nbutton svg {\n  fill: #fff;\n  width: 60rpx;\n  height: 60rpx;\n}\n",
+    "component_name": "GalaxyChattyQuail30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1520,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.629Z",
+  "updated_at": "2025-07-31T07:55:35.629Z"
+}

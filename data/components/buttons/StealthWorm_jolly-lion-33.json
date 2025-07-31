@@ -1,0 +1,104 @@
+{
+  "id": "StealthWorm_jolly-lion-33",
+  "name": "jolly-lion-33",
+  "category": "buttons",
+  "author": "StealthWorm",
+  "description": "jolly-lion-33 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"group cursor-pointer w-32 h-32 bg-red-600 active:bg-black group-active:bg-black rounded-full border-4 border-black flex relative items-center justify-center duration-300 transition-all hover:w-[8.4rem] hover:h-[8.4rem] ease-in-out\">\n  <div class=\"absolute border-b-4 border-black w-full group-active:border-red-600 group-active:border-[2px]\"></div>\n  <div class=\"absolute border-b-4 border-black w-full rotate-45 group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-b-4 border-black w-full rotate-90 group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-b-4 border-black w-full -rotate-45 group-active:border-red-600 group-active:border-[1px]\"></div>\n\n  <div class=\"absolute border-4 border-black w-4 h-4 bg-red-500 rounded-full group-active:bg-black\"></div>\n  <div class=\"absolute border-[.2rem] border-black w-8 h-8 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-[.2rem] border-black w-12 h-12 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-[.2rem] border-black w-16 h-16 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-[.2rem] border-black w-20 h-20 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-[.2rem] border-black w-24 h-24 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"absolute border-[.2rem] border-black w-28 h-28 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></div>\n  <div class=\"flex space-x-4 z-0\">\n    <div class=\"bg-white w-12 h-12 rotate-45 border-t-[.6rem] border-b-[.4rem] border-l-8 border-r-2 border-black after:border-3 after:border-black rounded-full group-hover:border-t-[1rem] group-hover:border-b-[.6rem] group-active:border-red-600 group-active:border-y-[.4rem] group-active:border-x-[.1rem]\">\n      <div class=\"border-b-3 border-black\"></div>\n    </div>\n    <div class=\"bg-white  w-12 h-12 -rotate-45  border-t-[.6rem] border-b-[.4rem] border-l-[.1rem] border-r-8 border-black after:border-3 after:border-black rounded-full group-hover:border-t-[1rem] group-hover:border-b-[.6rem] group-active:border-red-600 group-active:border-y-[.4rem] group-active:border-x-[.1rem]\">\n      <div class=\"border-b-3 border-black\"></div>\n    </div>\n  </div>\n\n  <div class=\"invisible absolute -top-14 group-hover:visible transition-all duration-200 delay-400\">\n    <div class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 rotate-[25deg] left-4 top-2\">\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></div>\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></div>\n    </div>\n\n    <div class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 -rotate-[25deg] -left-16 top-2\">\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></div>\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></div>\n    </div>\n\n    <div class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 -rotate-[60deg] -left-[6.7rem] top-[3rem]\">\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></div>\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></div>\n    </div>\n\n    <div class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 rotate-[60deg] left-[3.6rem] top-[3rem]\">\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></div>\n      <div class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></div>\n      <div class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></div>\n      <div class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></div>\n    </div>\n  </div>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/StealthWorm_jolly-lion-33.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"group cursor-pointer w-32 h-32 bg-red-600 active:bg-black group-active:bg-black rounded-full border-4 border-black flex relative items-center justify-center duration-300 transition-all hover:w-[8.4rem] hover:h-[8.4rem] ease-in-out\"></button>\n  <view class=\"absolute border-b-4 border-black w-full group-active:border-red-600 group-active:border-[2px]\"></view>\n  <view class=\"absolute border-b-4 border-black w-full rotate-45 group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-b-4 border-black w-full rotate-90 group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-b-4 border-black w-full -rotate-45 group-active:border-red-600 group-active:border-[1px]\"></view>\n\n  <view class=\"absolute border-4 border-black w-4 h-4 bg-red-500 rounded-full group-active:bg-black\"></view>\n  <view class=\"absolute border-[.2rem] border-black w-8 h-8 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-[.2rem] border-black w-12 h-12 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-[.2rem] border-black w-16 h-16 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-[.2rem] border-black w-20 h-20 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-[.2rem] border-black w-24 h-24 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"absolute border-[.2rem] border-black w-28 h-28 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]\"></view>\n  <view class=\"flex space-x-4 z-0\"></view>\n    <view class=\"bg-white w-12 h-12 rotate-45 border-t-[.6rem] border-b-[.4rem] border-l-8 border-r-2 border-black after:border-3 after:border-black rounded-full group-hover:border-t-[1rem] group-hover:border-b-[.6rem] group-active:border-red-600 group-active:border-y-[.4rem] group-active:border-x-[.1rem]\"></view>\n      <view class=\"border-b-3 border-black\"></view>\n    </div>\n    <view class=\"bg-white  w-12 h-12 -rotate-45  border-t-[.6rem] border-b-[.4rem] border-l-[.1rem] border-r-8 border-black after:border-3 after:border-black rounded-full group-hover:border-t-[1rem] group-hover:border-b-[.6rem] group-active:border-red-600 group-active:border-y-[.4rem] group-active:border-x-[.1rem]\"></view>\n      <view class=\"border-b-3 border-black\"></view>\n    </div>\n  </div>\n\n  <view class=\"invisible absolute -top-14 group-hover:visible transition-all duration-200 delay-400\"></view>\n    <view class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 rotate-[25deg] left-4 top-2\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></view>\n    </div>\n\n    <view class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 -rotate-[25deg] -left-16 top-2\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></view>\n    </div>\n\n    <view class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 -rotate-[60deg] -left-[6.7rem] top-[3rem]\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></view>\n    </div>\n\n    <view class=\"absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 rotate-[60deg] left-[3.6rem] top-[3rem]\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8\"></view>\n      <view class=\"absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4\"></view>\n      <view class=\"absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2\"></view>\n      <view class=\"absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8\"></view>\n    </div>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyJollyLion33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyJollyLion33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 5228,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.860Z",
+  "updated_at": "2025-07-31T07:55:34.860Z"
+}

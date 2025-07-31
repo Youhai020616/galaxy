@@ -1,0 +1,85 @@
+{
+  "id": "G4b413l_heavy-otter-34",
+  "name": "heavy-otter-34",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "heavy-otter-34 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"pulsar\"></div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader */\n.pulsar {\n  --uib-size: 40px;\n  --uib-speed: 0.9s;\n  --uib-color: white;\n  position: relative;\n  height: var(--uib-size);\n  width: var(--uib-size);\n}\n\n.pulsar::before,\n.pulsar::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: 50%;\n  background-color: var(--uib-color);\n  animation: pulse9173412 var(--uib-speed) ease-in-out infinite;\n  transform: scale(0);\n}\n\n.pulsar::after {\n  animation-delay: calc(var(--uib-speed) / -2);\n}\n\n@keyframes pulse9173412 {\n  0%,\n  100% {\n    transform: scale(0);\n    opacity: 1;\n  }\n\n  50% {\n    transform: scale(1);\n    opacity: 0.25;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_heavy-otter-34.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"pulsar\"></view>",
+    "script": "export default {\n  name: 'GalaxyHeavyOtter34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader */\n.pulsar {\n  --uib-size: 80rpx;\n  --uib-speed: 0.9s;\n  --uib-color: white;\n  position: relative;\n  height: var(--uib-size);\n  width: var(--uib-size);\n}\n\n.pulsar::before,\n.pulsar::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: 50%;\n  background-color: var(--uib-color);\n  animation: pulse9173412 var(--uib-speed) ease-in-out infinite;\n  transform: scale(0);\n}\n\n.pulsar::after {\n  animation-delay: calc(var(--uib-speed) / -2);\n}\n\n@keyframes pulse9173412 {\n  0%,\n  100% {\n    transform: scale(0);\n    opacity: 1;\n  }\n\n  50% {\n    transform: scale(1);\n    opacity: 0.25;\n  }\n}\n\n",
+    "component_name": "GalaxyHeavyOtter34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 716,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.272Z",
+  "updated_at": "2025-07-31T07:55:39.272Z"
+}

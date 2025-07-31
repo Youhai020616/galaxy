@@ -1,0 +1,88 @@
+{
+  "id": "Flowelife_slippery-catfish-7",
+  "name": "slippery-catfish-7",
+  "category": "loaders",
+  "author": "Flowelife",
+  "description": "slippery-catfish-7 组件 (loader, connect, loop, animation, gradient)",
+  "tags": [
+    "loader",
+    "connect",
+    "loop",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">Loading...</div>",
+    "css": "/* From Uiverse.io by Flowelife - Tags: loader, connect, loop */\n@keyframes load-loop {\n  0% {\n    background-position: 100%;\n  }\n\n  40% {\n    background-position: 50%;\n  }\n\n  50% {\n    background-position: 50%;\n  }\n\n  90% {\n    background-position: 0%;\n  }\n\n  100% {\n    background-position: 0%;\n  }\n}\n\n.loader {\n  position: relative;\n  font-family: sans-serif;\n  display: flex;\n  height: auto;\n  width: auto;\n  letter-spacing: 3px;\n  align-items: center;\n  justify-content: center;\n  padding: 10px 12px;\n  font-size: 1.45em;\n  color: transparent;\n  background: linear-gradient(to right,#fff 33.3%,#008cdd 33.3%, #008cdd 66.6%, #fff 66.6%) no-repeat;\n  background-size: 300%;\n  background-position: 100%;\n  background-clip: text;\n  -webkit-background-clip: text;\n  animation: infinite 1.4s load-loop ease;\n}\n\n.loader::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  display: block;\n  background: linear-gradient(to right,#008cdd 33.3%, transparent 33.3% , transparent 66.6%, #008cdd 66.6%) no-repeat;\n  background-size: 300%;\n  background-position: 100%;\n  top: 0;\n  left: 0;\n  z-index: -1;\n  animation: infinite 1.4s load-loop ease;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Flowelife_slippery-catfish-7.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\">Loading...</view>",
+    "script": "export default {\n  name: 'GalaxySlipperyCatfish7',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Flowelife - Tags: loader, connect, loop */\n@keyframes load-loop {\n  0% {\n    background-position: 100%;\n  }\n\n  40% {\n    background-position: 50%;\n  }\n\n  50% {\n    background-position: 50%;\n  }\n\n  90% {\n    background-position: 0%;\n  }\n\n  100% {\n    background-position: 0%;\n  }\n}\n\n.loader {\n  position: relative;\n  font-family: sans-serif;\n  display: flex;\n  height: auto;\n  width: auto;\n  letter-spacing: 6rpx;\n  align-items: center;\n  justify-content: center;\n  padding: 20rpx 24rpx;\n  font-size: 1.45em;\n  color: transparent;\n  background: linear-gradient(to right,#fff 33.3%,#008cdd 33.3%, #008cdd 66.6%, #fff 66.6%) no-repeat;\n  background-size: 300%;\n  background-position: 100%;\n  background-clip: text;\n  -webkit-background-clip: text;\n  animation: infinite 1.4s load-loop ease;\n}\n\n.loader::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  display: block;\n  background: linear-gradient(to right,#008cdd 33.3%, transparent 33.3% , transparent 66.6%, #008cdd 66.6%) no-repeat;\n  background-size: 300%;\n  background-position: 100%;\n  top: 0;\n  left: 0;\n  z-index: -1;\n  animation: infinite 1.4s load-loop ease;\n}\n",
+    "component_name": "GalaxySlipperyCatfish7"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1206,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.238Z",
+  "updated_at": "2025-07-31T07:55:39.238Z"
+}

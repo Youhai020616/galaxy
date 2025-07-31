@@ -1,0 +1,89 @@
+{
+  "id": "Bodyhc_witty-robin-88",
+  "name": "witty-robin-88",
+  "category": "loaders",
+  "author": "Bodyhc",
+  "description": "witty-robin-88 组件 (loader, car loader, 3d loader, 3d cude loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "car loader",
+    "3d loader",
+    "3d cude loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Bodyhc - Tags: loader, car loader, 3d loader, 3d cude loader */\n.loader {\n  width: calc(90px / 0.707);\n  height: 20px;\n  background: repeating-linear-gradient(135deg, #766DF4 0 15px,#0000 0 20px) left top,\n    repeating-linear-gradient( 45deg, #766DF4 0 15px,#0000 0 20px) left bottom;\n  background-size: 300% 50%;\n  background-repeat: no-repeat;\n  animation: i4 2s infinite linear;\n}\n\n@keyframes i4 {\n  100% {\n    background-position: top right,bottom right\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Bodyhc_witty-robin-88.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyWittyRobin88',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Bodyhc - Tags: loader, car loader, 3d loader, 3d cude loader */\n.loader {\n  width: calc(180rpx / 0.707);\n  height: 40rpx;\n  background: repeating-linear-gradient(135deg, #766DF4 0 30rpx,#0000 0 40rpx) left top,\n    repeating-linear-gradient( 45deg, #766DF4 0 30rpx,#0000 0 40rpx) left bottom;\n  background-size: 300% 50%;\n  background-repeat: no-repeat;\n  animation: i4 2s infinite linear;\n}\n\n@keyframes i4 {\n  100% {\n    background-position: top right,bottom right\n  }\n}\n\n",
+    "component_name": "GalaxyWittyRobin88"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 517,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.013Z",
+  "updated_at": "2025-07-31T07:55:39.013Z"
+}

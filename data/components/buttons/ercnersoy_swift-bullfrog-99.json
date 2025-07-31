@@ -1,0 +1,112 @@
+{
+  "id": "ercnersoy_swift-bullfrog-99",
+  "name": "swift-bullfrog-99",
+  "category": "buttons",
+  "author": "ercnersoy",
+  "description": "swift-bullfrog-99 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  click me\n</button>",
+    "css": "/* From Uiverse.io by ercnersoy - Tags: button */\nbutton {\n  padding: 0.5rem 2.5rem 0.5rem 2.5rem;\n  box-shadow: 0px 0px 0px 3px black;\n  border: 0;\n  border-radius: 0.5rem;\n  font-size: 1rem;\n  background-color: #ffc83d;\n  color: black;\n  font-weight: bolder;\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  position: relative;\n  transition: all .9s ease-in-out;\n  letter-spacing: 0.1rem;\n  text-transform: uppercase;\n}\n\nbutton:hover {\n  background-color: #f03a17;\n  color: white;\n}\n\nbutton::before {\n  content: \"😍\";\n  position: absolute;\n  left: -0rem;\n  top: 0rem;\n  opacity: 1;\n  font-size: 1.55rem;\n  transition: all .9s ease-in-out;\n  transform: rotate(0deg);\n}\n\nbutton:hover::before {\n  content: \"😘\";\n  opacity: 1;\n  visibility: visible;\n  transform: rotate(40deg);\n  font-size: 2.5rem;\n  top: -0.75rem;\n  transition: all .9s ease-in-out;\n  animation: rightRun 2s forwards;\n}\n\nbutton:active::before {\n  content: \"🥰\";\n}\n\n@keyframes rightRun {\n  100% {\n    transform: translateX(140px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ercnersoy_swift-bullfrog-99.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  click me\n</button>",
+    "script": "export default {\n  name: 'GalaxySwiftBullfrog99',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ercnersoy - Tags: button */\nbutton {\n  padding: 0.5rem 2.5rem 0.5rem 2.5rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 6rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: 0;\n  border-radius: 0.5rem;\n  font-size: 1rem;\n  background-color: #ffc83d;\n  color: black;\n  font-weight: bolder;\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  position: relative;\n  transition: all .9s ease-in-out;\n  letter-spacing: 0.1rem;\n  text-transform: uppercase;\n}\n\nbutton:hover {\n  background-color: #f03a17;\n  color: white;\n}\n\nbutton::before {\n  content: \"😍\";\n  position: absolute;\n  left: -0rem;\n  top: 0rem;\n  opacity: 1;\n  font-size: 1.55rem;\n  transition: all .9s ease-in-out;\n  transform: rotate(0deg);\n}\n\nbutton:hover::before {\n  content: \"😘\";\n  opacity: 1;\n  visibility: visible;\n  transform: rotate(40deg);\n  font-size: 2.5rem;\n  top: -0.75rem;\n  transition: all .9s ease-in-out;\n  animation: rightRun 2s forwards;\n}\n\nbutton:active::before {\n  content: \"🥰\";\n}\n\n@keyframes rightRun {\n  100% {\n    transform: translateX(280rpx);\n  }\n}\n",
+    "component_name": "GalaxySwiftBullfrog99"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1039,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.625Z",
+  "updated_at": "2025-07-31T07:55:36.625Z"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "adamgiebl_pink-chicken-70",
+  "name": "pink-chicken-70",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "pink-chicken-70 组件 (icon, button, code, animation, gradient, interactive)",
+  "tags": [
+    "icon",
+    "button",
+    "code",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"cssbuttons-io\">\n  <span><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z\"></path></svg> Code</span>\n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: icon, button, code */\n.cssbuttons-io {\n  position: relative;\n  font-family: inherit;\n  font-weight: 500;\n  font-size: 18px;\n  letter-spacing: 0.05em;\n  border-radius: 0.8em;\n  border: none;\n  background: linear-gradient(to right, #8e2de2, #4a00e0);\n  color: ghostwhite;\n  overflow: hidden;\n}\n\n.cssbuttons-io svg {\n  width: 1.2em;\n  height: 1.2em;\n  margin-right: 0.5em;\n}\n\n.cssbuttons-io span {\n  position: relative;\n  z-index: 10;\n  transition: color 0.4s;\n  display: inline-flex;\n  align-items: center;\n  padding: 0.8em 1.2em 0.8em 1.05em;\n}\n\n.cssbuttons-io::before,\n.cssbuttons-io::after {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 0;\n}\n\n.cssbuttons-io::before {\n  content: \"\";\n  background: #000;\n  width: 120%;\n  left: -10%;\n  transform: skew(30deg);\n  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);\n}\n\n.cssbuttons-io:hover::before {\n  transform: translate3d(100%, 0, 0);\n}\n\n.cssbuttons-io:active {\n  transform: scale(0.95);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_pink-chicken-70.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cssbuttons-io\"></button>\n  <text><view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z\"></path></view> Code</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPinkChicken70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: icon, button, code */\n.cssbuttons-io {\n  position: relative;\n  font-family: inherit;\n  font-weight: 500;\n  font-size: 36rpx;\n  letter-spacing: 0.05em;\n  border-radius: 0.8em;\n  border: none;\n  background: linear-gradient(to right, #8e2de2, #4a00e0);\n  color: ghostwhite;\n  overflow: hidden;\n}\n\n.cssbuttons-io svg {\n  width: 1.2em;\n  height: 1.2em;\n  margin-right: 0.5em;\n}\n\n.cssbuttons-io span {\n  position: relative;\n  z-index: 10;\n  transition: color 0.4s;\n  display: inline-flex;\n  align-items: center;\n  padding: 0.8em 1.2em 0.8em 1.05em;\n}\n\n.cssbuttons-io::before,\n.cssbuttons-io::after {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 0;\n}\n\n.cssbuttons-io::before {\n  content: \"\";\n  background: #000;\n  width: 120%;\n  left: -10%;\n  transform: skew(30deg);\n  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);\n}\n\n.cssbuttons-io:hover::before {\n  transform: translate3d(100%, 0, 0);\n}\n\n.cssbuttons-io:active {\n  transform: scale(0.95);\n}\n\n",
+    "component_name": "GalaxyPinkChicken70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1418,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.462Z",
+  "updated_at": "2025-07-31T07:55:35.462Z"
+}

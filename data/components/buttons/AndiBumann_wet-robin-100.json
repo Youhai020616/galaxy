@@ -1,0 +1,115 @@
+{
+  "id": "AndiBumann_wet-robin-100",
+  "name": "wet-robin-100",
+  "category": "buttons",
+  "author": "AndiBumann",
+  "description": "wet-robin-100 组件 (animation, gradient, button, interactive)",
+  "tags": [
+    "animation",
+    "gradient",
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <button class=\"join-now-button\">Join now</button>\n</div>",
+    "css": "/* From Uiverse.io by AndiBumann  - Tags: animation, gradient, button */\n.join-now-button {\n  background-color: #ff69b4; /* Grundfarbe (Pink) */\n  background-image: linear-gradient(\n    to right,\n    #ff69b4 0%,\n    #ffffff 25%,\n    #f00 50%,\n    #ffa500 75%,\n    #ff69b4 100%\n  ); /* Farbverlauf */\n  background-size: 200% 100%; /* Größe des Farbverlaufs */\n  background-position: left; /* Position des Farbverlaufs */\n  transition: background-position 0.3s; /* Animation des Farbverlaufs */\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Schatteneffekt */\n  cursor: pointer;\n  font-size: 18px;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n}\n\n.join-now-button:hover {\n  background-position: right; /* Animation des Farbverlaufs */\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AndiBumann_wet-robin-100.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <button class=\"join-now-button\"></button>Join now</button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWetRobin100',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AndiBumann  - Tags: animation, gradient, button */\n.join-now-button {\n  background-color: #ff69b4; /* Grundfarbe (Pink) */\n  background-image: linear-gradient(\n    to right,\n    #ff69b4 0%,\n    #ffffff 25%,\n    #f00 50%,\n    #ffa500 75%,\n    #ff69b4 100%\n  ); /* Farbverlauf */\n  background-size: 200% 100%; /* Größe des Farbverlaufs */\n  background-position: left; /* Position des Farbverlaufs */\n  transition: background-position 0.3s; /* Animation des Farbverlaufs */\n  padding: 20rpx 40rpx;\n  border: none;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */ /* Schatteneffekt */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-size: 36rpx;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n}\n\n.join-now-button:hover {\n  background-position: right; /* Animation des Farbverlaufs */\n}\n\n",
+    "component_name": "GalaxyWetRobin100"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 933,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.611Z",
+  "updated_at": "2025-07-31T07:55:32.611Z"
+}

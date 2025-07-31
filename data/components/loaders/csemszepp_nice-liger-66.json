@@ -1,0 +1,91 @@
+{
+  "id": "csemszepp_nice-liger-66",
+  "name": "nice-liger-66",
+  "category": "loaders",
+  "author": "csemszepp",
+  "description": "nice-liger-66 组件 (loader, cool loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "cool loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"ball\"></div>\n<div class=\"shape\"></div>",
+    "css": "/* From Uiverse.io by csemszepp - Source: https://codepen.io/cobra_winfrey/pen/xyRaeK - Tags: loader, cool loader */\n.ball {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: calc(50% - 25px);\n  animation: bounce 3s cubic-bezier(1, 0, 0, 1) infinite;\n}\n\n.ball:before {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #fff;\n  border-radius: 100%;\n  animation: bounce2 3s ease-in-out infinite;\n  transform-origin: bottom;\n}\n\n@keyframes bounce2 {\n  0% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  14.25% {\n    transform: scaleY(1);\n  }\n\n  28.5% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  42.75% {\n    transform: scaleY(1);\n  }\n\n  57% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  71.25% {\n    transform: scaleY(1);\n  }\n\n  80% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  90% {\n    transform: scaleY(1);\n  }\n\n  100% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n}\n\n@keyframes bounce {\n  0% {\n    transform: translateY(0px);\n  }\n\n  14.25% {\n    transform: translateY(-150px);\n  }\n\n  28.5% {\n    transform: translateY(-7.5px);\n  }\n\n  42.75% {\n    transform: translateY(-170px);\n  }\n\n  57% {\n    transform: translateY(-27.5px);\n  }\n\n  71.25% {\n    transform: translateY(-180px);\n  }\n\n  80% {\n    transform: translateY(-35px);\n  }\n\n  90% {\n    transform: translateY(-200px);\n  }\n\n  100% {\n    transform: translateY(0px);\n  }\n}\n\n.shape {\n  width: 300px;\n  height: 300px;\n  position: absolute;\n  left: calc(50% - 150px);\n  top: calc(50% - 75px);\n  animation: shapes2 3s ease-in-out infinite;\n}\n\n@keyframes shapes2 {\n  0% {\n    transform: rotate(90deg) translateX(-20px);\n  }\n\n  14.25% {\n    transform: rotate(90deg) translateX(-20px);\n  }\n\n  28.5% {\n    transform: rotate(135deg);\n  }\n\n  42.75% {\n    transform: rotate(162deg);\n  }\n\n  57% {\n    transform: rotate(180deg);\n  }\n\n  71.25% {\n    transform: rotate(245.5deg);\n  }\n\n  80% {\n    transform: rotate(336.5deg);\n  }\n\n  100% {\n    transform: rotate(90deg) translateX(-20px);\n  }\n}\n\n.shape:before, .shape:after {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background: #fdb20f;\n  animation: shapes 3s ease-in-out infinite;\n  clip-path: polygon(20% 21%, 50% 8%, 80% 21%, 90% 50%, 80% 80%, 50% 91%, 21% 79%, 8% 51%);\n}\n\n.shape:after {\n  width: 90%;\n  height: 90%;\n  background: repeating-linear-gradient(to right, #fff, #fff 2px, #fdb20f 2px, #fdb20f 5px);\n  top: 5%;\n  left: 5%;\n  background-position: 20px 30px;\n}\n\n@keyframes shapes {\n  0% {\n    clip-path: polygon(91% 50%, 91% 50%, 29% 86%, 30% 86%, 30% 86%, 30% 86%, 30% 14%, 30% 14%);\n    background-position: 20px 30px;\n  }\n\n  14.25% {\n    clip-path: polygon(91% 50%, 91% 50%, 29% 86%, 30% 86%, 30% 86%, 30% 86%, 30% 14%, 30% 14%);\n    background-position: 120px 30px;\n  }\n\n  28.5% {\n    clip-path: polygon(91% 50%, 91% 50%, 50% 91%, 50% 91%, 50% 91%, 50% 91%, 9% 50%, 50% 9%);\n    background-position: 20px 30px;\n  }\n\n  42.75% {\n    clip-path: polygon(63% 11%, 91% 50%, 63% 89%, 63% 89%, 63% 89%, 63% 89%, 16% 74%, 16% 26%);\n    background-position: -120px 30px;\n  }\n\n  57% {\n    clip-path: polygon(29% 14%, 71% 14%, 91% 50%, 91% 50%, 71% 86%, 71% 86%, 30% 86%, 9% 50%);\n    background-position: 20px 30px;\n  }\n\n  71.25% {\n    clip-path: polygon(13% 32%, 41% 10%, 76% 18%, 91% 50%, 76% 83%, 76% 83%, 41% 90%, 13% 68%);\n    background-position: 120px 30px;\n  }\n\n  80% {\n    clip-path: polygon(20% 21%, 50% 8%, 80% 21%, 90% 50%, 80% 80%, 50% 91%, 21% 79%, 8% 51%);\n    background-position: 20px 30px;\n  }\n\n  83% {\n    clip-path: polygon(13% 32%, 41% 10%, 76% 18%, 91% 50%, 76% 83%, 76% 83%, 41% 90%, 13% 68%);\n    background-position: 20px 30px;\n  }\n\n  86% {\n    clip-path: polygon(29% 14%, 71% 14%, 91% 50%, 91% 50%, 71% 86%, 71% 86%, 30% 86%, 9% 50%);\n    background-position: 20px 30px;\n  }\n\n  89% {\n    clip-path: polygon(63% 11%, 91% 50%, 63% 89%, 63% 89%, 63% 89%, 63% 89%, 16% 74%, 16% 26%);\n    background-position: 20px 30px;\n  }\n\n  92% {\n    clip-path: polygon(91% 50%, 91% 50%, 50% 91%, 50% 91%, 50% 91%, 50% 91%, 9% 50%, 50% 9%);\n  }\n\n  95% {\n    clip-path: polygon(91% 50%, 91% 50%, 29% 86%, 30% 86%, 30% 86%, 30% 86%, 30% 14%, 30% 14%);\n  }\n\n  100% {\n    clip-path: polygon(91% 50%, 91% 50%, 29% 86%, 30% 86%, 30% 86%, 30% 86%, 30% 14%, 30% 14%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csemszepp_nice-liger-66.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"ball\"></view>\n<view class=\"shape\"></view>",
+    "script": "export default {\n  name: 'GalaxyNiceLiger66',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp - Source: https://codepen.io/cobra_winfrey/pen/xyRaeK - Tags: loader, cool loader */\n.ball {\n  position: absolute;\n  width: 40rpx;\n  height: 40rpx;\n  top: calc(50% - 50rpx);\n  animation: bounce 3s cubic-bezier(1, 0, 0, 1) infinite;\n}\n\n.ball:before {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #fff;\n  border-radius: 100%;\n  animation: bounce2 3s ease-in-out infinite;\n  transform-origin: bottom;\n}\n\n@keyframes bounce2 {\n  0% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  14.25% {\n    transform: scaleY(1);\n  }\n\n  28.5% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  42.75% {\n    transform: scaleY(1);\n  }\n\n  57% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  71.25% {\n    transform: scaleY(1);\n  }\n\n  80% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n\n  90% {\n    transform: scaleY(1);\n  }\n\n  100% {\n    transform: scaleY(0.75) scaleX(1.25);\n  }\n}\n\n@keyframes bounce {\n  0% {\n    transform: translateY(0rpx);\n  }\n\n  14.25% {\n    transform: translateY(-300rpx);\n  }\n\n  28.5% {\n    transform: translateY(-15rpx);\n  }\n\n  42.75% {\n    transform: translateY(-340rpx);\n  }\n\n  57% {\n    transform: translateY(-55rpx);\n  }\n\n  71.25% {\n    transform: translateY(-360rpx);\n  }\n\n  80% {\n    transform: translateY(-70rpx);\n  }\n\n  90% {\n    transform: translateY(-400rpx);\n  }\n\n  100% {\n    transform: translateY(0rpx);\n  }\n}\n\n.shape {\n  width: 600rpx;\n  height: 600rpx;\n  position: absolute;\n  left: calc(50% - 300rpx);\n  top: calc(50% - 150rpx);\n  animation: shapes2 3s ease-in-out infinite;\n}\n\n@keyframes shapes2 {\n  0% {\n    transform: rotate(90deg) translateX(-40rpx);\n  }\n\n  14.25% {\n    transform: rotate(90deg) translateX(-40rpx);\n  }\n\n  28.5% {\n    transform: rotate(135deg);\n  }\n\n  42.75% {\n    transform: rotate(162deg);\n  }\n\n  57% {\n    transform: rotate(180deg);\n  }\n\n  71.25% {\n    transform: rotate(245.5deg);\n  }\n\n  80% {\n    transform: rotate(336.5deg);\n  }\n\n  100% {\n    transform: rotate(90deg) translateX(-40rpx);\n  }\n}\n\n.shape:before, .shape:after {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background: #fdb20f;\n  animation: shapes 3s ease-in-out infinite;\n  \n}\n\n.shape:after {\n  width: 90%;\n  height: 90%;\n  background: repeating-linear-gradient(to right, #fff, #fff 4rpx, #fdb20f 4rpx, #fdb20f 10rpx);\n  top: 5%;\n  left: 5%;\n  background-position: 40rpx 60rpx;\n}\n\n@keyframes shapes {\n  0% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  14.25% {\n    \n    background-position: 240rpx 60rpx;\n  }\n\n  28.5% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  42.75% {\n    \n    background-position: -240rpx 60rpx;\n  }\n\n  57% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  71.25% {\n    \n    background-position: 240rpx 60rpx;\n  }\n\n  80% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  83% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  86% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  89% {\n    \n    background-position: 40rpx 60rpx;\n  }\n\n  92% {\n    \n  }\n\n  95% {\n    \n  }\n\n  100% {\n    \n  }\n}\n",
+    "component_name": "GalaxyNiceLiger66"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4334,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.161Z",
+  "updated_at": "2025-07-31T07:55:41.161Z"
+}

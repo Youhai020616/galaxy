@@ -1,0 +1,118 @@
+{
+  "id": "KhaledMatalkah_light-goat-63",
+  "name": "light-goat-63",
+  "category": "buttons",
+  "author": "KhaledMatalkah",
+  "description": "light-goat-63 组件 (button, hover, transition, transform, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "transition",
+    "transform",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">hover me !</button>",
+    "css": "/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition, transform */\n.button {\n  display: inline-block;\n  padding: 12px 24px;\n  font-size: 16px;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #fff;\n  background-color: #ff4081;\n  border: none;\n  border-radius: 50px;\n  transition: background-color 0.3s ease, transform 0.2s ease;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  width: 200%;\n  height: 200%;\n  background-color: rgba(255, 64, 129, 0.6);\n  border-radius: 50%;\n  transform: translate(-50%, -50%);\n  transition: all 0.4s ease;\n  z-index: -1;\n}\n\n.button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);\n  background-size: 30px 30px;\n  opacity: 0;\n  transition: opacity 0.4s ease;\n}\n\n.button:hover {\n  background-color: #e91e63;\n  transform: scale(1.1) rotate(5deg);\n  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);\n}\n\n.button:hover::before {\n  top: 50%;\n  left: 50%;\n  width: 100%;\n  height: 100%;\n  transform: translate(-50%, -50%) rotate(45deg);\n}\n\n.button:hover::after {\n  opacity: 1;\n}\n\n.button:active {\n  background-color: #e91e63;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);\n  transform: translateY(2px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KhaledMatalkah_light-goat-63.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>hover me !</button>",
+    "script": "export default {\n  name: 'GalaxyLightGoat63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition, transform */\n.button {\n  display: inline-block;\n  padding: 24rpx 48rpx;\n  font-size: 32rpx;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #fff;\n  background-color: #ff4081;\n  border: none;\n  border-radius: 100rpx;\n  transition: background-color 0.3s ease, transform 0.2s ease;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 12rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  width: 200%;\n  height: 200%;\n  background-color: rgba(255, 64, 129, 0.6);\n  border-radius: 50%;\n  transform: translate(-50%, -50%);\n  transition: all 0.4s ease;\n  z-index: -1;\n}\n\n.button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);\n  background-size: 60rpx 60rpx;\n  opacity: 0;\n  transition: opacity 0.4s ease;\n}\n\n.button:hover {\n  background-color: #e91e63;\n  transform: scale(1.1) rotate(5deg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 16rpx 24rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover::before {\n  top: 50%;\n  left: 50%;\n  width: 100%;\n  height: 100%;\n  transform: translate(-50%, -50%) rotate(45deg);\n}\n\n.button:hover::after {\n  opacity: 1;\n}\n\n.button:active {\n  background-color: #e91e63;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(4rpx);\n}\n\n",
+    "component_name": "GalaxyLightGoat63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1599,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.697Z",
+  "updated_at": "2025-07-31T07:55:33.697Z"
+}

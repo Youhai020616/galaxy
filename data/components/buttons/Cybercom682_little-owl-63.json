@@ -1,0 +1,115 @@
+{
+  "id": "Cybercom682_little-owl-63",
+  "name": "little-owl-63",
+  "category": "buttons",
+  "author": "Cybercom682",
+  "description": "little-owl-63 组件 (button, send, mastery, replica)",
+  "tags": [
+    "button",
+    "send",
+    "mastery",
+    "replica"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg height=\"15\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\">\n    <path fill=\"transparent\" stroke-width=\"30\" stroke=\"black\" d=\"M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z\"></path>\n  </svg>\n  &nbsp;Send Message\n</button>",
+    "css": "/* From Uiverse.io by Cybercom682  - Tags: button, send, mastery, replica */\n.button {\n  cursor: pointer;\n  position: relative;\n  display: flex;\n  padding: 0.8em 0.7em 0.8em 0.7em;\n  border-color: rgba(0, 0, 0, 0.336);\n  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.158);\n  border-radius: 6px;\n}\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border-radius: inherit;\n  box-shadow: inset 0 0 20px rgb(255, 255, 255);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Cybercom682_little-owl-63.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view height=\"15\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"></view>\n    <path fill=\"transparent\" stroke-width=\"30\" stroke=\"black\" d=\"M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z\"></path>\n  </svg>\n  &nbsp;Send Message\n</button>",
+    "script": "export default {\n  name: 'GalaxyLittleOwl63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Cybercom682  - Tags: button, send, mastery, replica */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  display: flex;\n  padding: 0.8em 0.7em 0.8em 0.7em;\n  border-color: rgba(0, 0, 0, 0.336);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 8rpx 24rpx 0rpx rgba(0, 0, 0, 0.158);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 12rpx;\n}\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border-radius: inherit;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 40rpx rgb(255, 255, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyLittleOwl63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 878,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.045Z",
+  "updated_at": "2025-07-31T07:55:33.045Z"
+}

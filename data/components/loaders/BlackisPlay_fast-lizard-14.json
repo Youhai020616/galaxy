@@ -1,0 +1,90 @@
+{
+  "id": "BlackisPlay_fast-lizard-14",
+  "name": "fast-lizard-14",
+  "category": "loaders",
+  "author": "BlackisPlay",
+  "description": "fast-lizard-14 组件 (simple, animation, white, loading, loader, smooth, light)",
+  "tags": [
+    "simple",
+    "animation",
+    "white",
+    "loading",
+    "loader",
+    "smooth",
+    "light"
+  ],
+  "original": {
+    "html": "<div id=\"timer\">\n  <div id=\"div1\"></div>\n  <div id=\"div2\"></div>\n  <div id=\"div3\"></div>\n  <div id=\"div4\"></div>\n  <div id=\"div5\"></div>\n  <div id=\"div6\"></div>\n  <div id=\"div7\"></div>\n  <div id=\"div8\"></div>\n  <div id=\"div9\"></div>\n  <div id=\"div10\"></div>\n  <div id=\"div11\"></div>\n  <div id=\"div12\"></div>\n  <div id=\"div13\"></div>\n  <div id=\"div14\"></div>\n  <div id=\"div15\"></div>\n</div>",
+    "css": "/* From Uiverse.io by BlackisPlay  - Tags: simple, animation, white, loading, loader, smooth, light */\n#timer {\n  display: grid;\n  grid-template-columns: repeat(3, 25px);\n  grid-template-rows: repeat(5, 25px);\n  gap: 10px;\n  position: absolute;\n  grid-template-areas:\n    \"div1 div2 div3\"\n    \"div4 div5 div6\"\n    \"div7 div8 div9\"\n    \"div10 div11 div12\"\n    \"div13 div14 div15\";\n}\n\n#div1,\n#div2,\n#div3,\n#div4,\n#div5,\n#div6,\n#div7,\n#div8,\n#div9,\n#div10,\n#div11,\n#div12,\n#div13,\n#div14,\n#div15 {\n  background-color: rgb(243, 243, 243);\n  border-radius: 5px;\n}\n\n#div1 {\n  grid-area: div1;\n  animation: div1 10s both infinite;\n}\n\n@keyframes div1 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div2 {\n  grid-area: div2;\n  animation: div2 10s both infinite;\n}\n\n@keyframes div2 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(35px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(35px);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div3 {\n  grid-area: div3;\n}\n\n#div4 {\n  grid-area: div4;\n  animation: div4 10s both infinite;\n}\n\n@keyframes div4 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70px);\n  }\n\n  20% {\n    transform: translateX(70px);\n  }\n\n  30% {\n    transform: translateX(70px);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(70px);\n  }\n\n  70% {\n    transform: translateX(70px);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div5 {\n  grid-area: div5;\n  display: none;\n}\n\n#div6 {\n  grid-area: div6;\n  animation: div6 10s both infinite;\n}\n\n@keyframes div6 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(0);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(-70px);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div7 {\n  grid-area: div7;\n  animation: div7 10s both infinite;\n}\n\n@keyframes div7 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(70px);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div8 {\n  grid-area: div8;\n  animation: div8 10s both infinite;\n}\n\n@keyframes div8 {\n  0% {\n    transform: translateX(35px);\n  }\n\n  10% {\n    transform: translateX(35px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(35px);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(35px);\n  }\n}\n\n#div9 {\n  grid-area: div9;\n}\n\n#div10 {\n  grid-area: div10;\n  animation: div10 10s both infinite;\n}\n\n@keyframes div10 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(70px);\n  }\n\n  40% {\n    transform: translateX(70px);\n  }\n\n  50% {\n    transform: translateX(70px);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(70px);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(70px);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div11 {\n  grid-area: div11;\n  display: none;\n}\n\n#div12 {\n  grid-area: div12;\n  animation: div12 10s both infinite;\n}\n\n@keyframes div12 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(0);\n  }\n\n  20% {\n    transform: translateX(-70px);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div13 {\n  grid-area: div13;\n  animation: div13 10s both infinite;\n}\n\n@keyframes div13 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(70px);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(70px);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div14 {\n  grid-area: div14;\n  animation: div14 10s both infinite;\n}\n\n@keyframes div14 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(35px);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(35px);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(35px);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div15 {\n  grid-area: div15;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/BlackisPlay_fast-lizard-14.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"timer\"></view>\n  <view id=\"div1\"></view>\n  <view id=\"div2\"></view>\n  <view id=\"div3\"></view>\n  <view id=\"div4\"></view>\n  <view id=\"div5\"></view>\n  <view id=\"div6\"></view>\n  <view id=\"div7\"></view>\n  <view id=\"div8\"></view>\n  <view id=\"div9\"></view>\n  <view id=\"div10\"></view>\n  <view id=\"div11\"></view>\n  <view id=\"div12\"></view>\n  <view id=\"div13\"></view>\n  <view id=\"div14\"></view>\n  <view id=\"div15\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastLizard14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by BlackisPlay  - Tags: simple, animation, white, loading, loader, smooth, light */\n#timer {\n  display: grid;\n  grid-template-columns: repeat(3, 50rpx);\n  grid-template-rows: repeat(5, 50rpx);\n  gap: 20rpx;\n  position: absolute;\n  grid-template-areas:\n    \"div1 div2 div3\"\n    \"div4 div5 div6\"\n    \"div7 div8 div9\"\n    \"div10 div11 div12\"\n    \"div13 div14 div15\";\n}\n\n#div1,\n#div2,\n#div3,\n#div4,\n#div5,\n#div6,\n#div7,\n#div8,\n#div9,\n#div10,\n#div11,\n#div12,\n#div13,\n#div14,\n#div15 {\n  background-color: rgb(243, 243, 243);\n  border-radius: 10rpx;\n}\n\n#div1 {\n  grid-area: div1;\n  animation: div1 10s both infinite;\n}\n\n@keyframes div1 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(140rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div2 {\n  grid-area: div2;\n  animation: div2 10s both infinite;\n}\n\n@keyframes div2 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(70rpx);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div3 {\n  grid-area: div3;\n}\n\n#div4 {\n  grid-area: div4;\n  animation: div4 10s both infinite;\n}\n\n@keyframes div4 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(140rpx);\n  }\n\n  20% {\n    transform: translateX(140rpx);\n  }\n\n  30% {\n    transform: translateX(140rpx);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(140rpx);\n  }\n\n  70% {\n    transform: translateX(140rpx);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div5 {\n  grid-area: div5;\n  display: none;\n}\n\n#div6 {\n  grid-area: div6;\n  animation: div6 10s both infinite;\n}\n\n@keyframes div6 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(0);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(-140rpx);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div7 {\n  grid-area: div7;\n  animation: div7 10s both infinite;\n}\n\n@keyframes div7 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(140rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(140rpx);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div8 {\n  grid-area: div8;\n  animation: div8 10s both infinite;\n}\n\n@keyframes div8 {\n  0% {\n    transform: translateX(70rpx);\n  }\n\n  10% {\n    transform: translateX(70rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(70rpx);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(70rpx);\n  }\n}\n\n#div9 {\n  grid-area: div9;\n}\n\n#div10 {\n  grid-area: div10;\n  animation: div10 10s both infinite;\n}\n\n@keyframes div10 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(140rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(140rpx);\n  }\n\n  40% {\n    transform: translateX(140rpx);\n  }\n\n  50% {\n    transform: translateX(140rpx);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(140rpx);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(140rpx);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div11 {\n  grid-area: div11;\n  display: none;\n}\n\n#div12 {\n  grid-area: div12;\n  animation: div12 10s both infinite;\n}\n\n@keyframes div12 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(0);\n  }\n\n  20% {\n    transform: translateX(-140rpx);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(0);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div13 {\n  grid-area: div13;\n  animation: div13 10s both infinite;\n}\n\n@keyframes div13 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(140rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(140rpx);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(140rpx);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div14 {\n  grid-area: div14;\n  animation: div14 10s both infinite;\n}\n\n@keyframes div14 {\n  0% {\n    transform: translateX(0);\n  }\n\n  10% {\n    transform: translateX(70rpx);\n  }\n\n  20% {\n    transform: translateX(0);\n  }\n\n  30% {\n    transform: translateX(0);\n  }\n\n  40% {\n    transform: translateX(70rpx);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n\n  60% {\n    transform: translateX(0);\n  }\n\n  70% {\n    transform: translateX(70rpx);\n  }\n\n  80% {\n    transform: translateX(0);\n  }\n\n  90% {\n    transform: translateX(0);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n#div15 {\n  grid-area: div15;\n}\n\n",
+    "component_name": "GalaxyFastLizard14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 6847,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.979Z",
+  "updated_at": "2025-07-31T07:55:38.979Z"
+}

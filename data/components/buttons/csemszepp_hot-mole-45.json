@@ -1,0 +1,104 @@
+{
+  "id": "csemszepp_hot-mole-45",
+  "name": "hot-mole-45",
+  "category": "buttons",
+  "author": "csemszepp",
+  "description": "hot-mole-45 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"bg-gradient-to-r from-pink-500 to-purple-500 hover:animate-pulse focus:outline-none text-white font-semibold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:bg-opacity-90\">\n  Click Me!\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/csemszepp_hot-mole-45.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"bg-gradient-to-r from-pink-500 to-purple-500 hover:animate-pulse focus:outline-none text-white font-semibold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:bg-opacity-90\"></button>\n  Click Me!\n</button>",
+    "script": "export default {\n  name: 'GalaxyHotMole45',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyHotMole45"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 257,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.128Z",
+  "updated_at": "2025-07-31T07:55:36.128Z"
+}

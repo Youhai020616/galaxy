@@ -1,0 +1,112 @@
+{
+  "id": "adamgiebl_curly-wombat-58",
+  "name": "curly-wombat-58",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "curly-wombat-58 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Button\n  <span></span>\n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: button */\nbutton {\n  border: none;\n  display: block;\n  position: relative;\n  padding: 0.7em 2.4em;\n  font-size: 18px;\n  background: transparent;\n  cursor: pointer;\n  user-select: none;\n  overflow: hidden;\n  color: royalblue;\n  z-index: 1;\n  font-family: inherit;\n  font-weight: 500;\n}\n\nbutton span {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: transparent;\n  z-index: -1;\n  border: 4px solid royalblue;\n}\n\nbutton span::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  width: 8%;\n  height: 500%;\n  background: var(--lightgray);\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) rotate(-60deg);\n  transition: all 0.3s;\n}\n\nbutton:hover span::before {\n  transform: translate(-50%, -50%) rotate(-90deg);\n  width: 100%;\n  background: royalblue;\n}\n\nbutton:hover {\n  color: white;\n}\n\nbutton:active span::before {\n  background: #2751cd;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_curly-wombat-58.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Button\n  <text></text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyCurlyWombat58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: button */\nbutton {\n  border: none;\n  display: block;\n  position: relative;\n  padding: 0.7em 2.4em;\n  font-size: 36rpx;\n  background: transparent;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  user-select: none;\n  overflow: hidden;\n  color: royalblue;\n  z-index: 1;\n  font-family: inherit;\n  font-weight: 500;\n}\n\nbutton span {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: transparent;\n  z-index: -1;\n  border: 8rpx solid royalblue;\n}\n\nbutton span::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  width: 8%;\n  height: 500%;\n  background: var(--lightgray);\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) rotate(-60deg);\n  transition: all 0.3s;\n}\n\nbutton:hover span::before {\n  transform: translate(-50%, -50%) rotate(-90deg);\n  width: 100%;\n  background: royalblue;\n}\n\nbutton:hover {\n  color: white;\n}\n\nbutton:active span::before {\n  background: #2751cd;\n}\n",
+    "component_name": "GalaxyCurlyWombat58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 985,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.422Z",
+  "updated_at": "2025-07-31T07:55:35.422Z"
+}

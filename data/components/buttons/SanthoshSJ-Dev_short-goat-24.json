@@ -1,0 +1,118 @@
+{
+  "id": "SanthoshSJ-Dev_short-goat-24",
+  "name": "short-goat-24",
+  "category": "buttons",
+  "author": "SanthoshSJ-Dev",
+  "description": "short-goat-24 组件 (simple, blue, button, bubble, plain, animation, interactive)",
+  "tags": [
+    "simple",
+    "blue",
+    "button",
+    "bubble",
+    "plain",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span>Bubble Button</span>\n  <svg aria-hidden=\"true\" preserveAspectRatio=\"none\" viewBox=\"-5 -5 110 110\">\n    <path d=\"M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0\"></path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by SanthoshSJ-Dev - Tags: simple, blue, button, bubble, plain */\n.button {\n  appearance: none;\n  background: transparent;\n  border: 0;\n  color: #fff;\n  cursor: pointer;\n  font: inherit;\n  font-weight: 500;\n  line-height: 1;\n  padding: 1em 1.5em;\n  position: relative;\n  transition: filter 0.3s;\n}\n\n.button:hover {\n  filter: brightness(1.1);\n}\n\n.button:active {\n  filter: brightness(0.9);\n}\n\n.button>span {\n  display: block;\n  position: relative;\n  transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);\n  z-index: 1;\n}\n\n.button:hover>span {\n  transform: scale(1.05);\n}\n\n.button:active>span {\n  transform: scale(0.95);\n}\n\n.button>svg {\n  fill: #0c2cde;\n  position: absolute;\n  top: -5%;\n  left: -5%;\n  width: 110%;\n  height: 110%;\n}\n\n.button>svg>path {\n  transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);\n}\n\n.button:hover>svg>path {\n  d: path(\"M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0\");\n}\n\n.button:active>svg>path {\n  d: path(\"M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0\");\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SanthoshSJ-Dev_short-goat-24.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text>Bubble Button</text>\n  <view aria-hidden=\"true\" preserveAspectRatio=\"none\" viewBox=\"-5 -5 110 110\"></view>\n    <path d=\"M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyShortGoat24',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SanthoshSJ-Dev - Tags: simple, blue, button, bubble, plain */\n.button {\n  appearance: none;\n  background: transparent;\n  border: 0;\n  color: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font: inherit;\n  font-weight: 500;\n  line-height: 1;\n  padding: 1em 1.5em;\n  position: relative;\n  transition: filter 0.3s;\n}\n\n.button:hover {\n  \n}\n\n.button:active {\n  \n}\n\n.button>span {\n  display: block;\n  position: relative;\n  transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);\n  z-index: 1;\n}\n\n.button:hover>span {\n  transform: scale(1.05);\n}\n\n.button:active>span {\n  transform: scale(0.95);\n}\n\n.button>svg {\n  fill: #0c2cde;\n  position: absolute;\n  top: -5%;\n  left: -5%;\n  width: 110%;\n  height: 110%;\n}\n\n.button>svg>path {\n  transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);\n}\n\n.button:hover>svg>path {\n  d: path(\"M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0\");\n}\n\n.button:active>svg>path {\n  d: path(\"M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0\");\n}\n",
+    "component_name": "GalaxyShortGoat24"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1343,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.534Z",
+  "updated_at": "2025-07-31T07:55:34.534Z"
+}

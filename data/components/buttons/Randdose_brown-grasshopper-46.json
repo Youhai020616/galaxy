@@ -1,0 +1,114 @@
+{
+  "id": "Randdose_brown-grasshopper-46",
+  "name": "brown-grasshopper-46",
+  "category": "buttons",
+  "author": "Randdose",
+  "description": "brown-grasshopper-46 组件 (button, transition, transform, animation, interactive)",
+  "tags": [
+    "button",
+    "transition",
+    "transform",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <p>Button</p>\n</button>",
+    "css": "/* From Uiverse.io by Randdose - Tags: button, transition, transform */\n.button {\n  all: unset;\n  display: flex;\n  align-items: center;\n  position: relative;\n  padding: 0.6em 2em;\n  border: mediumspringgreen solid 0.15em;\n  border-radius: 0.25em;\n  color: mediumspringgreen;\n  font-size: 1.5em;\n  font-weight: 600;\n  cursor: pointer;\n  overflow: hidden;\n  transition: border 300ms, color 300ms;\n  user-select: none;\n}\n\n.button p {\n  z-index: 1;\n}\n\n.button:hover {\n  color: #212121;\n}\n\n.button:active {\n  border-color: teal;\n}\n\n.button::after, .button::before {\n  content: \"\";\n  position: absolute;\n  width: 9em;\n  aspect-ratio: 1;\n  background: mediumspringgreen;\n  opacity: 50%;\n  border-radius: 50%;\n  transition: transform 500ms, background 300ms;\n}\n\n.button::before {\n  left: 0;\n  transform: translateX(-8em);\n}\n\n.button::after {\n  right: 0;\n  transform: translateX(8em);\n}\n\n.button:hover:before {\n  transform: translateX(-1em);\n}\n\n.button:hover:after {\n  transform: translateX(1em);\n}\n\n.button:active:before,\n.button:active:after {\n  background: teal;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Randdose_brown-grasshopper-46.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text>Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyBrownGrasshopper46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Randdose - Tags: button, transition, transform */\n.button {\n  all: unset;\n  display: flex;\n  align-items: center;\n  position: relative;\n  padding: 0.6em 2em;\n  border: mediumspringgreen solid 0.15em;\n  border-radius: 0.25em;\n  color: mediumspringgreen;\n  font-size: 1.5em;\n  font-weight: 600;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  overflow: hidden;\n  transition: border 300ms, color 300ms;\n  user-select: none;\n}\n\n.button p {\n  z-index: 1;\n}\n\n.button:hover {\n  color: #212121;\n}\n\n.button:active {\n  border-color: teal;\n}\n\n.button::after, .button::before {\n  content: \"\";\n  position: absolute;\n  width: 9em;\n  aspect-ratio: 1;\n  background: mediumspringgreen;\n  opacity: 50%;\n  border-radius: 50%;\n  transition: transform 500ms, background 300ms;\n}\n\n.button::before {\n  left: 0;\n  transform: translateX(-8em);\n}\n\n.button::after {\n  right: 0;\n  transform: translateX(8em);\n}\n\n.button:hover:before {\n  transform: translateX(-1em);\n}\n\n.button:hover:after {\n  transform: translateX(1em);\n}\n\n.button:active:before,\n.button:active:after {\n  background: teal;\n}\n",
+    "component_name": "GalaxyBrownGrasshopper46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1111,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.403Z",
+  "updated_at": "2025-07-31T07:55:34.403Z"
+}

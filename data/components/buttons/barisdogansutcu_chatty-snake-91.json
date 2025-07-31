@@ -1,0 +1,113 @@
+{
+  "id": "barisdogansutcu_chatty-snake-91",
+  "name": "chatty-snake-91",
+  "category": "buttons",
+  "author": "barisdogansutcu",
+  "description": "chatty-snake-91 组件 (button, animation)",
+  "tags": [
+    "button",
+    "animation"
+  ],
+  "original": {
+    "html": "<button>\n  <span>Hey! Siri</span>\n  <div class=\"line\"></div>\n  <div class=\"line-2\"></div>\n  <div class=\"speak\"></div>\n  <div class=\"speak one\"></div>\n  <div class=\"speak two\"></div>\n  <div class=\"speak three\"></div>\n</button>",
+    "css": "/* From Uiverse.io by barisdogansutcu - Tags: button */\nbutton {\n  min-height: 60px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  max-width: 170px;\n  border-radius: 50px;\n  border-width: 0;\n  background-color: black;\n  color: white;\n  font-size: 16px;\n  letter-spacing: 3px;\n  position: relative;\n  overflow: hidden;\n  padding: 10px 20px;\n  width: 190px;\n  cursor: pointer;\n}\n\nbutton span {\n  position: relative;\n  width: max-content;\n  z-index: 99;\n  display: block;\n}\n\n.line,.line-2 {\n  position: absolute;\n  width: calc(100% - 20px);\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n  height: 1px;\n  border-radius: 100%;\n  background-color: hsla(240, 100%, 50%, 0.39);\n  bottom: 5px;\n  animation: line .5s infinite linear;\n  box-shadow: 0 0 10px 2px rgb(0, 60, 255);\n  z-index: 9;\n}\n\n@keyframes line {\n  0% {\n    height: 1px;\n    background-color: hsla(240, 100%, 50%, 0.285);\n  }\n\n  50% {\n    transform: scaleY(5);\n    background-color: hsla(0, 59%, 41%, 0.032);\n    box-shadow: 0 0 100px 20px rgb(0, 60, 255);\n  }\n\n  100% {\n    height: 2px;\n    background-color: rgb(255, 255, 255)\n  }\n}\n\n.line-2 {\n  animation: line-2 .5s infinite linear;\n  bottom: 1px;\n  box-shadow: 0 0 10px 2px rgb(0, 60, 255);\n}\n\n@keyframes line-2 {\n  0% {\n    height: 1px;\n    background-color: hsl(327, 100%, 50%);\n  }\n\n  50% {\n    height: 2px;\n    background-color: hsl(0, 0%, 85%)\n  }\n\n  100% {\n    height: 2px;\n    background-color: rgb(255, 255, 255)\n  }\n}\n\n.speak {\n  position: absolute;\n  width: 330px;\n  height: 10px;\n  background-color: pink;\n  bottom: 1px;\n  left: 50%;\n  transform: translateX(-50%);\n  border-radius: 100%;\n  animation: speak .8s infinite linear;\n}\n\n.speak.one {\n  left: calc(50% + 20px);\n  animation: speak 6s infinite linear;\n  background-color: hsl(284deg 79% 55%);\n}\n\n.speak.two {\n  left: calc(50% + 10px);\n  animation: speak .6s infinite linear;\n  background-color: hsl(284deg 79% 55%);\n}\n\n.speak.two {\n  left: calc(50% + -10px);\n  animation: speak .6s infinite linear;\n  background-color: rgb(0, 255, 149);\n}\n\n@keyframes speak {\n  0% {\n    transform: translateX(-50%) scale(.10);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/barisdogansutcu_chatty-snake-91.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text>Hey! Siri</text>\n  <view class=\"line\"></view>\n  <view class=\"line-2\"></view>\n  <view class=\"speak\"></view>\n  <view class=\"speak one\"></view>\n  <view class=\"speak two\"></view>\n  <view class=\"speak three\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattySnake91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by barisdogansutcu - Tags: button */\nbutton {\n  min-height: 120rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  max-width: 340rpx;\n  border-radius: 100rpx;\n  border-width: 0;\n  background-color: black;\n  color: white;\n  font-size: 32rpx;\n  letter-spacing: 6rpx;\n  position: relative;\n  overflow: hidden;\n  padding: 20rpx 40rpx;\n  width: 380rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton span {\n  position: relative;\n  width: max-content;\n  z-index: 99;\n  display: block;\n}\n\n.line,.line-2 {\n  position: absolute;\n  width: calc(100% - 40rpx);\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n  height: 2rpx;\n  border-radius: 100%;\n  background-color: hsla(240, 100%, 50%, 0.39);\n  bottom: 10rpx;\n  animation: line .5s infinite linear;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx 4rpx rgb(0, 60, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 9;\n}\n\n@keyframes line {\n  0% {\n    height: 2rpx;\n    background-color: hsla(240, 100%, 50%, 0.285);\n  }\n\n  50% {\n    transform: scaleY(5);\n    background-color: hsla(0, 59%, 41%, 0.032);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 200rpx 40rpx rgb(0, 60, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    height: 4rpx;\n    background-color: rgb(255, 255, 255)\n  }\n}\n\n.line-2 {\n  animation: line-2 .5s infinite linear;\n  bottom: 2rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx 4rpx rgb(0, 60, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes line-2 {\n  0% {\n    height: 2rpx;\n    background-color: hsl(327, 100%, 50%);\n  }\n\n  50% {\n    height: 4rpx;\n    background-color: hsl(0, 0%, 85%)\n  }\n\n  100% {\n    height: 4rpx;\n    background-color: rgb(255, 255, 255)\n  }\n}\n\n.speak {\n  position: absolute;\n  width: 660rpx;\n  height: 20rpx;\n  background-color: pink;\n  bottom: 2rpx;\n  left: 50%;\n  transform: translateX(-50%);\n  border-radius: 100%;\n  animation: speak .8s infinite linear;\n}\n\n.speak.one {\n  left: calc(50% + 40rpx);\n  animation: speak 6s infinite linear;\n  background-color: hsl(284deg 79% 55%);\n}\n\n.speak.two {\n  left: calc(50% + 20rpx);\n  animation: speak .6s infinite linear;\n  background-color: hsl(284deg 79% 55%);\n}\n\n.speak.two {\n  left: calc(50% + -20rpx);\n  animation: speak .6s infinite linear;\n  background-color: rgb(0, 255, 149);\n}\n\n@keyframes speak {\n  0% {\n    transform: translateX(-50%) scale(.10);\n  }\n}\n",
+    "component_name": "GalaxyChattySnake91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2341,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.877Z",
+  "updated_at": "2025-07-31T07:55:35.877Z"
+}

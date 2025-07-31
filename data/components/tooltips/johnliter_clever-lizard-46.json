@@ -1,0 +1,100 @@
+{
+  "id": "johnliter_clever-lizard-46",
+  "name": "clever-lizard-46",
+  "category": "tooltips",
+  "author": "johnliter",
+  "description": "clever-lizard-46 组件 (simple, flashy, tooltip, button, theme-switch, code, gradients, light&dark, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "flashy",
+    "tooltip",
+    "button",
+    "theme-switch",
+    "code",
+    "gradients",
+    "light&dark",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">Uiverse.io</span>\n  <span class=\"text\">Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by johnliter  - Tags: simple, flashy, tooltip, button, theme-switch, code, gradients, light&dark */\n/* Style for the tooltip container */\n.tooltip-container {\n  --background-light: #ff5555; /* Red */\n  --background-dark: #000000; /* Black */\n  --text-color-light: #ffffff;\n  --text-color-dark: #ffffff;\n  --bubble-size: 12px;\n  --glow-color: rgba(255, 255, 255, 0.5); /* Brighter glow color */\n\n  position: relative;\n  background: var(--background-light);\n  cursor: pointer;\n  transition: all 0.2s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n  color: var(--text-color-light);\n  border-radius: 8px; /* Rounded edges */\n}\n\n/* Style for the bubble tooltip */\n.tooltip {\n  position: absolute;\n  top: -100%; /* Initially hidden above the container */\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.6em 1em;\n  opacity: 0;\n  visibility: hidden;\n  pointer-events: none;\n  transition: all 0.3s;\n  border-radius: var(--bubble-size);\n  background: var(--background-light);\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n\n/* Triangle arrow for the bubble tooltip */\n.tooltip::before {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  transform: translate(-50%);\n  border-style: solid;\n  border-width: 8px 8px 0;\n  border-color: var(--background-light) transparent transparent;\n}\n\n/* Tooltip appearance on hover */\n.tooltip-container:hover {\n  background: var(--background-dark);\n  color: var(--text-color-dark);\n  box-shadow: 0 0 20px var(--glow-color); /* Brighter glow effect */\n}\n\n.tooltip-container:hover .tooltip {\n  top: -120%; /* Adjusted position for the bubble tooltip */\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/johnliter_clever-lizard-46.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\">Uiverse.io</text>\n  <text class=\"text\">Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCleverLizard46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by johnliter  - Tags: simple, flashy, tooltip, button, theme-switch, code, gradients, light&dark */\n/* Style for the tooltip container */\n.tooltip-container {\n  --background-light: #ff5555; /* Red */\n  --background-dark: #000000; /* Black */\n  --text-color-light: #ffffff;\n  --text-color-dark: #ffffff;\n  --bubble-size: 24rpx;\n  --glow-color: rgba(255, 255, 255, 0.5); /* Brighter glow color */\n\n  position: relative;\n  background: var(--background-light);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n  color: var(--text-color-light);\n  border-radius: 16rpx; /* Rounded edges */\n}\n\n/* Style for the bubble tooltip */\n.tooltip {\n  position: absolute;\n  top: -100%; /* Initially hidden above the container */\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.6em 1em;\n  opacity: 0;\n  visibility: hidden;\n  pointer-events: none;\n  transition: all 0.3s;\n  border-radius: var(--bubble-size);\n  background: var(--background-light);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n/* Triangle arrow for the bubble tooltip */\n.tooltip::before {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  transform: translate(-50%);\n  border-style: solid;\n  border-width: 16rpx 16rpx 0;\n  border-color: var(--background-light) transparent transparent;\n}\n\n/* Tooltip appearance on hover */\n.tooltip-container:hover {\n  background: var(--background-dark);\n  color: var(--text-color-dark);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx var(--glow-color);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */ /* Brighter glow effect */\n}\n\n.tooltip-container:hover .tooltip {\n  top: -120%; /* Adjusted position for the bubble tooltip */\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}\n\n",
+    "component_name": "GalaxyCleverLizard46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1801,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.698Z",
+  "updated_at": "2025-07-31T07:55:38.698Z"
+}

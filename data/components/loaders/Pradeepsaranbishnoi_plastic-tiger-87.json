@@ -1,0 +1,85 @@
+{
+  "id": "Pradeepsaranbishnoi_plastic-tiger-87",
+  "name": "plastic-tiger-87",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "plastic-tiger-87 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"cubes\">\n    <div class=\"cube\">\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n    </div>\n    <div class=\"cube\">\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n    </div>\n    <div class=\"cube\">\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n    </div>\n    <div class=\"cube\">\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n      <div class=\"side\"></div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n/* The loader container */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 200px;\n  height: 200px;\n  margin-top: -100px;\n  margin-left: -100px;\n  perspective: 1000px;\n  transform-style: preserve-3d;\n}\n\n\n/* The cubes */\n.cubes {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  transform: rotateY(45deg) rotateZ(45deg);\n}\n\n\n/* The cube */\n.cube {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 50%;\n  transform-origin: 50% 50%;\n  transform-style: preserve-3d;\n  transform: translateZ(-50px);\n  animation: cube 2500ms cubic-bezier(.66,.14,.56,.75) infinite;\n}\n\n.cube:nth-child(2) {\n  top: 0;\n  left: 50%;\n  animation-delay: 50ms;\n}\n\n.cube:nth-child(3) {\n  top: 50%;\n  left: 0;\n  animation-delay: 100ms;\n}\n\n.cube:nth-child(4) {\n  top: 50%;\n  left: 50%;\n  animation-delay: 150ms;\n}\n\n@keyframes cube {\n  0%, 75%, 100% {\n    transform: translate3d(0px, 0px, 50px) rotateY(0deg) scale3d(0.9, 0.9, 0.1);\n  }\n\n  25%, 50% {\n    transform: translate3d(0px, 0px, -50px) rotateY(180deg) scale3d(0.9, 0.9, 0.1);\n  }\n}\n\n\n\n\n\n/* The side */\n.side {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  backface-visibility: hidden;\n}\n\n/* back */\n.side:nth-child(1) {\n  transform: rotateX(-180deg) translateZ(50px);\n  background-color: #1e3f57;\n}\n\n/* left side */\n.side:nth-child(2) {\n  transform: rotateY(-90deg) translateZ(50px);\n  background-color: #6bb2cd;\n}\n\n/* right side */\n.side:nth-child(3) {\n  transform: rotateY(90deg) translateZ(50px);\n  background-color: #6bb2cd;\n}\n\n/* top side */\n.side:nth-child(4) {\n  transform: rotateX(90deg) translateZ(50px);\n  background-color: #3c617d;\n}\n\n/* bottom side */\n.side:nth-child(5) {\n  transform: rotateX(-90deg) translateZ(50px);\n  background-color: #3c617d;\n}\n\n/* top */\n.side:nth-child(6) {\n  transform: translateZ(50px);\n  background-color: #1e3f57;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_plastic-tiger-87.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"cubes\"></view>\n    <view class=\"cube\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n    </div>\n    <view class=\"cube\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n    </div>\n    <view class=\"cube\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n    </div>\n    <view class=\"cube\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n      <view class=\"side\"></view>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPlasticTiger87',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n/* The loader container */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 400rpx;\n  height: 400rpx;\n  margin-top: -200rpx;\n  margin-left: -200rpx;\n  perspective: 2000rpx;\n  transform-style: preserve-3d;\n}\n\n\n/* The cubes */\n.cubes {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  transform: rotateY(45deg) rotateZ(45deg);\n}\n\n\n/* The cube */\n.cube {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 50%;\n  transform-origin: 50% 50%;\n  transform-style: preserve-3d;\n  transform: translateZ(-100rpx);\n  animation: cube 2500ms cubic-bezier(.66,.14,.56,.75) infinite;\n}\n\n.cube:nth-child(2) {\n  top: 0;\n  left: 50%;\n  animation-delay: 50ms;\n}\n\n.cube:nth-child(3) {\n  top: 50%;\n  left: 0;\n  animation-delay: 100ms;\n}\n\n.cube:nth-child(4) {\n  top: 50%;\n  left: 50%;\n  animation-delay: 150ms;\n}\n\n@keyframes cube {\n  0%, 75%, 100% {\n    transform: translate3d(0rpx, 0rpx, 100rpx) rotateY(0deg) scale3d(0.9, 0.9, 0.1);\n  }\n\n  25%, 50% {\n    transform: translate3d(0rpx, 0rpx, -100rpx) rotateY(180deg) scale3d(0.9, 0.9, 0.1);\n  }\n}\n\n\n\n\n\n/* The side */\n.side {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  backface-visibility: hidden;\n}\n\n/* back */\n.side:nth-child(1) {\n  transform: rotateX(-180deg) translateZ(100rpx);\n  background-color: #1e3f57;\n}\n\n/* left side */\n.side:nth-child(2) {\n  transform: rotateY(-90deg) translateZ(100rpx);\n  background-color: #6bb2cd;\n}\n\n/* right side */\n.side:nth-child(3) {\n  transform: rotateY(90deg) translateZ(100rpx);\n  background-color: #6bb2cd;\n}\n\n/* top side */\n.side:nth-child(4) {\n  transform: rotateX(90deg) translateZ(100rpx);\n  background-color: #3c617d;\n}\n\n/* bottom side */\n.side:nth-child(5) {\n  transform: rotateX(-90deg) translateZ(100rpx);\n  background-color: #3c617d;\n}\n\n/* top */\n.side:nth-child(6) {\n  transform: translateZ(100rpx);\n  background-color: #1e3f57;\n}\n\n",
+    "component_name": "GalaxyPlasticTiger87"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2940,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.081Z",
+  "updated_at": "2025-07-31T07:55:40.081Z"
+}

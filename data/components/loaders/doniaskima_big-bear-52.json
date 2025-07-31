@@ -1,0 +1,93 @@
+{
+  "id": "doniaskima_big-bear-52",
+  "name": "big-bear-52",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "big-bear-52 组件 (simple, material design, neumorphism, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "neumorphism",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, neumorphism, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  display: inline-flex;\n  border: 2px solid #000;\n  --c: no-repeat linear-gradient(#000 0 0) 50%;\n  background: var(--c) calc(50% - 5px)/5px 5px,\n    var(--c) calc(50% + 5px)/5px 5px;\n}\n\n.loader::before,\n.loader::after {\n  content: \"12 00 23 40 31 45 60 17 45 32 29 42 50 08 14 07 46 11 03 55\";\n  font-size: 30px;\n  font-family: monospace;\n  font-weight: bold;\n  line-height: 1em;\n  height: 1em;\n  width: 2ch;\n  color: #0000;\n  text-shadow: 0 0 0 #000;\n  overflow: hidden;\n  margin: 5px 10px;\n  animation: l3 1s steps(20) infinite;\n}\n\n.loader::before {\n  animation-duration: 1.5s;\n}\n\n@keyframes l3 {\n  100% {\n    text-shadow: 0 -20em 0 #000\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_big-bear-52.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyBigBear52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, neumorphism, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  display: inline-flex;\n  border: 4rpx solid #000;\n  --c: no-repeat linear-gradient(#000 0 0) 50%;\n  background: var(--c) calc(50% - 10rpx)/10rpx 10rpx,\n    var(--c) calc(50% + 10rpx)/10rpx 10rpx;\n}\n\n.loader::before,\n.loader::after {\n  content: \"12 00 23 40 31 45 60 17 45 32 29 42 50 08 14 07 46 11 03 55\";\n  font-size: 60rpx;\n  font-family: monospace;\n  font-weight: bold;\n  line-height: 1em;\n  height: 1em;\n  width: 2ch;\n  color: #0000;\n  /* #ifdef H5 */\n  text-shadow: 0 0 0 #000;\n  /* #endif */\n  overflow: hidden;\n  margin: 10rpx 20rpx;\n  animation: l3 1s steps(20) infinite;\n}\n\n.loader::before {\n  animation-duration: 1.5s;\n}\n\n@keyframes l3 {\n  100% {\n    text-shadow: 0 -20em 0 #000\n  }\n}\n",
+    "component_name": "GalaxyBigBear52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 814,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.251Z",
+  "updated_at": "2025-07-31T07:55:41.251Z"
+}

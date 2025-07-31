@@ -1,0 +1,115 @@
+{
+  "id": "Creatlydev_grumpy-crab-66",
+  "name": "grumpy-crab-66",
+  "category": "buttons",
+  "author": "Creatlydev",
+  "description": "grumpy-crab-66 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" height=\"40\" width=\"40\" class=\"button__icon\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill=\"none\" d=\"M0 0h24v24H0z\" stroke=\"none\"></path>\n    <path d=\"M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2\"></path>\n    <path d=\"M7 11l5 5l5 -5\"></path>\n    <path d=\"M12 4l0 12\"></path>\n  </svg>\n  <span class=\"button__text\">Download</span>\n</button>",
+    "css": "/* From Uiverse.io by Creatlydev  - Tags: button */\n.button {\n  line-height: 1;\n  background-color: transparent;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 0.35em;\n  padding: 0.75em 1em;\n  padding-right: 1.25em;\n  color: #fff;\n  border: 1px solid transparent;\n  font-weight: 700;\n  border-radius: 2em;\n  font-size: 1rem;\n  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);\n  transition: transform 0.3s;\n\n  background: linear-gradient(\n    90deg,\n    rgba(77, 54, 208, 1) 0%,\n    rgba(132, 116, 254, 1) 100%\n  );\n}\n\n.button__icon {\n  width: 1.5em;\n  height: 1.5em;\n}\n\n.button:hover {\n  border-color: #f4f5f2;\n}\n\n.button:active {\n  transform: scale(0.98);\n  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Creatlydev_grumpy-crab-66.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" height=\"40\" width=\"40\" class=\"button__icon\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path fill=\"none\" d=\"M0 0h24v24H0z\" stroke=\"none\"></path>\n    <path d=\"M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2\"></path>\n    <path d=\"M7 11l5 5l5 -5\"></path>\n    <path d=\"M12 4l0 12\"></path>\n  </svg>\n  <text class=\"button__text\">Download</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyGrumpyCrab66',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Creatlydev  - Tags: button */\n.button {\n  line-height: 1;\n  background-color: transparent;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  align-items: center;\n  gap: 0.35em;\n  padding: 0.75em 1em;\n  padding-right: 1.25em;\n  color: #fff;\n  border: 2rpx solid transparent;\n  font-weight: 700;\n  border-radius: 2em;\n  font-size: 1rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: transform 0.3s;\n\n  background: linear-gradient(\n    90deg,\n    rgba(77, 54, 208, 1) 0%,\n    rgba(132, 116, 254, 1) 100%\n  );\n}\n\n.button__icon {\n  width: 1.5em;\n  height: 1.5em;\n}\n\n.button:hover {\n  border-color: #f4f5f2;\n}\n\n.button:active {\n  transform: scale(0.98);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyGrumpyCrab66"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1253,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.999Z",
+  "updated_at": "2025-07-31T07:55:32.999Z"
+}

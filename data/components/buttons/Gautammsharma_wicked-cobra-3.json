@@ -1,0 +1,112 @@
+{
+  "id": "Gautammsharma_wicked-cobra-3",
+  "name": "wicked-cobra-3",
+  "category": "buttons",
+  "author": "Gautammsharma",
+  "description": "wicked-cobra-3 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"comic-button\">Click me!</button>",
+    "css": "/* From Uiverse.io by Gautammsharma - Tags: button */\n.comic-button {\n  display: inline-block;\n  padding: 10px 20px;\n  font-size: 24px;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: none;\n  color: #fff;\n  background-color: #ff5252;\n  border: 2px solid #000;\n  border-radius: 10px;\n  box-shadow: 5px 5px 0px #000;\n  transition: all 0.3s ease;\n}\n\n.comic-button:hover {\n  background-color: #fff;\n  color: #ff5252;\n  border: 2px solid #ff5252;\n  box-shadow: 5px 5px 0px #ff5252;\n}\n\n.comic-button:active {\n  background-color: #fcf414;\n  box-shadow: none;\n  transform: translateY(4px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Gautammsharma_wicked-cobra-3.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"comic-button\"></button>Click me!</button>",
+    "script": "export default {\n  name: 'GalaxyWickedCobra3',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Gautammsharma - Tags: button */\n.comic-button {\n  display: inline-block;\n  padding: 20rpx 40rpx;\n  font-size: 48rpx;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: none;\n  color: #fff;\n  background-color: #ff5252;\n  border: 4rpx solid #000;\n  border-radius: 20rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 0rpx #000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease;\n}\n\n.comic-button:hover {\n  background-color: #fff;\n  color: #ff5252;\n  border: 4rpx solid #ff5252;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 0rpx #ff5252;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.comic-button:active {\n  background-color: #fcf414;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(8rpx);\n}\n\n",
+    "component_name": "GalaxyWickedCobra3"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 649,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.278Z",
+  "updated_at": "2025-07-31T07:55:33.278Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "sahilxkhadka_chatty-insect-87",
+  "name": "chatty-insect-87",
+  "category": "buttons",
+  "author": "sahilxkhadka",
+  "description": "chatty-insect-87 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"bg-gradient-to-r from-blue-400 via-teal-500 to-cyan-500 text-white font-bold py-3 px-6 rounded-md hover:bg-gradient-to-r hover:from-teal-500 hover:via-blue-400 hover:to-cyan-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-md hover:shadow-lg group focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 active:translate-y-2 active:shadow-sm\">\n  <span class=\"group-hover:animate-bounce\">Frenzy Button</span>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/sahilxkhadka_chatty-insect-87.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"bg-gradient-to-r from-blue-400 via-teal-500 to-cyan-500 text-white font-bold py-3 px-6 rounded-md hover:bg-gradient-to-r hover:from-teal-500 hover:via-blue-400 hover:to-cyan-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-md hover:shadow-lg group focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 active:translate-y-2 active:shadow-sm\"></button>\n  <text class=\"group-hover:animate-bounce\">Frenzy Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattyInsect87',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyChattyInsect87"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 497,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.706Z",
+  "updated_at": "2025-07-31T07:55:37.706Z"
+}

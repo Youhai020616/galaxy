@@ -1,0 +1,116 @@
+{
+  "id": "KhaledMatalkah_chatty-sheep-5",
+  "name": "chatty-sheep-5",
+  "category": "buttons",
+  "author": "KhaledMatalkah",
+  "description": "chatty-sheep-5 组件 (button, hover, ease, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "ease",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Hover Me!\n</button>",
+    "css": "/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, ease */\n.button {\n  background-color: transparent;\n  color: #ffffff;\n  padding: 15px 30px;\n  border-radius: 5px;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n  transition: background-color 0.3s ease-in, transform 0.3s ease;\n  font-size: 18px;\n  font-weight: bold;\n  border: none;\n  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);\n}\n\n.button:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0;\n  height: 100%;\n  background-color: #76a6ca;\n  opacity: 0;\n  transition: width 0.7s ease-in-out, opacity 0.9s ease;\n}\n\n.button:hover {\n  transform: scale(1.05);\n}\n\n.button:hover:before {\n  width: 100%;\n  opacity: 0.6;\n}\n\n.button:active {\n  background-color: #76a6ca;\n  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);\n  transform: scale(0.98);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KhaledMatalkah_chatty-sheep-5.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Hover Me!\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattySheep5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, ease */\n.button {\n  background-color: transparent;\n  color: #ffffff;\n  padding: 30rpx 60rpx;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n  transition: background-color 0.3s ease-in, transform 0.3s ease;\n  font-size: 36rpx;\n  font-weight: bold;\n  border: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 12rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0;\n  height: 100%;\n  background-color: #76a6ca;\n  opacity: 0;\n  transition: width 0.7s ease-in-out, opacity 0.9s ease;\n}\n\n.button:hover {\n  transform: scale(1.05);\n}\n\n.button:hover:before {\n  width: 100%;\n  opacity: 0.6;\n}\n\n.button:active {\n  background-color: #76a6ca;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 12rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: scale(0.98);\n}\n\n",
+    "component_name": "GalaxyChattySheep5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 883,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.687Z",
+  "updated_at": "2025-07-31T07:55:33.687Z"
+}

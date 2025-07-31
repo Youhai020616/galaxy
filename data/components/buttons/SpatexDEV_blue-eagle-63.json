@@ -1,0 +1,114 @@
+{
+  "id": "SpatexDEV_blue-eagle-63",
+  "name": "blue-eagle-63",
+  "category": "buttons",
+  "author": "SpatexDEV",
+  "description": "blue-eagle-63 组件 (button, upload, file, animation, interactive)",
+  "tags": [
+    "button",
+    "upload",
+    "file",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" aria-hidden=\"true\">\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H11M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125\" stroke=\"#fffffff\" stroke-width=\"2\"></path>\n<path d=\"M17 15V18M17 21V18M17 18H14M17 18H20\" stroke=\"#fffffff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </svg>\nADD FILE \n</button>",
+    "css": "/* From Uiverse.io by SpatexDEV - Tags: button, upload, file */\nbutton {\n  border: none;\n  display: flex;\n  padding: 0.75rem 1.5rem;\n  background-color: #488aec;\n  color: #ffffff;\n  font-size: 0.75rem;\n  line-height: 1rem;\n  font-weight: 700;\n  text-align: center;\n  text-transform: uppercase;\n  vertical-align: middle;\n  align-items: center;\n  border-radius: 0.5rem;\n  user-select: none;\n  gap: 0.75rem;\n  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;\n  transition: all .6s ease;\n}\n\nbutton:hover {\n  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;\n}\n\nbutton:focus,button:active {\n  opacity: .85;\n  box-shadow: none;\n}\n\nbutton svg {\n  width: 1.25rem;\n  height: 1.25rem;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SpatexDEV_blue-eagle-63.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" aria-hidden=\"true\"></view>\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H11M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125\" stroke=\"#fffffff\" stroke-width=\"2\"></path>\n<path d=\"M17 15V18M17 21V18M17 18H14M17 18H20\" stroke=\"#fffffff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </svg>\nADD FILE \n</button>",
+    "script": "export default {\n  name: 'GalaxyBlueEagle63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SpatexDEV - Tags: button, upload, file */\nbutton {\n  border: none;\n  display: flex;\n  padding: 0.75rem 1.5rem;\n  background-color: #488aec;\n  color: #ffffff;\n  font-size: 0.75rem;\n  line-height: 1rem;\n  font-weight: 700;\n  text-align: center;\n  text-transform: uppercase;\n  vertical-align: middle;\n  align-items: center;\n  border-radius: 0.5rem;\n  user-select: none;\n  gap: 0.75rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 12rpx -2rpx #488aec31, 0 4rpx 8rpx -2rpx #488aec17;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all .6s ease;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 30rpx -6rpx #488aec4f, 0 8rpx 12rpx -4rpx #488aec17;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:focus,button:active {\n  opacity: .85;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton svg {\n  width: 1.25rem;\n  height: 1.25rem;\n}\n",
+    "component_name": "GalaxyBlueEagle63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1278,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.854Z",
+  "updated_at": "2025-07-31T07:55:34.854Z"
+}

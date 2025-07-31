@@ -1,0 +1,118 @@
+{
+  "id": "Rodrypaladin_pink-hound-35",
+  "name": "pink-hound-35",
+  "category": "buttons",
+  "author": "Rodrypaladin",
+  "description": "pink-hound-35 组件 (simple, animation, black, button, text animation, creative, click effect, click animation, interactive)",
+  "tags": [
+    "simple",
+    "animation",
+    "black",
+    "button",
+    "text animation",
+    "creative",
+    "click effect",
+    "click animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span class=\"button__span\">Button</span>\n  \n</button>",
+    "css": "/* From Uiverse.io by Rodrypaladin - Tags: simple, animation, black, button, text animation, creative, click effect, click animation */\n.button {\n  font-size: 2em;\n  padding: 10px 20px;\n  background-color: transparent;\n  transition: all 0.2s ease-out;\n  border: none;\n}\n\n.button__span {\n  color: #131313;\n  transition: all 0.2s ease-out;\n  background-color: #e7e5e4;\n  letter-spacing: .15em;\n  text-shadow: 1px -1px 0 #767676, \n      -1px 2px 1px #737272, \n      -2px 4px 1px #767474, \n      -3px 6px 1px #787777, \n      -4px 8px 1px #7b7a7a, \n      -5px 10px 1px #7f7d7d, \n      -6px 12px 1px #828181, \n      -7px 14px 1px #868585, \n      -8px 16px 1px #8b8a89, \n      -9px 18px 1px #8f8e8d, \n      -10px 20px 1px #949392, \n      -11px 22px 1px #999897, \n      -12px 24px 1px #9e9c9c, \n      -13px 26px 1px #a3a1a1, \n      -14px 28px 1px #a8a6a6, \n      -15px 30px 1px #adabab, \n      -16px 32px 1px #b2b1b0, \n      -17px 34px 1px #b7b6b5, \n      -18px 36px 1px #bcbbba, \n      -19px 38px 1px #c1bfbf, \n      -20px 40px 1px #c6c4c4, \n      -21px 42px 1px #cbc9c8, \n      -22px 44px 1px #cfcdcd, \n      -23px 46px 1px #d4d2d1, \n      -24px 48px 1px #d8d6d5, \n      -25px 50px 1px #dbdad9, \n      -26px 52px 1px #dfdddc, \n      -27px 54px 1px #e2e0df, \n      -28px 56px 1px #e4e3e2;\n}\n\n.button__span:hover {\n  text-shadow: -1px -1px 0 #767676, \n      1px 2px 1px #737272, \n      2px 4px 1px #767474, \n      3px 6px 1px #787777, \n      4px 8px 1px #7b7a7a, \n      5px 10px 1px #7f7d7d, \n      6px 12px 1px #828181, \n      7px 14px 1px #868585, \n      8px 16px 1px #8b8a89, \n      9px 18px 1px #8f8e8d, \n      10px 20px 1px #949392, \n      11px 22px 1px #999897, \n      12px 24px 1px #9e9c9c, \n      13px 26px 1px #a3a1a1, \n      14px 28px 1px #a8a6a6, \n      15px 30px 1px #adabab, \n      16px 32px 1px #b2b1b0, \n      17px 34px 1px #b7b6b5, \n      18px 36px 1px #bcbbba, \n      19px 38px 1px #c1bfbf, \n      20px 40px 1px #c6c4c4, \n      21px 42px 1px #cbc9c8, \n      22px 44px 1px #cfcdcd, \n      23px 46px 1px #d4d2d1, \n      24px 48px 1px #d8d6d5, \n      25px 50px 1px #dbdad9, \n      26px 52px 1px #dfdddc, \n      27px 54px 1px #e2e0df, \n      28px 56px 1px #e4e3e2;\n}\n\n.button:active .button__span {\n  text-shadow: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Rodrypaladin_pink-hound-35.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text class=\"button__span\">Button</text>\n  \n</button>",
+    "script": "export default {\n  name: 'GalaxyPinkHound35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Rodrypaladin - Tags: simple, animation, black, button, text animation, creative, click effect, click animation */\n.button {\n  font-size: 2em;\n  padding: 20rpx 40rpx;\n  background-color: transparent;\n  transition: all 0.2s ease-out;\n  border: none;\n}\n\n.button__span {\n  color: #131313;\n  transition: all 0.2s ease-out;\n  background-color: #e7e5e4;\n  letter-spacing: .15em;\n  /* #ifdef H5 */\n  text-shadow: 2rpx -2rpx 0 #767676, \n      -2rpx 4rpx 2rpx #737272, \n      -4rpx 8rpx 2rpx #767474, \n      -6rpx 12rpx 2rpx #787777, \n      -8rpx 16rpx 2rpx #7b7a7a, \n      -10rpx 20rpx 2rpx #7f7d7d, \n      -12rpx 24rpx 2rpx #828181, \n      -14rpx 28rpx 2rpx #868585, \n      -16rpx 32rpx 2rpx #8b8a89, \n      -18rpx 36rpx 2rpx #8f8e8d, \n      -20rpx 40rpx 2rpx #949392, \n      -22rpx 44rpx 2rpx #999897, \n      -24rpx 48rpx 2rpx #9e9c9c, \n      -26rpx 52rpx 2rpx #a3a1a1, \n      -28rpx 56rpx 2rpx #a8a6a6, \n      -30rpx 60rpx 2rpx #adabab, \n      -32rpx 64rpx 2rpx #b2b1b0, \n      -34rpx 68rpx 2rpx #b7b6b5, \n      -36rpx 72rpx 2rpx #bcbbba, \n      -38rpx 76rpx 2rpx #c1bfbf, \n      -40rpx 80rpx 2rpx #c6c4c4, \n      -42rpx 84rpx 2rpx #cbc9c8, \n      -44rpx 88rpx 2rpx #cfcdcd, \n      -46rpx 92rpx 2rpx #d4d2d1, \n      -48rpx 96rpx 2rpx #d8d6d5, \n      -50rpx 100rpx 2rpx #dbdad9, \n      -52rpx 104rpx 2rpx #dfdddc, \n      -54rpx 108rpx 2rpx #e2e0df, \n      -56rpx 112rpx 2rpx #e4e3e2;\n  /* #endif */\n}\n\n.button__span:hover {\n  /* #ifdef H5 */\n  text-shadow: -2rpx -2rpx 0 #767676, \n      2rpx 4rpx 2rpx #737272, \n      4rpx 8rpx 2rpx #767474, \n      6rpx 12rpx 2rpx #787777, \n      8rpx 16rpx 2rpx #7b7a7a, \n      10rpx 20rpx 2rpx #7f7d7d, \n      12rpx 24rpx 2rpx #828181, \n      14rpx 28rpx 2rpx #868585, \n      16rpx 32rpx 2rpx #8b8a89, \n      18rpx 36rpx 2rpx #8f8e8d, \n      20rpx 40rpx 2rpx #949392, \n      22rpx 44rpx 2rpx #999897, \n      24rpx 48rpx 2rpx #9e9c9c, \n      26rpx 52rpx 2rpx #a3a1a1, \n      28rpx 56rpx 2rpx #a8a6a6, \n      30rpx 60rpx 2rpx #adabab, \n      32rpx 64rpx 2rpx #b2b1b0, \n      34rpx 68rpx 2rpx #b7b6b5, \n      36rpx 72rpx 2rpx #bcbbba, \n      38rpx 76rpx 2rpx #c1bfbf, \n      40rpx 80rpx 2rpx #c6c4c4, \n      42rpx 84rpx 2rpx #cbc9c8, \n      44rpx 88rpx 2rpx #cfcdcd, \n      46rpx 92rpx 2rpx #d4d2d1, \n      48rpx 96rpx 2rpx #d8d6d5, \n      50rpx 100rpx 2rpx #dbdad9, \n      52rpx 104rpx 2rpx #dfdddc, \n      54rpx 108rpx 2rpx #e2e0df, \n      56rpx 112rpx 2rpx #e4e3e2;\n  /* #endif */\n}\n\n.button:active .button__span {\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n",
+    "component_name": "GalaxyPinkHound35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2309,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.460Z",
+  "updated_at": "2025-07-31T07:55:34.460Z"
+}

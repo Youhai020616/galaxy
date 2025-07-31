@@ -1,0 +1,119 @@
+{
+  "id": "csemszepp_loud-impala-43",
+  "name": "loud-impala-43",
+  "category": "buttons",
+  "author": "csemszepp",
+  "description": "loud-impala-43 组件 (button, neon, lights, interactive)",
+  "tags": [
+    "button",
+    "neon",
+    "lights",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"gas ne\">\n  <span class=\"number\">10</span>\n  <div class=\"symbol\">Ne</div>\n  <p class=\"name\">Neon</p>\n</div>",
+    "css": "/* From Uiverse.io by csemszepp  - Website: https://codepen.io/CITguy/pen/yLaZZbO - Name: Ryan Johnson - Tags: button, neon, lights */\n#gasses {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.gas {\n  --blur: 1.75rem;\n  --box-blur: calc(0.5 * var(--blur));\n  --glow: var(--color);\n  --size: 12rem;\n\n  align-items: center;\n  border-radius: 12px;\n  border: 4px solid currentColor;\n  box-shadow: \n    /* --- \"glass\" tube --- */\n    /* inside */ inset 0 0 0 2px\n      rgba(0, 0, 0, 0.15),\n    /* outside */ 0 0 0 2px rgba(0, 0, 0, 0.15),\n    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),\n    /* outside */ 0 0 var(--box-blur) var(--glow);\n  color: var(--color, white);\n  display: inline-flex;\n  flex-direction: column;\n  font-family: system-ui, sans-serif;\n  height: var(--size);\n  justify-content: space-around;\n  padding: 1rem;\n  width: var(--size);\n}\n.gas.number {\n  font-weight: 700;\n}\n\n.symbol {\n  font-size: 4rem;\n  font-family: \"Neon Glow\";\n  text-shadow: 0 0 var(--blur) var(--glow);\n}\n\n.gas.ne {\n  --color: #fda802;\n  filter: brightness(110%);\n  cursor: pointer;\n}\n.gas.ne:hover {\n  filter: brightness(120%) drop-shadow(0 0 10px var(--glow));\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/csemszepp_loud-impala-43.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"gas ne\"></view>\n  <text class=\"number\">10</text>\n  <view class=\"symbol\">Ne</view>\n  <text class=\"name\">Neon</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLoudImpala43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp  - Website: https://codepen.io/CITguy/pen/yLaZZbO - Name: Ryan Johnson - Tags: button, neon, lights */\n#gasses {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.gas {\n  --blur: 1.75rem;\n  --box-blur: calc(0.5 * var(--blur));\n  --glow: var(--color);\n  --size: 12rem;\n\n  align-items: center;\n  border-radius: 24rpx;\n  border: 8rpx solid currentColor;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: \n    /* --- \"glass\" tube --- */\n    /* inside */ inset 0 0 0 4rpx\n      rgba(0, 0, 0, 0.15),\n    /* outside */ 0 0 0 4rpx rgba(0, 0, 0, 0.15),\n    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),\n    /* outside */ 0 0 var(--box-blur) var(--glow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: var(--color, white);\n  display: inline-flex;\n  flex-direction: column;\n  font-family: system-ui, sans-serif;\n  height: var(--size);\n  justify-content: space-around;\n  padding: 1rem;\n  width: var(--size);\n}\n.gas.number {\n  font-weight: 700;\n}\n\n.symbol {\n  font-size: 4rem;\n  font-family: \"Neon Glow\";\n  /* #ifdef H5 */\n  text-shadow: 0 0 var(--blur) var(--glow);\n  /* #endif */\n}\n\n.gas.ne {\n  --color: #fda802;\n  \n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n.gas.ne:hover {\n  \n}\n\n",
+    "component_name": "GalaxyLoudImpala43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1321,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.141Z",
+  "updated_at": "2025-07-31T07:55:36.141Z"
+}

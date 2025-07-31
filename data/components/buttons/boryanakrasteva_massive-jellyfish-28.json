@@ -1,0 +1,112 @@
+{
+  "id": "boryanakrasteva_massive-jellyfish-28",
+  "name": "massive-jellyfish-28",
+  "category": "buttons",
+  "author": "boryanakrasteva",
+  "description": "massive-jellyfish-28 组件 (button, animation, gradient)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"btn-wrapper\">\n  <button class=\"btn\"> button </button>\n</div>",
+    "css": "/* From Uiverse.io by boryanakrasteva - Tags: button */\n.btn-wrapper {\n  width: 120px;\n  height: 50px;\n  position: relative;\n  z-index: 1;\n  background: linear-gradient(270deg, #96f061, #a259d3, #1d9de0, #e790b0);\n  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.363);\n  background-size: 800% 800%;\n  animation: animateBorder 9s ease infinite;\n}\n\n.btn {\n  width: 95%;\n  height: 90%;\n  position: absolute;\n  padding: 5px;\n  border: none;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background-color: #212121;\n  z-index: 2;\n  text-transform: uppercase;\n  letter-spacing: 4.5px;\n  color: white;\n  font-weight: bold;\n}\n\n@keyframes animateBorder {\n  0% {\n    background-position: 0% 50%\n  }\n\n  50% {\n    background-position: 100% 50%\n  }\n\n  100% {\n    background-position: 0% 50%\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/boryanakrasteva_massive-jellyfish-28.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"btn-wrapper\"></view>\n  <button class=\"btn\"></button> button </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMassiveJellyfish28',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by boryanakrasteva - Tags: button */\n.btn-wrapper {\n  width: 240rpx;\n  height: 100rpx;\n  position: relative;\n  z-index: 1;\n  background: linear-gradient(270deg, #96f061, #a259d3, #1d9de0, #e790b0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 20rpx rgba(255, 255, 255, 0.363);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-size: 800% 800%;\n  animation: animateBorder 9s ease infinite;\n}\n\n.btn {\n  width: 95%;\n  height: 90%;\n  position: absolute;\n  padding: 10rpx;\n  border: none;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background-color: #212121;\n  z-index: 2;\n  text-transform: uppercase;\n  letter-spacing: 9rpx;\n  color: white;\n  font-weight: bold;\n}\n\n@keyframes animateBorder {\n  0% {\n    background-position: 0% 50%\n  }\n\n  50% {\n    background-position: 100% 50%\n  }\n\n  100% {\n    background-position: 0% 50%\n  }\n}\n",
+    "component_name": "GalaxyMassiveJellyfish28"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 875,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.007Z",
+  "updated_at": "2025-07-31T07:55:36.007Z"
+}

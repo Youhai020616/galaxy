@@ -1,0 +1,88 @@
+{
+  "id": "vikramsinghnegi_serious-owl-38",
+  "name": "serious-owl-38",
+  "category": "loaders",
+  "author": "vikramsinghnegi",
+  "description": "serious-owl-38 组件 (loading, loader, bar, animation, gradient)",
+  "tags": [
+    "loading",
+    "loader",
+    "bar",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"bars\"></div>",
+    "css": "/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, bar */\n.bars {\n  width: 50.5px;\n  height: 60.599999999999994px;\n  --c: repeating-linear-gradient(90deg, #474bff 0 10.1px, #0000 0 20.2px);\n  background: var(--c), var(--c), var(--c), var(--c);\n  background-size: 100% 21%;\n  background-repeat: no-repeat;\n  animation: bars-yrfh98 0.75s infinite alternate;\n}\n\n@keyframes bars-yrfh98 {\n  0%,\n  10% {\n    background-position: 0 0, 0 25%, 0 50%, 0 75%;\n  }\n\n  25% {\n    background-position: 0 0, 0 25%, 0 50%, 0 100%;\n  }\n\n  50% {\n    background-position: 0 0, 0 25%, 0 75%, 0 100%;\n  }\n\n  75% {\n    background-position: 0 0, 0 50%, 0 75%, 0 100%;\n  }\n\n  90%,\n  100% {\n    background-position: 0 25%, 0 50%, 0 75%, 0 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vikramsinghnegi_serious-owl-38.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"bars\"></view>",
+    "script": "export default {\n  name: 'GalaxySeriousOwl38',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, bar */\n.bars {\n  width: 101rpx;\n  height: 121.19999999999999rpx;\n  --c: repeating-linear-gradient(90deg, #474bff 0 20.2rpx, #0000 0 40.4rpx);\n  background: var(--c), var(--c), var(--c), var(--c);\n  background-size: 100% 21%;\n  background-repeat: no-repeat;\n  animation: bars-yrfh98 0.75s infinite alternate;\n}\n\n@keyframes bars-yrfh98 {\n  0%,\n  10% {\n    background-position: 0 0, 0 25%, 0 50%, 0 75%;\n  }\n\n  25% {\n    background-position: 0 0, 0 25%, 0 50%, 0 100%;\n  }\n\n  50% {\n    background-position: 0 0, 0 25%, 0 75%, 0 100%;\n  }\n\n  75% {\n    background-position: 0 0, 0 50%, 0 75%, 0 100%;\n  }\n\n  90%,\n  100% {\n    background-position: 0 25%, 0 50%, 0 75%, 0 100%;\n  }\n}\n\n",
+    "component_name": "GalaxySeriousOwl38"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 771,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.743Z",
+  "updated_at": "2025-07-31T07:55:42.743Z"
+}

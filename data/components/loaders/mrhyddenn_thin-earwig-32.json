@@ -1,0 +1,85 @@
+{
+  "id": "mrhyddenn_thin-earwig-32",
+  "name": "thin-earwig-32",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "thin-earwig-32 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  overflow: hidden;\n  animation: mac0123 1s linear infinite;\n}\n\n.loader span {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #f00;\n  left: 50%;\n  border-radius: 50%;\n  transform-origin: left;\n}\n\n.loader span:nth-child(1) {\n  background: #0fa503;\n  transform: rotate(0deg);\n  z-index: 2;\n}\n\n.loader span:nth-child(2) {\n  background: #ffd203;\n  transform: rotate(60deg);\n  z-index: 3;\n}\n\n.loader span:nth-child(3) {\n  background: #54cd28;\n  transform: rotate(120deg);\n  z-index: 4;\n}\n\n.loader span:nth-child(4) {\n  background: #129cf5;\n  transform: rotate(180deg);\n  z-index: 5;\n}\n\n.loader span:nth-child(5) {\n  background: #bb5ed3;\n  transform: rotate(240deg);\n  z-index: 6;\n}\n\n.loader span:nth-child(6) {\n  background: #ff4f45;\n  transform: rotate(300deg);\n  z-index: 7;\n  overflow: hidden;\n}\n\n.loader span:nth-child(6):before {\n  content: '';\n  position: absolute;\n  top: 45px;\n  left: -72px;\n  width: 100%;\n  height: 100%;\n  background: #ffd203;\n  border-radius: 50%;\n  z-index: 2;\n}\n\n.loader span:nth-child(6):after {\n  content: '';\n  position: absolute;\n  top: 42px;\n  left: -23px;\n  width: 100%;\n  height: 100%;\n  background: #fea503;\n  border-radius: 50%;\n}\n\n@keyframes mac0123 {\n  0% {\n    transform: translate(-50%, -50%) rotate(359deg);\n  }\n\n  100% {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_thin-earwig-32.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyThinEarwig32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 200rpx;\n  height: 200rpx;\n  border-radius: 50%;\n  overflow: hidden;\n  animation: mac0123 1s linear infinite;\n}\n\n.loader span {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #f00;\n  left: 50%;\n  border-radius: 50%;\n  transform-origin: left;\n}\n\n.loader span:nth-child(1) {\n  background: #0fa503;\n  transform: rotate(0deg);\n  z-index: 2;\n}\n\n.loader span:nth-child(2) {\n  background: #ffd203;\n  transform: rotate(60deg);\n  z-index: 3;\n}\n\n.loader span:nth-child(3) {\n  background: #54cd28;\n  transform: rotate(120deg);\n  z-index: 4;\n}\n\n.loader span:nth-child(4) {\n  background: #129cf5;\n  transform: rotate(180deg);\n  z-index: 5;\n}\n\n.loader span:nth-child(5) {\n  background: #bb5ed3;\n  transform: rotate(240deg);\n  z-index: 6;\n}\n\n.loader span:nth-child(6) {\n  background: #ff4f45;\n  transform: rotate(300deg);\n  z-index: 7;\n  overflow: hidden;\n}\n\n.loader span:nth-child(6):before {\n  content: '';\n  position: absolute;\n  top: 90rpx;\n  left: -144rpx;\n  width: 100%;\n  height: 100%;\n  background: #ffd203;\n  border-radius: 50%;\n  z-index: 2;\n}\n\n.loader span:nth-child(6):after {\n  content: '';\n  position: absolute;\n  top: 84rpx;\n  left: -46rpx;\n  width: 100%;\n  height: 100%;\n  background: #fea503;\n  border-radius: 50%;\n}\n\n@keyframes mac0123 {\n  0% {\n    transform: translate(-50%, -50%) rotate(359deg);\n  }\n\n  100% {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n}\n",
+    "component_name": "GalaxyThinEarwig32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1674,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.463Z",
+  "updated_at": "2025-07-31T07:55:42.463Z"
+}

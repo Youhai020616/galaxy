@@ -1,0 +1,118 @@
+{
+  "id": "Spacious74_helpless-tiger-55",
+  "name": "helpless-tiger-55",
+  "category": "buttons",
+  "author": "Spacious74",
+  "description": "helpless-tiger-55 组件 (3d, button, realistic, code, social media, neo, gradient)",
+  "tags": [
+    "3d",
+    "button",
+    "realistic",
+    "code",
+    "social media",
+    "neo",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"blob1\"></div>\n  <div class=\"blob2\"></div>\n  <div class=\"inner\">Realism</div>\n</button>",
+    "css": "/* From Uiverse.io by Spacious74  - Tags: 3d, button, realistic, code, social media, neo */\n.button {\n  cursor: pointer;\n  font-size: 1.6rem;\n  border-radius: 16px;\n  border: none;\n  padding: 2px;\n  background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);\n  position: relative;\n}\n.button::after {\n  content: \"\";\n  position: absolute;\n  width: 65%;\n  height: 60%;\n  border-radius: 120px;\n  top: 0;\n  right: 0;\n  box-shadow: 0 0 20px #ffffff38;\n  z-index: -1;\n}\n\n.blob1 {\n  position: absolute;\n  width: 70px;\n  height: 100%;\n  border-radius: 16px;\n  bottom: 0;\n  left: 0;\n  background: radial-gradient(\n    circle 60px at 0% 100%,\n    #3fe9ff,\n    #0000ff80,\n    transparent\n  );\n  box-shadow: -10px 10px 30px #0051ff2d;\n}\n\n.inner {\n  padding: 14px 25px;\n  border-radius: 14px;\n  color: #fff;\n  z-index: 3;\n  position: relative;\n  background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);\n}\n.inner::before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 14px;\n  background: radial-gradient(\n    circle 60px at 0% 100%,\n    #00e1ff1a,\n    #0000ff11,\n    transparent\n  );\n  position: absolute;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Spacious74_helpless-tiger-55.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"blob1\"></view>\n  <view class=\"blob2\"></view>\n  <view class=\"inner\">Realism</view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHelplessTiger55',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Spacious74  - Tags: 3d, button, realistic, code, social media, neo */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-size: 1.6rem;\n  border-radius: 32rpx;\n  border: none;\n  padding: 4rpx;\n  background: radial-gradient(circle 160rpx at 80% -10%, #ffffff, #181b1b);\n  position: relative;\n}\n.button::after {\n  content: \"\";\n  position: absolute;\n  width: 65%;\n  height: 60%;\n  border-radius: 240rpx;\n  top: 0;\n  right: 0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx #ffffff38;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: -1;\n}\n\n.blob1 {\n  position: absolute;\n  width: 140rpx;\n  height: 100%;\n  border-radius: 32rpx;\n  bottom: 0;\n  left: 0;\n  background: radial-gradient(\n    circle 120rpx at 0% 100%,\n    #3fe9ff,\n    #0000ff80,\n    transparent\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx 20rpx 60rpx #0051ff2d;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.inner {\n  padding: 28rpx 50rpx;\n  border-radius: 28rpx;\n  color: #fff;\n  z-index: 3;\n  position: relative;\n  background: radial-gradient(circle 160rpx at 80% -50%, #777777, #0f1111);\n}\n.inner::before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 28rpx;\n  background: radial-gradient(\n    circle 120rpx at 0% 100%,\n    #00e1ff1a,\n    #0000ff11,\n    transparent\n  );\n  position: absolute;\n}\n\n",
+    "component_name": "GalaxyHelplessTiger55"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1292,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.820Z",
+  "updated_at": "2025-07-31T07:55:34.820Z"
+}

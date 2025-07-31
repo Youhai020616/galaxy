@@ -1,0 +1,86 @@
+{
+  "id": "Shoh2008_perfect-bird-26",
+  "name": "perfect-bird-26",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "perfect-bird-26 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<span class=\"loader\"></span>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  width: 120px;\n  height: 140px;\n  background-image: radial-gradient(circle 30px, #fff 100%, transparent 0),\n    radial-gradient(circle 5px, #fff 100%, transparent 0),\n    radial-gradient(circle 5px, #fff 100%, transparent 0),\n    linear-gradient(#FFF 20px, transparent 0);\n  background-position: center 127px , 94px 102px , 16px 18px, center 114px;\n  background-size: 60px 60px, 10px 10px , 10px 10px , 4px 14px;\n  background-repeat: no-repeat;\n  z-index: 10;\n  perspective: 500px;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  border: 3px solid #fff;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -55%) rotate(-45deg);\n  border-right-color: transparent;\n  box-sizing: border-box;\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  height: 80px;\n  width: 80px;\n  transform: translate(-50%, -55%) rotate(-45deg) rotateY(0deg);\n  left: 50%;\n  top: 50%;\n  box-sizing: border-box;\n  border: 7px solid #FF3D00;\n  border-radius: 50%;\n  animation: rotate_4191 0.5s linear infinite;\n}\n\n@keyframes rotate_4191 {\n  to {\n    transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_perfect-bird-26.html"
+  },
+  "uniapp": {
+    "template": "<text class=\"loader\"></text>",
+    "script": "export default {\n  name: 'GalaxyPerfectBird26',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  width: 240rpx;\n  height: 280rpx;\n  background-image: radial-gradient(circle 60rpx, #fff 100%, transparent 0),\n    radial-gradient(circle 10rpx, #fff 100%, transparent 0),\n    radial-gradient(circle 10rpx, #fff 100%, transparent 0),\n    linear-gradient(#FFF 40rpx, transparent 0);\n  background-position: center 254rpx , 188rpx 204rpx , 32rpx 36rpx, center 228rpx;\n  background-size: 120rpx 120rpx, 20rpx 20rpx , 20rpx 20rpx , 8rpx 28rpx;\n  background-repeat: no-repeat;\n  z-index: 10;\n  perspective: 1000rpx;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  width: 200rpx;\n  height: 200rpx;\n  border-radius: 50%;\n  border: 6rpx solid #fff;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -55%) rotate(-45deg);\n  border-right-color: transparent;\n  box-sizing: border-box;\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  height: 160rpx;\n  width: 160rpx;\n  transform: translate(-50%, -55%) rotate(-45deg) rotateY(0deg);\n  left: 50%;\n  top: 50%;\n  box-sizing: border-box;\n  border: 14rpx solid #FF3D00;\n  border-radius: 50%;\n  animation: rotate_4191 0.5s linear infinite;\n}\n\n@keyframes rotate_4191 {\n  to {\n    transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)\n  }\n}\n",
+    "component_name": "GalaxyPerfectBird26"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1282,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.415Z",
+  "updated_at": "2025-07-31T07:55:40.415Z"
+}

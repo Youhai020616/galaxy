@@ -1,0 +1,94 @@
+{
+  "id": "TheAbieza_short-swan-12",
+  "name": "short-swan-12",
+  "category": "loaders",
+  "author": "TheAbieza",
+  "description": "short-swan-12 组件 (flat design, loading, loader, vscode, floating, box-shadow, animation)",
+  "tags": [
+    "flat design",
+    "loading",
+    "loader",
+    "vscode",
+    "floating",
+    "box-shadow",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"folder\">\n    <div class=\"top\"></div>\n    <div class=\"bottom\"></div>\n  </div>\n  <div class=\"title\">getting files ready...</div>\n</div>",
+    "css": "/* From Uiverse.io by TheAbieza - Tags: flat design, loading, loader, vscode, floating, box-shadow */\n.container {\n  width: fit-content;\n  gap: 10px\n}\n\n.folder {\n  width: min-content;\n  margin: auto;\n  animation: float 2s infinite linear;\n}\n\n.folder .top {\n  background-color: #FF8F56;\n  width: 60px;\n  height: 12px;\n  border-top-right-radius: 10px;\n}\n\n.folder .bottom {\n  background-color: #FFCE63;\n  width: 100px;\n  height: 70px;\n  box-shadow: 5px 5px 0 0 #283149;\n  border-top-right-radius: 8px;\n}\n\n.container .title {\n  font-size: .9em;\n  color: #283149;\n  text-align: center;\n  margin-top: 15px;\n}\n\n@keyframes float {\n  0% {\n    transform: translatey(0px);\n  }\n\n  50% {\n    transform: translatey(-25px);\n  }\n\n  100% {\n    transform: translatey(0px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/TheAbieza_short-swan-12.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"folder\"></view>\n    <view class=\"top\"></view>\n    <view class=\"bottom\"></view>\n  </div>\n  <view class=\"title\">getting files ready...</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShortSwan12',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TheAbieza - Tags: flat design, loading, loader, vscode, floating, box-shadow */\n.container {\n  width: fit-content;\n  gap: 20rpx\n}\n\n.folder {\n  width: min-content;\n  margin: auto;\n  animation: float 2s infinite linear;\n}\n\n.folder .top {\n  background-color: #FF8F56;\n  width: 120rpx;\n  height: 24rpx;\n  border-top-right-radius: 20rpx;\n}\n\n.folder .bottom {\n  background-color: #FFCE63;\n  width: 200rpx;\n  height: 140rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 0 0 #283149;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-top-right-radius: 16rpx;\n}\n\n.container .title {\n  font-size: .9em;\n  color: #283149;\n  text-align: center;\n  margin-top: 30rpx;\n}\n\n@keyframes float {\n  0% {\n    transform: translatey(0rpx);\n  }\n\n  50% {\n    transform: translatey(-50rpx);\n  }\n\n  100% {\n    transform: translatey(0rpx);\n  }\n}\n\n\n",
+    "component_name": "GalaxyShortSwan12"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 937,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.686Z",
+  "updated_at": "2025-07-31T07:55:40.686Z"
+}

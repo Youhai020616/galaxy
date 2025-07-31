@@ -1,0 +1,90 @@
+{
+  "id": "csemszepp_helpless-tiger-5",
+  "name": "helpless-tiger-5",
+  "category": "loaders",
+  "author": "csemszepp",
+  "description": "helpless-tiger-5 组件 (loader, revolver, animation)",
+  "tags": [
+    "loader",
+    "revolver",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"inner\">\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by csemszepp - Source: https://codepen.io/dfitzy/pen/XdaoWg - Tags: loader, revolver */\n.loader {\n  animation: spin 1.5s linear alternate infinite;\n  background: #B73F41;\n  border-radius: 50%;\n  height: 120px;\n  width: 120px;\n}\n\n.loader:before {\n  background: #B73F41;\n  border-radius: 50%;\n  content: '';\n  display: block;\n  height: 0.5em;\n  width: 0.5em;\n  z-index: 2;\n}\n\n.loader:after {\n  background: #262E2A;\n  border-radius: 50%;\n  box-shadow: 0em -2.60em #262E2A,\n    2.25em -4.02em #e5e7eb,\n    2.25em -1.25em #262E2A,\n    4.60em 0em #e5e7eb,\n    2.25em 1.25em #262E2A,\n    2.25em 4.02em #e5e7eb,\n    0em 2.60em #262E2A,\n    -2.25em 4.02em #e5e7eb,\n    -2.25em 1.25em #262E2A,\n    -4.60em 0em #e5e7eb,\n    -2.25em -1.25em #262E2A,\n    -2.25em -4.02em #e5e7eb;\n  content: '';\n  display: block;\n  height: 2em;\n  width: 2em;\n}\n\n.inner {\n  animation: load 1.5s linear alternate infinite;\n  border: solid 1px #B73F41;\n  border-radius: 50%;\n  height: 1.75em;\n  width: 1.75em;\n  z-index: 1;\n}\n\n.loader, .loader:before, .loader:after, .inner {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n@keyframes load {\n  0% {\n    box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #262E2A,\n      -2.25em 1.25em #262E2A,\n      -2.25em -1.25em #262E2A;\n  }\n\n  15% {\n    box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #262E2A,\n      -2.25em 1.25em #262E2A,\n      -2.25em -1.25em #B73F41;\n  }\n\n  30% {\n    box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #262E2A,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  }\n\n  45% {\n    box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  }\n\n  60% {\n    box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  }\n\n  75% {\n    box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #B73F41,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  }\n\n  90% {\n    box-shadow: 0em -2.60em #B73F41,\n      2.25em -1.25em #B73F41,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  }\n\n  100% {\n    box-shadow: 0em -2.60em #B73F41,\n      2.25em -1.25em #B73F41,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  15% {\n    transform: rotate(60deg);\n  }\n\n  30% {\n    transform: rotate(120deg);\n  }\n\n  45% {\n    transform: rotate(180deg);\n  }\n\n  60% {\n    transform: rotate(240deg);\n  }\n\n  75% {\n    transform: rotate(300deg);\n  }\n\n  90% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csemszepp_helpless-tiger-5.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"inner\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHelplessTiger5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp - Source: https://codepen.io/dfitzy/pen/XdaoWg - Tags: loader, revolver */\n.loader {\n  animation: spin 1.5s linear alternate infinite;\n  background: #B73F41;\n  border-radius: 50%;\n  height: 240rpx;\n  width: 240rpx;\n}\n\n.loader:before {\n  background: #B73F41;\n  border-radius: 50%;\n  content: '';\n  display: block;\n  height: 0.5em;\n  width: 0.5em;\n  z-index: 2;\n}\n\n.loader:after {\n  background: #262E2A;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n    2.25em -4.02em #e5e7eb,\n    2.25em -1.25em #262E2A,\n    4.60em 0em #e5e7eb,\n    2.25em 1.25em #262E2A,\n    2.25em 4.02em #e5e7eb,\n    0em 2.60em #262E2A,\n    -2.25em 4.02em #e5e7eb,\n    -2.25em 1.25em #262E2A,\n    -4.60em 0em #e5e7eb,\n    -2.25em -1.25em #262E2A,\n    -2.25em -4.02em #e5e7eb;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  content: '';\n  display: block;\n  height: 2em;\n  width: 2em;\n}\n\n.inner {\n  animation: load 1.5s linear alternate infinite;\n  border: solid 2rpx #B73F41;\n  border-radius: 50%;\n  height: 1.75em;\n  width: 1.75em;\n  z-index: 1;\n}\n\n.loader, .loader:before, .loader:after, .inner {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n@keyframes load {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #262E2A,\n      -2.25em 1.25em #262E2A,\n      -2.25em -1.25em #262E2A;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  15% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #262E2A,\n      -2.25em 1.25em #262E2A,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  30% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #262E2A,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  45% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #262E2A,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  60% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #262E2A,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  75% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #262E2A,\n      2.25em -1.25em #B73F41,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  90% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #B73F41,\n      2.25em -1.25em #B73F41,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0em -2.60em #B73F41,\n      2.25em -1.25em #B73F41,\n      2.25em 1.25em #B73F41,\n      0em 2.60em #B73F41,\n      -2.25em 1.25em #B73F41,\n      -2.25em -1.25em #B73F41;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  15% {\n    transform: rotate(60deg);\n  }\n\n  30% {\n    transform: rotate(120deg);\n  }\n\n  45% {\n    transform: rotate(180deg);\n  }\n\n  60% {\n    transform: rotate(240deg);\n  }\n\n  75% {\n    transform: rotate(300deg);\n  }\n\n  90% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}\n",
+    "component_name": "GalaxyHelplessTiger5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3164,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.156Z",
+  "updated_at": "2025-07-31T07:55:41.156Z"
+}

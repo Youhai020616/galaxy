@@ -1,0 +1,85 @@
+{
+  "id": "mrhyddenn_fast-bear-60",
+  "name": "fast-bear-60",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "fast-bear-60 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"mover\"></div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.mover {\n  background: rgba(248, 25, 25, 0.979);\n  height: 10px;\n  width: 80px;\n  border-radius: 10px;\n  position: relative;\n  animation: mover5 2s ease-in-out infinite;\n}\n\n.mover::before,\n.mover::after {\n  content: '';\n  position: absolute;\n  height: 10px;\n  border-radius: 10px;\n  left: 20px;\n  animation: mover5 2s ease-in-out infinite;\n}\n\n.mover::before {\n  background: rgb(201, 1, 1);\n  top: 20px;\n  width: 50px;\n}\n\n.mover::after {\n  background: rgb(255, 116, 106);\n  top: -20px;\n  width: 60px;\n}\n\n@keyframes mover5 {\n  0% {\n    transform: translateX(30px) scale(1);\n  }\n\n  50% {\n    transform: translateX(-30px) scale(1.1);\n  }\n\n  100% {\n    transform: translateX(30px) scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_fast-bear-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"mover\"></view>",
+    "script": "export default {\n  name: 'GalaxyFastBear60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.mover {\n  background: rgba(248, 25, 25, 0.979);\n  height: 20rpx;\n  width: 160rpx;\n  border-radius: 20rpx;\n  position: relative;\n  animation: mover5 2s ease-in-out infinite;\n}\n\n.mover::before,\n.mover::after {\n  content: '';\n  position: absolute;\n  height: 20rpx;\n  border-radius: 20rpx;\n  left: 40rpx;\n  animation: mover5 2s ease-in-out infinite;\n}\n\n.mover::before {\n  background: rgb(201, 1, 1);\n  top: 40rpx;\n  width: 100rpx;\n}\n\n.mover::after {\n  background: rgb(255, 116, 106);\n  top: -40rpx;\n  width: 120rpx;\n}\n\n@keyframes mover5 {\n  0% {\n    transform: translateX(60rpx) scale(1);\n  }\n\n  50% {\n    transform: translateX(-60rpx) scale(1.1);\n  }\n\n  100% {\n    transform: translateX(60rpx) scale(1);\n  }\n}\n",
+    "component_name": "GalaxyFastBear60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 770,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.419Z",
+  "updated_at": "2025-07-31T07:55:42.419Z"
+}

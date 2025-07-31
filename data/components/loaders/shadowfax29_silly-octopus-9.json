@@ -1,0 +1,91 @@
+{
+  "id": "shadowfax29_silly-octopus-9",
+  "name": "silly-octopus-9",
+  "category": "loaders",
+  "author": "shadowfax29",
+  "description": "silly-octopus-9 组件 (simple, loader, falldown, animation)",
+  "tags": [
+    "simple",
+    "loader",
+    "falldown",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n<div class=\"loader\"></div>\n<div class=\"loader\"></div>\n<div class=\"loader\"></div>\n<div class=\"loader\"></div>\n<div class=\"loader\"></div>\n</div>",
+    "css": "/* From Uiverse.io by shadowfax29 - Source: @satyamchaudharydev - Tags: simple, loader, falldown */\n.container {\n  position: relative;\n  width: 200px;\n  height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n}\n\n.loader {\n  width: 10px;\n  height: 30px;\n  left: var(--left);\n  border-radius: 10px 50px;\n  box-shadow: 0px 0px 5px black;\n  animation: dominos 1s ease infinite;\n}\n\n.loader:nth-child(1) {\n  --left: 80px;\n  animation-delay: 0.325s;\n  background-color: red;\n}\n\n.loader:nth-child(3) {\n  left: 60px;\n  animation-delay: 0.625s;\n  background-color: blue;\n}\n\n.loader:nth-child(5) {\n  animation-delay: 0.865s;\n  left: 40px;\n  background-color: green;\n}\n\n.loader:nth-child(2) {\n  --left: 70px;\n  animation-delay: 0.5s;\n  background-color: yellow;\n}\n\n.loader:nth-child(4) {\n  animation-delay: 0.74s;\n  left: 50px;\n  background-color: orange;\n}\n\n@keyframes dominos {\n  50% {\n    opacity: 0.7;\n  }\n\n  75% {\n    -webkit-transform: rotate(90deg);\n    transform: rotate(90deg);\n  }\n\n  80% {\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/shadowfax29_silly-octopus-9.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n<view class=\"loader\"></view>\n<view class=\"loader\"></view>\n<view class=\"loader\"></view>\n<view class=\"loader\"></view>\n<view class=\"loader\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySillyOctopus9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by shadowfax29 - Source: @satyamchaudharydev - Tags: simple, loader, falldown */\n.container {\n  position: relative;\n  width: 400rpx;\n  height: 400rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n}\n\n.loader {\n  width: 20rpx;\n  height: 60rpx;\n  left: var(--left);\n  border-radius: 20rpx 100rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 10rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: dominos 1s ease infinite;\n}\n\n.loader:nth-child(1) {\n  --left: 160rpx;\n  animation-delay: 0.325s;\n  background-color: red;\n}\n\n.loader:nth-child(3) {\n  left: 120rpx;\n  animation-delay: 0.625s;\n  background-color: blue;\n}\n\n.loader:nth-child(5) {\n  animation-delay: 0.865s;\n  left: 80rpx;\n  background-color: green;\n}\n\n.loader:nth-child(2) {\n  --left: 140rpx;\n  animation-delay: 0.5s;\n  background-color: yellow;\n}\n\n.loader:nth-child(4) {\n  animation-delay: 0.74s;\n  left: 100rpx;\n  background-color: orange;\n}\n\n@keyframes dominos {\n  50% {\n    opacity: 0.7;\n  }\n\n  75% {\n    -webkit-transform: rotate(90deg);\n    transform: rotate(90deg);\n  }\n\n  80% {\n    opacity: 1;\n  }\n}\n\n\n\n\n\n",
+    "component_name": "GalaxySillyOctopus9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1231,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.650Z",
+  "updated_at": "2025-07-31T07:55:42.650Z"
+}

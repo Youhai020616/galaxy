@@ -1,0 +1,88 @@
+{
+  "id": "A-nshuman_fluffy-fox-90",
+  "name": "fluffy-fox-90",
+  "category": "loaders",
+  "author": "A-nshuman",
+  "description": "fluffy-fox-90 组件 (animation, loading, loader, creative, loading animation)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader",
+    "creative",
+    "loading animation"
+  ],
+  "original": {
+    "html": "<div class=\"blocks\">\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n</div>",
+    "css": "/* From Uiverse.io by A-nshuman  - Tags: animation, loading, loader, creative, loading animation */\n.blocks {\n  border: 2px solid #2b83e2;\n  max-width: 158px;\n  padding: 4px;\n  border-radius: 8px;\n  gap: 4px;\n  display: flex;\n  flex-wrap: wrap;\n}\n.blocks .block {\n  display: flex;\n  flex: 1;\n  border-radius: 4px;\n  background: #2b83e2;\n  width: 75px;\n  height: 75px;\n  animation: blockLoading 1s infinite;\n}\n.blocks .block:nth-child(1) {\n  animation-delay: 0ms;\n}\n.blocks .block:nth-child(2) {\n  animation-delay: 200ms;\n}\n.blocks .block:nth-child(3) {\n  animation-delay: 400ms;\n}\n.blocks .block:nth-child(4) {\n  animation-delay: 600ms;\n}\n@keyframes blockLoading {\n  0%,\n  100% {\n    flex: 1;\n  }\n  50% {\n    flex: 4;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/A-nshuman_fluffy-fox-90.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"blocks\"></view>\n  <view class=\"block\"></view>\n  <view class=\"block\"></view>\n  <view class=\"block\"></view>\n  <view class=\"block\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFluffyFox90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by A-nshuman  - Tags: animation, loading, loader, creative, loading animation */\n.blocks {\n  border: 4rpx solid #2b83e2;\n  max-width: 316rpx;\n  padding: 8rpx;\n  border-radius: 16rpx;\n  gap: 8rpx;\n  display: flex;\n  flex-wrap: wrap;\n}\n.blocks .block {\n  display: flex;\n  flex: 1;\n  border-radius: 8rpx;\n  background: #2b83e2;\n  width: 150rpx;\n  height: 150rpx;\n  animation: blockLoading 1s infinite;\n}\n.blocks .block:nth-child(1) {\n  animation-delay: 0ms;\n}\n.blocks .block:nth-child(2) {\n  animation-delay: 200ms;\n}\n.blocks .block:nth-child(3) {\n  animation-delay: 400ms;\n}\n.blocks .block:nth-child(4) {\n  animation-delay: 600ms;\n}\n@keyframes blockLoading {\n  0%,\n  100% {\n    flex: 1;\n  }\n  50% {\n    flex: 4;\n  }\n}\n\n",
+    "component_name": "GalaxyFluffyFox90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 872,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.794Z",
+  "updated_at": "2025-07-31T07:55:38.794Z"
+}

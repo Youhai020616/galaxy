@@ -1,0 +1,88 @@
+{
+  "id": "BlackisPlay_pretty-sloth-9",
+  "name": "pretty-sloth-9",
+  "category": "loaders",
+  "author": "BlackisPlay",
+  "description": "pretty-sloth-9 组件 (simple, icon, animation, 3d, loader)",
+  "tags": [
+    "simple",
+    "icon",
+    "animation",
+    "3d",
+    "loader"
+  ],
+  "original": {
+    "html": "<div id=\"triangle\">\n  <svg id=\"Layer_1\" data-name=\"Layer 1\" version=\"1.1\" viewBox=\"0 0 2000 2000\">\n    <polygon class=\"cls-1\" points=\"928 781 1021 951 784.5 1371.97 1618 1371.97 1530.32 1544 509 1539 928 781\"></polygon>\n    <polygon class=\"cls-3\" points=\"1618 1371.97 784.5 1371.97 874.93 1211 1346 1211 923.1 456 1110.06 456 1618 1371.97\"></polygon>\n    <g id=\"Layer_2\" data-name=\"Layer 2\">\n      <polygon class=\"cls-2\" points=\"418 1372.74 509 1539 928 781 1162.32 1211 1346 1211 923.1 456 418 1372.74\"></polygon>\n    </g>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by BlackisPlay  - Tags: simple, icon, animation, 3d, loader */\n.cls-1 {\n  fill: #f15a24;\n  animation: cls1 4s ease infinite both;\n}\n\n@keyframes cls1 {\n  0% {\n    fill: #f15a24;\n  }\n\n  34% {\n    fill: #ed1c24;\n  }\n\n  66% {\n    fill: #f7931e;\n  }\n\n  100% {\n    fill: #f15a24;\n  }\n}\n\n.cls-1,\n.cls-2,\n.cls-3 {\n  stroke-width: 0px;\n}\n\n.cls-2 {\n  fill: #f7931e;\n  animation: cls2 4s ease infinite both;\n}\n\n@keyframes cls2 {\n  0% {\n    fill: #f7931e;\n  }\n\n  34% {\n    fill: #f15a24;\n  }\n\n  66% {\n    fill: #ed1c24;\n  }\n\n  100% {\n    fill: #f7931e;\n  }\n}\n\n.cls-3 {\n  fill: #ed1c24;\n  animation: cls3 4s ease infinite both;\n}\n\n@keyframes cls3 {\n  0% {\n    fill: #ed1c24;\n  }\n\n  34% {\n    fill: #f7931e;\n  }\n\n  66% {\n    fill: #f15a24;\n  }\n\n  100% {\n    fill: #ed1c24;\n  }\n}\n\n.cls-4 {\n  display: none;\n}\n\n#triangle {\n  height: 400px;\n  width: 400px;\n  padding-top: 30px;\n  animation: triangle 4s both infinite;\n}\n\n@keyframes triangle {\n  0% {\n    transform: translateY(0px);\n  }\n\n  50% {\n    transform: translateY(15px);\n  }\n\n  100% {\n    transform: translateY(0px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/BlackisPlay_pretty-sloth-9.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"triangle\"></view>\n  <view id=\"Layer_1\" data-name=\"Layer 1\" version=\"1.1\" viewBox=\"0 0 2000 2000\"></view>\n    <polygon class=\"cls-1\" points=\"928 781 1021 951 784.5 1371.97 1618 1371.97 1530.32 1544 509 1539 928 781\"></polygon>\n    <polygon class=\"cls-3\" points=\"1618 1371.97 784.5 1371.97 874.93 1211 1346 1211 923.1 456 1110.06 456 1618 1371.97\"></polygon>\n    <g id=\"Layer_2\" data-name=\"Layer 2\">\n      <polygon class=\"cls-2\" points=\"418 1372.74 509 1539 928 781 1162.32 1211 1346 1211 923.1 456 418 1372.74\"></polygon>\n    </g>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPrettySloth9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by BlackisPlay  - Tags: simple, icon, animation, 3d, loader */\n.cls-1 {\n  fill: #f15a24;\n  animation: cls1 4s ease infinite both;\n}\n\n@keyframes cls1 {\n  0% {\n    fill: #f15a24;\n  }\n\n  34% {\n    fill: #ed1c24;\n  }\n\n  66% {\n    fill: #f7931e;\n  }\n\n  100% {\n    fill: #f15a24;\n  }\n}\n\n.cls-1,\n.cls-2,\n.cls-3 {\n  stroke-width: 0rpx;\n}\n\n.cls-2 {\n  fill: #f7931e;\n  animation: cls2 4s ease infinite both;\n}\n\n@keyframes cls2 {\n  0% {\n    fill: #f7931e;\n  }\n\n  34% {\n    fill: #f15a24;\n  }\n\n  66% {\n    fill: #ed1c24;\n  }\n\n  100% {\n    fill: #f7931e;\n  }\n}\n\n.cls-3 {\n  fill: #ed1c24;\n  animation: cls3 4s ease infinite both;\n}\n\n@keyframes cls3 {\n  0% {\n    fill: #ed1c24;\n  }\n\n  34% {\n    fill: #f7931e;\n  }\n\n  66% {\n    fill: #f15a24;\n  }\n\n  100% {\n    fill: #ed1c24;\n  }\n}\n\n.cls-4 {\n  display: none;\n}\n\n#triangle {\n  height: 800rpx;\n  width: 800rpx;\n  padding-top: 60rpx;\n  animation: triangle 4s both infinite;\n}\n\n@keyframes triangle {\n  0% {\n    transform: translateY(0rpx);\n  }\n\n  50% {\n    transform: translateY(30rpx);\n  }\n\n  100% {\n    transform: translateY(0rpx);\n  }\n}\n\n",
+    "component_name": "GalaxyPrettySloth9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1630,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.982Z",
+  "updated_at": "2025-07-31T07:55:38.982Z"
+}

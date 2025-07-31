@@ -1,0 +1,113 @@
+{
+  "id": "satyamchaudharydev_purple-rat-85",
+  "name": "purple-rat-85",
+  "category": "buttons",
+  "author": "satyamchaudharydev",
+  "description": "purple-rat-85 组件 (3d, button, animation, interactive)",
+  "tags": [
+    "3d",
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    Click me\n</button>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: 3d, button */\nbutton {\n  --bg: #e74c3c;\n  --text-color: #fff;\n  position: relative;\n  width: 150px;\n  border: none;\n  background: var(--bg);\n  color: var(--text-color);\n  padding: 1em;\n  font-weight: bold;\n  text-transform: uppercase;\n  transition: 0.2s;\n  border-radius: 5px;\n  opacity: 0.8;\n  letter-spacing: 1px;\n  box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;\n}\n\nbutton:hover {\n  opacity: 1;\n}\n\nbutton:active {\n  top: 4px;\n  box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/satyamchaudharydev_purple-rat-85.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    Click me\n</button>",
+    "script": "export default {\n  name: 'GalaxyPurpleRat85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: 3d, button */\nbutton {\n  --bg: #e74c3c;\n  --text-color: #fff;\n  position: relative;\n  width: 300rpx;\n  border: none;\n  background: var(--bg);\n  color: var(--text-color);\n  padding: 1em;\n  font-weight: bold;\n  text-transform: uppercase;\n  transition: 0.2s;\n  border-radius: 10rpx;\n  opacity: 0.8;\n  letter-spacing: 2rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #c0392b 0rpx 14rpx 4rpx, #000 0rpx 16rpx 10rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover {\n  opacity: 1;\n}\n\nbutton:active {\n  top: 8rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #c0392b 0rpx 6rpx 4rpx,#000 0rpx 6rpx 10rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyPurpleRat85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 569,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.776Z",
+  "updated_at": "2025-07-31T07:55:37.776Z"
+}

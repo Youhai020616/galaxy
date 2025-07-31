@@ -1,0 +1,119 @@
+{
+  "id": "catraco_friendly-snake-37",
+  "name": "friendly-snake-37",
+  "category": "buttons",
+  "author": "catraco",
+  "description": "friendly-snake-37 组件 (button, ring, next, hover effect, startbutton, variables, animation, interactive)",
+  "tags": [
+    "button",
+    "ring",
+    "next",
+    "hover effect",
+    "startbutton",
+    "variables",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-class-name\">\n  <span>Next</span>\n  <svg viewBox=\"0 0 320 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\">\n  </path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by catraco - Tags: button, ring, next, hover effect, startbutton , variables */\n.btn-class-name {\n  --color: 180,255, 100;\n  border-radius: .5em;\n  transition: .3s;\n  background-color: rgba(var(--color), .2);\n  color: rgb(var(--color));\n  fill: rgb(var(--color));\n  font-family: monospace;\n  font-weight: bolder;\n  font-size: x-large;\n  text-transform: uppercase;\n  letter-spacing: 0.1em;\n  cursor: pointer;\n  border: 2px solid rgb(var(--color));\n  box-shadow: 0 0 10px rgba(var(--color), .4);\n  outline: none;\n  display: flex;\n  align-items: center;\n  padding: .5em 1em;\n}\n\n.btn-class-name:hover {\n  box-shadow: 0 0 0 5px rgba(var(--color), .5);\n}\n\n.btn-class-name span {\n  transform: scale(.8);\n  transition: .3s;\n}\n\n.btn-class-name:hover span {\n  transform: scale(1);\n}\n\n.btn-class-name svg {\n  font-size: 0;\n  transform: scale(0.5) translateX(0%) rotate(-180deg);\n  transition: .3s;\n}\n\n.btn-class-name:hover svg {\n  font-size: 20px;\n  transform: scale(1) translateX(20%) rotate(0deg);\n}\n\n.btn-class-name:active {\n  transition: 0s;\n  box-shadow: 0 0 0 5px rgb(var(--color));\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/catraco_friendly-snake-37.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-class-name\"></button>\n  <text>Next</text>\n  <view viewBox=\"0 0 320 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\">\n  </path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFriendlySnake37',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by catraco - Tags: button, ring, next, hover effect, startbutton , variables */\n.btn-class-name {\n  --color: 180,255, 100;\n  border-radius: .5em;\n  transition: .3s;\n  background-color: rgba(var(--color), .2);\n  color: rgb(var(--color));\n  fill: rgb(var(--color));\n  font-family: monospace;\n  font-weight: bolder;\n  font-size: x-large;\n  text-transform: uppercase;\n  letter-spacing: 0.1em;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border: 4rpx solid rgb(var(--color));\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx rgba(var(--color), .4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  outline: none;\n  display: flex;\n  align-items: center;\n  padding: .5em 1em;\n}\n\n.btn-class-name:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 10rpx rgba(var(--color), .5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.btn-class-name span {\n  transform: scale(.8);\n  transition: .3s;\n}\n\n.btn-class-name:hover span {\n  transform: scale(1);\n}\n\n.btn-class-name svg {\n  font-size: 0;\n  transform: scale(0.5) translateX(0%) rotate(-180deg);\n  transition: .3s;\n}\n\n.btn-class-name:hover svg {\n  font-size: 40rpx;\n  transform: scale(1) translateX(20%) rotate(0deg);\n}\n\n.btn-class-name:active {\n  transition: 0s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 10rpx rgb(var(--color));\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyFriendlySnake37"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1444,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.071Z",
+  "updated_at": "2025-07-31T07:55:36.071Z"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "vikramsinghnegi_little-sheep-43",
+  "name": "little-sheep-43",
+  "category": "loaders",
+  "author": "vikramsinghnegi",
+  "description": "little-sheep-43 组件 (loader, LOADER, TIME, animation)",
+  "tags": [
+    "loader",
+    "LOADER",
+    "TIME",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by vikramsinghnegi  - Tags: loader, LOADER, TIME */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  display: inline-flex;\n  border: 10px solid #000;\n  border-radius: 5px;\n}\n.loader::before,\n.loader::after {\n  content: \"0 1 2 3 4 5 6 7 8 9 0\";\n  font-size: 30px;\n  font-family: monospace;\n  font-weight: bold;\n  line-height: 1em;\n  height: 1em;\n  width: 1.2ch;\n  text-align: center;\n  outline: 1px solid #000;\n  color: #0000;\n  text-shadow: 0 0 0 #000;\n  overflow: hidden;\n  animation: l4 2s infinite linear;\n}\n.loader::before {\n  animation-duration: 4s;\n}\n@keyframes l4 {\n  100% {\n    text-shadow: 0 var(--t, -10em) 0 #000;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vikramsinghnegi_little-sheep-43.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyLittleSheep43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vikramsinghnegi  - Tags: loader, LOADER, TIME */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  display: inline-flex;\n  border: 20rpx solid #000;\n  border-radius: 10rpx;\n}\n.loader::before,\n.loader::after {\n  content: \"0 1 2 3 4 5 6 7 8 9 0\";\n  font-size: 60rpx;\n  font-family: monospace;\n  font-weight: bold;\n  line-height: 1em;\n  height: 1em;\n  width: 1.2ch;\n  text-align: center;\n  outline: 2rpx solid #000;\n  color: #0000;\n  /* #ifdef H5 */\n  text-shadow: 0 0 0 #000;\n  /* #endif */\n  overflow: hidden;\n  animation: l4 2s infinite linear;\n}\n.loader::before {\n  animation-duration: 4s;\n}\n@keyframes l4 {\n  100% {\n    /* #ifdef H5 */\n  text-shadow: 0 var(--t, -10em) 0 #000;\n  /* #endif */\n  }\n}\n\n",
+    "component_name": "GalaxyLittleSheep43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 687,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.737Z",
+  "updated_at": "2025-07-31T07:55:42.737Z"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "Shoh2008_curvy-bulldog-27",
+  "name": "curvy-bulldog-27",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "curvy-bulldog-27 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 120px;\n  height: 150px;\n  background-color: #fff;\n  background-repeat: no-repeat;\n  background-image: linear-gradient(#ddd 50%, #bbb 51%),\n    linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),\n    radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),\n    radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),\n    radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);\n  background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;\n  background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;\n  position: relative;\n  border-radius: 6%;\n  animation: shake 3s ease-in-out infinite;\n  transform-origin: 60px 180px;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  left: 5px;\n  top: 100%;\n  width: 7px;\n  height: 5px;\n  background: #aaa;\n  border-radius: 0 0 4px 4px;\n  box-shadow: 102px 0 #aaa;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  width: 95px;\n  height: 95px;\n  left: 0;\n  right: 0;\n  margin: auto;\n  bottom: 20px;\n  background-color: #bbdefb;\n  background-image: linear-gradient( to right, #0004 0%, #0004 49%, #0000 50%, #0000 100% ),\n    linear-gradient(135deg, #64b5f6 50%, #607d8b 51%);\n  background-size: 30px 100%, 90px 80px;\n  border-radius: 50%;\n  background-repeat: repeat, no-repeat;\n  background-position: 0 0;\n  box-sizing: border-box;\n  border: 10px solid #DDD;\n  box-shadow: 0 0 0 4px #999 inset, 0 0 6px 6px #0004 inset;\n  animation: spin 3s ease-in-out infinite;\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg)\n  }\n\n  50% {\n    transform: rotate(360deg)\n  }\n\n  75% {\n    transform: rotate(750deg)\n  }\n\n  100% {\n    transform: rotate(1800deg)\n  }\n}\n\n@keyframes shake {\n  65%, 80%, 88%, 96% {\n    transform: rotate(0.5deg)\n  }\n\n  50%, 75%, 84%, 92% {\n    transform: rotate(-0.5deg)\n  }\n\n  0%, 50%, 100% {\n    transform: rotate(0)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_curvy-bulldog-27.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyCurvyBulldog27',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 240rpx;\n  height: 300rpx;\n  background-color: #fff;\n  background-repeat: no-repeat;\n  background-image: linear-gradient(#ddd 50%, #bbb 51%),\n    linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),\n    radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),\n    radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),\n    radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);\n  background-position: 0 40rpx, 90rpx 0, 16rpx 12rpx, 110rpx 6rpx, 150rpx 6rpx, 190rpx 6rpx;\n  background-size: 100% 8rpx, 2rpx 46rpx, 60rpx 16rpx, 30rpx 30rpx, 30rpx 30rpx, 30rpx 30rpx;\n  position: relative;\n  border-radius: 6%;\n  animation: shake 3s ease-in-out infinite;\n  transform-origin: 120rpx 360rpx;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  left: 10rpx;\n  top: 100%;\n  width: 14rpx;\n  height: 10rpx;\n  background: #aaa;\n  border-radius: 0 0 8rpx 8rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 204rpx 0 #aaa;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  width: 190rpx;\n  height: 190rpx;\n  left: 0;\n  right: 0;\n  margin: auto;\n  bottom: 40rpx;\n  background-color: #bbdefb;\n  background-image: linear-gradient( to right, #0004 0%, #0004 49%, #0000 50%, #0000 100% ),\n    linear-gradient(135deg, #64b5f6 50%, #607d8b 51%);\n  background-size: 60rpx 100%, 180rpx 160rpx;\n  border-radius: 50%;\n  background-repeat: repeat, no-repeat;\n  background-position: 0 0;\n  box-sizing: border-box;\n  border: 20rpx solid #DDD;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx #999 inset, 0 0 12rpx 12rpx #0004 inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: spin 3s ease-in-out infinite;\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg)\n  }\n\n  50% {\n    transform: rotate(360deg)\n  }\n\n  75% {\n    transform: rotate(750deg)\n  }\n\n  100% {\n    transform: rotate(1800deg)\n  }\n}\n\n@keyframes shake {\n  65%, 80%, 88%, 96% {\n    transform: rotate(0.5deg)\n  }\n\n  50%, 75%, 84%, 92% {\n    transform: rotate(-0.5deg)\n  }\n\n  0%, 50%, 100% {\n    transform: rotate(0)\n  }\n}\n",
+    "component_name": "GalaxyCurvyBulldog27"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1996,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.340Z",
+  "updated_at": "2025-07-31T07:55:40.340Z"
+}

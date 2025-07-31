@@ -1,0 +1,112 @@
+{
+  "id": "JsGrisales_wise-ladybug-7",
+  "name": "wise-ladybug-7",
+  "category": "buttons",
+  "author": "JsGrisales",
+  "description": "wise-ladybug-7 组件 (button, animation, gradient)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button>\n  Suscribe\n</button>",
+    "css": "/* From Uiverse.io by JsGrisales - Tags: button */\nbutton {\n  min-height: 53px;\n  min-width: 166px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -ms-flex-pack: distribute;\n  justify-content: space-around;\n  position: relative;\n  cursor: pointer;\n  background: -webkit-gradient(linear, left top, right top, color-stop(-12.74%, rgba(110, 239, 255, .5)), color-stop(56.76%, rgba(106, 224, 255, .271)));\n  background: linear-gradient(90deg, rgba(110, 239, 255, .5) -12.74%, rgba(106, 224, 255, .271) 56.76%);\n  border: 2px solid #acf7ff;\n  color: #FFFFFF;\n  font-size: 18px;\n  font-weight: 600;\n}\n\nbutton:before {\n  content: \"\";\n  width: 4px;\n  height: 28px;\n  background: #19173b;\n  border: 2px solid #acf7ff;\n  -webkit-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  position: absolute;\n  border-top: 0;\n  border-left: 0;\n  border-bottom: 0;\n  bottom: -7px;\n  left: 4px;\n  border-bottom-left-radius: 10px;\n  border-top-left-radius: 10px;\n}\n\nbutton:after {\n  content: \"\";\n  position: absolute;\n  left: -2px;\n  bottom: -2px;\n  border-top: 15px solid transparent;\n  border-left: 15px solid #fffcf7;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JsGrisales_wise-ladybug-7.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Suscribe\n</button>",
+    "script": "export default {\n  name: 'GalaxyWiseLadybug7',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JsGrisales - Tags: button */\nbutton {\n  min-height: 106rpx;\n  min-width: 332rpx;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -ms-flex-pack: distribute;\n  justify-content: space-around;\n  position: relative;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: -webkit-gradient(linear, left top, right top, color-stop(-12.74%, rgba(110, 239, 255, .5)), color-stop(56.76%, rgba(106, 224, 255, .271)));\n  background: linear-gradient(90deg, rgba(110, 239, 255, .5) -12.74%, rgba(106, 224, 255, .271) 56.76%);\n  border: 4rpx solid #acf7ff;\n  color: #FFFFFF;\n  font-size: 36rpx;\n  font-weight: 600;\n}\n\nbutton:before {\n  content: \"\";\n  width: 8rpx;\n  height: 56rpx;\n  background: #19173b;\n  border: 4rpx solid #acf7ff;\n  -webkit-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  position: absolute;\n  border-top: 0;\n  border-left: 0;\n  border-bottom: 0;\n  bottom: -14rpx;\n  left: 8rpx;\n  border-bottom-left-radius: 20rpx;\n  border-top-left-radius: 20rpx;\n}\n\nbutton:after {\n  content: \"\";\n  position: absolute;\n  left: -4rpx;\n  bottom: -4rpx;\n  border-top: 30rpx solid transparent;\n  border-left: 30rpx solid #fffcf7;\n}\n",
+    "component_name": "GalaxyWiseLadybug7"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1271,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.601Z",
+  "updated_at": "2025-07-31T07:55:33.601Z"
+}

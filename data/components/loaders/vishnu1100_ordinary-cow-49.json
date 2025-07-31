@@ -1,0 +1,98 @@
+{
+  "id": "vishnu1100_ordinary-cow-49",
+  "name": "ordinary-cow-49",
+  "category": "loaders",
+  "author": "vishnu1100",
+  "description": "ordinary-cow-49 组件 (minimalist, loader, realistic, circle loader, css effect, hover button, bounce animation, pattern, animation, gradient, interactive)",
+  "tags": [
+    "minimalist",
+    "loader",
+    "realistic",
+    "circle loader",
+    "css effect",
+    "hover button",
+    "bounce animation",
+    "pattern",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"easter-animation\">\n  <div class=\"egg\">\n    <div class=\"eyes\"></div>\n  </div>\n  <div class=\"shadow\"></div>\n  <div class=\"clouds\">\n    <div class=\"cloud1\"></div>\n    <div class=\"cloud2\"></div>\n    <div class=\"cloud3\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by vishnu1100  - Tags: minimalist, loader, realistic, circle loader, css effect, hover button, bounce animation, pattern */\n.easter-animation {\n  position: relative;\n}\n\n.egg {\n  position: relative;\n  width: 150px;\n  height: 200px;\n  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;\n  background: linear-gradient(\n    295deg,\n    #ff595e 15%,\n    #8ac926 15%,\n    #8ac926 30%,\n    #ff595e 30%,\n    #ff595e 49%,\n    #8ac926 49%,\n    #8ac926 70%,\n    #ff595e 70%\n  );\n  overflow: hidden;\n  animation: bounce 1s linear infinite;\n}\n\n.egg:before,\n.egg:after {\n  position: absolute;\n  content: \"\";\n}\n\n.egg:before {\n  width: 200px;\n  height: 100px;\n  background-color: #1982c4;\n  top: 160px;\n  box-shadow: 0 -50px #ffca3a, 0 -65px #8ac926, 0 -90px #6a4c93, 0 -95px #ffca3a;\n}\n\n.egg:after {\n  border-radius: 50%;\n  width: 15px;\n  height: 15px;\n  background-color: #ffca3a;\n  left: 90px;\n  top: 75px;\n  box-shadow: -40px 0 #ffca3a, 40px 0 #ffca3a, -80px 0 #ffca3a, -120px 0 #ffca3a;\n}\n\n.eyes {\n  position: absolute;\n  background-color: #333;\n  border-radius: 50%;\n  width: 20px;\n  height: 30px;\n  left: 90px;\n  top: 120px;\n  box-shadow: 20px 0 #333;\n}\n\n.eyes:before {\n  position: absolute;\n  content: \"\";\n  background-color: #fff;\n  width: 5px;\n  height: 12px;\n  border-radius: 50%;\n  left: 12px;\n  top: 10px;\n  box-shadow: 20px 0 #fff;\n}\n\n.eyes:after {\n  content: \"\";\n  position: absolute;\n  width: 200px;\n  height: 30px;\n  background-color: #1982c4;\n  top: -130px;\n  left: -100px;\n}\n\n@keyframes bounce {\n  0% {\n    transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    transform: scale(1.1, 0.9) translateY(0);\n  }\n  30% {\n    transform: scale(0.9, 1.1) translateY(-70px) translateX(30px);\n  }\n  50% {\n    transform: scale(1.05, 0.95) translateY(0) translateX(30px) rotate(-10deg);\n  }\n  58% {\n    transform: scale(1, 1) translateY(-7px) translateX(0);\n  }\n  65% {\n    transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    transform: scale(1, 1) translateY(0);\n  }\n}\n\n.shadow {\n  position: absolute;\n  z-index: -1;\n  background-color: rgba(0, 0, 0, 0.2);\n  width: 100px;\n  height: 20px;\n  border-radius: 50%;\n  left: 20px;\n  top: 190px;\n  animation: move 1s linear infinite;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0);\n  }\n  10% {\n    transform: translateX(0) scale(0.8);\n  }\n  30% {\n    transform: translateX(0) scale(0.8);\n  }\n  50% {\n    transform: translateX(30px) scale(0.7);\n  }\n  58% {\n    transform: translateX(20px);\n  }\n  65% {\n    transform: translateX(0);\n  }\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.clouds {\n  position: absolute;\n  width: 500px;\n}\n\n.cloud1,\n.cloud2,\n.cloud3 {\n  position: absolute;\n  background-color: white;\n  width: 100px;\n  height: 25px;\n  border-radius: 100px;\n}\n\n.cloud1:before,\n.cloud2:before,\n.cloud3:before {\n  position: absolute;\n  content: \"\";\n  width: 40px;\n  height: 40px;\n  top: -20px;\n  left: 20px;\n  background-color: white;\n  border-radius: 50%;\n}\n\n.cloud1 {\n  top: -150px;\n  z-index: -1;\n  animation: clouds 2s linear infinite;\n}\n\n.cloud2 {\n  top: -70px;\n  opacity: 0.5;\n  transform: scale(0.7);\n  animation: clouds 1.8s linear infinite;\n}\n\n.cloud3 {\n  top: -100px;\n  opacity: 0.5;\n  transform: scale(0.9);\n  animation: clouds 1.5s linear infinite;\n  z-index: -2;\n}\n\n@keyframes clouds {\n  from {\n    left: 500px;\n  }\n  to {\n    left: -500px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vishnu1100_ordinary-cow-49.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"easter-animation\"></view>\n  <view class=\"egg\"></view>\n    <view class=\"eyes\"></view>\n  </div>\n  <view class=\"shadow\"></view>\n  <view class=\"clouds\"></view>\n    <view class=\"cloud1\"></view>\n    <view class=\"cloud2\"></view>\n    <view class=\"cloud3\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryCow49',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vishnu1100  - Tags: minimalist, loader, realistic, circle loader, css effect, hover button, bounce animation, pattern */\n.easter-animation {\n  position: relative;\n}\n\n.egg {\n  position: relative;\n  width: 300rpx;\n  height: 400rpx;\n  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;\n  background: linear-gradient(\n    295deg,\n    #ff595e 15%,\n    #8ac926 15%,\n    #8ac926 30%,\n    #ff595e 30%,\n    #ff595e 49%,\n    #8ac926 49%,\n    #8ac926 70%,\n    #ff595e 70%\n  );\n  overflow: hidden;\n  animation: bounce 1s linear infinite;\n}\n\n.egg:before,\n.egg:after {\n  position: absolute;\n  content: \"\";\n}\n\n.egg:before {\n  width: 400rpx;\n  height: 200rpx;\n  background-color: #1982c4;\n  top: 320rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -100rpx #ffca3a, 0 -130rpx #8ac926, 0 -180rpx #6a4c93, 0 -190rpx #ffca3a;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.egg:after {\n  border-radius: 50%;\n  width: 30rpx;\n  height: 30rpx;\n  background-color: #ffca3a;\n  left: 180rpx;\n  top: 150rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -80rpx 0 #ffca3a, 80rpx 0 #ffca3a, -160rpx 0 #ffca3a, -240rpx 0 #ffca3a;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.eyes {\n  position: absolute;\n  background-color: #333;\n  border-radius: 50%;\n  width: 40rpx;\n  height: 60rpx;\n  left: 180rpx;\n  top: 240rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 40rpx 0 #333;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.eyes:before {\n  position: absolute;\n  content: \"\";\n  background-color: #fff;\n  width: 10rpx;\n  height: 24rpx;\n  border-radius: 50%;\n  left: 24rpx;\n  top: 20rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 40rpx 0 #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.eyes:after {\n  content: \"\";\n  position: absolute;\n  width: 400rpx;\n  height: 60rpx;\n  background-color: #1982c4;\n  top: -260rpx;\n  left: -200rpx;\n}\n\n@keyframes bounce {\n  0% {\n    transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    transform: scale(1.1, 0.9) translateY(0);\n  }\n  30% {\n    transform: scale(0.9, 1.1) translateY(-140rpx) translateX(60rpx);\n  }\n  50% {\n    transform: scale(1.05, 0.95) translateY(0) translateX(60rpx) rotate(-10deg);\n  }\n  58% {\n    transform: scale(1, 1) translateY(-14rpx) translateX(0);\n  }\n  65% {\n    transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    transform: scale(1, 1) translateY(0);\n  }\n}\n\n.shadow {\n  position: absolute;\n  z-index: -1;\n  background-color: rgba(0, 0, 0, 0.2);\n  width: 200rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  left: 40rpx;\n  top: 380rpx;\n  animation: move 1s linear infinite;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0);\n  }\n  10% {\n    transform: translateX(0) scale(0.8);\n  }\n  30% {\n    transform: translateX(0) scale(0.8);\n  }\n  50% {\n    transform: translateX(60rpx) scale(0.7);\n  }\n  58% {\n    transform: translateX(40rpx);\n  }\n  65% {\n    transform: translateX(0);\n  }\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.clouds {\n  position: absolute;\n  width: 1000rpx;\n}\n\n.cloud1,\n.cloud2,\n.cloud3 {\n  position: absolute;\n  background-color: white;\n  width: 200rpx;\n  height: 50rpx;\n  border-radius: 200rpx;\n}\n\n.cloud1:before,\n.cloud2:before,\n.cloud3:before {\n  position: absolute;\n  content: \"\";\n  width: 80rpx;\n  height: 80rpx;\n  top: -40rpx;\n  left: 40rpx;\n  background-color: white;\n  border-radius: 50%;\n}\n\n.cloud1 {\n  top: -300rpx;\n  z-index: -1;\n  animation: clouds 2s linear infinite;\n}\n\n.cloud2 {\n  top: -140rpx;\n  opacity: 0.5;\n  transform: scale(0.7);\n  animation: clouds 1.8s linear infinite;\n}\n\n.cloud3 {\n  top: -200rpx;\n  opacity: 0.5;\n  transform: scale(0.9);\n  animation: clouds 1.5s linear infinite;\n  z-index: -2;\n}\n\n@keyframes clouds {\n  from {\n    left: 1000rpx;\n  }\n  to {\n    left: -1000rpx;\n  }\n}\n\n",
+    "component_name": "GalaxyOrdinaryCow49"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3587,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.818Z",
+  "updated_at": "2025-07-31T07:55:42.818Z"
+}

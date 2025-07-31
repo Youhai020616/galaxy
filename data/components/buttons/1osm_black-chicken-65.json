@@ -1,0 +1,108 @@
+{
+  "id": "1osm_black-chicken-65",
+  "name": "black-chicken-65",
+  "category": "buttons",
+  "author": "1osm",
+  "description": "black-chicken-65 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"Btn\">Click Me</button>",
+    "css": "/* From Uiverse.io by 1osm - Tags: button */\n/* Button 1 */\n.Btn {\n  width: 150px;\n  height: 50px;\n  background-color: transparent;\n  color: white;\n  font-weight: bold;\n  border-width: 2px;\n  border-color: #FF5858;\n  border-radius: 20px;\n  transition: all 0.3s;\n}\n\n.Btn:hover {\n  transform: translateY(-10px);\n  background-color: #FF5858;\n}\n\n.Btn::after {\n  transform: translateY(0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/1osm_black-chicken-65.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"Btn\"></button>Click Me</button>",
+    "script": "export default {\n  name: 'GalaxyBlackChicken65',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by 1osm - Tags: button */\n/* Button 1 */\n.Btn {\n  width: 300rpx;\n  height: 100rpx;\n  background-color: transparent;\n  color: white;\n  font-weight: bold;\n  border-width: 4rpx;\n  border-color: #FF5858;\n  border-radius: 40rpx;\n  transition: all 0.3s;\n}\n\n.Btn:hover {\n  transform: translateY(-20rpx);\n  background-color: #FF5858;\n}\n\n.Btn::after {\n  transform: translateY(0);\n}\n",
+    "component_name": "GalaxyBlackChicken65"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 426,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.398Z",
+  "updated_at": "2025-07-31T07:55:32.398Z"
+}

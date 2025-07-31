@@ -1,0 +1,99 @@
+{
+  "id": "doniaskima_silent-skunk-22",
+  "name": "silent-skunk-22",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "silent-skunk-22 组件 (neumorphism, 3d, action, loader, image, flip, jelly, realistic, animation, gradient)",
+  "tags": [
+    "neumorphism",
+    "3d",
+    "action",
+    "loader",
+    "image",
+    "flip",
+    "jelly",
+    "realistic",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: neumorphism, 3d, action, loader, image, flip, jelly, realistic */\n.loader {\n  width: 50px;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: radial-gradient(farthest-side,#000 98%,#0000) 55% 20%/8px 8px no-repeat,  \n    #ffcc00;\n  box-shadow: 2px -6px 12px 0px inset rgba(0, 0, 0, 0.7);\n  animation: l4 .5s infinite steps(5) alternate;\n}\n\n@keyframes l4 {\n \n  0% {\n    clip-path: polygon(50% 50%,100%   0,100% 0,0 0,0 100%,100% 100%,100% 100%)\n  }\n\n  100% {\n    clip-path: polygon(50% 50%,100% 65%,100% 0,0 0,0 100%,100% 100%,100%  35%)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_silent-skunk-22.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxySilentSkunk22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: neumorphism, 3d, action, loader, image, flip, jelly, realistic */\n.loader {\n  width: 100rpx;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: radial-gradient(farthest-side,#000 98%,#0000) 55% 20%/16rpx 16rpx no-repeat,  \n    #ffcc00;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx -12rpx 24rpx 0rpx inset rgba(0, 0, 0, 0.7);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: l4 .5s infinite steps(5) alternate;\n}\n\n@keyframes l4 {\n \n  0% {\n    clip-path: polygon(50% 50%,100%   0,100% 0,0 0,0 100%,100% 100%,100% 100%)\n  }\n\n  100% {\n    clip-path: polygon(50% 50%,100% 65%,100% 0,0 0,0 100%,100% 100%,100%  35%)\n  }\n}\n",
+    "component_name": "GalaxySilentSkunk22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 617,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.317Z",
+  "updated_at": "2025-07-31T07:55:41.317Z"
+}

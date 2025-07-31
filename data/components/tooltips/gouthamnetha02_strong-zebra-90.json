@@ -1,0 +1,96 @@
+{
+  "id": "gouthamnetha02_strong-zebra-90",
+  "name": "strong-zebra-90",
+  "category": "tooltips",
+  "author": "gouthamnetha02",
+  "description": "strong-zebra-90 组件 (tooltip, red, hover, color, hover effect, css, css effect, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "red",
+    "hover",
+    "color",
+    "hover effect",
+    "css",
+    "css effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip\">\n  <button>Hover Me!</button>\n  <div class=\"tooltiptext\">You Hovered Me!</div>\n</div>",
+    "css": "/* From Uiverse.io by gouthamnetha02  - Tags: tooltip, red, hover, color, hover effect, css, css effect */\n.tooltip {\n  position: relative;\n  display: inline-block;\n  cursor: pointer;\n}\n\n.tooltip button {\n  background-color: #db3434;\n  color: #fff;\n  border: none;\n  padding: 10px 20px;\n  border-radius: 5px;\n  font-size: 16px;\n  cursor: pointer;\n  transition: background-color 0.3s, transform 0.2s ease-out;\n}\n\n.tooltip button:hover {\n  background-color: #b92929;\n  transform: scale(1.05);\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n\n.tooltiptext {\n  visibility: hidden;\n  width: 160px;\n  background-color: #333;\n  color: #fff;\n  text-align: center;\n  border-radius: 8px;\n  padding: 5px;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  margin-left: -80px;\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-style: solid;\n  border-color: #333 transparent transparent transparent;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/gouthamnetha02_strong-zebra-90.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip\"></view>\n  <button></button>Hover Me!</button>\n  <view class=\"tooltiptext\">You Hovered Me!</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyStrongZebra90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gouthamnetha02  - Tags: tooltip, red, hover, color, hover effect, css, css effect */\n.tooltip {\n  position: relative;\n  display: inline-block;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.tooltip button {\n  background-color: #db3434;\n  color: #fff;\n  border: none;\n  padding: 20rpx 40rpx;\n  border-radius: 10rpx;\n  font-size: 32rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: background-color 0.3s, transform 0.2s ease-out;\n}\n\n.tooltip button:hover {\n  background-color: #b92929;\n  transform: scale(1.05);\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n\n.tooltiptext {\n  visibility: hidden;\n  width: 320rpx;\n  background-color: #333;\n  color: #fff;\n  text-align: center;\n  border-radius: 16rpx;\n  padding: 10rpx;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  margin-left: -160rpx;\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  margin-left: -10rpx;\n  border-width: 10rpx;\n  border-style: solid;\n  border-color: #333 transparent transparent transparent;\n}\n\n",
+    "component_name": "GalaxyStrongZebra90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1175,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.688Z",
+  "updated_at": "2025-07-31T07:55:38.688Z"
+}

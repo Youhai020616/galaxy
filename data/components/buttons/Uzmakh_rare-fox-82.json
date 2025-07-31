@@ -1,0 +1,117 @@
+{
+  "id": "Uzmakh_rare-fox-82",
+  "name": "rare-fox-82",
+  "category": "buttons",
+  "author": "Uzmakh",
+  "description": "rare-fox-82 组件 (simple, button, click, light&dark, animation, gradient)",
+  "tags": [
+    "simple",
+    "button",
+    "click",
+    "light&dark",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"wrapper\">\n    <svg width=\"25\" height=\"45\" viewBox=\"-0.5 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      <path d=\"M15.1999 9.12L9.41992 14.9\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </svg>\n    send message\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by Uzmakh  - Website: https://uiverse.io/ - Name: Shubhajit - Tags: simple, button, click, light&dark */\n.button {\n  padding: 8px;\n  border-radius: 17px;\n  border: none;\n  border-bottom: 1px solid black;\n  outline: none;\n  cursor: pointer;\n  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,\n    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;\n}\n.wrapper {\n  padding: 0 15px;\n  background: linear-gradient(145deg, #cacaca, #f0f0f0);\n  box-shadow: inset 5px 5px 15px #bababa, inset -5px -5px 15px #ffffff;\n  display: flex;\n  align-items: center;\n  column-gap: 8px;\n  font-weight: bold;\n  text-transform: capitalize;\n  border-radius: 20px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Uzmakh_rare-fox-82.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"wrapper\"></view>\n    <view width=\"25\" height=\"45\" viewBox=\"-0.5 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      <path d=\"M15.1999 9.12L9.41992 14.9\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </svg>\n    send message\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyRareFox82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Uzmakh  - Website: https://uiverse.io/ - Name: Shubhajit - Tags: simple, button, click, light&dark */\n.button {\n  padding: 16rpx;\n  border-radius: 34rpx;\n  border: none;\n  border-bottom: 2rpx solid black;\n  outline: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(50, 50, 93, 0.25) 0rpx 26rpx 54rpx -10rpx,\n    rgba(0, 0, 0, 0.3) 0rpx 16rpx 32rpx -16rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.wrapper {\n  padding: 0 30rpx;\n  background: linear-gradient(145deg, #cacaca, #f0f0f0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 10rpx 10rpx 30rpx #bababa, inset -10rpx -10rpx 30rpx #ffffff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  display: flex;\n  align-items: center;\n  column-gap: 16rpx;\n  font-weight: bold;\n  text-transform: capitalize;\n  border-radius: 40rpx;\n}\n\n",
+    "component_name": "GalaxyRareFox82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1290,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.065Z",
+  "updated_at": "2025-07-31T07:55:35.065Z"
+}

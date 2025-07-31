@@ -1,0 +1,86 @@
+{
+  "id": "Praashoo7_gentle-grasshopper-65",
+  "name": "gentle-grasshopper-65",
+  "category": "loaders",
+  "author": "Praashoo7",
+  "description": "gentle-grasshopper-65 组件 (loader, smooth, animation)",
+  "tags": [
+    "loader",
+    "smooth",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <p class=\"heading\">Loading</p>\n  <div class=\"loading\">\n    <div class=\"load\"></div>\n    <div class=\"load\"></div>\n    <div class=\"load\"></div>\n    <div class=\"load\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Praashoo7 - Tags: loader, smooth */\n.loader {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.heading {\n  color: black;\n  letter-spacing: 0.2em;\n  margin-bottom: 1em;\n}\n\n.loading {\n  display: flex;\n  width: 5em;\n  align-items: center;\n  justify-content: center;\n}\n\n.load {\n  width: 23px;\n  height: 3px;\n  background-color: limegreen;\n  animation: 1s move_5011 infinite;\n  border-radius: 5px;\n  margin: 0.1em;\n}\n\n.load:nth-child(1) {\n  animation-delay: 0.2s;\n}\n\n.load:nth-child(2) {\n  animation-delay: 0.4s;\n}\n\n.load:nth-child(3) {\n  animation-delay: 0.6s;\n}\n\n@keyframes move_5011 {\n  0% {\n    width: 0.2em;\n  }\n\n  25% {\n    width: 0.7em;\n  }\n\n  50% {\n    width: 1.5em;\n  }\n\n  100% {\n    width: 0.2em;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Praashoo7_gentle-grasshopper-65.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text class=\"heading\">Loading</text>\n  <view class=\"loading\"></view>\n    <view class=\"load\"></view>\n    <view class=\"load\"></view>\n    <view class=\"load\"></view>\n    <view class=\"load\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGentleGrasshopper65',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7 - Tags: loader, smooth */\n.loader {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.heading {\n  color: black;\n  letter-spacing: 0.2em;\n  margin-bottom: 1em;\n}\n\n.loading {\n  display: flex;\n  width: 5em;\n  align-items: center;\n  justify-content: center;\n}\n\n.load {\n  width: 46rpx;\n  height: 6rpx;\n  background-color: limegreen;\n  animation: 1s move_5011 infinite;\n  border-radius: 10rpx;\n  margin: 0.1em;\n}\n\n.load:nth-child(1) {\n  animation-delay: 0.2s;\n}\n\n.load:nth-child(2) {\n  animation-delay: 0.4s;\n}\n\n.load:nth-child(3) {\n  animation-delay: 0.6s;\n}\n\n@keyframes move_5011 {\n  0% {\n    width: 0.2em;\n  }\n\n  25% {\n    width: 0.7em;\n  }\n\n  50% {\n    width: 1.5em;\n  }\n\n  100% {\n    width: 0.2em;\n  }\n}\n",
+    "component_name": "GalaxyGentleGrasshopper65"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 990,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.967Z",
+  "updated_at": "2025-07-31T07:55:39.967Z"
+}

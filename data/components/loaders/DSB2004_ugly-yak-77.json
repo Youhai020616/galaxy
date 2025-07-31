@@ -1,0 +1,87 @@
+{
+  "id": "DSB2004_ugly-yak-77",
+  "name": "ugly-yak-77",
+  "category": "loaders",
+  "author": "DSB2004",
+  "description": "ugly-yak-77 组件 (simple, gradient, loader, animation)",
+  "tags": [
+    "simple",
+    "gradient",
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div id=\"Loading\">\n  <div id=\"loading_div\">\n    <div id=\"loading_bouncer\"></div>\n    <div id=\"shadow\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by DSB2004  - Tags: simple, gradient, loader */\n#Loading {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n#loading_div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n@keyframes bounce {\n  0% {\n    transform: translateY(0px);\n  }\n  50% {\n    transform: translateY(-50px);\n  }\n  100% {\n    transform: translateY(0px);\n  }\n}\n@keyframes shadow {\n  0% {\n    height: 50px;\n    width: 50px;\n  }\n  50% {\n    height: 10px;\n    width: 10px;\n  }\n  100% {\n    height: 50px;\n    width: 50px;\n  }\n}\n#loading_bouncer {\n  height: 50px;\n  width: 50px;\n  border-radius: 100%;\n  background: linear-gradient(\n    to bottom,\n    rgb(89, 0, 255),\n    rgb(0, 110, 255),\n    rgb(25, 0, 255)\n  );\n  animation: bounce 500ms ease-in-out infinite;\n}\n#shadow {\n  position: absolute;\n  height: 50px;\n  width: 50px;\n  border-radius: 100%;\n  background: black;\n  top: 30px;\n  transform: rotateX(80deg);\n  animation: shadow 500ms ease-in-out infinite;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/DSB2004_ugly-yak-77.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"Loading\"></view>\n  <view id=\"loading_div\"></view>\n    <view id=\"loading_bouncer\"></view>\n    <view id=\"shadow\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUglyYak77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by DSB2004  - Tags: simple, gradient, loader */\n#Loading {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n#loading_div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n@keyframes bounce {\n  0% {\n    transform: translateY(0rpx);\n  }\n  50% {\n    transform: translateY(-100rpx);\n  }\n  100% {\n    transform: translateY(0rpx);\n  }\n}\n@keyframes shadow {\n  0% {\n    height: 100rpx;\n    width: 100rpx;\n  }\n  50% {\n    height: 20rpx;\n    width: 20rpx;\n  }\n  100% {\n    height: 100rpx;\n    width: 100rpx;\n  }\n}\n#loading_bouncer {\n  height: 100rpx;\n  width: 100rpx;\n  border-radius: 100%;\n  background: linear-gradient(\n    to bottom,\n    rgb(89, 0, 255),\n    rgb(0, 110, 255),\n    rgb(25, 0, 255)\n  );\n  animation: bounce 500ms ease-in-out infinite;\n}\n#shadow {\n  position: absolute;\n  height: 100rpx;\n  width: 100rpx;\n  border-radius: 100%;\n  background: black;\n  top: 60rpx;\n  transform: rotateX(80deg);\n  animation: shadow 500ms ease-in-out infinite;\n}\n\n",
+    "component_name": "GalaxyUglyYak77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1194,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.146Z",
+  "updated_at": "2025-07-31T07:55:39.146Z"
+}

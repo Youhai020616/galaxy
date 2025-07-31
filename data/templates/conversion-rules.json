@@ -1,0 +1,90 @@
+{
+  "html_tag_mapping": {
+    "div": "view",
+    "span": "text",
+    "p": "text",
+    "h1": "text",
+    "h2": "text",
+    "h3": "text",
+    "h4": "text",
+    "h5": "text",
+    "h6": "text",
+    "img": "image",
+    "a": "navigator",
+    "button": "button",
+    "input": "input",
+    "textarea": "textarea",
+    "form": "form",
+    "label": "label",
+    "video": "video",
+    "audio": "audio",
+    "canvas": "canvas",
+    "svg": "view",
+    "ul": "view",
+    "ol": "view",
+    "li": "view",
+    "section": "view",
+    "article": "view",
+    "header": "view",
+    "footer": "view",
+    "nav": "view",
+    "aside": "view",
+    "main": "view"
+  },
+  "css_unit_conversion": {
+    "px_to_rpx_ratio": 2,
+    "rem_to_rpx_ratio": 32,
+    "em_to_rpx_ratio": 32,
+    "design_width": 750
+  },
+  "css_property_compatibility": {
+    "unsupported": [
+      "box-shadow",
+      "text-shadow",
+      "filter",
+      "backdrop-filter",
+      "clip-path",
+      "mask",
+      "mix-blend-mode",
+      "cursor"
+    ],
+    "limited_support": {
+      "position": {
+        "fixed": "需要注意层级问题",
+        "sticky": "小程序不支持"
+      },
+      "z-index": "小程序中有层级限制",
+      "overflow": "小程序中部分值不支持",
+      "white-space": "小程序支持有限"
+    },
+    "alternatives": {
+      "box-shadow": "border + background模拟",
+      "text-shadow": "使用伪元素模拟",
+      "cursor": "移除或用条件编译"
+    }
+  },
+  "event_mapping": {
+    "click": "tap",
+    "mousedown": "touchstart",
+    "mouseup": "touchend",
+    "mousemove": "touchmove",
+    "mouseenter": "touchstart",
+    "mouseleave": "touchend",
+    "hover": "touchstart + touchend"
+  },
+  "platform_conditions": {
+    "h5": "#ifdef H5",
+    "mp": "#ifdef MP",
+    "mp-weixin": "#ifdef MP-WEIXIN",
+    "mp-alipay": "#ifdef MP-ALIPAY",
+    "mp-baidu": "#ifdef MP-BAIDU",
+    "mp-toutiao": "#ifdef MP-TOUTIAO",
+    "app": "#ifdef APP-PLUS",
+    "app-plus": "#ifdef APP-PLUS"
+  },
+  "component_naming": {
+    "prefix": "galaxy",
+    "separator": "-",
+    "case": "kebab-case"
+  }
+}

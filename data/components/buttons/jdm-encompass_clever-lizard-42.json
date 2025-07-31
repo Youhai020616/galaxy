@@ -1,0 +1,119 @@
+{
+  "id": "jdm-encompass_clever-lizard-42",
+  "name": "clever-lizard-42",
+  "category": "buttons",
+  "author": "jdm-encompass",
+  "description": "clever-lizard-42 组件 (button, social media, animated, follow, animation, interactive)",
+  "tags": [
+    "button",
+    "social media",
+    "animated",
+    "follow",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <a href=\"https://www.facebook.com/JDmOwO\" class=\"no-link-style\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.0\" x=\"0px\" y=\"0px\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" style=\"null\" class=\"icon icons8-Facebook-Filled\">\n      <path d=\"M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z\" fill=\"#ffffff\"></path>\n    </svg>\n  </a>\n</button><br>",
+    "css": "/* From Uiverse.io by jdm-encompass - Tags: button, social media, animated, follow */\n.button {\n  background-color: #1877F2;\n  border: none;\n  border-radius: 50%;\n  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);\n  animation: sway 2s infinite alternate;\n  width: 70px;\n  height: 70px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  perspective: 500px;\n  transition: transform 0.5s, box-shadow 0.5s;\n}\n\n.button:hover {\n  transform: rotate(-360deg);\n  box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.5);\n}\n\n@keyframes grow {\n  0% {\n    transform: scale(1);\n  }\n\n  100% {\n    transform: scale(10);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: gold 1px 1px 1px;\n  }\n\n  100% {\n    text-shadow: gold 0 0 10px gold;\n  }\n}\n\n.icon {\n  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));\n  transition: transform 0.5s;\n}\n\n.icon:hover {\n  transform: scale(1.5);\n  filter: drop-shadow(1px 2px 4px rgba(0,0,0,0.9))\n}\n\n.follow-text {\n  color: white;\n  position: relative;\n  top: 3em;\n  left: -4em;\n  transition: transform 0.5s;\n}\n\n.follow-text:hover {\n  transform: scale(1.2);\n  color: rgba(31,81,255,100);\n  filter: drop-shadow(2px 2px 4px rgba(31,81,255,2.0))\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/jdm-encompass_clever-lizard-42.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <navigator href=\"https://www.facebook.com/JDmOwO\" class=\"no-link-style\"></navigator>\n    <view xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.0\" x=\"0px\" y=\"0px\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" style=\"null\" class=\"icon icons8-Facebook-Filled\"></view>\n      <path d=\"M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z\" fill=\"#ffffff\"></path>\n    </svg>\n  </a>\n</button><br>",
+    "script": "export default {\n  name: 'GalaxyCleverLizard42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by jdm-encompass - Tags: button, social media, animated, follow */\n.button {\n  background-color: #1877F2;\n  border: none;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx 0 rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: sway 2s infinite alternate;\n  width: 140rpx;\n  height: 140rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  perspective: 1000rpx;\n  transition: transform 0.5s, box-shadow 0.5s;\n}\n\n.button:hover {\n  transform: rotate(-360deg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx 0 rgba(0, 0, 255, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes grow {\n  0% {\n    transform: scale(1);\n  }\n\n  100% {\n    transform: scale(10);\n  }\n}\n\n@keyframes glow {\n  0% {\n    /* #ifdef H5 */\n  text-shadow: gold 2rpx 2rpx 2rpx;\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  text-shadow: gold 0 0 20rpx gold;\n  /* #endif */\n  }\n}\n\n.icon {\n  \n  transition: transform 0.5s;\n}\n\n.icon:hover {\n  transform: scale(1.5);\n  \n  position: relative;\n  top: 3em;\n  left: -4em;\n  transition: transform 0.5s;\n}\n\n.follow-text:hover {\n  transform: scale(1.2);\n  color: rgba(31,81,255,100);\n  filter: drop-shadow(4rpx 4rpx 8rpx rgba(31,81,255,2.0))\n}\n\n",
+    "component_name": "GalaxyCleverLizard42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1750,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.009Z",
+  "updated_at": "2025-07-31T07:55:37.009Z"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "AyuuLima_modern-wasp-21",
+  "name": "modern-wasp-21",
+  "category": "buttons",
+  "author": "AyuuLima",
+  "description": "modern-wasp-21 组件 (simple, material design, neumorphism, animation, gradient, button, interactive)",
+  "tags": [
+    "simple",
+    "material design",
+    "neumorphism",
+    "animation",
+    "gradient",
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Button</button>",
+    "css": "/* From Uiverse.io by AyuuLima  - Tags: simple, material design, neumorphism, animation, gradient, button */\n.button {\n  position: relative;\n  width: 120px;\n  height: 40px;\n  background-color: rgb(0, 0, 0);\n  display: flex;\n  align-items: center;\n  color: rgb(255, 255, 255);\n  flex-direction: column;\n  justify-content: center;\n  border: none;\n  padding: 20px;\n  gap: 120px;\n  border-radius: 10px;\n  cursor: pointer;\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  left: 3px;\n  top: -4px;\n  margin: auto;\n  width: -128px;\n  height: -48px;\n  border-radius: 10px;\n  background: linear-gradient(-45deg, #10d32a 0%, rgb(119, 235, 235) 100%);\n  z-index: -10;\n  pointer-events: visiblePainted;\n  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n}\n\n.button::after {\n  content: \"\";\n  z-index: -1;\n  position: absolute;\n  inset: 0;\n  background: linear-gradient(-45deg, #00ff22 0%, rgb(0, 250, 250) 100%);\n  transform: translate3d(0, 0, 0) scale(0.95);\n  filter: blur(15px);\n}\n\n.button:hover::after {\n  filter: blur(40px);\n}\n\n.button:hover::before {\n  transform: rotate(-180deg);\n}\n\n.button:active::before {\n  scale: 0.7;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AyuuLima_modern-wasp-21.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Button</button>",
+    "script": "export default {\n  name: 'GalaxyModernWasp21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AyuuLima  - Tags: simple, material design, neumorphism, animation, gradient, button */\n.button {\n  position: relative;\n  width: 240rpx;\n  height: 80rpx;\n  background-color: rgb(0, 0, 0);\n  display: flex;\n  align-items: center;\n  color: rgb(255, 255, 255);\n  flex-direction: column;\n  justify-content: center;\n  border: none;\n  padding: 40rpx;\n  gap: 240rpx;\n  border-radius: 20rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  left: 6rpx;\n  top: -8rpx;\n  margin: auto;\n  width: -256rpx;\n  height: -96rpx;\n  border-radius: 20rpx;\n  background: linear-gradient(-45deg, #10d32a 0%, rgb(119, 235, 235) 100%);\n  z-index: -10;\n  pointer-events: visiblePainted;\n  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n}\n\n.button::after {\n  content: \"\";\n  z-index: -1;\n  position: absolute;\n  inset: 0;\n  background: linear-gradient(-45deg, #00ff22 0%, rgb(0, 250, 250) 100%);\n  transform: translate3d(0, 0, 0) scale(0.95);\n  \n}\n\n.button:hover::after {\n  \n}\n\n.button:hover::before {\n  transform: rotate(-180deg);\n}\n\n.button:active::before {\n  scale: 0.7;\n}\n\n",
+    "component_name": "GalaxyModernWasp21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1200,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.719Z",
+  "updated_at": "2025-07-31T07:55:32.719Z"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "Botwe-Felix5820_nasty-deer-97",
+  "name": "nasty-deer-97",
+  "category": "buttons",
+  "author": "Botwe-Felix5820",
+  "description": "nasty-deer-97 组件 (button, shake, animation, interactive)",
+  "tags": [
+    "button",
+    "shake",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Shake\n</button>",
+    "css": "/* From Uiverse.io by Botwe-Felix5820 - Tags: button, shake */\nbutton {\n height: 3em;\n width: 8em;\n border: none;\n border-radius: 10em;\n background: #016DD9;\n font-size: 17px;\n color: #ffffff;\n font-family: inherit;\n font-weight: 500;\n}\n\nbutton:hover {\n animation: shake3856 0.3s linear infinite both;\n}\n\n@keyframes shake3856 {\n 0% {\n  -webkit-transform: translate(0);\n  transform: translate(0);\n }\n\n 20% {\n  -webkit-transform: translate(-2px, 2px);\n  transform: translate(-2px, 2px);\n }\n\n 40% {\n  -webkit-transform: translate(-2px, -2px);\n  transform: translate(-2px, -2px);\n }\n\n 60% {\n  -webkit-transform: translate(2px, 2px);\n  transform: translate(2px, 2px);\n }\n\n 80% {\n  -webkit-transform: translate(2px, -2px);\n  transform: translate(2px, -2px);\n }\n\n 100% {\n  -webkit-transform: translate(0);\n  transform: translate(0);\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Botwe-Felix5820_nasty-deer-97.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Shake\n</button>",
+    "script": "export default {\n  name: 'GalaxyNastyDeer97',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Botwe-Felix5820 - Tags: button, shake */\nbutton {\n height: 3em;\n width: 8em;\n border: none;\n border-radius: 10em;\n background: #016DD9;\n font-size: 34rpx;\n color: #ffffff;\n font-family: inherit;\n font-weight: 500;\n}\n\nbutton:hover {\n animation: shake3856 0.3s linear infinite both;\n}\n\n@keyframes shake3856 {\n 0% {\n  -webkit-transform: translate(0);\n  transform: translate(0);\n }\n\n 20% {\n  -webkit-transform: translate(-4rpx, 4rpx);\n  transform: translate(-4rpx, 4rpx);\n }\n\n 40% {\n  -webkit-transform: translate(-4rpx, -4rpx);\n  transform: translate(-4rpx, -4rpx);\n }\n\n 60% {\n  -webkit-transform: translate(4rpx, 4rpx);\n  transform: translate(4rpx, 4rpx);\n }\n\n 80% {\n  -webkit-transform: translate(4rpx, -4rpx);\n  transform: translate(4rpx, -4rpx);\n }\n\n 100% {\n  -webkit-transform: translate(0);\n  transform: translate(0);\n }\n}\n\n",
+    "component_name": "GalaxyNastyDeer97"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 859,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.821Z",
+  "updated_at": "2025-07-31T07:55:32.821Z"
+}

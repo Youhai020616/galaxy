@@ -1,0 +1,111 @@
+{
+  "id": "JkHuger_evil-dodo-27",
+  "name": "evil-dodo-27",
+  "category": "buttons",
+  "author": "JkHuger",
+  "description": "evil-dodo-27 组件 (button, gradient)",
+  "tags": [
+    "button",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"click\">Click me</button>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: button */\n.click {\n  margin: 2rem auto;\n  display: flex;\n  background-color: #7A5FFF;\n  color: white;\n  cursor: pointer;\n  border: none;\n  font-size: 1.2rem;\n  padding: 10px 15px;\n  border-radius: .25rem\n}\n\n.click {\n  transition: background .8s ease-out;\n  background: #7A5FFF radial-gradient(circle, transparent 1%, #7A5FFF 1%) center/15000%;\n}\n\n.click:active {\n  background-color: #c1b4ff;\n  background-size: 100%;\n  transition: background 0s;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JkHuger_evil-dodo-27.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"click\"></button>Click me</button>",
+    "script": "export default {\n  name: 'GalaxyEvilDodo27',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: button */\n.click {\n  margin: 2rem auto;\n  display: flex;\n  background-color: #7A5FFF;\n  color: white;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border: none;\n  font-size: 1.2rem;\n  padding: 20rpx 30rpx;\n  border-radius: .25rem\n}\n\n.click {\n  transition: background .8s ease-out;\n  background: #7A5FFF radial-gradient(circle, transparent 1%, #7A5FFF 1%) center/15000%;\n}\n\n.click:active {\n  background-color: #c1b4ff;\n  background-size: 100%;\n  transition: background 0s;\n}\n  \n",
+    "component_name": "GalaxyEvilDodo27"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 531,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.537Z",
+  "updated_at": "2025-07-31T07:55:33.537Z"
+}

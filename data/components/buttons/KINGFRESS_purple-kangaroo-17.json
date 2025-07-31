@@ -1,0 +1,112 @@
+{
+  "id": "KINGFRESS_purple-kangaroo-17",
+  "name": "purple-kangaroo-17",
+  "category": "buttons",
+  "author": "KINGFRESS",
+  "description": "purple-kangaroo-17 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <span class=\"circle1\"></span>\n    <span class=\"circle2\"></span>\n    <span class=\"circle3\"></span>\n    <span class=\"circle4\"></span>\n    <span class=\"circle5\"></span>\n    <span class=\"text\">Submit</span>\n</button>",
+    "css": "/* From Uiverse.io by KINGFRESS - Tags: button */\nbutton {\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  color: white;\n  background-color: #171717;\n  padding: 1em 2em;\n  border: none;\n  border-radius: .6rem;\n  position: relative;\n  cursor: pointer;\n  overflow: hidden;\n}\n\nbutton span:not(:nth-child(6)) {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  height: 30px;\n  width: 30px;\n  background-color: #0c66ed;\n  border-radius: 50%;\n  transition: .6s ease;\n}\n\nbutton span:nth-child(6) {\n  position: relative;\n}\n\nbutton span:nth-child(1) {\n  transform: translate(-3.3em, -4em);\n}\n\nbutton span:nth-child(2) {\n  transform: translate(-6em, 1.3em);\n}\n\nbutton span:nth-child(3) {\n  transform: translate(-.2em, 1.8em);\n}\n\nbutton span:nth-child(4) {\n  transform: translate(3.5em, 1.4em);\n}\n\nbutton span:nth-child(5) {\n  transform: translate(3.5em, -3.8em);\n}\n\nbutton:hover span:not(:nth-child(6)) {\n  transform: translate(-50%, -50%) scale(4);\n  transition: 1.5s ease;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KINGFRESS_purple-kangaroo-17.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <text class=\"circle1\"></text>\n    <text class=\"circle2\"></text>\n    <text class=\"circle3\"></text>\n    <text class=\"circle4\"></text>\n    <text class=\"circle5\"></text>\n    <text class=\"text\">Submit</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPurpleKangaroo17',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KINGFRESS - Tags: button */\nbutton {\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  color: white;\n  background-color: #171717;\n  padding: 1em 2em;\n  border: none;\n  border-radius: .6rem;\n  position: relative;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  overflow: hidden;\n}\n\nbutton span:not(:nth-child(6)) {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  height: 60rpx;\n  width: 60rpx;\n  background-color: #0c66ed;\n  border-radius: 50%;\n  transition: .6s ease;\n}\n\nbutton span:nth-child(6) {\n  position: relative;\n}\n\nbutton span:nth-child(1) {\n  transform: translate(-3.3em, -4em);\n}\n\nbutton span:nth-child(2) {\n  transform: translate(-6em, 1.3em);\n}\n\nbutton span:nth-child(3) {\n  transform: translate(-.2em, 1.8em);\n}\n\nbutton span:nth-child(4) {\n  transform: translate(3.5em, 1.4em);\n}\n\nbutton span:nth-child(5) {\n  transform: translate(3.5em, -3.8em);\n}\n\nbutton:hover span:not(:nth-child(6)) {\n  transform: translate(-50%, -50%) scale(4);\n  transition: 1.5s ease;\n}\n  \n",
+    "component_name": "GalaxyPurpleKangaroo17"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1253,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.637Z",
+  "updated_at": "2025-07-31T07:55:33.637Z"
+}

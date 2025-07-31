@@ -1,0 +1,117 @@
+{
+  "id": "Spacious74_plastic-bulldog-78",
+  "name": "plastic-bulldog-78",
+  "category": "buttons",
+  "author": "Spacious74",
+  "description": "plastic-bulldog-78 组件 (neumorphism, button, shadow, 3d button, animation, gradient)",
+  "tags": [
+    "neumorphism",
+    "button",
+    "shadow",
+    "3d button",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"inner\">\n    <div class=\"roundInner\">\n      <svg class=\"svg\" xmlns=\"http://www.w3.org/2000/svg\" width=\"1.3em\" height=\"1.3em\" viewBox=\"0 0 24 24\">\n        <path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 12l-.604-5.437C4.223 5.007 5.825 3.864 7.24 4.535l11.944 5.658c1.525.722 1.525 2.892 0 3.614L7.24 19.466c-1.415.67-3.017-.472-2.844-2.028zm0 0h7\"></path>\n      </svg>\n      Send Message\n    </div>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by Spacious74  - Tags: neumorphism, button, shadow, 3d button */\n.button {\n  cursor: pointer;\n  background: linear-gradient(180deg, #cfcfcf, #808080);\n  padding: 3px;\n  border-radius: 15px;\n  border: solid 1px #ebebeb;\n  box-shadow: 0 3px 10px -1px #00000017, 0px 1px 5px #0000000e,\n    0 10px 40px -15px #0000006e;\n  transition: all 0.3s ease;\n}\n.inner {\n  background: linear-gradient(180deg, #fff, #e0e0e0);\n  padding: 5px;\n  border-radius: 12px;\n}\n.roundInner {\n  font-size: 1.2rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 5px;\n  font-weight: bold;\n  padding: 14px 12px;\n  border-radius: 300px;\n  box-shadow: inset 0 10px 20px #0000000c;\n  background-color: #f8fafa;\n  transition: all 0.4s ease;\n}\n.roundInner .svg {\n  transform: rotate(-45deg);\n  margin-bottom: 5px;\n  transition: all 0.3s ease;\n}\n.roundInner:active > .svg {\n  transform: translate(3px, -3px) rotate(-45deg);\n}\n\n.button:active {\n  box-shadow: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Spacious74_plastic-bulldog-78.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"inner\"></view>\n    <view class=\"roundInner\"></view>\n      <view class=\"svg\" xmlns=\"http://www.w3.org/2000/svg\" width=\"1.3em\" height=\"1.3em\" viewBox=\"0 0 24 24\"></view>\n        <path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 12l-.604-5.437C4.223 5.007 5.825 3.864 7.24 4.535l11.944 5.658c1.525.722 1.525 2.892 0 3.614L7.24 19.466c-1.415.67-3.017-.472-2.844-2.028zm0 0h7\"></path>\n      </svg>\n      Send Message\n    </div>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPlasticBulldog78',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Spacious74  - Tags: neumorphism, button, shadow, 3d button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: linear-gradient(180deg, #cfcfcf, #808080);\n  padding: 6rpx;\n  border-radius: 30rpx;\n  border: solid 2rpx #ebebeb;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 6rpx 20rpx -2rpx #00000017, 0rpx 2rpx 10rpx #0000000e,\n    0 20rpx 80rpx -30rpx #0000006e;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease;\n}\n.inner {\n  background: linear-gradient(180deg, #fff, #e0e0e0);\n  padding: 10rpx;\n  border-radius: 24rpx;\n}\n.roundInner {\n  font-size: 1.2rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10rpx;\n  font-weight: bold;\n  padding: 28rpx 24rpx;\n  border-radius: 600rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 20rpx 40rpx #0000000c;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: #f8fafa;\n  transition: all 0.4s ease;\n}\n.roundInner .svg {\n  transform: rotate(-45deg);\n  margin-bottom: 10rpx;\n  transition: all 0.3s ease;\n}\n.roundInner:active > .svg {\n  transform: translate(6rpx, -6rpx) rotate(-45deg);\n}\n\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyPlasticBulldog78"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1502,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.838Z",
+  "updated_at": "2025-07-31T07:55:34.838Z"
+}

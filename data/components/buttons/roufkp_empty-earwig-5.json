@@ -1,0 +1,115 @@
+{
+  "id": "roufkp_empty-earwig-5",
+  "name": "empty-earwig-5",
+  "category": "buttons",
+  "author": "roufkp",
+  "description": "empty-earwig-5 组件 (gradient, button, light, hover effect, animation, interactive)",
+  "tags": [
+    "gradient",
+    "button",
+    "light",
+    "hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Button\n</button>",
+    "css": "/* From Uiverse.io by roufkp - Tags: gradient, button, light, hover effect */\n.button {\n  width: fit-content;\n  padding: 12px 24px;\n  border-radius: 100px;\n  border: none;\n  box-shadow: inset 0px 22px 20px 10px rgb(0, 0, 0);\n  font-weight: 800;\n  color: antiquewhite;\n  letter-spacing: .1rem;\n  transition: all 0.51s ease-in-out;\n}\n\n.button:hover {\n  transform: translateY(5px);\n  box-shadow: inset 1px -11px 25px 10px rgb(91, 88, 240);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/roufkp_empty-earwig-5.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyEmptyEarwig5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by roufkp - Tags: gradient, button, light, hover effect */\n.button {\n  width: fit-content;\n  padding: 24rpx 48rpx;\n  border-radius: 200rpx;\n  border: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 44rpx 40rpx 20rpx rgb(0, 0, 0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  font-weight: 800;\n  color: antiquewhite;\n  letter-spacing: .1rem;\n  transition: all 0.51s ease-in-out;\n}\n\n.button:hover {\n  transform: translateY(10rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 2rpx -22rpx 50rpx 20rpx rgb(91, 88, 240);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyEmptyEarwig5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 484,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.685Z",
+  "updated_at": "2025-07-31T07:55:37.685Z"
+}

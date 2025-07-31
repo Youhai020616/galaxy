@@ -1,0 +1,85 @@
+{
+  "id": "Satwinder04_witty-starfish-81",
+  "name": "witty-starfish-81",
+  "category": "loaders",
+  "author": "Satwinder04",
+  "description": "witty-starfish-81 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n                <div class=\"bar1\"></div>\n                <div class=\"bar2\"></div>\n                <div class=\"bar3\"></div>\n                <div class=\"bar4\"></div>\n                <div class=\"bar5\"></div>\n                <div class=\"bar6\"></div>\n                <div class=\"bar7\"></div>\n                <div class=\"bar8\"></div>\n                <div class=\"bar9\"></div>\n            </div>",
+    "css": "/* From Uiverse.io by Satwinder04 - Tags: loader */\n.loader {\n  position: relative;\n  width: 164px;\n  height: 100px;\n  margin: 50px auto;\n}\n\n.loader div {\n  position: absolute;\n  width: 10px;\n  height: 30px;\n  background-color: #ff6a00;\n  border-radius: 5px;\n  animation: loader_51899 1.5s ease-in-out infinite;\n}\n\n.loader .bar1 {\n  left: 0px;\n  animation-delay: 0s;\n}\n\n.loader .bar2 {\n  left: 20px;\n  animation-delay: 0.15s;\n}\n\n.loader .bar3 {\n  left: 40px;\n  animation-delay: 0.3s;\n}\n\n.loader .bar4 {\n  left: 60px;\n  animation-delay: 0.45s;\n}\n\n.loader .bar5 {\n  left: 80px;\n  animation-delay: 0.6s;\n}\n\n.loader .bar6 {\n  left: 100px;\n  animation-delay: 0.75s;\n}\n\n.loader .bar7 {\n  left: 120px;\n  animation-delay: 0.9s;\n}\n\n.loader .bar8 {\n  left: 140px;\n  animation-delay: 1.05s;\n}\n\n.loader .bar9 {\n  left: 160px;\n  animation-delay: 1.2s;\n}\n\n@keyframes loader_51899 {\n  0% {\n    height: 30px;\n    transform: translate(0, 0);\n  }\n\n  50% {\n    height: 70px;\n    transform: translate(0, 35px);\n  }\n\n  100% {\n    height: 30px;\n    transform: translate(0, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Satwinder04_witty-starfish-81.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n                <view class=\"bar1\"></view>\n                <view class=\"bar2\"></view>\n                <view class=\"bar3\"></view>\n                <view class=\"bar4\"></view>\n                <view class=\"bar5\"></view>\n                <view class=\"bar6\"></view>\n                <view class=\"bar7\"></view>\n                <view class=\"bar8\"></view>\n                <view class=\"bar9\"></view>\n            </div>",
+    "script": "export default {\n  name: 'GalaxyWittyStarfish81',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Satwinder04 - Tags: loader */\n.loader {\n  position: relative;\n  width: 328rpx;\n  height: 200rpx;\n  margin: 100rpx auto;\n}\n\n.loader div {\n  position: absolute;\n  width: 20rpx;\n  height: 60rpx;\n  background-color: #ff6a00;\n  border-radius: 10rpx;\n  animation: loader_51899 1.5s ease-in-out infinite;\n}\n\n.loader .bar1 {\n  left: 0rpx;\n  animation-delay: 0s;\n}\n\n.loader .bar2 {\n  left: 40rpx;\n  animation-delay: 0.15s;\n}\n\n.loader .bar3 {\n  left: 80rpx;\n  animation-delay: 0.3s;\n}\n\n.loader .bar4 {\n  left: 120rpx;\n  animation-delay: 0.45s;\n}\n\n.loader .bar5 {\n  left: 160rpx;\n  animation-delay: 0.6s;\n}\n\n.loader .bar6 {\n  left: 200rpx;\n  animation-delay: 0.75s;\n}\n\n.loader .bar7 {\n  left: 240rpx;\n  animation-delay: 0.9s;\n}\n\n.loader .bar8 {\n  left: 280rpx;\n  animation-delay: 1.05s;\n}\n\n.loader .bar9 {\n  left: 320rpx;\n  animation-delay: 1.2s;\n}\n\n@keyframes loader_51899 {\n  0% {\n    height: 60rpx;\n    transform: translate(0, 0);\n  }\n\n  50% {\n    height: 140rpx;\n    transform: translate(0, 70rpx);\n  }\n\n  100% {\n    height: 60rpx;\n    transform: translate(0, 0);\n  }\n}\n",
+    "component_name": "GalaxyWittyStarfish81"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1472,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.250Z",
+  "updated_at": "2025-07-31T07:55:40.250Z"
+}

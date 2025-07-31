@@ -1,0 +1,114 @@
+{
+  "id": "JkHuger_brown-lion-61",
+  "name": "brown-lion-61",
+  "category": "buttons",
+  "author": "JkHuger",
+  "description": "brown-lion-61 组件 (button, progress, progress bar, download, animation)",
+  "tags": [
+    "button",
+    "progress",
+    "progress bar",
+    "download",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"installer\">\n\t<label for=\"progressLinux\"><input id=\"progressLinux\" type=\"radio\"><span></span></label>\n</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: button, progress, progress bar, download */\n.installer {\n  width: 200px;\n  height: 40px;\n}\n\n.installer label {\n  position: absolute;\n  height: 40px;\n  width: 200px;\n  border-radius: 5px;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.installer label input {\n  display: none;\n}\n\n.installer label span {\n  position: absolute;\n  height: 40px;\n  width: 200px;\n  line-height: 40px;\n  text-align: center;\n  color: #fff;\n  background: #3F8EFC;\n  border-radius: 5px;\n}\n\n.installer label input:checked ~ span {\n  background: #87E544;\n  animation: downloadSuccess 3.1s ease;\n}\n\n.installer label span:after {\n  content: 'DOWNLOAD';\n  position: absolute;\n  width: 80%;\n  height: 100%;\n  left: 10%;\n}\n\n.installer label input:checked ~ span:after {\n  content: 'Thank you!';\n  animation: downloadState 3s;\n}\n\n.installer label span:before {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  opacity: 0;\n  background: rgba(255,255,255,.2);\n}\n\n.installer label input:checked ~ span:before {\n  animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);\n}\n\n@keyframes downloadSuccess {\n  0%, 90% {\n    background: #3F8EFC;\n  }\n\n  100% {\n    background: #87E544;\n  }\n}\n\n@keyframes downloadState {\n  0%, 95% {\n    content: 'DOWNLOADING...'\n  }\n\n  100% {\n    content: 'Thank you for download!'\n  }\n}\n\n@keyframes downloadProgress {\n  0% {\n    width: 5%;\n    opacity: 1;\n  }\n\n  35% {\n    width: 17%;\n  }\n\n  64% {\n    width: 51%;\n  }\n\n  81% {\n    width: 70%;\n  }\n\n  90% {\n    width: 86%;\n    opacity: 1;\n  }\n\n  100% {\n    width: 100%;\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JkHuger_brown-lion-61.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"installer\"></view>\n\t<label for=\"progressLinux\"></label><input id=\"progressLinux\" type=\"radio\"></input><text></text></label>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBrownLion61',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: button, progress, progress bar, download */\n.installer {\n  width: 400rpx;\n  height: 80rpx;\n}\n\n.installer label {\n  position: absolute;\n  height: 80rpx;\n  width: 400rpx;\n  border-radius: 10rpx;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.installer label input {\n  display: none;\n}\n\n.installer label span {\n  position: absolute;\n  height: 80rpx;\n  width: 400rpx;\n  line-height: 80rpx;\n  text-align: center;\n  color: #fff;\n  background: #3F8EFC;\n  border-radius: 10rpx;\n}\n\n.installer label input:checked ~ span {\n  background: #87E544;\n  animation: downloadSuccess 3.1s ease;\n}\n\n.installer label span:after {\n  content: 'DOWNLOAD';\n  position: absolute;\n  width: 80%;\n  height: 100%;\n  left: 10%;\n}\n\n.installer label input:checked ~ span:after {\n  content: 'Thank you!';\n  animation: downloadState 3s;\n}\n\n.installer label span:before {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0rpx;\n  left: 0rpx;\n  opacity: 0;\n  background: rgba(255,255,255,.2);\n}\n\n.installer label input:checked ~ span:before {\n  animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);\n}\n\n@keyframes downloadSuccess {\n  0%, 90% {\n    background: #3F8EFC;\n  }\n\n  100% {\n    background: #87E544;\n  }\n}\n\n@keyframes downloadState {\n  0%, 95% {\n    content: 'DOWNLOADING...'\n  }\n\n  100% {\n    content: 'Thank you for download!'\n  }\n}\n\n@keyframes downloadProgress {\n  0% {\n    width: 5%;\n    opacity: 1;\n  }\n\n  35% {\n    width: 17%;\n  }\n\n  64% {\n    width: 51%;\n  }\n\n  81% {\n    width: 70%;\n  }\n\n  90% {\n    width: 86%;\n    opacity: 1;\n  }\n\n  100% {\n    width: 100%;\n    opacity: 0;\n  }\n}\n",
+    "component_name": "GalaxyBrownLion61"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1734,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.533Z",
+  "updated_at": "2025-07-31T07:55:33.533Z"
+}

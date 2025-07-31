@@ -1,0 +1,115 @@
+{
+  "id": "barisdogansutcu_bitter-dragon-16",
+  "name": "bitter-dragon-16",
+  "category": "buttons",
+  "author": "barisdogansutcu",
+  "description": "bitter-dragon-16 组件 (animation, button, funny, interactive)",
+  "tags": [
+    "animation",
+    "button",
+    "funny",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"click\">\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <button class=\"button up\">\n    <div class=\"speak dblink\">\n      <div class=\"wrap\">\n        <div class=\"eye double-blink\"></div>\n        <div class=\"eye double-blink\"></div>\n      </div>\n    </div>\n    <p></p>\n    <p></p>\n    <p></p>\n    <div class=\"speak doblink\">\n      <div class=\"wrap\">\n        <div class=\"eye down\"></div>\n        <div class=\"eye down\"></div>\n      </div>\n    </div>\n    <div class=\"speak rblink\">\n      <div class=\"wrap\">\n        <div class=\"eye right-blink\"></div>\n        <div class=\"eye right-blink\"></div>\n      </div>\n    </div>\n    <div class=\"speak ublink\">\n      <div class=\"wrap\">\n        <div class=\"eye up-blink\"></div>\n        <div class=\"eye up-blink\"></div>\n      </div>\n    </div>\n  </button>\n  <button disabled=\"\" class=\"button shadow\"></button>\n</div>",
+    "css": "/* From Uiverse.io by barisdogansutcu  - Tags: animation, button, funny */\n.button {\n  cursor: inherit;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  border: solid 4px rgba(255, 255, 255, 0);\n  background-color: hsl(300, 10%, 8%);\n  font-size: 20px;\n  color: white;\n  border-radius: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100px;\n}\n.button:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  transform: translateY(-100%);\n  width: 0;\n  height: 0;\n  border-top: solid 10px rgba(255, 0, 0, 0);\n  border-bottom: solid 10px hsl(300, 10%, 8%);\n  border-right: solid 10px rgba(255, 0, 0, 0);\n  border-left: solid 10px rgba(255, 0, 0, 0);\n}\n.button.up {\n  z-index: 2;\n}\n.click .button .speak:nth-child(n + 2) {\n  display: none;\n}\nbutton:hover,\n.click span:nth-child(5):hover ~ button,\n.click span:nth-child(6):hover ~ button {\n  left: 100%;\n  top: 0;\n  transform: translateX(-100%);\n}\nbutton:hover,\n.click span:nth-child(5):hover ~ .button .speak:is(.dblink, .rblink),\n.click span:nth-child(6):hover ~ .button .speak:is(.dblink, .rblink) {\n  display: none !important;\n}\nbutton:hover,\n.click span:nth-child(5):hover ~ .button .speak:is(.doblink),\n.click span:nth-child(6):hover ~ .button .speak:is(.doblink) {\n  display: flex !important;\n}\nbutton:hover,\n.click span:nth-child(2):hover ~ button,\nbutton:hover,\n.click span:nth-child(3):hover ~ button {\n  left: 0%;\n  top: 0;\n  transform: translateX(0%);\n}\nbutton:hover,\n.click span:nth-child(2):hover ~ .button .speak:is(.dblink, .hihi),\n.click span:nth-child(3):hover ~ .button .speak:is(.dblink, .hihi) {\n  display: none !important;\n}\nbutton:hover,\n.click span:nth-child(2):hover ~ .button .speak:is(.rblink),\n.click span:nth-child(3):hover ~ .button .speak:is(.rblink) {\n  display: flex !important;\n}\nbutton:hover,\n.click span:nth-child(1):hover ~ button,\nbutton:hover,\n.click span:nth-child(4):hover ~ button {\n  top: 100%;\n  left: 0;\n  transform: translateY(-100%);\n}\nbutton:hover,\n.click span:nth-child(1):hover ~ .button .speak:is(.dblink, hihi, rblink),\n.click span:nth-child(4):hover ~ .button .speak:is(.dblink, hihi, rblink) {\n  display: none !important;\n}\nbutton:hover,\n.click span:nth-child(1):hover ~ .button .speak:is(.ublink),\n.click span:nth-child(4):hover ~ .button .speak:is(.ublink) {\n  display: flex !important;\n}\n.click {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 0px;\n  position: relative;\n  border-radius: 5px;\n}\n.click span {\n  width: 80px;\n  height: 80px;\n  background-color: transparent;\n  display: flex;\n}\n.shadow {\n  color: transparent;\n  transition: all 0.5s ease;\n  z-index: 1;\n  pointer-events: none;\n  filter: blur(14px);\n  background-color: hsla(240, 24%, 12%, 0.384);\n}\n.speak {\n  font-size: 15px;\n}\n.wrap {\n  position: relative;\n  width: 100px;\n  height: 40px;\n  margin: 0 2rem;\n  color: black;\n  line-height: 40px;\n  font-size: 2rem;\n  text-align: center;\n  font-weight: 400;\n  margin-bottom: 0;\n  display: flex;\n  gap: 5px;\n}\n.eye {\n  position: relative;\n  margin: auto;\n  top: 0;\n  bottom: 0;\n  background: #fff;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  display: inline-block;\n  animation: double-blink 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n  overflow: hidden;\n}\n@keyframes double-blink {\n  0%,\n  8% {\n    height: 40px;\n  }\n  10%,\n  12% {\n    height: 10px;\n  }\n  13% {\n    height: 40px;\n  }\n  14%,\n  16% {\n    height: 0;\n  }\n  18%,\n  100% {\n    height: 40px;\n  }\n}\n.eye:before {\n  content: \"\";\n  position: absolute;\n  margin: auto;\n  width: 10px;\n  height: 10px;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  border-radius: 50%;\n  background: rgba(20, 20, 20, 1);\n}\n.down:before {\n  animation: downb 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n@keyframes downb {\n  0%,\n  10% {\n    top: 0;\n    left: -10px;\n  }\n  20%,\n  40% {\n    top: 50%;\n    left: -10px;\n  }\n  50%,\n  100% {\n    top: 0;\n    left: -10px;\n  }\n}\n.right-blink:before {\n  animation: rightb 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n@keyframes rightb {\n  0%,\n  10% {\n    top: 0;\n    left: 50%;\n  }\n  20%,\n  40% {\n    top: 50%;\n    left: 50%;\n  }\n  50%,\n  100% {\n    top: 0;\n    left: 50%;\n  }\n}\n.up-blink:before {\n  animation: upb 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n@keyframes upb {\n  0%,\n  10% {\n    top: 0;\n    left: 0%;\n  }\n  20%,\n  40% {\n    top: -50%;\n    left: 0%;\n  }\n  50%,\n  100% {\n    top: 0;\n    left: 0%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/barisdogansutcu_bitter-dragon-16.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"click\"></view>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <button class=\"button up\"></button>\n    <view class=\"speak dblink\"></view>\n      <view class=\"wrap\"></view>\n        <view class=\"eye double-blink\"></view>\n        <view class=\"eye double-blink\"></view>\n      </div>\n    </div>\n    <text></text>\n    <text></text>\n    <text></text>\n    <view class=\"speak doblink\"></view>\n      <view class=\"wrap\"></view>\n        <view class=\"eye down\"></view>\n        <view class=\"eye down\"></view>\n      </div>\n    </div>\n    <view class=\"speak rblink\"></view>\n      <view class=\"wrap\"></view>\n        <view class=\"eye right-blink\"></view>\n        <view class=\"eye right-blink\"></view>\n      </div>\n    </div>\n    <view class=\"speak ublink\"></view>\n      <view class=\"wrap\"></view>\n        <view class=\"eye up-blink\"></view>\n        <view class=\"eye up-blink\"></view>\n      </div>\n    </div>\n  </button>\n  <button disabled=\"\" class=\"button shadow\"></button></button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBitterDragon16',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by barisdogansutcu  - Tags: animation, button, funny */\n.button {\n  /* #ifdef H5 */\n  cursor: inherit;\n  /* #endif */\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  border: solid 8rpx rgba(255, 255, 255, 0);\n  background-color: hsl(300, 10%, 8%);\n  font-size: 40rpx;\n  color: white;\n  border-radius: 100rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 200rpx;\n}\n.button:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  transform: translateY(-100%);\n  width: 0;\n  height: 0;\n  border-top: solid 20rpx rgba(255, 0, 0, 0);\n  border-bottom: solid 20rpx hsl(300, 10%, 8%);\n  border-right: solid 20rpx rgba(255, 0, 0, 0);\n  border-left: solid 20rpx rgba(255, 0, 0, 0);\n}\n.button.up {\n  z-index: 2;\n}\n.click .button .speak:nth-child(n + 2) {\n  display: none;\n}\nbutton:hover,\n.click span:nth-child(5):hover ~ button,\n.click span:nth-child(6):hover ~ button {\n  left: 100%;\n  top: 0;\n  transform: translateX(-100%);\n}\nbutton:hover,\n.click span:nth-child(5):hover ~ .button .speak:is(.dblink, .rblink),\n.click span:nth-child(6):hover ~ .button .speak:is(.dblink, .rblink) {\n  display: none !important;\n}\nbutton:hover,\n.click span:nth-child(5):hover ~ .button .speak:is(.doblink),\n.click span:nth-child(6):hover ~ .button .speak:is(.doblink) {\n  display: flex !important;\n}\nbutton:hover,\n.click span:nth-child(2):hover ~ button,\nbutton:hover,\n.click span:nth-child(3):hover ~ button {\n  left: 0%;\n  top: 0;\n  transform: translateX(0%);\n}\nbutton:hover,\n.click span:nth-child(2):hover ~ .button .speak:is(.dblink, .hihi),\n.click span:nth-child(3):hover ~ .button .speak:is(.dblink, .hihi) {\n  display: none !important;\n}\nbutton:hover,\n.click span:nth-child(2):hover ~ .button .speak:is(.rblink),\n.click span:nth-child(3):hover ~ .button .speak:is(.rblink) {\n  display: flex !important;\n}\nbutton:hover,\n.click span:nth-child(1):hover ~ button,\nbutton:hover,\n.click span:nth-child(4):hover ~ button {\n  top: 100%;\n  left: 0;\n  transform: translateY(-100%);\n}\nbutton:hover,\n.click span:nth-child(1):hover ~ .button .speak:is(.dblink, hihi, rblink),\n.click span:nth-child(4):hover ~ .button .speak:is(.dblink, hihi, rblink) {\n  display: none !important;\n}\nbutton:hover,\n.click span:nth-child(1):hover ~ .button .speak:is(.ublink),\n.click span:nth-child(4):hover ~ .button .speak:is(.ublink) {\n  display: flex !important;\n}\n.click {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 0rpx;\n  position: relative;\n  border-radius: 10rpx;\n}\n.click span {\n  width: 160rpx;\n  height: 160rpx;\n  background-color: transparent;\n  display: flex;\n}\n.shadow {\n  color: transparent;\n  transition: all 0.5s ease;\n  z-index: 1;\n  pointer-events: none;\n  \n  background-color: hsla(240, 24%, 12%, 0.384);\n}\n.speak {\n  font-size: 30rpx;\n}\n.wrap {\n  position: relative;\n  width: 200rpx;\n  height: 80rpx;\n  margin: 0 2rem;\n  color: black;\n  line-height: 80rpx;\n  font-size: 2rem;\n  text-align: center;\n  font-weight: 400;\n  margin-bottom: 0;\n  display: flex;\n  gap: 10rpx;\n}\n.eye {\n  position: relative;\n  margin: auto;\n  top: 0;\n  bottom: 0;\n  background: #fff;\n  width: 80rpx;\n  height: 80rpx;\n  border-radius: 50%;\n  display: inline-block;\n  animation: double-blink 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n  overflow: hidden;\n}\n@keyframes double-blink {\n  0%,\n  8% {\n    height: 80rpx;\n  }\n  10%,\n  12% {\n    height: 20rpx;\n  }\n  13% {\n    height: 80rpx;\n  }\n  14%,\n  16% {\n    height: 0;\n  }\n  18%,\n  100% {\n    height: 80rpx;\n  }\n}\n.eye:before {\n  content: \"\";\n  position: absolute;\n  margin: auto;\n  width: 20rpx;\n  height: 20rpx;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  border-radius: 50%;\n  background: rgba(20, 20, 20, 1);\n}\n.down:before {\n  animation: downb 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n@keyframes downb {\n  0%,\n  10% {\n    top: 0;\n    left: -20rpx;\n  }\n  20%,\n  40% {\n    top: 50%;\n    left: -20rpx;\n  }\n  50%,\n  100% {\n    top: 0;\n    left: -20rpx;\n  }\n}\n.right-blink:before {\n  animation: rightb 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n@keyframes rightb {\n  0%,\n  10% {\n    top: 0;\n    left: 50%;\n  }\n  20%,\n  40% {\n    top: 50%;\n    left: 50%;\n  }\n  50%,\n  100% {\n    top: 0;\n    left: 50%;\n  }\n}\n.up-blink:before {\n  animation: upb 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n@keyframes upb {\n  0%,\n  10% {\n    top: 0;\n    left: 0%;\n  }\n  20%,\n  40% {\n    top: -50%;\n    left: 0%;\n  }\n  50%,\n  100% {\n    top: 0;\n    left: 0%;\n  }\n}\n\n",
+    "component_name": "GalaxyBitterDragon16"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 5410,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.846Z",
+  "updated_at": "2025-07-31T07:55:35.846Z"
+}

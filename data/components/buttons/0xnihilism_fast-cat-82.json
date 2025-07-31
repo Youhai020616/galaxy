@@ -1,0 +1,118 @@
+{
+  "id": "0xnihilism_fast-cat-82",
+  "name": "fast-cat-82",
+  "category": "buttons",
+  "author": "0xnihilism",
+  "description": "fast-cat-82 组件 (button, microsoft, animated, brutalism, brutalist, glare effect, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "microsoft",
+    "animated",
+    "brutalism",
+    "brutalist",
+    "glare effect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a class=\"brutalist-button\" href=\"/\">\n  <div class=\"ms-logo\">\n    <div class=\"ms-logo-square\"></div>\n    <div class=\"ms-logo-square\"></div>\n    <div class=\"ms-logo-square\"></div>\n    <div class=\"ms-logo-square\"></div>\n  </div>\n  <div class=\"button-text\">\n    <span>Get it from</span>\n    <span>Microsoft</span>\n  </div>\n</a>",
+    "css": "/* From Uiverse.io by 0xnihilism  - Tags: button, microsoft, animated, brutalism, brutalist, glare effect */\n.brutalist-button {\n  display: flex;\n  align-items: center;\n  width: 169px;\n  height: 60px;\n  background-color: #000;\n  color: #fff;\n  text-decoration: none;\n  font-family: Arial, sans-serif;\n  font-weight: bold;\n  border: 3px solid #fff;\n  outline: 3px solid #000;\n  box-shadow: 6px 6px 0 #00a4ef;\n  transition: all 0.1s ease-out;\n  padding: 0 15px;\n  box-sizing: border-box;\n  position: relative;\n  overflow: hidden;\n}\n\n.brutalist-button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(\n    90deg,\n    transparent,\n    rgba(255, 255, 255, 0.8),\n    transparent\n  );\n  z-index: 1;\n  transition: none;\n  /* Initially hide the pseudo-element */\n  opacity: 0;\n}\n\n@keyframes slide {\n  0% {\n    left: -100%;\n  }\n  100% {\n    left: 100%;\n  }\n}\n\n.brutalist-button:hover::before {\n  /* Show the pseudo-element on hover */\n  opacity: 1;\n  animation: slide 2s infinite;\n}\n\n.brutalist-button:hover {\n  transform: translate(-4px, -4px);\n  box-shadow: 10px 10px 0 #000;\n  background-color: #000;\n  color: #fff;\n}\n\n@keyframes slide {\n  0% {\n    left: -100%;\n  }\n  100% {\n    left: 100%;\n  }\n}\n\n.brutalist-button:active {\n  transform: translate(4px, 4px);\n  box-shadow: 0px 0px 0 #00a4ef;\n  background-color: #fff;\n  color: #000;\n  border-color: #000;\n}\n\n/* Rest of the CSS remains the same */\n\n.ms-logo {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1px;\n  width: 26px;\n  height: 26px;\n  margin-right: 8px;\n  flex-shrink: 0;\n  transition: transform 0.2s ease-out;\n  position: relative;\n  z-index: 1;\n}\n\n.brutalist-button:hover .ms-logo {\n  transform: rotate(-10deg) scale(1.1);\n}\n\n.brutalist-button:active .ms-logo {\n  transform: rotate(10deg) scale(0.9);\n}\n\n.ms-logo-square {\n  width: 100%;\n  height: 100%;\n}\n\n.ms-logo-square:nth-child(1) {\n  background-color: #f25022;\n}\n.ms-logo-square:nth-child(2) {\n  background-color: #7fba00;\n}\n.ms-logo-square:nth-child(3) {\n  background-color: #00a4ef;\n}\n.ms-logo-square:nth-child(4) {\n  background-color: #ffb900;\n}\n\n.button-text {\n  display: flex;\n  flex-direction: column;\n  line-height: 1.2;\n  transition: transform 0.2s ease-out;\n  position: relative;\n  z-index: 1;\n}\n\n.brutalist-button:hover .button-text {\n  transform: skew(-5deg);\n}\n\n.brutalist-button:active .button-text {\n  transform: skew(5deg);\n}\n\n.button-text span:first-child {\n  font-size: 11px;\n  text-transform: uppercase;\n}\n\n.button-text span:last-child {\n  font-size: 16px;\n  text-transform: uppercase;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/0xnihilism_fast-cat-82.html"
+  },
+  "uniapp": {
+    "template": "<navigator class=\"brutalist-button\" href=\"/\"></navigator>\n  <view class=\"ms-logo\"></view>\n    <view class=\"ms-logo-square\"></view>\n    <view class=\"ms-logo-square\"></view>\n    <view class=\"ms-logo-square\"></view>\n    <view class=\"ms-logo-square\"></view>\n  </div>\n  <view class=\"button-text\"></view>\n    <text>Get it from</text>\n    <text>Microsoft</text>\n  </div>\n</a>",
+    "script": "export default {\n  name: 'GalaxyFastCat82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by 0xnihilism  - Tags: button, microsoft, animated, brutalism, brutalist, glare effect */\n.brutalist-button {\n  display: flex;\n  align-items: center;\n  width: 338rpx;\n  height: 120rpx;\n  background-color: #000;\n  color: #fff;\n  text-decoration: none;\n  font-family: Arial, sans-serif;\n  font-weight: bold;\n  border: 6rpx solid #fff;\n  outline: 6rpx solid #000;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 12rpx 12rpx 0 #00a4ef;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.1s ease-out;\n  padding: 0 30rpx;\n  box-sizing: border-box;\n  position: relative;\n  overflow: hidden;\n}\n\n.brutalist-button::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(\n    90deg,\n    transparent,\n    rgba(255, 255, 255, 0.8),\n    transparent\n  );\n  z-index: 1;\n  transition: none;\n  /* Initially hide the pseudo-element */\n  opacity: 0;\n}\n\n@keyframes slide {\n  0% {\n    left: -100%;\n  }\n  100% {\n    left: 100%;\n  }\n}\n\n.brutalist-button:hover::before {\n  /* Show the pseudo-element on hover */\n  opacity: 1;\n  animation: slide 2s infinite;\n}\n\n.brutalist-button:hover {\n  transform: translate(-8rpx, -8rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 0 #000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: #000;\n  color: #fff;\n}\n\n@keyframes slide {\n  0% {\n    left: -100%;\n  }\n  100% {\n    left: 100%;\n  }\n}\n\n.brutalist-button:active {\n  transform: translate(8rpx, 8rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0 #00a4ef;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background-color: #fff;\n  color: #000;\n  border-color: #000;\n}\n\n/* Rest of the CSS remains the same */\n\n.ms-logo {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 2rpx;\n  width: 52rpx;\n  height: 52rpx;\n  margin-right: 16rpx;\n  flex-shrink: 0;\n  transition: transform 0.2s ease-out;\n  position: relative;\n  z-index: 1;\n}\n\n.brutalist-button:hover .ms-logo {\n  transform: rotate(-10deg) scale(1.1);\n}\n\n.brutalist-button:active .ms-logo {\n  transform: rotate(10deg) scale(0.9);\n}\n\n.ms-logo-square {\n  width: 100%;\n  height: 100%;\n}\n\n.ms-logo-square:nth-child(1) {\n  background-color: #f25022;\n}\n.ms-logo-square:nth-child(2) {\n  background-color: #7fba00;\n}\n.ms-logo-square:nth-child(3) {\n  background-color: #00a4ef;\n}\n.ms-logo-square:nth-child(4) {\n  background-color: #ffb900;\n}\n\n.button-text {\n  display: flex;\n  flex-direction: column;\n  line-height: 1.2;\n  transition: transform 0.2s ease-out;\n  position: relative;\n  z-index: 1;\n}\n\n.brutalist-button:hover .button-text {\n  transform: skew(-5deg);\n}\n\n.brutalist-button:active .button-text {\n  transform: skew(5deg);\n}\n\n.button-text span:first-child {\n  font-size: 22rpx;\n  text-transform: uppercase;\n}\n\n.button-text span:last-child {\n  font-size: 32rpx;\n  text-transform: uppercase;\n}\n\n",
+    "component_name": "GalaxyFastCat82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2950,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.358Z",
+  "updated_at": "2025-07-31T07:55:32.358Z"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "Lissy2019_fat-wasp-24",
+  "name": "fat-wasp-24",
+  "category": "loaders",
+  "author": "Lissy2019",
+  "description": "fat-wasp-24 组件 (animation, gradient, loader, spinner, text animation, animated, gradients, svg)",
+  "tags": [
+    "animation",
+    "gradient",
+    "loader",
+    "spinner",
+    "text animation",
+    "animated",
+    "gradients",
+    "svg"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <svg height=\"0\" width=\"0\" viewBox=\"0 0 100 100\" class=\"absolute\">\n    <defs class=\"s-xJBuHA073rTt\" xmlns=\"http://www.w3.org/2000/svg\">\n      <linearGradient class=\"s-xJBuHA073rTt\" gradientUnits=\"userSpaceOnUse\" y2=\"2\" x2=\"0\" y1=\"62\" x1=\"0\" id=\"b\">\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#0369a1\"></stop>\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#67e8f9\" offset=\"1.5\"></stop>\n      </linearGradient>\n      <linearGradient class=\"s-xJBuHA073rTt\" gradientUnits=\"userSpaceOnUse\" y2=\"0\" x2=\"0\" y1=\"64\" x1=\"0\" id=\"c\">\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#0369a1\"></stop>\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#22d3ee\" offset=\"1\"></stop>\n        <animateTransform repeatCount=\"indefinite\" keySplines=\".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1\" keyTimes=\"0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1\" dur=\"8s\" values=\"0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32\" type=\"rotate\" attributeName=\"gradientTransform\"></animateTransform>\n      </linearGradient>\n      <linearGradient class=\"s-xJBuHA073rTt\" gradientUnits=\"userSpaceOnUse\" y2=\"2\" x2=\"0\" y1=\"62\" x1=\"0\" id=\"d\">\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#38bdf8\"></stop>\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#075985\" offset=\"1.5\"></stop>\n      </linearGradient>\n    </defs>\n  </svg>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" class=\"inline-block\">\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"8\" stroke=\"url(#b)\" d=\"M 20,20 L 80,20 \n      L 80,27 L 27,27 L 27,50\n      L 70,50 L 70,57 \n      L 25,57 L 25,80 \n      L 80,80 L 80,87 L 20,87 Z\" class=\"dash\" id=\"E\" pathLength=\"360\"></path>\n  </svg>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" style=\"--rotation-duration:0ms; --rotation-direction:normal;\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" class=\"inline-block\">\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"12\" stroke=\"url(#d)\" d=\"M 20,20 L 50,80 L 80,20\" class=\"dash\" id=\"v\" pathLength=\"360\"></path>\n  </svg>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" class=\"inline-block\">\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"11\" stroke=\"url(#c)\" d=\"M 50,15  \n      A 35,35 0 0 1 85,50  \n      A 35,35 0 0 1 50,85  \n      A 35,35 0 0 1 15,50  \n      A 35,35 0 0 1 50,15 Z\" class=\"spin\" id=\"o\" pathLength=\"360\"></path>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by Lissy2019  - Website: https://uiverse.io/SelfMadeSystem/pretty-treefrog-77 - Name: SelfMadeSystem - Tags: animation, gradient, loader, spinner, text animation, animated, gradients, svg */\n.absolute {\n  position: absolute;\n}\n\n.inline-block {\n  display: inline-block;\n}\n\n.loader {\n  display: flex;\n  margin: 0.25em 0;\n}\n\n.w-2 {\n  width: 0.5em;\n}\n\n.dash {\n  animation: dashArray 2s ease-in-out infinite, dashOffset 2s linear infinite;\n}\n\n.spin {\n  animation: spinDashArray 2s ease-in-out infinite, spin 8s ease-in-out infinite,\n    dashOffset 2s linear infinite;\n  transform-origin: center;\n}\n\n@keyframes dashArray {\n  0% {\n    stroke-dasharray: 0 1 359 0;\n  }\n\n  50% {\n    stroke-dasharray: 0 359 1 0;\n  }\n\n  100% {\n    stroke-dasharray: 359 1 0 0;\n  }\n}\n\n@keyframes spinDashArray {\n  0% {\n    stroke-dasharray: 270 90;\n  }\n\n  50% {\n    stroke-dasharray: 0 360;\n  }\n\n  100% {\n    stroke-dasharray: 250 90;\n  }\n}\n\n@keyframes dashOffset {\n  0% {\n    stroke-dashoffset: 385;\n  }\n\n  100% {\n    stroke-dashoffset: 5;\n  }\n}\n\n@keyframes spin {\n  0% {\n    rotate: 0deg;\n  }\n\n  12.5%,\n  25% {\n    rotate: 270deg;\n  }\n\n  37.5%,\n  50% {\n    rotate: 540deg;\n  }\n\n  62.5%,\n  75% {\n    rotate: 810deg;\n  }\n\n  87.5%,\n  100% {\n    rotate: 1080deg;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Lissy2019_fat-wasp-24.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view height=\"0\" width=\"0\" viewBox=\"0 0 100 100\" class=\"absolute\"></view>\n    <defs class=\"s-xJBuHA073rTt\" xmlns=\"http://www.w3.org/2000/svg\">\n      <linearGradient class=\"s-xJBuHA073rTt\" gradientUnits=\"userSpaceOnUse\" y2=\"2\" x2=\"0\" y1=\"62\" x1=\"0\" id=\"b\">\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#0369a1\"></stop>\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#67e8f9\" offset=\"1.5\"></stop>\n      </linearGradient>\n      <linearGradient class=\"s-xJBuHA073rTt\" gradientUnits=\"userSpaceOnUse\" y2=\"0\" x2=\"0\" y1=\"64\" x1=\"0\" id=\"c\">\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#0369a1\"></stop>\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#22d3ee\" offset=\"1\"></stop>\n        <animateTransform repeatCount=\"indefinite\" keySplines=\".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1\" keyTimes=\"0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1\" dur=\"8s\" values=\"0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32\" type=\"rotate\" attributeName=\"gradientTransform\"></animateTransform>\n      </linearGradient>\n      <linearGradient class=\"s-xJBuHA073rTt\" gradientUnits=\"userSpaceOnUse\" y2=\"2\" x2=\"0\" y1=\"62\" x1=\"0\" id=\"d\">\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#38bdf8\"></stop>\n        <stop class=\"s-xJBuHA073rTt\" stop-color=\"#075985\" offset=\"1.5\"></stop>\n      </linearGradient>\n    </defs>\n  </svg>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" class=\"inline-block\"></view>\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"8\" stroke=\"url(#b)\" d=\"M 20,20 L 80,20 \n      L 80,27 L 27,27 L 27,50\n      L 70,50 L 70,57 \n      L 25,57 L 25,80 \n      L 80,80 L 80,87 L 20,87 Z\" class=\"dash\" id=\"E\" pathLength=\"360\"></path>\n  </svg>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" style=\"--rotation-duration:0ms; --rotation-direction:normal;\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" class=\"inline-block\"></view>\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"12\" stroke=\"url(#d)\" d=\"M 20,20 L 50,80 L 80,20\" class=\"dash\" id=\"v\" pathLength=\"360\"></path>\n  </svg>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" class=\"inline-block\"></view>\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"11\" stroke=\"url(#c)\" d=\"M 50,15  \n      A 35,35 0 0 1 85,50  \n      A 35,35 0 0 1 50,85  \n      A 35,35 0 0 1 15,50  \n      A 35,35 0 0 1 50,15 Z\" class=\"spin\" id=\"o\" pathLength=\"360\"></path>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFatWasp24',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Lissy2019  - Website: https://uiverse.io/SelfMadeSystem/pretty-treefrog-77 - Name: SelfMadeSystem - Tags: animation, gradient, loader, spinner, text animation, animated, gradients, svg */\n.absolute {\n  position: absolute;\n}\n\n.inline-block {\n  display: inline-block;\n}\n\n.loader {\n  display: flex;\n  margin: 0.25em 0;\n}\n\n.w-2 {\n  width: 0.5em;\n}\n\n.dash {\n  animation: dashArray 2s ease-in-out infinite, dashOffset 2s linear infinite;\n}\n\n.spin {\n  animation: spinDashArray 2s ease-in-out infinite, spin 8s ease-in-out infinite,\n    dashOffset 2s linear infinite;\n  transform-origin: center;\n}\n\n@keyframes dashArray {\n  0% {\n    stroke-dasharray: 0 1 359 0;\n  }\n\n  50% {\n    stroke-dasharray: 0 359 1 0;\n  }\n\n  100% {\n    stroke-dasharray: 359 1 0 0;\n  }\n}\n\n@keyframes spinDashArray {\n  0% {\n    stroke-dasharray: 270 90;\n  }\n\n  50% {\n    stroke-dasharray: 0 360;\n  }\n\n  100% {\n    stroke-dasharray: 250 90;\n  }\n}\n\n@keyframes dashOffset {\n  0% {\n    stroke-dashoffset: 385;\n  }\n\n  100% {\n    stroke-dashoffset: 5;\n  }\n}\n\n@keyframes spin {\n  0% {\n    rotate: 0deg;\n  }\n\n  12.5%,\n  25% {\n    rotate: 270deg;\n  }\n\n  37.5%,\n  50% {\n    rotate: 540deg;\n  }\n\n  62.5%,\n  75% {\n    rotate: 810deg;\n  }\n\n  87.5%,\n  100% {\n    rotate: 1080deg;\n  }\n}\n\n",
+    "component_name": "GalaxyFatWasp24"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 3852,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.647Z",
+  "updated_at": "2025-07-31T07:55:39.647Z"
+}

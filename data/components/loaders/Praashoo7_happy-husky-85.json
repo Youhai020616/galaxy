@@ -1,0 +1,89 @@
+{
+  "id": "Praashoo7_happy-husky-85",
+  "name": "happy-husky-85",
+  "category": "loaders",
+  "author": "Praashoo7",
+  "description": "happy-husky-85 组件 (animation, loader)",
+  "tags": [
+    "animation",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loader2\">\n  <div class=\"load21\"></div>\n  <div class=\"load22\"></div>\n  <div class=\"load23\"></div>\n  <div class=\"load24\"></div>\n  <div class=\"load25\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Praashoo7 - Tags: animation, loader */\n.loader2 {\n  display: flex;\n  align-items: center;\n}\n\n.load21 {\n  position: relative;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  border-radius: 5px;\n  opacity: 0;\n  background-color: white;\n  box-shadow: 0 1px 7px rgba(0,0,0,0.3);\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.2s;\n}\n\n.load22 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 5px;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.4s;\n}\n\n.load23 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 5px;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.6s;\n}\n\n.load24 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 5px;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.8s;\n}\n\n.load25 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 5px;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 1s;\n}\n\n@keyframes flow_21 {\n  0% {\n    transform: translateY(1em);\n    opacity: 1;\n  }\n\n  50% {\n    transform: translateY(-1em);\n    opacity: 1;\n  }\n\n  100% {\n    transform: translateY(1em);\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Praashoo7_happy-husky-85.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader2\"></view>\n  <view class=\"load21\"></view>\n  <view class=\"load22\"></view>\n  <view class=\"load23\"></view>\n  <view class=\"load24\"></view>\n  <view class=\"load25\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHappyHusky85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7 - Tags: animation, loader */\n.loader2 {\n  display: flex;\n  align-items: center;\n}\n\n.load21 {\n  position: relative;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  border-radius: 10rpx;\n  opacity: 0;\n  background-color: white;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 2rpx 14rpx rgba(0,0,0,0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.2s;\n}\n\n.load22 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 10rpx;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.4s;\n}\n\n.load23 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 10rpx;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.6s;\n}\n\n.load24 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 10rpx;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 0.8s;\n}\n\n.load25 {\n  position: absolute;\n  content: \"\";\n  height: 0.2em;\n  width: 4em;\n  opacity: 0;\n  border-radius: 10rpx;\n  background-color: white;\n  animation: 2s flow_21 infinite;\n  animation-delay: 1s;\n}\n\n@keyframes flow_21 {\n  0% {\n    transform: translateY(1em);\n    opacity: 1;\n  }\n\n  50% {\n    transform: translateY(-1em);\n    opacity: 1;\n  }\n\n  100% {\n    transform: translateY(1em);\n    opacity: 1;\n  }\n}\n",
+    "component_name": "GalaxyHappyHusky85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1551,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.985Z",
+  "updated_at": "2025-07-31T07:55:39.985Z"
+}

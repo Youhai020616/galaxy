@@ -1,0 +1,113 @@
+{
+  "id": "ahmedrizk101_green-snake-95",
+  "name": "green-snake-95",
+  "category": "buttons",
+  "author": "ahmedrizk101",
+  "description": "green-snake-95 组件 (button, #button, 3d button, animation)",
+  "tags": [
+    "button",
+    "#button",
+    "3d button",
+    "animation"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\nclick me\n</button>",
+    "css": "/* From Uiverse.io by ahmedrizk101 - Tags: button, #button, 3d button */\n.button {\n  width: 200px;\n  height: 40px;\n  background: yellow;\n  box-shadow: -6px 6px 0 0 hsl(60, 100%, 40%);\n  border: none;\n  outline: none;\n  position: relative;\n  font-size: 1.2rem;\n  text-transform: uppercase;\n  font-weight: bold;\n}\n\n.button:active {\n  box-shadow: -3px 3px 0 0 hsl(60, 100%, 40%);\n  top: 3px;\n  left: -3px;\n  background-color: hsl(60, 100%, 45%);\n}\n\n.button::before {\n  content: '';\n  position: absolute;\n  background: none;\n  width: 0;\n  height: 0;\n  border: 6px solid transparent;\n  border-right: 6px solid hsl(60, 100%, 40%);\n  border-left-width: 0;\n  top: 0;\n  left: -6px;\n}\n\n.button:active::before {\n  border: 3px solid transparent;\n  border-right: 3px solid hsl(60, 100%, 40%);\n}\n\n.button::after {\n  content: '';\n  position: absolute;\n  background: none;\n  width: 0;\n  height: 0;\n  border: 6px solid transparent;\n  border-top: 6px solid hsl(60, 100%, 40%);\n  border-bottom-width: 0;\n  bottom: -6px;\n  right: 0;\n}\n\n.button:active:after {\n  border: 3px solid transparent;\n  border-top: 3px solid hsl(60, 100%, 40%);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ahmedrizk101_green-snake-95.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\nclick me\n</button>",
+    "script": "export default {\n  name: 'GalaxyGreenSnake95',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ahmedrizk101 - Tags: button, #button, 3d button */\n.button {\n  width: 400rpx;\n  height: 80rpx;\n  background: yellow;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -12rpx 12rpx 0 0 hsl(60, 100%, 40%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: none;\n  outline: none;\n  position: relative;\n  font-size: 1.2rem;\n  text-transform: uppercase;\n  font-weight: bold;\n}\n\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -6rpx 6rpx 0 0 hsl(60, 100%, 40%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  top: 6rpx;\n  left: -6rpx;\n  background-color: hsl(60, 100%, 45%);\n}\n\n.button::before {\n  content: '';\n  position: absolute;\n  background: none;\n  width: 0;\n  height: 0;\n  border: 12rpx solid transparent;\n  border-right: 12rpx solid hsl(60, 100%, 40%);\n  border-left-width: 0;\n  top: 0;\n  left: -12rpx;\n}\n\n.button:active::before {\n  border: 6rpx solid transparent;\n  border-right: 6rpx solid hsl(60, 100%, 40%);\n}\n\n.button::after {\n  content: '';\n  position: absolute;\n  background: none;\n  width: 0;\n  height: 0;\n  border: 12rpx solid transparent;\n  border-top: 12rpx solid hsl(60, 100%, 40%);\n  border-bottom-width: 0;\n  bottom: -12rpx;\n  right: 0;\n}\n\n.button:active:after {\n  border: 6rpx solid transparent;\n  border-top: 6rpx solid hsl(60, 100%, 40%);\n}\n\n",
+    "component_name": "GalaxyGreenSnake95"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1164,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.540Z",
+  "updated_at": "2025-07-31T07:55:35.540Z"
+}

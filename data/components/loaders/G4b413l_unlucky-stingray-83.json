@@ -1,0 +1,85 @@
+{
+  "id": "G4b413l_unlucky-stingray-83",
+  "name": "unlucky-stingray-83",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "unlucky-stingray-83 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"dot-wave\">\n    <div class=\"dot-wave__dot\"></div>\n    <div class=\"dot-wave__dot\"></div>\n    <div class=\"dot-wave__dot\"></div>\n    <div class=\"dot-wave__dot\"></div>\n</div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader */\n.dot-wave {\n  --uib-size: 50px;\n  --uib-speed: 0.6s;\n  --uib-color: #0d0909;\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: space-between;\n  width: var(--uib-size);\n  height: calc(var(--uib-size) * 0.17);\n  padding-top: calc(var(--uib-size) * 0.34);\n}\n\n.dot-wave__dot {\n  flex-shrink: 0;\n  width: calc(var(--uib-size) * 0.17);\n  height: calc(var(--uib-size) * 0.17);\n  border-radius: 50%;\n  background-color: var(--uib-color);\n  will-change: transform;\n}\n\n.dot-wave__dot:nth-child(1) {\n  animation: jump824 var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.45) infinite;\n}\n\n.dot-wave__dot:nth-child(2) {\n  animation: jump824 var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.3) infinite;\n}\n\n.dot-wave__dot:nth-child(3) {\n  animation: jump824 var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.15) infinite;\n}\n\n.dot-wave__dot:nth-child(4) {\n  animation: jump824 var(--uib-speed) ease-in-out infinite;\n}\n\n@keyframes jump824 {\n  0%,\n  100% {\n    transform: translateY(0px);\n  }\n\n  50% {\n    transform: translateY(-200%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_unlucky-stingray-83.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"dot-wave\"></view>\n    <view class=\"dot-wave__dot\"></view>\n    <view class=\"dot-wave__dot\"></view>\n    <view class=\"dot-wave__dot\"></view>\n    <view class=\"dot-wave__dot\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUnluckyStingray83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader */\n.dot-wave {\n  --uib-size: 100rpx;\n  --uib-speed: 0.6s;\n  --uib-color: #0d0909;\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: space-between;\n  width: var(--uib-size);\n  height: calc(var(--uib-size) * 0.17);\n  padding-top: calc(var(--uib-size) * 0.34);\n}\n\n.dot-wave__dot {\n  flex-shrink: 0;\n  width: calc(var(--uib-size) * 0.17);\n  height: calc(var(--uib-size) * 0.17);\n  border-radius: 50%;\n  background-color: var(--uib-color);\n  will-change: transform;\n}\n\n.dot-wave__dot:nth-child(1) {\n  animation: jump824 var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.45) infinite;\n}\n\n.dot-wave__dot:nth-child(2) {\n  animation: jump824 var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.3) infinite;\n}\n\n.dot-wave__dot:nth-child(3) {\n  animation: jump824 var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.15) infinite;\n}\n\n.dot-wave__dot:nth-child(4) {\n  animation: jump824 var(--uib-speed) ease-in-out infinite;\n}\n\n@keyframes jump824 {\n  0%,\n  100% {\n    transform: translateY(0rpx);\n  }\n\n  50% {\n    transform: translateY(-200%);\n  }\n}\n\n",
+    "component_name": "GalaxyUnluckyStingray83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1323,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.331Z",
+  "updated_at": "2025-07-31T07:55:39.331Z"
+}

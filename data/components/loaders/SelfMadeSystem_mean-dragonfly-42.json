@@ -1,0 +1,87 @@
+{
+  "id": "SelfMadeSystem_mean-dragonfly-42",
+  "name": "mean-dragonfly-42",
+  "category": "loaders",
+  "author": "SelfMadeSystem",
+  "description": "mean-dragonfly-42 组件 (animation, loader, animated, google)",
+  "tags": [
+    "animation",
+    "loader",
+    "animated",
+    "google"
+  ],
+  "original": {
+    "html": "<svg xmlns=\"://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\">\n  <g id=\"a\">\n    <g style=\"--c1: 120; --c2: 0; --delay: -0.5s\">\n      <path id=\"b\">\n      </path>\n      <path id=\"c\">\n      </path>\n    </g>\n    <g style=\"--c1: 210; --c2: 60\" transform=\"rotate(180 12 12)\">\n      <path id=\"b\">\n      </path>\n      <path id=\"c\">\n      </path>\n    </g>\n  </g>\n</svg>",
+    "css": "/* From Uiverse.io by SelfMadeSystem - Tags: animation, loader, animated, google */\n/* Google flip animation thing */\n\n#a {\n  transform-origin: center;\n  animation: a 2s step-end infinite;\n}\n\n@keyframes a {\n  0% {\n    transform: rotate(90deg);\n  }\n\n  25% {\n    transform: rotate(180deg);\n  }\n\n  50% {\n    transform: rotate(270deg);\n  }\n\n  75% {\n    transform: rotate(360deg);\n  }\n}\n\n#b {\n  animation: b1 1s linear infinite, b2 2s step-end infinite;\n  animation-delay: var(--delay, 0s);\n}\n\n@keyframes b1 {\n  0%,\n    100% {\n    d: path(\"M 0 12 a 12 12 0 0 1 24 0 a 12 12 0 0 0 -24 0\");\n  }\n\n  25%,\n    75% {\n    d: path(\"M 0 12 a 12 12 0 0 1 24 0 a 12 0 0 0 0 -24 0\");\n  }\n}\n\n@keyframes b2 {\n  0% {\n    fill: hsl(var(--c1), 100%, 43%);\n  }\n\n  50% {\n    fill: hsl(var(--c2), 100%, 43%);\n  }\n}\n\n#c {\n  animation: c1 1s linear infinite, c2 2s linear infinite;\n  animation-delay: var(--delay, 0s);\n}\n\n@keyframes c1 {\n  0%,\n    25%,\n    75%,\n    100% {\n    d: path(\"M 0 12 h 24 a 12 0  0 0 1 -24 0\");\n  }\n\n  50% {\n    d: path(\"M 0 12 h 24 a 12 12 0 0 1 -24 0\");\n  }\n}\n\n@keyframes c2 {\n  0%,\n    25% {\n    fill: hsl(var(--c1), 100%, 43%);\n  }\n\n  12.5%,\n    37.5% {\n    fill: hsl(var(--c1), 100%, 25%);\n  }\n\n  50%,\n    75% {\n    fill: hsl(var(--c2), 100%, 43%);\n  }\n\n  62.5%,\n    87.5% {\n    fill: hsl(var(--c2), 100%, 25%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SelfMadeSystem_mean-dragonfly-42.html"
+  },
+  "uniapp": {
+    "template": "<view xmlns=\"://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\"></view>\n  <g id=\"a\">\n    <g style=\"--c1: 120; --c2: 0; --delay: -0.5s\">\n      <path id=\"b\">\n      </path>\n      <path id=\"c\">\n      </path>\n    </g>\n    <g style=\"--c1: 210; --c2: 60\" transform=\"rotate(180 12 12)\">\n      <path id=\"b\">\n      </path>\n      <path id=\"c\">\n      </path>\n    </g>\n  </g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyMeanDragonfly42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem - Tags: animation, loader, animated, google */\n/* Google flip animation thing */\n\n#a {\n  transform-origin: center;\n  animation: a 2s step-end infinite;\n}\n\n@keyframes a {\n  0% {\n    transform: rotate(90deg);\n  }\n\n  25% {\n    transform: rotate(180deg);\n  }\n\n  50% {\n    transform: rotate(270deg);\n  }\n\n  75% {\n    transform: rotate(360deg);\n  }\n}\n\n#b {\n  animation: b1 1s linear infinite, b2 2s step-end infinite;\n  animation-delay: var(--delay, 0s);\n}\n\n@keyframes b1 {\n  0%,\n    100% {\n    d: path(\"M 0 12 a 12 12 0 0 1 24 0 a 12 12 0 0 0 -24 0\");\n  }\n\n  25%,\n    75% {\n    d: path(\"M 0 12 a 12 12 0 0 1 24 0 a 12 0 0 0 0 -24 0\");\n  }\n}\n\n@keyframes b2 {\n  0% {\n    fill: hsl(var(--c1), 100%, 43%);\n  }\n\n  50% {\n    fill: hsl(var(--c2), 100%, 43%);\n  }\n}\n\n#c {\n  animation: c1 1s linear infinite, c2 2s linear infinite;\n  animation-delay: var(--delay, 0s);\n}\n\n@keyframes c1 {\n  0%,\n    25%,\n    75%,\n    100% {\n    d: path(\"M 0 12 h 24 a 12 0  0 0 1 -24 0\");\n  }\n\n  50% {\n    d: path(\"M 0 12 h 24 a 12 12 0 0 1 -24 0\");\n  }\n}\n\n@keyframes c2 {\n  0%,\n    25% {\n    fill: hsl(var(--c1), 100%, 43%);\n  }\n\n  12.5%,\n    37.5% {\n    fill: hsl(var(--c1), 100%, 25%);\n  }\n\n  50%,\n    75% {\n    fill: hsl(var(--c2), 100%, 43%);\n  }\n\n  62.5%,\n    87.5% {\n    fill: hsl(var(--c2), 100%, 25%);\n  }\n}\n",
+    "component_name": "GalaxyMeanDragonfly42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1714,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.280Z",
+  "updated_at": "2025-07-31T07:55:40.280Z"
+}

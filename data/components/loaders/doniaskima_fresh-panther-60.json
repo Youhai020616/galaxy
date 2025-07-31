@@ -1,0 +1,88 @@
+{
+  "id": "doniaskima_fresh-panther-60",
+  "name": "fresh-panther-60",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "fresh-panther-60 组件 (simple, material design, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 80px;\n  height: 40px;\n  border-radius: 100px 100px 0 0;\n  position: relative;\n  overflow: hidden;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  inset: 0 0 -100%;\n  background: radial-gradient(farthest-side,#ffd738 80%,#0000) left 70% top    20%/15px 15px,\n    radial-gradient(farthest-side,#020308 92%,#0000) left 65% bottom 19%/12px 12px,\n    radial-gradient(farthest-side,#ecfefe 92%,#0000) left 70% bottom 20%/15px 15px,\n    linear-gradient(#9eddfe 50%,#020308 0);\n  background-repeat: no-repeat;\n  animation: l5 2s infinite;\n}\n\n@keyframes l5 {\n  0%,20% {\n    transform: rotate(0)\n  }\n\n  40%,60% {\n    transform: rotate(.5turn)\n  }\n\n  80%,100% {\n    transform: rotate(1turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_fresh-panther-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyFreshPanther60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 160rpx;\n  height: 80rpx;\n  border-radius: 200rpx 200rpx 0 0;\n  position: relative;\n  overflow: hidden;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  inset: 0 0 -100%;\n  background: radial-gradient(farthest-side,#ffd738 80%,#0000) left 70% top    20%/30rpx 30rpx,\n    radial-gradient(farthest-side,#020308 92%,#0000) left 65% bottom 19%/24rpx 24rpx,\n    radial-gradient(farthest-side,#ecfefe 92%,#0000) left 70% bottom 20%/30rpx 30rpx,\n    linear-gradient(#9eddfe 50%,#020308 0);\n  background-repeat: no-repeat;\n  animation: l5 2s infinite;\n}\n\n@keyframes l5 {\n  0%,20% {\n    transform: rotate(0)\n  }\n\n  40%,60% {\n    transform: rotate(.5turn)\n  }\n\n  80%,100% {\n    transform: rotate(1turn)\n  }\n}\n\n",
+    "component_name": "GalaxyFreshPanther60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 861,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.271Z",
+  "updated_at": "2025-07-31T07:55:41.271Z"
+}

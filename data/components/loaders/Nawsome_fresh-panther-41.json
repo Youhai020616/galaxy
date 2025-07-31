@@ -1,0 +1,90 @@
+{
+  "id": "Nawsome_fresh-panther-41",
+  "name": "fresh-panther-41",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "fresh-panther-41 组件 (loader, gears, animation)",
+  "tags": [
+    "loader",
+    "gears",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"gearbox\">\n  <div class=\"overlay\"></div>\n    <div class=\"gear one\">\n      <div class=\"gear-inner\">\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n      </div>\n    </div>\n    <div class=\"gear two\">\n      <div class=\"gear-inner\">\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n      </div>\n    </div>\n    <div class=\"gear three\">\n      <div class=\"gear-inner\">\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n      </div>\n    </div>\n    <div class=\"gear four large\">\n      <div class=\"gear-inner\">\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n        <div class=\"bar\"></div>\n      </div>\n    </div>\n  </div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader, gears */\n@keyframes clockwise {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes counter-clockwise {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}\n\n.gearbox {\n  background: #111;\n  height: 150px;\n  width: 200px;\n  position: relative;\n  border: none;\n  overflow: hidden;\n  border-radius: 6px;\n  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);\n}\n\n.gearbox .overlay {\n  border-radius: 6px;\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 10;\n  box-shadow: inset 0px 0px 20px black;\n  transition: background 0.2s;\n}\n\n.gearbox .overlay {\n  background: transparent;\n}\n\n.gear {\n  position: absolute;\n  height: 60px;\n  width: 60px;\n  box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;\n  border-radius: 30px;\n}\n\n.gear.large {\n  height: 120px;\n  width: 120px;\n  border-radius: 60px;\n}\n\n.gear.large:after {\n  height: 96px;\n  width: 96px;\n  border-radius: 48px;\n  margin-left: -48px;\n  margin-top: -48px;\n}\n\n.gear.one {\n  top: 12px;\n  left: 10px;\n}\n\n.gear.two {\n  top: 61px;\n  left: 60px;\n}\n\n.gear.three {\n  top: 110px;\n  left: 10px;\n}\n\n.gear.four {\n  top: 13px;\n  left: 128px;\n}\n\n.gear:after {\n  content: \"\";\n  position: absolute;\n  height: 36px;\n  width: 36px;\n  border-radius: 36px;\n  background: #111;\n  top: 50%;\n  left: 50%;\n  margin-left: -18px;\n  margin-top: -18px;\n  z-index: 3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;\n}\n\n.gear-inner {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  background: #555;\n  border-radius: 30px;\n  border: 1px solid rgba(255, 255, 255, 0.1);\n}\n\n.large .gear-inner {\n  border-radius: 60px;\n}\n\n.gear.one .gear-inner {\n  animation: counter-clockwise 3s infinite linear;\n}\n\n.gear.two .gear-inner {\n  animation: clockwise 3s infinite linear;\n}\n\n.gear.three .gear-inner {\n  animation: counter-clockwise 3s infinite linear;\n}\n\n.gear.four .gear-inner {\n  animation: counter-clockwise 6s infinite linear;\n}\n\n.gear-inner .bar {\n  background: #555;\n  height: 16px;\n  width: 76px;\n  position: absolute;\n  left: 50%;\n  margin-left: -38px;\n  top: 50%;\n  margin-top: -8px;\n  border-radius: 2px;\n  border-left: 1px solid rgba(255, 255, 255, 0.1);\n  border-right: 1px solid rgba(255, 255, 255, 0.1);\n}\n\n.large .gear-inner .bar {\n  margin-left: -68px;\n  width: 136px;\n}\n\n.gear-inner .bar:nth-child(2) {\n  transform: rotate(60deg);\n}\n\n.gear-inner .bar:nth-child(3) {\n  transform: rotate(120deg);\n}\n\n.gear-inner .bar:nth-child(4) {\n  transform: rotate(90deg);\n}\n\n.gear-inner .bar:nth-child(5) {\n  transform: rotate(30deg);\n}\n\n.gear-inner .bar:nth-child(6) {\n  transform: rotate(150deg);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_fresh-panther-41.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"gearbox\"></view>\n  <view class=\"overlay\"></view>\n    <view class=\"gear one\"></view>\n      <view class=\"gear-inner\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n      </div>\n    </div>\n    <view class=\"gear two\"></view>\n      <view class=\"gear-inner\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n      </div>\n    </div>\n    <view class=\"gear three\"></view>\n      <view class=\"gear-inner\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n      </div>\n    </div>\n    <view class=\"gear four large\"></view>\n      <view class=\"gear-inner\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n        <view class=\"bar\"></view>\n      </div>\n    </div>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyFreshPanther41',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader, gears */\n@keyframes clockwise {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes counter-clockwise {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}\n\n.gearbox {\n  background: #111;\n  height: 300rpx;\n  width: 400rpx;\n  position: relative;\n  border: none;\n  overflow: hidden;\n  border-radius: 12rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 2rpx rgba(255, 255, 255, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.gearbox .overlay {\n  border-radius: 12rpx;\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 10;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 40rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: background 0.2s;\n}\n\n.gearbox .overlay {\n  background: transparent;\n}\n\n.gear {\n  position: absolute;\n  height: 120rpx;\n  width: 120rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx -2rpx 0rpx 0rpx #888888, 0rpx 2rpx 0rpx 0rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 60rpx;\n}\n\n.gear.large {\n  height: 240rpx;\n  width: 240rpx;\n  border-radius: 120rpx;\n}\n\n.gear.large:after {\n  height: 192rpx;\n  width: 192rpx;\n  border-radius: 96rpx;\n  margin-left: -96rpx;\n  margin-top: -96rpx;\n}\n\n.gear.one {\n  top: 24rpx;\n  left: 20rpx;\n}\n\n.gear.two {\n  top: 122rpx;\n  left: 120rpx;\n}\n\n.gear.three {\n  top: 220rpx;\n  left: 20rpx;\n}\n\n.gear.four {\n  top: 26rpx;\n  left: 256rpx;\n}\n\n.gear:after {\n  content: \"\";\n  position: absolute;\n  height: 72rpx;\n  width: 72rpx;\n  border-radius: 72rpx;\n  background: #111;\n  top: 50%;\n  left: 50%;\n  margin-left: -36rpx;\n  margin-top: -36rpx;\n  z-index: 3;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 20rpx rgba(255, 255, 255, 0.1), inset 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1), inset 0rpx 4rpx 0rpx 0rpx #090909, inset 0rpx -2rpx 0rpx 0rpx #888888;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.gear-inner {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  background: #555;\n  border-radius: 60rpx;\n  border: 2rpx solid rgba(255, 255, 255, 0.1);\n}\n\n.large .gear-inner {\n  border-radius: 120rpx;\n}\n\n.gear.one .gear-inner {\n  animation: counter-clockwise 3s infinite linear;\n}\n\n.gear.two .gear-inner {\n  animation: clockwise 3s infinite linear;\n}\n\n.gear.three .gear-inner {\n  animation: counter-clockwise 3s infinite linear;\n}\n\n.gear.four .gear-inner {\n  animation: counter-clockwise 6s infinite linear;\n}\n\n.gear-inner .bar {\n  background: #555;\n  height: 32rpx;\n  width: 152rpx;\n  position: absolute;\n  left: 50%;\n  margin-left: -76rpx;\n  top: 50%;\n  margin-top: -16rpx;\n  border-radius: 4rpx;\n  border-left: 2rpx solid rgba(255, 255, 255, 0.1);\n  border-right: 2rpx solid rgba(255, 255, 255, 0.1);\n}\n\n.large .gear-inner .bar {\n  margin-left: -136rpx;\n  width: 272rpx;\n}\n\n.gear-inner .bar:nth-child(2) {\n  transform: rotate(60deg);\n}\n\n.gear-inner .bar:nth-child(3) {\n  transform: rotate(120deg);\n}\n\n.gear-inner .bar:nth-child(4) {\n  transform: rotate(90deg);\n}\n\n.gear-inner .bar:nth-child(5) {\n  transform: rotate(30deg);\n}\n\n.gear-inner .bar:nth-child(6) {\n  transform: rotate(150deg);\n}\n",
+    "component_name": "GalaxyFreshPanther41"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3704,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.789Z",
+  "updated_at": "2025-07-31T07:55:39.789Z"
+}

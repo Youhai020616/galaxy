@@ -1,0 +1,90 @@
+{
+  "id": "Shoh2008_curly-wombat-86",
+  "name": "curly-wombat-86",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "curly-wombat-86 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 148px;\n  height: 148px;\n  border-radius: 50%;\n  margin: -64px auto 0;\n  background-color: #ccc;\n  background-image: radial-gradient(#fff 4px, #0000  0),\n                    radial-gradient(#fff 4px, #0000  0),\n                    radial-gradient(#fff 4px, #0000  0),\n                    radial-gradient(#fff 4px, #0000  0);\n  background-position: 24px center, 8px center, -8px center, -24px center;\n  position: relative;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) inset;\n  animation: flash 1s linear infinite;\n}\n\n.loader::before , .loader::after {\n  content: '';\n  position: absolute;\n  border: 1px solid #ccc;\n  border-top-color: #0000;\n  left: 50%;\n  top: 100%;\n  transform: translateX(-50%);\n  width: 16px;\n  height: 18px;\n  background: #fff;\n}\n\n.loader::before {\n  width: 0px;\n  height: 64px;\n  transform: translate(-50% , 18px);\n}\n\n@keyframes flash {\n  0% {\n    background-image: radial-gradient(#DDD 4px, #0000  0),\n        radial-gradient(#DDD 4px, #0000  0),\n        radial-gradient(#DDD 4px, #0000  0),\n        radial-gradient(#DDD 4px, #0000  0);\n  }\n\n  25% {\n    background-image: radial-gradient(#DDD 4px, #0000  0),\n      radial-gradient(#DDD 4px, #0000  0),\n      radial-gradient(#DDD 4px, #0000  0),\n      radial-gradient(#fff 4px, #0000  0);\n  }\n\n  50% {\n    background-image: radial-gradient(#DDD 4px, #0000  0),\n      radial-gradient(#DDD 4px, #0000  0),\n      radial-gradient(#fff 4px, #0000  0),\n      radial-gradient(#fff 4px, #0000  0);\n  }\n\n  75% {\n    background-image: radial-gradient(#DDD 4px, #0000  0),\n        radial-gradient(#fff 4px, #0000  0),\n        radial-gradient(#fff 4px, #0000  0),\n        radial-gradient(#fff 4px, #0000  0);\n  }\n\n  100% {\n    background-image: radial-gradient(#fff 4px, #0000  0),\n        radial-gradient(#fff 4px, #0000  0),\n        radial-gradient(#fff 4px, #0000  0),\n        radial-gradient(#fff 4px, #0000  0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_curly-wombat-86.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyCurlyWombat86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 296rpx;\n  height: 296rpx;\n  border-radius: 50%;\n  margin: -128rpx auto 0;\n  background-color: #ccc;\n  background-image: radial-gradient(#fff 8rpx, #0000  0),\n                    radial-gradient(#fff 8rpx, #0000  0),\n                    radial-gradient(#fff 8rpx, #0000  0),\n                    radial-gradient(#fff 8rpx, #0000  0);\n  background-position: 48rpx center, 16rpx center, -16rpx center, -48rpx center;\n  position: relative;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.15) inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: flash 1s linear infinite;\n}\n\n.loader::before , .loader::after {\n  content: '';\n  position: absolute;\n  border: 2rpx solid #ccc;\n  border-top-color: #0000;\n  left: 50%;\n  top: 100%;\n  transform: translateX(-50%);\n  width: 32rpx;\n  height: 36rpx;\n  background: #fff;\n}\n\n.loader::before {\n  width: 0rpx;\n  height: 128rpx;\n  transform: translate(-50% , 36rpx);\n}\n\n@keyframes flash {\n  0% {\n    background-image: radial-gradient(#DDD 8rpx, #0000  0),\n        radial-gradient(#DDD 8rpx, #0000  0),\n        radial-gradient(#DDD 8rpx, #0000  0),\n        radial-gradient(#DDD 8rpx, #0000  0);\n  }\n\n  25% {\n    background-image: radial-gradient(#DDD 8rpx, #0000  0),\n      radial-gradient(#DDD 8rpx, #0000  0),\n      radial-gradient(#DDD 8rpx, #0000  0),\n      radial-gradient(#fff 8rpx, #0000  0);\n  }\n\n  50% {\n    background-image: radial-gradient(#DDD 8rpx, #0000  0),\n      radial-gradient(#DDD 8rpx, #0000  0),\n      radial-gradient(#fff 8rpx, #0000  0),\n      radial-gradient(#fff 8rpx, #0000  0);\n  }\n\n  75% {\n    background-image: radial-gradient(#DDD 8rpx, #0000  0),\n        radial-gradient(#fff 8rpx, #0000  0),\n        radial-gradient(#fff 8rpx, #0000  0),\n        radial-gradient(#fff 8rpx, #0000  0);\n  }\n\n  100% {\n    background-image: radial-gradient(#fff 8rpx, #0000  0),\n        radial-gradient(#fff 8rpx, #0000  0),\n        radial-gradient(#fff 8rpx, #0000  0),\n        radial-gradient(#fff 8rpx, #0000  0);\n  }\n}\n",
+    "component_name": "GalaxyCurlyWombat86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1976,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.336Z",
+  "updated_at": "2025-07-31T07:55:40.336Z"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "JkHuger_ugly-shrimp-50",
+  "name": "ugly-shrimp-50",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "ugly-shrimp-50 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"square\" id=\"sq1\"></div>\n  <div class=\"square\" id=\"sq2\"></div>\n  <div class=\"square\" id=\"sq3\"></div>\n  <div class=\"square\" id=\"sq4\"></div>\n  <div class=\"square\" id=\"sq5\"></div>\n  <div class=\"square\" id=\"sq6\"></div>\n  <div class=\"square\" id=\"sq7\"></div>\n  <div class=\"square\" id=\"sq8\"></div>\n  <div class=\"square\" id=\"sq9\"></div>\n</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n@keyframes loader_5191 {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n.square {\n  background: #ddd;\n  width: 10px;\n  height: 10px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-top: -5px;\n  margin-left: -5px;\n}\n\n#sq1 {\n  margin-top: -25px;\n  margin-left: -25px;\n  animation: loader_5191 675ms ease-in-out 0s infinite alternate;\n}\n\n#sq2 {\n  margin-top: -25px;\n  animation: loader_5191 675ms ease-in-out 75ms infinite alternate;\n}\n\n#sq3 {\n  margin-top: -25px;\n  margin-left: 15px;\n  animation: loader_5191 675ms ease-in-out 150ms infinite;\n}\n\n#sq4 {\n  margin-left: -25px;\n  animation: loader_5191 675ms ease-in-out 225ms infinite;\n}\n\n#sq5 {\n  animation: loader_5191 675ms ease-in-out 300ms infinite;\n}\n\n#sq6 {\n  margin-left: 15px;\n  animation: loader_5191 675ms ease-in-out 375ms infinite;\n}\n\n#sq7 {\n  margin-top: 15px;\n  margin-left: -25px;\n  animation: loader_5191 675ms ease-in-out 450ms infinite;\n}\n\n#sq8 {\n  margin-top: 15px;\n  animation: loader_5191 675ms ease-in-out 525ms infinite;\n}\n\n#sq9 {\n  margin-top: 15px;\n  margin-left: 15px;\n  animation: loader_5191 675ms ease-in-out 600ms infinite;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_ugly-shrimp-50.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"square\" id=\"sq1\"></view>\n  <view class=\"square\" id=\"sq2\"></view>\n  <view class=\"square\" id=\"sq3\"></view>\n  <view class=\"square\" id=\"sq4\"></view>\n  <view class=\"square\" id=\"sq5\"></view>\n  <view class=\"square\" id=\"sq6\"></view>\n  <view class=\"square\" id=\"sq7\"></view>\n  <view class=\"square\" id=\"sq8\"></view>\n  <view class=\"square\" id=\"sq9\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUglyShrimp50',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n@keyframes loader_5191 {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n.square {\n  background: #ddd;\n  width: 20rpx;\n  height: 20rpx;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-top: -10rpx;\n  margin-left: -10rpx;\n}\n\n#sq1 {\n  margin-top: -50rpx;\n  margin-left: -50rpx;\n  animation: loader_5191 675ms ease-in-out 0s infinite alternate;\n}\n\n#sq2 {\n  margin-top: -50rpx;\n  animation: loader_5191 675ms ease-in-out 75ms infinite alternate;\n}\n\n#sq3 {\n  margin-top: -50rpx;\n  margin-left: 30rpx;\n  animation: loader_5191 675ms ease-in-out 150ms infinite;\n}\n\n#sq4 {\n  margin-left: -50rpx;\n  animation: loader_5191 675ms ease-in-out 225ms infinite;\n}\n\n#sq5 {\n  animation: loader_5191 675ms ease-in-out 300ms infinite;\n}\n\n#sq6 {\n  margin-left: 30rpx;\n  animation: loader_5191 675ms ease-in-out 375ms infinite;\n}\n\n#sq7 {\n  margin-top: 30rpx;\n  margin-left: -50rpx;\n  animation: loader_5191 675ms ease-in-out 450ms infinite;\n}\n\n#sq8 {\n  margin-top: 30rpx;\n  animation: loader_5191 675ms ease-in-out 525ms infinite;\n}\n\n#sq9 {\n  margin-top: 30rpx;\n  margin-left: 30rpx;\n  animation: loader_5191 675ms ease-in-out 600ms infinite;\n}\n",
+    "component_name": "GalaxyUglyShrimp50"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1545,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.554Z",
+  "updated_at": "2025-07-31T07:55:39.554Z"
+}

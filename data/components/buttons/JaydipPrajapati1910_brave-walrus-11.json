@@ -1,0 +1,114 @@
+{
+  "id": "JaydipPrajapati1910_brave-walrus-11",
+  "name": "brave-walrus-11",
+  "category": "buttons",
+  "author": "JaydipPrajapati1910",
+  "description": "brave-walrus-11 组件 (button, hover, hover effect, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n    <div class=\"center\">\n      <button class=\"btn\">\n        <svg class=\"border\" viewBox=\"0 0 180 60\" height=\"60px\" width=\"180px\">\n          <polyline class=\"bg-line\" points=\"179,1 179,59 1,59 1,1 179,1\"></polyline>\n          <polyline class=\"hl-line\" points=\"179,1 179,59 1,59 1,1 179,1\"></polyline>\n        </svg>\n        <span>HOVER ME</span>\n      </button>\n    </div>\n  </div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, hover, hover effect */\n.container {\n  width: 400px;\n  height: 400px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.center {\n  width: 180px;\n  height: 60px;\n  position: absolute;\n}\n\n.btn {\n  width: 180px;\n  height: 60px;\n  cursor: pointer;\n  background: transparent;\n  border: 2px solid #222;\n  outline: none;\n  transition: 1s ease-in-out;\n}\n\n.btn svg {\n  position: absolute;\n  left: 0;\n  top: 0;\n  fill: none;\n  stroke: #91C9FF;\n  stroke-dasharray: 150 480;\n  stroke-dashoffset: 150;\n  transition: 1s ease-in-out;\n}\n\n.btn:hover {\n  transition: 1s ease-in-out;\n  background: #4F95DA;\n}\n\n.btn:hover span {\n  transition: 1s ease-in-out;\n  color: #fff;\n}\n\n.btn:hover svg {\n  stroke-dashoffset: -480;\n}\n\n.btn span {\n  color: black;\n  font-size: 18px;\n  font-weight: 600;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JaydipPrajapati1910_brave-walrus-11.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n    <view class=\"center\"></view>\n      <button class=\"btn\"></button>\n        <view class=\"border\" viewBox=\"0 0 180 60\" height=\"60px\" width=\"180px\"></view>\n          <polyline class=\"bg-line\" points=\"179,1 179,59 1,59 1,1 179,1\"></polyline>\n          <polyline class=\"hl-line\" points=\"179,1 179,59 1,59 1,1 179,1\"></polyline>\n        </svg>\n        <text>HOVER ME</text>\n      </button>\n    </div>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyBraveWalrus11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, hover, hover effect */\n.container {\n  width: 800rpx;\n  height: 800rpx;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.center {\n  width: 360rpx;\n  height: 120rpx;\n  position: absolute;\n}\n\n.btn {\n  width: 360rpx;\n  height: 120rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: transparent;\n  border: 4rpx solid #222;\n  outline: none;\n  transition: 1s ease-in-out;\n}\n\n.btn svg {\n  position: absolute;\n  left: 0;\n  top: 0;\n  fill: none;\n  stroke: #91C9FF;\n  stroke-dasharray: 150 480;\n  stroke-dashoffset: 150;\n  transition: 1s ease-in-out;\n}\n\n.btn:hover {\n  transition: 1s ease-in-out;\n  background: #4F95DA;\n}\n\n.btn:hover span {\n  transition: 1s ease-in-out;\n  color: #fff;\n}\n\n.btn:hover svg {\n  stroke-dashoffset: -480;\n}\n\n.btn span {\n  color: black;\n  font-size: 36rpx;\n  font-weight: 600;\n}\n\n",
+    "component_name": "GalaxyBraveWalrus11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1342,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.441Z",
+  "updated_at": "2025-07-31T07:55:33.441Z"
+}

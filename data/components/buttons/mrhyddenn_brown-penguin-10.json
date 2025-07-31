@@ -1,0 +1,118 @@
+{
+  "id": "mrhyddenn_brown-penguin-10",
+  "name": "brown-penguin-10",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "brown-penguin-10 组件 (tooltip, button, animation, gradient, interactive)",
+  "tags": [
+    "tooltip",
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"uiverse\">\n    <span class=\"tooltip\">uiverse.io</span>\n    <span>\n        Tooltip\n    </span>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: tooltip, button */\n.uiverse {\n  position: relative;\n  background: #ffffff;\n  color: #000;\n  padding: 15px;\n  margin: 10px;\n  border-radius: 10px;\n  width: 150px;\n  height: 50px;\n  font-size: 17px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);\n  cursor: pointer;\n  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n}\n\n.tooltip {\n  position: absolute;\n  top: 0;\n  font-size: 14px;\n  background: #ffffff;\n  color: #ffffff;\n  padding: 5px 8px;\n  border-radius: 5px;\n  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 8px;\n  width: 8px;\n  background: #ffffff;\n  bottom: -3px;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n}\n\n.uiverse:hover .tooltip {\n  top: -45px;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}\n\nsvg:hover span,\nsvg:hover .tooltip {\n  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);\n}\n\n.uiverse:hover,\n.uiverse:hover .tooltip,\n.uiverse:hover .tooltip::before {\n  background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));\n  color: #ffffff;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_brown-penguin-10.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"uiverse\"></view>\n    <text class=\"tooltip\">uiverse.io</text>\n    <text></text>\n        Tooltip\n    </span>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBrownPenguin10',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: tooltip, button */\n.uiverse {\n  position: relative;\n  background: #ffffff;\n  color: #000;\n  padding: 30rpx;\n  margin: 20rpx;\n  border-radius: 20rpx;\n  width: 300rpx;\n  height: 100rpx;\n  font-size: 34rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 20rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n}\n\n.tooltip {\n  position: absolute;\n  top: 0;\n  font-size: 28rpx;\n  background: #ffffff;\n  color: #ffffff;\n  padding: 10rpx 16rpx;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 20rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 16rpx;\n  width: 16rpx;\n  background: #ffffff;\n  bottom: -6rpx;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n}\n\n.uiverse:hover .tooltip {\n  top: -90rpx;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}\n\nsvg:hover span,\nsvg:hover .tooltip {\n  /* #ifdef H5 */\n  text-shadow: 0rpx -2rpx 0rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n}\n\n.uiverse:hover,\n.uiverse:hover .tooltip,\n.uiverse:hover .tooltip::before {\n  background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));\n  color: #ffffff;\n}\n",
+    "component_name": "GalaxyBrownPenguin10"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1477,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.319Z",
+  "updated_at": "2025-07-31T07:55:37.319Z"
+}

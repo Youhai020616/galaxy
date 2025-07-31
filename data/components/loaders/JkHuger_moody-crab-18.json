@@ -1,0 +1,85 @@
+{
+  "id": "JkHuger_moody-crab-18",
+  "name": "moody-crab-18",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "moody-crab-18 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div id=\"col\">\n  <div id=\"img-wrap\">\n    <span class=\"loader\"></span>\n</div></div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n#col {\n  width: 50%;\n  margin: 0 auto;\n}\n\n.loader {\n  content: ' ';\n  border: 5px solid #333;\n  border-radius: 30px;\n  height: 30px;\n  left: 50%;\n  margin: -15px 0 0 -15px;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  width: 30px;\n  animation: pulsate 1s ease-out;\n  animation-iteration-count: infinite;\n}\n\n@keyframes pulsate {\n  0% {\n    transform: scale(.1);\n    opacity: 0.0;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    transform: scale(1.2);\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_moody-crab-18.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"col\"></view>\n  <view id=\"img-wrap\"></view>\n    <text class=\"loader\"></text>\n</div></div>",
+    "script": "export default {\n  name: 'GalaxyMoodyCrab18',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n#col {\n  width: 50%;\n  margin: 0 auto;\n}\n\n.loader {\n  content: ' ';\n  border: 10rpx solid #333;\n  border-radius: 60rpx;\n  height: 60rpx;\n  left: 50%;\n  margin: -30rpx 0 0 -30rpx;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  width: 60rpx;\n  animation: pulsate 1s ease-out;\n  animation-iteration-count: infinite;\n}\n\n@keyframes pulsate {\n  0% {\n    transform: scale(.1);\n    opacity: 0.0;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    transform: scale(1.2);\n    opacity: 0;\n  }\n}\n",
+    "component_name": "GalaxyMoodyCrab18"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 609,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.497Z",
+  "updated_at": "2025-07-31T07:55:39.497Z"
+}

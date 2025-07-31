@@ -1,0 +1,118 @@
+{
+  "id": "Tsiangana_sweet-rattlesnake-28",
+  "name": "sweet-rattlesnake-28",
+  "category": "buttons",
+  "author": "Tsiangana",
+  "description": "sweet-rattlesnake-28 组件 (gradient, button, delete, hover effect, button hover effect, animation, interactive)",
+  "tags": [
+    "gradient",
+    "button",
+    "delete",
+    "hover effect",
+    "button hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"Btn\">\n  <div class=\"sign\">\n    <svg viewBox=\"0 0 16 16\" class=\"bi bi-trash3-fill\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5\"></path>\n    </svg>\n  </div>\n\n  <div class=\"text\">Delete</div>\n</button>",
+    "css": "/* From Uiverse.io by Tsiangana  - Tags: gradient, button, delete, hover effect, button hover effect  */\n.Btn {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  width: 45px;\n  height: 45px;\n  border: none;\n  border-radius: 50%;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n  transition-duration: 0.3s;\n  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);\n  background: rgb(255, 135, 65);\n  background: linear-gradient(\n    250deg,\n    rgba(255, 135, 65, 1) 15%,\n    rgba(255, 65, 65, 1) 65%\n  );\n}\n\n/* plus sign */\n.sign {\n  width: 100%;\n  transition-duration: 0.3s;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.sign svg {\n  width: 17px;\n}\n\n.sign svg path {\n  fill: white;\n}\n/* text */\n.text {\n  position: absolute;\n  right: 0%;\n  width: 0%;\n  opacity: 0;\n  color: white;\n  font-size: 1.2em;\n  font-weight: 600;\n  transition-duration: 0.3s;\n}\n/* hover effect on button width */\n.Btn:hover {\n  width: 125px;\n  border-radius: 40px;\n  transition-duration: 0.3s;\n}\n\n.Btn:hover .sign {\n  width: 30%;\n  transition-duration: 0.3s;\n  padding-left: 20px;\n}\n/* hover effect button's text */\n.Btn:hover .text {\n  opacity: 1;\n  width: 70%;\n  transition-duration: 0.3s;\n  padding-right: 10px;\n}\n/* button click effect*/\n.Btn:active {\n  transform: translate(2px, 2px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Tsiangana_sweet-rattlesnake-28.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"Btn\"></button>\n  <view class=\"sign\"></view>\n    <view viewBox=\"0 0 16 16\" class=\"bi bi-trash3-fill\" fill=\"currentColor\" height=\"18\" width=\"18\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5\"></path>\n    </svg>\n  </div>\n\n  <view class=\"text\">Delete</view>\n</button>",
+    "script": "export default {\n  name: 'GalaxySweetRattlesnake28',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Tsiangana  - Tags: gradient, button, delete, hover effect, button hover effect  */\n.Btn {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  width: 90rpx;\n  height: 90rpx;\n  border: none;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n  transition-duration: 0.3s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.199);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: rgb(255, 135, 65);\n  background: linear-gradient(\n    250deg,\n    rgba(255, 135, 65, 1) 15%,\n    rgba(255, 65, 65, 1) 65%\n  );\n}\n\n/* plus sign */\n.sign {\n  width: 100%;\n  transition-duration: 0.3s;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.sign svg {\n  width: 34rpx;\n}\n\n.sign svg path {\n  fill: white;\n}\n/* text */\n.text {\n  position: absolute;\n  right: 0%;\n  width: 0%;\n  opacity: 0;\n  color: white;\n  font-size: 1.2em;\n  font-weight: 600;\n  transition-duration: 0.3s;\n}\n/* hover effect on button width */\n.Btn:hover {\n  width: 250rpx;\n  border-radius: 80rpx;\n  transition-duration: 0.3s;\n}\n\n.Btn:hover .sign {\n  width: 30%;\n  transition-duration: 0.3s;\n  padding-left: 40rpx;\n}\n/* hover effect button's text */\n.Btn:hover .text {\n  opacity: 1;\n  width: 70%;\n  transition-duration: 0.3s;\n  padding-right: 20rpx;\n}\n/* button click effect*/\n.Btn:active {\n  transform: translate(4rpx, 4rpx);\n}\n\n",
+    "component_name": "GalaxySweetRattlesnake28"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2020,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.039Z",
+  "updated_at": "2025-07-31T07:55:35.039Z"
+}

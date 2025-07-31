@@ -1,0 +1,87 @@
+{
+  "id": "ashish-yadv_hungry-otter-20",
+  "name": "hungry-otter-20",
+  "category": "loaders",
+  "author": "ashish-yadv",
+  "description": "hungry-otter-20 组件 (loader, simple loader, dot loader, animation)",
+  "tags": [
+    "loader",
+    "simple loader",
+    "dot loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n        <li class=\"dots\" id=\"dot-1\"></li>\n        <li class=\"dots\" id=\"dot-2\"></li>\n        <li class=\"dots\" id=\"dot-3\"></li>\n    </div>",
+    "css": "/* From Uiverse.io by ashish-yadv - Tags: loader, simple loader, dot loader */\n.loader {\n  display: flex;\n  gap: 0.6em;\n  list-style: none;\n}\n\n.dots {\n  width: 15px;\n  height: 15px;\n  border-radius: 50%;\n  background: #ffffff;\n}\n\n#dot-1 {\n  animation: loader-1 0.6s infinite ease-in-out;\n}\n\n@keyframes loader-1 {\n  50% {\n    opacity: 0;\n    transform: translateY(-0.3em);\n  }\n}\n\n#dot-2 {\n  animation: loader-2 0.6s 0.3s infinite ease-in-out;\n}\n\n@keyframes loader-2 {\n  50% {\n    opacity: 0;\n    transform: translateY(-0.3em);\n  }\n}\n\n#dot-3 {\n  animation: loader-3 0.6s 0.6s infinite ease-in-out;\n}\n\n@keyframes loader-3 {\n  50% {\n    opacity: 0;\n    transform: translateY(-0.3em);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/ashish-yadv_hungry-otter-20.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n        <view class=\"dots\" id=\"dot-1\"></view>\n        <view class=\"dots\" id=\"dot-2\"></view>\n        <view class=\"dots\" id=\"dot-3\"></view>\n    </div>",
+    "script": "export default {\n  name: 'GalaxyHungryOtter20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ashish-yadv - Tags: loader, simple loader, dot loader */\n.loader {\n  display: flex;\n  gap: 0.6em;\n  list-style: none;\n}\n\n.dots {\n  width: 30rpx;\n  height: 30rpx;\n  border-radius: 50%;\n  background: #ffffff;\n}\n\n#dot-1 {\n  animation: loader-1 0.6s infinite ease-in-out;\n}\n\n@keyframes loader-1 {\n  50% {\n    opacity: 0;\n    transform: translateY(-0.3em);\n  }\n}\n\n#dot-2 {\n  animation: loader-2 0.6s 0.3s infinite ease-in-out;\n}\n\n@keyframes loader-2 {\n  50% {\n    opacity: 0;\n    transform: translateY(-0.3em);\n  }\n}\n\n#dot-3 {\n  animation: loader-3 0.6s 0.6s infinite ease-in-out;\n}\n\n@keyframes loader-3 {\n  50% {\n    opacity: 0;\n    transform: translateY(-0.3em);\n  }\n}\n",
+    "component_name": "GalaxyHungryOtter20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 846,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.999Z",
+  "updated_at": "2025-07-31T07:55:40.999Z"
+}

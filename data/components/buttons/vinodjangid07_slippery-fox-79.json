@@ -1,0 +1,120 @@
+{
+  "id": "vinodjangid07_slippery-fox-79",
+  "name": "slippery-fox-79",
+  "category": "buttons",
+  "author": "vinodjangid07",
+  "description": "slippery-fox-79 组件 (tooltip, button, hover, trash, delete, hover effect, bin, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "button",
+    "hover",
+    "trash",
+    "delete",
+    "hover effect",
+    "bin",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"deleteButton\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 50 59\" class=\"bin\">\n    <path fill=\"#B5BAC1\" d=\"M0 7.5C0 5.01472 2.01472 3 4.5 3H45.5C47.9853 3 50 5.01472 50 7.5V7.5C50 8.32843 49.3284 9 48.5 9H1.5C0.671571 9 0 8.32843 0 7.5V7.5Z\"></path>\n    <path fill=\"#B5BAC1\" d=\"M17 3C17 1.34315 18.3431 0 20 0H29.3125C30.9694 0 32.3125 1.34315 32.3125 3V3H17V3Z\"></path>\n    <path fill=\"#B5BAC1\" d=\"M2.18565 18.0974C2.08466 15.821 3.903 13.9202 6.18172 13.9202H43.8189C46.0976 13.9202 47.916 15.821 47.815 18.0975L46.1699 55.1775C46.0751 57.3155 44.314 59.0002 42.1739 59.0002H7.8268C5.68661 59.0002 3.92559 57.3155 3.83073 55.1775L2.18565 18.0974ZM18.0003 49.5402C16.6196 49.5402 15.5003 48.4209 15.5003 47.0402V24.9602C15.5003 23.5795 16.6196 22.4602 18.0003 22.4602C19.381 22.4602 20.5003 23.5795 20.5003 24.9602V47.0402C20.5003 48.4209 19.381 49.5402 18.0003 49.5402ZM29.5003 47.0402C29.5003 48.4209 30.6196 49.5402 32.0003 49.5402C33.381 49.5402 34.5003 48.4209 34.5003 47.0402V24.9602C34.5003 23.5795 33.381 22.4602 32.0003 22.4602C30.6196 22.4602 29.5003 23.5795 29.5003 24.9602V47.0402Z\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path>\n    <path fill=\"#B5BAC1\" d=\"M2 13H48L47.6742 21.28H2.32031L2 13Z\"></path>\n  </svg>\n\n  <span class=\"tooltip\">Delete</span>\n</button>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, trash, delete, hover effect, bin */\n.deleteButton {\n  width: 40px;\n  height: 40px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 3px;\n  background-color: transparent;\n  border: none;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  overflow: hidden;\n}\n.deleteButton svg {\n  width: 44%;\n}\n.deleteButton:hover {\n  background-color: rgb(237, 56, 56);\n  overflow: visible;\n}\n.bin path {\n  transition: all 0.2s;\n}\n.deleteButton:hover .bin path {\n  fill: #fff;\n}\n.deleteButton:active {\n  transform: scale(0.98);\n}\n.tooltip {\n  --tooltip-color: rgb(41, 41, 41);\n  position: absolute;\n  top: -40px;\n  background-color: var(--tooltip-color);\n  color: white;\n  border-radius: 5px;\n  font-size: 12px;\n  padding: 8px 12px;\n  font-weight: 600;\n  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.105);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  transition: all 0.5s;\n}\n.tooltip::before {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  transform: rotate(45deg);\n  content: \"\";\n  background-color: var(--tooltip-color);\n  bottom: -10%;\n}\n.deleteButton:hover .tooltip {\n  opacity: 1;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vinodjangid07_slippery-fox-79.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"deleteButton\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 50 59\" class=\"bin\"></view>\n    <path fill=\"#B5BAC1\" d=\"M0 7.5C0 5.01472 2.01472 3 4.5 3H45.5C47.9853 3 50 5.01472 50 7.5V7.5C50 8.32843 49.3284 9 48.5 9H1.5C0.671571 9 0 8.32843 0 7.5V7.5Z\"></path>\n    <path fill=\"#B5BAC1\" d=\"M17 3C17 1.34315 18.3431 0 20 0H29.3125C30.9694 0 32.3125 1.34315 32.3125 3V3H17V3Z\"></path>\n    <path fill=\"#B5BAC1\" d=\"M2.18565 18.0974C2.08466 15.821 3.903 13.9202 6.18172 13.9202H43.8189C46.0976 13.9202 47.916 15.821 47.815 18.0975L46.1699 55.1775C46.0751 57.3155 44.314 59.0002 42.1739 59.0002H7.8268C5.68661 59.0002 3.92559 57.3155 3.83073 55.1775L2.18565 18.0974ZM18.0003 49.5402C16.6196 49.5402 15.5003 48.4209 15.5003 47.0402V24.9602C15.5003 23.5795 16.6196 22.4602 18.0003 22.4602C19.381 22.4602 20.5003 23.5795 20.5003 24.9602V47.0402C20.5003 48.4209 19.381 49.5402 18.0003 49.5402ZM29.5003 47.0402C29.5003 48.4209 30.6196 49.5402 32.0003 49.5402C33.381 49.5402 34.5003 48.4209 34.5003 47.0402V24.9602C34.5003 23.5795 33.381 22.4602 32.0003 22.4602C30.6196 22.4602 29.5003 23.5795 29.5003 24.9602V47.0402Z\" clip-rule=\"evenodd\" fill-rule=\"evenodd\"></path>\n    <path fill=\"#B5BAC1\" d=\"M2 13H48L47.6742 21.28H2.32031L2 13Z\"></path>\n  </svg>\n\n  <text class=\"tooltip\">Delete</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySlipperyFox79',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, trash, delete, hover effect, bin */\n.deleteButton {\n  width: 80rpx;\n  height: 80rpx;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 6rpx;\n  background-color: transparent;\n  border: none;\n  border-radius: 16rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  position: relative;\n  overflow: hidden;\n}\n.deleteButton svg {\n  width: 44%;\n}\n.deleteButton:hover {\n  background-color: rgb(237, 56, 56);\n  overflow: visible;\n}\n.bin path {\n  transition: all 0.2s;\n}\n.deleteButton:hover .bin path {\n  fill: #fff;\n}\n.deleteButton:active {\n  transform: scale(0.98);\n}\n.tooltip {\n  --tooltip-color: rgb(41, 41, 41);\n  position: absolute;\n  top: -80rpx;\n  background-color: var(--tooltip-color);\n  color: white;\n  border-radius: 10rpx;\n  font-size: 24rpx;\n  padding: 16rpx 24rpx;\n  font-weight: 600;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 20rpx 20rpx rgba(0, 0, 0, 0.105);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  transition: all 0.5s;\n}\n.tooltip::before {\n  position: absolute;\n  width: 20rpx;\n  height: 20rpx;\n  transform: rotate(45deg);\n  content: \"\";\n  background-color: var(--tooltip-color);\n  bottom: -10%;\n}\n.deleteButton:hover .tooltip {\n  opacity: 1;\n}\n\n",
+    "component_name": "GalaxySlipperyFox79"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2595,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.247Z",
+  "updated_at": "2025-07-31T07:55:38.247Z"
+}

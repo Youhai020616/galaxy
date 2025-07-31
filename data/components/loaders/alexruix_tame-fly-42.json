@@ -1,0 +1,89 @@
+{
+  "id": "alexruix_tame-fly-42",
+  "name": "tame-fly-42",
+  "category": "loaders",
+  "author": "alexruix",
+  "description": "tame-fly-42 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  position: relative;\n  width: 120px;\n  height: 90px;\n  margin: 0 auto;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  bottom: 30px;\n  left: 50px;\n  height: 30px;\n  width: 30px;\n  border-radius: 50%;\n  background: #2a9d8f;\n  animation: loading-bounce 0.5s ease-in-out infinite alternate;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  right: 0;\n  top: 0;\n  height: 7px;\n  width: 45px;\n  border-radius: 4px;\n  box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;\n  animation: loading-step 1s ease-in-out infinite;\n}\n\n@keyframes loading-bounce {\n  0% {\n    transform: scale(1, 0.7);\n  }\n\n  40% {\n    transform: scale(0.8, 1.2);\n  }\n\n  60% {\n    transform: scale(1, 1);\n  }\n\n  100% {\n    bottom: 140px;\n  }\n}\n\n@keyframes loading-step {\n  0% {\n    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),\n            0 10px 0 #f2f2f2,\n            -35px 50px 0 #f2f2f2,\n            -70px 90px 0 #f2f2f2;\n  }\n\n  100% {\n    box-shadow: 0 10px 0 #f2f2f2,\n            -35px 50px 0 #f2f2f2,\n            -70px 90px 0 #f2f2f2,\n            -70px 90px 0 rgba(0, 0, 0, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/alexruix_tame-fly-42.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyTameFly42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  position: relative;\n  width: 240rpx;\n  height: 180rpx;\n  margin: 0 auto;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  bottom: 60rpx;\n  left: 100rpx;\n  height: 60rpx;\n  width: 60rpx;\n  border-radius: 50%;\n  background: #2a9d8f;\n  animation: loading-bounce 0.5s ease-in-out infinite alternate;\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  right: 0;\n  top: 0;\n  height: 14rpx;\n  width: 90rpx;\n  border-radius: 8rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 10rpx 0 #f2f2f2, -70rpx 100rpx 0 #f2f2f2, -140rpx 190rpx 0 #f2f2f2;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: loading-step 1s ease-in-out infinite;\n}\n\n@keyframes loading-bounce {\n  0% {\n    transform: scale(1, 0.7);\n  }\n\n  40% {\n    transform: scale(0.8, 1.2);\n  }\n\n  60% {\n    transform: scale(1, 1);\n  }\n\n  100% {\n    bottom: 280rpx;\n  }\n}\n\n@keyframes loading-step {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 0 rgba(0, 0, 0, 0),\n            0 20rpx 0 #f2f2f2,\n            -70rpx 100rpx 0 #f2f2f2,\n            -140rpx 180rpx 0 #f2f2f2;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 0 #f2f2f2,\n            -70rpx 100rpx 0 #f2f2f2,\n            -140rpx 180rpx 0 #f2f2f2,\n            -140rpx 180rpx 0 rgba(0, 0, 0, 0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n",
+    "component_name": "GalaxyTameFly42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1177,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.930Z",
+  "updated_at": "2025-07-31T07:55:40.930Z"
+}

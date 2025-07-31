@@ -1,0 +1,85 @@
+{
+  "id": "alexruix_fluffy-starfish-52",
+  "name": "fluffy-starfish-52",
+  "category": "loaders",
+  "author": "alexruix",
+  "description": "fluffy-starfish-52 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"cell d-0\"></div>\n  <div class=\"cell d-1\"></div>\n  <div class=\"cell d-2\"></div>\n\n  <div class=\"cell d-1\"></div>\n  <div class=\"cell d-2\"></div>\n  \n  \n  <div class=\"cell d-2\"></div>\n  <div class=\"cell d-3\"></div>\n  \n  \n  <div class=\"cell d-3\"></div>\n  <div class=\"cell d-4\"></div>\n  \n  \n</div>",
+    "css": "/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  --cell-size: 52px;\n  --cell-spacing: 1px;\n  --cells: 3;\n  --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));\n  display: flex;\n  flex-wrap: wrap;\n  width: var(--total-size);\n  height: var(--total-size);\n}\n\n.cell {\n  flex: 0 0 var(--cell-size);\n  margin: var(--cell-spacing);\n  background-color: transparent;\n  box-sizing: border-box;\n  border-radius: 4px;\n  animation: 1.5s ripple ease infinite;\n}\n\n.cell.d-1 {\n  animation-delay: 100ms;\n}\n\n.cell.d-2 {\n  animation-delay: 200ms;\n}\n\n.cell.d-3 {\n  animation-delay: 300ms;\n}\n\n.cell.d-4 {\n  animation-delay: 400ms;\n}\n\n.cell:nth-child(1) {\n  --cell-color: #00FF87;\n}\n\n.cell:nth-child(2) {\n  --cell-color: #0CFD95;\n}\n\n.cell:nth-child(3) {\n  --cell-color: #17FBA2;\n}\n\n.cell:nth-child(4) {\n  --cell-color: #23F9B2;\n}\n\n.cell:nth-child(5) {\n  --cell-color: #30F7C3;\n}\n\n.cell:nth-child(6) {\n  --cell-color: #3DF5D4;\n}\n\n.cell:nth-child(7) {\n  --cell-color: #45F4DE;\n}\n\n.cell:nth-child(8) {\n  --cell-color: #53F1F0;\n}\n\n.cell:nth-child(9) {\n  --cell-color: #60EFFF;\n}\n\n/*Animation*/\n@keyframes ripple {\n  0% {\n    background-color: transparent;\n  }\n\n  30% {\n    background-color: var(--cell-color);\n  }\n\n  60% {\n    background-color: transparent;\n  }\n\n  100% {\n    background-color: transparent;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/alexruix_fluffy-starfish-52.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"cell d-0\"></view>\n  <view class=\"cell d-1\"></view>\n  <view class=\"cell d-2\"></view>\n\n  <view class=\"cell d-1\"></view>\n  <view class=\"cell d-2\"></view>\n  \n  \n  <view class=\"cell d-2\"></view>\n  <view class=\"cell d-3\"></view>\n  \n  \n  <view class=\"cell d-3\"></view>\n  <view class=\"cell d-4\"></view>\n  \n  \n</div>",
+    "script": "export default {\n  name: 'GalaxyFluffyStarfish52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  --cell-size: 104rpx;\n  --cell-spacing: 2rpx;\n  --cells: 3;\n  --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));\n  display: flex;\n  flex-wrap: wrap;\n  width: var(--total-size);\n  height: var(--total-size);\n}\n\n.cell {\n  flex: 0 0 var(--cell-size);\n  margin: var(--cell-spacing);\n  background-color: transparent;\n  box-sizing: border-box;\n  border-radius: 8rpx;\n  animation: 1.5s ripple ease infinite;\n}\n\n.cell.d-1 {\n  animation-delay: 100ms;\n}\n\n.cell.d-2 {\n  animation-delay: 200ms;\n}\n\n.cell.d-3 {\n  animation-delay: 300ms;\n}\n\n.cell.d-4 {\n  animation-delay: 400ms;\n}\n\n.cell:nth-child(1) {\n  --cell-color: #00FF87;\n}\n\n.cell:nth-child(2) {\n  --cell-color: #0CFD95;\n}\n\n.cell:nth-child(3) {\n  --cell-color: #17FBA2;\n}\n\n.cell:nth-child(4) {\n  --cell-color: #23F9B2;\n}\n\n.cell:nth-child(5) {\n  --cell-color: #30F7C3;\n}\n\n.cell:nth-child(6) {\n  --cell-color: #3DF5D4;\n}\n\n.cell:nth-child(7) {\n  --cell-color: #45F4DE;\n}\n\n.cell:nth-child(8) {\n  --cell-color: #53F1F0;\n}\n\n.cell:nth-child(9) {\n  --cell-color: #60EFFF;\n}\n\n/*Animation*/\n@keyframes ripple {\n  0% {\n    background-color: transparent;\n  }\n\n  30% {\n    background-color: var(--cell-color);\n  }\n\n  60% {\n    background-color: transparent;\n  }\n\n  100% {\n    background-color: transparent;\n  }\n}\n",
+    "component_name": "GalaxyFluffyStarfish52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1655,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.917Z",
+  "updated_at": "2025-07-31T07:55:40.917Z"
+}

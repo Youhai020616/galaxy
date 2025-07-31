@@ -1,0 +1,92 @@
+{
+  "id": "adilsarfraz02_tough-seahorse-89",
+  "name": "tough-seahorse-89",
+  "category": "loaders",
+  "author": "adilsarfraz02",
+  "description": "tough-seahorse-89 组件 (loader, spinner, smooth, custom, transition, effect loader, loading animation, animation, gradient)",
+  "tags": [
+    "loader",
+    "spinner",
+    "smooth",
+    "custom",
+    "transition",
+    "effect loader",
+    "loading animation",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"custom-loader\"></div>",
+    "css": "/* From Uiverse.io by adilsarfraz02  - Tags: loader, spinner, smooth, custom, transition, effect loader, loading animation */\n.custom-loader {\n  width: 40px;\n  height: 10px;\n  color: #f000b4;\n  background: radial-gradient(farthest-side, currentColor 90%, #0000) left /\n      10px 10px,\n    radial-gradient(farthest-side, currentColor 90%, #0000) center/10px 10px,\n    radial-gradient(farthest-side, currentColor 90%, #0000) right / 10px 10px,\n    linear-gradient(currentColor 0 0) center/100% 4px;\n  background-repeat: no-repeat;\n  position: relative;\n  animation: s6 2s infinite linear;\n}\n.custom-loader:before,\n.custom-loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: inherit;\n  animation: inherit;\n  --s: calc(50% - 5px);\n  animation-direction: reverse;\n}\n.custom-loader:after {\n  --s: calc(5px - 50%);\n}\n\n@keyframes s6 {\n  0% {\n    transform: translate(var(--s, 0)) rotate(0);\n  }\n  100% {\n    transform: translate(var(--s, 0)) rotate(1turn);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/adilsarfraz02_tough-seahorse-89.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"custom-loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyToughSeahorse89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adilsarfraz02  - Tags: loader, spinner, smooth, custom, transition, effect loader, loading animation */\n.custom-loader {\n  width: 80rpx;\n  height: 20rpx;\n  color: #f000b4;\n  background: radial-gradient(farthest-side, currentColor 90%, #0000) left /\n      20rpx 20rpx,\n    radial-gradient(farthest-side, currentColor 90%, #0000) center/20rpx 20rpx,\n    radial-gradient(farthest-side, currentColor 90%, #0000) right / 20rpx 20rpx,\n    linear-gradient(currentColor 0 0) center/100% 8rpx;\n  background-repeat: no-repeat;\n  position: relative;\n  animation: s6 2s infinite linear;\n}\n.custom-loader:before,\n.custom-loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: inherit;\n  animation: inherit;\n  --s: calc(50% - 10rpx);\n  animation-direction: reverse;\n}\n.custom-loader:after {\n  --s: calc(10rpx - 50%);\n}\n\n@keyframes s6 {\n  0% {\n    transform: translate(var(--s, 0)) rotate(0);\n  }\n  100% {\n    transform: translate(var(--s, 0)) rotate(1turn);\n  }\n}\n\n",
+    "component_name": "GalaxyToughSeahorse89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1024,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.888Z",
+  "updated_at": "2025-07-31T07:55:40.888Z"
+}

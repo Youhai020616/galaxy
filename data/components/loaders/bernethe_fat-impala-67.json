@@ -1,0 +1,86 @@
+{
+  "id": "bernethe_fat-impala-67",
+  "name": "fat-impala-67",
+  "category": "loaders",
+  "author": "bernethe",
+  "description": "fat-impala-67 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by bernethe - Tags: loader */\n.loader {\n  clear: both;\n  width: 2rem;\n  height: 2rem;\n  margin: 1rem auto;\n  border: 0.0625rem #000 solid;\n  border-radius: 0.25rem;\n  position: relative;\n  background: linear-gradient(45deg, transparent 49%, #000 50%, #000 50%, transparent 51%, transparent),\n\t\t\t\tlinear-gradient(-45deg, transparent 49%, #000 50%, #000 50%, transparent 51%, transparent);\n  background-size: 1rem 1rem;\n  background-position: 0% 0%;\n  -webkit-animation: spTexture 1s infinite linear;\n  animation: spTexture 1s infinite linear;\n}\n\n@keyframes spTexture {\n  from {\n    background-position: 0 0;\n  }\n\n  to {\n    background-position: -1rem 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bernethe_fat-impala-67.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyFatImpala67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bernethe - Tags: loader */\n.loader {\n  clear: both;\n  width: 2rem;\n  height: 2rem;\n  margin: 1rem auto;\n  border: 0.0625rem #000 solid;\n  border-radius: 0.25rem;\n  position: relative;\n  background: linear-gradient(45deg, transparent 49%, #000 50%, #000 50%, transparent 51%, transparent),\n\t\t\t\tlinear-gradient(-45deg, transparent 49%, #000 50%, #000 50%, transparent 51%, transparent);\n  background-size: 1rem 1rem;\n  background-position: 0% 0%;\n  -webkit-animation: spTexture 1s infinite linear;\n  animation: spTexture 1s infinite linear;\n}\n\n@keyframes spTexture {\n  from {\n    background-position: 0 0;\n  }\n\n  to {\n    background-position: -1rem 0;\n  }\n}\n",
+    "component_name": "GalaxyFatImpala67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 707,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.019Z",
+  "updated_at": "2025-07-31T07:55:41.019Z"
+}

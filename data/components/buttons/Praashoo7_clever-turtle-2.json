@@ -1,0 +1,113 @@
+{
+  "id": "Praashoo7_clever-turtle-2",
+  "name": "clever-turtle-2",
+  "category": "buttons",
+  "author": "Praashoo7",
+  "description": "clever-turtle-2 组件 (brown, button, stitched, animation)",
+  "tags": [
+    "brown",
+    "button",
+    "stitched",
+    "animation"
+  ],
+  "original": {
+    "html": "<button>\n  BUTTON\n</button>",
+    "css": "/* From Uiverse.io by Praashoo7 - Tags: brown, button, stitched */\nbutton {\n  outline: none;\n  color: #DAA06D;\n  padding: 1em;\n  padding-left: 3em;\n  padding-right: 3em;\n  border: 2px dashed #DAA06D;\n  border-radius: 15px;\n  background-color: #EADDCA;\n  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);\n  transition: .1s ease-in-out, .4s color;\n}\n\nbutton:active {\n  transform: translateX(0.1em) translateY(0.1em);\n  box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Praashoo7_clever-turtle-2.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  BUTTON\n</button>",
+    "script": "export default {\n  name: 'GalaxyCleverTurtle2',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7 - Tags: brown, button, stitched */\nbutton {\n  outline: none;\n  color: #DAA06D;\n  padding: 1em;\n  padding-left: 3em;\n  padding-right: 3em;\n  border: 4rpx dashed #DAA06D;\n  border-radius: 30rpx;\n  background-color: #EADDCA;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx #EADDCA, 4rpx 4rpx 8rpx 4rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: .1s ease-in-out, .4s color;\n}\n\nbutton:active {\n  transform: translateX(0.1em) translateY(0.1em);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx #EADDCA, 3rpx 3rpx 5rpx 3rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyCleverTurtle2"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 541,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.265Z",
+  "updated_at": "2025-07-31T07:55:34.265Z"
+}

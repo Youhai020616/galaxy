@@ -1,0 +1,87 @@
+{
+  "id": "Subaashbala_red-baboon-28",
+  "name": "red-baboon-28",
+  "category": "loaders",
+  "author": "Subaashbala",
+  "description": "red-baboon-28 组件 (loader, smooth, loading animation, animation)",
+  "tags": [
+    "loader",
+    "smooth",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span>&lt;</span>\n  <span>LOADING</span>\n  <span>/&gt;</span>\n</div>",
+    "css": "/* From Uiverse.io by Subaashbala  - Tags: loader, smooth, loading animation */\n.loader {\n  font-size: 2em;\n  font-weight: 900;\n}\n.loader > * {\n  color: black;\n}\n.loader span {\n  display: inline-flex;\n}\n.loader span:nth-child(2) {\n  letter-spacing: -1em;\n  overflow: hidden;\n  animation: reveal 1500ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite\n    alternate;\n}\n@keyframes reveal {\n  0%,\n  100% {\n    opacity: 0.5;\n    letter-spacing: -1em;\n  }\n  50% {\n    opacity: 1;\n    letter-spacing: 0em;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Subaashbala_red-baboon-28.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text>&lt;</text>\n  <text>LOADING</text>\n  <text>/&gt;</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyRedBaboon28',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Subaashbala  - Tags: loader, smooth, loading animation */\n.loader {\n  font-size: 2em;\n  font-weight: 900;\n}\n.loader > * {\n  color: black;\n}\n.loader span {\n  display: inline-flex;\n}\n.loader span:nth-child(2) {\n  letter-spacing: -1em;\n  overflow: hidden;\n  animation: reveal 1500ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite\n    alternate;\n}\n@keyframes reveal {\n  0%,\n  100% {\n    opacity: 0.5;\n    letter-spacing: -1em;\n  }\n  50% {\n    opacity: 1;\n    letter-spacing: 0em;\n  }\n}\n\n",
+    "component_name": "GalaxyRedBaboon28"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 603,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.630Z",
+  "updated_at": "2025-07-31T07:55:40.630Z"
+}

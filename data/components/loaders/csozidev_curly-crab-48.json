@@ -1,0 +1,90 @@
+{
+  "id": "csozidev_curly-crab-48",
+  "name": "curly-crab-48",
+  "category": "loaders",
+  "author": "csozidev",
+  "description": "curly-crab-48 组件 (simple, loader, animated, svg, loop, custom, animation)",
+  "tags": [
+    "simple",
+    "loader",
+    "animated",
+    "svg",
+    "loop",
+    "custom",
+    "animation"
+  ],
+  "original": {
+    "html": "<p class=\"text\">Works with any svg logo</p>\n<div class=\"loader\">\n  <svg class=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" width=\"150\" height=\"150\" fill=\"currentColor\" viewBox=\"-1 -1 18 18\">\n    <path d=\"M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z\"></path>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by csozidev  - Tags: simple, loader, animated, svg, loop, custom */\n/* SVG loader made by: csozi | Website: www.csozi.hu*/\n\n/*You dont need this \"p\" style*/\n.text {\n  font-weight: bolder;\n  font-size: 17px;\n  color: black;\n  position: absolute;\n  translate: -50% 0px;\n  top: 20px;\n  left: 50%;\n  text-align: center;\n}\n\n.loader {\n  overflow: visible;\n  height: fit-content;\n  width: fit-content;\n  padding: 20px;\n  display: flex;\n}\n\n.logo {\n  fill: none;\n  stroke-dasharray: 20px;\n  /*<-- Play with this number until it look cool */\n  stroke: black;\n  animation: load 15s infinite linear;\n}\n\n@keyframes load {\n  0% {\n    stroke-dashoffset: 0px;\n  }\n\n  100% {\n    stroke-dashoffset: 200px;\n    /* <-- This number should always be 10 times the number up there*/\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csozidev_curly-crab-48.html"
+  },
+  "uniapp": {
+    "template": "<text class=\"text\">Works with any svg logo</text>\n<view class=\"loader\"></view>\n  <view class=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" width=\"150\" height=\"150\" fill=\"currentColor\" viewBox=\"-1 -1 18 18\"></view>\n    <path d=\"M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z\"></path>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCurlyCrab48',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csozidev  - Tags: simple, loader, animated, svg, loop, custom */\n/* SVG loader made by: csozi | Website: www.csozi.hu*/\n\n/*You dont need this \"p\" style*/\n.text {\n  font-weight: bolder;\n  font-size: 34rpx;\n  color: black;\n  position: absolute;\n  translate: -50% 0rpx;\n  top: 40rpx;\n  left: 50%;\n  text-align: center;\n}\n\n.loader {\n  overflow: visible;\n  height: fit-content;\n  width: fit-content;\n  padding: 40rpx;\n  display: flex;\n}\n\n.logo {\n  fill: none;\n  stroke-dasharray: 40rpx;\n  /*<-- Play with this number until it look cool */\n  stroke: black;\n  animation: load 15s infinite linear;\n}\n\n@keyframes load {\n  0% {\n    stroke-dashoffset: 0rpx;\n  }\n\n  100% {\n    stroke-dashoffset: 400rpx;\n    /* <-- This number should always be 10 times the number up there*/\n  }\n}\n\n",
+    "component_name": "GalaxyCurlyCrab48"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2147,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.193Z",
+  "updated_at": "2025-07-31T07:55:41.193Z"
+}

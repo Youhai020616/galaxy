@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_modern-falcon-64",
+  "name": "modern-falcon-64",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "modern-falcon-64 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"lds-roller\"><div></div><div></div><div></div><div></div></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.lds-roller {\n  display: inline-block;\n  position: relative;\n  width: 80px;\n  height: 80px;\n}\n\n.lds-roller div {\n  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;\n  transform-origin: 40px 40px;\n}\n\n.lds-roller div:after {\n  content: \" \";\n  display: block;\n  position: absolute;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  background: yellow;\n  margin: -4px 0 0 -4px;\n}\n\n.lds-roller div:nth-child(1) {\n  animation-delay: -0.036s;\n}\n\n.lds-roller div:nth-child(1):after {\n  top: 63px;\n  left: 63px;\n}\n\n.lds-roller div:nth-child(2) {\n  animation-delay: -0.072s;\n}\n\n.lds-roller div:nth-child(2):after {\n  top: 68px;\n  left: 56px;\n}\n\n.lds-roller div:nth-child(3) {\n  animation-delay: -0.108s;\n}\n\n.lds-roller div:nth-child(3):after {\n  top: 71px;\n  left: 48px;\n}\n\n.lds-roller div:nth-child(4) {\n  animation-delay: -0.144s;\n}\n\n.lds-roller div:nth-child(4):after {\n  top: 72px;\n  left: 40px;\n}\n\n.lds-roller div:nth-child(5) {\n  animation-delay: -0.18s;\n}\n\n.lds-roller div:nth-child(5):after {\n  top: 71px;\n  left: 32px;\n}\n\n.lds-roller div:nth-child(6) {\n  animation-delay: -0.216s;\n}\n\n.lds-roller div:nth-child(6):after {\n  top: 68px;\n  left: 24px;\n}\n\n.lds-roller div:nth-child(7) {\n  animation-delay: -0.252s;\n}\n\n.lds-roller div:nth-child(7):after {\n  top: 63px;\n  left: 17px;\n}\n\n.lds-roller div:nth-child(8) {\n  animation-delay: -0.288s;\n}\n\n.lds-roller div:nth-child(8):after {\n  top: 56px;\n  left: 12px;\n}\n\n@keyframes lds-roller {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_modern-falcon-64.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"lds-roller\"><view></view></view><view></view><view></view><view></view></div>",
+    "script": "export default {\n  name: 'GalaxyModernFalcon64',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.lds-roller {\n  display: inline-block;\n  position: relative;\n  width: 160rpx;\n  height: 160rpx;\n}\n\n.lds-roller div {\n  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;\n  transform-origin: 80rpx 80rpx;\n}\n\n.lds-roller div:after {\n  content: \" \";\n  display: block;\n  position: absolute;\n  width: 14rpx;\n  height: 14rpx;\n  border-radius: 50%;\n  background: yellow;\n  margin: -8rpx 0 0 -8rpx;\n}\n\n.lds-roller div:nth-child(1) {\n  animation-delay: -0.036s;\n}\n\n.lds-roller div:nth-child(1):after {\n  top: 126rpx;\n  left: 126rpx;\n}\n\n.lds-roller div:nth-child(2) {\n  animation-delay: -0.072s;\n}\n\n.lds-roller div:nth-child(2):after {\n  top: 136rpx;\n  left: 112rpx;\n}\n\n.lds-roller div:nth-child(3) {\n  animation-delay: -0.108s;\n}\n\n.lds-roller div:nth-child(3):after {\n  top: 142rpx;\n  left: 96rpx;\n}\n\n.lds-roller div:nth-child(4) {\n  animation-delay: -0.144s;\n}\n\n.lds-roller div:nth-child(4):after {\n  top: 144rpx;\n  left: 80rpx;\n}\n\n.lds-roller div:nth-child(5) {\n  animation-delay: -0.18s;\n}\n\n.lds-roller div:nth-child(5):after {\n  top: 142rpx;\n  left: 64rpx;\n}\n\n.lds-roller div:nth-child(6) {\n  animation-delay: -0.216s;\n}\n\n.lds-roller div:nth-child(6):after {\n  top: 136rpx;\n  left: 48rpx;\n}\n\n.lds-roller div:nth-child(7) {\n  animation-delay: -0.252s;\n}\n\n.lds-roller div:nth-child(7):after {\n  top: 126rpx;\n  left: 34rpx;\n}\n\n.lds-roller div:nth-child(8) {\n  animation-delay: -0.288s;\n}\n\n.lds-roller div:nth-child(8):after {\n  top: 112rpx;\n  left: 24rpx;\n}\n\n@keyframes lds-roller {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyModernFalcon64"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1665,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.393Z",
+  "updated_at": "2025-07-31T07:55:40.393Z"
+}

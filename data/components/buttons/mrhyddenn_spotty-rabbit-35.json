@@ -1,0 +1,107 @@
+{
+  "id": "mrhyddenn_spotty-rabbit-35",
+  "name": "spotty-rabbit-35",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "spotty-rabbit-35 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <svg height=\"24\" width=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n        <path d=\"M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z\" fill=\"currentColor\"></path>\n    </svg>\n</button>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: button */\nbutton {\n  background: none;\n  border: none;\n  padding: 15px 15px;\n  border-radius: 10px;\n}\n\nbutton:hover {\n  background: rgba(170, 170, 170, 0.062);\n  transition: 0.5s;\n}\n\nbutton svg {\n  color: #fff;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_spotty-rabbit-35.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <view height=\"24\" width=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n        <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n        <path d=\"M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z\" fill=\"currentColor\"></path>\n    </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxySpottyRabbit35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: button */\nbutton {\n  background: none;\n  border: none;\n  padding: 30rpx 30rpx;\n  border-radius: 20rpx;\n}\n\nbutton:hover {\n  background: rgba(170, 170, 170, 0.062);\n  transition: 0.5s;\n}\n\nbutton svg {\n  color: #fff;\n}\n",
+    "component_name": "GalaxySpottyRabbit35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 554,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.365Z",
+  "updated_at": "2025-07-31T07:55:37.365Z"
+}

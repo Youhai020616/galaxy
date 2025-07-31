@@ -1,0 +1,104 @@
+{
+  "id": "kennyotsu_blue-dragon-34",
+  "name": "blue-dragon-34",
+  "category": "buttons",
+  "author": "kennyotsu",
+  "description": "blue-dragon-34 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"cursor-pointer select-none text-[4rem] font-bold text-slate-100 relative group text-center flex justify-center\">\n  <div class=\"absolute top-[6px] text-neutral-400 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none\">boop!</div>\n  <div class=\"absolute top-[5px] text-neutral-300\">boop!</div>\n  <div class=\"absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5\">boop!</div>\n  \n  <div class=\"dont-mind-me opacity-0\">boop!</div>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/kennyotsu_blue-dragon-34.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cursor-pointer select-none text-[4rem] font-bold text-slate-100 relative group text-center flex justify-center\"></button>\n  <view class=\"absolute top-[6px] text-neutral-400 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none\">boop!</view>\n  <view class=\"absolute top-[5px] text-neutral-300\">boop!</view>\n  <view class=\"absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5\">boop!</view>\n  \n  <view class=\"dont-mind-me opacity-0\">boop!</view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyBlueDragon34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyBlueDragon34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 540,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.061Z",
+  "updated_at": "2025-07-31T07:55:37.061Z"
+}

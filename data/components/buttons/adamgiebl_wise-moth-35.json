@@ -1,0 +1,121 @@
+{
+  "id": "adamgiebl_wise-moth-35",
+  "name": "wise-moth-35",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "wise-moth-35 组件 (icon, button, smooth, dark, luxury, silver, gradient, interactive)",
+  "tags": [
+    "icon",
+    "button",
+    "smooth",
+    "dark",
+    "luxury",
+    "silver",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"button-overlay\"></div>\n  <span>Button <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 53 58\" height=\"58\" width=\"53\">\n<path stroke-width=\"9\" stroke=\"currentColor\" d=\"M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z\"></path>\n</svg></span>\n  \n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: icon, button, smooth, dark, luxury, silver */\n/* Inspired by twitter.com/marina_uiux */\n\n.button {\n  font-size: 17px;\n  border-radius: 12px;\n  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);\n  color: rgb(218, 218, 218);\n  border: none;\n  padding: 2px;\n  font-weight: 700;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n}\n\n.button span {\n  border-radius: 10px;\n  padding: 0.8em 1.3em;\n  padding-right: 1.2em;\n  text-shadow: 0px 0px 20px #4b4b4b;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  color: inherit;\n  transition: all 0.3s;\n  background-color: rgb(29, 29, 29);\n  background-image: radial-gradient(at 95% 89%, rgb(15, 15, 15) 0px, transparent 50%), radial-gradient(at 0% 100%, rgb(17, 17, 17) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);\n}\n\n.button:hover span {\n  background-color: rgb(26, 25, 25);\n}\n\n.button-overlay {\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;\n  filter: opacity(10%) contrast(105%);\n  -webkit-filter: opacity(10%) contrast(105%);\n}\n\n.button svg {\n  width: 15px;\n  height: 15px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_wise-moth-35.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"button-overlay\"></view>\n  <text></text>Button <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 53 58\" height=\"58\" width=\"53\"></view>\n<path stroke-width=\"9\" stroke=\"currentColor\" d=\"M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z\"></path>\n</svg></span>\n  \n</button>",
+    "script": "export default {\n  name: 'GalaxyWiseMoth35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: icon, button, smooth, dark, luxury, silver */\n/* Inspired by twitter.com/marina_uiux */\n\n.button {\n  font-size: 34rpx;\n  border-radius: 24rpx;\n  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);\n  color: rgb(218, 218, 218);\n  border: none;\n  padding: 4rpx;\n  font-weight: 700;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n}\n\n.button span {\n  border-radius: 20rpx;\n  padding: 0.8em 1.3em;\n  padding-right: 1.2em;\n  /* #ifdef H5 */\n  text-shadow: 0rpx 0rpx 40rpx #4b4b4b;\n  /* #endif */\n  width: 100%;\n  display: flex;\n  align-items: center;\n  gap: 24rpx;\n  color: inherit;\n  transition: all 0.3s;\n  background-color: rgb(29, 29, 29);\n  background-image: radial-gradient(at 95% 89%, rgb(15, 15, 15) 0rpx, transparent 50%), radial-gradient(at 0% 100%, rgb(17, 17, 17) 0rpx, transparent 50%), radial-gradient(at 0% 0%, rgb(29, 29, 29) 0rpx, transparent 50%);\n}\n\n.button:hover span {\n  background-color: rgb(26, 25, 25);\n}\n\n.button-overlay {\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;\n  \n  -webkit-\n}\n\n.button svg {\n  width: 30rpx;\n  height: 30rpx;\n}\n",
+    "component_name": "GalaxyWiseMoth35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1760,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.513Z",
+  "updated_at": "2025-07-31T07:55:35.513Z"
+}

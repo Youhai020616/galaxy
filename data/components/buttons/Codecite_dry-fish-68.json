@@ -1,0 +1,107 @@
+{
+  "id": "Codecite_dry-fish-68",
+  "name": "dry-fish-68",
+  "category": "buttons",
+  "author": "Codecite",
+  "description": "dry-fish-68 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"button\">\n  <a href=\"#\" class=\"anchor\">\n    <span>Download CV</span>\n  </a>\n</div>",
+    "css": "/* From Uiverse.io by Codecite - Tags: button */\n.anchor {\n  text-decoration: none;\n  color: #fff;\n  display: inline-block;\n  font-family: sans-serif;\n  font-weight: 600;\n  border-radius: 50px;\n  border: 2px solid #ed553b;\n  padding: 14px 40px 13px;\n  overflow: hidden;\n  position: relative;\n}\n\n.anchor:hover {\n  color: #4e484a;\n}\n\n.button a::before {\n  position: absolute;\n  content: \"\";\n  z-index: 0;\n  background-color: #ed553b;\n  left: -5px;\n  right: -5px;\n  bottom: -5px;\n  height: 111%;\n  transition: all .3s ease;\n}\n\n.button a:hover::before {\n  height: 11%;\n}\n\n.button span {\n  position: relative;\n  z-index: 2;\n  transition: all .3s ease;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Codecite_dry-fish-68.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"button\"></view>\n  <navigator href=\"#\" class=\"anchor\"></navigator>\n    <text>Download CV</text>\n  </a>\n</div>",
+    "script": "export default {\n  name: 'GalaxyDryFish68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Codecite - Tags: button */\n.anchor {\n  text-decoration: none;\n  color: #fff;\n  display: inline-block;\n  font-family: sans-serif;\n  font-weight: 600;\n  border-radius: 100rpx;\n  border: 4rpx solid #ed553b;\n  padding: 28rpx 80rpx 26rpx;\n  overflow: hidden;\n  position: relative;\n}\n\n.anchor:hover {\n  color: #4e484a;\n}\n\n.button a::before {\n  position: absolute;\n  content: \"\";\n  z-index: 0;\n  background-color: #ed553b;\n  left: -10rpx;\n  right: -10rpx;\n  bottom: -10rpx;\n  height: 111%;\n  transition: all .3s ease;\n}\n\n.button a:hover::before {\n  height: 11%;\n}\n\n.button span {\n  position: relative;\n  z-index: 2;\n  transition: all .3s ease;\n}\n",
+    "component_name": "GalaxyDryFish68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 745,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.934Z",
+  "updated_at": "2025-07-31T07:55:32.934Z"
+}

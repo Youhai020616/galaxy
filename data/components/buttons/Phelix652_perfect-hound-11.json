@@ -1,0 +1,113 @@
+{
+  "id": "Phelix652_perfect-hound-11",
+  "name": "perfect-hound-11",
+  "category": "buttons",
+  "author": "Phelix652",
+  "description": "perfect-hound-11 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn btn--primary\">\n\n  <span class=\"btn-inner\">\n    <span class=\"btn-label\">\n      Button \n    </span>\n  </span>\n  \n</button>",
+    "css": "/* From Uiverse.io by Phelix652 - Tags: button */\n.btn {\n  --btn-gradient: var(--btn-gradient-from),var(--btn-gradient-to);\n  border: 0 none;\n  appearance: none;\n  transition: all .3s;\n  border-radius: 10px;\n  background-color: var(--btn-bg);\n  box-shadow: 0 0 2px 2px var(--btn-shadow), 0 0 4px 4px var(--btn-shadow), 0 0 8px 8px var(--btn-shadow);\n}\n\n.btn,\n.btn * {\n  box-sizing: border-box;\n}\n\n.btn-inner {\n  position: relative;\n  border-radius: inherit;\n  border: 1px solid transparent;\n  font-size: 1rem;\n  display: flex;\n  align-items: center;\n  min-width: 10rem;\n  padding: 1.5rem 2rem;\n  overflow: hidden;\n  color: var(--btn-text-color);\n}\n\n.btn-label {\n  position: absolute;\n  bottom: 1px;\n  left: 1px;\n  right: 1px;\n  top: 1px;\n  border-radius: inherit;\n  z-index: 10;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: var(--btn-bg);\n  background-image: linear-gradient(to bottom,var(--btn-gradient));\n}\n\n.btn:hover {\n  transform: translateY(-5px);\n  letter-spacing: 3px;\n  box-shadow: rgba(0, 131, 253, 0.596) 0px 1px 80px 40px;\n}\n\n.btn:active {\n  border-radius: 40px;\n  transform: translateY(4px);\n  transition: 0.1s;\n  letter-spacing: 3px;\n  box-shadow: rgb(0, 131, 253) 0px 1px 80px 40px;\n}\n\n.btn:active .btn-blur:before {\n  --transition: 0.5s;\n}\n\n.btn--primary {\n  --btn-bg: #111111;\n  --btn-gradient-from: #111111;\n  --btn-gradient-to: rgba(29, 6, 240, 0.5);\n  --btn-text-color: #ffffff;\n  --btn-shadow: #9b14c438;\n}\n\n@keyframes turn {\n  0% {\n    transform: translateY(-50%) rotate(0deg)\n  }\n\n  to {\n    transform: translateY(-50%) rotate(1turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Phelix652_perfect-hound-11.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn btn--primary\"></button>\n\n  <text class=\"btn-inner\"></text>\n    <text class=\"btn-label\"></text>\n      Button \n    </span>\n  </span>\n  \n</button>",
+    "script": "export default {\n  name: 'GalaxyPerfectHound11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Phelix652 - Tags: button */\n.btn {\n  --btn-gradient: var(--btn-gradient-from),var(--btn-gradient-to);\n  border: 0 none;\n  appearance: none;\n  transition: all .3s;\n  border-radius: 20rpx;\n  background-color: var(--btn-bg);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 4rpx 4rpx var(--btn-shadow), 0 0 8rpx 8rpx var(--btn-shadow), 0 0 16rpx 16rpx var(--btn-shadow);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.btn,\n.btn * {\n  box-sizing: border-box;\n}\n\n.btn-inner {\n  position: relative;\n  border-radius: inherit;\n  border: 2rpx solid transparent;\n  font-size: 1rem;\n  display: flex;\n  align-items: center;\n  min-width: 10rem;\n  padding: 1.5rem 2rem;\n  overflow: hidden;\n  color: var(--btn-text-color);\n}\n\n.btn-label {\n  position: absolute;\n  bottom: 2rpx;\n  left: 2rpx;\n  right: 2rpx;\n  top: 2rpx;\n  border-radius: inherit;\n  z-index: 10;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: var(--btn-bg);\n  background-image: linear-gradient(to bottom,var(--btn-gradient));\n}\n\n.btn:hover {\n  transform: translateY(-10rpx);\n  letter-spacing: 6rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 131, 253, 0.596) 0rpx 2rpx 160rpx 80rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.btn:active {\n  border-radius: 80rpx;\n  transform: translateY(8rpx);\n  transition: 0.1s;\n  letter-spacing: 6rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgb(0, 131, 253) 0rpx 2rpx 160rpx 80rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.btn:active .btn-blur:before {\n  --transition: 0.5s;\n}\n\n.btn--primary {\n  --btn-bg: #111111;\n  --btn-gradient-from: #111111;\n  --btn-gradient-to: rgba(29, 6, 240, 0.5);\n  --btn-text-color: #ffffff;\n  --btn-shadow: #9b14c438;\n}\n\n@keyframes turn {\n  0% {\n    transform: translateY(-50%) rotate(0deg)\n  }\n\n  to {\n    transform: translateY(-50%) rotate(1turn)\n  }\n}\n\n",
+    "component_name": "GalaxyPerfectHound11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1748,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.229Z",
+  "updated_at": "2025-07-31T07:55:34.229Z"
+}

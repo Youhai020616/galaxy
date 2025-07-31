@@ -1,0 +1,85 @@
+{
+  "id": "Nawsome_young-eel-20",
+  "name": "young-eel-20",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "young-eel-20 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<figure class=\"loader\">\n    <div class=\"dot white\"></div>\n    <div class=\"dot\"></div>\n    <div class=\"dot\"></div>\n    <div class=\"dot\"></div>\n    <div class=\"dot\"></div>\n</figure>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.loader {\n  position: absolute;\n  margin: auto;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  width: 6.250em;\n  height: 6.250em;\n  animation: rotate5123 2.4s linear infinite;\n}\n\n.white {\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: white;\n  animation: flash 2.4s linear infinite;\n  opacity: 0;\n}\n\n.dot {\n  position: absolute;\n  margin: auto;\n  width: 2.4em;\n  height: 2.4em;\n  border-radius: 100%;\n  transition: all 1s ease;\n}\n\n.dot:nth-child(2) {\n  top: 0;\n  bottom: 0;\n  left: 0;\n  background: #FF4444;\n  animation: dotsY 2.4s linear infinite;\n}\n\n.dot:nth-child(3) {\n  left: 0;\n  right: 0;\n  top: 0;\n  background: #FFBB33;\n  animation: dotsX 2.4s linear infinite;\n}\n\n.dot:nth-child(4) {\n  top: 0;\n  bottom: 0;\n  right: 0;\n  background: #99CC00;\n  animation: dotsY 2.4s linear infinite;\n}\n\n.dot:nth-child(5) {\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: #33B5E5;\n  animation: dotsX 2.4s linear infinite;\n}\n\n@keyframes rotate5123 {\n  0% {\n    transform: rotate( 0 );\n  }\n\n  10% {\n    width: 6.250em;\n    height: 6.250em;\n  }\n\n  66% {\n    width: 2.4em;\n    height: 2.4em;\n  }\n\n  100% {\n    transform: rotate(360deg);\n    width: 6.250em;\n    height: 6.250em;\n  }\n}\n\n@keyframes dotsY {\n  66% {\n    opacity: .1;\n    width: 2.4em;\n  }\n\n  77% {\n    opacity: 1;\n    width: 0;\n  }\n}\n\n@keyframes dotsX {\n  66% {\n    opacity: .1;\n    height: 2.4em;\n  }\n\n  77% {\n    opacity: 1;\n    height: 0;\n  }\n}\n\n@keyframes flash {\n  33% {\n    opacity: 0;\n    border-radius: 0%;\n  }\n\n  55% {\n    opacity: .6;\n    border-radius: 100%;\n  }\n\n  66% {\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_young-eel-20.html"
+  },
+  "uniapp": {
+    "template": "<figure class=\"loader\">\n    <view class=\"dot white\"></view>\n    <view class=\"dot\"></view>\n    <view class=\"dot\"></view>\n    <view class=\"dot\"></view>\n    <view class=\"dot\"></view>\n</figure>",
+    "script": "export default {\n  name: 'GalaxyYoungEel20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.loader {\n  position: absolute;\n  margin: auto;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  width: 6.250em;\n  height: 6.250em;\n  animation: rotate5123 2.4s linear infinite;\n}\n\n.white {\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: white;\n  animation: flash 2.4s linear infinite;\n  opacity: 0;\n}\n\n.dot {\n  position: absolute;\n  margin: auto;\n  width: 2.4em;\n  height: 2.4em;\n  border-radius: 100%;\n  transition: all 1s ease;\n}\n\n.dot:nth-child(2) {\n  top: 0;\n  bottom: 0;\n  left: 0;\n  background: #FF4444;\n  animation: dotsY 2.4s linear infinite;\n}\n\n.dot:nth-child(3) {\n  left: 0;\n  right: 0;\n  top: 0;\n  background: #FFBB33;\n  animation: dotsX 2.4s linear infinite;\n}\n\n.dot:nth-child(4) {\n  top: 0;\n  bottom: 0;\n  right: 0;\n  background: #99CC00;\n  animation: dotsY 2.4s linear infinite;\n}\n\n.dot:nth-child(5) {\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: #33B5E5;\n  animation: dotsX 2.4s linear infinite;\n}\n\n@keyframes rotate5123 {\n  0% {\n    transform: rotate( 0 );\n  }\n\n  10% {\n    width: 6.250em;\n    height: 6.250em;\n  }\n\n  66% {\n    width: 2.4em;\n    height: 2.4em;\n  }\n\n  100% {\n    transform: rotate(360deg);\n    width: 6.250em;\n    height: 6.250em;\n  }\n}\n\n@keyframes dotsY {\n  66% {\n    opacity: .1;\n    width: 2.4em;\n  }\n\n  77% {\n    opacity: 1;\n    width: 0;\n  }\n}\n\n@keyframes dotsX {\n  66% {\n    opacity: .1;\n    height: 2.4em;\n  }\n\n  77% {\n    opacity: 1;\n    height: 0;\n  }\n}\n\n@keyframes flash {\n  33% {\n    opacity: 0;\n    border-radius: 0%;\n  }\n\n  55% {\n    opacity: .6;\n    border-radius: 100%;\n  }\n\n  66% {\n    opacity: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyYoungEel20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1800,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.887Z",
+  "updated_at": "2025-07-31T07:55:39.887Z"
+}

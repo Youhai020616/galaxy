@@ -1,0 +1,113 @@
+{
+  "id": "ferlagher_afraid-dingo-99",
+  "name": "afraid-dingo-99",
+  "category": "buttons",
+  "author": "ferlagher",
+  "description": "afraid-dingo-99 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <b>Fold me!</b>\n</button>",
+    "css": "/* From Uiverse.io by ferlagher - Tags: button */\nbutton {\n  position: relative;\n  font-size: 1.2em;\n  padding: 0.7em 1.4em;\n  background-color: #BF0426;\n  text-decoration: none;\n  border: none;\n  border-radius: 0.5em;\n  color: #DEDEDE;\n  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);\n}\n\nbutton::before {\n  position: absolute;\n  content: '';\n  height: 0;\n  width: 0;\n  top: 0;\n  left: 0;\n  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);\n  border-radius: 0 0 0.5em 0;\n  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);\n  transition: 0.3s;\n}\n\nbutton:hover::before {\n  width: 1.6em;\n  height: 1.6em;\n}\n\nbutton:active {\n  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);\n  transform: translate(0.1em, 0.1em);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ferlagher_afraid-dingo-99.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <b>Fold me!</b>\n</button>",
+    "script": "export default {\n  name: 'GalaxyAfraidDingo99',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ferlagher - Tags: button */\nbutton {\n  position: relative;\n  font-size: 1.2em;\n  padding: 0.7em 1.4em;\n  background-color: #BF0426;\n  text-decoration: none;\n  border: none;\n  border-radius: 0.5em;\n  color: #DEDEDE;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton::before {\n  position: absolute;\n  content: '';\n  height: 0;\n  width: 0;\n  top: 0;\n  left: 0;\n  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);\n  border-radius: 0 0 0.5em 0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: 0.3s;\n}\n\nbutton:hover::before {\n  width: 1.6em;\n  height: 1.6em;\n}\n\nbutton:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(0.1em, 0.1em);\n}\n",
+    "component_name": "GalaxyAfraidDingo99"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 831,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.734Z",
+  "updated_at": "2025-07-31T07:55:36.734Z"
+}

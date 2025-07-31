@@ -1,0 +1,91 @@
+{
+  "id": "Deri-Kurniawan_tall-robin-6",
+  "name": "tall-robin-6",
+  "category": "loaders",
+  "author": "Deri-Kurniawan",
+  "description": "tall-robin-6 组件 (animation, gradient, loading, loader, cube, rotate, box, loading animation)",
+  "tags": [
+    "animation",
+    "gradient",
+    "loading",
+    "loader",
+    "cube",
+    "rotate",
+    "box",
+    "loading animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"cube\">\n        <div class=\"face\"></div>\n        <div class=\"face\"></div>\n        <div class=\"face\"></div>\n        <div class=\"face\"></div>\n        <div class=\"face\"></div>\n        <div class=\"face\"></div>\n    </div>\n</div>",
+    "css": "/* From Uiverse.io by Deri-Kurniawan - Tags: animation, gradient, loading, loader, cube, rotate, box, loading animation */\n.loader {\n  perspective: 600px;\n  width: 100px;\n  height: 100px;\n}\n\n.cube {\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  animation: rotate 4s linear infinite;\n}\n\n.face {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(45deg, #3498db, #e74c3c);\n  opacity: 0.8;\n  border: 0.5px solid #fff;\n}\n\n.face:nth-child(1) {\n  transform: rotateX(90deg) translateZ(50px);\n}\n\n.face:nth-child(2) {\n  transform: rotateX(-90deg) translateZ(50px);\n}\n\n.face:nth-child(3) {\n  transform: translateZ(50px);\n}\n\n.face:nth-child(4) {\n  transform: rotateY(90deg) translateZ(50px);\n}\n\n.face:nth-child(5) {\n  transform: rotateY(-90deg) translateZ(50px);\n}\n\n.face:nth-child(6) {\n  transform: rotateY(180deg) translateZ(50px);\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Deri-Kurniawan_tall-robin-6.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"cube\"></view>\n        <view class=\"face\"></view>\n        <view class=\"face\"></view>\n        <view class=\"face\"></view>\n        <view class=\"face\"></view>\n        <view class=\"face\"></view>\n        <view class=\"face\"></view>\n    </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTallRobin6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Deri-Kurniawan - Tags: animation, gradient, loading, loader, cube, rotate, box, loading animation */\n.loader {\n  perspective: 1200rpx;\n  width: 200rpx;\n  height: 200rpx;\n}\n\n.cube {\n  width: 100%;\n  height: 100%;\n  transform-style: preserve-3d;\n  animation: rotate 4s linear infinite;\n}\n\n.face {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(45deg, #3498db, #e74c3c);\n  opacity: 0.8;\n  border: 1rpx solid #fff;\n}\n\n.face:nth-child(1) {\n  transform: rotateX(90deg) translateZ(100rpx);\n}\n\n.face:nth-child(2) {\n  transform: rotateX(-90deg) translateZ(100rpx);\n}\n\n.face:nth-child(3) {\n  transform: translateZ(100rpx);\n}\n\n.face:nth-child(4) {\n  transform: rotateY(90deg) translateZ(100rpx);\n}\n\n.face:nth-child(5) {\n  transform: rotateY(-90deg) translateZ(100rpx);\n}\n\n.face:nth-child(6) {\n  transform: rotateY(180deg) translateZ(100rpx);\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyTallRobin6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1279,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.170Z",
+  "updated_at": "2025-07-31T07:55:39.170Z"
+}

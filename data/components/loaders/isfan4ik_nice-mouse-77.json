@@ -1,0 +1,94 @@
+{
+  "id": "isfan4ik_nice-mouse-77",
+  "name": "nice-mouse-77",
+  "category": "loaders",
+  "author": "isfan4ik",
+  "description": "nice-mouse-77 组件 (red, green, pink, loader, effect loader, loading animation, animation)",
+  "tags": [
+    "red",
+    "green",
+    "pink",
+    "loader",
+    "effect loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg class=\"svg\">\n      <path class=\"path\"></path>\n   </svg>\n   <svg>\n      <path></path>\n   </svg>",
+    "css": "/* From Uiverse.io by isfan4ik - Tags: red, green, pink, loader, effect loader, loading animation */\n.body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.svg {\n  position: absolute;\n  width: 400px;\n  fill: none;\n}\n\n.svg:nth-child(2) {\n  filter: blur(40px);\n}\n\n.svg path {\n  d: path(\"M0,25 C150,110 150, -60 300,25\");\n  stroke: #ff0092;\n  stroke-width: 50;\n  stroke-linecap: round;\n  transform: translate(50px,50%);\n  animation: animate 2s ease-in-out infinite;\n}\n\n@keyframes animate {\n  0% {\n    stroke: greenyellow;\n    stroke: #ff0092;\n    d: path(\"M0,25 C150,110 150, -60 300,25\");\n  }\n\n  50% {\n    stroke: dodgerblue;\n    stroke: #00ff00;\n    d: path(\"M0,25 C160,-50 140, 110 300,25\");\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/isfan4ik_nice-mouse-77.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"svg\"></view>\n      <path class=\"path\"></path>\n   </svg>\n   <view></view>\n      <path></path>\n   </svg>",
+    "script": "export default {\n  name: 'GalaxyNiceMouse77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by isfan4ik - Tags: red, green, pink, loader, effect loader, loading animation */\n.body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.svg {\n  position: absolute;\n  width: 800rpx;\n  fill: none;\n}\n\n.svg:nth-child(2) {\n  \n}\n\n.svg path {\n  d: path(\"M0,25 C150,110 150, -60 300,25\");\n  stroke: #ff0092;\n  stroke-width: 50;\n  stroke-linecap: round;\n  transform: translate(100rpx,50%);\n  animation: animate 2s ease-in-out infinite;\n}\n\n@keyframes animate {\n  0% {\n    stroke: greenyellow;\n    stroke: #ff0092;\n    d: path(\"M0,25 C150,110 150, -60 300,25\");\n  }\n\n  50% {\n    stroke: dodgerblue;\n    stroke: #00ff00;\n    d: path(\"M0,25 C160,-50 140, 110 300,25\");\n  }\n}\n",
+    "component_name": "GalaxyNiceMouse77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 826,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.232Z",
+  "updated_at": "2025-07-31T07:55:42.232Z"
+}

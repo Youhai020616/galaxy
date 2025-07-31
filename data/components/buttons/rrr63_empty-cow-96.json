@@ -1,0 +1,114 @@
+{
+  "id": "rrr63_empty-cow-96",
+  "name": "empty-cow-96",
+  "category": "buttons",
+  "author": "rrr63",
+  "description": "empty-cow-96 组件 (button, hover, outlined, bootsrap button, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "outlined",
+    "bootsrap button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Hover me !\n</button>",
+    "css": "/* From Uiverse.io by rrr63 - Tags: button, hover, outlined, bootsrap button */\n.button {\n  font-size: 17px;\n  padding: 15px 35px;\n  border-radius: 5px;\n  outline: 2px solid #2835ba;\n  outline-offset: 0px;\n  background: #2835ba;\n  border: 0;\n  font-weight: bolder;\n  color: white;\n  transition: all .1s ease-in-out;\n  cursor: pointer;\n}\n\n.button:hover {\n  outline-offset: 3px;\n  outline: 3px solid #2835ba;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/rrr63_empty-cow-96.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Hover me !\n</button>",
+    "script": "export default {\n  name: 'GalaxyEmptyCow96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by rrr63 - Tags: button, hover, outlined, bootsrap button */\n.button {\n  font-size: 34rpx;\n  padding: 30rpx 70rpx;\n  border-radius: 10rpx;\n  outline: 4rpx solid #2835ba;\n  outline-offset: 0rpx;\n  background: #2835ba;\n  border: 0;\n  font-weight: bolder;\n  color: white;\n  transition: all .1s ease-in-out;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.button:hover {\n  outline-offset: 6rpx;\n  outline: 6rpx solid #2835ba;\n}\n",
+    "component_name": "GalaxyEmptyCow96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 458,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.692Z",
+  "updated_at": "2025-07-31T07:55:37.692Z"
+}

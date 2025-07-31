@@ -1,0 +1,110 @@
+{
+  "id": "TISEPSE_ugly-badger-82",
+  "name": "ugly-badger-82",
+  "category": "buttons",
+  "author": "TISEPSE",
+  "description": "ugly-badger-82 组件 (material design, button, css effect, animation, interactive)",
+  "tags": [
+    "material design",
+    "button",
+    "css effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <a href=\"#\" class=\"btn2\"><span class=\"spn2\">HELLO !</span></a>\n</button>",
+    "css": "/* From Uiverse.io by TISEPSE - Tags: material design, button, css effect */\n.btn2 {\n  position: relative;\n  display: inline-block;\n  padding: 15px 30px;\n  border: 2px solid #fefefe;\n  text-transform: uppercase;\n  color: #fefefe;\n  text-decoration: none;\n  font-weight: 600;\n  font-size: 20px;\n  transition: 0.3s;\n}\n\n.btn2::before {\n  content: '';\n  position: absolute;\n  top: -2px;\n  left: -2px;\n  width: calc(100% + 4px);\n  height: calc(100% - -2px);\n  background-color: #212121;\n  transition: 0.3s ease-out;\n  transform: scaleY(1);\n}\n\n.btn2::after {\n  content: '';\n  position: absolute;\n  top: -2px;\n  left: -2px;\n  width: calc(100% + 4px);\n  height: calc(100% - 50px);\n  background-color: #212121;\n  transition: 0.3s ease-out;\n  transform: scaleY(1);\n}\n\n.btn2:hover::before {\n  transform: translateY(-25px);\n  height: 0;\n}\n\n.btn2:hover::after {\n  transform: scaleX(0);\n  transition-delay: 0.15s;\n}\n\n.btn2:hover {\n  border: 2px solid #fefefe;\n}\n\n.btn2 span {\n  position: relative;\n  z-index: 3;\n}\n\nbutton {\n  text-decoration: none;\n  border: none;\n  background-color: transparent;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/TISEPSE_ugly-badger-82.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <navigator href=\"#\" class=\"btn2\"><text class=\"spn2\">HELLO !</text></navigator>\n</button>",
+    "script": "export default {\n  name: 'GalaxyUglyBadger82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TISEPSE - Tags: material design, button, css effect */\n.btn2 {\n  position: relative;\n  display: inline-block;\n  padding: 30rpx 60rpx;\n  border: 4rpx solid #fefefe;\n  text-transform: uppercase;\n  color: #fefefe;\n  text-decoration: none;\n  font-weight: 600;\n  font-size: 40rpx;\n  transition: 0.3s;\n}\n\n.btn2::before {\n  content: '';\n  position: absolute;\n  top: -4rpx;\n  left: -4rpx;\n  width: calc(100% + 8rpx);\n  height: calc(100% - -4rpx);\n  background-color: #212121;\n  transition: 0.3s ease-out;\n  transform: scaleY(1);\n}\n\n.btn2::after {\n  content: '';\n  position: absolute;\n  top: -4rpx;\n  left: -4rpx;\n  width: calc(100% + 8rpx);\n  height: calc(100% - 100rpx);\n  background-color: #212121;\n  transition: 0.3s ease-out;\n  transform: scaleY(1);\n}\n\n.btn2:hover::before {\n  transform: translateY(-50rpx);\n  height: 0;\n}\n\n.btn2:hover::after {\n  transform: scaleX(0);\n  transition-delay: 0.15s;\n}\n\n.btn2:hover {\n  border: 4rpx solid #fefefe;\n}\n\n.btn2 span {\n  position: relative;\n  z-index: 3;\n}\n\nbutton {\n  text-decoration: none;\n  border: none;\n  background-color: transparent;\n}\n",
+    "component_name": "GalaxyUglyBadger82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1172,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.977Z",
+  "updated_at": "2025-07-31T07:55:34.977Z"
+}

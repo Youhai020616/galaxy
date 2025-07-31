@@ -1,0 +1,92 @@
+{
+  "id": "DevVaradPatil_angry-dragonfly-63",
+  "name": "angry-dragonfly-63",
+  "category": "loaders",
+  "author": "DevVaradPatil",
+  "description": "angry-dragonfly-63 组件 (black, gradient, loader, dark, animation)",
+  "tags": [
+    "black",
+    "gradient",
+    "loader",
+    "dark",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by DevVaradPatil  - Tags: black, gradient, loader, dark */\n.loader {\n  position: relative;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);\n  animation: glow 2s linear infinite;\n}\n@keyframes glow {\n  0% {\n    transform: rotate(0deg);\n    filter: hue-rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n    filter: hue-rotate(360deg);\n  }\n}\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: 3px;\n  left: 3px;\n  right: 3px;\n  bottom: 3px;\n  background: #212121;\n  border-radius: 50%;\n  z-index: 1000;\n}\n.loader::after {\n  content: \"\";\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: 0px;\n  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);\n  border-radius: 50%;\n  z-index: 1000;\n  z-index: 1;\n  filter: blur(30px);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/DevVaradPatil_angry-dragonfly-63.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyAngryDragonfly63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by DevVaradPatil  - Tags: black, gradient, loader, dark */\n.loader {\n  position: relative;\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);\n  animation: glow 2s linear infinite;\n}\n@keyframes glow {\n  0% {\n    transform: rotate(0deg);\n    \n  }\n  100% {\n    transform: rotate(360deg);\n    \n  }\n}\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: 6rpx;\n  left: 6rpx;\n  right: 6rpx;\n  bottom: 6rpx;\n  background: #212121;\n  border-radius: 50%;\n  z-index: 1000;\n}\n.loader::after {\n  content: \"\";\n  position: absolute;\n  top: 0rpx;\n  left: 0rpx;\n  right: 0rpx;\n  bottom: 0rpx;\n  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);\n  border-radius: 50%;\n  z-index: 1000;\n  z-index: 1;\n  \n}\n\n",
+    "component_name": "GalaxyAngryDragonfly63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 916,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.185Z",
+  "updated_at": "2025-07-31T07:55:39.185Z"
+}

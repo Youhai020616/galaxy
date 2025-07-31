@@ -1,0 +1,113 @@
+{
+  "id": "Peary74_tough-panther-45",
+  "name": "tough-panther-45",
+  "category": "buttons",
+  "author": "Peary74",
+  "description": "tough-panther-45 组件 (neumorphism, button, delete, interactive)",
+  "tags": [
+    "neumorphism",
+    "button",
+    "delete",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"del\">\n    <div>\n      Delete\n    </div>     \n</div>",
+    "css": "/* From Uiverse.io by Peary74 - Tags: neumorphism, button, delete */\n.del {\n  position: relative;\n  top: 0;\n  left: 0;\n  width: 160px;\n  height: 50px;\n  margin: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.del div {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: none;\n  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),\n              -4px -4px 6px 0 rgba(116, 125, 136, .5), \n    inset -4px -4px 6px 0 rgba(255,255,255,.2),\n    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);\n  border-bottom: 1px solid rgba(255, 255, 255, 0.1);\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  border-radius: 30px;\n  letter-spacing: 1px;\n  color: #ff0000;\n  z-index: 1;\n  transition: .6s;\n}\n\n.del:hover div {\n  letter-spacing: 4px;\n  color: #fff;\n  background: #ff0000;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Peary74_tough-panther-45.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"del\"></view>\n    <view></view>\n      Delete\n    </div>     \n</div>",
+    "script": "export default {\n  name: 'GalaxyToughPanther45',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Peary74 - Tags: neumorphism, button, delete */\n.del {\n  position: relative;\n  top: 0;\n  left: 0;\n  width: 320rpx;\n  height: 100rpx;\n  margin: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.del div {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 8rpx 12rpx 0 rgba(255,255,255,.5),\n              -8rpx -8rpx 12rpx 0 rgba(116, 125, 136, .5), \n    inset -8rpx -8rpx 12rpx 0 rgba(255,255,255,.2),\n    inset 8rpx 8rpx 12rpx 0 rgba(0, 0, 0, .4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);\n  border-top: 2rpx solid rgba(255, 255, 255, 0.1);\n  border-radius: 60rpx;\n  letter-spacing: 2rpx;\n  color: #ff0000;\n  z-index: 1;\n  transition: .6s;\n}\n\n.del:hover div {\n  letter-spacing: 8rpx;\n  color: #fff;\n  background: #ff0000;\n}\n\n\n\n\n\n",
+    "component_name": "GalaxyToughPanther45"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 917,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.205Z",
+  "updated_at": "2025-07-31T07:55:34.205Z"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ShYnGySYes_young-moose-57",
+  "name": "young-moose-57",
+  "category": "loaders",
+  "author": "ShYnGySYes",
+  "description": "young-moose-57 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n</div>",
+    "css": "/* From Uiverse.io by ShYnGySYes - Tags: loader */\n.spinner {\n  width: 44px;\n  height: 44px;\n  animation: spinner-y0fdc1 2s infinite ease;\n  transform-style: preserve-3d;\n}\n\n.spinner > div {\n  background-color: rgb(255, 254, 254);\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  border: 2px solid #ff0000;\n}\n\n.spinner div:nth-of-type(1) {\n  transform: translateZ(-22px) rotateY(180deg);\n}\n\n.spinner div:nth-of-type(2) {\n  transform: rotateY(-270deg) translateX(50%);\n  transform-origin: top right;\n}\n\n.spinner div:nth-of-type(3) {\n  transform: rotateY(270deg) translateX(-50%);\n  transform-origin: center left;\n}\n\n.spinner div:nth-of-type(4) {\n  transform: rotateX(90deg) translateY(-50%);\n  transform-origin: top center;\n}\n\n.spinner div:nth-of-type(5) {\n  transform: rotateX(-90deg) translateY(50%);\n  transform-origin: bottom center;\n}\n\n.spinner div:nth-of-type(6) {\n  transform: translateZ(22px);\n}\n\n@keyframes spinner-y0fdc1 {\n  0% {\n    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);\n  }\n\n  50% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);\n  }\n\n  100% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/ShYnGySYes_young-moose-57.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyYoungMoose57',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ShYnGySYes - Tags: loader */\n.spinner {\n  width: 88rpx;\n  height: 88rpx;\n  animation: spinner-y0fdc1 2s infinite ease;\n  transform-style: preserve-3d;\n}\n\n.spinner > div {\n  background-color: rgb(255, 254, 254);\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  border: 4rpx solid #ff0000;\n}\n\n.spinner div:nth-of-type(1) {\n  transform: translateZ(-44rpx) rotateY(180deg);\n}\n\n.spinner div:nth-of-type(2) {\n  transform: rotateY(-270deg) translateX(50%);\n  transform-origin: top right;\n}\n\n.spinner div:nth-of-type(3) {\n  transform: rotateY(270deg) translateX(-50%);\n  transform-origin: center left;\n}\n\n.spinner div:nth-of-type(4) {\n  transform: rotateX(90deg) translateY(-50%);\n  transform-origin: top center;\n}\n\n.spinner div:nth-of-type(5) {\n  transform: rotateX(-90deg) translateY(50%);\n  transform-origin: bottom center;\n}\n\n.spinner div:nth-of-type(6) {\n  transform: translateZ(44rpx);\n}\n\n@keyframes spinner-y0fdc1 {\n  0% {\n    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);\n  }\n\n  50% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);\n  }\n\n  100% {\n    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);\n  }\n}\n",
+    "component_name": "GalaxyYoungMoose57"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1269,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.296Z",
+  "updated_at": "2025-07-31T07:55:40.296Z"
+}

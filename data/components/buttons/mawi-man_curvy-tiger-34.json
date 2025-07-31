@@ -1,0 +1,121 @@
+{
+  "id": "mawi-man_curvy-tiger-34",
+  "name": "curvy-tiger-34",
+  "category": "buttons",
+  "author": "mawi-man",
+  "description": "curvy-tiger-34 组件 (button, interactive, hover effects, ui components, css animations, ripple effect, glassy, modern design, animation, gradient)",
+  "tags": [
+    "button",
+    "interactive",
+    "hover effects",
+    "ui components",
+    "css animations",
+    "ripple effect",
+    "glassy",
+    "modern design",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"custom-button\">Click Me</button>",
+    "css": "/* From Uiverse.io by mawi-man  - Tags: button, interactive, hover effects, ui components, css animations, ripple effect, glassy, modern design */\n.custom-button {\n  background-color: #1a1a2e; /* Button background color */\n  color: #e94560; /* Text color */\n  border: none;\n  padding: 15px 30px;\n  font-size: 18px;\n  font-weight: bold;\n  border-radius: 30px;\n  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);\n  cursor: pointer;\n  transition: all 0.3s ease;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n}\n\n.custom-button::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 300%;\n  height: 300%;\n  background-color: #e94560;\n  transition: all 0.3s ease;\n  border-radius: 50%;\n  z-index: -1;\n  transform: translate(-50%, -50%) scale(0);\n}\n\n.custom-button:hover::before {\n  transform: translate(-50%, -50%) scale(1);\n  opacity: 0.9;\n}\n\n.custom-button:hover {\n  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);\n  transform: translateY(-5px);\n  color: #1a1a2e;\n}\n\n/* Effect of waves under pressure */\n.custom-button:active::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 100%;\n  height: 100%;\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 50%;\n  transform: translate(-50%, -50%) scale(0);\n  animation: ripple 0.6s ease-out;\n  z-index: -1;\n}\n\n@keyframes ripple {\n  to {\n    transform: translate(-50%, -50%) scale(4);\n    opacity: 0;\n  }\n}\n\n/* Animated text glow effect */\n.custom-button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: -75%;\n  width: 50%;\n  height: 100%;\n  background: linear-gradient(\n    120deg,\n    rgba(255, 255, 255, 0) 0%,\n    rgba(255, 255, 255, 0.8) 50%,\n    rgba(255, 255, 255, 0) 100%\n  );\n  transform: skewX(-25deg);\n  transition: all 0.3s ease;\n}\n\n.custom-button:hover::after {\n  left: 100%;\n  transition: all 0.5s ease;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mawi-man_curvy-tiger-34.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"custom-button\"></button>Click Me</button>",
+    "script": "export default {\n  name: 'GalaxyCurvyTiger34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mawi-man  - Tags: button, interactive, hover effects, ui components, css animations, ripple effect, glassy, modern design */\n.custom-button {\n  background-color: #1a1a2e; /* Button background color */\n  color: #e94560; /* Text color */\n  border: none;\n  padding: 30rpx 60rpx;\n  font-size: 36rpx;\n  font-weight: bold;\n  border-radius: 60rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 16rpx 30rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.3s ease;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n}\n\n.custom-button::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 300%;\n  height: 300%;\n  background-color: #e94560;\n  transition: all 0.3s ease;\n  border-radius: 50%;\n  z-index: -1;\n  transform: translate(-50%, -50%) scale(0);\n}\n\n.custom-button:hover::before {\n  transform: translate(-50%, -50%) scale(1);\n  opacity: 0.9;\n}\n\n.custom-button:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 30rpx 40rpx rgba(0, 0, 0, 0.4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(-10rpx);\n  color: #1a1a2e;\n}\n\n/* Effect of waves under pressure */\n.custom-button:active::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 100%;\n  height: 100%;\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 50%;\n  transform: translate(-50%, -50%) scale(0);\n  animation: ripple 0.6s ease-out;\n  z-index: -1;\n}\n\n@keyframes ripple {\n  to {\n    transform: translate(-50%, -50%) scale(4);\n    opacity: 0;\n  }\n}\n\n/* Animated text glow effect */\n.custom-button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: -75%;\n  width: 50%;\n  height: 100%;\n  background: linear-gradient(\n    120deg,\n    rgba(255, 255, 255, 0) 0%,\n    rgba(255, 255, 255, 0.8) 50%,\n    rgba(255, 255, 255, 0) 100%\n  );\n  transform: skewX(-25deg);\n  transition: all 0.3s ease;\n}\n\n.custom-button:hover::after {\n  left: 100%;\n  transition: all 0.5s ease;\n}\n\n",
+    "component_name": "GalaxyCurvyTiger34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1889,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.204Z",
+  "updated_at": "2025-07-31T07:55:37.204Z"
+}

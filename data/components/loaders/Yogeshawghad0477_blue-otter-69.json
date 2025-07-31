@@ -1,0 +1,89 @@
+{
+  "id": "Yogeshawghad0477_blue-otter-69",
+  "name": "blue-otter-69",
+  "category": "loaders",
+  "author": "Yogeshawghad0477",
+  "description": "blue-otter-69 组件 (simple, animation, loader, html, css, gradient)",
+  "tags": [
+    "simple",
+    "animation",
+    "loader",
+    "html",
+    "css",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div id=\"div1\">\n  <div id=\"l\" style=\"margin: 33px\">\n    <div class=\"pupil\">\n      <div class=\"p5\">\n        <div class=\"pupl2\">\n          <div class=\"pupil3\"></div>\n          <div class=\"pupil4\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div id=\"m\" style=\"margin: 33px\">\n    <div class=\"pupil\">\n      <div class=\"p5\">\n        <div class=\"pupl2\">\n          <div class=\"pupil3\"></div>\n          <div class=\"pupil4\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Yogeshawghad0477  - Tags: simple, animation, loader, html, css */\n#div1 {\n  width: 100%;\n  background: transparent;\n\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n@keyframes animateHeight {\n  0% {\n    height: 0px;\n  }\n  50% {\n    height: 50px;\n  }\n}\n\n#l,\n#m {\n  width: 150px;\n  height: 70px;\n  position: relative;\n  overflow: hidden;\n  background-color: black;\n  border-radius: 0px 200px 0px 200px;\n  -moz-border-radius: 0px 200px 0px 200px;\n  -webkit-border-radius: 0px 200px 0px 200px;\n  border: 1px solid transparent;\n  animation: animateHeight 1s infinite alternate-reverse;\n}\n#m {\n  border-radius: 200px 0px 200px 0px;\n  -moz-border-radius: 200px 0px 200px 0px;\n  -webkit-border-radius: 200px 0px 200px 0px;\n}\n.pupil,\n.pupl2,\n.pupil3,\n.pupil4,\n.p5 {\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: rgba(0, 0, 0, 0.158);\n}\n.pupil3,\n.pupil4 {\n  width: 18px;\n  height: 3.5px;\n  overflow: visible;\n}\n\n.pupil {\n  width: 60px;\n  height: 60px;\n  background: linear-gradient(\n    rgb(255, 105, 105),\n    rgb(129, 249, 129),\n    rgb(96, 96, 255),\n    rgb(71, 71, 71)\n  );\n}\n.pupl2 {\n  width: 25px;\n  height: 25px;\n  background: linear-gradient(\n    rgb(255, 2, 2),\n    rgb(0, 255, 0),\n    rgb(0, 0, 255),\n    rgb(0, 0, 0)\n  );\n}\n.p5 {\n  width: 42px;\n  height: 42px;\n  background: linear-gradient(\n    rgb(252, 71, 71),\n    rgb(70, 249, 70),\n    rgb(63, 63, 254),\n    rgb(48, 47, 47)\n  );\n}\n.pupil3 {\n  width: 5px;\n  height: 18px;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Yogeshawghad0477_blue-otter-69.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"div1\"></view>\n  <view id=\"l\" style=\"margin: 33px\"></view>\n    <view class=\"pupil\"></view>\n      <view class=\"p5\"></view>\n        <view class=\"pupl2\"></view>\n          <view class=\"pupil3\"></view>\n          <view class=\"pupil4\"></view>\n        </div>\n      </div>\n    </div>\n  </div>\n  <view id=\"m\" style=\"margin: 33px\"></view>\n    <view class=\"pupil\"></view>\n      <view class=\"p5\"></view>\n        <view class=\"pupl2\"></view>\n          <view class=\"pupil3\"></view>\n          <view class=\"pupil4\"></view>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBlueOtter69',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Yogeshawghad0477  - Tags: simple, animation, loader, html, css */\n#div1 {\n  width: 100%;\n  background: transparent;\n\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n@keyframes animateHeight {\n  0% {\n    height: 0rpx;\n  }\n  50% {\n    height: 100rpx;\n  }\n}\n\n#l,\n#m {\n  width: 300rpx;\n  height: 140rpx;\n  position: relative;\n  overflow: hidden;\n  background-color: black;\n  border-radius: 0rpx 400rpx 0rpx 400rpx;\n  -moz-border-radius: 0rpx 400rpx 0rpx 400rpx;\n  -webkit-border-radius: 0rpx 400rpx 0rpx 400rpx;\n  border: 2rpx solid transparent;\n  animation: animateHeight 1s infinite alternate-reverse;\n}\n#m {\n  border-radius: 400rpx 0rpx 400rpx 0rpx;\n  -moz-border-radius: 400rpx 0rpx 400rpx 0rpx;\n  -webkit-border-radius: 400rpx 0rpx 400rpx 0rpx;\n}\n.pupil,\n.pupl2,\n.pupil3,\n.pupil4,\n.p5 {\n  overflow: hidden;\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: rgba(0, 0, 0, 0.158);\n}\n.pupil3,\n.pupil4 {\n  width: 36rpx;\n  height: 7rpx;\n  overflow: visible;\n}\n\n.pupil {\n  width: 120rpx;\n  height: 120rpx;\n  background: linear-gradient(\n    rgb(255, 105, 105),\n    rgb(129, 249, 129),\n    rgb(96, 96, 255),\n    rgb(71, 71, 71)\n  );\n}\n.pupl2 {\n  width: 50rpx;\n  height: 50rpx;\n  background: linear-gradient(\n    rgb(255, 2, 2),\n    rgb(0, 255, 0),\n    rgb(0, 0, 255),\n    rgb(0, 0, 0)\n  );\n}\n.p5 {\n  width: 84rpx;\n  height: 84rpx;\n  background: linear-gradient(\n    rgb(252, 71, 71),\n    rgb(70, 249, 70),\n    rgb(63, 63, 254),\n    rgb(48, 47, 47)\n  );\n}\n.pupil3 {\n  width: 10rpx;\n  height: 36rpx;\n}\n\n",
+    "component_name": "GalaxyBlueOtter69"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2093,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.803Z",
+  "updated_at": "2025-07-31T07:55:40.803Z"
+}

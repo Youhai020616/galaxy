@@ -1,0 +1,115 @@
+{
+  "id": "zanina-yassine_curly-shrimp-52",
+  "name": "curly-shrimp-52",
+  "category": "buttons",
+  "author": "zanina-yassine",
+  "description": "curly-shrimp-52 组件 (minimalist, ios, navigation, tabs)",
+  "tags": [
+    "minimalist",
+    "ios",
+    "navigation",
+    "tabs"
+  ],
+  "original": {
+    "html": "<div class=\"tab-container\">\n  <input type=\"radio\" name=\"tab\" id=\"tab1\" class=\"tab tab--1\">\n  <label class=\"tab_label\" for=\"tab1\">Profile</label>\n\n  <input type=\"radio\" name=\"tab\" id=\"tab2\" class=\"tab tab--2\">\n  <label class=\"tab_label\" for=\"tab2\">Settings</label>\n\n  <input type=\"radio\" name=\"tab\" id=\"tab3\" class=\"tab tab--3\">\n  <label class=\"tab_label\" for=\"tab3\">Notifications</label>\n\n  <div class=\"indicator\"></div>\n</div>",
+    "css": "/* From Uiverse.io by zanina-yassine  - Tags: minimalist, ios, navigation, tabs */\n/* Remove this container when use*/\n.component-title {\n  width: 100%;\n  position: absolute;\n  z-index: 999;\n  top: 30px;\n  left: 0;\n  padding: 0;\n  margin: 0;\n  font-size: 1rem;\n  font-weight: 700;\n  color: #888;\n  text-align: center;\n}\n\n.tab-container {\n  position: relative;\n\n  display: flex;\n  flex-direction: row;\n  align-items: flex-start;\n\n  padding: 2px;\n\n  background-color: #dadadb;\n  border-radius: 9px;\n}\n\n.indicator {\n  content: \"\";\n  width: 130px;\n  height: 28px;\n  background: #ffffff;\n  position: absolute;\n  top: 2px;\n  left: 2px;\n  z-index: 9;\n  border: 0.5px solid rgba(0, 0, 0, 0.04);\n  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);\n  border-radius: 7px;\n  transition: all 0.2s ease-out;\n}\n\n.tab {\n  width: 130px;\n  height: 28px;\n  position: absolute;\n  z-index: 99;\n  outline: none;\n  opacity: 0;\n}\n\n.tab_label {\n  width: 130px;\n  height: 28px;\n\n  position: relative;\n  z-index: 999;\n\n  display: flex;\n  align-items: center;\n  justify-content: center;\n\n  border: 0;\n\n  font-size: 0.75rem;\n  opacity: 0.6;\n\n  cursor: pointer;\n}\n\n.tab--1:checked ~ .indicator {\n  left: 2px;\n}\n\n.tab--2:checked ~ .indicator {\n  left: calc(130px + 2px);\n}\n\n.tab--3:checked ~ .indicator {\n  left: calc(130px * 2 + 2px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/zanina-yassine_curly-shrimp-52.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tab-container\"></view>\n  <input type=\"radio\" name=\"tab\" id=\"tab1\" class=\"tab tab--1\"></input>\n  <label class=\"tab_label\" for=\"tab1\"></label>Profile</label>\n\n  <input type=\"radio\" name=\"tab\" id=\"tab2\" class=\"tab tab--2\"></input>\n  <label class=\"tab_label\" for=\"tab2\"></label>Settings</label>\n\n  <input type=\"radio\" name=\"tab\" id=\"tab3\" class=\"tab tab--3\"></input>\n  <label class=\"tab_label\" for=\"tab3\"></label>Notifications</label>\n\n  <view class=\"indicator\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCurlyShrimp52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by zanina-yassine  - Tags: minimalist, ios, navigation, tabs */\n/* Remove this container when use*/\n.component-title {\n  width: 100%;\n  position: absolute;\n  z-index: 999;\n  top: 60rpx;\n  left: 0;\n  padding: 0;\n  margin: 0;\n  font-size: 1rem;\n  font-weight: 700;\n  color: #888;\n  text-align: center;\n}\n\n.tab-container {\n  position: relative;\n\n  display: flex;\n  flex-direction: row;\n  align-items: flex-start;\n\n  padding: 4rpx;\n\n  background-color: #dadadb;\n  border-radius: 18rpx;\n}\n\n.indicator {\n  content: \"\";\n  width: 260rpx;\n  height: 56rpx;\n  background: #ffffff;\n  position: absolute;\n  top: 4rpx;\n  left: 4rpx;\n  z-index: 9;\n  border: 1rpx solid rgba(0, 0, 0, 0.04);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 6rpx 16rpx rgba(0, 0, 0, 0.12), 0rpx 6rpx 2rpx rgba(0, 0, 0, 0.04);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 14rpx;\n  transition: all 0.2s ease-out;\n}\n\n.tab {\n  width: 260rpx;\n  height: 56rpx;\n  position: absolute;\n  z-index: 99;\n  outline: none;\n  opacity: 0;\n}\n\n.tab_label {\n  width: 260rpx;\n  height: 56rpx;\n\n  position: relative;\n  z-index: 999;\n\n  display: flex;\n  align-items: center;\n  justify-content: center;\n\n  border: 0;\n\n  font-size: 0.75rem;\n  opacity: 0.6;\n\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.tab--1:checked ~ .indicator {\n  left: 4rpx;\n}\n\n.tab--2:checked ~ .indicator {\n  left: calc(260rpx + 4rpx);\n}\n\n.tab--3:checked ~ .indicator {\n  left: calc(260rpx * 2 + 4rpx);\n}\n\n",
+    "component_name": "GalaxyCurlyShrimp52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1771,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.417Z",
+  "updated_at": "2025-07-31T07:55:38.417Z"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "PriyanshuGupta28_rare-panda-30",
+  "name": "rare-panda-30",
+  "category": "loaders",
+  "author": "PriyanshuGupta28",
+  "description": "rare-panda-30 组件 (loader, simple loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "simple loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"custom-loader\"></div>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, simple loader */\n.custom-loader {\n  width: 50px;\n  height: 50px;\n  display: grid;\n}\n\n.custom-loader::before,\n.custom-loader::after {\n  content: \"\";\n  grid-area: 1/1;\n  --c: radial-gradient(farthest-side,#1692f8 92%,rgba(179, 53, 53, 0));\n  background: var(--c) 50%  0, \n      var(--c) 50%  100%, \n      var(--c) 100% 50%, \n      var(--c) 0    50%;\n  background-size: 12px 12px;\n  background-repeat: no-repeat;\n  animation: s2 1s infinite;\n}\n\n.custom-loader::before {\n  margin: 4px;\n  filter: hue-rotate(45deg);\n  background-size: 8px 8px;\n  animation-timing-function: linear\n}\n\n@keyframes s2 {\n \n  100% {\n    transform: rotate(.5turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/PriyanshuGupta28_rare-panda-30.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"custom-loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyRarePanda30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, simple loader */\n.custom-loader {\n  width: 100rpx;\n  height: 100rpx;\n  display: grid;\n}\n\n.custom-loader::before,\n.custom-loader::after {\n  content: \"\";\n  grid-area: 1/1;\n  --c: radial-gradient(farthest-side,#1692f8 92%,rgba(179, 53, 53, 0));\n  background: var(--c) 50%  0, \n      var(--c) 50%  100%, \n      var(--c) 100% 50%, \n      var(--c) 0    50%;\n  background-size: 24rpx 24rpx;\n  background-repeat: no-repeat;\n  animation: s2 1s infinite;\n}\n\n.custom-loader::before {\n  margin: 8rpx;\n  \n  background-size: 16rpx 16rpx;\n  animation-timing-function: linear\n}\n\n@keyframes s2 {\n \n  100% {\n    transform: rotate(.5turn)\n  }\n}\n",
+    "component_name": "GalaxyRarePanda30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 732,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.138Z",
+  "updated_at": "2025-07-31T07:55:40.138Z"
+}

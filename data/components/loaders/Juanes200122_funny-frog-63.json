@@ -1,0 +1,88 @@
+{
+  "id": "Juanes200122_funny-frog-63",
+  "name": "funny-frog-63",
+  "category": "loaders",
+  "author": "Juanes200122",
+  "description": "funny-frog-63 组件 (simple, animation, red, loading, loader)",
+  "tags": [
+    "simple",
+    "animation",
+    "red",
+    "loading",
+    "loader"
+  ],
+  "original": {
+    "html": "<span class=\"loader\"></span>",
+    "css": "/* From Uiverse.io by Juanes200122  - Website: https://cssloaders.github.io/ - Name: css-loader - Tags: simple, animation, red, loading, loader */\n.loader {\n  width: 48px;\n  height: 48px;\n  border: 3px dotted #fff;\n  border-style: solid solid dotted dotted;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  box-sizing: border-box;\n  animation: rotation 2s linear infinite;\n}\n.loader::after {\n  content: \"\";\n  box-sizing: border-box;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  border: 3px dotted #ff3d00;\n  border-style: solid solid dotted;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n  animation: rotationBack 1s linear infinite;\n  transform-origin: center center;\n}\n\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes rotationBack {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(-360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Juanes200122_funny-frog-63.html"
+  },
+  "uniapp": {
+    "template": "<text class=\"loader\"></text>",
+    "script": "export default {\n  name: 'GalaxyFunnyFrog63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Juanes200122  - Website: https://cssloaders.github.io/ - Name: css-loader - Tags: simple, animation, red, loading, loader */\n.loader {\n  width: 96rpx;\n  height: 96rpx;\n  border: 6rpx dotted #fff;\n  border-style: solid solid dotted dotted;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  box-sizing: border-box;\n  animation: rotation 2s linear infinite;\n}\n.loader::after {\n  content: \"\";\n  box-sizing: border-box;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  border: 6rpx dotted #ff3d00;\n  border-style: solid solid dotted;\n  width: 48rpx;\n  height: 48rpx;\n  border-radius: 50%;\n  animation: rotationBack 1s linear infinite;\n  transform-origin: center center;\n}\n\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes rotationBack {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(-360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyFunnyFrog63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1000,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.578Z",
+  "updated_at": "2025-07-31T07:55:39.578Z"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "cuatrofender_afraid-monkey-100",
+  "name": "afraid-monkey-100",
+  "category": "buttons",
+  "author": "cuatrofender",
+  "description": "afraid-monkey-100 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Hover me.\n</button>",
+    "css": "/* From Uiverse.io by cuatrofender - Tags: button */\nbutton {\n border: none;\n font-family: sans-serif;\n font-size: 17px;\n background: transparent;\n color: #006bb3;\n border: solid 1px rgba(0, 107, 179, 0.2);\n padding: 10px;\n border-radius: 4px;\n transition-duration: 0.2s;\n}\n\nbutton:before {\n content: \"»\";\n opacity: 0;\n margin-left: -15px;\n transition-duration: 0.2s;\n}\n\nbutton:hover:before {\n margin-left: 0px;\n opacity: 1;\n}\n\nbutton:hover {\n color: black;\n background: rgba(0, 0, 0, 0.02);\n border: solid 1px gainsboro;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cuatrofender_afraid-monkey-100.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Hover me.\n</button>",
+    "script": "export default {\n  name: 'GalaxyAfraidMonkey100',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cuatrofender - Tags: button */\nbutton {\n border: none;\n font-family: sans-serif;\n font-size: 34rpx;\n background: transparent;\n color: #006bb3;\n border: solid 2rpx rgba(0, 107, 179, 0.2);\n padding: 20rpx;\n border-radius: 8rpx;\n transition-duration: 0.2s;\n}\n\nbutton:before {\n content: \"»\";\n opacity: 0;\n margin-left: -30rpx;\n transition-duration: 0.2s;\n}\n\nbutton:hover:before {\n margin-left: 0rpx;\n opacity: 1;\n}\n\nbutton:hover {\n color: black;\n background: rgba(0, 0, 0, 0.02);\n border: solid 2rpx gainsboro;\n}\n",
+    "component_name": "GalaxyAfraidMonkey100"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 555,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.244Z",
+  "updated_at": "2025-07-31T07:55:36.244Z"
+}

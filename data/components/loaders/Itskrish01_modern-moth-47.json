@@ -1,0 +1,89 @@
+{
+  "id": "Itskrish01_modern-moth-47",
+  "name": "modern-moth-47",
+  "category": "loaders",
+  "author": "Itskrish01",
+  "description": "modern-moth-47 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"pattern-1\">\n    <div class=\"pattern-1-shade\"></div>\n  </div>\n  <div class=\"pattern-2\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Itskrish01  - Tags: loader */\n.loader {\n  position: relative;\n  width: 200px;\n  height: 200px;\n}\n\n.loader .pattern-1 {\n  position: absolute;\n  background-color: #ff4c5a;\n  width: 200px;\n  height: 200px;\n  clip-path: polygon(0 10%, 70% 90%, 40% 90%, 0 45%);\n}\n\n.loader .pattern-2 {\n  position: absolute;\n  background-color: #ff4c5a;\n  width: 220px;\n  height: 190px;\n  clip-path: polygon(100% 10%, 100% 45%, 83% 65%, 55% 65%);\n}\n\n.loader .pattern-1 .pattern-1-shade {\n  position: absolute;\n  transform: translateX(-20px);\n  opacity: 0.7;\n  z-index: 10;\n  background-color: white;\n  width: 20px;\n  height: 200px;\n  animation: shiny 1s infinite;\n}\n\n@keyframes shiny {\n  0% {\n    transform: translateX(-20px);\n  }\n  100% {\n    transform: translateX(140px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Itskrish01_modern-moth-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"pattern-1\"></view>\n    <view class=\"pattern-1-shade\"></view>\n  </div>\n  <view class=\"pattern-2\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyModernMoth47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Itskrish01  - Tags: loader */\n.loader {\n  position: relative;\n  width: 400rpx;\n  height: 400rpx;\n}\n\n.loader .pattern-1 {\n  position: absolute;\n  background-color: #ff4c5a;\n  width: 400rpx;\n  height: 400rpx;\n  \n}\n\n.loader .pattern-2 {\n  position: absolute;\n  background-color: #ff4c5a;\n  width: 440rpx;\n  height: 380rpx;\n  \n}\n\n.loader .pattern-1 .pattern-1-shade {\n  position: absolute;\n  transform: translateX(-40rpx);\n  opacity: 0.7;\n  z-index: 10;\n  background-color: white;\n  width: 40rpx;\n  height: 400rpx;\n  animation: shiny 1s infinite;\n}\n\n@keyframes shiny {\n  0% {\n    transform: translateX(-40rpx);\n  }\n  100% {\n    transform: translateX(280rpx);\n  }\n}\n\n",
+    "component_name": "GalaxyModernMoth47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 923,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.363Z",
+  "updated_at": "2025-07-31T07:55:39.363Z"
+}

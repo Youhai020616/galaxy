@@ -1,0 +1,113 @@
+{
+  "id": "e-coders_great-falcon-16",
+  "name": "great-falcon-16",
+  "category": "buttons",
+  "author": "e-coders",
+  "description": "great-falcon-16 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>Button</button>",
+    "css": "/* From Uiverse.io by e-coders - Tags: button */\nbutton {\n background-color: #111827;\n border: 1px solid transparent;\n border-radius: .75rem;\n box-sizing: border-box;\n color: #FFFFFF;\n cursor: pointer;\n flex: 0 0 auto;\n font-family: \"Inter var\",ui-sans-serif,system-ui,-apple-system,system-ui,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";\n font-size: 1.125rem;\n font-weight: 600;\n line-height: 1.5rem;\n padding: .75rem 1.2rem;\n text-align: center;\n text-decoration: none #6B7280 solid;\n text-decoration-thickness: auto;\n transition-duration: .2s;\n transition-property: background-color,border-color,color,fill,stroke;\n transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);\n user-select: none;\n -webkit-user-select: none;\n touch-action: manipulation;\n width: auto;\n}\n\nbutton:hover {\n background-color: #374151;\n}\n\nbutton:focus {\n box-shadow: none;\n outline: 2px solid white;\n outline-offset: 2px;\n}\n\n@media (min-width: 768px) {\n button {\n  padding: .75rem 1.5rem;\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/e-coders_great-falcon-16.html"
+  },
+  "uniapp": {
+    "template": "<button></button>Button</button>",
+    "script": "export default {\n  name: 'GalaxyGreatFalcon16',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by e-coders - Tags: button */\nbutton {\n background-color: #111827;\n border: 2rpx solid transparent;\n border-radius: .75rem;\n box-sizing: border-box;\n color: #FFFFFF;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n flex: 0 0 auto;\n font-family: \"Inter var\",ui-sans-serif,system-ui,-apple-system,system-ui,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";\n font-size: 1.125rem;\n font-weight: 600;\n line-height: 1.5rem;\n padding: .75rem 1.2rem;\n text-align: center;\n text-decoration: none #6B7280 solid;\n text-decoration-thickness: auto;\n transition-duration: .2s;\n transition-property: background-color,border-color,color,fill,stroke;\n transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);\n user-select: none;\n -webkit-user-select: none;\n touch-action: manipulation;\n width: auto;\n}\n\nbutton:hover {\n background-color: #374151;\n}\n\nbutton:focus {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n outline: 4rpx solid white;\n outline-offset: 4rpx;\n}\n\n@media (min-width: 1536rpx) {\n button {\n  padding: .75rem 1.5rem;\n }\n}\n",
+    "component_name": "GalaxyGreatFalcon16"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1090,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.450Z",
+  "updated_at": "2025-07-31T07:55:36.450Z"
+}

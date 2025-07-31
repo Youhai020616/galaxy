@@ -1,0 +1,113 @@
+{
+  "id": "absoluteSTrange_helpless-robin-98",
+  "name": "helpless-robin-98",
+  "category": "buttons",
+  "author": "absoluteSTrange",
+  "description": "helpless-robin-98 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"button\">\n    <div class=\"button-wrapper\">\n        <div class=\"text\">Download</div>\n        <span class=\"icon\">\n            For Free!\n        </span>\n    </div>\n</div>",
+    "css": "/* From Uiverse.io by absoluteSTrange - Tags: button */\n.button {\n  --width: 100px;\n  --height: 25px;\n  --button-color: #0059ff;\n  width: var(--width);\n  height: var(--height);\n  background: var(--button-color);\n  position: relative;\n  text-align: center;\n  border-radius: 30px;\n  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\n  text-decoration: solid;\n  transition: background box-shadow 0.3s;\n  -webkit-box-shadow: 4px 8px 19px -3px #0059ff;\n  box-shadow: 0px 0px 20px -3px #0059ff;\n  text-shadow: 0 0 .4em rgb(255, 255, 255);\n}\n\n.button::before {\n  position: absolute;\n  content: attr(data-tooltip);\n  background-color: var(--button-color);\n  font-size: 0.9rem;\n  color: #111;\n}\n\n.button::after {\n  position: absolute;\n  content: '';\n  width: 0;\n  height: 0;\n  border: 10px solid transparent;\n  border-top-color: var(--button-color);\n}\n\n.button::after,.button::before {\n  opacity: 0;\n  visibility: hidden;\n  transition: all 0.5s;\n}\n\n.text {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.button-wrapper,.text,.icon {\n  overflow: hidden;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  color: #fff;\n}\n\n.text {\n  top: 0\n}\n\n.text,.icon {\n  transition: top 0.45s;\n}\n\n.icon {\n  color: #fff;\n  top: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.button:hover {\n  background: #4586ff;\n  box-shadow: 0px 0px 20px -3px #4586ff;\n}\n\n.button:hover .text {\n  top: -100%;\n}\n\n.button:hover .icon {\n  top: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/absoluteSTrange_helpless-robin-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"button\"></view>\n    <view class=\"button-wrapper\"></view>\n        <view class=\"text\">Download</view>\n        <text class=\"icon\"></text>\n            For Free!\n        </span>\n    </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHelplessRobin98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by absoluteSTrange - Tags: button */\n.button {\n  --width: 200rpx;\n  --height: 50rpx;\n  --button-color: #0059ff;\n  width: var(--width);\n  height: var(--height);\n  background: var(--button-color);\n  position: relative;\n  text-align: center;\n  border-radius: 60rpx;\n  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\n  text-decoration: solid;\n  transition: background box-shadow 0.3s;\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 16rpx 38rpx -6rpx #0059ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx -6rpx #0059ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 0 0 .4em rgb(255, 255, 255);\n  /* #endif */\n}\n\n.button::before {\n  position: absolute;\n  content: attr(data-tooltip);\n  background-color: var(--button-color);\n  font-size: 0.9rem;\n  color: #111;\n}\n\n.button::after {\n  position: absolute;\n  content: '';\n  width: 0;\n  height: 0;\n  border: 20rpx solid transparent;\n  border-top-color: var(--button-color);\n}\n\n.button::after,.button::before {\n  opacity: 0;\n  visibility: hidden;\n  transition: all 0.5s;\n}\n\n.text {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.button-wrapper,.text,.icon {\n  overflow: hidden;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  color: #fff;\n}\n\n.text {\n  top: 0\n}\n\n.text,.icon {\n  transition: top 0.45s;\n}\n\n.icon {\n  color: #fff;\n  top: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.button:hover {\n  background: #4586ff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx -6rpx #4586ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover .text {\n  top: -100%;\n}\n\n.button:hover .icon {\n  top: 0;\n}\n\n\n\n\n",
+    "component_name": "GalaxyHelplessRobin98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1683,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.395Z",
+  "updated_at": "2025-07-31T07:55:35.395Z"
+}

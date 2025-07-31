@@ -1,0 +1,104 @@
+{
+  "id": "Itskrish01_angry-bird-46",
+  "name": "angry-bird-46",
+  "category": "buttons",
+  "author": "Itskrish01",
+  "description": "angry-bird-46 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"cursor-pointer transistion-all duration-500 hover:shadow-[0_15px_50px_-15px_#13b6da] p-[12px] rounded-[24px] flex gap-4 bg-gradient-to-r from-[#2891c5] to-[#13b6da]\">\n  <svg class=\"h-12 w-12 bg-[#0a0a0a] shadow-xl rounded-full p-3\" viewBox=\"0 0 24 24\" fill=\"none\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M15.003 14H3.5v-4h11.502l-4.165-4.538 2.705-2.947 7.353 8.012c.747.813.747 2.133 0 2.947l-7.353 8.011-2.705-2.947L15.003 14z\" fill=\"#F0F0F0\"></path>\n  </svg>\n  <span class=\"text-[1.9rem] font-bold text-white pr-3\">Play Now</span>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/Itskrish01_angry-bird-46.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cursor-pointer transistion-all duration-500 hover:shadow-[0_15px_50px_-15px_#13b6da] p-[12px] rounded-[24px] flex gap-4 bg-gradient-to-r from-[#2891c5] to-[#13b6da]\"></button>\n  <view class=\"h-12 w-12 bg-[#0a0a0a] shadow-xl rounded-full p-3\" viewBox=\"0 0 24 24\" fill=\"none\"></view>\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M15.003 14H3.5v-4h11.502l-4.165-4.538 2.705-2.947 7.353 8.012c.747.813.747 2.133 0 2.947l-7.353 8.011-2.705-2.947L15.003 14z\" fill=\"#F0F0F0\"></path>\n  </svg>\n  <text class=\"text-[1.9rem] font-bold text-white pr-3\">Play Now</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyAngryBird46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyAngryBird46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 579,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.348Z",
+  "updated_at": "2025-07-31T07:55:33.348Z"
+}

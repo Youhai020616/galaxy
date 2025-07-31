@@ -1,0 +1,95 @@
+{
+  "id": "VashonG_jolly-yak-23",
+  "name": "jolly-yak-23",
+  "category": "loaders",
+  "author": "VashonG",
+  "description": "jolly-yak-23 组件 (loader, disney, magical, wand, animation, gradient)",
+  "tags": [
+    "loader",
+    "disney",
+    "magical",
+    "wand",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div aria-live=\"assertive\" role=\"alert\" class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by VashonG - Tags: loader, disney, magical, wand */\n.loader {\n  --hue: 210;\n  --size: 100px;\n  --border: 10px;\n  --speed: 1s;\n  --blur: var(--border);\n}\n\n.loader {\n  width: var(--border);\n  aspect-ratio: 1;\n  background: white;\n  border-radius: 50%;\n  position: absolute;\n  --y: calc((var(--size) * -0.5) + (var(--border) * 0.5));\n  transform: rotate(0deg) translateY(var(--y));\n  animation: spin var(--speed) infinite linear;\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  inset: calc(var(--border) * -0.5);\n  border-radius: 50%;\n  background: white;\n  filter: blur(var(--blur));\n  z-index: -1;\n}\n\n.loader::after {\n  content: \"\";\n  width: var(--size);\n  aspect-ratio: 1;\n  position: absolute;\n  top: 0%;\n  left: 50%;\n  translate: -50% 0;\n  background: conic-gradient(\n    white,\n    hsl(var(--hue), 100%, 70%),\n    hsl(var(--hue), 100%, 10%),\n    transparent 65%\n  );\n  border-radius: 50%;\n  mask: radial-gradient(\n    transparent calc(((var(--size) * 0.5) - var(--border)) - 1px),\n    white calc((var(--size) * 0.5) - var(--border))\n  );\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(-360deg) translateY(var(--y));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/VashonG_jolly-yak-23.html"
+  },
+  "uniapp": {
+    "template": "<view aria-live=\"assertive\" role=\"alert\" class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyJollyYak23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by VashonG - Tags: loader, disney, magical, wand */\n.loader {\n  --hue: 210;\n  --size: 200rpx;\n  --border: 20rpx;\n  --speed: 1s;\n  --blur: var(--border);\n}\n\n.loader {\n  width: var(--border);\n  aspect-ratio: 1;\n  background: white;\n  border-radius: 50%;\n  position: absolute;\n  --y: calc((var(--size) * -0.5) + (var(--border) * 0.5));\n  transform: rotate(0deg) translateY(var(--y));\n  animation: spin var(--speed) infinite linear;\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  inset: calc(var(--border) * -0.5);\n  border-radius: 50%;\n  background: white;\n  \n  z-index: -1;\n}\n\n.loader::after {\n  content: \"\";\n  width: var(--size);\n  aspect-ratio: 1;\n  position: absolute;\n  top: 0%;\n  left: 50%;\n  translate: -50% 0;\n  background: conic-gradient(\n    white,\n    hsl(var(--hue), 100%, 70%),\n    hsl(var(--hue), 100%, 10%),\n    transparent 65%\n  );\n  border-radius: 50%;\n  \n}\n\n@keyframes spin {\n  to {\n    transform: rotate(-360deg) translateY(var(--y));\n  }\n}\n\n",
+    "component_name": "GalaxyJollyYak23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1225,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.737Z",
+  "updated_at": "2025-07-31T07:55:40.737Z"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "Chriskoziol_bright-ladybug-86",
+  "name": "bright-ladybug-86",
+  "category": "loaders",
+  "author": "Chriskoziol",
+  "description": "bright-ladybug-86 组件 (animation, loading, active, loader, circle, animated, clean)",
+  "tags": [
+    "animation",
+    "loading",
+    "active",
+    "loader",
+    "circle",
+    "animated",
+    "clean"
+  ],
+  "original": {
+    "html": "<div class=\"spinnerContainer\">\n  <div class=\"spinner\"></div>\n  <div class=\"loader\">\n    <p>loading</p>\n    <div class=\"words\">\n      <span class=\"word\">posts</span>\n      <span class=\"word\">images</span>\n      <span class=\"word\">followers</span>\n      <span class=\"word\">hashtags</span>\n      <span class=\"word\">posts</span>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Chriskoziol - Tags: animation, loading, active, loader, circle, animated, clean */\n.spinnerContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.spinner {\n  width: 56px;\n  height: 56px;\n  display: grid;\n  border: 4px solid #0000;\n  border-radius: 50%;\n  border-right-color: #299fff;\n  animation: tri-spinner 1s infinite linear;\n}\n\n.spinner::before,\n.spinner::after {\n  content: \"\";\n  grid-area: 1/1;\n  margin: 2px;\n  border: inherit;\n  border-radius: 50%;\n  animation: tri-spinner 2s infinite;\n}\n\n.spinner::after {\n  margin: 8px;\n  animation-duration: 3s;\n}\n\n@keyframes tri-spinner {\n  100% {\n    transform: rotate(1turn);\n  }\n}\n\n.loader {\n  color: #4a4a4a;\n  font-family: \"Poppins\",sans-serif;\n  font-weight: 500;\n  font-size: 25px;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 40px;\n  padding: 10px 10px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  border-radius: 8px;\n}\n\n.words {\n  overflow: hidden;\n}\n\n.word {\n  display: block;\n  height: 100%;\n  padding-left: 6px;\n  color: #299fff;\n  animation: cycle-words 5s infinite;\n}\n\n@keyframes cycle-words {\n  10% {\n    -webkit-transform: translateY(-105%);\n    transform: translateY(-105%);\n  }\n\n  25% {\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%);\n  }\n\n  35% {\n    -webkit-transform: translateY(-205%);\n    transform: translateY(-205%);\n  }\n\n  50% {\n    -webkit-transform: translateY(-200%);\n    transform: translateY(-200%);\n  }\n\n  60% {\n    -webkit-transform: translateY(-305%);\n    transform: translateY(-305%);\n  }\n\n  75% {\n    -webkit-transform: translateY(-300%);\n    transform: translateY(-300%);\n  }\n\n  85% {\n    -webkit-transform: translateY(-405%);\n    transform: translateY(-405%);\n  }\n\n  100% {\n    -webkit-transform: translateY(-400%);\n    transform: translateY(-400%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Chriskoziol_bright-ladybug-86.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinnerContainer\"></view>\n  <view class=\"spinner\"></view>\n  <view class=\"loader\"></view>\n    <text>loading</text>\n    <view class=\"words\"></view>\n      <text class=\"word\">posts</text>\n      <text class=\"word\">images</text>\n      <text class=\"word\">followers</text>\n      <text class=\"word\">hashtags</text>\n      <text class=\"word\">posts</text>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBrightLadybug86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Chriskoziol - Tags: animation, loading, active, loader, circle, animated, clean */\n.spinnerContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.spinner {\n  width: 112rpx;\n  height: 112rpx;\n  display: grid;\n  border: 8rpx solid #0000;\n  border-radius: 50%;\n  border-right-color: #299fff;\n  animation: tri-spinner 1s infinite linear;\n}\n\n.spinner::before,\n.spinner::after {\n  content: \"\";\n  grid-area: 1/1;\n  margin: 4rpx;\n  border: inherit;\n  border-radius: 50%;\n  animation: tri-spinner 2s infinite;\n}\n\n.spinner::after {\n  margin: 16rpx;\n  animation-duration: 3s;\n}\n\n@keyframes tri-spinner {\n  100% {\n    transform: rotate(1turn);\n  }\n}\n\n.loader {\n  color: #4a4a4a;\n  font-family: \"Poppins\",sans-serif;\n  font-weight: 500;\n  font-size: 50rpx;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 80rpx;\n  padding: 20rpx 20rpx;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  border-radius: 16rpx;\n}\n\n.words {\n  overflow: hidden;\n}\n\n.word {\n  display: block;\n  height: 100%;\n  padding-left: 12rpx;\n  color: #299fff;\n  animation: cycle-words 5s infinite;\n}\n\n@keyframes cycle-words {\n  10% {\n    -webkit-transform: translateY(-105%);\n    transform: translateY(-105%);\n  }\n\n  25% {\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%);\n  }\n\n  35% {\n    -webkit-transform: translateY(-205%);\n    transform: translateY(-205%);\n  }\n\n  50% {\n    -webkit-transform: translateY(-200%);\n    transform: translateY(-200%);\n  }\n\n  60% {\n    -webkit-transform: translateY(-305%);\n    transform: translateY(-305%);\n  }\n\n  75% {\n    -webkit-transform: translateY(-300%);\n    transform: translateY(-300%);\n  }\n\n  85% {\n    -webkit-transform: translateY(-405%);\n    transform: translateY(-405%);\n  }\n\n  100% {\n    -webkit-transform: translateY(-400%);\n    transform: translateY(-400%);\n  }\n}\n\n",
+    "component_name": "GalaxyBrightLadybug86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2222,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.056Z",
+  "updated_at": "2025-07-31T07:55:39.056Z"
+}

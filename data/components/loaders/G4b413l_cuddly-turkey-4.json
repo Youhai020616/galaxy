@@ -1,0 +1,87 @@
+{
+  "id": "G4b413l_cuddly-turkey-4",
+  "name": "cuddly-turkey-4",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "cuddly-turkey-4 组件 (loader, after, animation, gradient)",
+  "tags": [
+    "loader",
+    "after",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader, after */\n.loader {\n  position: relative;\n  width: 300px;\n  height: 3px;\n  background: linear-gradient(to right, transparent, #28AE60, transparent);\n  overflow: hidden;\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  translate: -200px 0;\n  width: 150px;\n  height: 100%;\n  background: linear-gradient(to right, transparent, #212121, transparent);\n  animation: slide 1s infinite;\n}\n\n@keyframes slide {\n  100% {\n    translate: 300px 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_cuddly-turkey-4.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyCuddlyTurkey4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader, after */\n.loader {\n  position: relative;\n  width: 600rpx;\n  height: 6rpx;\n  background: linear-gradient(to right, transparent, #28AE60, transparent);\n  overflow: hidden;\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  translate: -400rpx 0;\n  width: 300rpx;\n  height: 100%;\n  background: linear-gradient(to right, transparent, #212121, transparent);\n  animation: slide 1s infinite;\n}\n\n@keyframes slide {\n  100% {\n    translate: 600rpx 0;\n  }\n}\n",
+    "component_name": "GalaxyCuddlyTurkey4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 524,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.269Z",
+  "updated_at": "2025-07-31T07:55:39.269Z"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "1osm_rude-panda-79",
+  "name": "rude-panda-79",
+  "category": "buttons",
+  "author": "1osm",
+  "description": "rude-panda-79 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\"><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z\"></path></svg>\n  <p class=\"Click\">Click</p>\n  <p class=\"OnHover\">Thanks</p>\n\n</button>",
+    "css": "/* From Uiverse.io by 1osm - Tags: button */\nbutton {\n  width: 130px;\n  height: 45px;\n  color: white;\n  font-weight: bold;\n  font-size: 20px;\n  border-width: 10px;\n  background: linear-gradient(to right, #5f6d7c, #456b8b, #49a6fc);\n  border: none;\n  letter-spacing: 0.05em;\n  border-radius: 10px;\n}\n\nbutton svg {\n  height: 40px;\n  width: 60px;\n  transform: translate(-30px,3px) rotate(90deg);\n  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1)\n}\n\nbutton .Click {\n  transform: translate(20px,-33px);\n  font-size: 20px;\n  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)\n}\n\nbutton .OnHover {\n  transform: translate(-15px,-56px);\n  font-size: 20px;\n  opacity: 0%;\n  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)\n}\n\nbutton:hover svg {\n  transform: translate(40px,3px) rotate(90deg);\n}\n\nbutton:hover .Click {\n  opacity: 0%;\n}\n\nbutton:hover .OnHover {\n  opacity: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/1osm_rude-panda-79.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\"><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z\"></path></view>\n  <text class=\"Click\">Click</text>\n  <text class=\"OnHover\">Thanks</text>\n\n</button>",
+    "script": "export default {\n  name: 'GalaxyRudePanda79',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by 1osm - Tags: button */\nbutton {\n  width: 260rpx;\n  height: 90rpx;\n  color: white;\n  font-weight: bold;\n  font-size: 40rpx;\n  border-width: 20rpx;\n  background: linear-gradient(to right, #5f6d7c, #456b8b, #49a6fc);\n  border: none;\n  letter-spacing: 0.05em;\n  border-radius: 20rpx;\n}\n\nbutton svg {\n  height: 80rpx;\n  width: 120rpx;\n  transform: translate(-60rpx,6rpx) rotate(90deg);\n  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1)\n}\n\nbutton .Click {\n  transform: translate(40rpx,-66rpx);\n  font-size: 40rpx;\n  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)\n}\n\nbutton .OnHover {\n  transform: translate(-30rpx,-112rpx);\n  font-size: 40rpx;\n  opacity: 0%;\n  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)\n}\n\nbutton:hover svg {\n  transform: translate(80rpx,6rpx) rotate(90deg);\n}\n\nbutton:hover .Click {\n  opacity: 0%;\n}\n\nbutton:hover .OnHover {\n  opacity: 100%;\n}\n",
+    "component_name": "GalaxyRudePanda79"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1742,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.410Z",
+  "updated_at": "2025-07-31T07:55:32.410Z"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "KINGFRESS_young-dragon-73",
+  "name": "young-dragon-73",
+  "category": "buttons",
+  "author": "KINGFRESS",
+  "description": "young-dragon-73 组件 (button, progress bar, animation)",
+  "tags": [
+    "button",
+    "progress bar",
+    "animation"
+  ],
+  "original": {
+    "html": "<button>\n  <span class=\"txt\">submit</span>\n  <span class=\"txt2\">sent!</span>\n  <span class=\"loader-container\">\n    <span class=\"loader\"></span>\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by KINGFRESS - Tags: button, progress bar */\nbutton {\n  background-color: transparent;\n  width: 13em;\n  height: 3.3em;\n  border: 2px solid #1abc9c;\n  border-radius: 25px;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #1abc9c;\n  padding: 2px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  overflow: hidden;\n  cursor: pointer;\n}\n\nbutton .txt {\n  transition: .4s ease-in-out;\n  position: absolute;\n}\n\nbutton .txt2 {\n  transform: translateY(1em) scale(0);\n  color: #212121;\n  position: absolute;\n}\n\nbutton .loader-container {\n  height: 100%;\n  width: 100%;\n  background-color: transparent;\n  border-radius: inherit;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: -1;\n  overflow: hidden;\n}\n\nbutton .loader-container .loader {\n  height: 100%;\n  width: 100%;\n  background-color: #1abc9c;\n  border-radius: inherit;\n  transform: translateX(-13em);\n}\n\nbutton:focus {\n  transition: .4s ease-in-out .4s;\n  animation: scaling 1.5s ease-in-out 0s 1 both;\n}\n\nbutton:focus .txt {\n  position: absolute;\n  transform: translateY(-5em);\n  transition: .4s ease-in-out;\n}\n\nbutton:focus .txt2 {\n  transform: translateY(0) scale(1);\n  transition: .3s ease-in-out 1.7s;\n}\n\nbutton:focus .loader {\n  display: block;\n  transform: translate(0);\n  transition: .8s cubic-bezier(0,.4,1,.28) .4s;\n  animation: loading;\n}\n\n@keyframes scaling {\n  20% {\n    height: 1.5em;\n  }\n\n  80% {\n    height: 1.5em;\n  }\n\n  100% {\n    height: 3.3em;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KINGFRESS_young-dragon-73.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text class=\"txt\">submit</text>\n  <text class=\"txt2\">sent!</text>\n  <text class=\"loader-container\"></text>\n    <text class=\"loader\"></text>\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyYoungDragon73',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KINGFRESS - Tags: button, progress bar */\nbutton {\n  background-color: transparent;\n  width: 13em;\n  height: 3.3em;\n  border: 4rpx solid #1abc9c;\n  border-radius: 50rpx;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #1abc9c;\n  padding: 4rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton .txt {\n  transition: .4s ease-in-out;\n  position: absolute;\n}\n\nbutton .txt2 {\n  transform: translateY(1em) scale(0);\n  color: #212121;\n  position: absolute;\n}\n\nbutton .loader-container {\n  height: 100%;\n  width: 100%;\n  background-color: transparent;\n  border-radius: inherit;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: -1;\n  overflow: hidden;\n}\n\nbutton .loader-container .loader {\n  height: 100%;\n  width: 100%;\n  background-color: #1abc9c;\n  border-radius: inherit;\n  transform: translateX(-13em);\n}\n\nbutton:focus {\n  transition: .4s ease-in-out .4s;\n  animation: scaling 1.5s ease-in-out 0s 1 both;\n}\n\nbutton:focus .txt {\n  position: absolute;\n  transform: translateY(-5em);\n  transition: .4s ease-in-out;\n}\n\nbutton:focus .txt2 {\n  transform: translateY(0) scale(1);\n  transition: .3s ease-in-out 1.7s;\n}\n\nbutton:focus .loader {\n  display: block;\n  transform: translate(0);\n  transition: .8s cubic-bezier(0,.4,1,.28) .4s;\n  animation: loading;\n}\n\n@keyframes scaling {\n  20% {\n    height: 1.5em;\n  }\n\n  80% {\n    height: 1.5em;\n  }\n\n  100% {\n    height: 3.3em;\n  }\n}\n",
+    "component_name": "GalaxyYoungDragon73"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1682,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.641Z",
+  "updated_at": "2025-07-31T07:55:33.641Z"
+}

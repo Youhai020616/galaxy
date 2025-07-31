@@ -1,0 +1,115 @@
+{
+  "id": "barisdogansutcu_rare-owl-43",
+  "name": "rare-owl-43",
+  "category": "buttons",
+  "author": "barisdogansutcu",
+  "description": "rare-owl-43 组件 (button, button anatomy, customize, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "button anatomy",
+    "customize",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"icon\">\n    <span class=\"text-icon hide\">Icon</span>\n    <svg class=\"css-i6dzq1\" stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" stroke-width=\"2\" stroke=\"currentColor\" height=\"24\" width=\"24\" viewBox=\"0 0 24 24\">\n      <path d=\"M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z\"></path>\n    </svg>\n  </div>\n  <span class=\"title\"> Anatomy </span>\n  <div class=\"padding-left hide\">\n    <div class=\"padding-left-line\">\n      <span class=\"padding-left-text\">Left Padding</span>\n    </div>\n  </div>\n  <div class=\"padding-right hide\">\n    <div class=\"padding-right-line\">\n      <span class=\"padding-right-text\">Right Padding</span>\n    </div>\n  </div>\n  <div class=\"background hide\">\n    <span class=\"background-text\">Background</span>\n  </div>\n  <div class=\"border hide\">\n    <span class=\"border-text\">Border Radius</span>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by barisdogansutcu  - Tags: button, button anatomy, customize */\n.button {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  font-size: 14px;\n  background-image: linear-gradient(#3470fa, #313ed7);\n  color: white;\n  border: solid 2px #0618db;\n  height: 50px;\n  padding: 0px 20px;\n  border-radius: 5px;\n  font-weight: 600;\n  transform: scale(0.89);\n  position: relative;\n}\n.button:not(:hover) .hide,\n.button:not(:hover) .icon::before,\n.button:not(:hover) .icon::after {\n  opacity: 0;\n  visibility: hidden;\n  transform: scale(1.4);\n}\n.hide {\n  transition: all 0.2s ease;\n}\n.button:active {\n  background-image: linear-gradient(#313ed7, #3470fa);\n  border-color: #313ed7;\n}\n.icon {\n  position: relative;\n}\n.icon::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 6px;\n  height: 6px;\n  transform: translate(-50%, -50%);\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.icon::after {\n  content: \"\";\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  transform: translate(-19%, -60%);\n  width: 100px;\n  height: 33px;\n  background-color: transparent;\n  border-radius: 12px 22px 2px 2px;\n  border-right: solid 2px rgb(255, 0, 170);\n  border-top: solid 2px transparent;\n}\n.icon .text-icon {\n  color: rgb(255, 0, 170);\n  position: absolute;\n  font-size: 12px;\n  left: -37px;\n  top: -38px;\n}\n.icon svg {\n  width: 20px;\n  height: 20px;\n  border: solid 2px transparent;\n  display: flex;\n}\n.button:hover .icon svg {\n  border: solid 2px rgba(255, 0, 170, 0.692);\n}\n.padding-left {\n  position: absolute;\n  width: 20px;\n  height: 2px;\n  background-color: rgb(255, 0, 170);\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-left:before {\n  content: \"\";\n  width: 2px;\n  height: 10px;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-left:after {\n  content: \"\";\n  width: 2px;\n  height: 10px;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-left-line {\n  position: absolute;\n  width: 30px;\n  height: 2px;\n  background-color: rgb(255, 0, 170);\n  left: -24px;\n  top: 11px;\n  transform: rotate(-50deg);\n}\n.padding-left-line::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 6px;\n  height: 6px;\n  transform: translate(-50%, -50%);\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.padding-left-text {\n  color: rgb(255, 0, 170);\n  font-size: 12px;\n  position: absolute;\n  white-space: nowrap;\n  transform: rotate(50deg);\n  bottom: 30px;\n  left: -67px;\n}\n\n.padding-right {\n  position: absolute;\n  width: 20px;\n  height: 2px;\n  background-color: rgb(255, 0, 170);\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-right:before {\n  content: \"\";\n  width: 2px;\n  height: 10px;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-right:after {\n  content: \"\";\n  width: 2px;\n  height: 10px;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-right-line {\n  position: absolute;\n  width: 30px;\n  height: 2px;\n  background-color: rgb(255, 0, 170);\n  right: -24px;\n  top: 11px;\n  transform: rotate(50deg);\n}\n.padding-right-line::before {\n  content: \"\";\n  position: absolute;\n  left: 30px;\n  top: 0;\n  width: 6px;\n  height: 6px;\n  transform: translate(-50%, -50%);\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.padding-right-text {\n  color: rgb(255, 0, 170);\n  font-size: 12px;\n  position: absolute;\n  white-space: nowrap;\n  transform: rotate(-50deg);\n  bottom: 33px;\n  left: 18px;\n}\n.background {\n  position: absolute;\n}\n.background::before {\n  content: \"\";\n  position: absolute;\n  right: 27px;\n  bottom: -70px;\n  width: 100px;\n  height: 53px;\n  background-color: transparent;\n  border-radius: 0px 0px 22px 22px;\n  border-right: solid 2px rgb(255, 0, 170);\n  border-bottom: solid 2px transparent;\n}\n.background::after {\n  content: \"\";\n  position: absolute;\n  right: 25px;\n  bottom: -20px;\n  width: 6px;\n  height: 6px;\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.background-text {\n  position: absolute;\n  color: rgb(255, 0, 170);\n  font-size: 12px;\n  bottom: -70px;\n  left: -115px;\n}\n.border {\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n.border:before {\n  content: \"\";\n  width: 15px;\n  height: 15px;\n  border: solid 2px rgb(255, 0, 170);\n  position: absolute;\n  right: 0%;\n  top: 0;\n  transform: translate(50%, -50%);\n  border-radius: 100%;\n}\n.border:after {\n  content: \"\";\n  width: 2px;\n  height: 25px;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  right: -10px;\n  top: -15px;\n  transform: translate(50%, -50%) rotate(60deg);\n}\n.border .border-text {\n  position: absolute;\n  color: rgb(255, 0, 170);\n  font-size: 12px;\n  right: -112px;\n  top: -30px;\n  white-space: nowrap;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/barisdogansutcu_rare-owl-43.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"icon\"></view>\n    <text class=\"text-icon hide\">Icon</text>\n    <view class=\"css-i6dzq1\" stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" stroke-width=\"2\" stroke=\"currentColor\" height=\"24\" width=\"24\" viewBox=\"0 0 24 24\"></view>\n      <path d=\"M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z\"></path>\n    </svg>\n  </div>\n  <text class=\"title\"> Anatomy </text>\n  <view class=\"padding-left hide\"></view>\n    <view class=\"padding-left-line\"></view>\n      <text class=\"padding-left-text\">Left Padding</text>\n    </div>\n  </div>\n  <view class=\"padding-right hide\"></view>\n    <view class=\"padding-right-line\"></view>\n      <text class=\"padding-right-text\">Right Padding</text>\n    </div>\n  </div>\n  <view class=\"background hide\"></view>\n    <text class=\"background-text\">Background</text>\n  </div>\n  <view class=\"border hide\"></view>\n    <text class=\"border-text\">Border Radius</text>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyRareOwl43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by barisdogansutcu  - Tags: button, button anatomy, customize */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 20rpx;\n  font-size: 28rpx;\n  background-image: linear-gradient(#3470fa, #313ed7);\n  color: white;\n  border: solid 4rpx #0618db;\n  height: 100rpx;\n  padding: 0rpx 40rpx;\n  border-radius: 10rpx;\n  font-weight: 600;\n  transform: scale(0.89);\n  position: relative;\n}\n.button:not(:hover) .hide,\n.button:not(:hover) .icon::before,\n.button:not(:hover) .icon::after {\n  opacity: 0;\n  visibility: hidden;\n  transform: scale(1.4);\n}\n.hide {\n  transition: all 0.2s ease;\n}\n.button:active {\n  background-image: linear-gradient(#313ed7, #3470fa);\n  border-color: #313ed7;\n}\n.icon {\n  position: relative;\n}\n.icon::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 12rpx;\n  height: 12rpx;\n  transform: translate(-50%, -50%);\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.icon::after {\n  content: \"\";\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  transform: translate(-19%, -60%);\n  width: 200rpx;\n  height: 66rpx;\n  background-color: transparent;\n  border-radius: 24rpx 44rpx 4rpx 4rpx;\n  border-right: solid 4rpx rgb(255, 0, 170);\n  border-top: solid 4rpx transparent;\n}\n.icon .text-icon {\n  color: rgb(255, 0, 170);\n  position: absolute;\n  font-size: 24rpx;\n  left: -74rpx;\n  top: -76rpx;\n}\n.icon svg {\n  width: 40rpx;\n  height: 40rpx;\n  border: solid 4rpx transparent;\n  display: flex;\n}\n.button:hover .icon svg {\n  border: solid 4rpx rgba(255, 0, 170, 0.692);\n}\n.padding-left {\n  position: absolute;\n  width: 40rpx;\n  height: 4rpx;\n  background-color: rgb(255, 0, 170);\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-left:before {\n  content: \"\";\n  width: 4rpx;\n  height: 20rpx;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-left:after {\n  content: \"\";\n  width: 4rpx;\n  height: 20rpx;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-left-line {\n  position: absolute;\n  width: 60rpx;\n  height: 4rpx;\n  background-color: rgb(255, 0, 170);\n  left: -48rpx;\n  top: 22rpx;\n  transform: rotate(-50deg);\n}\n.padding-left-line::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 12rpx;\n  height: 12rpx;\n  transform: translate(-50%, -50%);\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.padding-left-text {\n  color: rgb(255, 0, 170);\n  font-size: 24rpx;\n  position: absolute;\n  white-space: nowrap;\n  transform: rotate(50deg);\n  bottom: 60rpx;\n  left: -134rpx;\n}\n\n.padding-right {\n  position: absolute;\n  width: 40rpx;\n  height: 4rpx;\n  background-color: rgb(255, 0, 170);\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-right:before {\n  content: \"\";\n  width: 4rpx;\n  height: 20rpx;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  left: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-right:after {\n  content: \"\";\n  width: 4rpx;\n  height: 20rpx;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.padding-right-line {\n  position: absolute;\n  width: 60rpx;\n  height: 4rpx;\n  background-color: rgb(255, 0, 170);\n  right: -48rpx;\n  top: 22rpx;\n  transform: rotate(50deg);\n}\n.padding-right-line::before {\n  content: \"\";\n  position: absolute;\n  left: 60rpx;\n  top: 0;\n  width: 12rpx;\n  height: 12rpx;\n  transform: translate(-50%, -50%);\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.padding-right-text {\n  color: rgb(255, 0, 170);\n  font-size: 24rpx;\n  position: absolute;\n  white-space: nowrap;\n  transform: rotate(-50deg);\n  bottom: 66rpx;\n  left: 36rpx;\n}\n.background {\n  position: absolute;\n}\n.background::before {\n  content: \"\";\n  position: absolute;\n  right: 54rpx;\n  bottom: -140rpx;\n  width: 200rpx;\n  height: 106rpx;\n  background-color: transparent;\n  border-radius: 0rpx 0rpx 44rpx 44rpx;\n  border-right: solid 4rpx rgb(255, 0, 170);\n  border-bottom: solid 4rpx transparent;\n}\n.background::after {\n  content: \"\";\n  position: absolute;\n  right: 50rpx;\n  bottom: -40rpx;\n  width: 12rpx;\n  height: 12rpx;\n  background-color: rgb(255, 0, 170);\n  border-radius: 100%;\n}\n.background-text {\n  position: absolute;\n  color: rgb(255, 0, 170);\n  font-size: 24rpx;\n  bottom: -140rpx;\n  left: -230rpx;\n}\n.border {\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n.border:before {\n  content: \"\";\n  width: 30rpx;\n  height: 30rpx;\n  border: solid 4rpx rgb(255, 0, 170);\n  position: absolute;\n  right: 0%;\n  top: 0;\n  transform: translate(50%, -50%);\n  border-radius: 100%;\n}\n.border:after {\n  content: \"\";\n  width: 4rpx;\n  height: 50rpx;\n  background-color: rgb(255, 0, 170);\n  position: absolute;\n  right: -20rpx;\n  top: -30rpx;\n  transform: translate(50%, -50%) rotate(60deg);\n}\n.border .border-text {\n  position: absolute;\n  color: rgb(255, 0, 170);\n  font-size: 24rpx;\n  right: -224rpx;\n  top: -60rpx;\n  white-space: nowrap;\n}\n\n",
+    "component_name": "GalaxyRareOwl43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 5873,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.918Z",
+  "updated_at": "2025-07-31T07:55:35.918Z"
+}

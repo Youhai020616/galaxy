@@ -1,0 +1,82 @@
+{
+  "id": "ArnavK-09_shy-panther-83",
+  "name": "shy-panther-83",
+  "category": "loaders",
+  "author": "ArnavK-09",
+  "description": "shy-panther-83 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"hover:scale-110 transition-all ease-in-out cursor-pointer hover:shadow-xl hover:shadow-neutral-700 delay-250 animate-spin delay-50 duration-1000 bg-gradient-to-br border-4 shadow-inner shadow-neutral-700 border-neutral-950 from-white/80 to-gray-600 rounded-full grid place-items-center z-0 h-20 w-20 relative\">\n  <div class=\"rounded-full bg-neutral-900 absolute rotate-[90deg] z-20 h-20 scale-50 w-2\"></div>\n  <div class=\"rounded-full bg-neutral-900 absolute rotate-[180deg] z-20 h-20 scale-50 w-2\"></div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/ArnavK-09_shy-panther-83.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"hover:scale-110 transition-all ease-in-out cursor-pointer hover:shadow-xl hover:shadow-neutral-700 delay-250 animate-spin delay-50 duration-1000 bg-gradient-to-br border-4 shadow-inner shadow-neutral-700 border-neutral-950 from-white/80 to-gray-600 rounded-full grid place-items-center z-0 h-20 w-20 relative\"></view>\n  <view class=\"rounded-full bg-neutral-900 absolute rotate-[90deg] z-20 h-20 scale-50 w-2\"></view>\n  <view class=\"rounded-full bg-neutral-900 absolute rotate-[180deg] z-20 h-20 scale-50 w-2\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShyPanther83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyShyPanther83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 531,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.963Z",
+  "updated_at": "2025-07-31T07:55:38.963Z"
+}

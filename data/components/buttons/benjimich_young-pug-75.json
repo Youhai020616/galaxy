@@ -1,0 +1,120 @@
+{
+  "id": "benjimich_young-pug-75",
+  "name": "young-pug-75",
+  "category": "buttons",
+  "author": "benjimich",
+  "description": "young-pug-75 组件 (skeuomorphism, animation, email, 3d, action, button, realistic, svg, interactive)",
+  "tags": [
+    "skeuomorphism",
+    "animation",
+    "email",
+    "3d",
+    "action",
+    "button",
+    "realistic",
+    "svg",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"wrapper\">\n  <div class=\"container\">\n    <button class=\"button\">\n      <svg class=\"imgSvg\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\n        <g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g>\n        <g stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g>\n        <g id=\"SVGRepo_iconCarrier\">\n          <path fill=\"#000\" d=\"M20.33 3.66996C20.1408 3.48213 19.9035 3.35008 19.6442 3.28833C19.3849 3.22659 19.1135 3.23753 18.86 3.31996L4.23 8.19996C3.95867 8.28593 3.71891 8.45039 3.54099 8.67255C3.36307 8.89471 3.25498 9.16462 3.23037 9.44818C3.20576 9.73174 3.26573 10.0162 3.40271 10.2657C3.5397 10.5152 3.74754 10.7185 4 10.85L10.07 13.85L13.07 19.94C13.1906 20.1783 13.3751 20.3785 13.6029 20.518C13.8307 20.6575 14.0929 20.7309 14.36 20.73H14.46C14.7461 20.7089 15.0192 20.6023 15.2439 20.4239C15.4686 20.2456 15.6345 20.0038 15.72 19.73L20.67 5.13996C20.7584 4.88789 20.7734 4.6159 20.7132 4.35565C20.653 4.09541 20.5201 3.85762 20.33 3.66996ZM4.85 9.57996L17.62 5.31996L10.53 12.41L4.85 9.57996ZM14.43 19.15L11.59 13.47L18.68 6.37996L14.43 19.15Z\"></path>\n        </g>\n      </svg>\n\n      <span>Send Message</span>\n    </button>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by benjimich  - Tags: skeuomorphism, animation, email, 3d, action, button, realistic, svg */\n.wrapper {\n  background-color: #fff;\n  padding: 0.5px;\n  border-radius: 10px;\n  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n}\n.wrapper:hover {\n  scale: 1.05;\n}\n.wrapper:active {\n  scale: 1;\n}\n.container {\n  cursor: pointer;\n  background-color: #fff;\n  padding: 5px;\n  border-radius: inherit;\n  border: 2px rgb(158, 158, 158) solid;\n  box-shadow: inset 0px -12px 20px -3px rgba(0, 0, 0, 0.1);\n  transition: box-shadow 0.3s ease;\n}\n.container:hover {\n  box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.1),\n    inset 0px -12px 20px -3px rgba(0, 0, 0, 0.1);\n}\n.button {\n  min-width: 200px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: inherit;\n  font-size: 20px;\n  font-weight: 700;\n  background-color: #fff;\n  border-radius: 50px;\n  border: none;\n  padding: 14px;\n  box-shadow: inset 0px 12px 20px -3px rgba(0, 0, 0, 0.1);\n}\n\n.imgSvg {\n  width: 24px;\n  margin-right: 14px;\n}\n.wrapper:hover .imgSvg {\n  transform: rotate(405deg);\n  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.125);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/benjimich_young-pug-75.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"wrapper\"></view>\n  <view class=\"container\"></view>\n    <button class=\"button\"></button>\n      <view class=\"imgSvg\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"></view>\n        <g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g>\n        <g stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g>\n        <g id=\"SVGRepo_iconCarrier\">\n          <path fill=\"#000\" d=\"M20.33 3.66996C20.1408 3.48213 19.9035 3.35008 19.6442 3.28833C19.3849 3.22659 19.1135 3.23753 18.86 3.31996L4.23 8.19996C3.95867 8.28593 3.71891 8.45039 3.54099 8.67255C3.36307 8.89471 3.25498 9.16462 3.23037 9.44818C3.20576 9.73174 3.26573 10.0162 3.40271 10.2657C3.5397 10.5152 3.74754 10.7185 4 10.85L10.07 13.85L13.07 19.94C13.1906 20.1783 13.3751 20.3785 13.6029 20.518C13.8307 20.6575 14.0929 20.7309 14.36 20.73H14.46C14.7461 20.7089 15.0192 20.6023 15.2439 20.4239C15.4686 20.2456 15.6345 20.0038 15.72 19.73L20.67 5.13996C20.7584 4.88789 20.7734 4.6159 20.7132 4.35565C20.653 4.09541 20.5201 3.85762 20.33 3.66996ZM4.85 9.57996L17.62 5.31996L10.53 12.41L4.85 9.57996ZM14.43 19.15L11.59 13.47L18.68 6.37996L14.43 19.15Z\"></path>\n        </g>\n      </svg>\n\n      <text>Send Message</text>\n    </button>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyYoungPug75',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by benjimich  - Tags: skeuomorphism, animation, email, 3d, action, button, realistic, svg */\n.wrapper {\n  background-color: #fff;\n  padding: 1rpx;\n  border-radius: 20rpx;\n  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n}\n.wrapper:hover {\n  scale: 1.05;\n}\n.wrapper:active {\n  scale: 1;\n}\n.container {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background-color: #fff;\n  padding: 10rpx;\n  border-radius: inherit;\n  border: 4rpx rgb(158, 158, 158) solid;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx -24rpx 40rpx -6rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: box-shadow 0.3s ease;\n}\n.container:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 20rpx 50rpx -6rpx rgba(0, 0, 0, 0.1),\n    inset 0rpx -24rpx 40rpx -6rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.button {\n  min-width: 400rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /* #ifdef H5 */\n  cursor: inherit;\n  /* #endif */\n  font-size: 40rpx;\n  font-weight: 700;\n  background-color: #fff;\n  border-radius: 100rpx;\n  border: none;\n  padding: 28rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 24rpx 40rpx -6rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.imgSvg {\n  width: 48rpx;\n  margin-right: 28rpx;\n}\n.wrapper:hover .imgSvg {\n  transform: rotate(405deg);\n  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.125);\n}\n\n",
+    "component_name": "GalaxyYoungPug75"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2377,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.961Z",
+  "updated_at": "2025-07-31T07:55:35.961Z"
+}

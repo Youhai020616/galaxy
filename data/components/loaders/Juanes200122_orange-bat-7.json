@@ -1,0 +1,91 @@
+{
+  "id": "Juanes200122_orange-bat-7",
+  "name": "orange-bat-7",
+  "category": "loaders",
+  "author": "Juanes200122",
+  "description": "orange-bat-7 组件 (animation, loader, animated, transition)",
+  "tags": [
+    "animation",
+    "loader",
+    "animated",
+    "transition"
+  ],
+  "original": {
+    "html": "<div class=\"Buttons\"></div>",
+    "css": "/* From Uiverse.io by Juanes200122  - Tags: animation, loader, animated, transition */\n.Buttons {\n  color: #000;\n  width: 6px;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  animation: l37-1 0.75s infinite linear alternate, l37-2 1.5s infinite linear;\n}\n@keyframes l37-1 {\n  0%,\n  20% {\n    box-shadow: 30px 0 0 3px, 10px 0 0 3px, -10px 0 0 3px, -30px 0 0 3px;\n  }\n  60%,\n  100% {\n    box-shadow: 12px 0 0 3px, 14px 0 0 6px, -14px 0 0 6px, -12px 0 0 3px;\n  }\n}\n\n@keyframes l37-2 {\n  0%,\n  25% {\n    transform: rotate(0);\n  }\n  50%,\n  100% {\n    transform: rotate(0.5turn);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Juanes200122_orange-bat-7.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"Buttons\"></view>",
+    "script": "export default {\n  name: 'GalaxyOrangeBat7',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Juanes200122  - Tags: animation, loader, animated, transition */\n.Buttons {\n  color: #000;\n  width: 12rpx;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  animation: l37-1 0.75s infinite linear alternate, l37-2 1.5s infinite linear;\n}\n@keyframes l37-1 {\n  0%,\n  20% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 6rpx, 20rpx 0 0 6rpx, -20rpx 0 0 6rpx, -60rpx 0 0 6rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  60%,\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 24rpx 0 0 6rpx, 28rpx 0 0 12rpx, -28rpx 0 0 12rpx, -24rpx 0 0 6rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n@keyframes l37-2 {\n  0%,\n  25% {\n    transform: rotate(0);\n  }\n  50%,\n  100% {\n    transform: rotate(0.5turn);\n  }\n}\n\n",
+    "component_name": "GalaxyOrangeBat7"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 611,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.588Z",
+  "updated_at": "2025-07-31T07:55:39.588Z"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "StealthWorm_polite-mole-15",
+  "name": "polite-mole-15",
+  "category": "buttons",
+  "author": "StealthWorm",
+  "description": "polite-mole-15 组件 (button, synthwave, retrowave, vaporwave, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "synthwave",
+    "retrowave",
+    "vaporwave",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"container\">\n  <strong>SYNTHWAVE</strong>\n  <div id=\"glow\">\n    <div class=\"circle\"></div>\n  </div>\n  <div class=\"inner-container\">\n    <div class=\"fade\"></div>\n\n    <div class=\"up-text\">\n      <div class=\"crawl\">\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n        <div class=\"grid-item\"></div>\n      </div>\n    </div>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by StealthWorm  - Tags: button, synthwave, retrowave, vaporwave */\n:root {\n  --main-color: #212121;\n  --gradient-color-1: #ffdb3b;\n  --gradient-color-2: #fe53bb;\n  --gradient-color-3: #8f51ea;\n  --text-glow-color: #ff1372;\n}\n\n.container {\n  all: unset;\n  height: 4rem;\n  width: 16rem;\n  position: relative;\n  border-radius: 20px;\n  border: double 3px transparent;\n  transition: 50ms;\n  background-image: linear-gradient(#212121, #212121),\n    linear-gradient(0, #ffdb3b 0%, #fe53bb 25%, #8f51ea 87%);\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n  cursor: pointer;\n}\n\n.container:hover > strong {\n  transition: 300ms;\n  background-clip: text;\n  -webkit-background-clip: text;\n  color: transparent;\n  filter: brightness(1.75);\n  text-shadow: 2px 0 14px #fff;\n}\n\n.inner-container {\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n  position: relative;\n  border-radius: 18px;\n}\n\nstrong,\nstrong::before {\n  transition: 300ms;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  font-size: 1.6rem;\n  letter-spacing: 5px;\n  z-index: 2;\n  background-clip: text;\n  -webkit-background-clip: text;\n  color: transparent;\n  text-shadow: 2px 2px 8px rgba(56, 127, 224, 0.4),\n    -2px -2px 8px rgba(254, 125, 255, 0.4);\n  background-image: linear-gradient(\n    0deg,\n    rgba(255, 142, 224, 1) 0%,\n    rgba(255, 29, 193, 1) 5%,\n    rgba(198, 72, 255, 1) 30%,\n    rgba(0, 0, 0, 1) 49%,\n    rgba(255, 255, 255, 1) 52%,\n    rgba(70, 148, 255, 1) 60%,\n    rgba(21, 59, 112, 1) 69%\n  );\n}\n\nstrong::before {\n  text-shadow: -6px -6px 6px var(--text-glow-color);\n}\n\n#glow {\n  position: absolute;\n  inset: 0;\n  display: flex;\n  width: 100%;\n  height: 10rem;\n  max-height: 4rem;\n}\n\n.circle {\n  width: 100%;\n  height: 100%;\n  filter: blur(1.2rem);\n  animation: pulse 2s infinite alternate;\n  z-index: -1;\n}\n\n.circle:nth-of-type(1) {\n  background: linear-gradient(0, #ffdb3b 0%, #fe53bb 30%, #8f51ea 80%);\n}\n\n.fade {\n  position: absolute;\n  width: 100%;\n  min-height: 10rem;\n  top: -3rem;\n  height: 10rem;\n  background-image: linear-gradient(\n    to top,\n    rgba(236, 195, 11, 0.84) 15%,\n    rgba(255, 31, 184, 0.36) 40%,\n    rgb(43, 1, 54) 65%\n  );\n  z-index: 1;\n}\n\n.up-text {\n  display: flex;\n  justify-content: center;\n  position: relative;\n  height: 800px;\n  font-weight: 600;\n  letter-spacing: 6px;\n  perspective: 400px;\n  text-align: justify;\n}\n\n.crawl {\n  display: grid;\n  grid-template-columns: repeat(6, auto);\n  position: relative;\n  animation: crawl 20s linear infinite alternate;\n}\n\n.grid-item {\n  width: 60px;\n  height: 100%;\n  border: 1px solid #f96bcc;\n  box-shadow: 0 0 10px 4px #ff1fb8;\n}\n\n@keyframes crawl {\n  0% {\n    top: -200px;\n    transform: rotateX(30deg) translateZ(40px);\n  }\n  100% {\n    top: -510px;\n    transform: rotateX(25deg) translateZ(0px);\n  }\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.9);\n    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);\n  }\n  100% {\n    transform: scale(1);\n    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/StealthWorm_polite-mole-15.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"container\"></button>\n  <strong>SYNTHWAVE</strong>\n  <view id=\"glow\"></view>\n    <view class=\"circle\"></view>\n  </div>\n  <view class=\"inner-container\"></view>\n    <view class=\"fade\"></view>\n\n    <view class=\"up-text\"></view>\n      <view class=\"crawl\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n        <view class=\"grid-item\"></view>\n      </div>\n    </div>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPoliteMole15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by StealthWorm  - Tags: button, synthwave, retrowave, vaporwave */\n:root {\n  --main-color: #212121;\n  --gradient-color-1: #ffdb3b;\n  --gradient-color-2: #fe53bb;\n  --gradient-color-3: #8f51ea;\n  --text-glow-color: #ff1372;\n}\n\n.container {\n  all: unset;\n  height: 4rem;\n  width: 16rem;\n  position: relative;\n  border-radius: 40rpx;\n  border: double 6rpx transparent;\n  transition: 50ms;\n  background-image: linear-gradient(#212121, #212121),\n    linear-gradient(0, #ffdb3b 0%, #fe53bb 25%, #8f51ea 87%);\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.container:hover > strong {\n  transition: 300ms;\n  background-clip: text;\n  -webkit-background-clip: text;\n  color: transparent;\n  \n  /* #ifdef H5 */\n  text-shadow: 4rpx 0 28rpx #fff;\n  /* #endif */\n}\n\n.inner-container {\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n  position: relative;\n  border-radius: 36rpx;\n}\n\nstrong,\nstrong::before {\n  transition: 300ms;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  font-size: 1.6rem;\n  letter-spacing: 10rpx;\n  z-index: 2;\n  background-clip: text;\n  -webkit-background-clip: text;\n  color: transparent;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 16rpx rgba(56, 127, 224, 0.4),\n    -4rpx -4rpx 16rpx rgba(254, 125, 255, 0.4);\n  /* #endif */\n  background-image: linear-gradient(\n    0deg,\n    rgba(255, 142, 224, 1) 0%,\n    rgba(255, 29, 193, 1) 5%,\n    rgba(198, 72, 255, 1) 30%,\n    rgba(0, 0, 0, 1) 49%,\n    rgba(255, 255, 255, 1) 52%,\n    rgba(70, 148, 255, 1) 60%,\n    rgba(21, 59, 112, 1) 69%\n  );\n}\n\nstrong::before {\n  /* #ifdef H5 */\n  text-shadow: -12rpx -12rpx 12rpx var(--text-glow-color);\n  /* #endif */\n}\n\n#glow {\n  position: absolute;\n  inset: 0;\n  display: flex;\n  width: 100%;\n  height: 10rem;\n  max-height: 4rem;\n}\n\n.circle {\n  width: 100%;\n  height: 100%;\n  \n  animation: pulse 2s infinite alternate;\n  z-index: -1;\n}\n\n.circle:nth-of-type(1) {\n  background: linear-gradient(0, #ffdb3b 0%, #fe53bb 30%, #8f51ea 80%);\n}\n\n.fade {\n  position: absolute;\n  width: 100%;\n  min-height: 10rem;\n  top: -3rem;\n  height: 10rem;\n  background-image: linear-gradient(\n    to top,\n    rgba(236, 195, 11, 0.84) 15%,\n    rgba(255, 31, 184, 0.36) 40%,\n    rgb(43, 1, 54) 65%\n  );\n  z-index: 1;\n}\n\n.up-text {\n  display: flex;\n  justify-content: center;\n  position: relative;\n  height: 1600rpx;\n  font-weight: 600;\n  letter-spacing: 12rpx;\n  perspective: 800rpx;\n  text-align: justify;\n}\n\n.crawl {\n  display: grid;\n  grid-template-columns: repeat(6, auto);\n  position: relative;\n  animation: crawl 20s linear infinite alternate;\n}\n\n.grid-item {\n  width: 120rpx;\n  height: 100%;\n  border: 2rpx solid #f96bcc;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx 8rpx #ff1fb8;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes crawl {\n  0% {\n    top: -400rpx;\n    transform: rotateX(30deg) translateZ(80rpx);\n  }\n  100% {\n    top: -1020rpx;\n    transform: rotateX(25deg) translateZ(0rpx);\n  }\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.9);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  100% {\n    transform: scale(1);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n",
+    "component_name": "GalaxyPoliteMole15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4708,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.868Z",
+  "updated_at": "2025-07-31T07:55:34.868Z"
+}

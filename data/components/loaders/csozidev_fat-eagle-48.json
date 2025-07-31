@@ -1,0 +1,92 @@
+{
+  "id": "csozidev_fat-eagle-48",
+  "name": "fat-eagle-48",
+  "category": "loaders",
+  "author": "csozidev",
+  "description": "fat-eagle-48 组件 (loading, loader, smooth, text animation, animated, wave, text, infinite, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "smooth",
+    "text animation",
+    "animated",
+    "wave",
+    "text",
+    "infinite",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <p class=\"text\">\n  <span class=\"letter letter1\">L</span>\n  <span class=\"letter letter2\">o</span>\n  <span class=\"letter letter3\">a</span>\n  <span class=\"letter letter4\">d</span>\n  <span class=\"letter letter5\">i</span>\n  <span class=\"letter letter6\">n</span>\n  <span class=\"letter letter7\">g</span>\n  <span class=\"letter letter8\">.</span>\n  <span class=\"letter letter9\">.</span>\n  <span class=\"letter letter10\">.</span>\n  </p>\n</div>",
+    "css": "/* From Uiverse.io by csozidev - Tags: loading, loader, smooth, text animation, animated, wave, text, infinite */\n/* Wave text loader made by: csozi | Website: english.csozi.hu*/\n\n.text {\n  color: black;\n  font-weight: bolder;\n}\n\n@keyframes letter {\n  0% {\n    font-size: 30px;\n  }\n\n  50% {\n    font-size: 40px;\n  }\n\n  100% {\n    font-size: 30px;\n  }\n}\n\n.letter {\n  animation: letter 1s infinite;\n}\n\n.letter1 {\n  animation-delay: 0s;\n}\n\n.letter2 {\n  animation-delay: -0.9s;\n}\n\n.letter3 {\n  animation-delay: -0.8s;\n}\n\n.letter4 {\n  animation-delay: -0.7s;\n}\n\n.letter5 {\n  animation-delay: -0.6s;\n}\n\n.letter6 {\n  animation-delay: -0.5s;\n}\n\n.letter7 {\n  animation-delay: -0.4s;\n}\n\n.letter8 {\n  animation-delay: -0.3s;\n}\n\n.letter9 {\n  animation-delay: -0.2s;\n}\n\n.letter10 {\n  animation-delay: -0.1s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csozidev_fat-eagle-48.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text class=\"text\"></text>\n  <text class=\"letter letter1\">L</text>\n  <text class=\"letter letter2\">o</text>\n  <text class=\"letter letter3\">a</text>\n  <text class=\"letter letter4\">d</text>\n  <text class=\"letter letter5\">i</text>\n  <text class=\"letter letter6\">n</text>\n  <text class=\"letter letter7\">g</text>\n  <text class=\"letter letter8\">.</text>\n  <text class=\"letter letter9\">.</text>\n  <text class=\"letter letter10\">.</text>\n  </p>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFatEagle48',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csozidev - Tags: loading, loader, smooth, text animation, animated, wave, text, infinite */\n/* Wave text loader made by: csozi | Website: english.csozi.hu*/\n\n.text {\n  color: black;\n  font-weight: bolder;\n}\n\n@keyframes letter {\n  0% {\n    font-size: 60rpx;\n  }\n\n  50% {\n    font-size: 80rpx;\n  }\n\n  100% {\n    font-size: 60rpx;\n  }\n}\n\n.letter {\n  animation: letter 1s infinite;\n}\n\n.letter1 {\n  animation-delay: 0s;\n}\n\n.letter2 {\n  animation-delay: -0.9s;\n}\n\n.letter3 {\n  animation-delay: -0.8s;\n}\n\n.letter4 {\n  animation-delay: -0.7s;\n}\n\n.letter5 {\n  animation-delay: -0.6s;\n}\n\n.letter6 {\n  animation-delay: -0.5s;\n}\n\n.letter7 {\n  animation-delay: -0.4s;\n}\n\n.letter8 {\n  animation-delay: -0.3s;\n}\n\n.letter9 {\n  animation-delay: -0.2s;\n}\n\n.letter10 {\n  animation-delay: -0.1s;\n}\n",
+    "component_name": "GalaxyFatEagle48"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1254,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.197Z",
+  "updated_at": "2025-07-31T07:55:41.197Z"
+}

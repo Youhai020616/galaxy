@@ -1,0 +1,89 @@
+{
+  "id": "G4b413l_kind-cougar-54",
+  "name": "kind-cougar-54",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "kind-cougar-54 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"jelly\"></div>\n<svg width=\"0\" height=\"0\" class=\"jelly-maker\">\n  <defs>\n    <filter id=\"uib-jelly-ooze\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"6.25\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"ooze\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"ooze\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader */\n.jelly {\n --uib-size: 40px;\n --uib-speed: .8s;\n --uib-color: #2c2b2b;\n position: relative;\n height: calc(var(--uib-size) / 2);\n width: var(--uib-size);\n filter: url('#uib-jelly-ooze');\n animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;\n}\n\n.jelly::before,\n.jelly::after {\n content: '';\n position: absolute;\n top: 0%;\n left: 25%;\n width: 50%;\n height: 100%;\n background: var(--uib-color);\n border-radius: 100%;\n}\n\n.jelly::before {\n animation: shift-left var(--uib-speed) ease infinite;\n}\n\n.jelly::after {\n animation: shift-right var(--uib-speed) ease infinite;\n}\n\n.jelly-maker {\n width: 0;\n height: 0;\n position: absolute;\n}\n\n@keyframes rotate72317 {\n 0%,\n  49.999%,\n  100% {\n  transform: none;\n }\n\n 50%,\n  99.999% {\n  transform: rotate(90deg);\n }\n}\n\n@keyframes shift-left {\n 0%,\n  100% {\n  transform: translateX(0%);\n }\n\n 50% {\n  transform: scale(0.65) translateX(-75%);\n }\n}\n\n@keyframes shift-right {\n 0%,\n  100% {\n  transform: translateX(0%);\n }\n\n 50% {\n  transform: scale(0.65) translateX(75%);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_kind-cougar-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"jelly\"></view>\n<view width=\"0\" height=\"0\" class=\"jelly-maker\"></view>\n  <defs>\n    <filter id=\"uib-jelly-ooze\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"6.25\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"ooze\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"ooze\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyKindCougar54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader */\n.jelly {\n --uib-size: 80rpx;\n --uib-speed: .8s;\n --uib-color: #2c2b2b;\n position: relative;\n height: calc(var(--uib-size) / 2);\n width: var(--uib-size);\n \n animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;\n}\n\n.jelly::before,\n.jelly::after {\n content: '';\n position: absolute;\n top: 0%;\n left: 25%;\n width: 50%;\n height: 100%;\n background: var(--uib-color);\n border-radius: 100%;\n}\n\n.jelly::before {\n animation: shift-left var(--uib-speed) ease infinite;\n}\n\n.jelly::after {\n animation: shift-right var(--uib-speed) ease infinite;\n}\n\n.jelly-maker {\n width: 0;\n height: 0;\n position: absolute;\n}\n\n@keyframes rotate72317 {\n 0%,\n  49.999%,\n  100% {\n  transform: none;\n }\n\n 50%,\n  99.999% {\n  transform: rotate(90deg);\n }\n}\n\n@keyframes shift-left {\n 0%,\n  100% {\n  transform: translateX(0%);\n }\n\n 50% {\n  transform: scale(0.65) translateX(-75%);\n }\n}\n\n@keyframes shift-right {\n 0%,\n  100% {\n  transform: translateX(0%);\n }\n\n 50% {\n  transform: scale(0.65) translateX(75%);\n }\n}\n\n",
+    "component_name": "GalaxyKindCougar54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1495,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.290Z",
+  "updated_at": "2025-07-31T07:55:39.290Z"
+}

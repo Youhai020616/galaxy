@@ -1,0 +1,108 @@
+{
+  "id": "itay1313_tender-sheep-90",
+  "name": "tender-sheep-90",
+  "category": "buttons",
+  "author": "itay1313",
+  "description": "tender-sheep-90 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"box\">\n    <span class=\"button\">How Are you today?</span>\n  </button>",
+    "css": "/* From Uiverse.io by itay1313 - Tags: button */\n.box {\n  --border-radius: 4vmin;\n  --bg: #3A3544;\n  --color: #D0BCFF;\n  --deg: 30deg;\n  -webkit-perspective: 200px;\n  perspective: 200px;\n  -webkit-transform-origin: top center;\n  -ms-transform-origin: top center;\n  transform-origin: top center;\n  max-width: 350px;\n  text-align: center;\n  outline: none;\n  border: none;\n  background: none;\n}\n\n.button {\n  -webkit-transform-style: preserve-3d;\n  transform-style: preserve-3d;\n  -webkit-transform: rotateY(var(--deg));\n  transform: rotateY(var(--deg));\n  -webkit-transition: all 800ms ease-in-out;\n  transition: all 800ms ease-in-out;\n  border-radius: var(--border-radius);\n  font-style: normal;\n  border: none;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 2vmin;\n  letter-spacing: 0.03vmin;\n  padding: 1.3vmin 2.5vmin;\n  background: var(--bg);\n  color: var(--color);\n}\n\n.button:hover {\n  -webkit-transform: rotateY(calc(-1 * var(--deg)));\n  transform: rotateY(calc(-1 * var(--deg)));\n}\n\n.box:active .button {\n  -webkit-transform: rotateY(calc(-1 * var(--deg) / 3));\n  transform: rotateY(calc(-1 * var(--deg) / 3));\n}\n\n.box:focus .button {\n  border: 0.05vmin solid var(--color);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/itay1313_tender-sheep-90.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"box\"></button>\n    <text class=\"button\">How Are you today?</text>\n  </button>",
+    "script": "export default {\n  name: 'GalaxyTenderSheep90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by itay1313 - Tags: button */\n.box {\n  --border-radius: 4vmin;\n  --bg: #3A3544;\n  --color: #D0BCFF;\n  --deg: 30deg;\n  -webkit-perspective: 400rpx;\n  perspective: 400rpx;\n  -webkit-transform-origin: top center;\n  -ms-transform-origin: top center;\n  transform-origin: top center;\n  max-width: 700rpx;\n  text-align: center;\n  outline: none;\n  border: none;\n  background: none;\n}\n\n.button {\n  -webkit-transform-style: preserve-3d;\n  transform-style: preserve-3d;\n  -webkit-transform: rotateY(var(--deg));\n  transform: rotateY(var(--deg));\n  -webkit-transition: all 800ms ease-in-out;\n  transition: all 800ms ease-in-out;\n  border-radius: var(--border-radius);\n  font-style: normal;\n  border: none;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 2vmin;\n  letter-spacing: 0.03vmin;\n  padding: 1.3vmin 2.5vmin;\n  background: var(--bg);\n  color: var(--color);\n}\n\n.button:hover {\n  -webkit-transform: rotateY(calc(-1 * var(--deg)));\n  transform: rotateY(calc(-1 * var(--deg)));\n}\n\n.box:active .button {\n  -webkit-transform: rotateY(calc(-1 * var(--deg) / 3));\n  transform: rotateY(calc(-1 * var(--deg) / 3));\n}\n\n.box:focus .button {\n  border: 0.05vmin solid var(--color);\n}\n\n",
+    "component_name": "GalaxyTenderSheep90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1301,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.006Z",
+  "updated_at": "2025-07-31T07:55:37.006Z"
+}

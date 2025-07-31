@@ -1,0 +1,113 @@
+{
+  "id": "AmIt-DasIT_gentle-gecko-87",
+  "name": "gentle-gecko-87",
+  "category": "buttons",
+  "author": "AmIt-DasIT",
+  "description": "gentle-gecko-87 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"box\">\n  <div class=\"arrow right\"></div>\n  <div class=\"text\">Learn More</div>\n</div>",
+    "css": "/* From Uiverse.io by AmIt-DasIT - Tags: button */\n.box {\n  width: 45px;\n  height: 45px;\n  background: #5cda5c;\n  border-radius: 25px;\n  display: flex;\n  justify-items: center;\n  justify-content: center;\n  align-items: center;\n  transition: 0.3s;\n  cursor: pointer;\n  position: relative;\n}\n\n.arrow {\n  border: solid black;\n  border-width: 0 3px 3px 0;\n  display: inline-block;\n  padding: 3px;\n}\n\n.right {\n  transform: rotate(-45deg);\n}\n\n.box:hover {\n  width: 160px;\n  background: linear-gradient(to right, #26d526, yellow);\n}\n\n.box:hover .arrow {\n  display: none;\n}\n\n.box .text {\n  display: none;\n}\n\n.box:hover .text {\n  display: flex;\n  font-size: 16px;\n  font-weight: 550;\n  color: black;\n  letter-spacing: 0.6px;\n  animation: anima 0.6s ease;\n}\n\n@keyframes anima {\n  0% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n.box:active {\n  background: linear-gradient(to right, rgb(38, 213, 38, 0.8), rgba(255, 255, 0, 0.8));\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AmIt-DasIT_gentle-gecko-87.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>\n  <view class=\"arrow right\"></view>\n  <view class=\"text\">Learn More</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGentleGecko87',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AmIt-DasIT - Tags: button */\n.box {\n  width: 90rpx;\n  height: 90rpx;\n  background: #5cda5c;\n  border-radius: 50rpx;\n  display: flex;\n  justify-items: center;\n  justify-content: center;\n  align-items: center;\n  transition: 0.3s;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n}\n\n.arrow {\n  border: solid black;\n  border-width: 0 6rpx 6rpx 0;\n  display: inline-block;\n  padding: 6rpx;\n}\n\n.right {\n  transform: rotate(-45deg);\n}\n\n.box:hover {\n  width: 320rpx;\n  background: linear-gradient(to right, #26d526, yellow);\n}\n\n.box:hover .arrow {\n  display: none;\n}\n\n.box .text {\n  display: none;\n}\n\n.box:hover .text {\n  display: flex;\n  font-size: 32rpx;\n  font-weight: 550;\n  color: black;\n  letter-spacing: 1.2rpx;\n  animation: anima 0.6s ease;\n}\n\n@keyframes anima {\n  0% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n\n.box:active {\n  background: linear-gradient(to right, rgb(38, 213, 38, 0.8), rgba(255, 255, 0, 0.8));\n}\n\n",
+    "component_name": "GalaxyGentleGecko87"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1031,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.597Z",
+  "updated_at": "2025-07-31T07:55:32.597Z"
+}

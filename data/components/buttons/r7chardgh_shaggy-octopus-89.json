@@ -1,0 +1,118 @@
+{
+  "id": "r7chardgh_shaggy-octopus-89",
+  "name": "shaggy-octopus-89",
+  "category": "buttons",
+  "author": "r7chardgh",
+  "description": "shaggy-octopus-89 组件 (button, hover, glitch, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "glitch",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  glitch\n</button>",
+    "css": "/* From Uiverse.io by r7chardgh - Tags: button, hover, glitch */\n.button {\n  position: relative;\n  border: 0;\n  padding: 1em 2em;\n  font-weight: 700;\n  cursor: pointer;\n  outline: .5em solid #fff;\n  outline-offset: -.3em;\n  color: #fff;\n  background-color: #333;\n  text-transform: uppercase;\n}\n\n.button:hover {\n  animation: shake 500ms infinite,glitch 400ms infinite steps(4);\n}\n\n@keyframes shake {\n  0% {\n  }\n\n  25% {\n    transform: translate(-.1em,-.1em);\n  }\n\n  50% {\n    transform: translate(.3em,0);\n  }\n\n  75% {\n    transform: translate(0,.3em);\n  }\n\n  100% {\n  }\n}\n\n@keyframes glitch {\n  from {\n    box-shadow: .8em .8em  rgba(240, 84, 219),\n  -.8em -.8em rgba(84, 240, 232);\n  }\n\n  to {\n    text-shadow: .3em .2em  rgba(240, 84, 219),\n  -.3em -.2em rgba(84, 240, 232);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/r7chardgh_shaggy-octopus-89.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  glitch\n</button>",
+    "script": "export default {\n  name: 'GalaxyShaggyOctopus89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by r7chardgh - Tags: button, hover, glitch */\n.button {\n  position: relative;\n  border: 0;\n  padding: 1em 2em;\n  font-weight: 700;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  outline: .5em solid #fff;\n  outline-offset: -.3em;\n  color: #fff;\n  background-color: #333;\n  text-transform: uppercase;\n}\n\n.button:hover {\n  animation: shake 500ms infinite,glitch 400ms infinite steps(4);\n}\n\n@keyframes shake {\n  0% {\n  }\n\n  25% {\n    transform: translate(-.1em,-.1em);\n  }\n\n  50% {\n    transform: translate(.3em,0);\n  }\n\n  75% {\n    transform: translate(0,.3em);\n  }\n\n  100% {\n  }\n}\n\n@keyframes glitch {\n  from {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: .8em .8em  rgba(240, 84, 219),\n  -.8em -.8em rgba(84, 240, 232);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  to {\n    /* #ifdef H5 */\n  text-shadow: .3em .2em  rgba(240, 84, 219),\n  -.3em -.2em rgba(84, 240, 232);\n  /* #endif */\n  }\n}\n",
+    "component_name": "GalaxyShaggyOctopus89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 828,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.628Z",
+  "updated_at": "2025-07-31T07:55:37.628Z"
+}

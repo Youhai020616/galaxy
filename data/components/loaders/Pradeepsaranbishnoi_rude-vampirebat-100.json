@@ -1,0 +1,90 @@
+{
+  "id": "Pradeepsaranbishnoi_rude-vampirebat-100",
+  "name": "rude-vampirebat-100",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "rude-vampirebat-100 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n.loader {\n  --s: 5px;\n /* control the size */\n  width: calc(10*var(--s));\n  display: grid;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  -webkit-mask: radial-gradient(50% 50%,#0000 calc(99% - 2*var(--s)),#000 calc(101% - 2*var(--s)));\n  animation: r 4s linear infinite;\n}\n\n.loader:before {\n  content: \"\";\n  /* adjust the colors below */\n  background: conic-gradient(from 25deg,#f8a201 25%,#fa2402 0 50%,#fdb3b0 0 75%,#02dde1 0);\n  -webkit-mask: repeating-conic-gradient(#0000 0 25deg,#000 23% 25%),\n    radial-gradient(var(--s) at var(--s) 50%,#000 97%,#0000) \n      left/calc(100% - 2*var(--s)) 100% repeat-x,\n    radial-gradient(var(--s) at 50% var(--s),#000 97%,#0000) \n      top /100% calc(100% - 2*var(--s)) repeat-y;\n}\n\n@keyframes r {\n  to {\n    transform: rotate(1turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_rude-vampirebat-100.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyRudeVampirebat100',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n.loader {\n  --s: 10rpx;\n /* control the size */\n  width: calc(10*var(--s));\n  display: grid;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  -webkit-\n  animation: r 4s linear infinite;\n}\n\n.loader:before {\n  content: \"\";\n  /* adjust the colors below */\n  background: conic-gradient(from 25deg,#f8a201 25%,#fa2402 0 50%,#fdb3b0 0 75%,#02dde1 0);\n  -webkit-\n}\n\n@keyframes r {\n  to {\n    transform: rotate(1turn)\n  }\n}\n\n",
+    "component_name": "GalaxyRudeVampirebat100"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 870,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.084Z",
+  "updated_at": "2025-07-31T07:55:40.084Z"
+}

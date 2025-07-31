@@ -1,0 +1,114 @@
+{
+  "id": "NguyenHaiNam24082000_nervous-insect-23",
+  "name": "nervous-insect-23",
+  "category": "buttons",
+  "author": "NguyenHaiNam24082000",
+  "description": "nervous-insect-23 组件 (skeuomorphism, button, emergency, animation, gradient)",
+  "tags": [
+    "skeuomorphism",
+    "button",
+    "emergency",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"background-button\">\n  <button class=\"button\">\n    EMERGENCY\n  </button>\n</div>",
+    "css": "/* From Uiverse.io by NguyenHaiNam24082000 - Tags: skeuomorphism, button, emergency */\n.background-button {\n  background: repeating-linear-gradient(\n    45deg,\n    #3c2209 0 20px,\n    #ff9c00 20px 40px\n  );\n  width: 10em;\n  height: 10em;\n  -webkit-box-shadow: 15px 15px 50px 5px #5f5f5f;\n  box-shadow: 15px 15px 50px 5px #5f5f5f;\n  position: relative;\n  display: inline-block;\n  outline: 2px solid black;\n}\n\n.background-button::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  top: 15%;\n  left: 15%;\n  width: 70%;\n  height: 70%;\n  background: #a0b8c4;\n  border: 2px solid #3c2209;\n}\n\n.button {\n  background: #cc2a1f;\n  width: 65%;\n  height: 65%;\n  border-radius: 50%;\n  position: absolute;\n  top: 7.5%;\n  left: 18.25%;\n  color: white;\n  font-size: 1em;\n  font-weight: 900;\n  font-family: 'Courier New', Courier, monospace;\n  -webkit-box-shadow: 0 15px 0 0 #842a2a;\n  box-shadow: 0 15px 0 0 #842a2a;\n  -webkit-transition: all .5s ease;\n  transition: all .5s ease;\n  border: 2px solid black;\n}\n\n.button:active {\n  -webkit-box-shadow: 0 1px 1px 1px #8C0606;\n  box-shadow: 0 1px 1px 1px #8C0606;\n  top: 15%;\n}\n\n.background-button:has(.button:active) + .emergency {\n  display: block;\n  -webkit-transform: rotate(0deg) scaleY(1);\n  -ms-transform: rotate(0deg) scaleY(1);\n  transform: rotate(0deg) scaleY(1);\n  -webkit-animation: anims 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);\n  animation: anims 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);\n}\n\n@keyframes anims {\n  0% {\n    -webkit-transform: rotate(-30deg) scaleY(0.25);\n    transform: rotate(-30deg) scaleY(0.25);\n  }\n\n  100% {\n    -webkit-transform: rotate(0deg) scaleY(1);\n    transform: rotate(0deg) scaleY(1);\n  }\n}\n\n.emergency {\n  position: absolute;\n  display: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/NguyenHaiNam24082000_nervous-insect-23.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"background-button\"></view>\n  <button class=\"button\"></button>\n    EMERGENCY\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNervousInsect23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by NguyenHaiNam24082000 - Tags: skeuomorphism, button, emergency */\n.background-button {\n  background: repeating-linear-gradient(\n    45deg,\n    #3c2209 0 40rpx,\n    #ff9c00 40rpx 80rpx\n  );\n  width: 10em;\n  height: 10em;\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 30rpx 30rpx 100rpx 10rpx #5f5f5f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 30rpx 30rpx 100rpx 10rpx #5f5f5f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: relative;\n  display: inline-block;\n  outline: 4rpx solid black;\n}\n\n.background-button::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  top: 15%;\n  left: 15%;\n  width: 70%;\n  height: 70%;\n  background: #a0b8c4;\n  border: 4rpx solid #3c2209;\n}\n\n.button {\n  background: #cc2a1f;\n  width: 65%;\n  height: 65%;\n  border-radius: 50%;\n  position: absolute;\n  top: 7.5%;\n  left: 18.25%;\n  color: white;\n  font-size: 1em;\n  font-weight: 900;\n  font-family: 'Courier New', Courier, monospace;\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 30rpx 0 0 #842a2a;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 30rpx 0 0 #842a2a;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-transition: all .5s ease;\n  transition: all .5s ease;\n  border: 4rpx solid black;\n}\n\n.button:active {\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 2rpx 2rpx 2rpx #8C0606;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 2rpx 2rpx 2rpx #8C0606;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  top: 15%;\n}\n\n.background-button:has(.button:active) + .emergency {\n  display: block;\n  -webkit-transform: rotate(0deg) scaleY(1);\n  -ms-transform: rotate(0deg) scaleY(1);\n  transform: rotate(0deg) scaleY(1);\n  -webkit-animation: anims 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);\n  animation: anims 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);\n}\n\n@keyframes anims {\n  0% {\n    -webkit-transform: rotate(-30deg) scaleY(0.25);\n    transform: rotate(-30deg) scaleY(0.25);\n  }\n\n  100% {\n    -webkit-transform: rotate(0deg) scaleY(1);\n    transform: rotate(0deg) scaleY(1);\n  }\n}\n\n.emergency {\n  position: absolute;\n  display: none;\n}\n\n",
+    "component_name": "GalaxyNervousInsect23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1839,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.158Z",
+  "updated_at": "2025-07-31T07:55:34.158Z"
+}

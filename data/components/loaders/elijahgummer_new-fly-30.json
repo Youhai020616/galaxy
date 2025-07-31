@@ -1,0 +1,90 @@
+{
+  "id": "elijahgummer_new-fly-30",
+  "name": "new-fly-30",
+  "category": "loaders",
+  "author": "elijahgummer",
+  "description": "new-fly-30 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: loader */\n.loader {\n  width: 35px;\n  height: 80px;\n  position: relative;\n}\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  padding: 3px 5px;\n  border-top: 1px solid #bbb6aa;\n  border-bottom: 4px solid #bbb6aa;\n  background:\n    linear-gradient(#77d4d4 0 0) bottom no-repeat content-box,\n    #e4e0d7;\n  mix-blend-mode: darken;\n  animation: drink 1.5s infinite linear;\n}\n.loader:before {\n  content: \"\";\n  position: absolute;\n  inset: -18px calc(50% - 2px) 8px;\n  background: #eb6b3e;\n  transform-origin: bottom;\n  transform: rotate(8deg);\n}\n@keyframes drink {\n  0% {\n    background-size: 100% 100%;\n  }\n  100% {\n    background-size: 100% 5%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/elijahgummer_new-fly-30.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyNewFly30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: loader */\n.loader {\n  width: 70rpx;\n  height: 160rpx;\n  position: relative;\n}\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  padding: 6rpx 10rpx;\n  border-top: 2rpx solid #bbb6aa;\n  border-bottom: 8rpx solid #bbb6aa;\n  background:\n    linear-gradient(#77d4d4 0 0) bottom no-repeat content-box,\n    #e4e0d7;\n  \n  animation: drink 1.5s infinite linear;\n}\n.loader:before {\n  content: \"\";\n  position: absolute;\n  inset: -36rpx calc(50% - 4rpx) 16rpx;\n  background: #eb6b3e;\n  transform-origin: bottom;\n  transform: rotate(8deg);\n}\n@keyframes drink {\n  0% {\n    background-size: 100% 100%;\n  }\n  100% {\n    background-size: 100% 5%;\n  }\n}\n\n",
+    "component_name": "GalaxyNewFly30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mix-blend-mode 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mix-blend-mode 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 744,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.362Z",
+  "updated_at": "2025-07-31T07:55:41.362Z"
+}

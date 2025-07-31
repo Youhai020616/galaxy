@@ -1,0 +1,85 @@
+{
+  "id": "satyamchaudharydev_clever-earwig-74",
+  "name": "clever-earwig-74",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "clever-earwig-74 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n    <svg viewBox=\"25 25 50 50\" class=\"circular\">\n        <circle stroke-miterlimit=\"10\" stroke-width=\"3\" fill=\"none\" r=\"20\" cy=\"50\" cx=\"50\" class=\"path\"></circle>\n    </svg>\n</div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n  --red: #d62d20;\n  --blue: #0057e7;\n  --green: #008744;\n  --yellow: #ffa700;\n  position: relative;\n  width: 60px;\n}\n\n.spinner:before {\n  content: \"\";\n  display: block;\n  padding-top: 100%;\n}\n\n.circular {\n  animation: rotate73451 2s linear infinite;\n  height: 100%;\n  transform-origin: center center;\n  width: 100%;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: auto;\n}\n\n.path {\n  stroke-dasharray: 1, 200;\n  stroke-dashoffset: 0;\n  animation: dash0175 1.5s ease-in-out infinite, color7123 6s ease-in-out infinite;\n  stroke-linecap: round;\n}\n\n@keyframes rotate73451 {\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes dash0175 {\n  0% {\n    stroke-dasharray: 1, 200;\n    stroke-dashoffset: 0;\n  }\n\n  50% {\n    stroke-dasharray: 89, 200;\n    stroke-dashoffset: -35px;\n  }\n\n  100% {\n    stroke-dasharray: 89, 200;\n    stroke-dashoffset: -124px;\n  }\n}\n\n@keyframes color7123 {\n  100%, 0% {\n    stroke: var(--red);\n  }\n\n  40% {\n    stroke: var(--blue);\n  }\n\n  66% {\n    stroke: var(--green);\n  }\n\n  80%, 90% {\n    stroke: var(--yellow);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_clever-earwig-74.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n    <view viewBox=\"25 25 50 50\" class=\"circular\"></view>\n        <circle stroke-miterlimit=\"10\" stroke-width=\"3\" fill=\"none\" r=\"20\" cy=\"50\" cx=\"50\" class=\"path\"></circle>\n    </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCleverEarwig74',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n  --red: #d62d20;\n  --blue: #0057e7;\n  --green: #008744;\n  --yellow: #ffa700;\n  position: relative;\n  width: 120rpx;\n}\n\n.spinner:before {\n  content: \"\";\n  display: block;\n  padding-top: 100%;\n}\n\n.circular {\n  animation: rotate73451 2s linear infinite;\n  height: 100%;\n  transform-origin: center center;\n  width: 100%;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: auto;\n}\n\n.path {\n  stroke-dasharray: 1, 200;\n  stroke-dashoffset: 0;\n  animation: dash0175 1.5s ease-in-out infinite, color7123 6s ease-in-out infinite;\n  stroke-linecap: round;\n}\n\n@keyframes rotate73451 {\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes dash0175 {\n  0% {\n    stroke-dasharray: 1, 200;\n    stroke-dashoffset: 0;\n  }\n\n  50% {\n    stroke-dasharray: 89, 200;\n    stroke-dashoffset: -70rpx;\n  }\n\n  100% {\n    stroke-dasharray: 89, 200;\n    stroke-dashoffset: -248rpx;\n  }\n}\n\n@keyframes color7123 {\n  100%, 0% {\n    stroke: var(--red);\n  }\n\n  40% {\n    stroke: var(--blue);\n  }\n\n  66% {\n    stroke: var(--green);\n  }\n\n  80%, 90% {\n    stroke: var(--yellow);\n  }\n}\n\n\n\n",
+    "component_name": "GalaxyCleverEarwig74"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1355,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.583Z",
+  "updated_at": "2025-07-31T07:55:42.583Z"
+}

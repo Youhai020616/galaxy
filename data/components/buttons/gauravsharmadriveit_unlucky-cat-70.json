@@ -1,0 +1,113 @@
+{
+  "id": "gauravsharmadriveit_unlucky-cat-70",
+  "name": "unlucky-cat-70",
+  "category": "buttons",
+  "author": "gauravsharmadriveit",
+  "description": "unlucky-cat-70 组件 (button, active, animated, interactive)",
+  "tags": [
+    "button",
+    "active",
+    "animated",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  Button\n</button>",
+    "css": "/* From Uiverse.io by gauravsharmadriveit - Tags: button, active, animated */\n.button {\n  font-weight: 600;\n  display: inline-block;\n  position: relative;\n  border: 3px solid #fff;\n  padding: 15px 60px;\n  font-size: 16px;\n}\n\n.button::after, .button::before {\n  position: absolute;\n  content: \"\";\n  width: 0;\n  height: 0;\n  transition: .5s;\n}\n\nbutton::after {\n  top: -3px;\n  left: -3px;\n  border-top: 3px solid transparent;\n  border-left: 3px solid transparent;\n}\n\nbutton::before {\n  bottom: -3px;\n  right: -3px;\n  border-bottom: 3px solid transparent;\n  border-right: 3px solid transparent;\n}\n\nbutton:hover {\n  color: #0668C9;\n  cursor: pointer;\n}\n\nbutton:hover::after,\nbutton:hover::before {\n  width: calc(50% + 3px);\n  height: calc(50% + 3px);\n  border-color: #0668C9;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/gauravsharmadriveit_unlucky-cat-70.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyUnluckyCat70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gauravsharmadriveit - Tags: button, active, animated */\n.button {\n  font-weight: 600;\n  display: inline-block;\n  position: relative;\n  border: 6rpx solid #fff;\n  padding: 30rpx 120rpx;\n  font-size: 32rpx;\n}\n\n.button::after, .button::before {\n  position: absolute;\n  content: \"\";\n  width: 0;\n  height: 0;\n  transition: .5s;\n}\n\nbutton::after {\n  top: -6rpx;\n  left: -6rpx;\n  border-top: 6rpx solid transparent;\n  border-left: 6rpx solid transparent;\n}\n\nbutton::before {\n  bottom: -6rpx;\n  right: -6rpx;\n  border-bottom: 6rpx solid transparent;\n  border-right: 6rpx solid transparent;\n}\n\nbutton:hover {\n  color: #0668C9;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton:hover::after,\nbutton:hover::before {\n  width: calc(50% + 6rpx);\n  height: calc(50% + 6rpx);\n  border-color: #0668C9;\n}\n",
+    "component_name": "GalaxyUnluckyCat70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 818,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.790Z",
+  "updated_at": "2025-07-31T07:55:36.790Z"
+}

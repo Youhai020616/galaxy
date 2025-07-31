@@ -1,0 +1,95 @@
+{
+  "id": "Uncannypotato69_shaggy-emu-40",
+  "name": "shaggy-emu-40",
+  "category": "loaders",
+  "author": "Uncannypotato69",
+  "description": "shaggy-emu-40 组件 (simple, animation, loading, loader, text, css, loading animation, gradient)",
+  "tags": [
+    "simple",
+    "animation",
+    "loading",
+    "loader",
+    "text",
+    "css",
+    "loading animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"wrapper\">\n  <span class=\"letter letter1\">L</span>\n  <span class=\"letter letter2\">o</span>\n  <span class=\"letter letter3\">a</span>\n  <span class=\"letter letter4\">d</span>\n  <span class=\"letter letter5\">i</span>\n  <span class=\"letter letter6\">n</span>\n  <span class=\"letter letter7\">g</span>\n  <span class=\"letter letter8\">.</span>\n  <span class=\"letter letter9\">.</span>\n  <span class=\"letter letter10\">.</span>\n</div>",
+    "css": "/* From Uiverse.io by Uncannypotato69  - Tags: simple, animation, loading, loader, text, css, loading animation */\n.wrapper {\n  min-height: 3rem;\n  min-width: 14rem;\n  font-size: 2rem;\n  position: relative;\n  overflow: hidden;\n  mask-image: linear-gradient(\n    to right,\n    rgba(0, 0, 0, 0),\n    rgba(0, 0, 0, 1) 30%,\n    rgba(0, 0, 0, 1) 70%,\n    rgba(0, 0, 0, 0)\n  );\n  font-family: monospace;\n}\n\n.letter {\n  width: 1ch;\n  position: absolute;\n  top: 50%;\n  transform: translate(0px, -50%);\n  left: 100%;\n  animation: scroll 2.5s linear infinite;\n}\n\n@keyframes scroll {\n  to {\n    left: -1ch;\n  }\n}\n\n.letter1 {\n  animation-delay: calc(2.5s / 10 * (10 - 1) * -1);\n}\n.letter2 {\n  animation-delay: calc(2.5s / 10 * (10 - 2) * -1);\n}\n.letter3 {\n  animation-delay: calc(2.5s / 10 * (10 - 3) * -1);\n}\n.letter4 {\n  animation-delay: calc(2.5s / 10 * (10 - 4) * -1);\n}\n.letter5 {\n  animation-delay: calc(2.5s / 10 * (10 - 5) * -1);\n}\n.letter6 {\n  animation-delay: calc(2.5s / 10 * (10 - 6) * -1);\n}\n.letter7 {\n  animation-delay: calc(2.5s / 10 * (10 - 7) * -1);\n}\n.letter8 {\n  animation-delay: calc(2.5s / 10 * (10 - 8) * -1);\n}\n.letter9 {\n  animation-delay: calc(2.5s / 10 * (10 - 9) * -1);\n}\n.letter10 {\n  animation-delay: calc(2.5s / 10 * (10 - 10) * -1);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Uncannypotato69_shaggy-emu-40.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"wrapper\"></view>\n  <text class=\"letter letter1\">L</text>\n  <text class=\"letter letter2\">o</text>\n  <text class=\"letter letter3\">a</text>\n  <text class=\"letter letter4\">d</text>\n  <text class=\"letter letter5\">i</text>\n  <text class=\"letter letter6\">n</text>\n  <text class=\"letter letter7\">g</text>\n  <text class=\"letter letter8\">.</text>\n  <text class=\"letter letter9\">.</text>\n  <text class=\"letter letter10\">.</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShaggyEmu40',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Uncannypotato69  - Tags: simple, animation, loading, loader, text, css, loading animation */\n.wrapper {\n  min-height: 3rem;\n  min-width: 14rem;\n  font-size: 2rem;\n  position: relative;\n  overflow: hidden;\n  mask-image: linear-gradient(\n    to right,\n    rgba(0, 0, 0, 0),\n    rgba(0, 0, 0, 1) 30%,\n    rgba(0, 0, 0, 1) 70%,\n    rgba(0, 0, 0, 0)\n  );\n  font-family: monospace;\n}\n\n.letter {\n  width: 1ch;\n  position: absolute;\n  top: 50%;\n  transform: translate(0rpx, -50%);\n  left: 100%;\n  animation: scroll 2.5s linear infinite;\n}\n\n@keyframes scroll {\n  to {\n    left: -1ch;\n  }\n}\n\n.letter1 {\n  animation-delay: calc(2.5s / 10 * (10 - 1) * -1);\n}\n.letter2 {\n  animation-delay: calc(2.5s / 10 * (10 - 2) * -1);\n}\n.letter3 {\n  animation-delay: calc(2.5s / 10 * (10 - 3) * -1);\n}\n.letter4 {\n  animation-delay: calc(2.5s / 10 * (10 - 4) * -1);\n}\n.letter5 {\n  animation-delay: calc(2.5s / 10 * (10 - 5) * -1);\n}\n.letter6 {\n  animation-delay: calc(2.5s / 10 * (10 - 6) * -1);\n}\n.letter7 {\n  animation-delay: calc(2.5s / 10 * (10 - 7) * -1);\n}\n.letter8 {\n  animation-delay: calc(2.5s / 10 * (10 - 8) * -1);\n}\n.letter9 {\n  animation-delay: calc(2.5s / 10 * (10 - 9) * -1);\n}\n.letter10 {\n  animation-delay: calc(2.5s / 10 * (10 - 10) * -1);\n}\n\n",
+    "component_name": "GalaxyShaggyEmu40"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1693,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.719Z",
+  "updated_at": "2025-07-31T07:55:40.719Z"
+}

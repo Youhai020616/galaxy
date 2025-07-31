@@ -1,0 +1,87 @@
+{
+  "id": "mrhyddenn_plastic-panther-51",
+  "name": "plastic-panther-51",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "plastic-panther-51 组件 (gradient, loader, spinner, animation)",
+  "tags": [
+    "gradient",
+    "loader",
+    "spinner",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: gradient, loader, spinner */\n.loader {\n  position: relative;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  position: absolute;\n  border-radius: inherit;\n}\n\n.loader::before {\n  width: 100%;\n  height: 100%;\n  background-image: linear-gradient(0deg, #ff00cc 0%, #333399 100%);\n  animation: load012323 .5s infinite linear;\n}\n\n.loader::after {\n  width: 85%;\n  height: 85%;\n  background-color: #222;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n@keyframes load012323 {\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_plastic-panther-51.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyPlasticPanther51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: gradient, loader, spinner */\n.loader {\n  position: relative;\n  width: 80rpx;\n  height: 80rpx;\n  border-radius: 50%;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  position: absolute;\n  border-radius: inherit;\n}\n\n.loader::before {\n  width: 100%;\n  height: 100%;\n  background-image: linear-gradient(0deg, #ff00cc 0%, #333399 100%);\n  animation: load012323 .5s infinite linear;\n}\n\n.loader::after {\n  width: 85%;\n  height: 85%;\n  background-color: #222;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n@keyframes load012323 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyPlasticPanther51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 656,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.448Z",
+  "updated_at": "2025-07-31T07:55:42.448Z"
+}

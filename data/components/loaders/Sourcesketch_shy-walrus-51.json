@@ -1,0 +1,92 @@
+{
+  "id": "Sourcesketch_shy-walrus-51",
+  "name": "shy-walrus-51",
+  "category": "loaders",
+  "author": "Sourcesketch",
+  "description": "shy-walrus-51 组件 (glassmorphism, green, loader, loading animation, animation)",
+  "tags": [
+    "glassmorphism",
+    "green",
+    "loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"cell\">\n  <div class=\"card\">\n    <span class=\"flower-loader\">Loading…</span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Sourcesketch  - Tags: glassmorphism, green, loader, loading animation */\n.flower-loader {\n  overflow: hidden;\n  position: relative;\n  text-indent: -9999px;\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  background: #e96;\n  border-radius: 100%;\n  -moz-box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px,\n    #485 12px -12px 0 4px, #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n  -webkit-box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px,\n    #485 12px -12px 0 4px, #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n  box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px, #485 12px -12px 0 4px,\n    #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n  -moz-animation: flower-loader 5s infinite ease-in-out;\n  -webkit-animation: flower-loader 5s infinite ease-in-out;\n  animation: flower-loader 5s infinite ease-in-out;\n  -moz-transform-origin: 50% 50%;\n  -ms-transform-origin: 50% 50%;\n  -webkit-transform-origin: 50% 50%;\n  transform-origin: 50% 50%;\n}\n\n@-moz-keyframes flower-loader {\n  0% {\n    -moz-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -moz-box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px,\n      #485 12px -12px 0 4px, #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n    box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px, #485 12px -12px 0 4px,\n      #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n  }\n  50% {\n    -moz-transform: rotate(1080deg);\n    transform: rotate(1080deg);\n    -moz-box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px,\n      #485 -12px 12px 0 4px, #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n    box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px, #485 -12px 12px 0 4px,\n      #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n  }\n}\n@-webkit-keyframes flower-loader {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -webkit-box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px,\n      #485 12px -12px 0 4px, #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n    box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px, #485 12px -12px 0 4px,\n      #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n  }\n  50% {\n    -webkit-transform: rotate(1080deg);\n    transform: rotate(1080deg);\n    -webkit-box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px,\n      #485 -12px 12px 0 4px, #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n    box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px, #485 -12px 12px 0 4px,\n      #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n  }\n}\n@keyframes flower-loader {\n  0% {\n    -moz-transform: rotate(0deg);\n    -ms-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -moz-box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px,\n      #485 12px -12px 0 4px, #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n    -webkit-box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px,\n      #485 12px -12px 0 4px, #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n    box-shadow: white 0 0 15px 0, #485 -12px -12px 0 4px, #485 12px -12px 0 4px,\n      #485 12px 12px 0 4px, #485 -12px 12px 0 4px;\n  }\n  50% {\n    -moz-transform: rotate(1080deg);\n    -ms-transform: rotate(1080deg);\n    -webkit-transform: rotate(1080deg);\n    transform: rotate(1080deg);\n    -moz-box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px,\n      #485 -12px 12px 0 4px, #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n    -webkit-box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px,\n      #485 -12px 12px 0 4px, #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n    box-shadow: white 0 0 15px 0, #485 12px 12px 0 4px, #485 -12px 12px 0 4px,\n      #485 -12px -12px 0 4px, #485 12px -12px 0 4px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Sourcesketch_shy-walrus-51.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cell\"></view>\n  <view class=\"card\"></view>\n    <text class=\"flower-loader\">Loading…</text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyShyWalrus51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Sourcesketch  - Tags: glassmorphism, green, loader, loading animation */\n.flower-loader {\n  overflow: hidden;\n  position: relative;\n  text-indent: -19998rpx;\n  display: inline-block;\n  width: 32rpx;\n  height: 32rpx;\n  background: #e96;\n  border-radius: 100%;\n  -moz-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx,\n    #485 24rpx -24rpx 0 8rpx, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx,\n    #485 24rpx -24rpx 0 8rpx, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx,\n    #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -moz-animation: flower-loader 5s infinite ease-in-out;\n  -webkit-animation: flower-loader 5s infinite ease-in-out;\n  animation: flower-loader 5s infinite ease-in-out;\n  -moz-transform-origin: 50% 50%;\n  -ms-transform-origin: 50% 50%;\n  -webkit-transform-origin: 50% 50%;\n  transform-origin: 50% 50%;\n}\n\n@-moz-keyframes flower-loader {\n  0% {\n    -moz-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -moz-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx,\n      #485 24rpx -24rpx 0 8rpx, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx,\n      #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  50% {\n    -moz-transform: rotate(1080deg);\n    transform: rotate(1080deg);\n    -moz-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx,\n      #485 -24rpx 24rpx 0 8rpx, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx,\n      #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n@-webkit-keyframes flower-loader {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx,\n      #485 24rpx -24rpx 0 8rpx, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx,\n      #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  50% {\n    -webkit-transform: rotate(1080deg);\n    transform: rotate(1080deg);\n    -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx,\n      #485 -24rpx 24rpx 0 8rpx, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx,\n      #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n@keyframes flower-loader {\n  0% {\n    -moz-transform: rotate(0deg);\n    -ms-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -moz-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx,\n      #485 24rpx -24rpx 0 8rpx, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx,\n      #485 24rpx -24rpx 0 8rpx, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx,\n      #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  50% {\n    -moz-transform: rotate(1080deg);\n    -ms-transform: rotate(1080deg);\n    -webkit-transform: rotate(1080deg);\n    transform: rotate(1080deg);\n    -moz-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx,\n      #485 -24rpx 24rpx 0 8rpx, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx,\n      #485 -24rpx 24rpx 0 8rpx, #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: white 0 0 30rpx 0, #485 24rpx 24rpx 0 8rpx, #485 -24rpx 24rpx 0 8rpx,\n      #485 -24rpx -24rpx 0 8rpx, #485 24rpx -24rpx 0 8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n",
+    "component_name": "GalaxyShyWalrus51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 3708,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.553Z",
+  "updated_at": "2025-07-31T07:55:40.553Z"
+}

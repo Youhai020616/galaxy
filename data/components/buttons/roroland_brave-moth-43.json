@@ -1,0 +1,118 @@
+{
+  "id": "roroland_brave-moth-43",
+  "name": "brave-moth-43",
+  "category": "buttons",
+  "author": "roroland",
+  "description": "brave-moth-43 组件 (flat design, button, flip, animated, two side, animation, interactive)",
+  "tags": [
+    "flat design",
+    "button",
+    "flip",
+    "animated",
+    "two side",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"flip-button\">\n  <button class=\"button button-front\">\n    <span class=\"text-front\">Label one</span>\n    <span class=\"text-back\">Back can be longer</span>\n  </button>\n</div>",
+    "css": "/* From Uiverse.io by roroland - Tags: flat design, button, flip, animated, two side */\n.flip-button {\n  --col1: #4CAF50;\n  --col2: #4f16ac;\n  --col3: #d8d1e4;\n  position: relative;\n  min-width: 10rem;\n  min-height: 3rem;\n  perspective: 500px;\n}\n\n.flip-button .button {\n  appearance: none;\n  position: absolute;\n  inset: 0;\n  height: 100%;\n  border-radius: 30px;\n  font-size: .75em;\n  font-weight: bold;\n  color: #fff;\n  text-transform: uppercase;\n  background-color: var(--col1);\n  border: none;\n  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\n  transition: all 1s ease-out .5s;\n  transform-style: preserve-3d;\n  width: 100%;\n}\n\n.flip-button:hover .button {\n  background-color: var(--col2);\n  cursor: pointer;\n  transform: rotateY(180deg) scale(1.5);\n  transition: all .3s ease-out;\n}\n\n.flip-button:hover .button:active {\n  background-color: rgba(81, 23, 173, 0.75);\n  transform: rotateY(180deg) scale(1.45);\n  outline: 10px solid var(--col3);\n  transition: all .1s ease-out;\n}\n\n.flip-button .button::after {\n  content: '';\n  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.25);\n  display: block;\n  border-radius: 30px;\n  height: 100%;\n  width: 100%;\n  transition: all .3s ease-out .95s;\n}\n\n.flip-button:hover .button::after {\n  box-shadow: 0px 0px 1px 10px rgba(160, 29, 149, 0.15);\n  transition: all .3s ease-out;\n}\n\n.flip-button .text-front,\n.flip-button .text-back {\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  padding: 0 1.5em;\n  transform: translate(-50%, -50%);\n  backface-visibility: hidden;\n  width: 100%;\n}\n\n.flip-button .text-back {\n  transform: translate(-50%, -50%) rotateY(180deg);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/roroland_brave-moth-43.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flip-button\"></view>\n  <button class=\"button button-front\"></button>\n    <text class=\"text-front\">Label one</text>\n    <text class=\"text-back\">Back can be longer</text>\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBraveMoth43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by roroland - Tags: flat design, button, flip, animated, two side */\n.flip-button {\n  --col1: #4CAF50;\n  --col2: #4f16ac;\n  --col3: #d8d1e4;\n  position: relative;\n  min-width: 10rem;\n  min-height: 3rem;\n  perspective: 1000rpx;\n}\n\n.flip-button .button {\n  appearance: none;\n  position: absolute;\n  inset: 0;\n  height: 100%;\n  border-radius: 60rpx;\n  font-size: .75em;\n  font-weight: bold;\n  color: #fff;\n  text-transform: uppercase;\n  background-color: var(--col1);\n  border: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 8rpx 12rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 1s ease-out .5s;\n  transform-style: preserve-3d;\n  width: 100%;\n}\n\n.flip-button:hover .button {\n  background-color: var(--col2);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transform: rotateY(180deg) scale(1.5);\n  transition: all .3s ease-out;\n}\n\n.flip-button:hover .button:active {\n  background-color: rgba(81, 23, 173, 0.75);\n  transform: rotateY(180deg) scale(1.45);\n  outline: 20rpx solid var(--col3);\n  transition: all .1s ease-out;\n}\n\n.flip-button .button::after {\n  content: '';\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 120rpx 10rpx rgba(0, 0, 0, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  display: block;\n  border-radius: 60rpx;\n  height: 100%;\n  width: 100%;\n  transition: all .3s ease-out .95s;\n}\n\n.flip-button:hover .button::after {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 2rpx 20rpx rgba(160, 29, 149, 0.15);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all .3s ease-out;\n}\n\n.flip-button .text-front,\n.flip-button .text-back {\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  padding: 0 1.5em;\n  transform: translate(-50%, -50%);\n  backface-visibility: hidden;\n  width: 100%;\n}\n\n.flip-button .text-back {\n  transform: translate(-50%, -50%) rotateY(180deg);\n}\n\n\n",
+    "component_name": "GalaxyBraveMoth43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1806,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.670Z",
+  "updated_at": "2025-07-31T07:55:37.670Z"
+}

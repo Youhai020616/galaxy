@@ -1,0 +1,90 @@
+{
+  "id": "csemszepp_quick-sloth-23",
+  "name": "quick-sloth-23",
+  "category": "loaders",
+  "author": "csemszepp",
+  "description": "quick-sloth-23 组件 (loader, animated, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"wrapper\">\n\t\t<div class=\"hoop\"></div>\n\t\t<div class=\"sphere1\"></div>\n\t\t<div class=\"sphere2\"></div>\t\n\t</div>",
+    "css": "/* From Uiverse.io by csemszepp - Source: https://codepen.io/pcameron/pen/jENMKG - Tags: loader, animated */\n@-webkit-keyframes sphere1Move {\n  0% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n\n  10% {\n    width: 40px;\n    height: 40px;\n  }\n\n  20% {\n    width: 30px;\n    height: 30px;\n  }\n\n  30% {\n    width: 40px;\n    height: 40px;\n  }\n\n  45% {\n    left: 15px;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 50px;\n    height: 50px;\n    left: 20px;\n    top: 116px;\n    z-index: 10;\n  }\n\t/*55%{left:15px;}*/\n  60% {\n    width: 60px;\n    height: 60px;\n  }\n\n  80% {\n    width: 70px;\n    height: 70px;\n  }\n\n  90% {\n    width: 60px;\n    height: 60px;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n}\n\n@keyframes sphere1Move {\n  0% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n\n  10% {\n    width: 40px;\n    height: 40px;\n  }\n\n  20% {\n    width: 30px;\n    height: 30px;\n  }\n\n  30% {\n    width: 40px;\n    height: 40px;\n  }\n\n  45% {\n    left: 15px;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 50px;\n    height: 50px;\n    left: 20px;\n    top: 116px;\n    z-index: 10;\n  }\n/*\t55%{left:15px;}*/\n  60% {\n    width: 60px;\n    height: 60px;\n  }\n\n  80% {\n    width: 70px;\n    height: 70px;\n  }\n\n  90% {\n    width: 60px;\n    height: 60px;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n}\n\n@-webkit-keyframes sphere2Move {\n  0% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n\n  10% {\n    width: 40px;\n    height: 40px;\n  }\n\n  20% {\n    width: 30px;\n    height: 30px;\n  }\n\n  30% {\n    width: 40px;\n    height: 40px;\n  }\n\n  45% {\n    left: 217px;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 50px;\n    height: 50px;\n    left: 222px;\n    top: 116px;\n    z-index: 10;\n  }\n\t/*55%{left:15px;}*/\n  60% {\n    width: 60px;\n    height: 60px;\n  }\n\n  80% {\n    width: 70px;\n    height: 70px;\n  }\n\n  90% {\n    width: 60px;\n    height: 60px;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n}\n\n@keyframes sphere2Move {\n  0% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n\n  10% {\n    width: 40px;\n    height: 40px;\n  }\n\n  20% {\n    width: 30px;\n    height: 30px;\n  }\n\n  30% {\n    width: 40px;\n    height: 40px;\n  }\n\n  45% {\n    left: 217px;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 50px;\n    height: 50px;\n    left: 222px;\n    top: 116px;\n    z-index: 10;\n  }\n\t/*55%{left:15px;}*/\n  60% {\n    width: 60px;\n    height: 60px;\n  }\n\n  80% {\n    width: 70px;\n    height: 70px;\n  }\n\n  90% {\n    width: 60px;\n    height: 60px;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 50px;\n    height: 50px;\n    left: 116px;\n    top: 116px;\n    z-index: 0;\n  }\n}\n\n.wrapper {\n  width: 300px;\n  height: 300px;\n\t/*border:1px solid red;*/\n  margin: 0 auto;\n  margin-top: 5%;\n  position: relative;\n}\n\n.hoop {\n  width: 80px;\n  height: 80px;\n  border-radius: 50%;\n  background: transparent;\n  box-shadow: 0 0 0 6px #96281B, 0 0 0 26px #D64541;\n  position: absolute;\n  left: 100px;\n  top: 100px;\n  z-index: 5;\n}\n\n.sphere1 {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background: #22A7F0;\n  position: absolute;\n  left: 116px;\n  top: 116px;\n  box-shadow: -7px -7px 0 #1E8BC3 inset;\n  -webkit-animation: sphere1Move 1.2s linear infinite;\n  animation: sphere1Move 1.2s linear infinite;\n}\n\n.sphere2 {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background: #22A7F0;\n  position: absolute;\n  left: 116px;\n  top: 116px;\n  box-shadow: -7px -7px 0 #1E8BC3 inset;\n  -webkit-animation: sphere2Move 1.2s linear 0.6s infinite;\n  animation: sphere2Move 1.2s linear 0.6s infinite;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csemszepp_quick-sloth-23.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"wrapper\"></view>\n\t\t<view class=\"hoop\"></view>\n\t\t<view class=\"sphere1\"></view>\n\t\t<view class=\"sphere2\"></view>\t\n\t</div>",
+    "script": "export default {\n  name: 'GalaxyQuickSloth23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp - Source: https://codepen.io/pcameron/pen/jENMKG - Tags: loader, animated */\n@-webkit-keyframes sphere1Move {\n  0% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n\n  10% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  20% {\n    width: 60rpx;\n    height: 60rpx;\n  }\n\n  30% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  45% {\n    left: 30rpx;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 40rpx;\n    top: 232rpx;\n    z-index: 10;\n  }\n\t/*55%{left:30rpx;}*/\n  60% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  80% {\n    width: 140rpx;\n    height: 140rpx;\n  }\n\n  90% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n}\n\n@keyframes sphere1Move {\n  0% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n\n  10% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  20% {\n    width: 60rpx;\n    height: 60rpx;\n  }\n\n  30% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  45% {\n    left: 30rpx;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 40rpx;\n    top: 232rpx;\n    z-index: 10;\n  }\n/*\t55%{left:30rpx;}*/\n  60% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  80% {\n    width: 140rpx;\n    height: 140rpx;\n  }\n\n  90% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n}\n\n@-webkit-keyframes sphere2Move {\n  0% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n\n  10% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  20% {\n    width: 60rpx;\n    height: 60rpx;\n  }\n\n  30% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  45% {\n    left: 434rpx;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 444rpx;\n    top: 232rpx;\n    z-index: 10;\n  }\n\t/*55%{left:30rpx;}*/\n  60% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  80% {\n    width: 140rpx;\n    height: 140rpx;\n  }\n\n  90% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n}\n\n@keyframes sphere2Move {\n  0% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n\n  10% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  20% {\n    width: 60rpx;\n    height: 60rpx;\n  }\n\n  30% {\n    width: 80rpx;\n    height: 80rpx;\n  }\n\n  45% {\n    left: 434rpx;\n  }\n\n  49% {\n    z-index: 0;\n  }\n\n  50% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 444rpx;\n    top: 232rpx;\n    z-index: 10;\n  }\n\t/*55%{left:30rpx;}*/\n  60% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  80% {\n    width: 140rpx;\n    height: 140rpx;\n  }\n\n  90% {\n    width: 120rpx;\n    height: 120rpx;\n  }\n\n  99% {\n    z-index: 10;\n  }\n\n  100% {\n    width: 100rpx;\n    height: 100rpx;\n    left: 232rpx;\n    top: 232rpx;\n    z-index: 0;\n  }\n}\n\n.wrapper {\n  width: 600rpx;\n  height: 600rpx;\n\t/*border:2rpx solid red;*/\n  margin: 0 auto;\n  margin-top: 5%;\n  position: relative;\n}\n\n.hoop {\n  width: 160rpx;\n  height: 160rpx;\n  border-radius: 50%;\n  background: transparent;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 12rpx #96281B, 0 0 0 52rpx #D64541;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: absolute;\n  left: 200rpx;\n  top: 200rpx;\n  z-index: 5;\n}\n\n.sphere1 {\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n  background: #22A7F0;\n  position: absolute;\n  left: 232rpx;\n  top: 232rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -14rpx -14rpx 0 #1E8BC3 inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-animation: sphere1Move 1.2s linear infinite;\n  animation: sphere1Move 1.2s linear infinite;\n}\n\n.sphere2 {\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n  background: #22A7F0;\n  position: absolute;\n  left: 232rpx;\n  top: 232rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -14rpx -14rpx 0 #1E8BC3 inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  -webkit-animation: sphere2Move 1.2s linear 0.6s infinite;\n  animation: sphere2Move 1.2s linear 0.6s infinite;\n}\n",
+    "component_name": "GalaxyQuickSloth23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4023,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.169Z",
+  "updated_at": "2025-07-31T07:55:41.169Z"
+}

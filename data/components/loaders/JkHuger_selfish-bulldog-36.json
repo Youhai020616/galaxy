@@ -1,0 +1,91 @@
+{
+  "id": "JkHuger_selfish-bulldog-36",
+  "name": "selfish-bulldog-36",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "selfish-bulldog-36 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"section-center\">\n  <div class=\"section-path\">\n    <div class=\"globe\">\n      <div class=\"wrapper\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </div>\n    </div>\n  </div>\n </div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n.section-center {\n  position: absolute;\n  top: 50%;\n  left: 0;\n  z-index: 10;\n  transform: translateY(-50%);\n  width: 100%;\n  margin: 0 auto;\n  text-align: center;\n  -webkit-transition: all 500ms linear;\n  transition: all 500ms linear;\n}\n\n.section-path {\n  position: relative;\n  width: 238px;\n  height: 76px;\n  border-radius: 35px;\n  margin: 0 auto;\n  text-align: center;\n  background-color: #e6e6e6;\n  box-shadow: inset -2px 20px 10px 0 rgba(0,0,0,.06),\n\t\tinset -2px 30px 10px 0 rgba(0,0,0,.04);\n  border: 3px groove rgba(225,225,225,0.07);\n  overflow: hidden;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.globe {\n  position: relative;\n  width: 66px;\n  height: 66px;\n  overflow: hidden;\n  margin-top: 2px;\n  margin-left: 2px;\n  border-radius: 50%;\n  box-shadow: 0 10px 40px rgba(0,0,0,0.65);\n  animation: rotateBall 4s ease infinite;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n@keyframes rotateBall {\n  0% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(162px);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.globe:after {\n  position: absolute;\n  width: 5px;\n  height: 12px;\n  background-color: rgba(255, 255, 255, 0.1);\n  content: '';\n  left: 40px;\n  top: 15px;\n  border-radius: 50%;\n  z-index: 2;\n  box-shadow: 0 0 14px 7px rgba(255, 255, 255, 0.1);\n}\n\n.globe:before {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  content: '';\n  left: 0;\n  top: 0;\n  border-radius: 50%;\n  z-index: 1;\n  box-shadow: inset 0 0 15px #1a252f;\n  opacity: 0.4;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.globe .wrapper {\n  position: absolute;\n  width: 528px;\n  height: 528px;\n  top: 0;\n  left: -462px;\n  animation: moveBall 4s ease infinite;\n}\n\n@keyframes moveBall {\n  0% {\n    left: -462px;\n  }\n\n  50% {\n    left: 0;\n  }\n\n  100% {\n    left: -462px;\n  }\n}\n\n.globe .wrapper span {\n  position: absolute;\n  width: 33px;\n  height: 528px;\n  top: 0;\n  left: 0;\n  background-color: #5c477d;\n  box-shadow: inset 0 0 25px #5c487c;\n}\n\n.globe .wrapper span:nth-child(2) {\n  left: 33px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(3) {\n  left: 66px;\n}\n\n.globe .wrapper span:nth-child(4) {\n  left: 99px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(5) {\n  left: 132px;\n}\n\n.globe .wrapper span:nth-child(6) {\n  left: 165px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(7) {\n  left: 198px;\n}\n\n.globe .wrapper span:nth-child(8) {\n  left: 231px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(9) {\n  left: 264px;\n}\n\n.globe .wrapper span:nth-child(10) {\n  left: 297px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(11) {\n  left: 330px;\n}\n\n.globe .wrapper span:nth-child(12) {\n  left: 363px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(13) {\n  left: 396px;\n}\n\n.globe .wrapper span:nth-child(14) {\n  left: 429px;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(15) {\n  left: 462px;\n}\n\n.globe .wrapper span:nth-child(16) {\n  left: 495px;\n  background-color: #503e6d;\n}\n\n#switch,\n#circle {\n  cursor: pointer;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n#switch {\n  width: 70px;\n  height: 8px;\n  margin: 0 auto;\n  text-align: center;\n  border: 2px solid #8167a9;\n  border-radius: 27px;\n  background: #000;\n  position: relative;\n  display: inline-block;\n  margin-top: 40px;\n  margin-bottom: 20px;\n}\n\n#circle {\n  position: absolute;\n  top: -11px;\n  left: 5px;\n  width: 26px;\n  height: 26px;\n  border-radius: 50%;\n  box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 0 0 1px rgba(26,53,71,0.07);\n  background: #000;\n}\n\n.switched {\n  border-color: #000 !important;\n  background: #8167a9 !important;\n}\n\n.switched #circle {\n  left: 35px;\n  background: #fff;\n}\n\n.section-center p span {\n  position: relative;\n  padding: 4px 10px;\n  margin: 0 5px;\n}\n\n.section-center p span:before {\n  position: absolute;\n  content: '';\n  width: 100%;\n  height: 100%;\n  border-radius: 4px;\n  background-color: #8167a9;\n  box-shadow: 0 2px 4px rgba(0,0,0,0.25);\n  left: 0;\n  top: 0;\n  z-index: -1;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.section-center p span:after {\n  position: absolute;\n  content: '';\n  width: calc(100% - 10px);\n  height: 2px;\n  border-radius: 4px;\n  background-color: #fff;\n  left: 5px;\n  top: 50%;\n  z-index: 1;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.section-center p span:nth-child(2):after {\n  opacity: 0;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_selfish-bulldog-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"section-center\"></view>\n  <view class=\"section-path\"></view>\n    <view class=\"globe\"></view>\n      <view class=\"wrapper\"></view>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n        <text></text>\n      </div>\n    </div>\n  </div>\n </div>",
+    "script": "export default {\n  name: 'GalaxySelfishBulldog36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n.section-center {\n  position: absolute;\n  top: 50%;\n  left: 0;\n  z-index: 10;\n  transform: translateY(-50%);\n  width: 100%;\n  margin: 0 auto;\n  text-align: center;\n  -webkit-transition: all 500ms linear;\n  transition: all 500ms linear;\n}\n\n.section-path {\n  position: relative;\n  width: 476rpx;\n  height: 152rpx;\n  border-radius: 70rpx;\n  margin: 0 auto;\n  text-align: center;\n  background-color: #e6e6e6;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -4rpx 40rpx 20rpx 0 rgba(0,0,0,.06),\n\t\tinset -4rpx 60rpx 20rpx 0 rgba(0,0,0,.04);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: 6rpx groove rgba(225,225,225,0.07);\n  overflow: hidden;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.globe {\n  position: relative;\n  width: 132rpx;\n  height: 132rpx;\n  overflow: hidden;\n  margin-top: 4rpx;\n  margin-left: 4rpx;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 80rpx rgba(0,0,0,0.65);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: rotateBall 4s ease infinite;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n@keyframes rotateBall {\n  0% {\n    transform: translateX(0);\n  }\n\n  50% {\n    transform: translateX(324rpx);\n  }\n\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.globe:after {\n  position: absolute;\n  width: 10rpx;\n  height: 24rpx;\n  background-color: rgba(255, 255, 255, 0.1);\n  content: '';\n  left: 80rpx;\n  top: 30rpx;\n  border-radius: 50%;\n  z-index: 2;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 28rpx 14rpx rgba(255, 255, 255, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.globe:before {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  content: '';\n  left: 0;\n  top: 0;\n  border-radius: 50%;\n  z-index: 1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 30rpx #1a252f;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  opacity: 0.4;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.globe .wrapper {\n  position: absolute;\n  width: 1056rpx;\n  height: 1056rpx;\n  top: 0;\n  left: -924rpx;\n  animation: moveBall 4s ease infinite;\n}\n\n@keyframes moveBall {\n  0% {\n    left: -924rpx;\n  }\n\n  50% {\n    left: 0;\n  }\n\n  100% {\n    left: -924rpx;\n  }\n}\n\n.globe .wrapper span {\n  position: absolute;\n  width: 66rpx;\n  height: 1056rpx;\n  top: 0;\n  left: 0;\n  background-color: #5c477d;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 50rpx #5c487c;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.globe .wrapper span:nth-child(2) {\n  left: 66rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(3) {\n  left: 132rpx;\n}\n\n.globe .wrapper span:nth-child(4) {\n  left: 198rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(5) {\n  left: 264rpx;\n}\n\n.globe .wrapper span:nth-child(6) {\n  left: 330rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(7) {\n  left: 396rpx;\n}\n\n.globe .wrapper span:nth-child(8) {\n  left: 462rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(9) {\n  left: 528rpx;\n}\n\n.globe .wrapper span:nth-child(10) {\n  left: 594rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(11) {\n  left: 660rpx;\n}\n\n.globe .wrapper span:nth-child(12) {\n  left: 726rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(13) {\n  left: 792rpx;\n}\n\n.globe .wrapper span:nth-child(14) {\n  left: 858rpx;\n  background-color: #503e6d;\n}\n\n.globe .wrapper span:nth-child(15) {\n  left: 924rpx;\n}\n\n.globe .wrapper span:nth-child(16) {\n  left: 990rpx;\n  background-color: #503e6d;\n}\n\n#switch,\n#circle {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n#switch {\n  width: 140rpx;\n  height: 16rpx;\n  margin: 0 auto;\n  text-align: center;\n  border: 4rpx solid #8167a9;\n  border-radius: 54rpx;\n  background: #000;\n  position: relative;\n  display: inline-block;\n  margin-top: 80rpx;\n  margin-bottom: 40rpx;\n}\n\n#circle {\n  position: absolute;\n  top: -22rpx;\n  left: 10rpx;\n  width: 52rpx;\n  height: 52rpx;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 8rpx rgba(0,0,0,0.25), 0 0 0 2rpx rgba(26,53,71,0.07);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: #000;\n}\n\n.switched {\n  border-color: #000 !important;\n  background: #8167a9 !important;\n}\n\n.switched #circle {\n  left: 70rpx;\n  background: #fff;\n}\n\n.section-center p span {\n  position: relative;\n  padding: 8rpx 20rpx;\n  margin: 0 10rpx;\n}\n\n.section-center p span:before {\n  position: absolute;\n  content: '';\n  width: 100%;\n  height: 100%;\n  border-radius: 8rpx;\n  background-color: #8167a9;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 4rpx 8rpx rgba(0,0,0,0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  left: 0;\n  top: 0;\n  z-index: -1;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.section-center p span:after {\n  position: absolute;\n  content: '';\n  width: calc(100% - 20rpx);\n  height: 4rpx;\n  border-radius: 8rpx;\n  background-color: #fff;\n  left: 10rpx;\n  top: 50%;\n  z-index: 1;\n  -webkit-transition: all 300ms linear;\n  transition: all 300ms linear;\n}\n\n.section-center p span:nth-child(2):after {\n  opacity: 0;\n}\n",
+    "component_name": "GalaxySelfishBulldog36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 5068,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.524Z",
+  "updated_at": "2025-07-31T07:55:39.524Z"
+}

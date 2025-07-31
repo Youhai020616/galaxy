@@ -1,0 +1,90 @@
+{
+  "id": "eslam-hany_afraid-stingray-62",
+  "name": "afraid-stingray-62",
+  "category": "loaders",
+  "author": "eslam-hany",
+  "description": "afraid-stingray-62 组件 (loader, circle loader, animation)",
+  "tags": [
+    "loader",
+    "circle loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by eslam-hany - Tags: loader, circle loader */\n.loader {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;\n  animation: rotate 2.0s infinite linear;\n}\n\n@keyframes rotate {\n  100% {\n    transform: rotate(1turn);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/eslam-hany_afraid-stingray-62.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyAfraidStingray62',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by eslam-hany - Tags: loader, circle loader */\n.loader {\n  width: 200rpx;\n  height: 200rpx;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.4) 0rpx 4rpx 8rpx, rgba(0, 0, 0, 0.3) 0rpx 14rpx 26rpx -6rpx, rgba(0, 0, 0, 0.2) 0rpx -6rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: rotate 2.0s infinite linear;\n}\n\n@keyframes rotate {\n  100% {\n    transform: rotate(1turn);\n  }\n}\n\n",
+    "component_name": "GalaxyAfraidStingray62"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 394,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.793Z",
+  "updated_at": "2025-07-31T07:55:41.793Z"
+}

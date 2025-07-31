@@ -1,0 +1,82 @@
+{
+  "id": "themrsami_heavy-puma-9",
+  "name": "heavy-puma-9",
+  "category": "loaders",
+  "author": "themrsami",
+  "description": "heavy-puma-9 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex justify-center items-center h-screen\">\n  <div class=\"animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-purple-500\"></div>\n  <div class=\"animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-red-500 ml-3\"></div>\n  <div class=\"animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-blue-500 ml-3\"></div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/themrsami_heavy-puma-9.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex justify-center items-center h-screen\"></view>\n  <view class=\"animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-purple-500\"></view>\n  <view class=\"animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-red-500 ml-3\"></view>\n  <view class=\"animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-blue-500 ml-3\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHeavyPuma9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyHeavyPuma9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 400,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.693Z",
+  "updated_at": "2025-07-31T07:55:42.693Z"
+}

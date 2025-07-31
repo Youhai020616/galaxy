@@ -1,0 +1,121 @@
+{
+  "id": "njesenberger_thin-owl-11",
+  "name": "thin-owl-11",
+  "category": "buttons",
+  "author": "njesenberger",
+  "description": "thin-owl-11 组件 (skeuomorphism, 3d, button, active, css, btn, animation, gradient)",
+  "tags": [
+    "skeuomorphism",
+    "3d",
+    "button",
+    "active",
+    "css",
+    "btn",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button type=\"button\" class=\"button\">\n  <div class=\"button-top\">3D Button</div>\n  <div class=\"button-bottom\"></div>\n  <div class=\"button-base\"></div>\n</button>",
+    "css": "/* From Uiverse.io by njesenberger - Tags: skeuomorphism, 3d, button, active, css, btn */\n.button {\n  -webkit-appearance: none;\n  appearance: none;\n  position: relative;\n  border-width: 0;\n  padding: 0 8px 12px;\n  min-width: 10em;\n  box-sizing: border-box;\n  background: transparent;\n  font: inherit;\n  cursor: pointer;\n}\n\n.button-top {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  z-index: 0;\n  padding: 8px 16px;\n  transform: translateY(0);\n  text-align: center;\n  color: #fff;\n  text-shadow: 0 -1px rgba(0, 0, 0, .25);\n  transition-property: transform;\n  transition-duration: .2s;\n  -webkit-user-select: none;\n  user-select: none;\n}\n\n.button:active .button-top {\n  transform: translateY(6px);\n}\n\n.button-top::after {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  border-radius: 4px;\n  width: 100%;\n  height: 100%;\n  box-sizing: content-box;\n  background-image: radial-gradient(#cd3f64, #9d3656);\n  text-align: center;\n  color: #fff;\n  box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, .2), 0 1px 2px 1px rgba(255, 255, 255, .2);\n  transition-property: border-radius, padding, width, transform;\n  transition-duration: .2s;\n}\n\n.button:active .button-top::after {\n  border-radius: 6px;\n  padding: 0 2px;\n}\n\n.button-bottom {\n  position: absolute;\n  z-index: -1;\n  bottom: 4px;\n  left: 4px;\n  border-radius: 8px / 16px 16px 8px 8px;\n  padding-top: 6px;\n  width: calc(100% - 8px);\n  height: calc(100% - 10px);\n  box-sizing: content-box;\n  background-color: #803;\n  background-image: radial-gradient(4px 8px at 4px calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(4px 8px at calc(100% - 4px) calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(16px at -4px 0, white, transparent), radial-gradient(16px at calc(100% + 4px) 0, white, transparent);\n  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), inset 0 -1px 3px 3px rgba(0, 0, 0, .4);\n  transition-property: border-radius, padding-top;\n  transition-duration: .2s;\n}\n\n.button:active .button-bottom {\n  border-radius: 10px 10px 8px 8px / 8px;\n  padding-top: 0;\n}\n\n.button-base {\n  position: absolute;\n  z-index: -2;\n  top: 4px;\n  left: 0;\n  border-radius: 12px;\n  width: 100%;\n  height: calc(100% - 4px);\n  background-color: rgba(0, 0, 0, .15);\n  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, .75), inset 0 2px 2px rgba(0, 0, 0, .25);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/njesenberger_thin-owl-11.html"
+  },
+  "uniapp": {
+    "template": "<button type=\"button\" class=\"button\"></button>\n  <view class=\"button-top\">3D Button</view>\n  <view class=\"button-bottom\"></view>\n  <view class=\"button-base\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyThinOwl11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by njesenberger - Tags: skeuomorphism, 3d, button, active, css, btn */\n.button {\n  -webkit-appearance: none;\n  appearance: none;\n  position: relative;\n  border-width: 0;\n  padding: 0 16rpx 24rpx;\n  min-width: 10em;\n  box-sizing: border-box;\n  background: transparent;\n  font: inherit;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.button-top {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  z-index: 0;\n  padding: 16rpx 32rpx;\n  transform: translateY(0);\n  text-align: center;\n  color: #fff;\n  /* #ifdef H5 */\n  text-shadow: 0 -2rpx rgba(0, 0, 0, .25);\n  /* #endif */\n  transition-property: transform;\n  transition-duration: .2s;\n  -webkit-user-select: none;\n  user-select: none;\n}\n\n.button:active .button-top {\n  transform: translateY(12rpx);\n}\n\n.button-top::after {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  border-radius: 8rpx;\n  width: 100%;\n  height: 100%;\n  box-sizing: content-box;\n  background-image: radial-gradient(#cd3f64, #9d3656);\n  text-align: center;\n  color: #fff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 0rpx 2rpx rgba(255, 255, 255, .2), 0 2rpx 4rpx 2rpx rgba(255, 255, 255, .2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition-property: border-radius, padding, width, transform;\n  transition-duration: .2s;\n}\n\n.button:active .button-top::after {\n  border-radius: 12rpx;\n  padding: 0 4rpx;\n}\n\n.button-bottom {\n  position: absolute;\n  z-index: -1;\n  bottom: 8rpx;\n  left: 8rpx;\n  border-radius: 16rpx / 32rpx 32rpx 16rpx 16rpx;\n  padding-top: 12rpx;\n  width: calc(100% - 16rpx);\n  height: calc(100% - 20rpx);\n  box-sizing: content-box;\n  background-color: #803;\n  background-image: radial-gradient(8rpx 16rpx at 8rpx calc(100% - 16rpx), rgba(255, 255, 255, .25), transparent), radial-gradient(8rpx 16rpx at calc(100% - 8rpx) calc(100% - 16rpx), rgba(255, 255, 255, .25), transparent), radial-gradient(32rpx at -8rpx 0, white, transparent), radial-gradient(32rpx at calc(100% + 8rpx) 0, white, transparent);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 6rpx 0rpx rgba(0, 0, 0, 0.5), inset 0 -2rpx 6rpx 6rpx rgba(0, 0, 0, .4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition-property: border-radius, padding-top;\n  transition-duration: .2s;\n}\n\n.button:active .button-bottom {\n  border-radius: 20rpx 20rpx 16rpx 16rpx / 16rpx;\n  padding-top: 0;\n}\n\n.button-base {\n  position: absolute;\n  z-index: -2;\n  top: 8rpx;\n  left: 0;\n  border-radius: 24rpx;\n  width: 100%;\n  height: calc(100% - 8rpx);\n  background-color: rgba(0, 0, 0, .15);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 2rpx 2rpx 0 rgba(255, 255, 255, .75), inset 0 4rpx 4rpx rgba(0, 0, 0, .25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyThinOwl11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2543,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.512Z",
+  "updated_at": "2025-07-31T07:55:37.512Z"
+}

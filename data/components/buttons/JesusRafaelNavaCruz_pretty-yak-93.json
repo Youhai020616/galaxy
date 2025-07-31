@@ -1,0 +1,113 @@
+{
+  "id": "JesusRafaelNavaCruz_pretty-yak-93",
+  "name": "pretty-yak-93",
+  "category": "buttons",
+  "author": "JesusRafaelNavaCruz",
+  "description": "pretty-yak-93 组件 (loading, animated, loading animation, animation)",
+  "tags": [
+    "loading",
+    "animated",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"content\">\n  <div class=\"text\">LOADING...</div>\n  <div class=\"text\">LOADING...</div>\n</div>",
+    "css": "/* From Uiverse.io by JesusRafaelNavaCruz - Source: Oluwakemi - https://codepen.io/techgirldiaries/pen/LYWPJPN - Tags: loading, animated, loading animation */\n.content {\n  position: relative;\n}\n\n.content .text {\n  color: #fff;\n  font-size: 3rem;\n  position: absolute;\n  transform: translate(-50%, -50%);\n}\n\n.content .text:nth-child(1) {\n  color: transparent;\n  -webkit-text-stroke: 2px #8338ec;\n}\n\n.content .text:nth-child(2) {\n  color: #c19bf5;\n  animation: animate 4s ease-in-out infinite;\n}\n\n@keyframes animate {\n  0%,\n\t100% {\n    clip-path: polygon(\n\t\t\t0% 45%,\n\t\t\t16% 44%,\n\t\t\t33% 50%,\n\t\t\t54% 60%,\n\t\t\t70% 61%,\n\t\t\t84% 59%,\n\t\t\t100% 52%,\n\t\t\t100% 100%,\n\t\t\t0% 100%\n\t\t);\n  }\n\n  50% {\n    clip-path: polygon(\n\t\t\t0% 60%,\n\t\t\t15% 65%,\n\t\t\t34% 66%,\n\t\t\t51% 62%,\n\t\t\t67% 50%,\n\t\t\t84% 45%,\n\t\t\t100% 46%,\n\t\t\t100% 100%,\n\t\t\t0% 100%\n\t\t);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JesusRafaelNavaCruz_pretty-yak-93.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"content\"></view>\n  <view class=\"text\">LOADING...</view>\n  <view class=\"text\">LOADING...</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPrettyYak93',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JesusRafaelNavaCruz - Source: Oluwakemi - https://codepen.io/techgirldiaries/pen/LYWPJPN - Tags: loading, animated, loading animation */\n.content {\n  position: relative;\n}\n\n.content .text {\n  color: #fff;\n  font-size: 3rem;\n  position: absolute;\n  transform: translate(-50%, -50%);\n}\n\n.content .text:nth-child(1) {\n  color: transparent;\n  -webkit-text-stroke: 4rpx #8338ec;\n}\n\n.content .text:nth-child(2) {\n  color: #c19bf5;\n  animation: animate 4s ease-in-out infinite;\n}\n\n@keyframes animate {\n  0%,\n\t100% {\n    \n  }\n\n  50% {\n    \n  }\n}\n",
+    "component_name": "GalaxyPrettyYak93"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 930,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.525Z",
+  "updated_at": "2025-07-31T07:55:33.525Z"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "satyamchaudharydev_strange-turkey-17",
+  "name": "strange-turkey-17",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "strange-turkey-17 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n</div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n/* From cssbuttons.io by @satyamchaudharydev */\n.loader {\n --loader: rgb(221, 65, 226);\n --loader-size: 3px;\n position: relative;\n width: 40px;\n height: 40px;\n overflow: hidden;\n transition: .5s;\n letter-spacing: 2px\n}\n\n.loader span {\n position: absolute;\n}\n\n.loader span:nth-child(1) {\n top: 0;\n left: -100%;\n width: 100%;\n height: var(--loader-size);\n background: linear-gradient(90deg, transparent, var(--loader));\n animation: loader-anim1 1s linear infinite;\n}\n\n@keyframes loader-anim1 {\n 0% {\n  left: -100%;\n }\n\n 50%,100% {\n  left: 100%;\n }\n}\n\n.loader  span:nth-child(2) {\n top: -100%;\n right: 0;\n width: var(--loader-size);\n height: 100%;\n background: linear-gradient(180deg, transparent, var(--loader));\n animation: loader-anim2 1s linear infinite;\n animation-delay: .25s\n}\n\n@keyframes loader-anim2 {\n 0% {\n  top: -100%;\n }\n\n 50%,100% {\n  top: 100%;\n }\n}\n\n.loader span:nth-child(3) {\n bottom: 0;\n right: -100%;\n width: 100%;\n height: var(--loader-size);\n background: linear-gradient(270deg, transparent, var(--loader));\n animation: loader-anim3 1s linear infinite;\n animation-delay: .5s\n}\n\n@keyframes loader-anim3 {\n 0% {\n  right: -100%;\n }\n\n 50%,100% {\n  right: 100%;\n }\n}\n\n.loader span:nth-child(4) {\n bottom: -100%;\n left: 0;\n width: var(--loader-size);\n height: 100%;\n background: linear-gradient(360deg, transparent, var(--loader));\n animation: loader-anim4 1s linear infinite;\n animation-delay: .75s\n}\n\n@keyframes loader-anim4 {\n 0% {\n  bottom: -100%;\n }\n\n 50%,100% {\n  bottom: 100%;\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_strange-turkey-17.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyStrangeTurkey17',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n/* From cssbuttons.io by @satyamchaudharydev */\n.loader {\n --loader: rgb(221, 65, 226);\n --loader-size: 6rpx;\n position: relative;\n width: 80rpx;\n height: 80rpx;\n overflow: hidden;\n transition: .5s;\n letter-spacing: 4rpx\n}\n\n.loader span {\n position: absolute;\n}\n\n.loader span:nth-child(1) {\n top: 0;\n left: -100%;\n width: 100%;\n height: var(--loader-size);\n background: linear-gradient(90deg, transparent, var(--loader));\n animation: loader-anim1 1s linear infinite;\n}\n\n@keyframes loader-anim1 {\n 0% {\n  left: -100%;\n }\n\n 50%,100% {\n  left: 100%;\n }\n}\n\n.loader  span:nth-child(2) {\n top: -100%;\n right: 0;\n width: var(--loader-size);\n height: 100%;\n background: linear-gradient(180deg, transparent, var(--loader));\n animation: loader-anim2 1s linear infinite;\n animation-delay: .25s\n}\n\n@keyframes loader-anim2 {\n 0% {\n  top: -100%;\n }\n\n 50%,100% {\n  top: 100%;\n }\n}\n\n.loader span:nth-child(3) {\n bottom: 0;\n right: -100%;\n width: 100%;\n height: var(--loader-size);\n background: linear-gradient(270deg, transparent, var(--loader));\n animation: loader-anim3 1s linear infinite;\n animation-delay: .5s\n}\n\n@keyframes loader-anim3 {\n 0% {\n  right: -100%;\n }\n\n 50%,100% {\n  right: 100%;\n }\n}\n\n.loader span:nth-child(4) {\n bottom: -100%;\n left: 0;\n width: var(--loader-size);\n height: 100%;\n background: linear-gradient(360deg, transparent, var(--loader));\n animation: loader-anim4 1s linear infinite;\n animation-delay: .75s\n}\n\n@keyframes loader-anim4 {\n 0% {\n  bottom: -100%;\n }\n\n 50%,100% {\n  bottom: 100%;\n }\n}\n",
+    "component_name": "GalaxyStrangeTurkey17"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1655,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.620Z",
+  "updated_at": "2025-07-31T07:55:42.620Z"
+}

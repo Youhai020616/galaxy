@@ -1,0 +1,116 @@
+{
+  "id": "AqFox_tasty-robin-91",
+  "name": "tasty-robin-91",
+  "category": "buttons",
+  "author": "AqFox",
+  "description": "tasty-robin-91 组件 (icon, blue, button, up, arrow, animation, interactive)",
+  "tags": [
+    "icon",
+    "blue",
+    "button",
+    "up",
+    "arrow",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <div class=\"arrow-up\"></div>\n</button>",
+    "css": "/* From Uiverse.io by AqFox - Tags: icon, blue, button, up, arrow */\nbutton {\n  width: 60px;\n  height: 60px;\n  bottom: 40px;\n  right: 40px;\n  background-color: #004dff;\n  color: #FFF;\n  border-radius: 50px;\n  text-align: center;\n  font-size: 30px;\n  box-shadow: 2px 2px 3px #999;\n  z-index: 100;\n  border: #004dff;\n  transition: 0.5s;\n}\n\nbutton:hover {\n  transform: scale(1.1);\n}\n\nbutton:active {\n  background-color: #020cd1;\n}\n\n.arrow-up {\n  width: 0;\n  height: 0;\n  border-left: 10px solid transparent;\n  border-right: 10px solid transparent;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 35%;\n  margin-bottom: 60%;\n  border-bottom: 15px solid white;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AqFox_tasty-robin-91.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <view class=\"arrow-up\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyTastyRobin91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AqFox - Tags: icon, blue, button, up, arrow */\nbutton {\n  width: 120rpx;\n  height: 120rpx;\n  bottom: 80rpx;\n  right: 80rpx;\n  background-color: #004dff;\n  color: #FFF;\n  border-radius: 100rpx;\n  text-align: center;\n  font-size: 60rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 6rpx #999;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 100;\n  border: #004dff;\n  transition: 0.5s;\n}\n\nbutton:hover {\n  transform: scale(1.1);\n}\n\nbutton:active {\n  background-color: #020cd1;\n}\n\n.arrow-up {\n  width: 0;\n  height: 0;\n  border-left: 20rpx solid transparent;\n  border-right: 20rpx solid transparent;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 35%;\n  margin-bottom: 60%;\n  border-bottom: 30rpx solid white;\n}\n",
+    "component_name": "GalaxyTastyRobin91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 720,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.651Z",
+  "updated_at": "2025-07-31T07:55:32.651Z"
+}

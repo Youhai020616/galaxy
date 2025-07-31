@@ -1,0 +1,114 @@
+{
+  "id": "andrew-demchenk0_shaggy-vampirebat-24",
+  "name": "shaggy-vampirebat-24",
+  "category": "buttons",
+  "author": "andrew-demchenk0",
+  "description": "shaggy-vampirebat-24 组件 (button, hover, add, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "add",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" viewBox=\"0 0 20 20\" height=\"20\" fill=\"none\" class=\"svg-icon\"><g stroke-width=\"1.5\" stroke-linecap=\"round\" stroke=\"#de8a2a\"><circle r=\"7.5\" cy=\"10\" cx=\"10\"></circle><path d=\"m9.99998 7.5v5\"></path><path d=\"m7.5 9.99998h5\"></path></g></svg>\n  <span class=\"lable\">Add</span>\n</button>",
+    "css": "/* From Uiverse.io by andrew-demchenk0 - Tags: button, hover, add */\n.button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 6px 12px;\n  gap: 4px;\n  height: 32px;\n  width: 81px;\n  border: none;\n  background: #1b1b1cd0;\n  border-radius: 20px;\n  cursor: pointer;\n}\n\n.lable {\n  line-height: 22px;\n  font-size: 17px;\n  color: #DE8A2A;\n  font-family: sans-serif;\n  letter-spacing: 1px;\n}\n\n.button:hover {\n  background: #1b1b1cea;\n}\n\n.button:hover .svg-icon {\n  animation: rotate 1.3s linear infinite;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  25% {\n    transform: rotate(10deg);\n  }\n\n  50% {\n    transform: rotate(0deg);\n  }\n\n  75% {\n    transform: rotate(-10deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/andrew-demchenk0_shaggy-vampirebat-24.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" viewBox=\"0 0 20 20\" height=\"20\" fill=\"none\" class=\"svg-icon\"><g stroke-width=\"1.5\" stroke-linecap=\"round\" stroke=\"#de8a2a\"><circle r=\"7.5\" cy=\"10\" cx=\"10\"></circle><path d=\"m9.99998 7.5v5\"></path><path d=\"m7.5 9.99998h5\"></path></g></view>\n  <text class=\"lable\">Add</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyShaggyVampirebat24',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by andrew-demchenk0 - Tags: button, hover, add */\n.button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 12rpx 24rpx;\n  gap: 8rpx;\n  height: 64rpx;\n  width: 162rpx;\n  border: none;\n  background: #1b1b1cd0;\n  border-radius: 40rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.lable {\n  line-height: 44rpx;\n  font-size: 34rpx;\n  color: #DE8A2A;\n  font-family: sans-serif;\n  letter-spacing: 2rpx;\n}\n\n.button:hover {\n  background: #1b1b1cea;\n}\n\n.button:hover .svg-icon {\n  animation: rotate 1.3s linear infinite;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  25% {\n    transform: rotate(10deg);\n  }\n\n  50% {\n    transform: rotate(0deg);\n  }\n\n  75% {\n    transform: rotate(-10deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}\n",
+    "component_name": "GalaxyShaggyVampirebat24"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1126,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.697Z",
+  "updated_at": "2025-07-31T07:55:35.697Z"
+}

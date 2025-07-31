@@ -1,0 +1,94 @@
+{
+  "id": "gharsh11032000_spotty-zebra-83",
+  "name": "spotty-zebra-83",
+  "category": "tooltips",
+  "author": "gharsh11032000",
+  "description": "spotty-zebra-83 组件 (tooltip, animation, hover, bounce, interactive)",
+  "tags": [
+    "tooltip",
+    "animation",
+    "hover",
+    "bounce",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">Uiverse.io</span>\n  <span class=\"text\">Tooltip 👆</span>\n  <span>Hello! 👋</span>\n</div>",
+    "css": "/* From Uiverse.io by gharsh11032000  - Tags: tooltip, animation, hover, bounce */\n/* This is an example, feel free to delete this code */\n.tooltip-container {\n  --background: #333333;\n  --color: #e8e8e8;\n  position: relative;\n  cursor: pointer;\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n  font-size: 18px;\n  font-weight: 600;\n  color: var(--color);\n  padding: 0.7em 1.8em;\n  border-radius: 8px;\n  text-transform: uppercase;\n  height: 60px;\n  width: 180px;\n  display: grid;\n  place-items: center;\n  border: 2px solid var(--color);\n}\n\n.text {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: grid;\n  place-items: center;\n  transform-origin: -100%;\n  transform: scale(1);\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.tooltip-container span:last-child {\n  position: absolute;\n  top: 0%;\n  left: 100%;\n  width: 100%;\n  height: 100%;\n  border-radius: 8px;\n  opacity: 1;\n  background-color: var(--background);\n  z-index: -1;\n  border: 2px solid var(--background);\n  transform: scale(0);\n  transform-origin: 0;\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n  display: grid;\n  place-items: center;\n}\n\n.tooltip {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.3em 0.6em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n  background: var(--background);\n  z-index: -1;\n  border-radius: 8px;\n  scale: 0;\n  transform-origin: 0 0;\n  text-transform: capitalize;\n  font-weight: 400;\n  font-size: 16px;\n  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 0.6em;\n  width: 0.6em;\n  bottom: -0.2em;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  background: var(--background);\n}\n\n.tooltip-container:hover .tooltip {\n  top: -100%;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n  scale: 1;\n  animation: shake 0.5s ease-in-out both;\n}\n\n.tooltip-container:hover {\n  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;\n  color: white;\n  border-color: transparent;\n}\n\n.tooltip-container:hover span:last-child {\n  transform: scale(1);\n  left: 0;\n}\n\n.tooltip-container:hover .text {\n  opacity: 0;\n  top: 0%;\n  left: 100%;\n  transform: scale(0);\n}\n\n@keyframes shake {\n  0% {\n    rotate: 0;\n  }\n\n  25% {\n    rotate: 7deg;\n  }\n\n  50% {\n    rotate: -7deg;\n  }\n\n  75% {\n    rotate: 1deg;\n  }\n\n  100% {\n    rotate: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/gharsh11032000_spotty-zebra-83.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\">Uiverse.io</text>\n  <text class=\"text\">Tooltip 👆</text>\n  <text>Hello! 👋</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxySpottyZebra83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gharsh11032000  - Tags: tooltip, animation, hover, bounce */\n/* This is an example, feel free to delete this code */\n.tooltip-container {\n  --background: #333333;\n  --color: #e8e8e8;\n  position: relative;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n  font-size: 36rpx;\n  font-weight: 600;\n  color: var(--color);\n  padding: 0.7em 1.8em;\n  border-radius: 16rpx;\n  text-transform: uppercase;\n  height: 120rpx;\n  width: 360rpx;\n  display: grid;\n  place-items: center;\n  border: 4rpx solid var(--color);\n}\n\n.text {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: grid;\n  place-items: center;\n  transform-origin: -100%;\n  transform: scale(1);\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n}\n\n.tooltip-container span:last-child {\n  position: absolute;\n  top: 0%;\n  left: 100%;\n  width: 100%;\n  height: 100%;\n  border-radius: 16rpx;\n  opacity: 1;\n  background-color: var(--background);\n  z-index: -1;\n  border: 4rpx solid var(--background);\n  transform: scale(0);\n  transform-origin: 0;\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n  display: grid;\n  place-items: center;\n}\n\n.tooltip {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.3em 0.6em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);\n  background: var(--background);\n  z-index: -1;\n  border-radius: 16rpx;\n  scale: 0;\n  transform-origin: 0 0;\n  text-transform: capitalize;\n  font-weight: 400;\n  font-size: 32rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.25) 0 16rpx 30rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 0.6em;\n  width: 0.6em;\n  bottom: -0.2em;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  background: var(--background);\n}\n\n.tooltip-container:hover .tooltip {\n  top: -100%;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n  scale: 1;\n  animation: shake 0.5s ease-in-out both;\n}\n\n.tooltip-container:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.25) 0 16rpx 30rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: white;\n  border-color: transparent;\n}\n\n.tooltip-container:hover span:last-child {\n  transform: scale(1);\n  left: 0;\n}\n\n.tooltip-container:hover .text {\n  opacity: 0;\n  top: 0%;\n  left: 100%;\n  transform: scale(0);\n}\n\n@keyframes shake {\n  0% {\n    rotate: 0;\n  }\n\n  25% {\n    rotate: 7deg;\n  }\n\n  50% {\n    rotate: -7deg;\n  }\n\n  75% {\n    rotate: 1deg;\n  }\n\n  100% {\n    rotate: 0;\n  }\n}\n\n",
+    "component_name": "GalaxySpottyZebra83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2584,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.684Z",
+  "updated_at": "2025-07-31T07:55:38.684Z"
+}

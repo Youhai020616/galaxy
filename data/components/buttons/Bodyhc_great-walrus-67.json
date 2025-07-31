@@ -1,0 +1,124 @@
+{
+  "id": "Bodyhc_great-walrus-67",
+  "name": "great-walrus-67",
+  "category": "buttons",
+  "author": "Bodyhc",
+  "description": "great-walrus-67 组件 (button, buttons, simple button, hover button, #button, 3d button, button hover effect, 2d button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "buttons",
+    "simple button",
+    "hover button",
+    "#button",
+    "3d button",
+    "button hover effect",
+    "2d button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\"><span>Button</span></button>",
+    "css": "/* From Uiverse.io by Bodyhc  - Tags: button, buttons, simple button, hover button, #button, 3d button, button hover effect , 2d button */\n.button,\n.button *,\n.button :after,\n.button :before,\n.button:after,\n.button:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n.button {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  cursor: pointer;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  font-weight: 900;\n  line-height: 1.5;\n  margin: 0;\n  mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n  text-transform: uppercase;\n}\n.button:disabled {\n  cursor: default;\n}\n.button:-moz-focusring {\n  outline: auto;\n}\n.button svg {\n  display: block;\n}\n.button [hidden] {\n  display: none;\n}\n.button {\n  border-radius: 99rem;\n  border-width: 2px;\n  overflow: hidden;\n  padding: 0.8rem 3rem;\n  position: relative;\n}\n.button span {\n  mix-blend-mode: difference;\n}\n.button:after,\n.button:before {\n  background: linear-gradient(\n    90deg,\n    #fff 25%,\n    transparent 0,\n    transparent 50%,\n    #fff 0,\n    #fff 75%,\n    transparent 0\n  );\n  content: \"\";\n  inset: 0;\n  position: absolute;\n  transform: translateY(var(--progress, 100%));\n  transition: transform 0.2s ease;\n}\n.button:after {\n  --progress: -100%;\n  background: linear-gradient(\n    90deg,\n    transparent 0,\n    transparent 25%,\n    #fff 0,\n    #fff 50%,\n    transparent 0,\n    transparent 75%,\n    #fff 0\n  );\n  z-index: -1;\n}\n.button:hover:after,\n.button:hover:before {\n  --progress: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Bodyhc_great-walrus-67.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button><text>Button</text></button>",
+    "script": "export default {\n  name: 'GalaxyGreatWalrus67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Bodyhc  - Tags: button, buttons, simple button, hover button, #button, 3d button, button hover effect , 2d button */\n.button,\n.button *,\n.button :after,\n.button :before,\n.button:after,\n.button:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n.button {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  font-weight: 900;\n  line-height: 1.5;\n  margin: 0;\n  mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n  text-transform: uppercase;\n}\n.button:disabled {\n  /* #ifdef H5 */\n  cursor: default;\n  /* #endif */\n}\n.button:-moz-focusring {\n  outline: auto;\n}\n.button svg {\n  display: block;\n}\n.button [hidden] {\n  display: none;\n}\n.button {\n  border-radius: 99rem;\n  border-width: 4rpx;\n  overflow: hidden;\n  padding: 0.8rem 3rem;\n  position: relative;\n}\n.button span {\n  \n}\n.button:after,\n.button:before {\n  background: linear-gradient(\n    90deg,\n    #fff 25%,\n    transparent 0,\n    transparent 50%,\n    #fff 0,\n    #fff 75%,\n    transparent 0\n  );\n  content: \"\";\n  inset: 0;\n  position: absolute;\n  transform: translateY(var(--progress, 100%));\n  transition: transform 0.2s ease;\n}\n.button:after {\n  --progress: -100%;\n  background: linear-gradient(\n    90deg,\n    transparent 0,\n    transparent 25%,\n    #fff 0,\n    #fff 50%,\n    transparent 0,\n    transparent 75%,\n    #fff 0\n  );\n  z-index: -1;\n}\n.button:hover:after,\n.button:hover:before {\n  --progress: 0;\n}\n\n",
+    "component_name": "GalaxyGreatWalrus67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性",
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性",
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1805,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.775Z",
+  "updated_at": "2025-07-31T07:55:32.775Z"
+}

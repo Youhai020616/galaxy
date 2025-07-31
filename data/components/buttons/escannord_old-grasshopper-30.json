@@ -1,0 +1,116 @@
+{
+  "id": "escannord_old-grasshopper-30",
+  "name": "old-grasshopper-30",
+  "category": "buttons",
+  "author": "escannord",
+  "description": "old-grasshopper-30 组件 (simple, button, btn, animation, gradient)",
+  "tags": [
+    "simple",
+    "button",
+    "btn",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">join now</button>",
+    "css": "/* From Uiverse.io by escannord  - Tags: simple, button, btn */\n.button {\n  cursor: pointer;\n  display: inline-block;\n  width: 14rem;\n  height: 4rem;\n  border: solid 2px;\n  background: linear-gradient(to right, #ff00ffb0, #ff9900a1, #ff00ff9f),\n    radial-gradient(rgb(255, 255, 255), rgb(255, 0, 0));\n  border-radius: 20px;\n  font-weight: 800;\n  position: relative;\n  border-image: linear-gradient(to right, #5e005e, #804d00, #eb1beb);\n  border-image-slice: 50;\n}\n\n.button::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 90%;\n  height: 70%;\n  border: 1px solid rgba(255, 255, 255, 0.384);\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border-radius: 8px;\n  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.575),\n    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.575);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/escannord_old-grasshopper-30.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>join now</button>",
+    "script": "export default {\n  name: 'GalaxyOldGrasshopper30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by escannord  - Tags: simple, button, btn */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: inline-block;\n  width: 14rem;\n  height: 4rem;\n  border: solid 4rpx;\n  background: linear-gradient(to right, #ff00ffb0, #ff9900a1, #ff00ff9f),\n    radial-gradient(rgb(255, 255, 255), rgb(255, 0, 0));\n  border-radius: 40rpx;\n  font-weight: 800;\n  position: relative;\n  border-image: linear-gradient(to right, #5e005e, #804d00, #eb1beb);\n  border-image-slice: 50;\n}\n\n.button::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 90%;\n  height: 70%;\n  border: 2rpx solid rgba(255, 255, 255, 0.384);\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border-radius: 16rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 2rpx rgba(255, 255, 255, 0.575),\n    inset 0rpx 0rpx 0rpx 0rpx rgba(255, 255, 255, 0.575);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n",
+    "component_name": "GalaxyOldGrasshopper30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 869,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.636Z",
+  "updated_at": "2025-07-31T07:55:36.636Z"
+}

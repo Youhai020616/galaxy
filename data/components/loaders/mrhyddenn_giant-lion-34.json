@@ -1,0 +1,91 @@
+{
+  "id": "mrhyddenn_giant-lion-34",
+  "name": "giant-lion-34",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "giant-lion-34 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <span></span>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  width: 150px;\n  height: 150px;\n  background: transparent;\n  border-radius: 50%;\n  box-shadow: 25px 25px 75px rgba(0,0,0,0.55);\n  border: 1px solid #333;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  inset: 20px;\n  background: transparent;\n  border: 1px dashed#444;\n  border-radius: 50%;\n  box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),\n  inset 5px 5px 35px rgba(0,0,0,0.25);\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  border: 1px dashed#444;\n  box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),\n  inset 5px 5px 35px rgba(0,0,0,0.25);\n}\n\n.loader span {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 50%;\n  height: 100%;\n  background: transparent;\n  transform-origin: top left;\n  animation: radar81 2s linear infinite;\n  border-top: 1px dashed #fff;\n}\n\n.loader span::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: seagreen;\n  transform-origin: top left;\n  transform: rotate(-55deg);\n  filter: blur(30px) drop-shadow(20px 20px 20px seagreen);\n}\n\n@keyframes radar81 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_giant-lion-34.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGiantLion34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  width: 300rpx;\n  height: 300rpx;\n  background: transparent;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 50rpx 50rpx 150rpx rgba(0,0,0,0.55);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: 2rpx solid #333;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  inset: 40rpx;\n  background: transparent;\n  border: 2rpx dashed#444;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -10rpx -10rpx 50rpx rgba(0,0,0,0.25),\n  inset 10rpx 10rpx 70rpx rgba(0,0,0,0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n  border: 2rpx dashed#444;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -10rpx -10rpx 50rpx rgba(0,0,0,0.25),\n  inset 10rpx 10rpx 70rpx rgba(0,0,0,0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader span {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 50%;\n  height: 100%;\n  background: transparent;\n  transform-origin: top left;\n  animation: radar81 2s linear infinite;\n  border-top: 2rpx dashed #fff;\n}\n\n.loader span::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: seagreen;\n  transform-origin: top left;\n  transform: rotate(-55deg);\n  \n}\n\n@keyframes radar81 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyGiantLion34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1432,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.422Z",
+  "updated_at": "2025-07-31T07:55:42.422Z"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "adamgiebl_shaggy-grasshopper-91",
+  "name": "shaggy-grasshopper-91",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "shaggy-grasshopper-91 组件 (icon, button, gradient, interactive)",
+  "tags": [
+    "icon",
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"cssbuttons-io-button\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\"><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z\"></path></svg>\n  <span>Add</span>\n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: icon, button */\n.cssbuttons-io-button {\n  display: flex;\n  align-items: center;\n  font-family: inherit;\n  font-weight: 500;\n  font-size: 16px;\n  padding: 0.7em 1.4em 0.7em 1.1em;\n  color: white;\n  background: #ad5389;\n  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);\n  border: none;\n  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;\n  letter-spacing: 0.05em;\n  border-radius: 20em;\n}\n\n.cssbuttons-io-button svg {\n  margin-right: 6px;\n}\n\n.cssbuttons-io-button:hover {\n  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;\n}\n\n.cssbuttons-io-button:active {\n  box-shadow: 0 0.3em 1em -0.5em #14a73e98;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_shaggy-grasshopper-91.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cssbuttons-io-button\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\"><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z\"></path></view>\n  <text>Add</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyShaggyGrasshopper91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: icon, button */\n.cssbuttons-io-button {\n  display: flex;\n  align-items: center;\n  font-family: inherit;\n  font-weight: 500;\n  font-size: 32rpx;\n  padding: 0.7em 1.4em 0.7em 1.1em;\n  color: white;\n  background: #ad5389;\n  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);\n  border: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  letter-spacing: 0.05em;\n  border-radius: 20em;\n}\n\n.cssbuttons-io-button svg {\n  margin-right: 12rpx;\n}\n\n.cssbuttons-io-button:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.cssbuttons-io-button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.3em 1em -0.5em #14a73e98;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyShaggyGrasshopper91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 940,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.487Z",
+  "updated_at": "2025-07-31T07:55:35.487Z"
+}

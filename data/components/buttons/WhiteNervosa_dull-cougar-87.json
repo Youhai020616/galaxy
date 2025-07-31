@@ -1,0 +1,114 @@
+{
+  "id": "WhiteNervosa_dull-cougar-87",
+  "name": "dull-cougar-87",
+  "category": "buttons",
+  "author": "WhiteNervosa",
+  "description": "dull-cougar-87 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <span class=\"inner\">Button</span>\n</button>",
+    "css": "/* From Uiverse.io by WhiteNervosa - Tags: button */\nbutton {\n  background-color: #2d7f2f;\n  font-family: \"Verdana\", sans-serif;\n  padding: 5px 10px;\n  font-size: 18px;\n  color: #ececec;\n  cursor: pointer;\n  width: fit-content;\n  user-select: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: 600;\n  border-radius: 5px;\n  touch-action: none;\n  position: relative;\n  border: none;\n  transition-property: box-shadow;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);\n  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0), inset 0px 0px 0px 0px rgba(230, 230, 230, 0);\n}\n\nbutton:focus,\nbutton:hover {\n  box-shadow: inset 0px -4px 0px 0px rgb(0 0 0 / 35%), inset 0px 2px 0px 0px rgb(230 230 230 / 7%);\n}\n\nbutton:active {\n  box-shadow: inset 0px 2px 0px 1px rgb(0 0 0 / 29%), inset 0px -1px 0px 0px rgb(230 230 230 / 7%);\n}\n\nbutton .inner {\n  user-select: none;\n  pointer-events: none;\n  transform: translateY(0px) scale(1) translate3d(0, 0, 0);\n  transition-property: transform;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);\n}\n\nbutton:active .inner {\n  transform: translateY(1px) scale(0.98) translate3d(0, 0, 0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/WhiteNervosa_dull-cougar-87.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <text class=\"inner\">Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyDullCougar87',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by WhiteNervosa - Tags: button */\nbutton {\n  background-color: #2d7f2f;\n  font-family: \"Verdana\", sans-serif;\n  padding: 10rpx 20rpx;\n  font-size: 36rpx;\n  color: #ececec;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  width: fit-content;\n  user-select: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: 600;\n  border-radius: 10rpx;\n  touch-action: none;\n  position: relative;\n  border: none;\n  transition-property: box-shadow;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 0rpx 0rpx rgba(0, 0, 0, 0), inset 0rpx 0rpx 0rpx 0rpx rgba(230, 230, 230, 0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:focus,\nbutton:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx -8rpx 0rpx 0rpx rgb(0 0 0 / 35%), inset 0rpx 4rpx 0rpx 0rpx rgb(230 230 230 / 7%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 4rpx 0rpx 2rpx rgb(0 0 0 / 29%), inset 0rpx -2rpx 0rpx 0rpx rgb(230 230 230 / 7%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton .inner {\n  user-select: none;\n  pointer-events: none;\n  transform: translateY(0rpx) scale(1) translate3d(0, 0, 0);\n  transition-property: transform;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);\n}\n\nbutton:active .inner {\n  transform: translateY(2rpx) scale(0.98) translate3d(0, 0, 0);\n}\n\n",
+    "component_name": "GalaxyDullCougar87"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1301,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.143Z",
+  "updated_at": "2025-07-31T07:55:35.143Z"
+}

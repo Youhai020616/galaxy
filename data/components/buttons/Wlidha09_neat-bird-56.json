@@ -1,0 +1,114 @@
+{
+  "id": "Wlidha09_neat-bird-56",
+  "name": "neat-bird-56",
+  "category": "buttons",
+  "author": "Wlidha09",
+  "description": "neat-bird-56 组件 (button, hover, modern, animated, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "modern",
+    "animated",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"center\">\n  <button class=\"btn\">\n    <svg viewBox=\"0 0 150 50\" height=\"50px\" width=\"150px\" class=\"svg\">\n      <polyline class=\"bg-line\" points=\"149,1 149,49 1,49 1,1 149,1\"></polyline>\n      <polyline class=\"hl-line\" points=\"149,1 149,49 1,49 1,1 149,1\"></polyline>\n    </svg>\n    <span>HOVER ME</span>\n  </button>\n</div>",
+    "css": "/* From Uiverse.io by Wlidha09  - Tags: button, hover, modern, animated */\n.center {\n  width: 150px;\n  height: 50px;\n  position: relative;\n}\n\n.btn {\n  width: 100%;\n  height: 100%;\n  cursor: pointer;\n  background: transparent;\n  border: 1px solid #91c9ff;\n  outline: none;\n  transition: 1s ease-in-out;\n}\n\n.svg {\n  position: absolute;\n  left: 0;\n  top: 0;\n  fill: none;\n  stroke: #fff;\n  stroke-dasharray: 150 480;\n  stroke-dashoffset: 150;\n  transition: 1s ease-in-out;\n}\n\n.btn:hover {\n  transition: 1s ease-in-out;\n  background: #4f95da;\n}\n\n.btn:hover .svg {\n  stroke-dashoffset: -480;\n}\n\n.btn span {\n  color: white;\n  font-size: 17px;\n  font-weight: 100;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Wlidha09_neat-bird-56.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"center\"></view>\n  <button class=\"btn\"></button>\n    <view viewBox=\"0 0 150 50\" height=\"50px\" width=\"150px\" class=\"svg\"></view>\n      <polyline class=\"bg-line\" points=\"149,1 149,49 1,49 1,1 149,1\"></polyline>\n      <polyline class=\"hl-line\" points=\"149,1 149,49 1,49 1,1 149,1\"></polyline>\n    </svg>\n    <text>HOVER ME</text>\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNeatBird56',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Wlidha09  - Tags: button, hover, modern, animated */\n.center {\n  width: 300rpx;\n  height: 100rpx;\n  position: relative;\n}\n\n.btn {\n  width: 100%;\n  height: 100%;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: transparent;\n  border: 2rpx solid #91c9ff;\n  outline: none;\n  transition: 1s ease-in-out;\n}\n\n.svg {\n  position: absolute;\n  left: 0;\n  top: 0;\n  fill: none;\n  stroke: #fff;\n  stroke-dasharray: 150 480;\n  stroke-dashoffset: 150;\n  transition: 1s ease-in-out;\n}\n\n.btn:hover {\n  transition: 1s ease-in-out;\n  background: #4f95da;\n}\n\n.btn:hover .svg {\n  stroke-dashoffset: -480;\n}\n\n.btn span {\n  color: white;\n  font-size: 34rpx;\n  font-weight: 100;\n}\n\n",
+    "component_name": "GalaxyNeatBird56"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1000,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.161Z",
+  "updated_at": "2025-07-31T07:55:35.161Z"
+}

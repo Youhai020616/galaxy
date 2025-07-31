@@ -1,0 +1,115 @@
+{
+  "id": "mrhyddenn_tricky-baboon-12",
+  "name": "tricky-baboon-12",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "tricky-baboon-12 组件 (button, download, animation, interactive)",
+  "tags": [
+    "button",
+    "download",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n    <span class=\"button_lg\">\n        <span class=\"button_sl\"></span>\n        <span class=\"button_text\">Download Now</span>\n    </span>\n</button>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: button, download */\n.button {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  appearance: none;\n  border: none;\n  background: none;\n  color: #0f1923;\n  cursor: pointer;\n  position: relative;\n  padding: 8px;\n  margin-bottom: 20px;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 14px;\n  transition: all .15s ease;\n}\n\n.button::before,\n.button::after {\n  content: '';\n  display: block;\n  position: absolute;\n  right: 0;\n  left: 0;\n  height: calc(50% - 5px);\n  border: 1px solid #7D8082;\n  transition: all .15s ease;\n}\n\n.button::before {\n  top: 0;\n  border-bottom-width: 0;\n}\n\n.button::after {\n  bottom: 0;\n  border-top-width: 0;\n}\n\n.button:active,\n.button:focus {\n  outline: none;\n}\n\n.button:active::before,\n.button:active::after {\n  right: 3px;\n  left: 3px;\n}\n\n.button:active::before {\n  top: 3px;\n}\n\n.button:active::after {\n  bottom: 3px;\n}\n\n.button_lg {\n  position: relative;\n  display: block;\n  padding: 10px 20px;\n  color: #fff;\n  background-color: #0f1923;\n  overflow: hidden;\n  box-shadow: inset 0px 0px 0px 1px transparent;\n}\n\n.button_lg::before {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 2px;\n  height: 2px;\n  background-color: #0f1923;\n}\n\n.button_lg::after {\n  content: '';\n  display: block;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  width: 4px;\n  height: 4px;\n  background-color: #0f1923;\n  transition: all .2s ease;\n}\n\n.button_sl {\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: -1px;\n  left: -8px;\n  width: 0;\n  background-color: #ff4655;\n  transform: skew(-15deg);\n  transition: all .2s ease;\n}\n\n.button_text {\n  position: relative;\n}\n\n.button:hover {\n  color: #0f1923;\n}\n\n.button:hover .button_sl {\n  width: calc(100% + 15px);\n}\n\n.button:hover .button_lg::after {\n  background-color: #fff;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_tricky-baboon-12.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n    <text class=\"button_lg\"></text>\n        <text class=\"button_sl\"></text>\n        <text class=\"button_text\">Download Now</text>\n    </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyTrickyBaboon12',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: button, download */\n.button {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  appearance: none;\n  border: none;\n  background: none;\n  color: #0f1923;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  padding: 16rpx;\n  margin-bottom: 40rpx;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 28rpx;\n  transition: all .15s ease;\n}\n\n.button::before,\n.button::after {\n  content: '';\n  display: block;\n  position: absolute;\n  right: 0;\n  left: 0;\n  height: calc(50% - 10rpx);\n  border: 2rpx solid #7D8082;\n  transition: all .15s ease;\n}\n\n.button::before {\n  top: 0;\n  border-bottom-width: 0;\n}\n\n.button::after {\n  bottom: 0;\n  border-top-width: 0;\n}\n\n.button:active,\n.button:focus {\n  outline: none;\n}\n\n.button:active::before,\n.button:active::after {\n  right: 6rpx;\n  left: 6rpx;\n}\n\n.button:active::before {\n  top: 6rpx;\n}\n\n.button:active::after {\n  bottom: 6rpx;\n}\n\n.button_lg {\n  position: relative;\n  display: block;\n  padding: 20rpx 40rpx;\n  color: #fff;\n  background-color: #0f1923;\n  overflow: hidden;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 0rpx 2rpx transparent;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button_lg::before {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 4rpx;\n  height: 4rpx;\n  background-color: #0f1923;\n}\n\n.button_lg::after {\n  content: '';\n  display: block;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  width: 8rpx;\n  height: 8rpx;\n  background-color: #0f1923;\n  transition: all .2s ease;\n}\n\n.button_sl {\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: -2rpx;\n  left: -16rpx;\n  width: 0;\n  background-color: #ff4655;\n  transform: skew(-15deg);\n  transition: all .2s ease;\n}\n\n.button_text {\n  position: relative;\n}\n\n.button:hover {\n  color: #0f1923;\n}\n\n.button:hover .button_sl {\n  width: calc(100% + 30rpx);\n}\n\n.button:hover .button_lg::after {\n  background-color: #fff;\n}\n\n",
+    "component_name": "GalaxyTrickyBaboon12"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2002,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.383Z",
+  "updated_at": "2025-07-31T07:55:37.383Z"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "ArturCodeCraft_horrible-mule-54",
+  "name": "horrible-mule-54",
+  "category": "buttons",
+  "author": "ArturCodeCraft",
+  "description": "horrible-mule-54 组件 (button, links, btn, interactive)",
+  "tags": [
+    "button",
+    "links",
+    "btn",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a href=\"#\" class=\"menu__link\">Hover me!</a>",
+    "css": "/* From Uiverse.io by ArturCodeCraft - Tags: button, links, btn */\n/* <reset-style> ============================ */\na {\n  text-decoration: none;\n}\n/* <main-style> ============================ */\n.menu__link {\n  color: #fff;\n  line-height: 2;\n  position: relative;\n}\n\n.menu__link::before {\n  content: '';\n  width: 0;\n  height: 2px;\n  border-radius: 2px;\n  background-color: #fff;\n  position: absolute;\n  bottom: -.25rem;\n  left: 50%;\n  transition: width .4s, left .4s;\n}\n\n.menu__link:hover::before {\n  width: 100%;\n  left: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ArturCodeCraft_horrible-mule-54.html"
+  },
+  "uniapp": {
+    "template": "<navigator href=\"#\" class=\"menu__link\">Hover me!</navigator>",
+    "script": "export default {\n  name: 'GalaxyHorribleMule54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ArturCodeCraft - Tags: button, links, btn */\n/* <reset-style> ============================ */\na {\n  text-decoration: none;\n}\n/* <main-style> ============================ */\n.menu__link {\n  color: #fff;\n  line-height: 2;\n  position: relative;\n}\n\n.menu__link::before {\n  content: '';\n  width: 0;\n  height: 4rpx;\n  border-radius: 4rpx;\n  background-color: #fff;\n  position: absolute;\n  bottom: -.25rem;\n  left: 50%;\n  transition: width .4s, left .4s;\n}\n\n.menu__link:hover::before {\n  width: 100%;\n  left: 0;\n}\n",
+    "component_name": "GalaxyHorribleMule54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 574,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.699Z",
+  "updated_at": "2025-07-31T07:55:32.699Z"
+}

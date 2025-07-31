@@ -1,0 +1,90 @@
+{
+  "id": "Shoh2008_fuzzy-tiger-54",
+  "name": "fuzzy-tiger-54",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "fuzzy-tiger-54 组件 (loader, pong, animation)",
+  "tags": [
+    "loader",
+    "pong",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader, pong */\n.loader {\n  position: relative;\n  height: 40px;\n  width: 6px;\n  color: #FFF;\n  animation: paddles 0.75s ease-out infinite;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  margin: 0 auto;\n  left: 0;\n  right: 0;\n  top: 15px;\n  width: 12px;\n  height: 12px;\n  background-color: greenyellow;\n  border-radius: 50%;\n  animation: ballbounce 0.6s ease-out infinite;\n}\n\n@keyframes paddles {\n  0% {\n    box-shadow: -25px -10px, 25px 10px\n  }\n\n  50% {\n    box-shadow: -25px 8px, 25px -10px\n  }\n\n  100% {\n    box-shadow: -25px -10px, 25px 10px\n  }\n}\n\n@keyframes ballbounce {\n  0% {\n    transform: translateX(-20px) scale(1, 1.2)\n  }\n\n  25% {\n    transform: scale(1.2, 1)\n  }\n\n  50% {\n    transform: translateX(15px) scale(1, 1.2)\n  }\n\n  75% {\n    transform: scale(1.2, 1)\n  }\n\n  100% {\n    transform: translateX(-20px)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_fuzzy-tiger-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyFuzzyTiger54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader, pong */\n.loader {\n  position: relative;\n  height: 80rpx;\n  width: 12rpx;\n  color: #FFF;\n  animation: paddles 0.75s ease-out infinite;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  margin: 0 auto;\n  left: 0;\n  right: 0;\n  top: 30rpx;\n  width: 24rpx;\n  height: 24rpx;\n  background-color: greenyellow;\n  border-radius: 50%;\n  animation: ballbounce 0.6s ease-out infinite;\n}\n\n@keyframes paddles {\n  0% {\n    box-shadow: -50rpx -20rpx, 50rpx 20rpx\n  }\n\n  50% {\n    box-shadow: -50rpx 16rpx, 50rpx -20rpx\n  }\n\n  100% {\n    box-shadow: -50rpx -20rpx, 50rpx 20rpx\n  }\n}\n\n@keyframes ballbounce {\n  0% {\n    transform: translateX(-40rpx) scale(1, 1.2)\n  }\n\n  25% {\n    transform: scale(1.2, 1)\n  }\n\n  50% {\n    transform: translateX(30rpx) scale(1, 1.2)\n  }\n\n  75% {\n    transform: scale(1.2, 1)\n  }\n\n  100% {\n    transform: translateX(-40rpx)\n  }\n}\n      \n",
+    "component_name": "GalaxyFuzzyTiger54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 914,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.350Z",
+  "updated_at": "2025-07-31T07:55:40.350Z"
+}

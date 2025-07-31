@@ -1,0 +1,116 @@
+{
+  "id": "dylanharriscameron_good-dingo-46",
+  "name": "good-dingo-46",
+  "category": "buttons",
+  "author": "dylanharriscameron",
+  "description": "good-dingo-46 组件 (button, delete, keyboard, animation, gradient)",
+  "tags": [
+    "button",
+    "delete",
+    "keyboard",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"delete-button\">\n  ␡\n</button>",
+    "css": "/* From Uiverse.io by dylanharriscameron - Tags: button, delete, keyboard */\n.delete-button {\n  background-color: #000;\n  color: #fff;\n  font-size: 44px;\n  border: 0.5px solid rgba(0, 0, 0, 0.1);\n  padding-bottom: 8px;\n  width: 60px;\n  height: 65px;\n  border-radius: 15px 15px 12px 12px;\n  cursor: pointer;\n  position: relative;\n  will-change: transform;\n  transition: all .1s ease-in-out 0s;\n  user-select: none;\n  /* Add gradient shading to each side */\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),\n    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));\n  background-position: bottom right, bottom right;\n  background-size: 100% 100%, 100% 100%;\n  background-repeat: no-repeat;\n  box-shadow: inset -4px -10px 0px rgba(255, 255, 255, 0.4),\n    inset -4px -8px 0px rgba(0, 0, 0, 0.3),\n    0px 2px 1px rgba(0, 0, 0, 0.3),\n    0px 2px 1px rgba(255, 255, 255, 0.1);\n  transform: perspective(70px) rotateX(5deg) rotateY(0deg);\n}\n\n.delete-button::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));\n  z-index: -1;\n  border-radius: 15px;\n  box-shadow: inset 4px 0px 0px rgba(255, 255, 255, 0.1),\n    inset 4px -8px 0px rgba(0, 0, 0, 0.3);\n  transition: all .1s ease-in-out 0s;\n}\n\n.delete-button::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),\n    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));\n  background-position: bottom right, bottom right;\n  background-size: 100% 100%, 100% 100%;\n  background-repeat: no-repeat;\n  z-index: -1;\n  border-radius: 15px;\n  transition: all .1s ease-in-out 0s;\n}\n\n.delete-button:active {\n  will-change: transform;\n  transform: perspective(80px) rotateX(5deg) rotateY(1deg) translateY(3px) scale(0.96);\n  height: 64px;\n  border: 0.25px solid rgba(0, 0, 0, 0.2);\n  box-shadow: inset -4px -8px 0px rgba(255, 255, 255, 0.2),\n    inset -4px -6px 0px rgba(0, 0, 0, 0.8),\n    0px 1px 0px rgba(0, 0, 0, 0.9),\n    0px 1px 0px rgba(255, 255, 255, 0.2);\n  transition: all .1s ease-in-out 0s;\n}\n\n.delete-button::after:active {\n  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));\n}\n\n.delete-button:active::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 5%;\n  left: 20%;\n  width: 50%;\n  height: 80%;\n  background-color: rgba(255, 255, 255, 0.1);\n  animation: overlay 0.1s ease-in-out 0s;\n  pointer-events: none;\n}\n\n@keyframes overlay {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n.delete-button:focus {\n  outline: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/dylanharriscameron_good-dingo-46.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"delete-button\"></button>\n  ␡\n</button>",
+    "script": "export default {\n  name: 'GalaxyGoodDingo46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by dylanharriscameron - Tags: button, delete, keyboard */\n.delete-button {\n  background-color: #000;\n  color: #fff;\n  font-size: 88rpx;\n  border: 1rpx solid rgba(0, 0, 0, 0.1);\n  padding-bottom: 16rpx;\n  width: 120rpx;\n  height: 130rpx;\n  border-radius: 30rpx 30rpx 24rpx 24rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  will-change: transform;\n  transition: all .1s ease-in-out 0s;\n  user-select: none;\n  /* Add gradient shading to each side */\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),\n    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));\n  background-position: bottom right, bottom right;\n  background-size: 100% 100%, 100% 100%;\n  background-repeat: no-repeat;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -8rpx -20rpx 0rpx rgba(255, 255, 255, 0.4),\n    inset -8rpx -16rpx 0rpx rgba(0, 0, 0, 0.3),\n    0rpx 4rpx 2rpx rgba(0, 0, 0, 0.3),\n    0rpx 4rpx 2rpx rgba(255, 255, 255, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: perspective(140rpx) rotateX(5deg) rotateY(0deg);\n}\n\n.delete-button::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));\n  z-index: -1;\n  border-radius: 30rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 8rpx 0rpx 0rpx rgba(255, 255, 255, 0.1),\n    inset 8rpx -16rpx 0rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all .1s ease-in-out 0s;\n}\n\n.delete-button::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),\n    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));\n  background-position: bottom right, bottom right;\n  background-size: 100% 100%, 100% 100%;\n  background-repeat: no-repeat;\n  z-index: -1;\n  border-radius: 30rpx;\n  transition: all .1s ease-in-out 0s;\n}\n\n.delete-button:active {\n  will-change: transform;\n  transform: perspective(160rpx) rotateX(5deg) rotateY(1deg) translateY(6rpx) scale(0.96);\n  height: 128rpx;\n  border: 0.5rpx solid rgba(0, 0, 0, 0.2);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -8rpx -16rpx 0rpx rgba(255, 255, 255, 0.2),\n    inset -8rpx -12rpx 0rpx rgba(0, 0, 0, 0.8),\n    0rpx 2rpx 0rpx rgba(0, 0, 0, 0.9),\n    0rpx 2rpx 0rpx rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all .1s ease-in-out 0s;\n}\n\n.delete-button::after:active {\n  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));\n}\n\n.delete-button:active::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 5%;\n  left: 20%;\n  width: 50%;\n  height: 80%;\n  background-color: rgba(255, 255, 255, 0.1);\n  animation: overlay 0.1s ease-in-out 0s;\n  pointer-events: none;\n}\n\n@keyframes overlay {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n.delete-button:focus {\n  outline: none;\n}\n",
+    "component_name": "GalaxyGoodDingo46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2800,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.421Z",
+  "updated_at": "2025-07-31T07:55:36.421Z"
+}

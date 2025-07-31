@@ -1,0 +1,118 @@
+{
+  "id": "znvscripts_stale-tiger-99",
+  "name": "stale-tiger-99",
+  "category": "buttons",
+  "author": "znvscripts",
+  "description": "stale-tiger-99 组件 (simple, button, click effect, animation, interactive)",
+  "tags": [
+    "simple",
+    "button",
+    "click effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>Button</button>",
+    "css": "/* From Uiverse.io by znvscripts  - Tags: simple, button, click effect */\nbutton {\n  position: relative;\n  background: transparent;\n  cursor: pointer;\n  outline-offset: 4px;\n  transition: filter 250ms;\n  user-select: none;\n  touch-action: manipulation;\n  font-size: 1.1rem;\n  color: white;\n  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);\n  background: rgb(255, 0, 0);\n  border-radius: 12px;\n  padding: 12px 27px;\n  border: 3px solid black;\n}\n\nbutton:hover {\n  filter: brightness(110%);\n}\n\nbutton:active {\n  transform: translateY(2px);\n  transition: transform 34ms;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/znvscripts_stale-tiger-99.html"
+  },
+  "uniapp": {
+    "template": "<button></button>Button</button>",
+    "script": "export default {\n  name: 'GalaxyStaleTiger99',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by znvscripts  - Tags: simple, button, click effect */\nbutton {\n  position: relative;\n  background: transparent;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  outline-offset: 8rpx;\n  transition: filter 250ms;\n  user-select: none;\n  touch-action: manipulation;\n  font-size: 1.1rem;\n  color: white;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 20rpx 20rpx 8rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: rgb(255, 0, 0);\n  border-radius: 24rpx;\n  padding: 24rpx 54rpx;\n  border: 6rpx solid black;\n}\n\nbutton:hover {\n  \n}\n\nbutton:active {\n  transform: translateY(4rpx);\n  transition: transform 34ms;\n}\n\n",
+    "component_name": "GalaxyStaleTiger99"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 599,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.457Z",
+  "updated_at": "2025-07-31T07:55:38.457Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "vikramsinghnegi_swift-penguin-59",
+  "name": "swift-penguin-59",
+  "category": "loaders",
+  "author": "vikramsinghnegi",
+  "description": "swift-penguin-59 组件 (loading, loader, html, css, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "html",
+    "css",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"center-body\">\n  <div class=\"loader-spanne-20\">\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, html, css */\n.loader-spanne-20 {\n  position: relative;\n  width: 100px;\n  height: 30px;\n  padding: 0;\n}\n.loader-spanne-20 > span {\n  position: absolute;\n  right: 0;\n  width: 3px;\n  height: 30px;\n  background-color: rgb(116, 204, 197);\n  display: block;\n  border-radius: 3px;\n  transform-origin: 50% 100%;\n  animation: move 2.8s linear infinite;\n}\n.loader-spanne-20 > span:nth-child(1) {\n  animation-delay: -0.4s;\n}\n.loader-spanne-20 > span:nth-child(2) {\n  animation-delay: -0.8s;\n}\n.loader-spanne-20 > span:nth-child(3) {\n  animation-delay: -1.2s;\n}\n.loader-spanne-20 > span:nth-child(4) {\n  animation-delay: -1.6s;\n}\n.loader-spanne-20 > span:nth-child(5) {\n  animation-delay: -2s;\n}\n.loader-spanne-20 > span:nth-child(6) {\n  animation-delay: -2.4s;\n}\n.loader-spanne-20 > span:nth-child(7) {\n  animation-delay: -2.8s;\n}\n@keyframes move {\n  0% {\n    opacity: 0;\n    transform: translateX(0px) rotate(0deg);\n  }\n  20% {\n    opacity: 1;\n  }\n  40% {\n    transform: translateX(-40px) rotate(0deg);\n  }\n  50% {\n    opacity: 1;\n    transform: translateX(-50px) rotate(22deg);\n  }\n  85% {\n    opacity: 1;\n    transform: translateX(-85px) rotate(60deg);\n  }\n  100% {\n    opacity: 0;\n    transform: translateX(-100px) rotate(65deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vikramsinghnegi_swift-penguin-59.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"center-body\"></view>\n  <view class=\"loader-spanne-20\"></view>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxySwiftPenguin59',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, html, css */\n.loader-spanne-20 {\n  position: relative;\n  width: 200rpx;\n  height: 60rpx;\n  padding: 0;\n}\n.loader-spanne-20 > span {\n  position: absolute;\n  right: 0;\n  width: 6rpx;\n  height: 60rpx;\n  background-color: rgb(116, 204, 197);\n  display: block;\n  border-radius: 6rpx;\n  transform-origin: 50% 100%;\n  animation: move 2.8s linear infinite;\n}\n.loader-spanne-20 > span:nth-child(1) {\n  animation-delay: -0.4s;\n}\n.loader-spanne-20 > span:nth-child(2) {\n  animation-delay: -0.8s;\n}\n.loader-spanne-20 > span:nth-child(3) {\n  animation-delay: -1.2s;\n}\n.loader-spanne-20 > span:nth-child(4) {\n  animation-delay: -1.6s;\n}\n.loader-spanne-20 > span:nth-child(5) {\n  animation-delay: -2s;\n}\n.loader-spanne-20 > span:nth-child(6) {\n  animation-delay: -2.4s;\n}\n.loader-spanne-20 > span:nth-child(7) {\n  animation-delay: -2.8s;\n}\n@keyframes move {\n  0% {\n    opacity: 0;\n    transform: translateX(0rpx) rotate(0deg);\n  }\n  20% {\n    opacity: 1;\n  }\n  40% {\n    transform: translateX(-80rpx) rotate(0deg);\n  }\n  50% {\n    opacity: 1;\n    transform: translateX(-100rpx) rotate(22deg);\n  }\n  85% {\n    opacity: 1;\n    transform: translateX(-170rpx) rotate(60deg);\n  }\n  100% {\n    opacity: 0;\n    transform: translateX(-200rpx) rotate(65deg);\n  }\n}\n\n",
+    "component_name": "GalaxySwiftPenguin59"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1502,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.757Z",
+  "updated_at": "2025-07-31T07:55:42.757Z"
+}

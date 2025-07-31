@@ -1,0 +1,89 @@
+{
+  "id": "doniaskima_itchy-baboon-21",
+  "name": "itchy-baboon-21",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "itchy-baboon-21 组件 (material design, neumorphism, flashy, loader, animation, gradient)",
+  "tags": [
+    "material design",
+    "neumorphism",
+    "flashy",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: material design, neumorphism, flashy, loader */\n.loader {\n  width: 80px;\n  height: 40px;\n  color: #000;\n  border: 2px solid currentColor;\n  border-right-color: transparent;\n  padding: 3px;\n  background: repeating-linear-gradient(90deg,currentColor 0 10px,#0000 0 15px) \n    0/0% no-repeat content-box content-box;\n  position: relative;\n  animation: l5 2s infinite steps(6);\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: -2px;\n  bottom: -2px;\n  left: 100%;\n  width: 10px;\n  background: linear-gradient(\n        #0000   calc(50% - 7px),currentColor 0 calc(50% - 5px),\n        #0000 0 calc(50% + 5px),currentColor 0 calc(50% + 7px),#0000 0) left /100% 100%,\n    linear-gradient(currentColor calc(50% - 5px),#0000        0 calc(50% + 5px),currentColor 0) left /2px 100%,\n    linear-gradient(#0000        calc(50% - 5px),currentColor 0 calc(50% + 5px),#0000        0) right/2px 100%;\n  background-repeat: no-repeat;\n}\n\n@keyframes l5 {\n  100% {\n    background-size: 120%\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_itchy-baboon-21.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyItchyBaboon21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: material design, neumorphism, flashy, loader */\n.loader {\n  width: 160rpx;\n  height: 80rpx;\n  color: #000;\n  border: 4rpx solid currentColor;\n  border-right-color: transparent;\n  padding: 6rpx;\n  background: repeating-linear-gradient(90deg,currentColor 0 20rpx,#0000 0 30rpx) \n    0/0% no-repeat content-box content-box;\n  position: relative;\n  animation: l5 2s infinite steps(6);\n}\n\n.loader::before {\n  content: \"\";\n  position: absolute;\n  top: -4rpx;\n  bottom: -4rpx;\n  left: 100%;\n  width: 20rpx;\n  background: linear-gradient(\n        #0000   calc(50% - 14rpx),currentColor 0 calc(50% - 10rpx),\n        #0000 0 calc(50% + 10rpx),currentColor 0 calc(50% + 14rpx),#0000 0) left /100% 100%,\n    linear-gradient(currentColor calc(50% - 10rpx),#0000        0 calc(50% + 10rpx),currentColor 0) left /4rpx 100%,\n    linear-gradient(#0000        calc(50% - 10rpx),currentColor 0 calc(50% + 10rpx),#0000        0) right/4rpx 100%;\n  background-repeat: no-repeat;\n}\n\n@keyframes l5 {\n  100% {\n    background-size: 120%\n  }\n}\n",
+    "component_name": "GalaxyItchyBaboon21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1060,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.278Z",
+  "updated_at": "2025-07-31T07:55:41.278Z"
+}

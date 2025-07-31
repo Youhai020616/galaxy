@@ -1,0 +1,92 @@
+{
+  "id": "MrLegendGaming_unlucky-goat-90",
+  "name": "unlucky-goat-90",
+  "category": "loaders",
+  "author": "MrLegendGaming",
+  "description": "unlucky-goat-90 组件 (3d, loader, colorful, creative, css, advanced, multicolor, 3d loader, animation)",
+  "tags": [
+    "3d",
+    "loader",
+    "colorful",
+    "creative",
+    "css",
+    "advanced",
+    "multicolor",
+    "3d loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading-screen\">\n  <div class=\"solid\">\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n    <div class=\"side\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by MrLegendGaming  - Website: https://codepen.io/mblase75/pen/BjBmzE - Name: M Blase - Tags: 3d, loader, colorful, creative, css, advanced, multicolor, 3d loader */\n:root {\n  --i: 0;\n}\n\n.loading-screen[move=\"1\"] {\n  animation: disappear 2s ease-in-out forwards;\n}\n.loading-screen[move=\"2\"] {\n  animation: reappear 2s ease-in-out forwards;\n}\n\n@keyframes disappear {\n  0% {\n    opacity: 100%;\n    transform: translateY(0%);\n  }\n  50% {\n    background-color: transparent;\n    opacity: 0%;\n  }\n  100% {\n    transform: translateY(100%);\n  }\n}\n\n@keyframes reappear {\n  0% {\n    opacity: 0%;\n    transform: translateY(100%);\n    background-color: transparent;\n  }\n  50% {\n    opacity: 100%;\n  }\n  100% {\n    background-color: #d8e0d8;\n    transform: translateY(0%);\n  }\n}\n\n.solid {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  animation: spin 16s infinite linear;\n  transform-style: preserve-3d;\n}\n.solid .side {\n  position: absolute;\n  left: 0;\n  bottom: 50%;\n  border-bottom: 86.6px solid black;\n  border-left: 50px solid transparent;\n  border-right: 50px solid transparent;\n  transform-origin: 50% 0%;\n}\n.solid .side:nth-child(1) {\n  transform: translateY(-9.25px) rotateY(72deg) rotateX(52.62deg);\n  border-bottom-color: rgba(134, 7, 147, 0.4);\n}\n.solid .side:nth-child(2) {\n  transform: translateY(-9.25px) rotateY(144deg) rotateX(52.62deg);\n  border-bottom-color: rgba(42, 160, 39, 0.4);\n}\n.solid .side:nth-child(3) {\n  transform: translateY(-9.25px) rotateY(216deg) rotateX(52.62deg);\n  border-bottom-color: rgba(209, 83, 84, 0.4);\n}\n.solid .side:nth-child(4) {\n  transform: translateY(-9.25px) rotateY(288deg) rotateX(52.62deg);\n  border-bottom-color: rgba(244, 202, 236, 0.4);\n}\n.solid .side:nth-child(5) {\n  transform: translateY(-9.25px) rotateY(360deg) rotateX(52.62deg);\n  border-bottom-color: rgba(73, 232, 200, 0.4);\n}\n.solid .side:nth-child(6) {\n  transform: translateY(180.9px) rotateY(468deg) rotateX(127.38deg);\n  border-bottom-color: rgba(105, 77, 3, 0.4);\n}\n.solid .side:nth-child(7) {\n  transform: translateY(180.9px) rotateY(540deg) rotateX(127.38deg);\n  border-bottom-color: rgba(255, 45, 71, 0.4);\n}\n.solid .side:nth-child(8) {\n  transform: translateY(180.9px) rotateY(612deg) rotateX(127.38deg);\n  border-bottom-color: rgba(177, 172, 3, 0.4);\n}\n.solid .side:nth-child(9) {\n  transform: translateY(180.9px) rotateY(684deg) rotateX(127.38deg);\n  border-bottom-color: rgba(175, 200, 228, 0.4);\n}\n.solid .side:nth-child(10) {\n  transform: translateY(180.9px) rotateY(756deg) rotateX(127.38deg);\n  border-bottom-color: rgba(187, 195, 141, 0.4);\n}\n.solid .side:nth-child(11) {\n  transform: translateY(43.3px) rotateY(828deg) translateZ(85.05px)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(212, 249, 1, 0.4);\n}\n.solid .side:nth-child(12) {\n  transform: translateY(43.3px) rotateY(900deg) translateZ(85.05px)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(85, 161, 43, 0.4);\n}\n.solid .side:nth-child(13) {\n  transform: translateY(43.3px) rotateY(972deg) translateZ(85.05px)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(15, 209, 47, 0.4);\n}\n.solid .side:nth-child(14) {\n  transform: translateY(43.3px) rotateY(1044deg) translateZ(85.05px)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(131, 69, 22, 0.4);\n}\n.solid .side:nth-child(15) {\n  transform: translateY(43.3px) rotateY(1116deg) translateZ(85.05px)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(43, 13, 170, 0.4);\n}\n.solid .side:nth-child(16) {\n  transform: translateY(128.35px) rotateY(1152deg) rotateZ(180deg)\n    translateZ(85.05px) rotateX(-10.81deg);\n  border-bottom-color: rgba(68, 85, 95, 0.4);\n}\n.solid .side:nth-child(17) {\n  transform: translateY(128.35px) rotateY(1224deg) rotateZ(180deg)\n    translateZ(85.05px) rotateX(-10.81deg);\n  border-bottom-color: rgba(159, 76, 176, 0.4);\n}\n.solid .side:nth-child(18) {\n  transform: translateY(128.35px) rotateY(1296deg) rotateZ(180deg)\n    translateZ(85.05px) rotateX(-10.81deg);\n  border-bottom-color: rgba(54, 95, 172, 0.4);\n}\n.solid .side:nth-child(19) {\n  transform: translateY(128.35px) rotateY(1368deg) rotateZ(180deg)\n    translateZ(85.05px) rotateX(-10.81deg);\n  border-bottom-color: rgba(162, 92, 204, 0.4);\n}\n.solid .side:nth-child(20) {\n  transform: translateY(128.35px) rotateY(1440deg) rotateZ(180deg)\n    translateZ(85.05px) rotateX(-10.81deg);\n  border-bottom-color: rgba(218, 1, 139, 0.4);\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);\n  }\n  100% {\n    transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/MrLegendGaming_unlucky-goat-90.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading-screen\"></view>\n  <view class=\"solid\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n    <view class=\"side\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUnluckyGoat90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MrLegendGaming  - Website: https://codepen.io/mblase75/pen/BjBmzE - Name: M Blase - Tags: 3d, loader, colorful, creative, css, advanced, multicolor, 3d loader */\n:root {\n  --i: 0;\n}\n\n.loading-screen[move=\"1\"] {\n  animation: disappear 2s ease-in-out forwards;\n}\n.loading-screen[move=\"2\"] {\n  animation: reappear 2s ease-in-out forwards;\n}\n\n@keyframes disappear {\n  0% {\n    opacity: 100%;\n    transform: translateY(0%);\n  }\n  50% {\n    background-color: transparent;\n    opacity: 0%;\n  }\n  100% {\n    transform: translateY(100%);\n  }\n}\n\n@keyframes reappear {\n  0% {\n    opacity: 0%;\n    transform: translateY(100%);\n    background-color: transparent;\n  }\n  50% {\n    opacity: 100%;\n  }\n  100% {\n    background-color: #d8e0d8;\n    transform: translateY(0%);\n  }\n}\n\n.solid {\n  position: relative;\n  width: 200rpx;\n  height: 200rpx;\n  animation: spin 16s infinite linear;\n  transform-style: preserve-3d;\n}\n.solid .side {\n  position: absolute;\n  left: 0;\n  bottom: 50%;\n  border-bottom: 173.2rpx solid black;\n  border-left: 100rpx solid transparent;\n  border-right: 100rpx solid transparent;\n  transform-origin: 50% 0%;\n}\n.solid .side:nth-child(1) {\n  transform: translateY(-18.5rpx) rotateY(72deg) rotateX(52.62deg);\n  border-bottom-color: rgba(134, 7, 147, 0.4);\n}\n.solid .side:nth-child(2) {\n  transform: translateY(-18.5rpx) rotateY(144deg) rotateX(52.62deg);\n  border-bottom-color: rgba(42, 160, 39, 0.4);\n}\n.solid .side:nth-child(3) {\n  transform: translateY(-18.5rpx) rotateY(216deg) rotateX(52.62deg);\n  border-bottom-color: rgba(209, 83, 84, 0.4);\n}\n.solid .side:nth-child(4) {\n  transform: translateY(-18.5rpx) rotateY(288deg) rotateX(52.62deg);\n  border-bottom-color: rgba(244, 202, 236, 0.4);\n}\n.solid .side:nth-child(5) {\n  transform: translateY(-18.5rpx) rotateY(360deg) rotateX(52.62deg);\n  border-bottom-color: rgba(73, 232, 200, 0.4);\n}\n.solid .side:nth-child(6) {\n  transform: translateY(361.8rpx) rotateY(468deg) rotateX(127.38deg);\n  border-bottom-color: rgba(105, 77, 3, 0.4);\n}\n.solid .side:nth-child(7) {\n  transform: translateY(361.8rpx) rotateY(540deg) rotateX(127.38deg);\n  border-bottom-color: rgba(255, 45, 71, 0.4);\n}\n.solid .side:nth-child(8) {\n  transform: translateY(361.8rpx) rotateY(612deg) rotateX(127.38deg);\n  border-bottom-color: rgba(177, 172, 3, 0.4);\n}\n.solid .side:nth-child(9) {\n  transform: translateY(361.8rpx) rotateY(684deg) rotateX(127.38deg);\n  border-bottom-color: rgba(175, 200, 228, 0.4);\n}\n.solid .side:nth-child(10) {\n  transform: translateY(361.8rpx) rotateY(756deg) rotateX(127.38deg);\n  border-bottom-color: rgba(187, 195, 141, 0.4);\n}\n.solid .side:nth-child(11) {\n  transform: translateY(86.6rpx) rotateY(828deg) translateZ(170.1rpx)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(212, 249, 1, 0.4);\n}\n.solid .side:nth-child(12) {\n  transform: translateY(86.6rpx) rotateY(900deg) translateZ(170.1rpx)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(85, 161, 43, 0.4);\n}\n.solid .side:nth-child(13) {\n  transform: translateY(86.6rpx) rotateY(972deg) translateZ(170.1rpx)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(15, 209, 47, 0.4);\n}\n.solid .side:nth-child(14) {\n  transform: translateY(86.6rpx) rotateY(1044deg) translateZ(170.1rpx)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(131, 69, 22, 0.4);\n}\n.solid .side:nth-child(15) {\n  transform: translateY(86.6rpx) rotateY(1116deg) translateZ(170.1rpx)\n    rotateX(-10.81deg);\n  border-bottom-color: rgba(43, 13, 170, 0.4);\n}\n.solid .side:nth-child(16) {\n  transform: translateY(256.7rpx) rotateY(1152deg) rotateZ(180deg)\n    translateZ(170.1rpx) rotateX(-10.81deg);\n  border-bottom-color: rgba(68, 85, 95, 0.4);\n}\n.solid .side:nth-child(17) {\n  transform: translateY(256.7rpx) rotateY(1224deg) rotateZ(180deg)\n    translateZ(170.1rpx) rotateX(-10.81deg);\n  border-bottom-color: rgba(159, 76, 176, 0.4);\n}\n.solid .side:nth-child(18) {\n  transform: translateY(256.7rpx) rotateY(1296deg) rotateZ(180deg)\n    translateZ(170.1rpx) rotateX(-10.81deg);\n  border-bottom-color: rgba(54, 95, 172, 0.4);\n}\n.solid .side:nth-child(19) {\n  transform: translateY(256.7rpx) rotateY(1368deg) rotateZ(180deg)\n    translateZ(170.1rpx) rotateX(-10.81deg);\n  border-bottom-color: rgba(162, 92, 204, 0.4);\n}\n.solid .side:nth-child(20) {\n  transform: translateY(256.7rpx) rotateY(1440deg) rotateZ(180deg)\n    translateZ(170.1rpx) rotateX(-10.81deg);\n  border-bottom-color: rgba(218, 1, 139, 0.4);\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);\n  }\n  100% {\n    transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);\n  }\n}\n\n",
+    "component_name": "GalaxyUnluckyGoat90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 5213,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.709Z",
+  "updated_at": "2025-07-31T07:55:39.709Z"
+}

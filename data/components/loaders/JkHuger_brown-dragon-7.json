@@ -1,0 +1,89 @@
+{
+  "id": "JkHuger_brown-dragon-7",
+  "name": "brown-dragon-7",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "brown-dragon-7 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"triangle\"></div>\n<div class=\"triangle-shadow\"></div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n.triangle {\n  background-color: transparent;\n  height: 0px;\n  width: 0px;\n  border-style: solid;\n  border-width: 50px 50px 50px 50px;\n  border-radius: 2px;\n  border-color: #00ff83 #00e676 #00cc69 #00e676;\n  animation: animtrgl 3s infinite ease;\n}\n\n.text {\n  font-family: 'Staatliches', cursive;\n  color: white;\n  font-size: 25px;\n  width: 250px;\n  text-align: center;\n  display: block;\n  height: 50px;\n  position: absolute;\n  animation: textload 3s infinite ease;\n  text-shadow: 0 0 4px black;\n}\n\n@keyframes textload {\n  0% {\n    top: calc(50% + 100px);\n  }\n\n  25% {\n    top: calc(50% + 85px);\n  }\n\n  50% {\n    top: calc(50% + 100px);\n  }\n\n  75% {\n    top: calc(50% + 85px);\n  }\n\n  100% {\n    top: calc(50% + 100px);\n  }\n}\n\n@keyframes animtrgl {\n  0% {\n    border-width: 50px 75px 50px 25px;\n    transform: scale(2);\n  }\n\n  25% {\n    border-width: 25px 50px 75px 50px;\n    transform: scale(1.75);\n  }\n\n  50% {\n    border-width: 50px 25px 50px 75px;\n    transform: scale(2);\n  }\n\n  75% {\n    border-width: 75px 50px 25px 50px;\n    transform: scale(1.75);\n  }\n\n  100% {\n    border-width: 50px 75px 50px 25px;\n    transform: scale(2);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_brown-dragon-7.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"triangle\"></view>\n<view class=\"triangle-shadow\"></view>",
+    "script": "export default {\n  name: 'GalaxyBrownDragon7',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n.triangle {\n  background-color: transparent;\n  height: 0rpx;\n  width: 0rpx;\n  border-style: solid;\n  border-width: 100rpx 100rpx 100rpx 100rpx;\n  border-radius: 4rpx;\n  border-color: #00ff83 #00e676 #00cc69 #00e676;\n  animation: animtrgl 3s infinite ease;\n}\n\n.text {\n  font-family: 'Staatliches', cursive;\n  color: white;\n  font-size: 50rpx;\n  width: 500rpx;\n  text-align: center;\n  display: block;\n  height: 100rpx;\n  position: absolute;\n  animation: textload 3s infinite ease;\n  /* #ifdef H5 */\n  text-shadow: 0 0 8rpx black;\n  /* #endif */\n}\n\n@keyframes textload {\n  0% {\n    top: calc(50% + 200rpx);\n  }\n\n  25% {\n    top: calc(50% + 170rpx);\n  }\n\n  50% {\n    top: calc(50% + 200rpx);\n  }\n\n  75% {\n    top: calc(50% + 170rpx);\n  }\n\n  100% {\n    top: calc(50% + 200rpx);\n  }\n}\n\n@keyframes animtrgl {\n  0% {\n    border-width: 100rpx 150rpx 100rpx 50rpx;\n    transform: scale(2);\n  }\n\n  25% {\n    border-width: 50rpx 100rpx 150rpx 100rpx;\n    transform: scale(1.75);\n  }\n\n  50% {\n    border-width: 100rpx 50rpx 100rpx 150rpx;\n    transform: scale(2);\n  }\n\n  75% {\n    border-width: 150rpx 100rpx 50rpx 100rpx;\n    transform: scale(1.75);\n  }\n\n  100% {\n    border-width: 100rpx 150rpx 100rpx 50rpx;\n    transform: scale(2);\n  }\n}\n",
+    "component_name": "GalaxyBrownDragon7"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1253,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.440Z",
+  "updated_at": "2025-07-31T07:55:39.440Z"
+}

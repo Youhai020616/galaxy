@@ -1,0 +1,95 @@
+{
+  "id": "SouravBandyopadhyay_fresh-squid-60",
+  "name": "fresh-squid-60",
+  "category": "loaders",
+  "author": "SouravBandyopadhyay",
+  "description": "fresh-squid-60 组件 (loading, loader, heart, rotate, love, box-shadow, Infinite Spin, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "heart",
+    "rotate",
+    "love",
+    "box-shadow",
+    "Infinite Spin",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"cssload-main\">\n\t<div class=\"cssload-heart\">\n\t\t<span class=\"cssload-heartL\"></span>\n\t\t<span class=\"cssload-heartR\"></span>\n\t\t<span class=\"cssload-square\"></span>\n\t</div>\n\t<div class=\"cssload-shadow\"></div>\n</div>",
+    "css": "/* From Uiverse.io by SouravBandyopadhyay - Tags: loading, loader, heart, rotate, love, box-shadow, Infinite Spin */\n.cssload-main {\n  position: absolute;\n  content: '';\n  left: 50%;\n  transform: translate(-100%, -240%);\n  -o-transform: translate(-100%, -240%);\n  -ms-transform: translate(-100%, -240%);\n  -webkit-transform: translate(-100%, -240%);\n  -moz-transform: translate(-100%, -240%);\n}\n\n.cssload-main * {\n  font-size: 62px;\n}\n\n.cssload-heart {\n  animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  top: 50%;\n  content: '';\n  left: 50%;\n  position: absolute;\n}\n\n.cssload-heartL {\n  width: 1em;\n  height: 1em;\n  border: 1px solid rgb(252, 0, 101);\n  background-color: rgb(252, 0, 101);\n  content: '';\n  position: absolute;\n  display: block;\n  border-radius: 100%;\n  animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  transform: translate(-28px, -27px);\n  -o-transform: translate(-28px, -27px);\n  -ms-transform: translate(-28px, -27px);\n  -webkit-transform: translate(-28px, -27px);\n  -moz-transform: translate(-28px, -27px);\n}\n\n.cssload-heartR {\n  width: 1em;\n  height: 1em;\n  border: 1px solid rgb(252, 0, 101);\n  background-color: rgb(252, 0, 101);\n  content: '';\n  position: absolute;\n  display: block;\n  border-radius: 100%;\n  transform: translate(28px, -27px);\n  -o-transform: translate(28px, -27px);\n  -ms-transform: translate(28px, -27px);\n  -webkit-transform: translate(28px, -27px);\n  -moz-transform: translate(28px, -27px);\n  animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n}\n\n.cssload-square {\n  width: 1em;\n  height: 1em;\n  border: 1px solid rgb(252, 0, 101);\n  background-color: rgb(252, 0, 101);\n  position: relative;\n  display: block;\n  content: '';\n  transform: scale(1) rotate(-45deg);\n  -o-transform: scale(1) rotate(-45deg);\n  -ms-transform: scale(1) rotate(-45deg);\n  -webkit-transform: scale(1) rotate(-45deg);\n  -moz-transform: scale(1) rotate(-45deg);\n  animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n}\n\n.cssload-shadow {\n  top: 97px;\n  left: 50%;\n  content: '';\n  position: relative;\n  display: block;\n  bottom: -.5em;\n  width: 1em;\n  height: .24em;\n  background-color: rgb(215,215,215);\n  border: 1px solid rgb(215,215,215);\n  border-radius: 50%;\n  animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n}\n\n@keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-o-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -o-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -o-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-ms-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -ms-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -ms-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-webkit-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -webkit-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -webkit-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-moz-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -moz-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -moz-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@keyframes cssload-heart {\n  50% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(720deg);\n  }\n}\n\n@-o-keyframes cssload-heart {\n  50% {\n    -o-transform: rotate(360deg);\n  }\n\n  100% {\n    -o-transform: rotate(720deg);\n  }\n}\n\n@-ms-keyframes cssload-heart {\n  50% {\n    -ms-transform: rotate(360deg);\n  }\n\n  100% {\n    -ms-transform: rotate(720deg);\n  }\n}\n\n@-webkit-keyframes cssload-heart {\n  50% {\n    -webkit-transform: rotate(360deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(720deg);\n  }\n}\n\n@-moz-keyframes cssload-heart {\n  50% {\n    -moz-transform: rotate(360deg);\n  }\n\n  100% {\n    -moz-transform: rotate(720deg);\n  }\n}\n\n@keyframes cssload-heartL {\n  60% {\n    transform: scale(0.4);\n  }\n}\n\n@-o-keyframes cssload-heartL {\n  60% {\n    -o-transform: scale(0.4);\n  }\n}\n\n@-ms-keyframes cssload-heartL {\n  60% {\n    -ms-transform: scale(0.4);\n  }\n}\n\n@-webkit-keyframes cssload-heartL {\n  60% {\n    -webkit-transform: scale(0.4);\n  }\n}\n\n@-moz-keyframes cssload-heartL {\n  60% {\n    -moz-transform: scale(0.4);\n  }\n}\n\n@keyframes cssload-heartR {\n  40% {\n    transform: scale(0.4);\n  }\n}\n\n@-o-keyframes cssload-heartR {\n  40% {\n    -o-transform: scale(0.4);\n  }\n}\n\n@-ms-keyframes cssload-heartR {\n  40% {\n    -ms-transform: scale(0.4);\n  }\n}\n\n@-webkit-keyframes cssload-heartR {\n  40% {\n    -webkit-transform: scale(0.4);\n  }\n}\n\n@-moz-keyframes cssload-heartR {\n  40% {\n    -moz-transform: scale(0.4);\n  }\n}\n\n@keyframes cssload-shadow {\n  50% {\n    transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-o-keyframes cssload-shadow {\n  50% {\n    -o-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-ms-keyframes cssload-shadow {\n  50% {\n    -ms-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-webkit-keyframes cssload-shadow {\n  50% {\n    -webkit-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-moz-keyframes cssload-shadow {\n  50% {\n    -moz-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SouravBandyopadhyay_fresh-squid-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cssload-main\"></view>\n\t<view class=\"cssload-heart\"></view>\n\t\t<text class=\"cssload-heartL\"></text>\n\t\t<text class=\"cssload-heartR\"></text>\n\t\t<text class=\"cssload-square\"></text>\n\t</div>\n\t<view class=\"cssload-shadow\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFreshSquid60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SouravBandyopadhyay - Tags: loading, loader, heart, rotate, love, box-shadow, Infinite Spin */\n.cssload-main {\n  position: absolute;\n  content: '';\n  left: 50%;\n  transform: translate(-100%, -240%);\n  -o-transform: translate(-100%, -240%);\n  -ms-transform: translate(-100%, -240%);\n  -webkit-transform: translate(-100%, -240%);\n  -moz-transform: translate(-100%, -240%);\n}\n\n.cssload-main * {\n  font-size: 124rpx;\n}\n\n.cssload-heart {\n  animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  top: 50%;\n  content: '';\n  left: 50%;\n  position: absolute;\n}\n\n.cssload-heartL {\n  width: 1em;\n  height: 1em;\n  border: 2rpx solid rgb(252, 0, 101);\n  background-color: rgb(252, 0, 101);\n  content: '';\n  position: absolute;\n  display: block;\n  border-radius: 100%;\n  animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  transform: translate(-56rpx, -54rpx);\n  -o-transform: translate(-56rpx, -54rpx);\n  -ms-transform: translate(-56rpx, -54rpx);\n  -webkit-transform: translate(-56rpx, -54rpx);\n  -moz-transform: translate(-56rpx, -54rpx);\n}\n\n.cssload-heartR {\n  width: 1em;\n  height: 1em;\n  border: 2rpx solid rgb(252, 0, 101);\n  background-color: rgb(252, 0, 101);\n  content: '';\n  position: absolute;\n  display: block;\n  border-radius: 100%;\n  transform: translate(56rpx, -54rpx);\n  -o-transform: translate(56rpx, -54rpx);\n  -ms-transform: translate(56rpx, -54rpx);\n  -webkit-transform: translate(56rpx, -54rpx);\n  -moz-transform: translate(56rpx, -54rpx);\n  animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n}\n\n.cssload-square {\n  width: 1em;\n  height: 1em;\n  border: 2rpx solid rgb(252, 0, 101);\n  background-color: rgb(252, 0, 101);\n  position: relative;\n  display: block;\n  content: '';\n  transform: scale(1) rotate(-45deg);\n  -o-transform: scale(1) rotate(-45deg);\n  -ms-transform: scale(1) rotate(-45deg);\n  -webkit-transform: scale(1) rotate(-45deg);\n  -moz-transform: scale(1) rotate(-45deg);\n  animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n}\n\n.cssload-shadow {\n  top: 194rpx;\n  left: 50%;\n  content: '';\n  position: relative;\n  display: block;\n  bottom: -.5em;\n  width: 1em;\n  height: .24em;\n  background-color: rgb(215,215,215);\n  border: 2rpx solid rgb(215,215,215);\n  border-radius: 50%;\n  animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -o-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -ms-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -webkit-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n  -moz-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n}\n\n@keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-o-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -o-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -o-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-ms-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -ms-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -ms-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-webkit-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -webkit-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -webkit-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@-moz-keyframes cssload-square {\n  50% {\n    border-radius: 100%;\n    -moz-transform: scale(0.5) rotate(-45deg);\n  }\n\n  100% {\n    -moz-transform: scale(1) rotate(-45deg);\n  }\n}\n\n@keyframes cssload-heart {\n  50% {\n    transform: rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(720deg);\n  }\n}\n\n@-o-keyframes cssload-heart {\n  50% {\n    -o-transform: rotate(360deg);\n  }\n\n  100% {\n    -o-transform: rotate(720deg);\n  }\n}\n\n@-ms-keyframes cssload-heart {\n  50% {\n    -ms-transform: rotate(360deg);\n  }\n\n  100% {\n    -ms-transform: rotate(720deg);\n  }\n}\n\n@-webkit-keyframes cssload-heart {\n  50% {\n    -webkit-transform: rotate(360deg);\n  }\n\n  100% {\n    -webkit-transform: rotate(720deg);\n  }\n}\n\n@-moz-keyframes cssload-heart {\n  50% {\n    -moz-transform: rotate(360deg);\n  }\n\n  100% {\n    -moz-transform: rotate(720deg);\n  }\n}\n\n@keyframes cssload-heartL {\n  60% {\n    transform: scale(0.4);\n  }\n}\n\n@-o-keyframes cssload-heartL {\n  60% {\n    -o-transform: scale(0.4);\n  }\n}\n\n@-ms-keyframes cssload-heartL {\n  60% {\n    -ms-transform: scale(0.4);\n  }\n}\n\n@-webkit-keyframes cssload-heartL {\n  60% {\n    -webkit-transform: scale(0.4);\n  }\n}\n\n@-moz-keyframes cssload-heartL {\n  60% {\n    -moz-transform: scale(0.4);\n  }\n}\n\n@keyframes cssload-heartR {\n  40% {\n    transform: scale(0.4);\n  }\n}\n\n@-o-keyframes cssload-heartR {\n  40% {\n    -o-transform: scale(0.4);\n  }\n}\n\n@-ms-keyframes cssload-heartR {\n  40% {\n    -ms-transform: scale(0.4);\n  }\n}\n\n@-webkit-keyframes cssload-heartR {\n  40% {\n    -webkit-transform: scale(0.4);\n  }\n}\n\n@-moz-keyframes cssload-heartR {\n  40% {\n    -moz-transform: scale(0.4);\n  }\n}\n\n@keyframes cssload-shadow {\n  50% {\n    transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-o-keyframes cssload-shadow {\n  50% {\n    -o-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-ms-keyframes cssload-shadow {\n  50% {\n    -ms-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-webkit-keyframes cssload-shadow {\n  50% {\n    -webkit-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n\n@-moz-keyframes cssload-shadow {\n  50% {\n    -moz-transform: scale(0.5);\n    border-color: rgb(228,228,228);\n  }\n}\n",
+    "component_name": "GalaxyFreshSquid60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 7205,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.536Z",
+  "updated_at": "2025-07-31T07:55:40.536Z"
+}

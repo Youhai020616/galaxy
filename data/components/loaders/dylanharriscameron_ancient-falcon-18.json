@@ -1,0 +1,88 @@
+{
+  "id": "dylanharriscameron_ancient-falcon-18",
+  "name": "ancient-falcon-18",
+  "category": "loaders",
+  "author": "dylanharriscameron",
+  "description": "ancient-falcon-18 组件 (loading, loader, infinite, animation, gradient)",
+  "tags": [
+    "loading",
+    "loader",
+    "infinite",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loaderBar\"></div>",
+    "css": "/* From Uiverse.io by dylanharriscameron - Tags: loading, loader, infinite */\n.loaderBar {\n  width: calc(160px / 0.707);\n  height: 10px;\n  background: #F9F9F9;\n  border-radius: 10px;\n  border: 1px solid #006DFE;\n  position: relative;\n  overflow: hidden;\n}\n\n.loaderBar::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  border-radius: 5px;\n  background: repeating-linear-gradient(45deg, #0031F2 0 30px, #006DFE 0 40px) right/200% 100%;\n  animation: fillProgress 6s ease-in-out infinite, lightEffect 1s infinite linear;\n  animation-fill-mode: forwards;\n}\n\n@keyframes fillProgress {\n  0% {\n    width: 0;\n  }\n\n  33% {\n    width: 33.333%;\n  }\n\n  66% {\n    width: 66.67%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}\n\n@keyframes lightEffect {\n  0%, 20%, 40%, 60%, 80%, 100% {\n    background: repeating-linear-gradient(45deg, #0031F2 0 30px, #006DFE 0 40px) right/200% 100%;\n  }\n\n  10%, 30%, 50%, 70%, 90% {\n    background: repeating-linear-gradient(45deg, #0031F2 0 30px, #006DFE 0 40px, rgba(255, 255, 255, 0.3) 0 40px) right/200% 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/dylanharriscameron_ancient-falcon-18.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loaderBar\"></view>",
+    "script": "export default {\n  name: 'GalaxyAncientFalcon18',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by dylanharriscameron - Tags: loading, loader, infinite */\n.loaderBar {\n  width: calc(320rpx / 0.707);\n  height: 20rpx;\n  background: #F9F9F9;\n  border-radius: 20rpx;\n  border: 2rpx solid #006DFE;\n  position: relative;\n  overflow: hidden;\n}\n\n.loaderBar::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  border-radius: 10rpx;\n  background: repeating-linear-gradient(45deg, #0031F2 0 60rpx, #006DFE 0 80rpx) right/200% 100%;\n  animation: fillProgress 6s ease-in-out infinite, lightEffect 1s infinite linear;\n  animation-fill-mode: forwards;\n}\n\n@keyframes fillProgress {\n  0% {\n    width: 0;\n  }\n\n  33% {\n    width: 33.333%;\n  }\n\n  66% {\n    width: 66.67%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}\n\n@keyframes lightEffect {\n  0%, 20%, 40%, 60%, 80%, 100% {\n    background: repeating-linear-gradient(45deg, #0031F2 0 60rpx, #006DFE 0 80rpx) right/200% 100%;\n  }\n\n  10%, 30%, 50%, 70%, 90% {\n    background: repeating-linear-gradient(45deg, #0031F2 0 60rpx, #006DFE 0 80rpx, rgba(255, 255, 255, 0.3) 0 80rpx) right/200% 100%;\n  }\n}\n",
+    "component_name": "GalaxyAncientFalcon18"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1097,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.334Z",
+  "updated_at": "2025-07-31T07:55:41.334Z"
+}

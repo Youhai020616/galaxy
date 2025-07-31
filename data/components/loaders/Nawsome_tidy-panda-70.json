@@ -1,0 +1,84 @@
+{
+  "id": "Nawsome_tidy-panda-70",
+  "name": "tidy-panda-70",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "tidy-panda-70 组件 (loader)",
+  "tags": [
+    "loader"
+  ],
+  "original": {
+    "html": "<svg width=\"240\" height=\"240\" viewBox=\"0 0 240 240\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"loader\">\n<defs>\n    <path id=\"move-path\" d=\"M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z\" fill=\"#D9D9D9\"></path>\n    <filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"5\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32\"></feColorMatrix>\n    </filter>\n</defs>\n<g filter=\"url(#goo)\">\n    <circle cx=\"119\" cy=\"74\" r=\"20\" stroke=\"#6f8191\" stroke-width=\"8\"></circle>\n    <circle cx=\"79\" cy=\"141\" r=\"20\" stroke=\"#6f8191\" stroke-width=\"8\"></circle>\n    <circle cx=\"157\" cy=\"141\" r=\"20\" stroke=\"#6f8191\" stroke-width=\"8\"></circle>\n    <circle cx=\"0\" cy=\"0\" r=\"14\" fill=\"#6f8191\">\n        <animateMotion path=\"M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z\" dur=\"2s\" repeatCount=\"indefinite\"></animateMotion>\n    </circle> \n</g>\n</svg>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.loader {\n  height: 20vh;\n  width: 20vh;\n  max-height: 480px;\n  min-width: 480px;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_tidy-panda-70.html"
+  },
+  "uniapp": {
+    "template": "<view width=\"240\" height=\"240\" viewBox=\"0 0 240 240\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"loader\"></view>\n<defs>\n    <path id=\"move-path\" d=\"M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z\" fill=\"#D9D9D9\"></path>\n    <filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"5\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32\"></feColorMatrix>\n    </filter>\n</defs>\n<g filter=\"url(#goo)\">\n    <circle cx=\"119\" cy=\"74\" r=\"20\" stroke=\"#6f8191\" stroke-width=\"8\"></circle>\n    <circle cx=\"79\" cy=\"141\" r=\"20\" stroke=\"#6f8191\" stroke-width=\"8\"></circle>\n    <circle cx=\"157\" cy=\"141\" r=\"20\" stroke=\"#6f8191\" stroke-width=\"8\"></circle>\n    <circle cx=\"0\" cy=\"0\" r=\"14\" fill=\"#6f8191\">\n        <animateMotion path=\"M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z\" dur=\"2s\" repeatCount=\"indefinite\"></animateMotion>\n    </circle> \n</g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyTidyPanda70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.loader {\n  height: 20vh;\n  width: 20vh;\n  max-height: 960rpx;\n  min-width: 960rpx;\n}\n",
+    "component_name": "GalaxyTidyPanda70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1336,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.874Z",
+  "updated_at": "2025-07-31T07:55:39.874Z"
+}

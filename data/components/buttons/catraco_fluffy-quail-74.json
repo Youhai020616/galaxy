@@ -1,0 +1,104 @@
+{
+  "id": "catraco_fluffy-quail-74",
+  "name": "fluffy-quail-74",
+  "category": "buttons",
+  "author": "catraco",
+  "description": "fluffy-quail-74 组件",
+  "tags": [],
+  "original": {
+    "html": "<button title=\"Add New\" class=\"group cursor-pointer outline-none hover:rotate-90 duration-300\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50px\" height=\"50px\" viewBox=\"0 0 24 24\" class=\"stroke-zinc-400 fill-none group-hover:fill-zinc-800 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300\">\n    <path d=\"M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z\" stroke-width=\"1.5\"></path>\n    <path d=\"M8 12H16\" stroke-width=\"1.5\"></path>\n    <path d=\"M12 16V8\" stroke-width=\"1.5\"></path>\n  </svg>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/catraco_fluffy-quail-74.html"
+  },
+  "uniapp": {
+    "template": "<button title=\"Add New\" class=\"group cursor-pointer outline-none hover:rotate-90 duration-300\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" width=\"50px\" height=\"50px\" viewBox=\"0 0 24 24\" class=\"stroke-zinc-400 fill-none group-hover:fill-zinc-800 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300\"></view>\n    <path d=\"M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z\" stroke-width=\"1.5\"></path>\n    <path d=\"M8 12H16\" stroke-width=\"1.5\"></path>\n    <path d=\"M12 16V8\" stroke-width=\"1.5\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFluffyQuail74',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyFluffyQuail74"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 591,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.066Z",
+  "updated_at": "2025-07-31T07:55:36.066Z"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "PriyanshuGupta28_short-horse-44",
+  "name": "short-horse-44",
+  "category": "buttons",
+  "author": "PriyanshuGupta28",
+  "description": "short-horse-44 组件 (button, bootsrap button, button hover effect, 2d button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "bootsrap button",
+    "button hover effect",
+    "2d button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"swipe-button\">Hover Me</button>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: button, bootsrap button, button hover effect , 2d button */\n.swipe-button {\n  padding: 10px 20px;\n  font-size: 18px;\n  border: none;\n  background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #2ecc71);\n  background-size: 200% 200%;\n  background-position: 0 0;\n  color: white;\n  border-radius: 5px;\n  cursor: pointer;\n  font-family: sans-serif;\n  transition: background-position 0.5s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;\n}\n\n.swipe-button:hover {\n  background-position: 100% 100%;\n  transform: scale(1.05);\n  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);\n}\n\n.swipe-button:active {\n  transform: translateY(2px);\n  color: #fff;\n /* Change text color when active */\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/PriyanshuGupta28_short-horse-44.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"swipe-button\"></button>Hover Me</button>",
+    "script": "export default {\n  name: 'GalaxyShortHorse44',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: button, bootsrap button, button hover effect , 2d button */\n.swipe-button {\n  padding: 20rpx 40rpx;\n  font-size: 36rpx;\n  border: none;\n  background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #2ecc71);\n  background-size: 200% 200%;\n  background-position: 0 0;\n  color: white;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: sans-serif;\n  transition: background-position 0.5s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;\n}\n\n.swipe-button:hover {\n  background-position: 100% 100%;\n  transform: scale(1.05);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 6rpx 12rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.swipe-button:active {\n  transform: translateY(4rpx);\n  color: #fff;\n /* Change text color when active */\n}\n\n",
+    "component_name": "GalaxyShortHorse44"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 799,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.355Z",
+  "updated_at": "2025-07-31T07:55:34.355Z"
+}

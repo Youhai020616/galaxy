@@ -1,0 +1,118 @@
+{
+  "id": "Github-Suriya_chilly-wasp-20",
+  "name": "chilly-wasp-20",
+  "category": "buttons",
+  "author": "Github-Suriya",
+  "description": "chilly-wasp-20 组件 (material design, white, button, smooth, message, animation, interactive)",
+  "tags": [
+    "material design",
+    "white",
+    "button",
+    "smooth",
+    "message",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <div class=\"svg-name-con\">\n    <div class=\"svg-wrapper-1\">\n      <div class=\"svg-wrapper\">\n        <svg height=\"24\" width=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n          <path d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\" fill=\"currentColor\"></path>\n        </svg>\n      </div>\n    </div>\n    <span>Send Message</span>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by Github-Suriya  - Tags: material design, white, button, smooth, message */\nbutton {\n  font-family: inherit;\n  font-size: 20px;\n  background: #eef0ee;\n  padding: 0.3em;\n  border: none;\n  border-radius: 15px;\n  overflow: hidden;\n  transition: all 0.2s;\n  cursor: pointer;\n  box-shadow: 0px 0px 6px #c5c5c5;\n}\n\nbutton span {\n  display: block;\n  margin-left: 0.3em;\n  font-weight: 600;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\nbutton .svg-name-con {\n  background: #fcfdfc;\n  border-radius: 25px;\n  display: flex;\n  align-items: center;\n  padding: 0.7em 1em;\n}\n\nbutton:hover .svg-wrapper {\n  animation: fly-1 0.6s ease-in-out infinite alternate;\n}\n\nbutton:hover svg {\n  transform: translateX(4.2em) rotate(45deg) scale(1.1);\n}\n\nbutton:hover span {\n  transform: translateX(9em);\n}\n\nbutton:active {\n  transform: scale(0.95);\n}\n\n@keyframes fly-1 {\n  from {\n    transform: translateY(0.1em);\n  }\n\n  to {\n    transform: translateY(-0.1em);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Github-Suriya_chilly-wasp-20.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view class=\"svg-name-con\"></view>\n    <view class=\"svg-wrapper-1\"></view>\n      <view class=\"svg-wrapper\"></view>\n        <view height=\"24\" width=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n          <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n          <path d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\" fill=\"currentColor\"></path>\n        </svg>\n      </div>\n    </div>\n    <text>Send Message</text>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChillyWasp20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Github-Suriya  - Tags: material design, white, button, smooth, message */\nbutton {\n  font-family: inherit;\n  font-size: 40rpx;\n  background: #eef0ee;\n  padding: 0.3em;\n  border: none;\n  border-radius: 30rpx;\n  overflow: hidden;\n  transition: all 0.2s;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 12rpx #c5c5c5;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton span {\n  display: block;\n  margin-left: 0.3em;\n  font-weight: 600;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\nbutton .svg-name-con {\n  background: #fcfdfc;\n  border-radius: 50rpx;\n  display: flex;\n  align-items: center;\n  padding: 0.7em 1em;\n}\n\nbutton:hover .svg-wrapper {\n  animation: fly-1 0.6s ease-in-out infinite alternate;\n}\n\nbutton:hover svg {\n  transform: translateX(4.2em) rotate(45deg) scale(1.1);\n}\n\nbutton:hover span {\n  transform: translateX(9em);\n}\n\nbutton:active {\n  transform: scale(0.95);\n}\n\n@keyframes fly-1 {\n  from {\n    transform: translateY(0.1em);\n  }\n\n  to {\n    transform: translateY(-0.1em);\n  }\n}\n\n",
+    "component_name": "GalaxyChillyWasp20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1606,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.299Z",
+  "updated_at": "2025-07-31T07:55:33.299Z"
+}

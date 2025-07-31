@@ -1,0 +1,91 @@
+{
+  "id": "elijahgummer_sour-earwig-21",
+  "name": "sour-earwig-21",
+  "category": "loaders",
+  "author": "elijahgummer",
+  "description": "sour-earwig-21 组件 (simple, animation, green, loader, smooth, modern, animated, css)",
+  "tags": [
+    "simple",
+    "animation",
+    "green",
+    "loader",
+    "smooth",
+    "modern",
+    "animated",
+    "css"
+  ],
+  "original": {
+    "html": "<svg class=\"container\"><rect class=\"boxes\"></rect></svg>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: simple, animation, green, loader, smooth, modern, animated, css */\n.container {\n  width: 50px;\n  height: 50px;\n}\n\n.container .boxes {\n  width: 50px;\n  height: 50px;\n  fill: none;\n  stroke-width: 50px;\n  stroke: #43cb85;\n  stroke-dasharray: 50;\n  stroke-dashoffset: 50%;\n  animation: animate 2s linear infinite;\n}\n\n@keyframes animate {\n  to {\n    stroke-dashoffset: 250%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/elijahgummer_sour-earwig-21.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"><rect class=\"boxes\"></rect></view>",
+    "script": "export default {\n  name: 'GalaxySourEarwig21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: simple, animation, green, loader, smooth, modern, animated, css */\n.container {\n  width: 100rpx;\n  height: 100rpx;\n}\n\n.container .boxes {\n  width: 100rpx;\n  height: 100rpx;\n  fill: none;\n  stroke-width: 100rpx;\n  stroke: #43cb85;\n  stroke-dasharray: 50;\n  stroke-dashoffset: 50%;\n  animation: animate 2s linear infinite;\n}\n\n@keyframes animate {\n  to {\n    stroke-dashoffset: 250%;\n  }\n}\n\n",
+    "component_name": "GalaxySourEarwig21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 486,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.373Z",
+  "updated_at": "2025-07-31T07:55:41.373Z"
+}

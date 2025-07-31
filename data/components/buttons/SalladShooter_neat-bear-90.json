@@ -1,0 +1,116 @@
+{
+  "id": "SalladShooter_neat-bear-90",
+  "name": "neat-bear-90",
+  "category": "buttons",
+  "author": "SalladShooter",
+  "description": "neat-bear-90 组件 (simple, gradient, button, animation, interactive)",
+  "tags": [
+    "simple",
+    "gradient",
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\">\n    <path d=\"M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z\"></path>\n  </svg>\n  Share\n</button>",
+    "css": "/* From Uiverse.io by SalladShooter  - Tags: simple, gradient, button */\n.button {\n  cursor: pointer;\n  padding: 1em;\n  font-size: 1em;\n  width: 7em;\n  aspect-ratio: 1/0.25;\n  color: white;\n  background: #212121;\n  background-size: cover;\n  background-blend-mode: overlay;\n  border-radius: 0.5em;\n  outline: 0.1em solid #353535;\n  border: 0;\n  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);\n  transition: all 0.3s ease-in-out;\n  position: relative;\n}\n\n.button:hover {\n  transform: scale(1.1);\n  box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);\n  background: linear-gradient(45deg, #212121, #252525);\n  background: radial-gradient(\n    circle at bottom,\n    rgba(50, 100, 180, 0.5) 10%,\n    #212121 70%\n  );\n  outline: 0;\n}\n\n.icon {\n  fill: white;\n  width: 1em;\n  aspect-ratio: 1;\n  top: 0;\n  left: 0;\n  margin: auto;\n  transform: translate(-35%, 10%);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SalladShooter_neat-bear-90.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\"></view>\n    <path d=\"M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z\"></path>\n  </svg>\n  Share\n</button>",
+    "script": "export default {\n  name: 'GalaxyNeatBear90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SalladShooter  - Tags: simple, gradient, button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 1em;\n  font-size: 1em;\n  width: 7em;\n  aspect-ratio: 1/0.25;\n  color: white;\n  background: #212121;\n  background-size: cover;\n  background-blend-mode: overlay;\n  border-radius: 0.5em;\n  outline: 0.1em solid #353535;\n  border: 0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease-in-out;\n  position: relative;\n}\n\n.button:hover {\n  transform: scale(1.1);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: linear-gradient(45deg, #212121, #252525);\n  background: radial-gradient(\n    circle at bottom,\n    rgba(50, 100, 180, 0.5) 10%,\n    #212121 70%\n  );\n  outline: 0;\n}\n\n.icon {\n  fill: white;\n  width: 1em;\n  aspect-ratio: 1;\n  top: 0;\n  left: 0;\n  margin: auto;\n  transform: translate(-35%, 10%);\n}\n\n",
+    "component_name": "GalaxyNeatBear90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1362,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.490Z",
+  "updated_at": "2025-07-31T07:55:34.490Z"
+}

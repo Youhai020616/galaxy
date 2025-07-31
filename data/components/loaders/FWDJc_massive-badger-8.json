@@ -1,0 +1,89 @@
+{
+  "id": "FWDJc_massive-badger-8",
+  "name": "massive-badger-8",
+  "category": "loaders",
+  "author": "FWDJc",
+  "description": "massive-badger-8 组件 (animated, colorful, dvd, keyframes, css animation, animation)",
+  "tags": [
+    "animated",
+    "colorful",
+    "dvd",
+    "keyframes",
+    "css animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by FWDJc - Tags: animated, colorful, dvd, keyframes, css animation */\n.loader {\n  width: 150px;\n  height: 40px;\n  border-radius: 50%;\n  position: relative;\n  animation: bounce 5s infinite;\n}\n\n.loader::before {\n  content: 'DVD';\n  position: absolute;\n  display: block;\n  left: 5%;\n  bottom: 55%;\n  color: green;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  font-size: 4em;\n  font-weight: 900;\n  font-style: italic;\n  animation: div-color-change 5s infinite;\n}\n\n.loader::after {\n  content: 'FWDJC';\n  position: absolute;\n  top: 30%;\n  left: 21%;\n  color: #212121;\n  font-size: .5em;\n  font-weight: 800;\n  letter-spacing: 10px;\n  z-index: 1;\n}\n\n@keyframes bounce {\n  0% {\n    background-color: red;\n    transform: translateX(0) translateY(60px);\n  }\n\n  25% {\n    background-color: blue;\n    transform: translateX(60px) translateY(0);\n  }\n\n  55% {\n    background-color: green;\n    transform: translateX(0) translateY(-60px);\n  }\n\n  75% {\n    background-color: yellow;\n    transform: translateX(-60px) translateY(0);\n  }\n\n  100% {\n    background-color: purple;\n    transform: translateX(0) translateY(60px);\n  }\n}\n\n@keyframes div-color-change {\n  0% {\n    color: red;\n  }\n\n  25% {\n    color: blue;\n  }\n\n  55% {\n    color: green;\n  }\n\n  75% {\n    color: yellow;\n  }\n\n  100% {\n    color: purple;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/FWDJc_massive-badger-8.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyMassiveBadger8',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by FWDJc - Tags: animated, colorful, dvd, keyframes, css animation */\n.loader {\n  width: 300rpx;\n  height: 80rpx;\n  border-radius: 50%;\n  position: relative;\n  animation: bounce 5s infinite;\n}\n\n.loader::before {\n  content: 'DVD';\n  position: absolute;\n  display: block;\n  left: 5%;\n  bottom: 55%;\n  color: green;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  font-size: 4em;\n  font-weight: 900;\n  font-style: italic;\n  animation: div-color-change 5s infinite;\n}\n\n.loader::after {\n  content: 'FWDJC';\n  position: absolute;\n  top: 30%;\n  left: 21%;\n  color: #212121;\n  font-size: .5em;\n  font-weight: 800;\n  letter-spacing: 20rpx;\n  z-index: 1;\n}\n\n@keyframes bounce {\n  0% {\n    background-color: red;\n    transform: translateX(0) translateY(120rpx);\n  }\n\n  25% {\n    background-color: blue;\n    transform: translateX(120rpx) translateY(0);\n  }\n\n  55% {\n    background-color: green;\n    transform: translateX(0) translateY(-120rpx);\n  }\n\n  75% {\n    background-color: yellow;\n    transform: translateX(-120rpx) translateY(0);\n  }\n\n  100% {\n    background-color: purple;\n    transform: translateX(0) translateY(120rpx);\n  }\n}\n\n@keyframes div-color-change {\n  0% {\n    color: red;\n  }\n\n  25% {\n    color: blue;\n  }\n\n  55% {\n    color: green;\n  }\n\n  75% {\n    color: yellow;\n  }\n\n  100% {\n    color: purple;\n  }\n}\n",
+    "component_name": "GalaxyMassiveBadger8"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1451,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.218Z",
+  "updated_at": "2025-07-31T07:55:39.218Z"
+}

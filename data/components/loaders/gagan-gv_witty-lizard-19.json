@@ -1,0 +1,85 @@
+{
+  "id": "gagan-gv_witty-lizard-19",
+  "name": "witty-lizard-19",
+  "category": "loaders",
+  "author": "gagan-gv",
+  "description": "witty-lizard-19 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div class=\"loader l1\"></div>\n<div class=\"loader l2\"></div>\n</div>",
+    "css": "/* From Uiverse.io by gagan-gv - Tags: loader */\n.spinner {\n border: 0 solid transparent;\n border-radius: 50%;\n width: 50px;\n height: 50px;\n}\n\n.loader {\n width: inherit;\n height: inherit;\n position: absolute;\n}\n\n.loader::before,\n.loader::after {\n content: '';\n border: 3px solid #505065;\n border-radius: 50%;\n width: inherit;\n height: inherit;\n position: absolute;\n opacity: 1;\n}\n\n.l1::before,\n.l1::after {\n animation: clockwiseZ 2.5s infinite;\n}\n\n.l2::after,\n.l2::before {\n animation: anticlockwiseZ 2.5s infinite;\n}\n\n@keyframes clockwiseZ {\n 0%, 100% {\n  transform: rotateY(0);\n }\n\n 50% {\n  transform: rotateY(180deg) skew(-10deg, -5deg);\n }\n}\n\n@keyframes anticlockwiseZ {\n 0%, 100% {\n  transform: rotateX(0);\n }\n\n 50% {\n  transform: rotateX(-180deg) skew(10deg, 5deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/gagan-gv_witty-lizard-19.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view class=\"loader l1\"></view>\n<view class=\"loader l2\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWittyLizard19',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gagan-gv - Tags: loader */\n.spinner {\n border: 0 solid transparent;\n border-radius: 50%;\n width: 100rpx;\n height: 100rpx;\n}\n\n.loader {\n width: inherit;\n height: inherit;\n position: absolute;\n}\n\n.loader::before,\n.loader::after {\n content: '';\n border: 6rpx solid #505065;\n border-radius: 50%;\n width: inherit;\n height: inherit;\n position: absolute;\n opacity: 1;\n}\n\n.l1::before,\n.l1::after {\n animation: clockwiseZ 2.5s infinite;\n}\n\n.l2::after,\n.l2::before {\n animation: anticlockwiseZ 2.5s infinite;\n}\n\n@keyframes clockwiseZ {\n 0%, 100% {\n  transform: rotateY(0);\n }\n\n 50% {\n  transform: rotateY(180deg) skew(-10deg, -5deg);\n }\n}\n\n@keyframes anticlockwiseZ {\n 0%, 100% {\n  transform: rotateX(0);\n }\n\n 50% {\n  transform: rotateX(-180deg) skew(10deg, 5deg);\n }\n}\n",
+    "component_name": "GalaxyWittyLizard19"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 868,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.146Z",
+  "updated_at": "2025-07-31T07:55:42.146Z"
+}

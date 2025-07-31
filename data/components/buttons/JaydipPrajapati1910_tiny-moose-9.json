@@ -1,0 +1,119 @@
+{
+  "id": "JaydipPrajapati1910_tiny-moose-9",
+  "name": "tiny-moose-9",
+  "category": "buttons",
+  "author": "JaydipPrajapati1910",
+  "description": "tiny-moose-9 组件 (green, button, sign-up, buttons, sign up, gradient)",
+  "tags": [
+    "green",
+    "button",
+    "sign-up",
+    "buttons",
+    "sign up",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  SIGNUP\n  <span>\n  <svg viewBox=\"0 0 16 16\" class=\"bi bi-door-open-fill\" fill=\"currentColor\" height=\"19\" width=\"19\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z\"></path>\n</svg></span>\n</button>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: green, button, sign-up, buttons, sign up */\n.button {\n  backface-visibility: hidden;\n  position: relative;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: center;\n  white-space: nowrap;\n  background: linear-gradient(180deg,#ce8 0%,#592 100%);\n  border-radius: 20px;\n  border: 0.5px solid #8c4;\n  border-width: 0.5px 0.5px 0.5px 0.5px;\n  padding: 12px 50px 12px 15px;\n  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6),0px 1px 2px rgba(0,0,0,0.5);\n  color: #372;\n  font-size: 16px;\n  font-family: Helvetica Neue;\n  font-weight: 900;\n  font-style: normal;\n  text-shadow: 0px 1px 0px rgba(255,255,255,0.5)\n}\n\n.button span {\n  color: #372;\n  background: #fff;\n  border-radius: 20px;\n  border: 3px solid #371;\n  border-width: 3px 3px 3px 3px;\n  padding: 8px 8px 7px 8px;\n  margin: 0px 0px 0px 0px;\n  position: absolute;\n  top: 0px;\n  right: 0px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JaydipPrajapati1910_tiny-moose-9.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  SIGNUP\n  <text></text>\n  <view viewBox=\"0 0 16 16\" class=\"bi bi-door-open-fill\" fill=\"currentColor\" height=\"19\" width=\"19\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  <path d=\"M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z\"></path>\n</svg></span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyTinyMoose9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: green, button, sign-up, buttons, sign up */\n.button {\n  backface-visibility: hidden;\n  position: relative;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: center;\n  white-space: nowrap;\n  background: linear-gradient(180deg,#ce8 0%,#592 100%);\n  border-radius: 40rpx;\n  border: 1rpx solid #8c4;\n  border-width: 1rpx 1rpx 1rpx 1rpx;\n  padding: 24rpx 100rpx 24rpx 30rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 2rpx 0rpx rgba(255,255,255,0.6),0rpx 2rpx 4rpx rgba(0,0,0,0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: #372;\n  font-size: 32rpx;\n  font-family: Helvetica Neue;\n  font-weight: 900;\n  font-style: normal;\n  /* #ifdef H5 */\n  text-shadow: 0rpx 2rpx 0rpx rgba(255,255,255,0.5)\n}\n\n.button span {\n  color: #372;\n  /* #endif */\n  background: #fff;\n  border-radius: 40rpx;\n  border: 6rpx solid #371;\n  border-width: 6rpx 6rpx 6rpx 6rpx;\n  padding: 16rpx 16rpx 14rpx 16rpx;\n  margin: 0rpx 0rpx 0rpx 0rpx;\n  position: absolute;\n  top: 0rpx;\n  right: 0rpx;\n}\n\n\n",
+    "component_name": "GalaxyTinyMoose9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1397,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.495Z",
+  "updated_at": "2025-07-31T07:55:33.495Z"
+}

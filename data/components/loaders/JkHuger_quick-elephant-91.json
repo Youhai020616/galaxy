@@ -1,0 +1,85 @@
+{
+  "id": "JkHuger_quick-elephant-91",
+  "name": "quick-elephant-91",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "quick-elephant-91 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"mini-loader-content\">\n  <svg viewBox=\"0 0 500.00001 500.00001\" height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\" id=\"mini-loader\">\n    <g>\n      <path d=\"M66.734 66.734v366.533h366.532V66.734H66.734zm15 15h336.532v336.533H81.734V81.734z\" id=\"b0\">\n      </path>\n      <path d=\"M354.16 2.5v143.34H497.5V2.5H354.16zm10 10H487.5v123.34H364.16V12.5z\" id=\"b2\">\n      </path>\n      <path d=\"M0 2.5v143.34h143.34V2.5H0zm10 10h123.34v123.34H10V12.5z\" id=\"b1\">\n      </path>\n      <path d=\"M354.16 356.66V500H497.5V356.66H354.16zm10 10H487.5V490H364.16V366.66z\" id=\"b3\">\n      </path>\n      <path d=\"M0 356.66V500h143.34V356.66H0zm10 10h123.34V490H10V366.66z\" id=\"b4\">\n      </path>\n    </g>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: loader */\n#b0 {\n  animation: b0 4s infinite ease;\n  transform-origin: 250px 250px;\n}\n\n#b1 {\n  animation: b1 4s infinite ease;\n}\n\n#b2 {\n  animation: b2 4s infinite ease;\n}\n\n#b3 {\n  animation: b3 4s infinite ease;\n}\n\n#b4 {\n  animation: b4 4s infinite ease;\n}\n\n@keyframes b0 {\n  0% {\n    transform: rotate(0);\n  }\n\n  25% {\n    transform: rotate(-90deg);\n  }\n\n  50% {\n    transform: rotate(-180deg);\n  }\n\n  75% {\n    transform: rotate(-270deg);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}\n\n@keyframes b1 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, 355px);\n  }\n\n  50% {\n    transform: translate(355px, 355px);\n  }\n\n  75% {\n    transform: translate(355px, 0);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes b2 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(-355px, 0);\n  }\n\n  50% {\n    transform: translate(-355px, 355px);\n  }\n\n  75% {\n    transform: translate(0, 355px);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes b3 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, -355px);\n  }\n\n  50% {\n    transform: translate(-355px, -355px);\n  }\n\n  75% {\n    transform: translate(-355px, 0);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes b4 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(355px, 0);\n  }\n\n  50% {\n    transform: translate(355px, -355px);\n  }\n\n  75% {\n    transform: translate(0, -355px);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_quick-elephant-91.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"mini-loader-content\"></view>\n  <view viewBox=\"0 0 500.00001 500.00001\" height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\" id=\"mini-loader\"></view>\n    <g>\n      <path d=\"M66.734 66.734v366.533h366.532V66.734H66.734zm15 15h336.532v336.533H81.734V81.734z\" id=\"b0\">\n      </path>\n      <path d=\"M354.16 2.5v143.34H497.5V2.5H354.16zm10 10H487.5v123.34H364.16V12.5z\" id=\"b2\">\n      </path>\n      <path d=\"M0 2.5v143.34h143.34V2.5H0zm10 10h123.34v123.34H10V12.5z\" id=\"b1\">\n      </path>\n      <path d=\"M354.16 356.66V500H497.5V356.66H354.16zm10 10H487.5V490H364.16V366.66z\" id=\"b3\">\n      </path>\n      <path d=\"M0 356.66V500h143.34V356.66H0zm10 10h123.34V490H10V366.66z\" id=\"b4\">\n      </path>\n    </g>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuickElephant91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: loader */\n#b0 {\n  animation: b0 4s infinite ease;\n  transform-origin: 500rpx 500rpx;\n}\n\n#b1 {\n  animation: b1 4s infinite ease;\n}\n\n#b2 {\n  animation: b2 4s infinite ease;\n}\n\n#b3 {\n  animation: b3 4s infinite ease;\n}\n\n#b4 {\n  animation: b4 4s infinite ease;\n}\n\n@keyframes b0 {\n  0% {\n    transform: rotate(0);\n  }\n\n  25% {\n    transform: rotate(-90deg);\n  }\n\n  50% {\n    transform: rotate(-180deg);\n  }\n\n  75% {\n    transform: rotate(-270deg);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}\n\n@keyframes b1 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, 710rpx);\n  }\n\n  50% {\n    transform: translate(710rpx, 710rpx);\n  }\n\n  75% {\n    transform: translate(710rpx, 0);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes b2 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(-710rpx, 0);\n  }\n\n  50% {\n    transform: translate(-710rpx, 710rpx);\n  }\n\n  75% {\n    transform: translate(0, 710rpx);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes b3 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(0, -710rpx);\n  }\n\n  50% {\n    transform: translate(-710rpx, -710rpx);\n  }\n\n  75% {\n    transform: translate(-710rpx, 0);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@keyframes b4 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  25% {\n    transform: translate(710rpx, 0);\n  }\n\n  50% {\n    transform: translate(710rpx, -710rpx);\n  }\n\n  75% {\n    transform: translate(0, -710rpx);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n",
+    "component_name": "GalaxyQuickElephant91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2297,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.511Z",
+  "updated_at": "2025-07-31T07:55:39.511Z"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "piolho123_lazy-husky-91",
+  "name": "lazy-husky-91",
+  "category": "tooltips",
+  "author": "piolho123",
+  "description": "lazy-husky-91 组件 (simple, tooltip, pink, animation, interactive)",
+  "tags": [
+    "simple",
+    "tooltip",
+    "pink",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">Uiverse.io</span>\n  <span class=\"text\">Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by piolho123  - Tags: simple, tooltip, pink */\n/* This is an example, feel free to delete this code */\n.tooltip-container {\n  border-radius: 20px;\n  --background: #f1f;\n  position: relative;\n  background: var(--background);\n  cursor: pointer;\n  transition: all 0.2s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,\n    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,\n    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,\n    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,\n    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n}\n\n.tooltip {\n  border: 1px solid #f1f;\n  border-radius: 20px;\n  position: absolute;\n  top: 0;\n  left: 10%;\n  transform: translateX(-50%);\n  padding: 0.3em 0.6em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s;\n  background: transparente;\n  color: #f1f;\n  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,\n    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,\n    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,\n    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,\n    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 0.6em;\n  width: 0.6em;\n  bottom: -0.2em;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  background: var(--background);\n}\n\n.tooltip-container:hover .tooltip {\n  top: -100%;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/piolho123_lazy-husky-91.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\">Uiverse.io</text>\n  <text class=\"text\">Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLazyHusky91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by piolho123  - Tags: simple, tooltip, pink */\n/* This is an example, feel free to delete this code */\n.tooltip-container {\n  border-radius: 40rpx;\n  --background: #f1f;\n  position: relative;\n  background: var(--background);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.17) 0rpx -46rpx 50rpx 0rpx inset,\n    rgba(0, 0, 0, 0.15) 0rpx -72rpx 60rpx 0rpx inset,\n    rgba(0, 0, 0, 0.1) 0rpx -158rpx 80rpx 0rpx inset, rgba(0, 0, 0, 0.06) 0rpx 4rpx 2rpx,\n    rgba(0, 0, 0, 0.09) 0rpx 8rpx 4rpx, rgba(0, 0, 0, 0.09) 0rpx 16rpx 8rpx,\n    rgba(0, 0, 0, 0.09) 0rpx 32rpx 16rpx, rgba(0, 0, 0, 0.09) 0rpx 64rpx 32rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.tooltip {\n  border: 2rpx solid #f1f;\n  border-radius: 40rpx;\n  position: absolute;\n  top: 0;\n  left: 10%;\n  transform: translateX(-50%);\n  padding: 0.3em 0.6em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s;\n  background: transparente;\n  color: #f1f;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.17) 0rpx -46rpx 50rpx 0rpx inset,\n    rgba(0, 0, 0, 0.15) 0rpx -72rpx 60rpx 0rpx inset,\n    rgba(0, 0, 0, 0.1) 0rpx -158rpx 80rpx 0rpx inset, rgba(0, 0, 0, 0.06) 0rpx 4rpx 2rpx,\n    rgba(0, 0, 0, 0.09) 0rpx 8rpx 4rpx, rgba(0, 0, 0, 0.09) 0rpx 16rpx 8rpx,\n    rgba(0, 0, 0, 0.09) 0rpx 32rpx 16rpx, rgba(0, 0, 0, 0.09) 0rpx 64rpx 32rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 0.6em;\n  width: 0.6em;\n  bottom: -0.2em;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  background: var(--background);\n}\n\n.tooltip-container:hover .tooltip {\n  top: -100%;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}\n\n",
+    "component_name": "GalaxyLazyHusky91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1708,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.737Z",
+  "updated_at": "2025-07-31T07:55:38.737Z"
+}

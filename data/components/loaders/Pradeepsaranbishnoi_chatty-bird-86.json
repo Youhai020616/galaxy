@@ -1,0 +1,89 @@
+{
+  "id": "Pradeepsaranbishnoi_chatty-bird-86",
+  "name": "chatty-bird-86",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "chatty-bird-86 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"circ\">\n  <div class=\"load\">Loading . . . </div>\n  <div class=\"hands\"></div>\n  <div class=\"body\"></div>\n  <div class=\"head\">\n    <div class=\"eye\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n.eye {\n  width: 20px;\n  height: 8px;\n  background-color: rgba(240,220,220,1);\n  border-radius: 0px 0px 20px 20px;\n  position: relative;\n  left: 10px;\n  top: 40px;\n  box-shadow: 40px 0px 0px 0px rgba(240,220,220,1);\n}\n\n.head {\n  backface-visibility: hidden;\n  position: relative;\n  margin: -250px auto;\n  width: 80px;\n  height: 80px;\n  background-color: #111;\n  border-radius: 50px;\n  box-shadow: inset -4px 2px 0px 0px rgba(240,220,220,1);\n  animation: headAnim 1.5s infinite alternate;\n  animation-timing-function: ease-out;\n}\n\n.body {\n  position: relative;\n  margin: 90px auto;\n  width: 140px;\n  height: 120px;\n  background-color: #111;\n  border-radius: 50px/25px;\n  box-shadow: inset -5px 2px 0px 0px rgba(240,220,220,1);\n  animation: bodyAnim 1.5s infinite alternate;\n  animation-timing-function: ease-out;\n}\n\n@keyframes headAnim {\n  0% {\n    top: 0px;\n  }\n\n  50% {\n    top: 10px;\n  }\n\n  100% {\n    top: 0px;\n  }\n}\n\n@keyframes bodyAnim {\n  0% {\n    top: -5px;\n  }\n\n  50% {\n    top: 10px;\n  }\n\n  100% {\n    top: -5px;\n  }\n}\n\n.circ {\n  backface-visibility: hidden;\n  margin: 60px auto;\n  width: 180px;\n  height: 180px;\n  border-radius: 0px 0px 50px 50px;\n  position: relative;\n  z-index: -1;\n  left: 0%;\n  top: 20%;\n  overflow: hidden;\n}\n\n.hands {\n  margin-top: 140px;\n  width: 120px;\n  height: 120px;\n  position: absolute;\n  background-color: #111;\n  border-radius: 20px;\n  box-shadow: -1px -4px 0px 0px rgba(240,220,220,1);\n  transform: rotate(45deg);\n  top: 75%;\n  left: 16%;\n  z-index: 1;\n  animation: bodyAnim 1.5s infinite alternate;\n  animation-timing-function: ease-out;\n}\n\n.load {\n  position: absolute;\n  width: 7ch;\n  height: 32px;\n  text-align: left;\n  line-height: 32px;\n  margin: -10px auto;\n  font-family: 'Julius Sans One', sans-serif;\n  font-size: 28px;\n  font-weight: 400;\n  color: rgb(155, 152, 152);\n  left: 2%;\n  top: 5%;\n  animation: fontAnim 3.75s infinite;\n  animation-timing-function: ease-out;\n  word-wrap: break-word;\n  display: block;\n  overflow: hidden;\n}\n\n@keyframes fontAnim {\n  0% {\n    width: 7ch;\n  }\n\n  16% {\n    width: 8ch;\n  }\n\n  32% {\n    width: 9ch;\n  }\n\n  48% {\n    width: 10ch;\n  }\n\n  64% {\n    width: 11ch;\n  }\n\n  80% {\n    width: 12ch;\n  }\n\n  100% {\n    width: 13ch;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_chatty-bird-86.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"circ\"></view>\n  <view class=\"load\">Loading . . . </view>\n  <view class=\"hands\"></view>\n  <view class=\"body\"></view>\n  <view class=\"head\"></view>\n    <view class=\"eye\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyChattyBird86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n.eye {\n  width: 40rpx;\n  height: 16rpx;\n  background-color: rgba(240,220,220,1);\n  border-radius: 0rpx 0rpx 40rpx 40rpx;\n  position: relative;\n  left: 20rpx;\n  top: 80rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 80rpx 0rpx 0rpx 0rpx rgba(240,220,220,1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.head {\n  backface-visibility: hidden;\n  position: relative;\n  margin: -500rpx auto;\n  width: 160rpx;\n  height: 160rpx;\n  background-color: #111;\n  border-radius: 100rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -8rpx 4rpx 0rpx 0rpx rgba(240,220,220,1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: headAnim 1.5s infinite alternate;\n  animation-timing-function: ease-out;\n}\n\n.body {\n  position: relative;\n  margin: 180rpx auto;\n  width: 280rpx;\n  height: 240rpx;\n  background-color: #111;\n  border-radius: 100rpx/50rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -10rpx 4rpx 0rpx 0rpx rgba(240,220,220,1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: bodyAnim 1.5s infinite alternate;\n  animation-timing-function: ease-out;\n}\n\n@keyframes headAnim {\n  0% {\n    top: 0rpx;\n  }\n\n  50% {\n    top: 20rpx;\n  }\n\n  100% {\n    top: 0rpx;\n  }\n}\n\n@keyframes bodyAnim {\n  0% {\n    top: -10rpx;\n  }\n\n  50% {\n    top: 20rpx;\n  }\n\n  100% {\n    top: -10rpx;\n  }\n}\n\n.circ {\n  backface-visibility: hidden;\n  margin: 120rpx auto;\n  width: 360rpx;\n  height: 360rpx;\n  border-radius: 0rpx 0rpx 100rpx 100rpx;\n  position: relative;\n  z-index: -1;\n  left: 0%;\n  top: 20%;\n  overflow: hidden;\n}\n\n.hands {\n  margin-top: 280rpx;\n  width: 240rpx;\n  height: 240rpx;\n  position: absolute;\n  background-color: #111;\n  border-radius: 40rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -2rpx -8rpx 0rpx 0rpx rgba(240,220,220,1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotate(45deg);\n  top: 75%;\n  left: 16%;\n  z-index: 1;\n  animation: bodyAnim 1.5s infinite alternate;\n  animation-timing-function: ease-out;\n}\n\n.load {\n  position: absolute;\n  width: 7ch;\n  height: 64rpx;\n  text-align: left;\n  line-height: 64rpx;\n  margin: -20rpx auto;\n  font-family: 'Julius Sans One', sans-serif;\n  font-size: 56rpx;\n  font-weight: 400;\n  color: rgb(155, 152, 152);\n  left: 2%;\n  top: 5%;\n  animation: fontAnim 3.75s infinite;\n  animation-timing-function: ease-out;\n  word-wrap: break-word;\n  display: block;\n  overflow: hidden;\n}\n\n@keyframes fontAnim {\n  0% {\n    width: 7ch;\n  }\n\n  16% {\n    width: 8ch;\n  }\n\n  32% {\n    width: 9ch;\n  }\n\n  48% {\n    width: 10ch;\n  }\n\n  64% {\n    width: 11ch;\n  }\n\n  80% {\n    width: 12ch;\n  }\n\n  100% {\n    width: 13ch;\n  }\n}\n",
+    "component_name": "GalaxyChattyBird86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2459,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.045Z",
+  "updated_at": "2025-07-31T07:55:40.045Z"
+}

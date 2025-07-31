@@ -1,0 +1,104 @@
+{
+  "id": "Jules-gitclerc_slimy-mouse-94",
+  "name": "slimy-mouse-94",
+  "category": "buttons",
+  "author": "Jules-gitclerc",
+  "description": "slimy-mouse-94 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"w-full h-40 flex items-center justify-center\">\n  <a href=\"#\" class=\"relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-700 dark:text-white dark:hover:text-gray-200 dark:shadow-none group\">\n    <span class=\"absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full\"></span>\n    <span class=\"absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12\">\n      <svg class=\"w-5 h-5 text-green-400\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M14 5l7 7m0 0l-7 7m7-7H3\"></path>\n      </svg>\n    </span>\n    <span class=\"absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200\">\n      <svg class=\"w-5 h-5 text-green-400\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M14 5l7 7m0 0l-7 7m7-7H3\"></path>\n      </svg>\n    </span>\n    <span class=\"relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200\">Button</span>\n  </a>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/Jules-gitclerc_slimy-mouse-94.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"w-full h-40 flex items-center justify-center\"></view>\n  <navigator href=\"#\" class=\"relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-700 dark:text-white dark:hover:text-gray-200 dark:shadow-none group\"></navigator>\n    <text class=\"absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full\"></text>\n    <text class=\"absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12\"></text>\n      <view class=\"w-5 h-5 text-green-400\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M14 5l7 7m0 0l-7 7m7-7H3\"></path>\n      </svg>\n    </span>\n    <text class=\"absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200\"></text>\n      <view class=\"w-5 h-5 text-green-400\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M14 5l7 7m0 0l-7 7m7-7H3\"></path>\n      </svg>\n    </span>\n    <text class=\"relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200\">Button</text>\n  </a>\n</div>",
+    "script": "export default {\n  name: 'GalaxySlimyMouse94',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxySlimyMouse94"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1412,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.615Z",
+  "updated_at": "2025-07-31T07:55:33.615Z"
+}

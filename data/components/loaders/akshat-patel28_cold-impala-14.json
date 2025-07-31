@@ -1,0 +1,89 @@
+{
+  "id": "akshat-patel28_cold-impala-14",
+  "name": "cold-impala-14",
+  "category": "loaders",
+  "author": "akshat-patel28",
+  "description": "cold-impala-14 组件 (animation, loader, text animation, animated, typewriter, gradient)",
+  "tags": [
+    "animation",
+    "loader",
+    "text animation",
+    "animated",
+    "typewriter",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n<span class=\"loader-text\">Loading...</span>\n</div>",
+    "css": "/* From Uiverse.io by akshat-patel28 - Tags: animation, loader, text animation, animated, typewriter */\n.loader {\n  position: relative;\n  overflow: hidden;\n  border-right: 3px solid;\n  width: 0px;\n  animation: typewriter 2s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;\n}\n\n.loader-text {\n  font-size: 40px;\n  font-weight: 700;\n  background: linear-gradient(to right,#159957, #155799);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n@keyframes typewriter {\n  0% {\n    width: 0px;\n  }\n\n  100% {\n    width: 240px;\n  }\n}\n\n@keyframes blink {\n  0% {\n    border-right-color: rgba(255,255,255,.75);\n    ;\n  }\n\n  100% {\n    border-right-color: transparent;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/akshat-patel28_cold-impala-14.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n<text class=\"loader-text\">Loading...</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyColdImpala14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by akshat-patel28 - Tags: animation, loader, text animation, animated, typewriter */\n.loader {\n  position: relative;\n  overflow: hidden;\n  border-right: 6rpx solid;\n  width: 0rpx;\n  animation: typewriter 2s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;\n}\n\n.loader-text {\n  font-size: 80rpx;\n  font-weight: 700;\n  background: linear-gradient(to right,#159957, #155799);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n@keyframes typewriter {\n  0% {\n    width: 0rpx;\n  }\n\n  100% {\n    width: 480rpx;\n  }\n}\n\n@keyframes blink {\n  0% {\n    border-right-color: rgba(255,255,255,.75);\n    ;\n  }\n\n  100% {\n    border-right-color: transparent;\n  }\n}\n",
+    "component_name": "GalaxyColdImpala14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 774,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.895Z",
+  "updated_at": "2025-07-31T07:55:40.895Z"
+}

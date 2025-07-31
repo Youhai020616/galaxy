@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_hot-dragonfly-11",
+  "name": "hot-dragonfly-11",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "hot-dragonfly-11 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  width: 78px;\n  height: 78px;\n  border-radius: 50%;\n  background: #fff;\n  border: 8px solid #131a1d;\n  overflow: hidden;\n  box-sizing: border-box;\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  top: -50%;\n  width: 100%;\n  height: 100%;\n  background: #263238;\n  z-index: 5;\n  border-bottom: 8px solid #131a1d;\n  box-sizing: border-box;\n  animation: eyeShade 3s infinite;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  left: 20px;\n  bottom: 15px;\n  width: 32px;\n  z-index: 2;\n  height: 32px;\n  background: #111;\n  border-radius: 50%;\n  animation: eyeMove 3s infinite;\n}\n\n@keyframes eyeShade {\n  0% {\n    transform: translateY(0)\n  }\n\n  20% {\n    transform: translateY(5px)\n  }\n\n  40% , 50% {\n    transform: translateY(-5px)\n  }\n\n  60% {\n    transform: translateY( -8px)\n  }\n\n  75% {\n    transform: translateY( 5px)\n  }\n\n  100% {\n    transform: translateY(10px)\n  }\n}\n\n@keyframes eyeMove {\n  0% {\n    transform: translate(0 , 0)\n  }\n\n  20% {\n    transform: translate(0px , 5px)\n  }\n\n  40% , 50% {\n    transform: translate(0px , -5px)\n  }\n\n  60% {\n    transform: translate(-10px , -5px)\n  }\n\n  75% {\n    transform: translate(-20px , 5px)\n  }\n\n  100% {\n    transform: translate(0 , 10px)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_hot-dragonfly-11.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyHotDragonfly11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  width: 156rpx;\n  height: 156rpx;\n  border-radius: 50%;\n  background: #fff;\n  border: 16rpx solid #131a1d;\n  overflow: hidden;\n  box-sizing: border-box;\n}\n\n.loader::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  top: -50%;\n  width: 100%;\n  height: 100%;\n  background: #263238;\n  z-index: 5;\n  border-bottom: 16rpx solid #131a1d;\n  box-sizing: border-box;\n  animation: eyeShade 3s infinite;\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  left: 40rpx;\n  bottom: 30rpx;\n  width: 64rpx;\n  z-index: 2;\n  height: 64rpx;\n  background: #111;\n  border-radius: 50%;\n  animation: eyeMove 3s infinite;\n}\n\n@keyframes eyeShade {\n  0% {\n    transform: translateY(0)\n  }\n\n  20% {\n    transform: translateY(10rpx)\n  }\n\n  40% , 50% {\n    transform: translateY(-10rpx)\n  }\n\n  60% {\n    transform: translateY( -16rpx)\n  }\n\n  75% {\n    transform: translateY( 10rpx)\n  }\n\n  100% {\n    transform: translateY(20rpx)\n  }\n}\n\n@keyframes eyeMove {\n  0% {\n    transform: translate(0 , 0)\n  }\n\n  20% {\n    transform: translate(0rpx , 10rpx)\n  }\n\n  40% , 50% {\n    transform: translate(0rpx , -10rpx)\n  }\n\n  60% {\n    transform: translate(-20rpx , -10rpx)\n  }\n\n  75% {\n    transform: translate(-40rpx , 10rpx)\n  }\n\n  100% {\n    transform: translate(0 , 20rpx)\n  }\n}\n",
+    "component_name": "GalaxyHotDragonfly11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1336,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.365Z",
+  "updated_at": "2025-07-31T07:55:40.365Z"
+}

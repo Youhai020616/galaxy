@@ -1,0 +1,122 @@
+{
+  "id": "TaniaDou_witty-rabbit-59",
+  "name": "witty-rabbit-59",
+  "category": "buttons",
+  "author": "TaniaDou",
+  "description": "witty-rabbit-59 组件 (gradient, button, modern, neon, interactive)",
+  "tags": [
+    "gradient",
+    "button",
+    "modern",
+    "neon",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"button\">\n  Button<span class=\"button-border\"></span>\n</div>",
+    "css": "/* From Uiverse.io by TaniaDou - Tags: gradient, button, modern, neon */\n.button {\n  padding: 1rem 2rem;\n  border-radius: .5rem;\n  border: none;\n  font-size: 1rem;\n  font-weight: 400;\n  color: #f4f0ff;\n  text-align: center;\n  backdrop-filter: blur(10px);\n  cursor: pointer;\n}\n\n.button::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: .5rem;\n  background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);\n  box-shadow: inset 0 0 12px rgba(151,200,255,.44);\n  z-index: -1;\n}\n\n.button::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);\n  box-shadow: inset 0 0 12px rgba(151,200,255,.44);\n  border-radius: .5rem;\n  opacity: 0;\n  z-index: -1;\n  transition: all .3s ease-in;\n}\n\n.button:hover::after {\n  opacity: 1;\n}\n\n.button-border {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: .5rem;\n  z-index: -1;\n}\n\n.button-border::before {\n  content: \"\";\n  position: absolute;\n  border-radius: .5rem;\n  padding: 1px;\n  inset: 0;\n  background: linear-gradient(180deg, rgba(184, 238, 255, 0.24) 0%, rgba(184, 238, 255, 0) 100%),linear-gradient(0deg, rgba(184, 238, 255, 0.32), rgba(184, 238, 255, 0.32));\n  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);\n  -webkit-mask-composite: xor;\n  pointer-events: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/TaniaDou_witty-rabbit-59.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"button\"></view>\n  Button<text class=\"button-border\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWittyRabbit59',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TaniaDou - Tags: gradient, button, modern, neon */\n.button {\n  padding: 1rem 2rem;\n  border-radius: .5rem;\n  border: none;\n  font-size: 1rem;\n  font-weight: 400;\n  color: #f4f0ff;\n  text-align: center;\n  backdrop-\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.button::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: .5rem;\n  background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 24rpx rgba(151,200,255,.44);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: -1;\n}\n\n.button::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 24rpx rgba(151,200,255,.44);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: .5rem;\n  opacity: 0;\n  z-index: -1;\n  transition: all .3s ease-in;\n}\n\n.button:hover::after {\n  opacity: 1;\n}\n\n.button-border {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  border-radius: .5rem;\n  z-index: -1;\n}\n\n.button-border::before {\n  content: \"\";\n  position: absolute;\n  border-radius: .5rem;\n  padding: 2rpx;\n  inset: 0;\n  background: linear-gradient(180deg, rgba(184, 238, 255, 0.24) 0%, rgba(184, 238, 255, 0) 100%),linear-gradient(0deg, rgba(184, 238, 255, 0.32), rgba(184, 238, 255, 0.32));\n  -webkit-\n  -webkit-mask-composite: xor;\n  pointer-events: none;\n}\n",
+    "component_name": "GalaxyWittyRabbit59"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1658,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.995Z",
+  "updated_at": "2025-07-31T07:55:34.995Z"
+}

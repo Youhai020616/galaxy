@@ -1,0 +1,115 @@
+{
+  "id": "hssqrshi_light-rattlesnake-90",
+  "name": "light-rattlesnake-90",
+  "category": "buttons",
+  "author": "hssqrshi",
+  "description": "light-rattlesnake-90 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Join Now<span class=\"arrow\">&gt;</span></button>",
+    "css": "/* From Uiverse.io by hssqrshi  - Tags: button */\n.button {\n  background-color: #c47dfb;\n  background-image: linear-gradient(to bottom, #d992ff, #c47dfb);\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  border-radius: 12px;\n  position: relative;\n  overflow: hidden;\n  transition:\n    transform 0.2s ease,\n    box-shadow 0.2s ease,\n    background-color 0.3s ease;\n  transform: perspective(500px) rotateX(0deg);\n}\n\n.button:hover {\n  background-color: #b46cea;\n  transform: perspective(500px) rotateX(5deg);\n  animation: glow 1.5s infinite alternate;\n}\n\n.button:focus {\n  outline: none;\n  box-shadow: 0 0 0 4px rgba(196, 125, 251, 0.5);\n}\n\n.button:active {\n  transform: perspective(500px) rotateX(-5deg) translateY(2px);\n  box-shadow:\n    0 4px 8px rgba(0, 0, 0, 0.2),\n    0 10px 15px rgba(0, 0, 0, 0.2);\n}\n\n@keyframes glow {\n  0% {\n    box-shadow:\n      0 0 10px rgba(196, 125, 251, 0.5),\n      0 0 20px rgba(196, 125, 251, 0.5),\n      0 0 30px rgba(196, 125, 251, 0.5);\n  }\n  100% {\n    box-shadow:\n      0 0 20px rgba(196, 125, 251, 0.8),\n      0 0 30px rgba(196, 125, 251, 0.8),\n      0 0 40px rgba(196, 125, 251, 0.8);\n  }\n}\n\n.button .text {\n  transition:\n    transform 0.3s ease,\n    color 0.3s ease,\n    font-size 0.3s ease;\n}\n\n.button:hover .text {\n  transform: scale(1.2);\n  font-size: 18px;\n  color: #e0bbff;\n}\n\n.arrow {\n  display: inline-block;\n  margin-left: 8px;\n  transition: transform 0.3s ease;\n  font-size: 16px;\n}\n\n.button:hover .arrow {\n  transform: translateX(5px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/hssqrshi_light-rattlesnake-90.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Join Now<text class=\"arrow\">&gt;</text></button>",
+    "script": "export default {\n  name: 'GalaxyLightRattlesnake90',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by hssqrshi  - Tags: button */\n.button {\n  background-color: #c47dfb;\n  background-image: linear-gradient(to bottom, #d992ff, #c47dfb);\n  border: none;\n  color: white;\n  padding: 30rpx 64rpx;\n  text-align: center;\n  text-decoration: none;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 32rpx;\n  margin: 8rpx 4rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border-radius: 24rpx;\n  position: relative;\n  overflow: hidden;\n  transition:\n    transform 0.2s ease,\n    box-shadow 0.2s ease,\n    background-color 0.3s ease;\n  transform: perspective(1000rpx) rotateX(0deg);\n}\n\n.button:hover {\n  background-color: #b46cea;\n  transform: perspective(1000rpx) rotateX(5deg);\n  animation: glow 1.5s infinite alternate;\n}\n\n.button:focus {\n  outline: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx rgba(196, 125, 251, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:active {\n  transform: perspective(1000rpx) rotateX(-5deg) translateY(4rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    0 8rpx 16rpx rgba(0, 0, 0, 0.2),\n    0 20rpx 30rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes glow {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n      0 0 20rpx rgba(196, 125, 251, 0.5),\n      0 0 40rpx rgba(196, 125, 251, 0.5),\n      0 0 60rpx rgba(196, 125, 251, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n      0 0 40rpx rgba(196, 125, 251, 0.8),\n      0 0 60rpx rgba(196, 125, 251, 0.8),\n      0 0 80rpx rgba(196, 125, 251, 0.8);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n.button .text {\n  transition:\n    transform 0.3s ease,\n    color 0.3s ease,\n    font-size 0.3s ease;\n}\n\n.button:hover .text {\n  transform: scale(1.2);\n  font-size: 36rpx;\n  color: #e0bbff;\n}\n\n.arrow {\n  display: inline-block;\n  margin-left: 16rpx;\n  transition: transform 0.3s ease;\n  font-size: 32rpx;\n}\n\n.button:hover .arrow {\n  transform: translateX(10rpx);\n}\n\n",
+    "component_name": "GalaxyLightRattlesnake90"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1751,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.937Z",
+  "updated_at": "2025-07-31T07:55:36.937Z"
+}

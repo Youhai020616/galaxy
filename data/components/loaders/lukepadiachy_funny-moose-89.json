@@ -1,0 +1,90 @@
+{
+  "id": "lukepadiachy_funny-moose-89",
+  "name": "funny-moose-89",
+  "category": "loaders",
+  "author": "lukepadiachy",
+  "description": "funny-moose-89 组件 (simple, form, loader, cube, animated, pattern, animation)",
+  "tags": [
+    "simple",
+    "form",
+    "loader",
+    "cube",
+    "animated",
+    "pattern",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"my-loader\">\n  <div class=\"rubiks-cube\">\n    <div class=\"face front\">\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n    </div>\n\n    <div class=\"face back\">\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n    </div>\n    <div class=\"face left\">\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n    </div>\n    <div class=\"face right\">\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n    </div>\n    <div class=\"face top\">\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n    </div>\n    <div class=\"face bottom\">\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n      <div style=\"background: #ffeb3b;\" class=\"cube\"></div>\n      <div style=\"background: #4caf50;\" class=\"cube\"></div>\n      <div style=\"background: #2196f3;\" class=\"cube\"></div>\n      <div style=\"background: #ffffff;\" class=\"cube\"></div>\n      <div style=\"background: #ff3d00;\" class=\"cube\"></div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by lukepadiachy  - Tags: simple, form, loader, cube, animated, pattern */\n.my-loader {\n  width: 200px;\n  height: 200px;\n  perspective: 1000px;\n  margin: 100px auto;\n}\n\n.rubiks-cube {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: my-rotateCube 5s infinite linear;\n}\n\n.my-loader .face {\n  position: absolute;\n  display: flex;\n  flex-wrap: wrap;\n  width: 100%;\n  height: 100%;\n}\n\n.my-loader .face.front {\n  transform: translateZ(100px);\n}\n.my-loader .face.back {\n  transform: rotateY(180deg) translateZ(100px);\n}\n.my-loader .face.left {\n  transform: rotateY(-90deg) translateZ(100px);\n}\n.my-loader .face.right {\n  transform: rotateY(90deg) translateZ(100px);\n}\n.my-loader .face.top {\n  transform: rotateX(90deg) translateZ(100px);\n}\n.my-loader .face.bottom {\n  transform: rotateX(-90deg) translateZ(100px);\n}\n\n.my-loader .cube {\n  width: calc(100% / 3);\n  height: calc(100% / 3);\n  box-sizing: border-box;\n  border: 1px solid #000;\n}\n\n@keyframes my-rotateCube {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/lukepadiachy_funny-moose-89.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"my-loader\"></view>\n  <view class=\"rubiks-cube\"></view>\n    <view class=\"face front\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n    </div>\n\n    <view class=\"face back\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n    </div>\n    <view class=\"face left\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n    </div>\n    <view class=\"face right\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n    </div>\n    <view class=\"face top\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n    </div>\n    <view class=\"face bottom\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n      <view style=\"background: #ffeb3b;\" class=\"cube\"></view>\n      <view style=\"background: #4caf50;\" class=\"cube\"></view>\n      <view style=\"background: #2196f3;\" class=\"cube\"></view>\n      <view style=\"background: #ffffff;\" class=\"cube\"></view>\n      <view style=\"background: #ff3d00;\" class=\"cube\"></view>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFunnyMoose89',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by lukepadiachy  - Tags: simple, form, loader, cube, animated, pattern */\n.my-loader {\n  width: 400rpx;\n  height: 400rpx;\n  perspective: 2000rpx;\n  margin: 200rpx auto;\n}\n\n.rubiks-cube {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: my-rotateCube 5s infinite linear;\n}\n\n.my-loader .face {\n  position: absolute;\n  display: flex;\n  flex-wrap: wrap;\n  width: 100%;\n  height: 100%;\n}\n\n.my-loader .face.front {\n  transform: translateZ(200rpx);\n}\n.my-loader .face.back {\n  transform: rotateY(180deg) translateZ(200rpx);\n}\n.my-loader .face.left {\n  transform: rotateY(-90deg) translateZ(200rpx);\n}\n.my-loader .face.right {\n  transform: rotateY(90deg) translateZ(200rpx);\n}\n.my-loader .face.top {\n  transform: rotateX(90deg) translateZ(200rpx);\n}\n.my-loader .face.bottom {\n  transform: rotateX(-90deg) translateZ(200rpx);\n}\n\n.my-loader .cube {\n  width: calc(100% / 3);\n  height: calc(100% / 3);\n  box-sizing: border-box;\n  border: 2rpx solid #000;\n}\n\n@keyframes my-rotateCube {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyFunnyMoose89"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 4702,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.316Z",
+  "updated_at": "2025-07-31T07:55:42.316Z"
+}

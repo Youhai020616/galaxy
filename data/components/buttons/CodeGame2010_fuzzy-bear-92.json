@@ -1,0 +1,108 @@
+{
+  "id": "CodeGame2010_fuzzy-bear-92",
+  "name": "fuzzy-bear-92",
+  "category": "buttons",
+  "author": "CodeGame2010",
+  "description": "fuzzy-bear-92 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Enter Room\n    <svg viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"20\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path>\n    </svg>\n</button>",
+    "css": "/* From Uiverse.io by CodeGame2010 - Tags: button */\nbutton {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  border: 0;\n  outline: 0;\n  font-size: 18px;\n  background: #08f;\n  color: #fff;\n}\n\nsvg {\n  margin: 0 0 0 10px;\n}\n\nbutton:hover svg {\n  margin: 0 0 0 25px;\n  transition: 0.3s;\n}\n\nbutton:not(:hover) svg {\n  transition: 0.3s;\n}\n\nbutton:active {\n  transform: scale(0.9, 0.9);\n  transition: 200ms;\n}\n\nbutton:not(:active) {\n  transition: 200ms;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/CodeGame2010_fuzzy-bear-92.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Enter Room\n    <view viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right\" fill=\"currentColor\" height=\"20\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n        <path d=\"M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z\" fill-rule=\"evenodd\"></path>\n    </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFuzzyBear92',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by CodeGame2010 - Tags: button */\nbutton {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 400rpx;\n  height: 100rpx;\n  border-radius: 100rpx;\n  border: 0;\n  outline: 0;\n  font-size: 36rpx;\n  background: #08f;\n  color: #fff;\n}\n\nsvg {\n  margin: 0 0 0 20rpx;\n}\n\nbutton:hover svg {\n  margin: 0 0 0 50rpx;\n  transition: 0.3s;\n}\n\nbutton:not(:hover) svg {\n  transition: 0.3s;\n}\n\nbutton:active {\n  transform: scale(0.9, 0.9);\n  transition: 200ms;\n}\n\nbutton:not(:active) {\n  transition: 200ms;\n}\n",
+    "component_name": "GalaxyFuzzyBear92"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 891,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.922Z",
+  "updated_at": "2025-07-31T07:55:32.922Z"
+}

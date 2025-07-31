@@ -1,0 +1,91 @@
+{
+  "id": "Fareny_bad-snail-59",
+  "name": "bad-snail-59",
+  "category": "loaders",
+  "author": "Fareny",
+  "description": "bad-snail-59 组件 (simple, purple, loader, like, circle, html, css, animation)",
+  "tags": [
+    "simple",
+    "purple",
+    "loader",
+    "like",
+    "circle",
+    "html",
+    "css",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <figure class=\"iconLoaderProgress\">\n    <svg class=\"iconLoaderProgressFirst\" width=\"240\" height=\"240\">\n      <circle cx=\"120\" cy=\"120\" r=\"100\"></circle>\n    </svg>\n\n    <svg class=\"iconLoaderProgressSecond\" width=\"240\" height=\"240\">\n      <circle cx=\"120\" cy=\"120\" r=\"100\"></circle>\n    </svg>\n  </figure>\n</div>",
+    "css": "/* From Uiverse.io by Fareny  - Tags: simple, purple, loader, like, circle, html, css */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #141218;\n}\n\n.iconLoaderProgress {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation-duration: 2s;\n  animation-timing-function: linear;\n  animation-iteration-count: infinite;\n  animation-name: rotateLoader;\n}\n\n.iconLoaderProgress svg {\n  stroke-width: 16px;\n  fill: none;\n  transform-origin: center;\n  z-index: 999;\n}\n\n.iconLoaderProgressFirst circle,\n.iconLoaderProgressSecond circle,\n.iconLoaderProgressFirst,\n.iconLoaderProgressSecond {\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n\n.iconLoaderProgressFirst circle,\n.iconLoaderProgressSecond circle {\n  animation-duration: 3s;\n  border-radius: 15px;\n}\n\n.iconLoaderProgressFirst,\n.iconLoaderProgressSecond {\n  position: absolute;\n  animation-duration: 6s;\n}\n\n.iconLoaderProgressFirst circle {\n  animation-name: circleFirst;\n  stroke-dasharray: 628, 628;\n  stroke-dashoffset: 0;\n  stroke: #7c57f4;\n  stroke-linecap: round;\n}\n\n.iconLoaderProgressSecond {\n  transform: rotate(-14deg);\n}\n\n.iconLoaderProgressSecond circle {\n  animation-name: circleSecond;\n  stroke-dasharray: 628, 628;\n  stroke-dashoffset: 0;\n  stroke: #bfb2f7;\n  stroke-linecap: round;\n}\n\n@keyframes circleFirst {\n  from,\n  to {\n    stroke-dashoffset: 50;\n  }\n\n  50% {\n    stroke-dashoffset: 625;\n  }\n}\n\n@keyframes circleSecond {\n  from,\n  to {\n    stroke-dashoffset: -625;\n  }\n\n  50% {\n    stroke-dashoffset: -50;\n  }\n}\n\n@keyframes rotateLoader {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Fareny_bad-snail-59.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <figure class=\"iconLoaderProgress\">\n    <view class=\"iconLoaderProgressFirst\" width=\"240\" height=\"240\"></view>\n      <circle cx=\"120\" cy=\"120\" r=\"100\"></circle>\n    </svg>\n\n    <view class=\"iconLoaderProgressSecond\" width=\"240\" height=\"240\"></view>\n      <circle cx=\"120\" cy=\"120\" r=\"100\"></circle>\n    </svg>\n  </figure>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBadSnail59',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Fareny  - Tags: simple, purple, loader, like, circle, html, css */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #141218;\n}\n\n.iconLoaderProgress {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation-duration: 2s;\n  animation-timing-function: linear;\n  animation-iteration-count: infinite;\n  animation-name: rotateLoader;\n}\n\n.iconLoaderProgress svg {\n  stroke-width: 32rpx;\n  fill: none;\n  transform-origin: center;\n  z-index: 999;\n}\n\n.iconLoaderProgressFirst circle,\n.iconLoaderProgressSecond circle,\n.iconLoaderProgressFirst,\n.iconLoaderProgressSecond {\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n\n.iconLoaderProgressFirst circle,\n.iconLoaderProgressSecond circle {\n  animation-duration: 3s;\n  border-radius: 30rpx;\n}\n\n.iconLoaderProgressFirst,\n.iconLoaderProgressSecond {\n  position: absolute;\n  animation-duration: 6s;\n}\n\n.iconLoaderProgressFirst circle {\n  animation-name: circleFirst;\n  stroke-dasharray: 628, 628;\n  stroke-dashoffset: 0;\n  stroke: #7c57f4;\n  stroke-linecap: round;\n}\n\n.iconLoaderProgressSecond {\n  transform: rotate(-14deg);\n}\n\n.iconLoaderProgressSecond circle {\n  animation-name: circleSecond;\n  stroke-dasharray: 628, 628;\n  stroke-dashoffset: 0;\n  stroke: #bfb2f7;\n  stroke-linecap: round;\n}\n\n@keyframes circleFirst {\n  from,\n  to {\n    stroke-dashoffset: 50;\n  }\n\n  50% {\n    stroke-dashoffset: 625;\n  }\n}\n\n@keyframes circleSecond {\n  from,\n  to {\n    stroke-dashoffset: -625;\n  }\n\n  50% {\n    stroke-dashoffset: -50;\n  }\n}\n\n@keyframes rotateLoader {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyBadSnail59"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2041,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.231Z",
+  "updated_at": "2025-07-31T07:55:39.231Z"
+}

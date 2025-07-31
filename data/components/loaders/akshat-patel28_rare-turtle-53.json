@@ -1,0 +1,87 @@
+{
+  "id": "akshat-patel28_rare-turtle-53",
+  "name": "rare-turtle-53",
+  "category": "loaders",
+  "author": "akshat-patel28",
+  "description": "rare-turtle-53 组件 (animation, loader, animated, box)",
+  "tags": [
+    "animation",
+    "loader",
+    "animated",
+    "box"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"box-1\"></div>\n  <div class=\"box-2\"></div>\n  <div class=\"box-3\"></div>\n</div>",
+    "css": "/* From Uiverse.io by akshat-patel28 - Tags: animation, loader, animated, box */\n.loader {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 30px;\n}\n\n.box-1,.box-2,.box-3 {\n  width: 1px;\n  height: 115px;\n  border: 1px solid #e9e9e9;\n  background-color: transparent;\n  box-sizing: border-box;\n}\n\n.box-1 {\n  animation: box1animation 4s  forwards ease-in-out infinite;\n}\n\n@keyframes box1animation {\n  0% {\n    width: 1px;\n  }\n\n  12.5% {\n    width: 60px;\n  }\n\n  25% {\n    width: 60px;\n  }\n\n  37.5% {\n    width: 1px;\n  }\n\n  50% {\n    width: 1px;\n  }\n\n  62.5% {\n    width: 1px;\n  }\n\n  75% {\n    width: 1px;\n  }\n\n  100% {\n    width: 1px;\n  }\n}\n\n.box-2 {\n  animation: box2animation 4s forwards ease-in-out infinite;\n}\n\n@keyframes box2animation {\n  0% {\n    width: 1px;\n  }\n\n  12.5% {\n    width: 1px;\n  }\n\n  25% {\n    width: 1px;\n  }\n\n  37.5% {\n    width: 60px;\n  }\n\n  50% {\n    width: 60px;\n  }\n\n  62.5% {\n    width: 1px;\n  }\n\n  75% {\n    width: 1px;\n  }\n\n  100% {\n    width: 1px;\n  }\n}\n\n.box-3 {\n  animation: box3animation 4s  forwards ease-in-out infinite;\n}\n\n@keyframes box3animation {\n  0% {\n    width: 1px;\n  }\n\n  12.5% {\n    width: 1px;\n  }\n\n  25% {\n    width: 1px;\n  }\n\n  37.5% {\n    width: 1px;\n  }\n\n  50% {\n    width: 1px;\n  }\n\n  62.5% {\n    width: 60px;\n  }\n\n  75% {\n    width: 60px;\n  }\n\n  100% {\n    width: 1px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/akshat-patel28_rare-turtle-53.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"box-1\"></view>\n  <view class=\"box-2\"></view>\n  <view class=\"box-3\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyRareTurtle53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by akshat-patel28 - Tags: animation, loader, animated, box */\n.loader {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 60rpx;\n}\n\n.box-1,.box-2,.box-3 {\n  width: 2rpx;\n  height: 230rpx;\n  border: 2rpx solid #e9e9e9;\n  background-color: transparent;\n  box-sizing: border-box;\n}\n\n.box-1 {\n  animation: box1animation 4s  forwards ease-in-out infinite;\n}\n\n@keyframes box1animation {\n  0% {\n    width: 2rpx;\n  }\n\n  12.5% {\n    width: 120rpx;\n  }\n\n  25% {\n    width: 120rpx;\n  }\n\n  37.5% {\n    width: 2rpx;\n  }\n\n  50% {\n    width: 2rpx;\n  }\n\n  62.5% {\n    width: 2rpx;\n  }\n\n  75% {\n    width: 2rpx;\n  }\n\n  100% {\n    width: 2rpx;\n  }\n}\n\n.box-2 {\n  animation: box2animation 4s forwards ease-in-out infinite;\n}\n\n@keyframes box2animation {\n  0% {\n    width: 2rpx;\n  }\n\n  12.5% {\n    width: 2rpx;\n  }\n\n  25% {\n    width: 2rpx;\n  }\n\n  37.5% {\n    width: 120rpx;\n  }\n\n  50% {\n    width: 120rpx;\n  }\n\n  62.5% {\n    width: 2rpx;\n  }\n\n  75% {\n    width: 2rpx;\n  }\n\n  100% {\n    width: 2rpx;\n  }\n}\n\n.box-3 {\n  animation: box3animation 4s  forwards ease-in-out infinite;\n}\n\n@keyframes box3animation {\n  0% {\n    width: 2rpx;\n  }\n\n  12.5% {\n    width: 2rpx;\n  }\n\n  25% {\n    width: 2rpx;\n  }\n\n  37.5% {\n    width: 2rpx;\n  }\n\n  50% {\n    width: 2rpx;\n  }\n\n  62.5% {\n    width: 120rpx;\n  }\n\n  75% {\n    width: 120rpx;\n  }\n\n  100% {\n    width: 2rpx;\n  }\n}\n",
+    "component_name": "GalaxyRareTurtle53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1467,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.898Z",
+  "updated_at": "2025-07-31T07:55:40.898Z"
+}

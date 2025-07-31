@@ -1,0 +1,107 @@
+{
+  "id": "mrhyddenn_popular-sheep-67",
+  "name": "popular-sheep-67",
+  "category": "buttons",
+  "author": "mrhyddenn",
+  "description": "popular-sheep-67 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"icon-btn add-btn\">\n    <div class=\"add-icon\"></div>\n    <div class=\"btn-txt\">Add Photo</div>\n</button>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: button */\n.icon-btn {\n  width: 50px;\n  height: 50px;\n  border: 1px solid #cdcdcd;\n  background: white;\n  border-radius: 25px;\n  overflow: hidden;\n  position: relative;\n  transition: width 0.2s ease-in-out;\n  font-weight: 500;\n  font-family: inherit;\n}\n\n.add-btn:hover {\n  width: 120px;\n}\n\n.add-btn::before,\n.add-btn::after {\n  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;\n  content: \"\";\n  position: absolute;\n  height: 4px;\n  width: 10px;\n  top: calc(50% - 2px);\n  background: seagreen;\n}\n\n.add-btn::after {\n  right: 14px;\n  overflow: hidden;\n  border-top-right-radius: 2px;\n  border-bottom-right-radius: 2px;\n}\n\n.add-btn::before {\n  left: 14px;\n  border-top-left-radius: 2px;\n  border-bottom-left-radius: 2px;\n}\n\n.icon-btn:focus {\n  outline: none;\n}\n\n.btn-txt {\n  opacity: 0;\n  transition: opacity 0.2s;\n}\n\n.add-btn:hover::before,\n.add-btn:hover::after {\n  width: 4px;\n  border-radius: 2px;\n}\n\n.add-btn:hover .btn-txt {\n  opacity: 1;\n}\n\n.add-icon::after,\n.add-icon::before {\n  transition: all 0.2s ease-in-out;\n  content: \"\";\n  position: absolute;\n  height: 20px;\n  width: 2px;\n  top: calc(50% - 10px);\n  background: seagreen;\n  overflow: hidden;\n}\n\n.add-icon::before {\n  left: 22px;\n  border-top-left-radius: 2px;\n  border-bottom-left-radius: 2px;\n}\n\n.add-icon::after {\n  right: 22px;\n  border-top-right-radius: 2px;\n  border-bottom-right-radius: 2px;\n}\n\n.add-btn:hover .add-icon::before {\n  left: 15px;\n  height: 4px;\n  top: calc(50% - 2px);\n}\n\n.add-btn:hover .add-icon::after {\n  right: 15px;\n  height: 4px;\n  top: calc(50% - 2px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mrhyddenn_popular-sheep-67.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"icon-btn add-btn\"></button>\n    <view class=\"add-icon\"></view>\n    <view class=\"btn-txt\">Add Photo</view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPopularSheep67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: button */\n.icon-btn {\n  width: 100rpx;\n  height: 100rpx;\n  border: 2rpx solid #cdcdcd;\n  background: white;\n  border-radius: 50rpx;\n  overflow: hidden;\n  position: relative;\n  transition: width 0.2s ease-in-out;\n  font-weight: 500;\n  font-family: inherit;\n}\n\n.add-btn:hover {\n  width: 240rpx;\n}\n\n.add-btn::before,\n.add-btn::after {\n  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;\n  content: \"\";\n  position: absolute;\n  height: 8rpx;\n  width: 20rpx;\n  top: calc(50% - 4rpx);\n  background: seagreen;\n}\n\n.add-btn::after {\n  right: 28rpx;\n  overflow: hidden;\n  border-top-right-radius: 4rpx;\n  border-bottom-right-radius: 4rpx;\n}\n\n.add-btn::before {\n  left: 28rpx;\n  border-top-left-radius: 4rpx;\n  border-bottom-left-radius: 4rpx;\n}\n\n.icon-btn:focus {\n  outline: none;\n}\n\n.btn-txt {\n  opacity: 0;\n  transition: opacity 0.2s;\n}\n\n.add-btn:hover::before,\n.add-btn:hover::after {\n  width: 8rpx;\n  border-radius: 4rpx;\n}\n\n.add-btn:hover .btn-txt {\n  opacity: 1;\n}\n\n.add-icon::after,\n.add-icon::before {\n  transition: all 0.2s ease-in-out;\n  content: \"\";\n  position: absolute;\n  height: 40rpx;\n  width: 4rpx;\n  top: calc(50% - 20rpx);\n  background: seagreen;\n  overflow: hidden;\n}\n\n.add-icon::before {\n  left: 44rpx;\n  border-top-left-radius: 4rpx;\n  border-bottom-left-radius: 4rpx;\n}\n\n.add-icon::after {\n  right: 44rpx;\n  border-top-right-radius: 4rpx;\n  border-bottom-right-radius: 4rpx;\n}\n\n.add-btn:hover .add-icon::before {\n  left: 30rpx;\n  height: 8rpx;\n  top: calc(50% - 4rpx);\n}\n\n.add-btn:hover .add-icon::after {\n  right: 30rpx;\n  height: 8rpx;\n  top: calc(50% - 4rpx);\n}\n",
+    "component_name": "GalaxyPopularSheep67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1721,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.348Z",
+  "updated_at": "2025-07-31T07:55:37.348Z"
+}

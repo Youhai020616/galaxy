@@ -1,0 +1,121 @@
+{
+  "id": "mRcOol7_rotten-yak-63",
+  "name": "rotten-yak-63",
+  "category": "buttons",
+  "author": "mRcOol7",
+  "description": "rotten-yak-63 组件 (button, #button, button hover effect, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "#button",
+    "button hover effect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button aria-label=\"Send Message\" class=\"button relative overflow-hidden flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 border border-transparent rounded-full shadow-lg text-white cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 focus:scale-105 active:scale-95\">\n  <div class=\"ripple\"></div>\n  <svg class=\"relative w-12 h-12 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out\" preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 36.000000 75.000000\" height=\"80pt\" width=\"80pt\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\">\n    <g stroke=\"none\" fill=\"#ffffff\" transform=\"translate(0.000000,75.000000) scale(0.100000,-0.100000)\">\n      <path d=\"M188 481 c-42 -15 -84 -34 -93 -41 -27 -22 -14 -53 31 -74 30 -14 46  -30 60 -60 23 -50 55 -59 78 -24 24 36 56 137 56 174 0 23 -6 37 -19 44 -25 13 -23 13 -113 -19z m110 -20 c4 -28 -37 -158 -55 -173 -17 -14 -39 4 -48 39 -4 19 0 35 14 54 30 41 26 47 -9 14 -30 -29 -30 -29 -65 -12 -58 28 -47 42 65 81 41 14 80 24 85 22 6 -1 11 -13 13 -25z\"></path>\n    </g>\n  </svg>\n  <svg class=\"relative w-8 h-8 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out\" preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 36.000000 75.000000\" height=\"80pt\" width=\"80pt\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\">\n    <g stroke=\"none\" fill=\"#ffffff\" transform=\"translate(0.000000,75.000000) scale(0.100000,-0.100000)\">\n      <path d=\"M100 300 l0 -300 30 0 30 0 0 300 0 300 -30 0 -30 0 0 -300z\"></path>\n    </g>\n  </svg>\n  <span class=\"relative z-10 font-semibold text-lg transition-all duration-300 ease-in-out\">Send Message</span>\n</button>",
+    "css": "/* From Uiverse.io by mRcOol7  - Tags: button, #button, button hover effect  */\n.button {\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding: 0.75rem 1.5rem;\n  background: linear-gradient(to right, #3b82f6, #9333ea);\n  border: none;\n  border-radius: 9999px;\n  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);\n  color: white;\n  cursor: pointer;\n  overflow: hidden;\n  transition: all 0.3s ease-in-out;\n}\n\n.button:hover {\n  transform: scale(1.05);\n  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);\n}\n\n.button:active {\n  transform: scale(0.95);\n}\n\n.button:focus {\n  outline: none;\n  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);\n}\n\n.button svg {\n  width: 3rem;\n  height: 3rem;\n  margin-right: 0.5rem;\n  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;\n}\n\n.button:hover svg {\n  transform: rotate(20deg) scale(1.1);\n  filter: drop-shadow(0 0 10px #ffd700);\n}\n\n.button span {\n  font-size: 1.125rem;\n  font-weight: 600;\n  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,\n    text-shadow 0.3s ease-in-out;\n}\n\n.button:hover span {\n  color: #ffd700;\n  text-shadow: 0 0 10px #ffd700;\n}\n\n.button .text-md {\n  font-size: 1rem;\n  margin-left: 0.5rem;\n  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,\n    text-shadow 0.3s ease-in-out;\n}\n\n.button:hover .text-md {\n  color: #ffd700;\n  text-shadow: 0 0 10px #ffd700;\n}\n\n.ripple {\n  position: absolute;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 0.6);\n  animation: ripple 1s linear infinite;\n  pointer-events: none;\n}\n\n.button:active .ripple {\n  animation: ripple-on-click 0.6s linear;\n}\n\n@keyframes ripple {\n  0% {\n    transform: scale(0);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n@keyframes ripple-on-click {\n  0% {\n    transform: scale(0);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(4);\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mRcOol7_rotten-yak-63.html"
+  },
+  "uniapp": {
+    "template": "<button aria-label=\"Send Message\" class=\"button relative overflow-hidden flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 border border-transparent rounded-full shadow-lg text-white cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 focus:scale-105 active:scale-95\"></button>\n  <view class=\"ripple\"></view>\n  <view class=\"relative w-12 h-12 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out\" preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 36.000000 75.000000\" height=\"80pt\" width=\"80pt\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\"></view>\n    <g stroke=\"none\" fill=\"#ffffff\" transform=\"translate(0.000000,75.000000) scale(0.100000,-0.100000)\">\n      <path d=\"M188 481 c-42 -15 -84 -34 -93 -41 -27 -22 -14 -53 31 -74 30 -14 46  -30 60 -60 23 -50 55 -59 78 -24 24 36 56 137 56 174 0 23 -6 37 -19 44 -25 13 -23 13 -113 -19z m110 -20 c4 -28 -37 -158 -55 -173 -17 -14 -39 4 -48 39 -4 19 0 35 14 54 30 41 26 47 -9 14 -30 -29 -30 -29 -65 -12 -58 28 -47 42 65 81 41 14 80 24 85 22 6 -1 11 -13 13 -25z\"></path>\n    </g>\n  </svg>\n  <view class=\"relative w-8 h-8 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out\" preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 36.000000 75.000000\" height=\"80pt\" width=\"80pt\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\"></view>\n    <g stroke=\"none\" fill=\"#ffffff\" transform=\"translate(0.000000,75.000000) scale(0.100000,-0.100000)\">\n      <path d=\"M100 300 l0 -300 30 0 30 0 0 300 0 300 -30 0 -30 0 0 -300z\"></path>\n    </g>\n  </svg>\n  <text class=\"relative z-10 font-semibold text-lg transition-all duration-300 ease-in-out\">Send Message</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyRottenYak63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mRcOol7  - Tags: button, #button, button hover effect  */\n.button {\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding: 0.75rem 1.5rem;\n  background: linear-gradient(to right, #3b82f6, #9333ea);\n  border: none;\n  border-radius: 19998rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 28rpx rgba(0, 0, 0, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: white;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  overflow: hidden;\n  transition: all 0.3s ease-in-out;\n}\n\n.button:hover {\n  transform: scale(1.05);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 16rpx 40rpx rgba(0, 0, 0, 0.35);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:active {\n  transform: scale(0.95);\n}\n\n.button:focus {\n  outline: none;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 8rpx rgba(59, 130, 246, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button svg {\n  width: 3rem;\n  height: 3rem;\n  margin-right: 0.5rem;\n  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;\n}\n\n.button:hover svg {\n  transform: rotate(20deg) scale(1.1);\n  \n}\n\n.button span {\n  font-size: 1.125rem;\n  font-weight: 600;\n  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,\n    text-shadow 0.3s ease-in-out;\n}\n\n.button:hover span {\n  color: #ffd700;\n  /* #ifdef H5 */\n  text-shadow: 0 0 20rpx #ffd700;\n  /* #endif */\n}\n\n.button .text-md {\n  font-size: 1rem;\n  margin-left: 0.5rem;\n  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,\n    text-shadow 0.3s ease-in-out;\n}\n\n.button:hover .text-md {\n  color: #ffd700;\n  /* #ifdef H5 */\n  text-shadow: 0 0 20rpx #ffd700;\n  /* #endif */\n}\n\n.ripple {\n  position: absolute;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 0.6);\n  animation: ripple 1s linear infinite;\n  pointer-events: none;\n}\n\n.button:active .ripple {\n  animation: ripple-on-click 0.6s linear;\n}\n\n@keyframes ripple {\n  0% {\n    transform: scale(0);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n@keyframes ripple-on-click {\n  0% {\n    transform: scale(0);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyRottenYak63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3730,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.183Z",
+  "updated_at": "2025-07-31T07:55:37.183Z"
+}

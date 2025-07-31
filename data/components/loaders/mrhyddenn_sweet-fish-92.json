@@ -1,0 +1,90 @@
+{
+  "id": "mrhyddenn_sweet-fish-92",
+  "name": "sweet-fish-92",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "sweet-fish-92 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"loader-in\"></div>\n    <div class=\"loader-dot\"></div>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader,\n.loader-in {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  position: relative;\n  border-radius: 50%;\n  width: 80px;\n  height: 80px;\n  background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.001) 0%, rgba(0, 0, 0, 0.4) 50%);\n  box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.3);\n  animation: circle41 1.2s infinite alternate;\n}\n\n.loader-in {\n  width: 78%;\n  height: 78%;\n  border-radius: 50%;\n  animation: circle 1.2s infinite alternate;\n  animation-delay: calc(1.2s / 4);\n}\n\n.loader-in::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to bottom right, #6E2E8E 0%, #0B9FBD 100%);\n  border-radius: 50%;\n  animation: rot122 2.4s infinite linear;\n}\n\n.loader-dot {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 55%;\n  height: 55%;\n  transform: translate(-50%, -50%);\n  border-radius: 50%;\n  background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.001) 0%, rgba(0, 0, 0, 0.4) 50%);\n  background-size: 120%;\n  background-position: center;\n}\n\n.loader-dot::after {\n  content: '';\n  width: 40%;\n  height: 40%;\n  border-radius: 50%;\n  background-color: rgba(255, 255, 255, 0.8);\n  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);\n  animation: circle41 1.2s infinite alternate;\n  animation-delay: calc(1.2s / 4);\n}\n\n@keyframes rot122 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes circle41 {\n  0% {\n    transform: scale(1);\n  }\n\n  100% {\n    transform: scale(1.1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_sweet-fish-92.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"loader-in\"></view>\n    <view class=\"loader-dot\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySweetFish92',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader,\n.loader-in {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  position: relative;\n  border-radius: 50%;\n  width: 160rpx;\n  height: 160rpx;\n  background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.001) 0%, rgba(0, 0, 0, 0.4) 50%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 120rpx 0rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: circle41 1.2s infinite alternate;\n}\n\n.loader-in {\n  width: 78%;\n  height: 78%;\n  border-radius: 50%;\n  animation: circle 1.2s infinite alternate;\n  animation-delay: calc(1.2s / 4);\n}\n\n.loader-in::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to bottom right, #6E2E8E 0%, #0B9FBD 100%);\n  border-radius: 50%;\n  animation: rot122 2.4s infinite linear;\n}\n\n.loader-dot {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 55%;\n  height: 55%;\n  transform: translate(-50%, -50%);\n  border-radius: 50%;\n  background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.001) 0%, rgba(0, 0, 0, 0.4) 50%);\n  background-size: 120%;\n  background-position: center;\n}\n\n.loader-dot::after {\n  content: '';\n  width: 40%;\n  height: 40%;\n  border-radius: 50%;\n  background-color: rgba(255, 255, 255, 0.8);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 20rpx rgba(0, 0, 0, 0.7);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: circle41 1.2s infinite alternate;\n  animation-delay: calc(1.2s / 4);\n}\n\n@keyframes rot122 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes circle41 {\n  0% {\n    transform: scale(1);\n  }\n\n  100% {\n    transform: scale(1.1);\n  }\n}\n",
+    "component_name": "GalaxySweetFish92"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1737,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.456Z",
+  "updated_at": "2025-07-31T07:55:42.456Z"
+}

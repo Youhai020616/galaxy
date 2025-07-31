@@ -1,0 +1,104 @@
+{
+  "id": "Javierrocadev_angry-dodo-51",
+  "name": "angry-dodo-51",
+  "category": "buttons",
+  "author": "Javierrocadev",
+  "description": "angry-dodo-51 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"font-semibold group relative text-2xl bg-gradient-to-t from-slate-50 to-gray-200 text-zinc-800 rounded-full flex gap-4 px-4 py-4 before:w-64 before:h-20 before:bg-gradient-to-b from-slate-50 to-gray-200 before:-z-10 before:absolute before:-top-2 before:-left-2 before:rounded-xl before:border-2 before:border-zinc-400 before:shadow-xl before:hover:opacity-70 hover:shadow-xl hover:before:blur before:duration-500 duration-300\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" class=\"w-8 h-8 group-hover:scale-125 group-hover:rotate-45 duration-300\">\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"1.5\" stroke=\"#292D32\" d=\"M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z\"></path>\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"1.5\" stroke=\"#292D32\" d=\"M10.11 13.6501L13.69 10.0601\"></path>\n  </svg>\n  Send Message\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/Javierrocadev_angry-dodo-51.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"font-semibold group relative text-2xl bg-gradient-to-t from-slate-50 to-gray-200 text-zinc-800 rounded-full flex gap-4 px-4 py-4 before:w-64 before:h-20 before:bg-gradient-to-b from-slate-50 to-gray-200 before:-z-10 before:absolute before:-top-2 before:-left-2 before:rounded-xl before:border-2 before:border-zinc-400 before:shadow-xl before:hover:opacity-70 hover:shadow-xl hover:before:blur before:duration-500 duration-300\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" class=\"w-8 h-8 group-hover:scale-125 group-hover:rotate-45 duration-300\"></view>\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"1.5\" stroke=\"#292D32\" d=\"M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z\"></path>\n    <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"1.5\" stroke=\"#292D32\" d=\"M10.11 13.6501L13.69 10.0601\"></path>\n  </svg>\n  Send Message\n</button>",
+    "script": "export default {\n  name: 'GalaxyAngryDodo51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyAngryDodo51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1063,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.398Z",
+  "updated_at": "2025-07-31T07:55:33.398Z"
+}

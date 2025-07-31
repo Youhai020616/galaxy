@@ -1,0 +1,89 @@
+{
+  "id": "AHMED-MIT_cold-ape-73",
+  "name": "cold-ape-73",
+  "category": "loaders",
+  "author": "AHMED-MIT",
+  "description": "cold-ape-73 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\"></div>",
+    "css": "/* From Uiverse.io by AHMED-MIT - Tags: loader */\n.spinner {\n  position: relative;\n  width: 35.2px;\n  height: 35.2px;\n}\n\n.spinner::before,\n.spinner::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  display: block;\n  animation: spinner-b4c8mmhg 0.5s backwards, spinner-49opz7hg 1.25s 0.5s infinite ease;\n  border: 8.8px solid #000000;\n  border-radius: 50%;\n  box-shadow: 0 -52.8px 0 -8.8px #000000;\n  position: absolute;\n}\n\n.spinner::after {\n  animation-delay: 0s, 1.25s;\n}\n\n@keyframes spinner-b4c8mmhg {\n  from {\n    box-shadow: 0 0 0 -8.8px #000000;\n  }\n}\n\n@keyframes spinner-49opz7hg {\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/AHMED-MIT_cold-ape-73.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>",
+    "script": "export default {\n  name: 'GalaxyColdApe73',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AHMED-MIT - Tags: loader */\n.spinner {\n  position: relative;\n  width: 70.4rpx;\n  height: 70.4rpx;\n}\n\n.spinner::before,\n.spinner::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  display: block;\n  animation: spinner-b4c8mmhg 0.5s backwards, spinner-49opz7hg 1.25s 0.5s infinite ease;\n  border: 17.6rpx solid #000000;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -105.6rpx 0 -17.6rpx #000000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: absolute;\n}\n\n.spinner::after {\n  animation-delay: 0s, 1.25s;\n}\n\n@keyframes spinner-b4c8mmhg {\n  from {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 -17.6rpx #000000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n@keyframes spinner-49opz7hg {\n  to {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyColdApe73"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 670,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.798Z",
+  "updated_at": "2025-07-31T07:55:38.798Z"
+}

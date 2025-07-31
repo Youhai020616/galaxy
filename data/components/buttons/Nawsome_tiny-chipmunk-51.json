@@ -1,0 +1,114 @@
+{
+  "id": "Nawsome_tiny-chipmunk-51",
+  "name": "tiny-chipmunk-51",
+  "category": "buttons",
+  "author": "Nawsome",
+  "description": "tiny-chipmunk-51 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"buttons\">\n   <button class=\"btn\"><span></span><p data-start=\"good luck!\" data-text=\"start!\" data-title=\"new game\"></p></button>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: button */\n/*bg*/\n/*txt*/\n/*success*/\n.buttons {\n  display: flex;\n  justify-content: space-around;\n  top: 20px;\n  left: 20px;\n}\n\n.buttons button {\n  width: 150px;\n  height: 50px;\n  background-color: white;\n  margin: 20px;\n  color: #568fa6;\n  position: relative;\n  overflow: hidden;\n  font-size: 14px;\n  letter-spacing: 1px;\n  font-weight: 500;\n  text-transform: uppercase;\n  transition: all 0.3s ease;\n  cursor: pointer;\n  border: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 3px;\n}\n\n.buttons button:before, .buttons button:after {\n  content: \"\";\n  position: absolute;\n  width: 0;\n  height: 2px;\n  background-color: #44d8a4;\n  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button:before {\n  right: 0;\n  top: 0;\n  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button:after {\n  left: 0;\n  bottom: 0;\n}\n\n.buttons button span {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  margin: 0;\n  padding: 0;\n  z-index: 1;\n}\n\n.buttons button span:before, .buttons button span:after {\n  content: \"\";\n  position: absolute;\n  width: 2px;\n  height: 0;\n  background-color: #44d8a4;\n  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button span:before {\n  right: 0;\n  top: 0;\n  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button span:after {\n  left: 0;\n  bottom: 0;\n}\n\n.buttons button p {\n  padding: 0;\n  margin: 0;\n  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\n.buttons button p:before, .buttons button p:after {\n  position: absolute;\n  width: 100%;\n  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);\n  z-index: 1;\n  left: 0;\n}\n\n.buttons button p:before {\n  content: attr(data-title);\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.buttons button p:after {\n  content: attr(data-text);\n  top: 150%;\n  color: #44d8a4;\n}\n\n.buttons button:hover:before, .buttons button:hover:after {\n  width: 100%;\n}\n\n.buttons button:hover span {\n  z-index: 1;\n}\n\n.buttons button:hover span:before, .buttons button:hover span:after {\n  height: 100%;\n}\n\n.buttons button:hover p:before {\n  top: -50%;\n  transform: rotate(5deg);\n}\n\n.buttons button:hover p:after {\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.buttons button.start {\n  background-color: #44d8a4;\n  box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);\n  transition: all 0.2s ease;\n}\n\n.buttons button.start p:before {\n  top: -50%;\n  transform: rotate(5deg);\n}\n\n.buttons button.start p:after {\n  color: white;\n  transition: all 0s ease;\n  content: attr(data-start);\n  top: 50%;\n  transform: translateY(-50%);\n  animation: start 0.3s ease;\n  animation-fill-mode: forwards;\n}\n\n@keyframes start {\n  from {\n    top: -50%;\n  }\n}\n\n.buttons button.start:hover:before, .buttons button.start:hover:after {\n  display: none;\n}\n\n.buttons button.start:hover span {\n  display: none;\n}\n\n.buttons button:active {\n  outline: none;\n  border: none;\n}\n\n.buttons button:focus {\n  outline: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Nawsome_tiny-chipmunk-51.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"buttons\"></view>\n   <button class=\"btn\"></button><text></text><text data-start=\"good luck!\" data-text=\"start!\" data-title=\"new game\"></text></button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTinyChipmunk51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: button */\n/*bg*/\n/*txt*/\n/*success*/\n.buttons {\n  display: flex;\n  justify-content: space-around;\n  top: 40rpx;\n  left: 40rpx;\n}\n\n.buttons button {\n  width: 300rpx;\n  height: 100rpx;\n  background-color: white;\n  margin: 40rpx;\n  color: #568fa6;\n  position: relative;\n  overflow: hidden;\n  font-size: 28rpx;\n  letter-spacing: 2rpx;\n  font-weight: 500;\n  text-transform: uppercase;\n  transition: all 0.3s ease;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 6rpx;\n}\n\n.buttons button:before, .buttons button:after {\n  content: \"\";\n  position: absolute;\n  width: 0;\n  height: 4rpx;\n  background-color: #44d8a4;\n  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button:before {\n  right: 0;\n  top: 0;\n  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button:after {\n  left: 0;\n  bottom: 0;\n}\n\n.buttons button span {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  margin: 0;\n  padding: 0;\n  z-index: 1;\n}\n\n.buttons button span:before, .buttons button span:after {\n  content: \"\";\n  position: absolute;\n  width: 4rpx;\n  height: 0;\n  background-color: #44d8a4;\n  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button span:before {\n  right: 0;\n  top: 0;\n  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);\n}\n\n.buttons button span:after {\n  left: 0;\n  bottom: 0;\n}\n\n.buttons button p {\n  padding: 0;\n  margin: 0;\n  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\n.buttons button p:before, .buttons button p:after {\n  position: absolute;\n  width: 100%;\n  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);\n  z-index: 1;\n  left: 0;\n}\n\n.buttons button p:before {\n  content: attr(data-title);\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.buttons button p:after {\n  content: attr(data-text);\n  top: 150%;\n  color: #44d8a4;\n}\n\n.buttons button:hover:before, .buttons button:hover:after {\n  width: 100%;\n}\n\n.buttons button:hover span {\n  z-index: 1;\n}\n\n.buttons button:hover span:before, .buttons button:hover span:after {\n  height: 100%;\n}\n\n.buttons button:hover p:before {\n  top: -50%;\n  transform: rotate(5deg);\n}\n\n.buttons button:hover p:after {\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.buttons button.start {\n  background-color: #44d8a4;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 10rpx 20rpx -20rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.2s ease;\n}\n\n.buttons button.start p:before {\n  top: -50%;\n  transform: rotate(5deg);\n}\n\n.buttons button.start p:after {\n  color: white;\n  transition: all 0s ease;\n  content: attr(data-start);\n  top: 50%;\n  transform: translateY(-50%);\n  animation: start 0.3s ease;\n  animation-fill-mode: forwards;\n}\n\n@keyframes start {\n  from {\n    top: -50%;\n  }\n}\n\n.buttons button.start:hover:before, .buttons button.start:hover:after {\n  display: none;\n}\n\n.buttons button.start:hover span {\n  display: none;\n}\n\n.buttons button:active {\n  outline: none;\n  border: none;\n}\n\n.buttons button:focus {\n  outline: 0;\n}\n",
+    "component_name": "GalaxyTinyChipmunk51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3207,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.145Z",
+  "updated_at": "2025-07-31T07:55:34.145Z"
+}

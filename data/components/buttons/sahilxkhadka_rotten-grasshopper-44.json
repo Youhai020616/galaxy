@@ -1,0 +1,104 @@
+{
+  "id": "sahilxkhadka_rotten-grasshopper-44",
+  "name": "rotten-grasshopper-44",
+  "category": "buttons",
+  "author": "sahilxkhadka",
+  "description": "rotten-grasshopper-44 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"cursor-pointer group relative flex gap-1.5 px-8 py-4 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24px\" width=\"24px\"><g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g><g stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g><g id=\"SVGRepo_iconCarrier\"> <g id=\"Interface / Download\"> <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"#f1f1f1\" d=\"M6 21H18M12 3V17M12 17L17 12M12 17L7 12\" id=\"Vector\"></path> </g> </g></svg>\n  Download\n  <div class=\"absolute opacity-0 -bottom-full rounded-md py-2 px-2 bg-black bg-opacity-70 left-1/2 -translate-x-1/2 group-hover:opacity-100 transition-opacity shadow-lg\">\n    Download\n  </div>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/sahilxkhadka_rotten-grasshopper-44.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cursor-pointer group relative flex gap-1.5 px-8 py-4 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24px\" width=\"24px\"><g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g><g stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g><g id=\"SVGRepo_iconCarrier\"> <g id=\"Interface / Download\"> <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"#f1f1f1\" d=\"M6 21H18M12 3V17M12 17L17 12M12 17L7 12\" id=\"Vector\"></path> </g> </g></view>\n  Download\n  <view class=\"absolute opacity-0 -bottom-full rounded-md py-2 px-2 bg-black bg-opacity-70 left-1/2 -translate-x-1/2 group-hover:opacity-100 transition-opacity shadow-lg\"></view>\n    Download\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyRottenGrasshopper44',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyRottenGrasshopper44"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 845,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.716Z",
+  "updated_at": "2025-07-31T07:55:37.716Z"
+}

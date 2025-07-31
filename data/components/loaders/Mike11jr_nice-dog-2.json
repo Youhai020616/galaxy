@@ -1,0 +1,85 @@
+{
+  "id": "Mike11jr_nice-dog-2",
+  "name": "nice-dog-2",
+  "category": "loaders",
+  "author": "Mike11jr",
+  "description": "nice-dog-2 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader-wrapper\">\n<div class=\"loader\">\n  <div class=\"loader loader-inner\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Mike11jr - Tags: loader */\n.loader-wrapper {\n width: 60px;\n height: 60px;\n}\n\n.loader {\n box-sizing: border-box;\n width: 100%;\n height: 100%;\n border: 10px solid #162534;\n border-top-color: #4bc8eb;\n border-bottom-color: #f13a8f;\n border-radius: 50%;\n animation: rotate0925 5s linear infinite;\n}\n\n.loader-inner {\n border-top-color: #36f372;\n border-bottom-color: #fff;\n animation-duration: 2.5s;\n}\n\n@keyframes rotate0925 {\n 0% {\n  transform: scale(1) rotate(360deg);\n }\n\n 50% {\n  transform: scale(.8) rotate(-360deg);\n }\n\n 100% {\n  transform: scale(1) rotate(360deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Mike11jr_nice-dog-2.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader-wrapper\"></view>\n<view class=\"loader\"></view>\n  <view class=\"loader loader-inner\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNiceDog2',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Mike11jr - Tags: loader */\n.loader-wrapper {\n width: 120rpx;\n height: 120rpx;\n}\n\n.loader {\n box-sizing: border-box;\n width: 100%;\n height: 100%;\n border: 20rpx solid #162534;\n border-top-color: #4bc8eb;\n border-bottom-color: #f13a8f;\n border-radius: 50%;\n animation: rotate0925 5s linear infinite;\n}\n\n.loader-inner {\n border-top-color: #36f372;\n border-bottom-color: #fff;\n animation-duration: 2.5s;\n}\n\n@keyframes rotate0925 {\n 0% {\n  transform: scale(1) rotate(360deg);\n }\n\n 50% {\n  transform: scale(.8) rotate(-360deg);\n }\n\n 100% {\n  transform: scale(1) rotate(360deg);\n }\n}\n",
+    "component_name": "GalaxyNiceDog2"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 704,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.685Z",
+  "updated_at": "2025-07-31T07:55:39.685Z"
+}

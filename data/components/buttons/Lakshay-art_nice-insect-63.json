@@ -1,0 +1,122 @@
+{
+  "id": "Lakshay-art_nice-insect-63",
+  "name": "nice-insect-63",
+  "category": "buttons",
+  "author": "Lakshay-art",
+  "description": "nice-insect-63 组件 (material design, neumorphism, glassmorphism, 3d, button, rounded, glow, creative, gradient)",
+  "tags": [
+    "material design",
+    "neumorphism",
+    "glassmorphism",
+    "3d",
+    "button",
+    "rounded",
+    "glow",
+    "creative",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div id=\"bg\">\n  <div id=\"orangebg\"></div>\n  <div id=\"pinkbg\"></div>\n\n  <div id=\"yellowbg\"></div>\n  <div id=\"purplebg\"></div>\n</div>\n<button class=\"button\">\n  <div id=\"pink1\" class=\"pink\"></div>\n  <div id=\"pink2\" class=\"pink\"></div>\n  <div id=\"pink3\" class=\"pink\"></div>\n  <div id=\"pink4\" class=\"pink\"></div>\n  <div id=\"pink5\" class=\"pink\"></div>\n  <div id=\"pink6\" class=\"pink\"></div>\n\n  <div id=\"orange1\" class=\"orange\"></div>\n  <div id=\"orange2\" class=\"orange\"></div>\n  <div id=\"orange3\" class=\"orange\"></div>\n  <div id=\"orange4\" class=\"orange\"></div>\n\n  <div id=\"white1\" class=\"white\"></div>\n  <div id=\"white2\" class=\"white\"></div>\n  <div id=\"white3\" class=\"white\"></div>\n  <div id=\"white4\" class=\"white\"></div>\n  <div id=\"white5\" class=\"white\"></div>\n  <div id=\"white6\" class=\"white\"></div>\n  <div id=\"white7\" class=\"white\"></div>\n  <div id=\"white8\" class=\"white\"></div>\n  <div id=\"orange5\" class=\"orangei\"></div>\n  <div id=\"orange6\" class=\"orangei\"></div>\n  <div id=\"orange7\" class=\"orangei\"></div>\n  <div id=\"orange8\" class=\"orangei\"></div>\n  <div id=\"orange9\" class=\"orangei\"></div>\n  <div id=\"orange10\" class=\"orangei\"></div>\n  <div id=\"orange11\" class=\"orange\"></div>\n  <div id=\"pink7\" class=\"pinki\"></div>\n  <div id=\"pink8\" class=\"pinki\"></div>\n  <div id=\"pink9\" class=\"pinki\"></div>\n  <div id=\"pink10\" class=\"pinki\"></div>\n  <div id=\"pink11\" class=\"pink\"></div>\n  <div id=\"white9\" class=\"white\"></div>\n  <div id=\"white10\" class=\"white\"></div>\n  <div id=\"backdrop2\"></div>\n  <div id=\"whiteOverlay\"></div>\n  <div id=\"whiteBorder\"></div>\n  <div id=\"whiteBorder2\"></div>\n  <div id=\"white11\" class=\"white\"></div>\n  <div id=\"white12\" class=\"white\"></div>\n  <div id=\"white13\" class=\"white\"></div>\n  <div id=\"white14\" class=\"white\"></div>\n  <div id=\"white15\" class=\"white\"></div>\n  <div id=\"white16\" class=\"white\"></div>\n\n  <div id=\"text\">\n    <svg preserveAspectRatio=\"none\" viewBox=\"0 0 256 256\" height=\"20\" width=\"26\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs></defs>\n      <g transform=\"translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)\" style=\"stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;\">\n        <path stroke-linecap=\"round\" transform=\"matrix(1 0 0 1 0 0)\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;\" d=\"M 71.79 34.614 c -0.334 -0.497 -0.926 -0.745 -1.513 -0.63 l -18.311 3.528 l 3.718 -35.877 c 0.071 -0.682 -0.332 -1.32 -0.979 -1.55 c -0.648 -0.229 -1.362 0.011 -1.738 0.585 L 18.202 53.746 c -0.328 0.5 -0.325 1.144 0.008 1.639 c 0.33 0.493 0.922 0.742 1.513 0.632 l 18.312 -3.529 l -3.718 35.876 c -0.071 0.684 0.332 1.322 0.979 1.551 C 35.455 89.971 35.622 90 35.792 90 c 0.502 0 0.965 -0.251 1.241 -0.67 l 34.765 -53.076 C 72.126 35.754 72.122 35.11 71.79 34.614 z\"></path>\n      </g>\n    </svg>\n    Join now\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by Lakshay-art  - Tags: material design, neumorphism, glassmorphism, 3d, button, rounded, glow, creative */\n.button {\n  cursor: pointer;\n  width: 335px;\n  height: 110px;\n  border-radius: 30px;\n  border: 1px solid #e5c3e6;\n  position: relative;\n  overflow: hidden;\n  filter: brightness(0.9) contrast(1.2)\n    drop-shadow(0px 20px 16px rgba(0, 0, 0, 0.212));\n}\n#backdrop {\n  height: 110px;\n  width: 335px;\n  overflow: hidden;\n  border-radius: 30px;\n\n  background-color: rgb(255 255 255 / 5%);\n  backdrop-filter: blur(10px);\n}\n\n#backdrop2 {\n  height: 110px;\n  width: 335px;\n  overflow: hidden;\n  border-radius: 30px;\n\n  background-color: rgb(255 255 255 / 5%);\n  backdrop-filter: blur(6px);\n}\n.pink {\n  position: absolute;\n  background-color: #f05ee7;\n  filter: blur(6px);\n  border-radius: 50%;\n}\n.pinki {\n  position: absolute;\n  background-color: #ba63d9;\n  /* filter: blur(6px); */\n  border-radius: 50%;\n}\n.orange {\n  position: absolute;\n  background-color: #f37130;\n  filter: blur(6px);\n  border-radius: 50%;\n}\n.orangei {\n  position: absolute;\n  background-color: #ff4600;\n  filter: blur(3px);\n  border-radius: 50%;\n}\n.white {\n  position: absolute;\n  background-color: white;\n  /* filter: blur(5px); */\n  border-radius: 25px;\n}\n\n#pink1 {\n  top: -10px;\n  left: -10px;\n  height: 50px;\n  width: 150px;\n}\n\n#pink2 {\n  bottom: -10px;\n  left: -10px;\n  height: 50px;\n  width: 140px;\n}\n#pink3 {\n  top: -5px;\n  right: -10px;\n  height: 50px;\n  width: 120px;\n}\n\n#pink4 {\n  bottom: -5px;\n  right: -10px;\n  height: 50px;\n  width: 140px;\n}\n\n#pink5 {\n  top: 25px;\n  left: -20px;\n  height: 70px;\n  width: 120px;\n  opacity: 0.7;\n}\n#pink6 {\n  top: 25px;\n  right: -20px;\n  height: 70px;\n  width: 120px;\n  opacity: 0.7;\n}\n#pink7 {\n  top: 0px;\n  left: -5px;\n  height: 30px;\n  width: 30px;\n  /* opacity: 0.7; */\n}\n#pink8 {\n  bottom: -20px;\n  left: -20px;\n  height: 110px;\n  width: 50px;\n  /* opacity: 0.7; */\n}\n#pink9 {\n  top: 0px;\n  right: -20px;\n  height: 60px;\n  width: 50px;\n  opacity: 0.7;\n}\n#pink10 {\n  bottom: 0px;\n  right: -20px;\n  height: 20px;\n  width: 50px;\n  opacity: 0.7;\n}\n#pink11 {\n  top: 25px;\n  right: 40px;\n  height: 30px;\n  width: 70px;\n  opacity: 0.5;\n}\n#orange1 {\n  top: -15px;\n  left: 120px;\n  height: 50px;\n  width: 130px;\n}\n\n#orange2 {\n  top: 30px;\n  left: 90px;\n  height: 50px;\n  width: 170px;\n  opacity: 0.7;\n}\n#orange3 {\n  top: 80px;\n  left: 120px;\n  height: 50px;\n  width: 120px;\n}\n\n#orange5 {\n  top: 10px;\n  left: 160px;\n  height: 30px;\n  width: 30px;\n}\n#orange6 {\n  top: 15px;\n  left: 135px;\n  height: 20px;\n  width: 20px;\n}\n#orange7 {\n  top: 15px;\n  left: 115px;\n  height: 20px;\n  width: 15px;\n}\n#orange8 {\n  bottom: 15px;\n  left: 135px;\n  height: 25px;\n  width: 20px;\n}\n#orange9 {\n  bottom: 15px;\n  left: 195px;\n  height: 20px;\n  width: 15px;\n}\n\n#orange10 {\n  bottom: 0px;\n  left: 275px;\n  height: 25px;\n  width: 15px;\n}\n#orange11 {\n  bottom: 55px;\n  left: 240px;\n  height: 50px;\n  width: 35px;\n  opacity: 0.8;\n}\n\n#white1 {\n  top: 8px;\n  left: 20px;\n  height: 10px;\n  width: 130px;\n}\n\n#white2 {\n  top: 35px;\n  left: 40px;\n  height: 35px;\n  width: 70px;\n}\n#white3 {\n  top: 8px;\n  left: 200px;\n  height: 10px;\n  width: 70px;\n}\n#white4 {\n  top: 35px;\n  left: 205px;\n  height: 35px;\n  width: 120px;\n}\n#white5 {\n  top: 30px;\n  right: 9px;\n  height: 65px;\n  width: 30px;\n}\n#white6 {\n  bottom: 15px;\n  left: 40px;\n  height: 10px;\n  width: 70px;\n}\n#white7 {\n  bottom: 15px;\n  right: 40px;\n  height: 10px;\n  width: 70px;\n}\n#white8 {\n  top: 15px;\n  right: 20px;\n  height: 50px;\n  width: 30px;\n}\n#white9 {\n  top: 30px;\n  left: 0px;\n  height: 50px;\n  width: 5px;\n  opacity: 0.6;\n}\n#white10 {\n  top: 30px;\n  right: 0px;\n  height: 50px;\n  width: 3px;\n  opacity: 0.9;\n}\n#white11 {\n  top: 6px;\n  left: 25px;\n  height: 15px;\n  width: 100px;\n  background-color: transparent;\n  border-bottom: 7px solid white;\n  border-left: 7px solid white;\n  filter: blur(4px);\n}\n#white12 {\n  top: 15px;\n  left: 8px;\n  height: 25px;\n  width: 15px;\n  background-color: transparent;\n  border-top: 3px solid white;\n  border-right: 3px solid #fff9;\n  filter: blur(2px);\n}\n#white13 {\n  bottom: 6px;\n  right: 9px;\n  height: 20px;\n  width: 20px;\n  background-color: transparent;\n  border-right: 7px solid white;\n  border-top: 7px solid white;\n  filter: blur(3px);\n}\n#white14 {\n  bottom: 28px;\n  right: 3px;\n  height: 20px;\n  width: 20px;\n  background-color: transparent;\n  border-left: 7px solid white;\n  border-bottom: 7px solid white;\n  filter: blur(2px);\n}\n#white15 {\n  top: 10px;\n  right: 13px;\n  height: 10px;\n  width: 10px;\n  filter: blur(3px);\n}\n\n#white16 {\n  top: 28px;\n  left: 28px;\n  height: 12px;\n  width: 15px;\n  filter: blur(3px);\n}\n#whiteOverlay {\n  position: absolute;\n  /* background-color: #ffffff44; */\n  background: linear-gradient(\n    180deg,\n    #ffffff44 92px,\n    #ffffff11 96px,\n    #ffffff66 100px\n  );\n  top: 5px;\n  left: 5px;\n  width: 324px;\n  height: 100px;\n  border-radius: 26px;\n  /* filter: blur(1px); */\n}\n#whiteBorder {\n  position: absolute;\n  /* background-color: #ffffff44; */\n  /* background: linear-gradient(180deg,#ffffff44 95px,#ffffff11 98px,#ffffff44 100px); */\n  top: 15px;\n  left: 20px;\n  width: 295px;\n  height: 74px;\n  border-radius: 15px;\n  border: 5px solid #ffffff66;\n  filter: blur(2px);\n}\n#whiteBorder2 {\n  position: absolute;\n  /* background-color: #ffffff44; */\n  /* background: linear-gradient(180deg,#ffffff44 95px,#ffffff11 98px,#ffffff44 100px); */\n  top: 15px;\n  left: 20px;\n  width: 295px;\n  height: 74px;\n  border-radius: 15px;\n  border: 2px solid #ffffff44;\n  filter: blur(1px);\n}\n#text {\n  height: 110px;\n  width: 335px;\n  position: absolute;\n  top: 40px;\n  font-size: 25px;\n  font-weight: 600;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\n    Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n#bg {\n  position: absolute;\n  inset: 0;\n  background-image: repeating-linear-gradient(\n    -155deg,\n    rgba(255, 255, 255, 0.15),\n    rgba(255, 255, 255, 0.15) 50px,\n    rgba(0, 0, 0, 0.15) 100px,\n    rgba(225, 225, 225, 0.15) 150px\n  );\n  filter: blur(30px);\n}\n#pinkbg {\n  position: absolute;\n  background-color: #e59cfaaa;\n  border-radius: 50%;\n  bottom: -150px;\n  filter: blur(20px);\n  width: 400px;\n  height: 200px;\n  right: 30px;\n}\n#orangebg {\n  position: absolute;\n  background-color: #fb9a71aa;\n  border-radius: 50%;\n  bottom: -150px;\n  filter: blur(20px);\n  width: 250px;\n  height: 200px;\n  right: 0px;\n}\n#yellowbg {\n  position: absolute;\n  background-color: #f8b74555;\n  border-radius: 50%;\n  bottom: -150px;\n  filter: blur(20px);\n  width: 100px;\n  height: 200px;\n  right: 0px;\n}\n#purplebg {\n  position: absolute;\n  background-color: #9b27ee33;\n  border-radius: 50%;\n  bottom: -150px;\n  filter: blur(30px);\n  width: 100px;\n  height: 200px;\n  right: 50%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Lakshay-art_nice-insect-63.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"bg\"></view>\n  <view id=\"orangebg\"></view>\n  <view id=\"pinkbg\"></view>\n\n  <view id=\"yellowbg\"></view>\n  <view id=\"purplebg\"></view>\n</div>\n<button class=\"button\"></button>\n  <view id=\"pink1\" class=\"pink\"></view>\n  <view id=\"pink2\" class=\"pink\"></view>\n  <view id=\"pink3\" class=\"pink\"></view>\n  <view id=\"pink4\" class=\"pink\"></view>\n  <view id=\"pink5\" class=\"pink\"></view>\n  <view id=\"pink6\" class=\"pink\"></view>\n\n  <view id=\"orange1\" class=\"orange\"></view>\n  <view id=\"orange2\" class=\"orange\"></view>\n  <view id=\"orange3\" class=\"orange\"></view>\n  <view id=\"orange4\" class=\"orange\"></view>\n\n  <view id=\"white1\" class=\"white\"></view>\n  <view id=\"white2\" class=\"white\"></view>\n  <view id=\"white3\" class=\"white\"></view>\n  <view id=\"white4\" class=\"white\"></view>\n  <view id=\"white5\" class=\"white\"></view>\n  <view id=\"white6\" class=\"white\"></view>\n  <view id=\"white7\" class=\"white\"></view>\n  <view id=\"white8\" class=\"white\"></view>\n  <view id=\"orange5\" class=\"orangei\"></view>\n  <view id=\"orange6\" class=\"orangei\"></view>\n  <view id=\"orange7\" class=\"orangei\"></view>\n  <view id=\"orange8\" class=\"orangei\"></view>\n  <view id=\"orange9\" class=\"orangei\"></view>\n  <view id=\"orange10\" class=\"orangei\"></view>\n  <view id=\"orange11\" class=\"orange\"></view>\n  <view id=\"pink7\" class=\"pinki\"></view>\n  <view id=\"pink8\" class=\"pinki\"></view>\n  <view id=\"pink9\" class=\"pinki\"></view>\n  <view id=\"pink10\" class=\"pinki\"></view>\n  <view id=\"pink11\" class=\"pink\"></view>\n  <view id=\"white9\" class=\"white\"></view>\n  <view id=\"white10\" class=\"white\"></view>\n  <view id=\"backdrop2\"></view>\n  <view id=\"whiteOverlay\"></view>\n  <view id=\"whiteBorder\"></view>\n  <view id=\"whiteBorder2\"></view>\n  <view id=\"white11\" class=\"white\"></view>\n  <view id=\"white12\" class=\"white\"></view>\n  <view id=\"white13\" class=\"white\"></view>\n  <view id=\"white14\" class=\"white\"></view>\n  <view id=\"white15\" class=\"white\"></view>\n  <view id=\"white16\" class=\"white\"></view>\n\n  <view id=\"text\"></view>\n    <view preserveAspectRatio=\"none\" viewBox=\"0 0 256 256\" height=\"20\" width=\"26\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <defs></defs>\n      <g transform=\"translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)\" style=\"stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;\">\n        <path stroke-linecap=\"round\" transform=\"matrix(1 0 0 1 0 0)\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;\" d=\"M 71.79 34.614 c -0.334 -0.497 -0.926 -0.745 -1.513 -0.63 l -18.311 3.528 l 3.718 -35.877 c 0.071 -0.682 -0.332 -1.32 -0.979 -1.55 c -0.648 -0.229 -1.362 0.011 -1.738 0.585 L 18.202 53.746 c -0.328 0.5 -0.325 1.144 0.008 1.639 c 0.33 0.493 0.922 0.742 1.513 0.632 l 18.312 -3.529 l -3.718 35.876 c -0.071 0.684 0.332 1.322 0.979 1.551 C 35.455 89.971 35.622 90 35.792 90 c 0.502 0 0.965 -0.251 1.241 -0.67 l 34.765 -53.076 C 72.126 35.754 72.122 35.11 71.79 34.614 z\"></path>\n      </g>\n    </svg>\n    Join now\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyNiceInsect63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Lakshay-art  - Tags: material design, neumorphism, glassmorphism, 3d, button, rounded, glow, creative */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  width: 670rpx;\n  height: 220rpx;\n  border-radius: 60rpx;\n  border: 2rpx solid #e5c3e6;\n  position: relative;\n  overflow: hidden;\n  \n}\n#backdrop {\n  height: 220rpx;\n  width: 670rpx;\n  overflow: hidden;\n  border-radius: 60rpx;\n\n  background-color: rgb(255 255 255 / 5%);\n  backdrop-\n}\n\n#backdrop2 {\n  height: 220rpx;\n  width: 670rpx;\n  overflow: hidden;\n  border-radius: 60rpx;\n\n  background-color: rgb(255 255 255 / 5%);\n  backdrop-\n}\n.pink {\n  position: absolute;\n  background-color: #f05ee7;\n  \n  border-radius: 50%;\n}\n.pinki {\n  position: absolute;\n  background-color: #ba63d9;\n  /*  */\n  border-radius: 50%;\n}\n.orange {\n  position: absolute;\n  background-color: #f37130;\n  \n  border-radius: 50%;\n}\n.orangei {\n  position: absolute;\n  background-color: #ff4600;\n  \n  border-radius: 50%;\n}\n.white {\n  position: absolute;\n  background-color: white;\n  /*  */\n  border-radius: 50rpx;\n}\n\n#pink1 {\n  top: -20rpx;\n  left: -20rpx;\n  height: 100rpx;\n  width: 300rpx;\n}\n\n#pink2 {\n  bottom: -20rpx;\n  left: -20rpx;\n  height: 100rpx;\n  width: 280rpx;\n}\n#pink3 {\n  top: -10rpx;\n  right: -20rpx;\n  height: 100rpx;\n  width: 240rpx;\n}\n\n#pink4 {\n  bottom: -10rpx;\n  right: -20rpx;\n  height: 100rpx;\n  width: 280rpx;\n}\n\n#pink5 {\n  top: 50rpx;\n  left: -40rpx;\n  height: 140rpx;\n  width: 240rpx;\n  opacity: 0.7;\n}\n#pink6 {\n  top: 50rpx;\n  right: -40rpx;\n  height: 140rpx;\n  width: 240rpx;\n  opacity: 0.7;\n}\n#pink7 {\n  top: 0rpx;\n  left: -10rpx;\n  height: 60rpx;\n  width: 60rpx;\n  /* opacity: 0.7; */\n}\n#pink8 {\n  bottom: -40rpx;\n  left: -40rpx;\n  height: 220rpx;\n  width: 100rpx;\n  /* opacity: 0.7; */\n}\n#pink9 {\n  top: 0rpx;\n  right: -40rpx;\n  height: 120rpx;\n  width: 100rpx;\n  opacity: 0.7;\n}\n#pink10 {\n  bottom: 0rpx;\n  right: -40rpx;\n  height: 40rpx;\n  width: 100rpx;\n  opacity: 0.7;\n}\n#pink11 {\n  top: 50rpx;\n  right: 80rpx;\n  height: 60rpx;\n  width: 140rpx;\n  opacity: 0.5;\n}\n#orange1 {\n  top: -30rpx;\n  left: 240rpx;\n  height: 100rpx;\n  width: 260rpx;\n}\n\n#orange2 {\n  top: 60rpx;\n  left: 180rpx;\n  height: 100rpx;\n  width: 340rpx;\n  opacity: 0.7;\n}\n#orange3 {\n  top: 160rpx;\n  left: 240rpx;\n  height: 100rpx;\n  width: 240rpx;\n}\n\n#orange5 {\n  top: 20rpx;\n  left: 320rpx;\n  height: 60rpx;\n  width: 60rpx;\n}\n#orange6 {\n  top: 30rpx;\n  left: 270rpx;\n  height: 40rpx;\n  width: 40rpx;\n}\n#orange7 {\n  top: 30rpx;\n  left: 230rpx;\n  height: 40rpx;\n  width: 30rpx;\n}\n#orange8 {\n  bottom: 30rpx;\n  left: 270rpx;\n  height: 50rpx;\n  width: 40rpx;\n}\n#orange9 {\n  bottom: 30rpx;\n  left: 390rpx;\n  height: 40rpx;\n  width: 30rpx;\n}\n\n#orange10 {\n  bottom: 0rpx;\n  left: 550rpx;\n  height: 50rpx;\n  width: 30rpx;\n}\n#orange11 {\n  bottom: 110rpx;\n  left: 480rpx;\n  height: 100rpx;\n  width: 70rpx;\n  opacity: 0.8;\n}\n\n#white1 {\n  top: 16rpx;\n  left: 40rpx;\n  height: 20rpx;\n  width: 260rpx;\n}\n\n#white2 {\n  top: 70rpx;\n  left: 80rpx;\n  height: 70rpx;\n  width: 140rpx;\n}\n#white3 {\n  top: 16rpx;\n  left: 400rpx;\n  height: 20rpx;\n  width: 140rpx;\n}\n#white4 {\n  top: 70rpx;\n  left: 410rpx;\n  height: 70rpx;\n  width: 240rpx;\n}\n#white5 {\n  top: 60rpx;\n  right: 18rpx;\n  height: 130rpx;\n  width: 60rpx;\n}\n#white6 {\n  bottom: 30rpx;\n  left: 80rpx;\n  height: 20rpx;\n  width: 140rpx;\n}\n#white7 {\n  bottom: 30rpx;\n  right: 80rpx;\n  height: 20rpx;\n  width: 140rpx;\n}\n#white8 {\n  top: 30rpx;\n  right: 40rpx;\n  height: 100rpx;\n  width: 60rpx;\n}\n#white9 {\n  top: 60rpx;\n  left: 0rpx;\n  height: 100rpx;\n  width: 10rpx;\n  opacity: 0.6;\n}\n#white10 {\n  top: 60rpx;\n  right: 0rpx;\n  height: 100rpx;\n  width: 6rpx;\n  opacity: 0.9;\n}\n#white11 {\n  top: 12rpx;\n  left: 50rpx;\n  height: 30rpx;\n  width: 200rpx;\n  background-color: transparent;\n  border-bottom: 14rpx solid white;\n  border-left: 14rpx solid white;\n  \n}\n#white12 {\n  top: 30rpx;\n  left: 16rpx;\n  height: 50rpx;\n  width: 30rpx;\n  background-color: transparent;\n  border-top: 6rpx solid white;\n  border-right: 6rpx solid #fff9;\n  \n}\n#white13 {\n  bottom: 12rpx;\n  right: 18rpx;\n  height: 40rpx;\n  width: 40rpx;\n  background-color: transparent;\n  border-right: 14rpx solid white;\n  border-top: 14rpx solid white;\n  \n}\n#white14 {\n  bottom: 56rpx;\n  right: 6rpx;\n  height: 40rpx;\n  width: 40rpx;\n  background-color: transparent;\n  border-left: 14rpx solid white;\n  border-bottom: 14rpx solid white;\n  \n}\n#white15 {\n  top: 20rpx;\n  right: 26rpx;\n  height: 20rpx;\n  width: 20rpx;\n  \n}\n\n#white16 {\n  top: 56rpx;\n  left: 56rpx;\n  height: 24rpx;\n  width: 30rpx;\n  \n}\n#whiteOverlay {\n  position: absolute;\n  /* background-color: #ffffff44; */\n  background: linear-gradient(\n    180deg,\n    #ffffff44 184rpx,\n    #ffffff11 192rpx,\n    #ffffff66 200rpx\n  );\n  top: 10rpx;\n  left: 10rpx;\n  width: 648rpx;\n  height: 200rpx;\n  border-radius: 52rpx;\n  /*  */\n}\n#whiteBorder {\n  position: absolute;\n  /* background-color: #ffffff44; */\n  /* background: linear-gradient(180deg,#ffffff44 190rpx,#ffffff11 196rpx,#ffffff44 200rpx); */\n  top: 30rpx;\n  left: 40rpx;\n  width: 590rpx;\n  height: 148rpx;\n  border-radius: 30rpx;\n  border: 10rpx solid #ffffff66;\n  \n}\n#whiteBorder2 {\n  position: absolute;\n  /* background-color: #ffffff44; */\n  /* background: linear-gradient(180deg,#ffffff44 190rpx,#ffffff11 196rpx,#ffffff44 200rpx); */\n  top: 30rpx;\n  left: 40rpx;\n  width: 590rpx;\n  height: 148rpx;\n  border-radius: 30rpx;\n  border: 4rpx solid #ffffff44;\n  \n}\n#text {\n  height: 220rpx;\n  width: 670rpx;\n  position: absolute;\n  top: 80rpx;\n  font-size: 50rpx;\n  font-weight: 600;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\n    Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n#bg {\n  position: absolute;\n  inset: 0;\n  background-image: repeating-linear-gradient(\n    -155deg,\n    rgba(255, 255, 255, 0.15),\n    rgba(255, 255, 255, 0.15) 100rpx,\n    rgba(0, 0, 0, 0.15) 200rpx,\n    rgba(225, 225, 225, 0.15) 300rpx\n  );\n  \n}\n#pinkbg {\n  position: absolute;\n  background-color: #e59cfaaa;\n  border-radius: 50%;\n  bottom: -300rpx;\n  \n  width: 800rpx;\n  height: 400rpx;\n  right: 60rpx;\n}\n#orangebg {\n  position: absolute;\n  background-color: #fb9a71aa;\n  border-radius: 50%;\n  bottom: -300rpx;\n  \n  width: 500rpx;\n  height: 400rpx;\n  right: 0rpx;\n}\n#yellowbg {\n  position: absolute;\n  background-color: #f8b74555;\n  border-radius: 50%;\n  bottom: -300rpx;\n  \n  width: 200rpx;\n  height: 400rpx;\n  right: 0rpx;\n}\n#purplebg {\n  position: absolute;\n  background-color: #9b27ee33;\n  border-radius: 50%;\n  bottom: -300rpx;\n  \n  width: 200rpx;\n  height: 400rpx;\n  right: 50%;\n}\n\n",
+    "component_name": "GalaxyNiceInsect63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 9848,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.774Z",
+  "updated_at": "2025-07-31T07:55:33.774Z"
+}

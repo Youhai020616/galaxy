@@ -1,0 +1,116 @@
+{
+  "id": "ArturCodeCraft_black-chicken-8",
+  "name": "black-chicken-8",
+  "category": "buttons",
+  "author": "ArturCodeCraft",
+  "description": "black-chicken-8 组件 (button, scroll to top, scroll, animation, interactive)",
+  "tags": [
+    "button",
+    "scroll to top",
+    "scroll",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a id=\"scroll-up\" class=\"scroll-up\" href=\"#\">\n\t<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n\t\t<path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n\t\t<path fill=\"rgba(255,255,255,1)\" d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\">\n\t\t</path>\n\t</svg>\n</a>",
+    "css": "/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll to top, scroll */\n/* <reset-style> ============================ */\na {\n  text-decoration: none;\n}\n/* <main-style> ============================ */\n.scroll-up {\n\t/* position: fixed; */\n  right: 3rem;\n  bottom: -50%;\n  z-index: 10;\n  width: 32px;\n  height: 32px;\n  border-radius: 4px;\n  background-color: rgba(29, 29, 31, 0.7);\n  backdrop-filter: saturate(180%) blur(20px);\n  -webkit-backdrop-filter: saturate(180%) blur(20px);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  transition: bottom .4s, transform .4s;\n}\n\n.scroll-up:hover {\n  transform: translateY(-.25rem);\n}\n\n/* Show scroll-up */\n._show-scroll {\n  bottom: 3rem;\n}\n\n@media (max-width: 1199.98px) {\n  .scroll-up {\n    right: 1rem;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ArturCodeCraft_black-chicken-8.html"
+  },
+  "uniapp": {
+    "template": "<navigator id=\"scroll-up\" class=\"scroll-up\" href=\"#\"></navigator>\n\t<view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n\t\t<path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n\t\t<path fill=\"rgba(255,255,255,1)\" d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\">\n\t\t</path>\n\t</svg>\n</a>",
+    "script": "export default {\n  name: 'GalaxyBlackChicken8',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll to top, scroll */\n/* <reset-style> ============================ */\na {\n  text-decoration: none;\n}\n/* <main-style> ============================ */\n.scroll-up {\n\t/* position: fixed; */\n  right: 3rem;\n  bottom: -50%;\n  z-index: 10;\n  width: 64rpx;\n  height: 64rpx;\n  border-radius: 8rpx;\n  background-color: rgba(29, 29, 31, 0.7);\n  backdrop-\n  -webkit-backdrop-\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  transition: bottom .4s, transform .4s;\n}\n\n.scroll-up:hover {\n  transform: translateY(-.25rem);\n}\n\n/* Show scroll-up */\n._show-scroll {\n  bottom: 3rem;\n}\n\n@media (max-width: 2399.96rpx) {\n  .scroll-up {\n    right: 1rem;\n  }\n}\n",
+    "component_name": "GalaxyBlackChicken8"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1123,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.683Z",
+  "updated_at": "2025-07-31T07:55:32.683Z"
+}

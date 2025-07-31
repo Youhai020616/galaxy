@@ -1,0 +1,104 @@
+{
+  "id": "andrew-demchenk0_chatty-ape-15",
+  "name": "chatty-ape-15",
+  "category": "buttons",
+  "author": "andrew-demchenk0",
+  "description": "chatty-ape-15 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"group relative z-1 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br flex items-center font-medium text-white transition-all duration-200 ease-in-out rounded-lg px-4 py-2 active:scale-95 active:shadow-inner\">\n  <div class=\"absolute -z-10 -inset-0.5 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-xl group-hover:opacity-100 animate-pulse group-hover:inset-10\"></div>\n  <div class=\"svg-wrapper transform group-hover:translate-x-5 group-hover:rotate-45 transition-all duration-400\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" class=\"\">\n      <path fill=\"none\" d=\"M0 0h24v24H0z\"></path>\n      <path fill=\"#fff\" d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\"></path>\n    </svg>\n  </div>\n  <span class=\"ml-1 text-white transition-all duration-300 group-hover:text-transparent\">Send</span>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/andrew-demchenk0_chatty-ape-15.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"group relative z-1 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br flex items-center font-medium text-white transition-all duration-200 ease-in-out rounded-lg px-4 py-2 active:scale-95 active:shadow-inner\"></button>\n  <view class=\"absolute -z-10 -inset-0.5 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-xl group-hover:opacity-100 animate-pulse group-hover:inset-10\"></view>\n  <view class=\"svg-wrapper transform group-hover:translate-x-5 group-hover:rotate-45 transition-all duration-400\"></view>\n    <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" class=\"\"></view>\n      <path fill=\"none\" d=\"M0 0h24v24H0z\"></path>\n      <path fill=\"#fff\" d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\"></path>\n    </svg>\n  </div>\n  <text class=\"ml-1 text-white transition-all duration-300 group-hover:text-transparent\">Send</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChattyApe15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyChattyApe15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1021,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.625Z",
+  "updated_at": "2025-07-31T07:55:35.625Z"
+}

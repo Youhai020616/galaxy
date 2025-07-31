@@ -1,0 +1,108 @@
+{
+  "id": "SujitAdroja_sharp-frog-56",
+  "name": "sharp-frog-56",
+  "category": "buttons",
+  "author": "SujitAdroja",
+  "description": "sharp-frog-56 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n  Diagonal Swipe\n</button>",
+    "css": "/* From Uiverse.io by SujitAdroja - Tags: button */\n.btn {\n  color: purple;\n  text-transform: uppercase;\n  text-decoration: none;\n  border: 2px solid purple;\n  padding: 10px 20px;\n  font-size: 17px;\n  font-weight: bold;\n  background: transparent;\n  position: relative;\n  transition: all 1s;\n  overflow: hidden;\n}\n\n.btn:hover {\n  color: white;\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  height: 100%;\n  width: 0%;\n  top: 0;\n  left: -40px;\n  transform: skewX(45deg);\n  background-color: purple;\n  z-index: -1;\n  transition: all 1s;\n}\n\n.btn:hover::before {\n  width: 160%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SujitAdroja_sharp-frog-56.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n  Diagonal Swipe\n</button>",
+    "script": "export default {\n  name: 'GalaxySharpFrog56',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SujitAdroja - Tags: button */\n.btn {\n  color: purple;\n  text-transform: uppercase;\n  text-decoration: none;\n  border: 4rpx solid purple;\n  padding: 20rpx 40rpx;\n  font-size: 34rpx;\n  font-weight: bold;\n  background: transparent;\n  position: relative;\n  transition: all 1s;\n  overflow: hidden;\n}\n\n.btn:hover {\n  color: white;\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  height: 100%;\n  width: 0%;\n  top: 0;\n  left: -80rpx;\n  transform: skewX(45deg);\n  background-color: purple;\n  z-index: -1;\n  transition: all 1s;\n}\n\n.btn:hover::before {\n  width: 160%;\n}\n",
+    "component_name": "GalaxySharpFrog56"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 635,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.948Z",
+  "updated_at": "2025-07-31T07:55:34.948Z"
+}

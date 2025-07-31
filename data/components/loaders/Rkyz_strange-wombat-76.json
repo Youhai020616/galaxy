@@ -1,0 +1,86 @@
+{
+  "id": "Rkyz_strange-wombat-76",
+  "name": "strange-wombat-76",
+  "category": "loaders",
+  "author": "Rkyz",
+  "description": "strange-wombat-76 组件 (animation, loader, animal)",
+  "tags": [
+    "animation",
+    "loader",
+    "animal"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n <div class=\"dot-one\"></div> \n <div class=\"dot-two\">-  -</div> \n <div class=\"dot-three\"></div> \n</div>",
+    "css": "/* From Uiverse.io by Rkyz - Tags: animation, loader, animal */\n.loader {\n  height: 50px;\n  width: 20rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 15px;\n}\n\n.dot-two {\n  background-color: black;\n  height: 30px;\n  width: 30px;\n  border-radius: 50%;\n  padding: 4px;\n  color: white;\n}\n\n.dot-one,\n.dot-three {\n  background-color: black;\n  height: 30px;\n  width: 20px;\n  border-radius: 50%;\n  text-align: center;\n  animation: flap-wings 1s infinite ease-in-out;\n}\n\n.dot-two {\n  position: relative;\n  height: 30px;\n  width: 30px;\n  border-radius: 50%;\n  background-color: black;\n  animation: flap-wings 1s infinite ease-in-out;\n  animation-delay: 0.1s;\n}\n\n.dot-two::before,\n.dot-two::after {\n  content: \"\";\n  position: absolute;\n  background-color: black;\n}\n\n.dot-two::before {\n  height: 20px;\n  width: 10px;\n  bottom: 20px;\n  left: 1px;\n  border-radius: 50% 50% 0 0;\n  transform: rotate(-20deg);\n}\n\n.dot-two::after {\n  height: 20px;\n  width: 10px;\n  bottom: 20px;\n  left: 19px;\n  transform: rotate(20deg);\n  border-radius: 50% 50% 0 0;\n}\n\n.dot-one::before,\n.dot-one::after,\n.dot-three::before,\n.dot-three::after {\n  content: \"\";\n  position: absolute;\n  background-color: white;\n}\n\n.dot-one::before,\n.dot-three::before {\n  height: 30px;\n  width: 20px;\n  top: 10px;\n  left: 0;\n  background-color: #e8e8e8;\n /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/\n  border-radius: 50% 50% 0 0;\n}\n\n@keyframes flap-wings {\n  0%,\n  100% {\n    transform: translateY(0);\n  }\n\n  50% {\n    transform: translateY(-20px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Rkyz_strange-wombat-76.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n <view class=\"dot-one\"></view> \n <view class=\"dot-two\">-  -</view> \n <view class=\"dot-three\"></view> \n</div>",
+    "script": "export default {\n  name: 'GalaxyStrangeWombat76',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Rkyz - Tags: animation, loader, animal */\n.loader {\n  height: 100rpx;\n  width: 20rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30rpx;\n}\n\n.dot-two {\n  background-color: black;\n  height: 60rpx;\n  width: 60rpx;\n  border-radius: 50%;\n  padding: 8rpx;\n  color: white;\n}\n\n.dot-one,\n.dot-three {\n  background-color: black;\n  height: 60rpx;\n  width: 40rpx;\n  border-radius: 50%;\n  text-align: center;\n  animation: flap-wings 1s infinite ease-in-out;\n}\n\n.dot-two {\n  position: relative;\n  height: 60rpx;\n  width: 60rpx;\n  border-radius: 50%;\n  background-color: black;\n  animation: flap-wings 1s infinite ease-in-out;\n  animation-delay: 0.1s;\n}\n\n.dot-two::before,\n.dot-two::after {\n  content: \"\";\n  position: absolute;\n  background-color: black;\n}\n\n.dot-two::before {\n  height: 40rpx;\n  width: 20rpx;\n  bottom: 40rpx;\n  left: 2rpx;\n  border-radius: 50% 50% 0 0;\n  transform: rotate(-20deg);\n}\n\n.dot-two::after {\n  height: 40rpx;\n  width: 20rpx;\n  bottom: 40rpx;\n  left: 38rpx;\n  transform: rotate(20deg);\n  border-radius: 50% 50% 0 0;\n}\n\n.dot-one::before,\n.dot-one::after,\n.dot-three::before,\n.dot-three::after {\n  content: \"\";\n  position: absolute;\n  background-color: white;\n}\n\n.dot-one::before,\n.dot-three::before {\n  height: 60rpx;\n  width: 40rpx;\n  top: 20rpx;\n  left: 0;\n  background-color: #e8e8e8;\n /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/\n  border-radius: 50% 50% 0 0;\n}\n\n@keyframes flap-wings {\n  0%,\n  100% {\n    transform: translateY(0);\n  }\n\n  50% {\n    transform: translateY(-40rpx);\n  }\n}\n",
+    "component_name": "GalaxyStrangeWombat76"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1687,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.175Z",
+  "updated_at": "2025-07-31T07:55:40.175Z"
+}

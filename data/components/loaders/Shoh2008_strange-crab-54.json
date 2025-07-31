@@ -1,0 +1,86 @@
+{
+  "id": "Shoh2008_strange-crab-54",
+  "name": "strange-crab-54",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "strange-crab-54 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  width: 92px;\n  height: 180px;\n  border-radius: 8px;\n  transform: translateY(-30px);\n  background-color: #000;\n  background-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 4%,rgba(81,81,81,1) 14%,rgba(44,44,44,1) 26%,rgba(2,2,2,1) 53%,rgba(2,2,2,1) 65%,rgba(2,2,2,0) 66%),\n    linear-gradient(#111, #111);\n  background-repeat: no-repeat;\n  background-size: 10px 10px , 84px 162px;\n  background-position: center 2px, 4px 8px;\n  animation: lightUp 6s linear infinite alternate;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 190px;\n  transform: translateX(-50%);\n  width: 32px;\n  height: 75px;\n  background-image: linear-gradient(#fff, #fff),\n  linear-gradient(#bbb, #bbb),\n  linear-gradient(#fff, #fff);\n  background-repeat: no-repeat;\n  background-position: center 4px , center top, center 5px;\n  background-size: 11px 11px , 7px 4px ,  2px 100%;\n  animation: plugin 6s linear infinite alternate;\n}\n\n.loader:after {\n  content: '';\n  width: 30px;\n  height: 60px;\n  background-image: linear-gradient(#888, #888),\n  linear-gradient(to right, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.5) 40%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,0.1) 100%),\n  linear-gradient(#15ff00, #15ff00),\n  linear-gradient(#888, #888);\n  background-size: 12px 4px, 30px 52px , 30px 0px , 30px 56px;\n  background-position: center 0 , center 6px , center bottom , center 4px;\n  background-repeat: no-repeat;\n  top: 50%;\n  left: 50%;\n  position: absolute;\n  transform: translate(-50% , -50%);\n  animation: charging 6s linear infinite alternate;\n}\n\n@keyframes charging {\n  0%  , 25% {\n    opacity: 0;\n    background-size: 12px 4px, 30px 52px , 30px 0px , 30px 56px;\n  }\n\n  26% ,  75% {\n    opacity: 1;\n    background-size: 12px 4px, 30px 52px , 30px 0px , 30px 56px;\n  }\n\n  50% , 100% {\n    opacity: 1;\n    background-size: 12px 4px, 30px 52px , 30px 56px , 30px 56px\n  }\n}\n\n@keyframes lightUp {\n  0%  , 25% {\n    background-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 4%,rgba(81,81,81,1) 14%,rgba(44,44,44,1) 26%,rgba(2,2,2,1) 53%,rgba(2,2,2,1) 65%,rgba(2,2,2,0) 66%),\n      linear-gradient(#111, #111);\n  }\n\n  26% , 100% {\n    background-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 4%,rgba(81,81,81,1) 14%,rgba(44,44,44,1) 26%,rgba(2,2,2,1) 53%,rgba(2,2,2,1) 65%,rgba(2,2,2,0) 66%),\n      linear-gradient(#DDD, #DDD);\n  }\n}\n\n@keyframes plugin {\n  0% , 25% {\n    top: 190px;\n    background-position: center 4px , center top, center 5px;\n  }\n\n  26%  , 100% {\n    background-position: center 0 , center top, center 5px;\n    top: 180px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_strange-crab-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyStrangeCrab54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  width: 184rpx;\n  height: 360rpx;\n  border-radius: 16rpx;\n  transform: translateY(-60rpx);\n  background-color: #000;\n  background-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 4%,rgba(81,81,81,1) 14%,rgba(44,44,44,1) 26%,rgba(2,2,2,1) 53%,rgba(2,2,2,1) 65%,rgba(2,2,2,0) 66%),\n    linear-gradient(#111, #111);\n  background-repeat: no-repeat;\n  background-size: 20rpx 20rpx , 168rpx 324rpx;\n  background-position: center 4rpx, 8rpx 16rpx;\n  animation: lightUp 6s linear infinite alternate;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 380rpx;\n  transform: translateX(-50%);\n  width: 64rpx;\n  height: 150rpx;\n  background-image: linear-gradient(#fff, #fff),\n  linear-gradient(#bbb, #bbb),\n  linear-gradient(#fff, #fff);\n  background-repeat: no-repeat;\n  background-position: center 8rpx , center top, center 10rpx;\n  background-size: 22rpx 22rpx , 14rpx 8rpx ,  4rpx 100%;\n  animation: plugin 6s linear infinite alternate;\n}\n\n.loader:after {\n  content: '';\n  width: 60rpx;\n  height: 120rpx;\n  background-image: linear-gradient(#888, #888),\n  linear-gradient(to right, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.5) 40%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,0.1) 100%),\n  linear-gradient(#15ff00, #15ff00),\n  linear-gradient(#888, #888);\n  background-size: 24rpx 8rpx, 60rpx 104rpx , 60rpx 0rpx , 60rpx 112rpx;\n  background-position: center 0 , center 12rpx , center bottom , center 8rpx;\n  background-repeat: no-repeat;\n  top: 50%;\n  left: 50%;\n  position: absolute;\n  transform: translate(-50% , -50%);\n  animation: charging 6s linear infinite alternate;\n}\n\n@keyframes charging {\n  0%  , 25% {\n    opacity: 0;\n    background-size: 24rpx 8rpx, 60rpx 104rpx , 60rpx 0rpx , 60rpx 112rpx;\n  }\n\n  26% ,  75% {\n    opacity: 1;\n    background-size: 24rpx 8rpx, 60rpx 104rpx , 60rpx 0rpx , 60rpx 112rpx;\n  }\n\n  50% , 100% {\n    opacity: 1;\n    background-size: 24rpx 8rpx, 60rpx 104rpx , 60rpx 112rpx , 60rpx 112rpx\n  }\n}\n\n@keyframes lightUp {\n  0%  , 25% {\n    background-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 4%,rgba(81,81,81,1) 14%,rgba(44,44,44,1) 26%,rgba(2,2,2,1) 53%,rgba(2,2,2,1) 65%,rgba(2,2,2,0) 66%),\n      linear-gradient(#111, #111);\n  }\n\n  26% , 100% {\n    background-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 4%,rgba(81,81,81,1) 14%,rgba(44,44,44,1) 26%,rgba(2,2,2,1) 53%,rgba(2,2,2,1) 65%,rgba(2,2,2,0) 66%),\n      linear-gradient(#DDD, #DDD);\n  }\n}\n\n@keyframes plugin {\n  0% , 25% {\n    top: 380rpx;\n    background-position: center 8rpx , center top, center 10rpx;\n  }\n\n  26%  , 100% {\n    background-position: center 0 , center top, center 10rpx;\n    top: 360rpx;\n  }\n}\n  \n",
+    "component_name": "GalaxyStrangeCrab54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2741,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.454Z",
+  "updated_at": "2025-07-31T07:55:40.454Z"
+}

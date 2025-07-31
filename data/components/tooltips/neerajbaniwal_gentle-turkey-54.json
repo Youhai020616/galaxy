@@ -1,0 +1,102 @@
+{
+  "id": "neerajbaniwal_gentle-turkey-54",
+  "name": "gentle-turkey-54",
+  "category": "tooltips",
+  "author": "neerajbaniwal",
+  "description": "gentle-turkey-54 组件 (simple, neumorphism, glassmorphism, tooltip, hover, hover effect, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "neumorphism",
+    "glassmorphism",
+    "tooltip",
+    "hover",
+    "hover effect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">Uiverse.io</span>\n  <span class=\"text\">@</span>\n</div>",
+    "css": "/* From Uiverse.io by neerajbaniwal  - Tags: simple, neumorphism, glassmorphism, tooltip, hover, hover effect */\n.tooltip-container {\n  height: 70px;\n  width: 110px;\n  border-radius: 5px;\n  background-color: #fff;\n  background-image: linear-gradient(\n    to left bottom,\n    #f2f5f8,\n    #ecf1f2,\n    #e7eceb,\n    #e3e7e4,\n    #e1e2de\n  );\n  border: 1px solid white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);\n  position: relative;\n  transition: transform 0.3s ease;\n  z-index: 1;\n}\n\n.tooltip-container::before {\n  position: absolute;\n  content: \"\";\n  top: -50%;\n  clip-path: polygon(50% 0, 0 100%, 100% 100%);\n  border-radius: 5px;\n  background-color: fff;\n  background-image: linear-gradient(\n    to left bottom,\n    #1288ff,\n    #e4eaec,\n    #d8dfde,\n    #cdd3cf,\n    #c5c7c1\n  );\n  width: 100%;\n  height: 50%;\n  transform-style: preserve-3d;\n  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);\n  transition: transform 0.3s ease;\n  z-index: -1;\n}\n\n.tooltip-container .text {\n  color: rgb(32, 30, 30);\n  font-weight: bold;\n  font-size: 40px;\n}\n\n.tooltip {\n  position: absolute;\n  top: -20px;\n  opacity: 0;\n  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 1px, white 1px),\n    linear-gradient(rgba(0, 0, 0, 0.05) 1px, white 1px),\n    linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, white 1px),\n    linear-gradient(rgba(0, 0, 0, 0.04) 1px, white 1px),\n    linear-gradient(white 3px, #f2f2f2 3px, #f2f2f2 78px, white 78px),\n    linear-gradient(-90deg, #aaa 1px, white 1px),\n    linear-gradient(-90deg, white 3px, #f2f2f2 3px, #f2f2f2 78px, white 78px),\n    linear-gradient(#aaa 1px, white 1px), #f2f2f2;\n  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,\n    80px 80px, 80px 80px;\n  padding: 5px 10px;\n  border: 1px solid rgb(206, 204, 204);\n\n  height: 70px;\n  width: 110px;\n  border-radius: 5px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition-duration: 0.2s;\n  pointer-events: none;\n  letter-spacing: 0.5px;\n  font-size: 18px;\n  font-weight: 600;\n  text-shadow: 10px salmon;\n  z-index: ;\n}\n.tooltip-container:hover {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n.tooltip-container:hover::before {\n  transform: rotateY(0);\n  background-image: none;\n  background-color: white;\n}\n\n.tooltip-container:hover .tooltip {\n  top: -90px;\n  opacity: 1;\n  transition-duration: 0.3s;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/neerajbaniwal_gentle-turkey-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\">Uiverse.io</text>\n  <text class=\"text\">@</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGentleTurkey54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by neerajbaniwal  - Tags: simple, neumorphism, glassmorphism, tooltip, hover, hover effect */\n.tooltip-container {\n  height: 140rpx;\n  width: 220rpx;\n  border-radius: 10rpx;\n  background-color: #fff;\n  background-image: linear-gradient(\n    to left bottom,\n    #f2f5f8,\n    #ecf1f2,\n    #e7eceb,\n    #e3e7e4,\n    #e1e2de\n  );\n  border: 2rpx solid white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 20rpx 20rpx rgba(0, 0, 0, 0.151);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: relative;\n  transition: transform 0.3s ease;\n  z-index: 1;\n}\n\n.tooltip-container::before {\n  position: absolute;\n  content: \"\";\n  top: -50%;\n  \n  border-radius: 10rpx;\n  background-color: fff;\n  background-image: linear-gradient(\n    to left bottom,\n    #1288ff,\n    #e4eaec,\n    #d8dfde,\n    #cdd3cf,\n    #c5c7c1\n  );\n  width: 100%;\n  height: 50%;\n  transform-style: preserve-3d;\n  transform: perspective(2000rpx) rotateX(-150deg) translateY(-110%);\n  transition: transform 0.3s ease;\n  z-index: -1;\n}\n\n.tooltip-container .text {\n  color: rgb(32, 30, 30);\n  font-weight: bold;\n  font-size: 80rpx;\n}\n\n.tooltip {\n  position: absolute;\n  top: -40rpx;\n  opacity: 0;\n  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 2rpx, white 2rpx),\n    linear-gradient(rgba(0, 0, 0, 0.05) 2rpx, white 2rpx),\n    linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 2rpx, white 2rpx),\n    linear-gradient(rgba(0, 0, 0, 0.04) 2rpx, white 2rpx),\n    linear-gradient(white 6rpx, #f2f2f2 6rpx, #f2f2f2 156rpx, white 156rpx),\n    linear-gradient(-90deg, #aaa 2rpx, white 2rpx),\n    linear-gradient(-90deg, white 6rpx, #f2f2f2 6rpx, #f2f2f2 156rpx, white 156rpx),\n    linear-gradient(#aaa 2rpx, white 2rpx), #f2f2f2;\n  background-size: 8rpx 8rpx, 8rpx 8rpx, 160rpx 160rpx, 160rpx 160rpx, 160rpx 160rpx, 160rpx 160rpx,\n    160rpx 160rpx, 160rpx 160rpx;\n  padding: 10rpx 20rpx;\n  border: 2rpx solid rgb(206, 204, 204);\n\n  height: 140rpx;\n  width: 220rpx;\n  border-radius: 10rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition-duration: 0.2s;\n  pointer-events: none;\n  letter-spacing: 1rpx;\n  font-size: 36rpx;\n  font-weight: 600;\n  /* #ifdef H5 */\n  text-shadow: 20rpx salmon;\n  /* #endif */\n  z-index: ;\n}\n.tooltip-container:hover {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n.tooltip-container:hover::before {\n  transform: rotateY(0);\n  background-image: none;\n  background-color: white;\n}\n\n.tooltip-container:hover .tooltip {\n  top: -180rpx;\n  opacity: 1;\n  transition-duration: 0.3s;\n}\n\n",
+    "component_name": "GalaxyGentleTurkey54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2592,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.719Z",
+  "updated_at": "2025-07-31T07:55:38.719Z"
+}

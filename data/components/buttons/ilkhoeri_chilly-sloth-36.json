@@ -1,0 +1,116 @@
+{
+  "id": "ilkhoeri_chilly-sloth-36",
+  "name": "chilly-sloth-36",
+  "category": "buttons",
+  "author": "ilkhoeri",
+  "description": "chilly-sloth-36 组件 (simple, button, toggle, svg, save, animation, interactive)",
+  "tags": [
+    "simple",
+    "button",
+    "toggle",
+    "svg",
+    "save",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"action_has has_saved\" aria-label=\"save\" type=\"button\">\n  <svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" fill=\"none\">\n    <path d=\"m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z\" stroke-linejoin=\"round\" stroke-linecap=\"round\" data-path=\"box\"></path>\n    <path d=\"M7 3L7 8L15 8\" stroke-linejoin=\"round\" stroke-linecap=\"round\" data-path=\"line-top\"></path>\n    <path d=\"M17 20L17 13L7 13L7 20\" stroke-linejoin=\"round\" stroke-linecap=\"round\" data-path=\"line-bottom\"></path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by ilkhoeri  - Tags: simple, button, toggle, svg, save */\n.action_has {\n  --color: 0 0% 60%;\n  --color-has: 211deg 100% 48%;\n  --sz: 1rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: calc(var(--sz) * 2.5);\n  width: calc(var(--sz) * 2.5);\n  padding: 0.4rem 0.5rem;\n  border-radius: 0.375rem;\n  border: 0.0625rem solid hsl(var(--color));\n}\n\n.has_saved:hover {\n  border-color: hsl(var(--color-has));\n}\n.has_liked:hover svg,\n.has_saved:hover svg {\n  color: hsl(var(--color-has));\n}\n\n.has_liked svg,\n.has_saved svg {\n  overflow: visible;\n  height: calc(var(--sz) * 1.75);\n  width: calc(var(--sz) * 1.75);\n  --ease: cubic-bezier(0.5, 0, 0.25, 1);\n  --zoom-from: 1.75;\n  --zoom-via: 0.75;\n  --zoom-to: 1;\n  --duration: 1s;\n}\n\n.has_saved:hover path[data-path=\"box\"] {\n  transition: all 0.3s var(--ease);\n  animation: has-saved var(--duration) var(--ease) forwards;\n  fill: hsl(var(--color-has) / 0.35);\n}\n.has_saved:hover path[data-path=\"line-top\"] {\n  animation: has-saved-line-top var(--duration) var(--ease) forwards;\n}\n.has_saved:hover path[data-path=\"line-bottom\"] {\n  animation: has-saved-line-bottom var(--duration) var(--ease) forwards,\n    has-saved-line-bottom-2 calc(var(--duration) * 1) var(--ease)\n      calc(var(--duration) * 0.75);\n}\n\n@keyframes has-saved-line-top {\n  33.333% {\n    transform: rotate(0deg) translate(1px, 2px) scale(var(--zoom-from));\n    d: path(\"M 3 5 L 3 8 L 3 8\");\n  }\n  66.666% {\n    transform: rotate(20deg) translate(2px, -2px) scale(var(--zoom-via));\n  }\n  99.999% {\n    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));\n  }\n}\n@keyframes has-saved-line-bottom {\n  33.333% {\n    transform: rotate(0deg) translate(1px, 2px) scale(var(--zoom-from));\n    d: path(\"M 17 20 L 17 13 L 7 13 L 7 20\");\n  }\n  66.666% {\n    transform: rotate(20deg) translate(2px, -2px) scale(var(--zoom-via));\n  }\n  99.999% {\n    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));\n    d: path(\"M 17 21 L 17 21 L 7 21 L 7 21\");\n  }\n}\n@keyframes has-saved-line-bottom-2 {\n  from {\n    d: path(\"M 17 21 L 17 21 L 7 21 L 7 21\");\n  }\n  to {\n    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));\n    d: path(\"M 17 20 L 17 13 L 7 13 L 7 20\");\n    fill: white;\n  }\n}\n@keyframes has-saved {\n  33.333% {\n    transform: rotate(0deg) translate(1px, 2px) scale(var(--zoom-from));\n  }\n  66.666% {\n    transform: rotate(20deg) translate(2px, -2px) scale(var(--zoom-via));\n  }\n  99.999% {\n    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ilkhoeri_chilly-sloth-36.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"action_has has_saved\" aria-label=\"save\" type=\"button\"></button>\n  <view aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" fill=\"none\"></view>\n    <path d=\"m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z\" stroke-linejoin=\"round\" stroke-linecap=\"round\" data-path=\"box\"></path>\n    <path d=\"M7 3L7 8L15 8\" stroke-linejoin=\"round\" stroke-linecap=\"round\" data-path=\"line-top\"></path>\n    <path d=\"M17 20L17 13L7 13L7 20\" stroke-linejoin=\"round\" stroke-linecap=\"round\" data-path=\"line-bottom\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChillySloth36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ilkhoeri  - Tags: simple, button, toggle, svg, save */\n.action_has {\n  --color: 0 0% 60%;\n  --color-has: 211deg 100% 48%;\n  --sz: 1rem;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: calc(var(--sz) * 2.5);\n  width: calc(var(--sz) * 2.5);\n  padding: 0.4rem 0.5rem;\n  border-radius: 0.375rem;\n  border: 0.0625rem solid hsl(var(--color));\n}\n\n.has_saved:hover {\n  border-color: hsl(var(--color-has));\n}\n.has_liked:hover svg,\n.has_saved:hover svg {\n  color: hsl(var(--color-has));\n}\n\n.has_liked svg,\n.has_saved svg {\n  overflow: visible;\n  height: calc(var(--sz) * 1.75);\n  width: calc(var(--sz) * 1.75);\n  --ease: cubic-bezier(0.5, 0, 0.25, 1);\n  --zoom-from: 1.75;\n  --zoom-via: 0.75;\n  --zoom-to: 1;\n  --duration: 1s;\n}\n\n.has_saved:hover path[data-path=\"box\"] {\n  transition: all 0.3s var(--ease);\n  animation: has-saved var(--duration) var(--ease) forwards;\n  fill: hsl(var(--color-has) / 0.35);\n}\n.has_saved:hover path[data-path=\"line-top\"] {\n  animation: has-saved-line-top var(--duration) var(--ease) forwards;\n}\n.has_saved:hover path[data-path=\"line-bottom\"] {\n  animation: has-saved-line-bottom var(--duration) var(--ease) forwards,\n    has-saved-line-bottom-2 calc(var(--duration) * 1) var(--ease)\n      calc(var(--duration) * 0.75);\n}\n\n@keyframes has-saved-line-top {\n  33.333% {\n    transform: rotate(0deg) translate(2rpx, 4rpx) scale(var(--zoom-from));\n    d: path(\"M 3 5 L 3 8 L 3 8\");\n  }\n  66.666% {\n    transform: rotate(20deg) translate(4rpx, -4rpx) scale(var(--zoom-via));\n  }\n  99.999% {\n    transform: rotate(0deg) translate(0rpx, 0rpx) scale(var(--zoom-to));\n  }\n}\n@keyframes has-saved-line-bottom {\n  33.333% {\n    transform: rotate(0deg) translate(2rpx, 4rpx) scale(var(--zoom-from));\n    d: path(\"M 17 20 L 17 13 L 7 13 L 7 20\");\n  }\n  66.666% {\n    transform: rotate(20deg) translate(4rpx, -4rpx) scale(var(--zoom-via));\n  }\n  99.999% {\n    transform: rotate(0deg) translate(0rpx, 0rpx) scale(var(--zoom-to));\n    d: path(\"M 17 21 L 17 21 L 7 21 L 7 21\");\n  }\n}\n@keyframes has-saved-line-bottom-2 {\n  from {\n    d: path(\"M 17 21 L 17 21 L 7 21 L 7 21\");\n  }\n  to {\n    transform: rotate(0deg) translate(0rpx, 0rpx) scale(var(--zoom-to));\n    d: path(\"M 17 20 L 17 13 L 7 13 L 7 20\");\n    fill: white;\n  }\n}\n@keyframes has-saved {\n  33.333% {\n    transform: rotate(0deg) translate(2rpx, 4rpx) scale(var(--zoom-from));\n  }\n  66.666% {\n    transform: rotate(20deg) translate(4rpx, -4rpx) scale(var(--zoom-via));\n  }\n  99.999% {\n    transform: rotate(0deg) translate(0rpx, 0rpx) scale(var(--zoom-to));\n  }\n}\n\n",
+    "component_name": "GalaxyChillySloth36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 3248,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.971Z",
+  "updated_at": "2025-07-31T07:55:36.971Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "satyamchaudharydev_splendid-husky-54",
+  "name": "splendid-husky-54",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "splendid-husky-54 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n</div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n  position: relative;\n  width: 60px;\n  height: 60px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  margin-left: -75px;\n}\n\n.spinner span {\n  position: absolute;\n  top: 50%;\n  left: var(--left);\n  width: 35px;\n  height: 7px;\n  background: #ffff;\n  animation: dominos 1s ease infinite;\n  box-shadow: 2px 2px 3px 0px black;\n}\n\n.spinner span:nth-child(1) {\n  --left: 80px;\n  animation-delay: 0.125s;\n}\n\n.spinner span:nth-child(2) {\n  --left: 70px;\n  animation-delay: 0.3s;\n}\n\n.spinner span:nth-child(3) {\n  left: 60px;\n  animation-delay: 0.425s;\n}\n\n.spinner span:nth-child(4) {\n  animation-delay: 0.54s;\n  left: 50px;\n}\n\n.spinner span:nth-child(5) {\n  animation-delay: 0.665s;\n  left: 40px;\n}\n\n.spinner span:nth-child(6) {\n  animation-delay: 0.79s;\n  left: 30px;\n}\n\n.spinner span:nth-child(7) {\n  animation-delay: 0.915s;\n  left: 20px;\n}\n\n.spinner span:nth-child(8) {\n  left: 10px;\n}\n\n@keyframes dominos {\n  50% {\n    opacity: 0.7;\n  }\n\n  75% {\n    -webkit-transform: rotate(90deg);\n    transform: rotate(90deg);\n  }\n\n  80% {\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_splendid-husky-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxySplendidHusky54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n  position: relative;\n  width: 120rpx;\n  height: 120rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  margin-left: -150rpx;\n}\n\n.spinner span {\n  position: absolute;\n  top: 50%;\n  left: var(--left);\n  width: 70rpx;\n  height: 14rpx;\n  background: #ffff;\n  animation: dominos 1s ease infinite;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 6rpx 0rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.spinner span:nth-child(1) {\n  --left: 160rpx;\n  animation-delay: 0.125s;\n}\n\n.spinner span:nth-child(2) {\n  --left: 140rpx;\n  animation-delay: 0.3s;\n}\n\n.spinner span:nth-child(3) {\n  left: 120rpx;\n  animation-delay: 0.425s;\n}\n\n.spinner span:nth-child(4) {\n  animation-delay: 0.54s;\n  left: 100rpx;\n}\n\n.spinner span:nth-child(5) {\n  animation-delay: 0.665s;\n  left: 80rpx;\n}\n\n.spinner span:nth-child(6) {\n  animation-delay: 0.79s;\n  left: 60rpx;\n}\n\n.spinner span:nth-child(7) {\n  animation-delay: 0.915s;\n  left: 40rpx;\n}\n\n.spinner span:nth-child(8) {\n  left: 20rpx;\n}\n\n@keyframes dominos {\n  50% {\n    opacity: 0.7;\n  }\n\n  75% {\n    -webkit-transform: rotate(90deg);\n    transform: rotate(90deg);\n  }\n\n  80% {\n    opacity: 1;\n  }\n}\n\n",
+    "component_name": "GalaxySplendidHusky54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1318,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.617Z",
+  "updated_at": "2025-07-31T07:55:42.617Z"
+}

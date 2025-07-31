@@ -1,0 +1,104 @@
+{
+  "id": "willeumsk_nice-panda-73",
+  "name": "nice-panda-73",
+  "category": "buttons",
+  "author": "willeumsk",
+  "description": "nice-panda-73 组件",
+  "tags": [],
+  "original": {
+    "html": "<ul class=\"mb-4 mt-4 list-none space-x-1\">\n  <li class=\"inline-block text-left\">\n    <a class=\"relative mb-1 inline-block cursor-pointer select-none overflow-hidden whitespace-nowrap rounded p-2 text-center align-middle text-xs font-medium leading-5 tracking-wide text-slate-800 transition duration-300 ease-linear hover:text-blue-400 hover:shadow-2xl hover:shadow-blue-600\" href=\"\">\n      <span class=\"sr-only hidden\">Twitter</span>\n      <svg stroke=\"currentColor\" fill=\"currentColor\" aria-label=\"Twitter\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" class=\"h-8 w-8 fill-current\">\n        <g>\n          <path d=\"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z\"></path>\n        </g>\n      </svg>\n    </a>\n  </li>\n</ul>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/willeumsk_nice-panda-73.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"mb-4 mt-4 list-none space-x-1\"></view>\n  <view class=\"inline-block text-left\"></view>\n    <navigator class=\"relative mb-1 inline-block cursor-pointer select-none overflow-hidden whitespace-nowrap rounded p-2 text-center align-middle text-xs font-medium leading-5 tracking-wide text-slate-800 transition duration-300 ease-linear hover:text-blue-400 hover:shadow-2xl hover:shadow-blue-600\" href=\"\"></navigator>\n      <text class=\"sr-only hidden\">Twitter</text>\n      <view stroke=\"currentColor\" fill=\"currentColor\" aria-label=\"Twitter\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" class=\"h-8 w-8 fill-current\"></view>\n        <g>\n          <path d=\"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z\"></path>\n        </g>\n      </svg>\n    </a>\n  </li>\n</ul>",
+    "script": "export default {\n  name: 'GalaxyNicePanda73',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyNicePanda73"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 828,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.364Z",
+  "updated_at": "2025-07-31T07:55:38.364Z"
+}

@@ -1,0 +1,120 @@
+{
+  "id": "SiddhantEngineer_calm-shrimp-74",
+  "name": "calm-shrimp-74",
+  "category": "buttons",
+  "author": "SiddhantEngineer",
+  "description": "calm-shrimp-74 组件 (simple, button, rounded, smooth, creative, advanced, click effect, 3d button, gradient)",
+  "tags": [
+    "simple",
+    "button",
+    "rounded",
+    "smooth",
+    "creative",
+    "advanced",
+    "click effect",
+    "3d button",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <i>\n    <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs></defs>\n      <title></title>\n      <path class=\"a\" d=\"M2.758,15.629a1.664,1.664,0,0,1-.882-3.075L20.359,1A1.663,1.663,0,0,1,22.875,2.72L19.281,21.893a1.664,1.664,0,0,1-2.966.691L11.1,15.629Z\"></path>\n      <path class=\"a\" d=\"M11.1,15.629H8.6V20.8a1.663,1.663,0,0,0,2.6,1.374l3.178-2.166Z\"></path>\n      <line class=\"a\" x1=\"11.098\" x2=\"22.178\" y1=\"15.629\" y2=\"1.039\"></line>\n    </svg>\n    Send Message</i>\n</button>",
+    "css": "/* From Uiverse.io by SiddhantEngineer  - Tags: simple, button, rounded, smooth, creative, advanced, click effect, 3d button */\n.button {\n  box-sizing: border-box;\n  background: hsl(0, 0%, 91%);\n  padding: 5px 2px;\n  border-radius: 10px;\n  box-shadow: 0px 1px 2px 1px hsl(0, 0%, 50%), 0px 10px 35px 0px hsl(0, 0%, 65%),\n    0px -10px 35px 0px hsl(0, 0%, 100%);\n  border: none;\n  font-size: 16px;\n  background-clip: padding-box;\n  overflow: hidden;\n  cursor: pointer;\n  transition: all 0.1s;\n}\n\n.button:active {\n  scale: 99%;\n  box-shadow: 0px 1px 2px 1px hsl(0, 0%, 70%), 0px 10px 35px 0px hsl(0, 0%, 75%),\n    0px -10px 35px 0px hsl(0, 0%, 100%);\n}\n\n.button > i {\n  background: linear-gradient(hsl(0, 0%, 80%), hsl(0, 0%, 93%));\n  box-shadow: 0px 5px 20px -10px hsl(0, 0%, 60%);\n  padding: 15px;\n  border-radius: 20px;\n  font-weight: 600;\n  font-style: normal;\n  display: flex;\n  pointer-events: none;\n}\n\n.button > i > svg {\n  width: 15px;\n  margin-right: 5px;\n  fill: none;\n  stroke: black;\n  pointer-events: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SiddhantEngineer_calm-shrimp-74.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <i>\n    <view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <defs></defs>\n      <title></title>\n      <path class=\"a\" d=\"M2.758,15.629a1.664,1.664,0,0,1-.882-3.075L20.359,1A1.663,1.663,0,0,1,22.875,2.72L19.281,21.893a1.664,1.664,0,0,1-2.966.691L11.1,15.629Z\"></path>\n      <path class=\"a\" d=\"M11.1,15.629H8.6V20.8a1.663,1.663,0,0,0,2.6,1.374l3.178-2.166Z\"></path>\n      <line class=\"a\" x1=\"11.098\" x2=\"22.178\" y1=\"15.629\" y2=\"1.039\"></line>\n    </svg>\n    Send Message</i>\n</button>",
+    "script": "export default {\n  name: 'GalaxyCalmShrimp74',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SiddhantEngineer  - Tags: simple, button, rounded, smooth, creative, advanced, click effect, 3d button */\n.button {\n  box-sizing: border-box;\n  background: hsl(0, 0%, 91%);\n  padding: 10rpx 4rpx;\n  border-radius: 20rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 2rpx 4rpx 2rpx hsl(0, 0%, 50%), 0rpx 20rpx 70rpx 0rpx hsl(0, 0%, 65%),\n    0rpx -20rpx 70rpx 0rpx hsl(0, 0%, 100%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: none;\n  font-size: 32rpx;\n  background-clip: padding-box;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.1s;\n}\n\n.button:active {\n  scale: 99%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 2rpx 4rpx 2rpx hsl(0, 0%, 70%), 0rpx 20rpx 70rpx 0rpx hsl(0, 0%, 75%),\n    0rpx -20rpx 70rpx 0rpx hsl(0, 0%, 100%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button > i {\n  background: linear-gradient(hsl(0, 0%, 80%), hsl(0, 0%, 93%));\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 10rpx 40rpx -20rpx hsl(0, 0%, 60%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  padding: 30rpx;\n  border-radius: 40rpx;\n  font-weight: 600;\n  font-style: normal;\n  display: flex;\n  pointer-events: none;\n}\n\n.button > i > svg {\n  width: 30rpx;\n  margin-right: 10rpx;\n  fill: none;\n  stroke: black;\n  pointer-events: none;\n}\n\n",
+    "component_name": "GalaxyCalmShrimp74"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1551,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.737Z",
+  "updated_at": "2025-07-31T07:55:34.737Z"
+}

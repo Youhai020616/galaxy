@@ -1,0 +1,119 @@
+{
+  "id": "escannord_white-starfish-13",
+  "name": "white-starfish-13",
+  "category": "buttons",
+  "author": "escannord",
+  "description": "white-starfish-13 组件 (gray, button, sendMessage, animation, gradient, interactive)",
+  "tags": [
+    "gray",
+    "button",
+    "sendMessage",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <i class=\"icon\"><svg width=\"20px\" height=\"20px\" viewBox=\"-0.5 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      <path d=\"M15.1999 9.12L9.41992 14.9\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></i>\n  Send Message\n</button>",
+    "css": "/* From Uiverse.io by escannord  - Tags: gray, button, sendMessage */\n.button {\n  cursor: pointer;\n  padding: 0.3rem 1rem;\n  min-width: 10rem;\n  min-height: 4rem;\n  font-weight: bold;\n  border: solid 1px white;\n  /*   background-color: white; */\n  background: linear-gradient(rgb(173, 171, 171) 50%, #4e4d4df8 100%);\n  position: relative;\n  border-radius: 15px;\n  z-index: 1;\n  font-size: 20px;\n  transition: 0.3s all;\n  text-shadow: 0 1px 1px #1c1c1c44;\n  box-shadow: 0px 2px 4px #1c1c1c48, 0px 30px 100px #1c1c1c33,\n    0px 15px 30px #1c1c1c2c, 0px 12px 6px #1c1c1c18;\n}\n\nbutton:hover:before {\n  background: linear-gradient(#ffffff8f 50%, #cacaca86 100%);\n  box-shadow: 0 -1px rgba(0, 0, 0, 0.171);\n}\n\n.button::before {\n  content: \"\";\n  transition: 0.8s all;\n  inset: 7px 5px;\n  border-radius: 25px;\n  border: solid 1px #b4b4b473;\n  background: linear-gradient(#d8d6d686 15%, #faf9f9 80%);\n  z-index: -1;\n  position: absolute;\n}\n.button:active {\n  box-shadow: none;\n}\n.icon {\n  display: inline-block;\n  transition: all 0.5s;\n  transform: none;\n}\n\n.button:hover .icon {\n  transform: translateX(-7px) rotate(45deg);\n}\n.button::after {\n  content: \"\";\n  position: absolute;\n  width: 97%;\n  height: 90%;\n  z-index: -2;\n  border-radius: 15px;\n  background: linear-gradient(\n    rgb(255, 255, 255),\n    rgba(253, 253, 253, 0.589) 75%\n  );\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/escannord_white-starfish-13.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <i class=\"icon\"><view width=\"20px\" height=\"20px\" viewBox=\"-0.5 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      <path d=\"M15.1999 9.12L9.41992 14.9\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></i>\n  Send Message\n</button>",
+    "script": "export default {\n  name: 'GalaxyWhiteStarfish13',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by escannord  - Tags: gray, button, sendMessage */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 0.3rem 1rem;\n  min-width: 10rem;\n  min-height: 4rem;\n  font-weight: bold;\n  border: solid 2rpx white;\n  /*   background-color: white; */\n  background: linear-gradient(rgb(173, 171, 171) 50%, #4e4d4df8 100%);\n  position: relative;\n  border-radius: 30rpx;\n  z-index: 1;\n  font-size: 40rpx;\n  transition: 0.3s all;\n  /* #ifdef H5 */\n  text-shadow: 0 2rpx 2rpx #1c1c1c44;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 8rpx #1c1c1c48, 0rpx 60rpx 200rpx #1c1c1c33,\n    0rpx 30rpx 60rpx #1c1c1c2c, 0rpx 24rpx 12rpx #1c1c1c18;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover:before {\n  background: linear-gradient(#ffffff8f 50%, #cacaca86 100%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -2rpx rgba(0, 0, 0, 0.171);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button::before {\n  content: \"\";\n  transition: 0.8s all;\n  inset: 14rpx 10rpx;\n  border-radius: 50rpx;\n  border: solid 2rpx #b4b4b473;\n  background: linear-gradient(#d8d6d686 15%, #faf9f9 80%);\n  z-index: -1;\n  position: absolute;\n}\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.icon {\n  display: inline-block;\n  transition: all 0.5s;\n  transform: none;\n}\n\n.button:hover .icon {\n  transform: translateX(-14rpx) rotate(45deg);\n}\n.button::after {\n  content: \"\";\n  position: absolute;\n  width: 97%;\n  height: 90%;\n  z-index: -2;\n  border-radius: 30rpx;\n  background: linear-gradient(\n    rgb(255, 255, 255),\n    rgba(253, 253, 253, 0.589) 75%\n  );\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n",
+    "component_name": "GalaxyWhiteStarfish13"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2011,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.645Z",
+  "updated_at": "2025-07-31T07:55:36.645Z"
+}

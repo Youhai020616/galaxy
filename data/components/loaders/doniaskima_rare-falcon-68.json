@@ -1,0 +1,92 @@
+{
+  "id": "doniaskima_rare-falcon-68",
+  "name": "rare-falcon-68",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "rare-falcon-68 组件 (simple, material design, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "material design",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  --c1: #673b14;\n  --c2: #f8b13b;\n  width: 40px;\n  height: 80px;\n  border-top: 4px solid var(--c1);\n  border-bottom: 4px solid var(--c1);\n  background: linear-gradient(90deg, var(--c1) 2px, var(--c2) 0 5px,var(--c1) 0) 50%/7px 8px no-repeat;\n  display: grid;\n  overflow: hidden;\n  animation: l5-0 2s infinite linear;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  grid-area: 1/1;\n  width: 75%;\n  height: calc(50% - 4px);\n  margin: 0 auto;\n  border: 2px solid var(--c1);\n  border-top: 0;\n  box-sizing: content-box;\n  border-radius: 0 0 40% 40%;\n  -webkit-mask: linear-gradient(#000 0 0) bottom/4px 2px no-repeat,\n    linear-gradient(#000 0 0);\n  -webkit-mask-composite: destination-out;\n  mask-composite: exclude;\n  background: linear-gradient(var(--d,0deg),var(--c2) 50%,#0000 0) bottom /100% 205%,\n    linear-gradient(var(--c2) 0 0) center/0 100%;\n  background-repeat: no-repeat;\n  animation: inherit;\n  animation-name: l5-1;\n}\n\n.loader::after {\n  transform-origin: 50% calc(100% + 2px);\n  transform: scaleY(-1);\n  --s: 3px;\n  --d: 180deg;\n}\n\n@keyframes l5-0 {\n  80% {\n    transform: rotate(0)\n  }\n\n  100% {\n    transform: rotate(0.5turn)\n  }\n}\n\n@keyframes l5-1 {\n  10%,70% {\n    background-size: 100% 205%,var(--s,0) 100%\n  }\n\n  70%,100% {\n    background-position: top,center\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_rare-falcon-68.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyRareFalcon68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  --c1: #673b14;\n  --c2: #f8b13b;\n  width: 80rpx;\n  height: 160rpx;\n  border-top: 8rpx solid var(--c1);\n  border-bottom: 8rpx solid var(--c1);\n  background: linear-gradient(90deg, var(--c1) 4rpx, var(--c2) 0 10rpx,var(--c1) 0) 50%/14rpx 16rpx no-repeat;\n  display: grid;\n  overflow: hidden;\n  animation: l5-0 2s infinite linear;\n}\n\n.loader::before,\n.loader::after {\n  content: \"\";\n  grid-area: 1/1;\n  width: 75%;\n  height: calc(50% - 8rpx);\n  margin: 0 auto;\n  border: 4rpx solid var(--c1);\n  border-top: 0;\n  box-sizing: content-box;\n  border-radius: 0 0 40% 40%;\n  -webkit-\n  -webkit-mask-composite: destination-out;\n  mask-composite: exclude;\n  background: linear-gradient(var(--d,0deg),var(--c2) 50%,#0000 0) bottom /100% 205%,\n    linear-gradient(var(--c2) 0 0) center/0 100%;\n  background-repeat: no-repeat;\n  animation: inherit;\n  animation-name: l5-1;\n}\n\n.loader::after {\n  transform-origin: 50% calc(100% + 4rpx);\n  transform: scaleY(-1);\n  --s: 6rpx;\n  --d: 180deg;\n}\n\n@keyframes l5-0 {\n  80% {\n    transform: rotate(0)\n  }\n\n  100% {\n    transform: rotate(0.5turn)\n  }\n}\n\n@keyframes l5-1 {\n  10%,70% {\n    background-size: 100% 205%,var(--s,0) 100%\n  }\n\n  70%,100% {\n    background-position: top,center\n  }\n}\n",
+    "component_name": "GalaxyRareFalcon68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1445,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.298Z",
+  "updated_at": "2025-07-31T07:55:41.298Z"
+}

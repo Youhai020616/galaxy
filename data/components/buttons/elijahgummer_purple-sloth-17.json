@@ -1,0 +1,124 @@
+{
+  "id": "elijahgummer_purple-sloth-17",
+  "name": "purple-sloth-17",
+  "category": "buttons",
+  "author": "elijahgummer",
+  "description": "purple-sloth-17 组件 (yellow, gradient, button, glow, modern, upload, hover effect, upload button, interactive)",
+  "tags": [
+    "yellow",
+    "gradient",
+    "button",
+    "glow",
+    "modern",
+    "upload",
+    "hover effect",
+    "upload button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <svg id=\"UploadToCloud\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" height=\"16px\" width=\"16px\" class=\"icon\">\n    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"></path>\n    <path class=\"color000000 svgShape\" fill=\"#000000\" d=\"M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z\"></path>\n  </svg>\n  Upload CV\n</button>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: yellow, gradient, button, glow, modern, upload, hover effect, upload button */\n.button {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  background: linear-gradient(45deg, #ffc75d, #ffc708);\n  box-shadow: 0 0 24px #ffb20861;\n  border: 2px solid #ffe825;\n  border-radius: 100px;\n  transition: background-color 0.3s ease, box-shadow 0.3s ease,\n    text-shadow 0.3s ease;\n  padding: 10px 20px;\n  color: #09090b;\n  font-weight: bold;\n  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text drop shadow */\n}\n\n.button:hover {\n  background-color: #ffc75d !important;\n  box-shadow: 0 0 34px #ffb20861 !important;\n  text-shadow: 0 0 4px #ffe825; /* Hover text shadow */\n  border-color: #ffe825 !important;\n}\n\n.icon {\n  margin-right: 5px;\n  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Icon drop shadow */\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/elijahgummer_purple-sloth-17.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view id=\"UploadToCloud\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" height=\"16px\" width=\"16px\" class=\"icon\"></view>\n    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"></path>\n    <path class=\"color000000 svgShape\" fill=\"#000000\" d=\"M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z\"></path>\n  </svg>\n  Upload CV\n</button>",
+    "script": "export default {\n  name: 'GalaxyPurpleSloth17',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: yellow, gradient, button, glow, modern, upload, hover effect, upload button */\n.button {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: linear-gradient(45deg, #ffc75d, #ffc708);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 48rpx #ffb20861;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: 4rpx solid #ffe825;\n  border-radius: 200rpx;\n  transition: background-color 0.3s ease, box-shadow 0.3s ease,\n    text-shadow 0.3s ease;\n  padding: 20rpx 40rpx;\n  color: #09090b;\n  font-weight: bold;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 10rpx rgba(0, 0, 0, 0.3);\n  /* #endif */ /* Text drop shadow */\n}\n\n.button:hover {\n  background-color: #ffc75d !important;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 68rpx #ffb20861 !important;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 0 0 8rpx #ffe825;\n  /* #endif */ /* Hover text shadow */\n  border-color: #ffe825 !important;\n}\n\n.icon {\n  margin-right: 10rpx;\n   /* Icon drop shadow */\n}\n\n",
+    "component_name": "GalaxyPurpleSloth17"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1399,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.535Z",
+  "updated_at": "2025-07-31T07:55:36.535Z"
+}

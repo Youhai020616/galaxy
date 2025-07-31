@@ -1,0 +1,107 @@
+{
+  "id": "cohencoo_massive-monkey-39",
+  "name": "massive-monkey-39",
+  "category": "buttons",
+  "author": "cohencoo",
+  "description": "massive-monkey-39 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Explore\n</button>",
+    "css": "/* From Uiverse.io by cohencoo - Tags: button */\nbutton {\n  background: #282936;\n  padding: 10px 2rem;\n  outline: 2.5px solid #FEBF00;\n  outline-offset: 3px;\n  border: 0;\n  color: white;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  font-size: 1rem;\n  border-radius: 100rem;\n  transition: 0.4s;\n  font-weight: 600;\n}\n\nbutton:hover {\n  outline-offset: 4.5px;\n  background: #FEBF00;\n  font-size: 1.1rem;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cohencoo_massive-monkey-39.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Explore\n</button>",
+    "script": "export default {\n  name: 'GalaxyMassiveMonkey39',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cohencoo - Tags: button */\nbutton {\n  background: #282936;\n  padding: 20rpx 2rem;\n  outline: 5rpx solid #FEBF00;\n  outline-offset: 6rpx;\n  border: 0;\n  color: white;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  font-size: 1rem;\n  border-radius: 100rem;\n  transition: 0.4s;\n  font-weight: 600;\n}\n\nbutton:hover {\n  outline-offset: 9rpx;\n  background: #FEBF00;\n  font-size: 1.1rem;\n}\n",
+    "component_name": "GalaxyMassiveMonkey39"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 531,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.119Z",
+  "updated_at": "2025-07-31T07:55:36.119Z"
+}

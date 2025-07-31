@@ -1,0 +1,110 @@
+{
+  "id": "ArturCodeCraft_afraid-fish-22",
+  "name": "afraid-fish-22",
+  "category": "buttons",
+  "author": "ArturCodeCraft",
+  "description": "afraid-fish-22 组件 (button, scroll, scroll to bottom, animation, interactive)",
+  "tags": [
+    "button",
+    "scroll",
+    "scroll to bottom",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"main__action\">\n  <a class=\"main__scroll\" href=\"#\">\n    <div class=\"main__scroll-box\">\n      <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  \t    <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n  \t    <path d=\"M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z\" fill=\"rgba(28,28,30,1)\">\n  \t    </path>\n\t  </svg>\n    </div>\n\n    <span class=\"main__scroll-text\">Scroll</span>\n  </a>\n</div>",
+    "css": "/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll, scroll to bottom */\n/* <reset-style> ============================ */\na {\n  text-decoration: none;\n}\n/* <main-style> ============================ */\n.main__scroll-text {\n  color: rgba(28,28,30,1);\n}\n\n.main__action:hover .main__scroll-box {\n  animation: scroll-down 3s infinite;\n}\n\n/* Animate scroll icon */\n@keyframes scroll-down {\n  0%, 100% {\n    transform: translateY(0rem);\n    opacity: 1;\n  }\n\n  35% {\n    transform: translateY(1rem);\n    opacity: 0;\n  }\n\n  70% {\n    transform: translateY(-1rem);\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ArturCodeCraft_afraid-fish-22.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"main__action\"></view>\n  <navigator class=\"main__scroll\" href=\"#\"></navigator>\n    <view class=\"main__scroll-box\"></view>\n      <view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  \t    <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n  \t    <path d=\"M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z\" fill=\"rgba(28,28,30,1)\">\n  \t    </path>\n\t  </svg>\n    </div>\n\n    <text class=\"main__scroll-text\">Scroll</text>\n  </a>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAfraidFish22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll, scroll to bottom */\n/* <reset-style> ============================ */\na {\n  text-decoration: none;\n}\n/* <main-style> ============================ */\n.main__scroll-text {\n  color: rgba(28,28,30,1);\n}\n\n.main__action:hover .main__scroll-box {\n  animation: scroll-down 3s infinite;\n}\n\n/* Animate scroll icon */\n@keyframes scroll-down {\n  0%, 100% {\n    transform: translateY(0rem);\n    opacity: 1;\n  }\n\n  35% {\n    transform: translateY(1rem);\n    opacity: 0;\n  }\n\n  70% {\n    transform: translateY(-1rem);\n    opacity: 0;\n  }\n}\n",
+    "component_name": "GalaxyAfraidFish22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1059,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.663Z",
+  "updated_at": "2025-07-31T07:55:32.663Z"
+}

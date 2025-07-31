@@ -1,0 +1,115 @@
+{
+  "id": "ercnersoy_nasty-panda-71",
+  "name": "nasty-panda-71",
+  "category": "buttons",
+  "author": "ercnersoy",
+  "description": "nasty-panda-71 组件 (button, anime, animation, interactive)",
+  "tags": [
+    "button",
+    "anime",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n    <span class=\"text\">HOVER ME</span>\n    <div class=\"wave\"></div>\n</button>",
+    "css": "/* From Uiverse.io by ercnersoy - Tags: button, anime */\n.button {\n  width: 200px;\n  padding: 20px 40px;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  overflow: hidden;\n  border: 0;\n  cursor: pointer;\n  border-radius: 2rem;\n  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);\n}\n\n.button:hover .wave {\n  top: -120px;\n}\n\n.text {\n  position: relative;\n  z-index: 1;\n  color: white;\n  font-size: 15px;\n  letter-spacing: 3px;\n  font-weight: 600;\n}\n\n.wave {\n  width: 200px;\n  height: 200px;\n  background-color: #27a9ff;\n  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n  position: absolute;\n  left: 0;\n  top: -70px;\n  transition: 0.4s;\n}\n\n.wave::before, a .wave::after {\n  width: 200%;\n  height: 200%;\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, -75%);\n}\n\n.wave::before {\n  border-radius: 45%;\n  background-color: #0581b3;\n  animation: wave 5s linear infinite;\n}\n\n.wave::after {\n  border-radius: 40%;\n  background-color: rgba(20, 20, 20, 0.5);\n  animation: wave 10s linear infinite;\n}\n\n@keyframes wave {\n  0% {\n    transform: translate(-50%, -75%) rotate(0deg);\n  }\n\n  100% {\n    transform: translate(-50%, -75%) rotate(300deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ercnersoy_nasty-panda-71.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n    <text class=\"text\">HOVER ME</text>\n    <view class=\"wave\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyNastyPanda71',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ercnersoy - Tags: button, anime */\n.button {\n  width: 400rpx;\n  padding: 40rpx 80rpx;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  overflow: hidden;\n  border: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border-radius: 2rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx 0rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover .wave {\n  top: -240rpx;\n}\n\n.text {\n  position: relative;\n  z-index: 1;\n  color: white;\n  font-size: 30rpx;\n  letter-spacing: 6rpx;\n  font-weight: 600;\n}\n\n.wave {\n  width: 400rpx;\n  height: 400rpx;\n  background-color: #27a9ff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 100rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: absolute;\n  left: 0;\n  top: -140rpx;\n  transition: 0.4s;\n}\n\n.wave::before, a .wave::after {\n  width: 200%;\n  height: 200%;\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, -75%);\n}\n\n.wave::before {\n  border-radius: 45%;\n  background-color: #0581b3;\n  animation: wave 5s linear infinite;\n}\n\n.wave::after {\n  border-radius: 40%;\n  background-color: rgba(20, 20, 20, 0.5);\n  animation: wave 10s linear infinite;\n}\n\n@keyframes wave {\n  0% {\n    transform: translate(-50%, -75%) rotate(0deg);\n  }\n\n  100% {\n    transform: translate(-50%, -75%) rotate(300deg);\n  }\n}\n",
+    "component_name": "GalaxyNastyPanda71"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1293,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.599Z",
+  "updated_at": "2025-07-31T07:55:36.599Z"
+}

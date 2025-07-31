@@ -1,0 +1,84 @@
+{
+  "id": "Nawsome_hungry-pig-72",
+  "name": "hungry-pig-72",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "hungry-pig-72 组件 (loader)",
+  "tags": [
+    "loader"
+  ],
+  "original": {
+    "html": "<svg class=\"svg_preloader\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 248 248\" style=\"enable-background:new 0 0 248 248;\" xml:space=\"preserve\">\n<filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"10\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -20\"></feColorMatrix>\n</filter>\n<circle stroke=\"#fff\" fill=\"none\" stroke-width=\"3\" cx=\"124\" cy=\"124\" r=\"120\"></circle>\n<g id=\"shape\" filter=\"url(#goo)\">\n\t<circle stroke=\"#fff\" fill=\"none\" stroke-width=\"10\" cx=\"124\" cy=\"124\" r=\"105\"></circle>\n\t<circle fill=\"#fff\" cx=\"0\" cy=\"0\" r=\"36\" transform=\"translate(124 124)\">\n\t\t<animateTransform attributeName=\"transform\" type=\"scale\" additive=\"sum\" values=\"1.3;0.55;0.55;1.3\" keyTimes=\"0;0.4;0.6;1\" dur=\"2s\" repeatCount=\"indefinite\"></animateTransform> \n\t</circle>\n\t<circle fill=\"#fff\" cx=\"0\" cy=\"0\" r=\"22\">\n\t\t<animateMotion path=\"M124.1,124l-14.9-14.9c-22.3-22.3-2.5-60.3,28.4-54.4c13.3,2.6,26.1,9,36.4,19.4\n\t\tc10.1,10.1,16.5,22.4,19.2,35.4c6.5,31.3-31.7,51.9-54.3,29.3L124.1,124z\" dur=\"2s\" repeatCount=\"indefinite\"></animateMotion>\n\t</circle>\n\t<circle fill=\"#fff\" cx=\"0\" cy=\"0\" r=\"22\">\n\t\t<animateMotion path=\"M124.1,124l15.2,15.2c22.2,22.2,2.5,60-28.3,54.2c-13.5-2.5-26.4-9-36.8-19.4c-8.9-8.9-14.9-19.5-18-30.7\n\t\tc-9.1-32.5,31.4-55.7,55.2-31.8L124.1,124z\" dur=\"2s\" repeatCount=\"indefinite\"></animateMotion>\n\t</circle>\n</g>\n</svg>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.svg_preloader {\n  width: 170px;\n  height: 170px;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_hungry-pig-72.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"svg_preloader\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 248 248\" style=\"enable-background:new 0 0 248 248;\" xml:space=\"preserve\"></view>\n<filter id=\"goo\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"10\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -20\"></feColorMatrix>\n</filter>\n<circle stroke=\"#fff\" fill=\"none\" stroke-width=\"3\" cx=\"124\" cy=\"124\" r=\"120\"></circle>\n<g id=\"shape\" filter=\"url(#goo)\">\n\t<circle stroke=\"#fff\" fill=\"none\" stroke-width=\"10\" cx=\"124\" cy=\"124\" r=\"105\"></circle>\n\t<circle fill=\"#fff\" cx=\"0\" cy=\"0\" r=\"36\" transform=\"translate(124 124)\">\n\t\t<animateTransform attributeName=\"transform\" type=\"scale\" additive=\"sum\" values=\"1.3;0.55;0.55;1.3\" keyTimes=\"0;0.4;0.6;1\" dur=\"2s\" repeatCount=\"indefinite\"></animateTransform> \n\t</circle>\n\t<circle fill=\"#fff\" cx=\"0\" cy=\"0\" r=\"22\">\n\t\t<animateMotion path=\"M124.1,124l-14.9-14.9c-22.3-22.3-2.5-60.3,28.4-54.4c13.3,2.6,26.1,9,36.4,19.4\n\t\tc10.1,10.1,16.5,22.4,19.2,35.4c6.5,31.3-31.7,51.9-54.3,29.3L124.1,124z\" dur=\"2s\" repeatCount=\"indefinite\"></animateMotion>\n\t</circle>\n\t<circle fill=\"#fff\" cx=\"0\" cy=\"0\" r=\"22\">\n\t\t<animateMotion path=\"M124.1,124l15.2,15.2c22.2,22.2,2.5,60-28.3,54.2c-13.5-2.5-26.4-9-36.8-19.4c-8.9-8.9-14.9-19.5-18-30.7\n\t\tc-9.1-32.5,31.4-55.7,55.2-31.8L124.1,124z\" dur=\"2s\" repeatCount=\"indefinite\"></animateMotion>\n\t</circle>\n</g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyHungryPig72',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.svg_preloader {\n  width: 340rpx;\n  height: 340rpx;\n}\n",
+    "component_name": "GalaxyHungryPig72"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1602,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.797Z",
+  "updated_at": "2025-07-31T07:55:39.797Z"
+}

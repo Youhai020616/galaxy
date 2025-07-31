@@ -1,0 +1,118 @@
+{
+  "id": "MuhammadHasann_dull-mole-2",
+  "name": "dull-mole-2",
+  "category": "buttons",
+  "author": "MuhammadHasann",
+  "description": "dull-mole-2 组件 (simple, subscription, purple, button, button hover effect, gradient, interactive)",
+  "tags": [
+    "simple",
+    "subscription",
+    "purple",
+    "button",
+    "button hover effect",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span class=\"text-button\">Get pro now</span>\n</button>",
+    "css": "/* From Uiverse.io by MuhammadHasann  - Tags: simple, subscription, purple, button, button hover effect  */\n:root {\n  --primary: rgb(122, 48, 143);\n  --light: rgb(199, 95, 228);\n  --text-color: rgb(184, 132, 199);\n}\n\n.button {\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  padding: 0.5rem 1.5rem;\n  width: fit-content;\n  height: fit-content;\n  background-color: rgb(122, 48, 143);\n  font-size: 0.75rem;\n  color: white;\n  border: none;\n  border-radius: 0.5rem;\n  box-shadow: 0px 0px 2px 1px rgb(122, 48, 143);\n  transition: all 0.5s cubic-bezier(1, 0, 0, 1);\n}\n\n.button .text-button {\n  position: relative;\n  z-index: 10;\n}\n\n.button::before,\n.button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  transition: all 0.3s ease-in-out;\n}\n.button::before {\n  left: 0;\n  background-image: radial-gradient(\n    circle at 0% 45%,\n    rgba(16, 5, 36, 1) 19%,\n    rgba(16, 5, 36, 0.26) 46%,\n    rgba(16, 5, 36, 0) 100%\n  );\n}\n.button::after {\n  right: 0;\n  background-image: radial-gradient(\n    circle at 100% 45%,\n    rgba(16, 5, 36, 1) 19%,\n    rgba(16, 5, 36, 0.26) 46%,\n    rgba(16, 5, 36, 0) 100%\n  );\n}\n\n.button:hover {\n  box-shadow: 0px 0px 20px 0 rgb(122, 48, 143);\n}\n\n.button:hover::before,\n.button:hover::after {\n  width: 0;\n  opacity: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/MuhammadHasann_dull-mole-2.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text class=\"text-button\">Get pro now</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyDullMole2',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MuhammadHasann  - Tags: simple, subscription, purple, button, button hover effect  */\n:root {\n  --primary: rgb(122, 48, 143);\n  --light: rgb(199, 95, 228);\n  --text-color: rgb(184, 132, 199);\n}\n\n.button {\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  padding: 0.5rem 1.5rem;\n  width: fit-content;\n  height: fit-content;\n  background-color: rgb(122, 48, 143);\n  font-size: 0.75rem;\n  color: white;\n  border: none;\n  border-radius: 0.5rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 4rpx 2rpx rgb(122, 48, 143);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.5s cubic-bezier(1, 0, 0, 1);\n}\n\n.button .text-button {\n  position: relative;\n  z-index: 10;\n}\n\n.button::before,\n.button::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  transition: all 0.3s ease-in-out;\n}\n.button::before {\n  left: 0;\n  background-image: radial-gradient(\n    circle at 0% 45%,\n    rgba(16, 5, 36, 1) 19%,\n    rgba(16, 5, 36, 0.26) 46%,\n    rgba(16, 5, 36, 0) 100%\n  );\n}\n.button::after {\n  right: 0;\n  background-image: radial-gradient(\n    circle at 100% 45%,\n    rgba(16, 5, 36, 1) 19%,\n    rgba(16, 5, 36, 0.26) 46%,\n    rgba(16, 5, 36, 0) 100%\n  );\n}\n\n.button:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx 0 rgb(122, 48, 143);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover::before,\n.button:hover::after {\n  width: 0;\n  opacity: 0;\n}\n\n",
+    "component_name": "GalaxyDullMole2"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1388,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.018Z",
+  "updated_at": "2025-07-31T07:55:34.018Z"
+}

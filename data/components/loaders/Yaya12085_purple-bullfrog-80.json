@@ -1,0 +1,85 @@
+{
+  "id": "Yaya12085_purple-bullfrog-80",
+  "name": "purple-bullfrog-80",
+  "category": "loaders",
+  "author": "Yaya12085",
+  "description": "purple-bullfrog-80 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div aria-label=\"Loading...\" role=\"status\" class=\"loader\">\n  <svg class=\"icon\" viewBox=\"0 0 256 256\">\n    <line x1=\"128\" y1=\"32\" x2=\"128\" y2=\"64\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"195.9\" y1=\"60.1\" x2=\"173.3\" y2=\"82.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"224\" y1=\"128\" x2=\"192\" y2=\"128\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"195.9\" y1=\"195.9\" x2=\"173.3\" y2=\"173.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"128\" y1=\"224\" x2=\"128\" y2=\"192\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"60.1\" y1=\"195.9\" x2=\"82.7\" y2=\"173.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"32\" y1=\"128\" x2=\"64\" y2=\"128\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"60.1\" y1=\"60.1\" x2=\"82.7\" y2=\"82.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n  </svg>\n  <span class=\"loading-text\">Loading...</span>\n</div>",
+    "css": "/* From Uiverse.io by Yaya12085 - Tags: loader */\n.loader {\n  display: flex;\n  align-items: center;\n}\n\n.icon {\n  height: 1.5rem;\n  width: 1.5rem;\n  animation: spin 1s linear infinite;\n  stroke: rgba(107, 114, 128, 1);\n}\n\n.loading-text {\n  font-size: 0.75rem;\n  line-height: 1rem;\n  font-weight: 500;\n  color: rgba(107, 114, 128, 1);\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Yaya12085_purple-bullfrog-80.html"
+  },
+  "uniapp": {
+    "template": "<view aria-label=\"Loading...\" role=\"status\" class=\"loader\"></view>\n  <view class=\"icon\" viewBox=\"0 0 256 256\"></view>\n    <line x1=\"128\" y1=\"32\" x2=\"128\" y2=\"64\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"195.9\" y1=\"60.1\" x2=\"173.3\" y2=\"82.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"224\" y1=\"128\" x2=\"192\" y2=\"128\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"195.9\" y1=\"195.9\" x2=\"173.3\" y2=\"173.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"128\" y1=\"224\" x2=\"128\" y2=\"192\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"60.1\" y1=\"195.9\" x2=\"82.7\" y2=\"173.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"32\" y1=\"128\" x2=\"64\" y2=\"128\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n    <line x1=\"60.1\" y1=\"60.1\" x2=\"82.7\" y2=\"82.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></line>\n  </svg>\n  <text class=\"loading-text\">Loading...</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPurpleBullfrog80',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Yaya12085 - Tags: loader */\n.loader {\n  display: flex;\n  align-items: center;\n}\n\n.icon {\n  height: 1.5rem;\n  width: 1.5rem;\n  animation: spin 1s linear infinite;\n  stroke: rgba(107, 114, 128, 1);\n}\n\n.loading-text {\n  font-size: 0.75rem;\n  line-height: 1rem;\n  font-weight: 500;\n  color: rgba(107, 114, 128, 1);\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyPurpleBullfrog80"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1537,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.780Z",
+  "updated_at": "2025-07-31T07:55:40.780Z"
+}

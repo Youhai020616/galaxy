@@ -1,0 +1,115 @@
+{
+  "id": "KhaledMatalkah_neat-snake-57",
+  "name": "neat-snake-57",
+  "category": "buttons",
+  "author": "KhaledMatalkah",
+  "description": "neat-snake-57 组件 (button, hover, transition, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "transition",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Hover Me!</button>",
+    "css": "/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */\n.button {\n  display: inline-block;\n  position: relative;\n  padding: 13px 20px;\n  border: none;\n  background: rgba(51, 50, 50, 0.287);\n  color: #ffffff;\n  font-family: Arial, sans-serif;\n  font-size: 16px;\n  text-transform: uppercase;\n  cursor: crosshair;\n  overflow: hidden;\n}\n\n.button:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to right, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);\n  transition: left 0.3s ease;\n}\n\n.button:hover:before {\n  left: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KhaledMatalkah_neat-snake-57.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Hover Me!</button>",
+    "script": "export default {\n  name: 'GalaxyNeatSnake57',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */\n.button {\n  display: inline-block;\n  position: relative;\n  padding: 26rpx 40rpx;\n  border: none;\n  background: rgba(51, 50, 50, 0.287);\n  color: #ffffff;\n  font-family: Arial, sans-serif;\n  font-size: 32rpx;\n  text-transform: uppercase;\n  /* #ifdef H5 */\n  cursor: crosshair;\n  /* #endif */\n  overflow: hidden;\n}\n\n.button:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to right, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);\n  transition: left 0.3s ease;\n}\n\n.button:hover:before {\n  left: 100%;\n}\n\n",
+    "component_name": "GalaxyNeatSnake57"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 699,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.714Z",
+  "updated_at": "2025-07-31T07:55:33.714Z"
+}

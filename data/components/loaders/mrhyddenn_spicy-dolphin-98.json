@@ -1,0 +1,90 @@
+{
+  "id": "mrhyddenn_spicy-dolphin-98",
+  "name": "spicy-dolphin-98",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "spicy-dolphin-98 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <span></span>\n    <span></span>\n    <span></span>\n    <span></span>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background: linear-gradient(#ee280e, #15a0f7, #6ed15a);\n  animation: animate7712 1.2s linear infinite;\n}\n\n@keyframes animate7712 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.loader span {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  background: linear-gradient(#ee280e, #15a0f7, #5ad15a);\n}\n\n.loader:after {\n  content: '';\n  position: absolute;\n  top: 10px;\n  left: 10px;\n  right: 10px;\n  bottom: 10px;\n  background: #333;\n  border: solid #333 10px;\n  border-radius: 50%;\n}\n\n.loader span:nth-child(1) {\n  filter: blur(5px);\n}\n\n.loader span:nth-child(2) {\n  filter: blur(10px);\n}\n\n.loader span:nth-child(3) {\n  filter: blur(25px);\n}\n\n.loader span:nth-child(4) {\n  filter: blur(50px);\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_spicy-dolphin-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <text></text>\n    <text></text>\n    <text></text>\n    <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxySpicyDolphin98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  position: relative;\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 50%;\n  background: linear-gradient(#ee280e, #15a0f7, #6ed15a);\n  animation: animate7712 1.2s linear infinite;\n}\n\n@keyframes animate7712 {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.loader span {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  background: linear-gradient(#ee280e, #15a0f7, #5ad15a);\n}\n\n.loader:after {\n  content: '';\n  position: absolute;\n  top: 20rpx;\n  left: 20rpx;\n  right: 20rpx;\n  bottom: 20rpx;\n  background: #333;\n  border: solid #333 20rpx;\n  border-radius: 50%;\n}\n\n.loader span:nth-child(1) {\n  \n}\n\n.loader span:nth-child(2) {\n  \n}\n\n.loader span:nth-child(3) {\n  \n}\n\n.loader span:nth-child(4) {\n  \n}\n",
+    "component_name": "GalaxySpicyDolphin98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1002,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.452Z",
+  "updated_at": "2025-07-31T07:55:42.452Z"
+}

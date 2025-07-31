@@ -1,0 +1,89 @@
+{
+  "id": "polidahiya_sharp-cow-38",
+  "name": "sharp-cow-38",
+  "category": "loaders",
+  "author": "polidahiya",
+  "description": "sharp-cow-38 组件 (simple, loading, loader, download, downloading, animation)",
+  "tags": [
+    "simple",
+    "loading",
+    "loader",
+    "download",
+    "downloading",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loadingtext\">\n  <p>Loading</p>\n</div>",
+    "css": "/* From Uiverse.io by polidahiya  - Tags: simple, loading, loader, download, downloading */\n.loadingtext p {\n  color: white;\n  position: relative;\n}\n\n.loadingtext p::after {\n  position: absolute;\n  animation: b 3s infinite linear;\n  color: white;\n  content: \"\";\n  left: 105%;\n}\n\n@keyframes b {\n  0% {\n    content: \"\";\n  }\n\n  10% {\n    content: \".\";\n  }\n\n  40% {\n    content: \"..\";\n  }\n\n  70% {\n    content: \"...\";\n  }\n\n  100% {\n    content: \"\";\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/polidahiya_sharp-cow-38.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loadingtext\"></view>\n  <text>Loading</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxySharpCow38',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by polidahiya  - Tags: simple, loading, loader, download, downloading */\n.loadingtext p {\n  color: white;\n  position: relative;\n}\n\n.loadingtext p::after {\n  position: absolute;\n  animation: b 3s infinite linear;\n  color: white;\n  content: \"\";\n  left: 105%;\n}\n\n@keyframes b {\n  0% {\n    content: \"\";\n  }\n\n  10% {\n    content: \".\";\n  }\n\n  40% {\n    content: \"..\";\n  }\n\n  70% {\n    content: \"...\";\n  }\n\n  100% {\n    content: \"\";\n  }\n}\n\n",
+    "component_name": "GalaxySharpCow38"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 509,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.537Z",
+  "updated_at": "2025-07-31T07:55:42.537Z"
+}

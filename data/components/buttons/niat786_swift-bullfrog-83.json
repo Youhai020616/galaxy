@@ -1,0 +1,111 @@
+{
+  "id": "niat786_swift-bullfrog-83",
+  "name": "swift-bullfrog-83",
+  "category": "buttons",
+  "author": "niat786",
+  "description": "swift-bullfrog-83 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Followers\n  <span class=\"followers\">&nbsp; 65.7K </span>\n</button>",
+    "css": "/* From Uiverse.io by niat786 - Tags: button */\nbutton {\n font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;\n font-size: 1rem;\n align-items: center;\n height: 48px;\n border-radius: 0.4rem;\n font-weight: 600;\n padding: 0 1.2rem;\n color: #ddd;\n border: none;\n box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;\n background: #000000;\n}\n\n.followers {\n font-size: 0.8rem;\n color: #7f7f7f;\n}\n\nbutton:hover {\n background: #2b2a2a;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/niat786_swift-bullfrog-83.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Followers\n  <text class=\"followers\">&nbsp; 65.7K </text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySwiftBullfrog83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by niat786 - Tags: button */\nbutton {\n font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;\n font-size: 1rem;\n align-items: center;\n height: 96rpx;\n border-radius: 0.4rem;\n font-weight: 600;\n padding: 0 1.2rem;\n color: #ddd;\n border: none;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n background: #000000;\n}\n\n.followers {\n font-size: 0.8rem;\n color: #7f7f7f;\n}\n\nbutton:hover {\n background: #2b2a2a;\n}\n\n\n",
+    "component_name": "GalaxySwiftBullfrog83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 594,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.476Z",
+  "updated_at": "2025-07-31T07:55:37.476Z"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "Cybercom682_happy-mole-82",
+  "name": "happy-mole-82",
+  "category": "loaders",
+  "author": "Cybercom682",
+  "description": "happy-mole-82 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"text-center\">\n  <div class=\"w-16 h-16 border-4 border-dashed rounded-full animate-spin border-yellow-500 mx-auto\"></div>\n  <h2 class=\"text-zinc-900 dark:text-white mt-4\">Loading...</h2>\n  <p class=\"text-zinc-600 dark:text-zinc-400\">\n    Your adventure is about to begin\n  </p>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/Cybercom682_happy-mole-82.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"text-center\"></view>\n  <view class=\"w-16 h-16 border-4 border-dashed rounded-full animate-spin border-yellow-500 mx-auto\"></view>\n  <text class=\"text-zinc-900 dark:text-white mt-4\">Loading...</text>\n  <text class=\"text-zinc-600 dark:text-zinc-400\"></text>\n    Your adventure is about to begin\n  </p>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHappyMole82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyHappyMole82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 302,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.131Z",
+  "updated_at": "2025-07-31T07:55:39.131Z"
+}

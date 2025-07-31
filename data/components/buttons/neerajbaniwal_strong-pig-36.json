@@ -1,0 +1,117 @@
+{
+  "id": "neerajbaniwal_strong-pig-36",
+  "name": "strong-pig-36",
+  "category": "buttons",
+  "author": "neerajbaniwal",
+  "description": "strong-pig-36 组件 (simple, button, 3d button, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "button",
+    "3d button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\"><span>➢</span> Button</button>",
+    "css": "/* From Uiverse.io by neerajbaniwal  - Tags: simple, button, 3d button */\n.button {\n  display: inline-flex;\n  align-items: center;\n  padding: 15px 40px;\n  background-color: #fefefe;\n  border: 1px solid #dcdcdc;\n  border-radius: 12px;\n\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 16px;\n  font-weight: bold;\n  color: #333;\n  cursor: pointer;\n  text-decoration: none;\n  transition: all 0.3s ease;\n  position: relative;\n  overflow: hidden;\n  z-index: 0;\n  outline: 2px solid #fafafa;\n  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,\n    inset 0 0 0 2px rgba(192, 192, 192, 0.25);\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: 3px;\n  left: 3px;\n  right: 3px;\n  bottom: 3px;\n  border-radius: 30px;\n  background: linear-gradient(\n    0deg,\n    #fbfbfb 0%,\n    #fafafa 5%,\n    #f7f7f7 72%,\n    #f2f2f2 86%,\n    #f0f0f0 100%\n  );\n  box-shadow: inset 0 2px 7px rgba(143, 143, 143, 0.16);\n  transition: all 0.3s ease;\n  z-index: -1;\n  margin: 2px;\n}\n\n.button:focus {\n  outline: 2px solid #fefefe;\n  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,\n    inset 0 0 0 2px rgba(192, 192, 192, 0.5);\n}\n\n.send-icon {\n  margin-right: 5px;\n  transition: transform 0.3s ease;\n}\n\n.button:hover span {\n  transform: translateX(7px);\n  transition: all 0.4s;\n}\n\n.button span {\n  transform: rotate(-40deg);\n  margin-right: 10px;\n  transition: all 0.4s;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/neerajbaniwal_strong-pig-36.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button><text>➢</text> Button</button>",
+    "script": "export default {\n  name: 'GalaxyStrongPig36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by neerajbaniwal  - Tags: simple, button, 3d button */\n.button {\n  display: inline-flex;\n  align-items: center;\n  padding: 30rpx 80rpx;\n  background-color: #fefefe;\n  border: 2rpx solid #dcdcdc;\n  border-radius: 24rpx;\n\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 32rpx;\n  font-weight: bold;\n  color: #333;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  text-decoration: none;\n  transition: all 0.3s ease;\n  position: relative;\n  overflow: hidden;\n  z-index: 0;\n  outline: 4rpx solid #fafafa;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 18rpx 18rpx 88rpx #cecece3a, -18rpx -18rpx 88rpx #d3d3d33d,\n    inset 0 0 0 4rpx rgba(192, 192, 192, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button::before {\n  content: \"\";\n  position: absolute;\n  top: 6rpx;\n  left: 6rpx;\n  right: 6rpx;\n  bottom: 6rpx;\n  border-radius: 60rpx;\n  background: linear-gradient(\n    0deg,\n    #fbfbfb 0%,\n    #fafafa 5%,\n    #f7f7f7 72%,\n    #f2f2f2 86%,\n    #f0f0f0 100%\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 4rpx 14rpx rgba(143, 143, 143, 0.16);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease;\n  z-index: -1;\n  margin: 4rpx;\n}\n\n.button:focus {\n  outline: 4rpx solid #fefefe;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 18rpx 18rpx 88rpx #cecece3a, -18rpx -18rpx 88rpx #d3d3d33d,\n    inset 0 0 0 4rpx rgba(192, 192, 192, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.send-icon {\n  margin-right: 10rpx;\n  transition: transform 0.3s ease;\n}\n\n.button:hover span {\n  transform: translateX(14rpx);\n  transition: all 0.4s;\n}\n\n.button span {\n  transform: rotate(-40deg);\n  margin-right: 20rpx;\n  transition: all 0.4s;\n}\n\n",
+    "component_name": "GalaxyStrongPig36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1443,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.451Z",
+  "updated_at": "2025-07-31T07:55:37.451Z"
+}

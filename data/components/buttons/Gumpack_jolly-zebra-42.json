@@ -1,0 +1,113 @@
+{
+  "id": "Gumpack_jolly-zebra-42",
+  "name": "jolly-zebra-42",
+  "category": "buttons",
+  "author": "Gumpack",
+  "description": "jolly-zebra-42 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\"> Button\n</button>",
+    "css": "/* From Uiverse.io by Gumpack - Tags: button */\n.btn {\n background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%)\n}\n\n.btn {\n margin: 10px;\n padding: 15px 30px;\n text-align: center;\n text-transform: uppercase;\n transition: 0.5s;\n background-size: 200% auto;\n color: white;\n border-radius: 10px;\n display: block;\n border: 0px;\n font-weight: 700;\n box-shadow: 0px 0px 14px -7px #f09819;\n}\n\n.btn:hover {\n background-position: right center;\n /* change the direction of the change here */\n color: #fff;\n text-decoration: none;\n}\n\n.btn:active {\n transform: scale(0.95);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Gumpack_jolly-zebra-42.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyJollyZebra42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Gumpack - Tags: button */\n.btn {\n background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%)\n}\n\n.btn {\n margin: 20rpx;\n padding: 30rpx 60rpx;\n text-align: center;\n text-transform: uppercase;\n transition: 0.5s;\n background-size: 200% auto;\n color: white;\n border-radius: 20rpx;\n display: block;\n border: 0rpx;\n font-weight: 700;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 28rpx -14rpx #f09819;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.btn:hover {\n background-position: right center;\n /* change the direction of the change here */\n color: #fff;\n text-decoration: none;\n}\n\n.btn:active {\n transform: scale(0.95);\n}\n",
+    "component_name": "GalaxyJollyZebra42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 629,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.303Z",
+  "updated_at": "2025-07-31T07:55:33.303Z"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "alexruix_big-octopus-60",
+  "name": "big-octopus-60",
+  "category": "loaders",
+  "author": "alexruix",
+  "description": "big-octopus-60 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <span class=\"loader-text\">loading</span>\n      <span class=\"load\"></span>\n  </div>",
+    "css": "/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  width: 80px;\n  height: 50px;\n  position: relative;\n}\n\n.loader-text {\n  position: absolute;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  color: #C8B6FF;\n  animation: text_713 3.5s ease both infinite;\n  font-size: .8rem;\n  letter-spacing: 1px;\n}\n\n.load {\n  background-color: #9A79FF;\n  border-radius: 50px;\n  display: block;\n  height: 16px;\n  width: 16px;\n  bottom: 0;\n  position: absolute;\n  transform: translateX(64px);\n  animation: loading_713 3.5s ease both infinite;\n}\n\n.load::before {\n  position: absolute;\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background-color: #D1C2FF;\n  border-radius: inherit;\n  animation: loading2_713 3.5s ease both infinite;\n}\n\n@keyframes text_713 {\n  0% {\n    letter-spacing: 1px;\n    transform: translateX(0px);\n  }\n\n  40% {\n    letter-spacing: 2px;\n    transform: translateX(26px);\n  }\n\n  80% {\n    letter-spacing: 1px;\n    transform: translateX(32px);\n  }\n\n  90% {\n    letter-spacing: 2px;\n    transform: translateX(0px);\n  }\n\n  100% {\n    letter-spacing: 1px;\n    transform: translateX(0px);\n  }\n}\n\n@keyframes loading_713 {\n  0% {\n    width: 16px;\n    transform: translateX(0px);\n  }\n\n  40% {\n    width: 100%;\n    transform: translateX(0px);\n  }\n\n  80% {\n    width: 16px;\n    transform: translateX(64px);\n  }\n\n  90% {\n    width: 100%;\n    transform: translateX(0px);\n  }\n\n  100% {\n    width: 16px;\n    transform: translateX(0px);\n  }\n}\n\n@keyframes loading2_713 {\n  0% {\n    transform: translateX(0px);\n    width: 16px;\n  }\n\n  40% {\n    transform: translateX(0%);\n    width: 80%;\n  }\n\n  80% {\n    width: 100%;\n    transform: translateX(0px);\n  }\n\n  90% {\n    width: 80%;\n    transform: translateX(15px);\n  }\n\n  100% {\n    transform: translateX(0px);\n    width: 16px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/alexruix_big-octopus-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <text class=\"loader-text\">loading</text>\n      <text class=\"load\"></text>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyBigOctopus60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by alexruix - Tags: loader */\n.loader {\n  width: 160rpx;\n  height: 100rpx;\n  position: relative;\n}\n\n.loader-text {\n  position: absolute;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  color: #C8B6FF;\n  animation: text_713 3.5s ease both infinite;\n  font-size: .8rem;\n  letter-spacing: 2rpx;\n}\n\n.load {\n  background-color: #9A79FF;\n  border-radius: 100rpx;\n  display: block;\n  height: 32rpx;\n  width: 32rpx;\n  bottom: 0;\n  position: absolute;\n  transform: translateX(128rpx);\n  animation: loading_713 3.5s ease both infinite;\n}\n\n.load::before {\n  position: absolute;\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background-color: #D1C2FF;\n  border-radius: inherit;\n  animation: loading2_713 3.5s ease both infinite;\n}\n\n@keyframes text_713 {\n  0% {\n    letter-spacing: 2rpx;\n    transform: translateX(0rpx);\n  }\n\n  40% {\n    letter-spacing: 4rpx;\n    transform: translateX(52rpx);\n  }\n\n  80% {\n    letter-spacing: 2rpx;\n    transform: translateX(64rpx);\n  }\n\n  90% {\n    letter-spacing: 4rpx;\n    transform: translateX(0rpx);\n  }\n\n  100% {\n    letter-spacing: 2rpx;\n    transform: translateX(0rpx);\n  }\n}\n\n@keyframes loading_713 {\n  0% {\n    width: 32rpx;\n    transform: translateX(0rpx);\n  }\n\n  40% {\n    width: 100%;\n    transform: translateX(0rpx);\n  }\n\n  80% {\n    width: 32rpx;\n    transform: translateX(128rpx);\n  }\n\n  90% {\n    width: 100%;\n    transform: translateX(0rpx);\n  }\n\n  100% {\n    width: 32rpx;\n    transform: translateX(0rpx);\n  }\n}\n\n@keyframes loading2_713 {\n  0% {\n    transform: translateX(0rpx);\n    width: 32rpx;\n  }\n\n  40% {\n    transform: translateX(0%);\n    width: 80%;\n  }\n\n  80% {\n    width: 100%;\n    transform: translateX(0rpx);\n  }\n\n  90% {\n    width: 80%;\n    transform: translateX(30rpx);\n  }\n\n  100% {\n    transform: translateX(0rpx);\n    width: 32rpx;\n  }\n}\n \n \n\n\n",
+    "component_name": "GalaxyBigOctopus60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1887,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.902Z",
+  "updated_at": "2025-07-31T07:55:40.902Z"
+}

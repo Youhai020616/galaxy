@@ -1,0 +1,109 @@
+{
+  "id": "adamgiebl_fluffy-liger-17",
+  "name": "fluffy-liger-17",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "fluffy-liger-17 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Button\n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: button */\nbutton {\n  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);\n  background-size: 800% 400%;\n  padding: 1em 2em;\n  display: inline-block;\n  border: none;\n  border-radius: 10px;\n  font-size: 17px;\n  font-weight: 700;\n  color: white;\n  transition: all .5s ease-in-out;\n  animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;\n}\n\nbutton:hover {\n  animation: gradient 3s infinite;\n  transform: scale(1.05);\n}\n\nbutton:active {\n  animation: gradient 3s infinite;\n  transform: scale(0.8);\n}\n\n@keyframes gradient {\n  0% {\n    background-position: 0% 50%;\n  }\n\n  50% {\n    background-position: 100% 50%;\n  }\n\n  100% {\n    background-position: 0% 50%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_fluffy-liger-17.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyFluffyLiger17',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: button */\nbutton {\n  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);\n  background-size: 800% 400%;\n  padding: 1em 2em;\n  display: inline-block;\n  border: none;\n  border-radius: 20rpx;\n  font-size: 34rpx;\n  font-weight: 700;\n  color: white;\n  transition: all .5s ease-in-out;\n  animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;\n}\n\nbutton:hover {\n  animation: gradient 3s infinite;\n  transform: scale(1.05);\n}\n\nbutton:active {\n  animation: gradient 3s infinite;\n  transform: scale(0.8);\n}\n\n@keyframes gradient {\n  0% {\n    background-position: 0% 50%;\n  }\n\n  50% {\n    background-position: 100% 50%;\n  }\n\n  100% {\n    background-position: 0% 50%;\n  }\n}\n",
+    "component_name": "GalaxyFluffyLiger17"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 764,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.426Z",
+  "updated_at": "2025-07-31T07:55:35.426Z"
+}

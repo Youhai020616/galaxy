@@ -1,0 +1,89 @@
+{
+  "id": "aliaypov1_smooth-hound-6",
+  "name": "smooth-hound-6",
+  "category": "loaders",
+  "author": "aliaypov1",
+  "description": "smooth-hound-6 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n    <div class=\"loaders\"></div>\n</div>",
+    "css": "/* From Uiverse.io by aliaypov1 - Tags: loader */\n.loader {\n  --uib-size: 2.8rem;\n  --uib-speed: .9s;\n  --uib-color: #183153;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  height: var(--uib-size);\n  width: var(--uib-size);\n}\n\n.loaders {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  height: 100%;\n  width: 100%;\n}\n\n.loaders::before {\n  content: '';\n  height: 20%;\n  width: 20%;\n  border-radius: 50%;\n  background-color: var(--uib-color);\n  transform: scale(0);\n  opacity: 0.5;\n  animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;\n  box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);\n  padding-bottom: 222px;\n}\n\n.loaders:nth-child(2) {\n  transform: rotate(45deg);\n}\n\n.loaders:nth-child(2)::before {\n  animation-delay: calc(var(--uib-speed) * -0.875);\n}\n\n.loaders:nth-child(3) {\n  transform: rotate(90deg);\n}\n\n.loaders:nth-child(3)::before {\n  animation-delay: calc(var(--uib-speed) * -0.75);\n}\n\n.loaders:nth-child(4) {\n  transform: rotate(135deg);\n}\n\n.loaders:nth-child(4)::before {\n  animation-delay: calc(var(--uib-speed) * -0.625);\n}\n\n.loaders:nth-child(5) {\n  transform: rotate(180deg);\n}\n\n.loaders:nth-child(5)::before {\n  animation-delay: calc(var(--uib-speed) * -0.5);\n}\n\n.loaders:nth-child(6) {\n  transform: rotate(225deg);\n}\n\n.loaders:nth-child(6)::before {\n  animation-delay: calc(var(--uib-speed) * -0.375);\n}\n\n.dot-spinner__dot:nth-child(7) {\n  transform: rotate(270deg);\n}\n\n.loaders:nth-child(7)::before {\n  animation-delay: calc(var(--uib-speed) * -0.25);\n}\n\n.loaders:nth-child(8) {\n  transform: rotate(315deg);\n}\n\n.loaders:nth-child(8)::before {\n  animation-delay: calc(var(--uib-speed) * -0.125);\n}\n\n@keyframes pulse0112 {\n  0%,\n  100% {\n    transform: scale(0);\n    opacity: 0.5;\n  }\n\n  50% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/aliaypov1_smooth-hound-6.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n    <view class=\"loaders\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySmoothHound6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by aliaypov1 - Tags: loader */\n.loader {\n  --uib-size: 2.8rem;\n  --uib-speed: .9s;\n  --uib-color: #183153;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  height: var(--uib-size);\n  width: var(--uib-size);\n}\n\n.loaders {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  height: 100%;\n  width: 100%;\n}\n\n.loaders::before {\n  content: '';\n  height: 20%;\n  width: 20%;\n  border-radius: 50%;\n  background-color: var(--uib-color);\n  transform: scale(0);\n  opacity: 0.5;\n  animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx rgba(18, 31, 53, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  padding-bottom: 444rpx;\n}\n\n.loaders:nth-child(2) {\n  transform: rotate(45deg);\n}\n\n.loaders:nth-child(2)::before {\n  animation-delay: calc(var(--uib-speed) * -0.875);\n}\n\n.loaders:nth-child(3) {\n  transform: rotate(90deg);\n}\n\n.loaders:nth-child(3)::before {\n  animation-delay: calc(var(--uib-speed) * -0.75);\n}\n\n.loaders:nth-child(4) {\n  transform: rotate(135deg);\n}\n\n.loaders:nth-child(4)::before {\n  animation-delay: calc(var(--uib-speed) * -0.625);\n}\n\n.loaders:nth-child(5) {\n  transform: rotate(180deg);\n}\n\n.loaders:nth-child(5)::before {\n  animation-delay: calc(var(--uib-speed) * -0.5);\n}\n\n.loaders:nth-child(6) {\n  transform: rotate(225deg);\n}\n\n.loaders:nth-child(6)::before {\n  animation-delay: calc(var(--uib-speed) * -0.375);\n}\n\n.dot-spinner__dot:nth-child(7) {\n  transform: rotate(270deg);\n}\n\n.loaders:nth-child(7)::before {\n  animation-delay: calc(var(--uib-speed) * -0.25);\n}\n\n.loaders:nth-child(8) {\n  transform: rotate(315deg);\n}\n\n.loaders:nth-child(8)::before {\n  animation-delay: calc(var(--uib-speed) * -0.125);\n}\n\n@keyframes pulse0112 {\n  0%,\n  100% {\n    transform: scale(0);\n    opacity: 0.5;\n  }\n\n  50% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n",
+    "component_name": "GalaxySmoothHound6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2178,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.937Z",
+  "updated_at": "2025-07-31T07:55:40.937Z"
+}

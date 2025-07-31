@@ -1,0 +1,85 @@
+{
+  "id": "G4b413l_pretty-crab-95",
+  "name": "pretty-crab-95",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "pretty-crab-95 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"leap-frog\">\n<div class=\"leap-frog__dot\"></div>\n<div class=\"leap-frog__dot\"></div>\n<div class=\"leap-frog__dot\"></div>\n</div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader */\n.leap-frog {\n --uib-size: 40px;\n --uib-speed: 2s;\n --uib-color: rgb(37, 37, 149);\n position: relative;\n display: flex;\n align-items: center;\n justify-content: space-between;\n width: var(--uib-size);\n height: var(--uib-size);\n}\n\n.leap-frog__dot {\n position: absolute;\n top: 0;\n left: 0;\n display: flex;\n align-items: center;\n justify-content: flex-start;\n width: 100%;\n height: 100%;\n}\n\n.leap-frog__dot::before {\n content: '';\n display: block;\n height: calc(var(--uib-size) * 0.22);\n width: calc(var(--uib-size) * 0.22);\n border-radius: 50%;\n background-color: var(--uib-color);\n will-change: transform;\n}\n\n.leap-frog__dot:nth-child(1) {\n animation: leapFrog var(--uib-speed) ease infinite;\n}\n\n.leap-frog__dot:nth-child(2) {\n transform: translateX(calc(var(--uib-size) * 0.4));\n animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -1.5)\n    infinite;\n}\n\n.leap-frog__dot:nth-child(3) {\n transform: translateX(calc(var(--uib-size) * 0.8)) rotate(0deg);\n animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -3)\n    infinite;\n}\n\n@keyframes leapFrog {\n 0% {\n  transform: translateX(0) rotate(0deg);\n }\n\n 33.333% {\n  transform: translateX(0) rotate(180deg);\n }\n\n 66.666% {\n  transform: translateX(calc(var(--uib-size) * -0.4)) rotate(180deg);\n }\n\n 99.999% {\n  transform: translateX(calc(var(--uib-size) * -0.8)) rotate(180deg);\n }\n\n 100% {\n  transform: translateX(0) rotate(0deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_pretty-crab-95.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"leap-frog\"></view>\n<view class=\"leap-frog__dot\"></view>\n<view class=\"leap-frog__dot\"></view>\n<view class=\"leap-frog__dot\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPrettyCrab95',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader */\n.leap-frog {\n --uib-size: 80rpx;\n --uib-speed: 2s;\n --uib-color: rgb(37, 37, 149);\n position: relative;\n display: flex;\n align-items: center;\n justify-content: space-between;\n width: var(--uib-size);\n height: var(--uib-size);\n}\n\n.leap-frog__dot {\n position: absolute;\n top: 0;\n left: 0;\n display: flex;\n align-items: center;\n justify-content: flex-start;\n width: 100%;\n height: 100%;\n}\n\n.leap-frog__dot::before {\n content: '';\n display: block;\n height: calc(var(--uib-size) * 0.22);\n width: calc(var(--uib-size) * 0.22);\n border-radius: 50%;\n background-color: var(--uib-color);\n will-change: transform;\n}\n\n.leap-frog__dot:nth-child(1) {\n animation: leapFrog var(--uib-speed) ease infinite;\n}\n\n.leap-frog__dot:nth-child(2) {\n transform: translateX(calc(var(--uib-size) * 0.4));\n animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -1.5)\n    infinite;\n}\n\n.leap-frog__dot:nth-child(3) {\n transform: translateX(calc(var(--uib-size) * 0.8)) rotate(0deg);\n animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -3)\n    infinite;\n}\n\n@keyframes leapFrog {\n 0% {\n  transform: translateX(0) rotate(0deg);\n }\n\n 33.333% {\n  transform: translateX(0) rotate(180deg);\n }\n\n 66.666% {\n  transform: translateX(calc(var(--uib-size) * -0.4)) rotate(180deg);\n }\n\n 99.999% {\n  transform: translateX(calc(var(--uib-size) * -0.8)) rotate(180deg);\n }\n\n 100% {\n  transform: translateX(0) rotate(0deg);\n }\n}\n\n",
+    "component_name": "GalaxyPrettyCrab95"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1594,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.308Z",
+  "updated_at": "2025-07-31T07:55:39.308Z"
+}

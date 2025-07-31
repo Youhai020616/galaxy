@@ -1,0 +1,94 @@
+{
+  "id": "elijahgummer_sharp-squid-77",
+  "name": "sharp-squid-77",
+  "category": "loaders",
+  "author": "elijahgummer",
+  "description": "sharp-squid-77 组件 (loading, loader, star, circle, waiting, point, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "star",
+    "circle",
+    "waiting",
+    "point",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: loading, loader, star, circle, waiting, point */\n.loader {\n  display: inline-grid;\n  width: 80px;\n  aspect-ratio: 1;\n  animation: l12-0 3s linear infinite;\n}\n.loader:before,\n.loader:after {\n  content: \"\";\n  grid-area: 1/1;\n}\n.loader:before {\n  clip-path: polygon(\n    100% 50%,\n    83.81% 59.06%,\n    93.3% 75%,\n    74.75% 74.75%,\n    75% 93.3%,\n    59.06% 83.81%,\n    50% 100%,\n    40.94% 83.81%,\n    25% 93.3%,\n    25.25% 74.75%,\n    6.7% 75%,\n    16.19% 59.06%,\n    0% 50%,\n    16.19% 40.94%,\n    6.7% 25%,\n    25.25% 25.25%,\n    25% 6.7%,\n    40.94% 16.19%,\n    50% 0%,\n    59.06% 16.19%,\n    75% 6.7%,\n    74.75% 25.25%,\n    93.3% 25%,\n    83.81% 40.94%\n  );\n  background: #1c1d1e;\n  transform: rotate(0turn) translate(-12.5%) rotate(0turn);\n  animation:\n    l12-1 2s linear infinite,\n    l12-2 4s linear infinite alternate;\n}\n.loader:after {\n  margin: 12.5%;\n  clip-path: polygon(\n    100% 50%,\n    78.19% 60.26%,\n    88.3% 82.14%,\n    65% 75.98%,\n    58.68% 99.24%,\n    44.79% 79.54%,\n    25% 93.3%,\n    27.02% 69.28%,\n    3.02% 67.1%,\n    20% 50%,\n    3.02% 32.9%,\n    27.02% 30.72%,\n    25% 6.7%,\n    44.79% 20.46%,\n    58.68% 0.76%,\n    65% 24.02%,\n    88.3% 17.86%,\n    78.19% 39.74%\n  );\n  background: #edf0f2;\n  animation: l12-3 4s linear infinite alternate;\n}\n@keyframes l12-0 {\n  to {\n    rotate: 1turn;\n  }\n}\n@keyframes l12-1 {\n  to {\n    transform: rotate(-1turn) translate(-12.5%) rotate(0.75turn);\n  }\n}\n@keyframes l12-2 {\n  90%,\n  to {\n    clip-path: polygon(\n      100% 50%,\n      98.3% 62.94%,\n      93.3% 75%,\n      85.36% 85.36%,\n      75% 93.3%,\n      62.94% 98.3%,\n      50% 100%,\n      37.06% 98.3%,\n      25% 93.3%,\n      14.64% 85.36%,\n      6.7% 75%,\n      1.7% 62.94%,\n      0% 50%,\n      1.7% 37.06%,\n      6.7% 25%,\n      14.64% 14.64%,\n      25% 6.7%,\n      37.06% 1.7%,\n      50% 0%,\n      62.94% 1.7%,\n      75% 6.7%,\n      85.36% 14.64%,\n      93.3% 25%,\n      98.3% 37.06%\n    );\n  }\n}\n@keyframes l12-3 {\n  90%,\n  to {\n    clip-path: polygon(\n      100% 50%,\n      96.98% 67.1%,\n      88.3% 82.14%,\n      75% 93.3%,\n      58.68% 99.24%,\n      41.32% 99.24%,\n      25% 93.3%,\n      11.7% 82.14%,\n      3.02% 67.1%,\n      0% 50%,\n      3.02% 32.9%,\n      11.7% 17.86%,\n      25% 6.7%,\n      41.32% 0.76%,\n      58.68% 0.76%,\n      75% 6.7%,\n      88.3% 17.86%,\n      96.98% 32.9%\n    );\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/elijahgummer_sharp-squid-77.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxySharpSquid77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: loading, loader, star, circle, waiting, point */\n.loader {\n  display: inline-grid;\n  width: 160rpx;\n  aspect-ratio: 1;\n  animation: l12-0 3s linear infinite;\n}\n.loader:before,\n.loader:after {\n  content: \"\";\n  grid-area: 1/1;\n}\n.loader:before {\n  \n  background: #1c1d1e;\n  transform: rotate(0turn) translate(-12.5%) rotate(0turn);\n  animation:\n    l12-1 2s linear infinite,\n    l12-2 4s linear infinite alternate;\n}\n.loader:after {\n  margin: 12.5%;\n  \n  background: #edf0f2;\n  animation: l12-3 4s linear infinite alternate;\n}\n@keyframes l12-0 {\n  to {\n    rotate: 1turn;\n  }\n}\n@keyframes l12-1 {\n  to {\n    transform: rotate(-1turn) translate(-12.5%) rotate(0.75turn);\n  }\n}\n@keyframes l12-2 {\n  90%,\n  to {\n    \n  }\n}\n@keyframes l12-3 {\n  90%,\n  to {\n    \n  }\n}\n\n",
+    "component_name": "GalaxySharpSquid77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2408,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.366Z",
+  "updated_at": "2025-07-31T07:55:41.366Z"
+}

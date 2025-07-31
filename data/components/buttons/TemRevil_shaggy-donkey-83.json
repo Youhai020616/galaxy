@@ -1,0 +1,120 @@
+{
+  "id": "TemRevil_shaggy-donkey-83",
+  "name": "shaggy-donkey-83",
+  "category": "buttons",
+  "author": "TemRevil",
+  "description": "shaggy-donkey-83 组件 (material design, neumorphism, glassmorphism, animation, subscription, button, hover, smooth, interactive)",
+  "tags": [
+    "material design",
+    "neumorphism",
+    "glassmorphism",
+    "animation",
+    "subscription",
+    "button",
+    "hover",
+    "smooth",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"b-hover\">\n    <div class=\"cir-1 filter\"></div>\n    <div class=\"cir-2 filter\"></div>\n    <div class=\"cir-3 filter\"></div>\n    <div class=\"cir-4 filter\"></div>\n    <div class=\"cir-5 filter\"></div>\n    <div class=\"cir-6 filter\"></div>\n  </div>\n  Charge &amp; Go\n</button>",
+    "css": "/* From Uiverse.io by TemRevil  - Tags: material design, neumorphism, glassmorphism, animation, subscription, button, hover, smooth */\n.button {\n  position: relative;\n  z-index: 1;\n  padding: 10px 20px;\n  background-color: transparent;\n  color: #124;\n  font-size: 28px;\n  border: none;\n  border-radius: 5px;\n  transition: 0.15s 0s linear;\n  cursor: pointer;\n  overflow: hidden;\n}\n.button:hover {\n  color: #fff;\n}\n.button:active {\n  scale: 0.98;\n}\n.b-hover {\n  position: relative;\n  bottom: -45px;\n}\n.button:hover .b-hover {\n  animation: b-a 0.2s linear forwards;\n}\n\n.cir-1 {\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  z-index: -6;\n  left: -120px;\n  bottom: -20px;\n  background-color: #3395ffa1;\n  border-radius: 50%;\n}\n.button:hover .cir-1 {\n  animation: cir-1-border 0.5s 0.3s linear forwards;\n}\n.cir-2 {\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  z-index: -2;\n  left: -140px;\n  bottom: -20px;\n  background-color: #3358ffa1;\n  border-radius: 50%;\n}\n.cir-3 {\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  z-index: -3;\n  left: -160px;\n  bottom: -20px;\n  background-color: #6333ffa1;\n  border-radius: 50%;\n}\n.cir-4 {\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  z-index: -4;\n  left: -180px;\n  bottom: -20px;\n  background-color: #e433ffa1;\n  border-radius: 50%;\n}\n.cir-5 {\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  z-index: -5;\n  left: -200px;\n  bottom: -20px;\n  background-color: #ff33aab2;\n  border-radius: 50%;\n}\n.cir-6 {\n  width: 100px;\n  height: 100px;\n  position: absolute;\n  z-index: -6;\n  left: -220px;\n  bottom: -20px;\n  background-color: #ff0084;\n  border-radius: 50%;\n}\n.button:hover .cir-6 {\n  animation: cir-6-border 0.5s 0.3s linear forwards;\n}\n.filter {\n  animation: blur 0.6s 1s infinite linear alternate;\n}\n@keyframes b-a {\n  0% {\n    left: 0;\n  }\n  100% {\n    left: 200px;\n  }\n}\n\n@keyframes cir-1-border {\n  0% {\n    border-top-right-radius: 50%;\n    border-bottom-right-radius: 50%;\n  }\n  100% {\n    border-top-right-radius: 0px;\n    border-bottom-right-radius: 0px;\n  }\n}\n@keyframes cir-6-border {\n  0% {\n    border-top-left-radius: 50%;\n    border-bottom-left-radius: 50%;\n  }\n  100% {\n    border-top-left-radius: 0px;\n    border-bottom-left-radius: 0px;\n  }\n}\n\n@keyframes blur {\n  0% {\n    filter: none;\n  }\n  100% {\n    filter: blur(3px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/TemRevil_shaggy-donkey-83.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"b-hover\"></view>\n    <view class=\"cir-1 filter\"></view>\n    <view class=\"cir-2 filter\"></view>\n    <view class=\"cir-3 filter\"></view>\n    <view class=\"cir-4 filter\"></view>\n    <view class=\"cir-5 filter\"></view>\n    <view class=\"cir-6 filter\"></view>\n  </div>\n  Charge &amp; Go\n</button>",
+    "script": "export default {\n  name: 'GalaxyShaggyDonkey83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TemRevil  - Tags: material design, neumorphism, glassmorphism, animation, subscription, button, hover, smooth */\n.button {\n  position: relative;\n  z-index: 1;\n  padding: 20rpx 40rpx;\n  background-color: transparent;\n  color: #124;\n  font-size: 56rpx;\n  border: none;\n  border-radius: 10rpx;\n  transition: 0.15s 0s linear;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  overflow: hidden;\n}\n.button:hover {\n  color: #fff;\n}\n.button:active {\n  scale: 0.98;\n}\n.b-hover {\n  position: relative;\n  bottom: -90rpx;\n}\n.button:hover .b-hover {\n  animation: b-a 0.2s linear forwards;\n}\n\n.cir-1 {\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: -6;\n  left: -240rpx;\n  bottom: -40rpx;\n  background-color: #3395ffa1;\n  border-radius: 50%;\n}\n.button:hover .cir-1 {\n  animation: cir-1-border 0.5s 0.3s linear forwards;\n}\n.cir-2 {\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: -2;\n  left: -280rpx;\n  bottom: -40rpx;\n  background-color: #3358ffa1;\n  border-radius: 50%;\n}\n.cir-3 {\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: -3;\n  left: -320rpx;\n  bottom: -40rpx;\n  background-color: #6333ffa1;\n  border-radius: 50%;\n}\n.cir-4 {\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: -4;\n  left: -360rpx;\n  bottom: -40rpx;\n  background-color: #e433ffa1;\n  border-radius: 50%;\n}\n.cir-5 {\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: -5;\n  left: -400rpx;\n  bottom: -40rpx;\n  background-color: #ff33aab2;\n  border-radius: 50%;\n}\n.cir-6 {\n  width: 200rpx;\n  height: 200rpx;\n  position: absolute;\n  z-index: -6;\n  left: -440rpx;\n  bottom: -40rpx;\n  background-color: #ff0084;\n  border-radius: 50%;\n}\n.button:hover .cir-6 {\n  animation: cir-6-border 0.5s 0.3s linear forwards;\n}\n.filter {\n  animation: blur 0.6s 1s infinite linear alternate;\n}\n@keyframes b-a {\n  0% {\n    left: 0;\n  }\n  100% {\n    left: 400rpx;\n  }\n}\n\n@keyframes cir-1-border {\n  0% {\n    border-top-right-radius: 50%;\n    border-bottom-right-radius: 50%;\n  }\n  100% {\n    border-top-right-radius: 0rpx;\n    border-bottom-right-radius: 0rpx;\n  }\n}\n@keyframes cir-6-border {\n  0% {\n    border-top-left-radius: 50%;\n    border-bottom-left-radius: 50%;\n  }\n  100% {\n    border-top-left-radius: 0rpx;\n    border-bottom-left-radius: 0rpx;\n  }\n}\n\n@keyframes blur {\n  0% {\n    \n  }\n  100% {\n    \n  }\n}\n\n",
+    "component_name": "GalaxyShaggyDonkey83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2646,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.006Z",
+  "updated_at": "2025-07-31T07:55:35.006Z"
+}

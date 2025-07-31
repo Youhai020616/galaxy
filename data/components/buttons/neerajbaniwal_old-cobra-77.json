@@ -1,0 +1,119 @@
+{
+  "id": "neerajbaniwal_old-cobra-77",
+  "name": "old-cobra-77",
+  "category": "buttons",
+  "author": "neerajbaniwal",
+  "description": "old-cobra-77 组件 (button, hover button, button hover effect, 2d button, gradient, interactive)",
+  "tags": [
+    "button",
+    "hover button",
+    "button hover effect",
+    "2d button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <input name=\"power\" id=\"power\" type=\"checkbox\">\n  <label class=\"power\" for=\"power\">\n    <span class=\"icon-off\"></span>\n    <span class=\"light\"></span>\n  </label>\n</div>",
+    "css": "/* From Uiverse.io by neerajbaniwal  - Tags: button, hover button, button hover effect , 2d button */\n.container {\n  width: 150px;\n  height: 130px;\n  padding-top: 20px;\n  margin: 50px auto;\n}\n\n#power {\n  position: absolute;\n  left: -9999px;\n}\n\nlabel {\n  display: block;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  position: relative;\n  margin: auto;\n  border: 4px solid #636679;\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #efefef 0%,\n    #eee 80%,\n    #fff 100%\n  );\n  background: -moz-radial-gradient(\n    center,\n    ellipse cover,\n    #efefef 0%,\n    #eee 80%,\n    #fff 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #fefefe 0%,\n    #eee 80%,\n    #fff 100%\n  );\n  box-shadow: inset 0 -5px 10px 0 #d0d5eb, inset 0 5px 10px 0 #fff,\n    0 0 0 1px #333;\n  cursor: pointer;\n  text-align: center;\n  font-size: 40px;\n  color: #0f0;\n  line-height: 100px;\n  text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff;\n  transition: all 0.1s ease-in-out;\n}\n\nlabel:after,\nlabel:before {\n  display: block;\n  content: \"\";\n  position: absolute;\n}\n\nlabel:before {\n  width: 150px;\n  height: 150px;\n  border-radius: 20px;\n  background: -webkit-linear-gradient(\n    top,\n    #fefefe 0%,\n    #eee 30%,\n    #ddd 82%,\n    #ddd 100%\n  );\n  background: -moz-linear-gradient(\n    top,\n    #fefefe 0%,\n    #eee 30%,\n    #ddd 82%,\n    #ddd 100%\n  );\n  background: linear-gradient(top, #fefefe 0%, #eee 30%, #ddd 82%, #ddd 100%);\n  box-shadow: 0 10px 30px 0 #000;\n  top: -25px;\n  left: -25px;\n  z-index: -2;\n}\n\nlabel:after {\n  width: 130px;\n  height: 130px;\n  border-radius: 50%;\n  background: #fff;\n  top: -15px;\n  left: -15px;\n  z-index: -1;\n  box-shadow: 0 -2px 5px 0px #fefefe, 0 2px 5px 0 #ccc;\n  background: rgb(210, 215, 237);\n  background: -webkit-linear-gradient(\n    top,\n    #ddd 0%,\n    #ddd 30%,\n    #eee 82%,\n    #efefef 100%\n  );\n  background: -moz-linear-gradient(\n    top,\n    #ddd 0%,\n    #ddd 30%,\n    #eee 82%,\n    #efefef 100%\n  );\n  background: linear-gradient(top, #ddd 0%, #ddd 30%, #eee 82%, #efefef 100%);\n}\n\n.light {\n  display: block;\n  width: 12px;\n  height: 12px;\n  position: absolute;\n  top: -12px;\n  right: -12px;\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #fff 0%,\n    #d6f804 80%,\n    #bade32 100%\n  );\n  background: -moz-radial-gradient(\n    center,\n    ellipse cover,\n    #fff 0%,\n    #d6f804 80%,\n    #bade32 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #fff 0%,\n    #d6f804 80%,\n    #bade32 100%\n  );\n  box-shadow: inset 0 1px 1px 0 #333, inset 0 -1px 1px 0 #333,\n    0 0 5px 1px #bade32;\n  border-radius: 50%;\n  transition: all 0.1s ease-in-out;\n}\n\n.icon-off {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background: #d6f804;\n  box-shadow: inset 0 0 4px 0 #999;\n  transition: all 0.1s ease-in-out;\n}\n\n.icon-off:after {\n  display: block;\n  content: \"\";\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: auto;\n  width: 26px;\n  height: 26px;\n  border-radius: 50%;\n  background: #eee;\n  box-shadow: 0 0 3px 0 #999;\n  z-index: 2;\n}\n\n.icon-off:before {\n  display: block;\n  content: \"\";\n  position: absolute;\n  top: -5px;\n  left: 0;\n  right: 0;\n  margin: auto;\n  width: 8px;\n  height: 25px;\n  background: #d6f804;\n  box-shadow: inherit;\n  border-radius: 10px;\n  border-style: solid;\n  border-width: 0 3px 0;\n  border-color: #eee;\n  z-index: 3;\n  transition: all 0.1s ease-in-out;\n}\n\n#power:checked + label {\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #ddd 0%,\n    #eee 80%,\n    #efefef 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #ddd 0%,\n    #eee 80%,\n    #efefef 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #ddd 0%,\n    #eee 80%,\n    #efefef 100%\n  );\n  box-shadow: inset 0 -5px 10px 0 #aaa, inset 0 5px 10px 0 #aaa, 0 0 0 1px #333;\n  transition: all 0.1s linear;\n}\n\n#power:checked + label .light {\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #fcc 0%,\n    #f88 60%,\n    #f00 100%\n  );\n  background: -moz-radial-gradient(\n    center,\n    ellipse cover,\n    #fcc 0%,\n    #f88 60%,\n    #f00 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #fcc 0%,\n    #f88 60%,\n    #f00 100%\n  );\n  box-shadow: inset 0 1px 1px 0 #555, inset 0 -1px 1px 0 #555, 0 0 5px 0 #f55;\n  transition: all 0.1s linear;\n}\n\n#power:checked + label .icon-off {\n  background: transparent;\n  box-shadow: inset 0 0 5px 0 #777;\n  transition: all 0.1s linear;\n}\n\n#power:checked + label .icon-off:after {\n  background: inherit;\n  box-shadow: 0 0 5px 0 #777;\n}\n\n#power:checked + label .icon-off:before {\n  background: #ddd;\n  border-color: #dfdfdf;\n  box-shadow: inherit;\n  transition: all 0.1s linear;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/neerajbaniwal_old-cobra-77.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <input name=\"power\" id=\"power\" type=\"checkbox\"></input>\n  <label class=\"power\" for=\"power\"></label>\n    <text class=\"icon-off\"></text>\n    <text class=\"light\"></text>\n  </label>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOldCobra77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by neerajbaniwal  - Tags: button, hover button, button hover effect , 2d button */\n.container {\n  width: 300rpx;\n  height: 260rpx;\n  padding-top: 40rpx;\n  margin: 100rpx auto;\n}\n\n#power {\n  position: absolute;\n  left: -19998rpx;\n}\n\nlabel {\n  display: block;\n  width: 200rpx;\n  height: 200rpx;\n  border-radius: 50%;\n  position: relative;\n  margin: auto;\n  border: 8rpx solid #636679;\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #efefef 0%,\n    #eee 80%,\n    #fff 100%\n  );\n  background: -moz-radial-gradient(\n    center,\n    ellipse cover,\n    #efefef 0%,\n    #eee 80%,\n    #fff 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #fefefe 0%,\n    #eee 80%,\n    #fff 100%\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 -10rpx 20rpx 0 #d0d5eb, inset 0 10rpx 20rpx 0 #fff,\n    0 0 0 2rpx #333;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  text-align: center;\n  font-size: 80rpx;\n  color: #0f0;\n  line-height: 200rpx;\n  /* #ifdef H5 */\n  text-shadow: -2rpx -2rpx 0rpx #fff, 2rpx 2rpx 0rpx #fff;\n  /* #endif */\n  transition: all 0.1s ease-in-out;\n}\n\nlabel:after,\nlabel:before {\n  display: block;\n  content: \"\";\n  position: absolute;\n}\n\nlabel:before {\n  width: 300rpx;\n  height: 300rpx;\n  border-radius: 40rpx;\n  background: -webkit-linear-gradient(\n    top,\n    #fefefe 0%,\n    #eee 30%,\n    #ddd 82%,\n    #ddd 100%\n  );\n  background: -moz-linear-gradient(\n    top,\n    #fefefe 0%,\n    #eee 30%,\n    #ddd 82%,\n    #ddd 100%\n  );\n  background: linear-gradient(top, #fefefe 0%, #eee 30%, #ddd 82%, #ddd 100%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 60rpx 0 #000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  top: -50rpx;\n  left: -50rpx;\n  z-index: -2;\n}\n\nlabel:after {\n  width: 260rpx;\n  height: 260rpx;\n  border-radius: 50%;\n  background: #fff;\n  top: -30rpx;\n  left: -30rpx;\n  z-index: -1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -4rpx 10rpx 0rpx #fefefe, 0 4rpx 10rpx 0 #ccc;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: rgb(210, 215, 237);\n  background: -webkit-linear-gradient(\n    top,\n    #ddd 0%,\n    #ddd 30%,\n    #eee 82%,\n    #efefef 100%\n  );\n  background: -moz-linear-gradient(\n    top,\n    #ddd 0%,\n    #ddd 30%,\n    #eee 82%,\n    #efefef 100%\n  );\n  background: linear-gradient(top, #ddd 0%, #ddd 30%, #eee 82%, #efefef 100%);\n}\n\n.light {\n  display: block;\n  width: 24rpx;\n  height: 24rpx;\n  position: absolute;\n  top: -24rpx;\n  right: -24rpx;\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #fff 0%,\n    #d6f804 80%,\n    #bade32 100%\n  );\n  background: -moz-radial-gradient(\n    center,\n    ellipse cover,\n    #fff 0%,\n    #d6f804 80%,\n    #bade32 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #fff 0%,\n    #d6f804 80%,\n    #bade32 100%\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 2rpx 2rpx 0 #333, inset 0 -2rpx 2rpx 0 #333,\n    0 0 10rpx 2rpx #bade32;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 50%;\n  transition: all 0.1s ease-in-out;\n}\n\n.icon-off {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  width: 80rpx;\n  height: 80rpx;\n  border-radius: 50%;\n  background: #d6f804;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 8rpx 0 #999;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.1s ease-in-out;\n}\n\n.icon-off:after {\n  display: block;\n  content: \"\";\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: auto;\n  width: 52rpx;\n  height: 52rpx;\n  border-radius: 50%;\n  background: #eee;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 6rpx 0 #999;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 2;\n}\n\n.icon-off:before {\n  display: block;\n  content: \"\";\n  position: absolute;\n  top: -10rpx;\n  left: 0;\n  right: 0;\n  margin: auto;\n  width: 16rpx;\n  height: 50rpx;\n  background: #d6f804;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inherit;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 20rpx;\n  border-style: solid;\n  border-width: 0 6rpx 0;\n  border-color: #eee;\n  z-index: 3;\n  transition: all 0.1s ease-in-out;\n}\n\n#power:checked + label {\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #ddd 0%,\n    #eee 80%,\n    #efefef 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #ddd 0%,\n    #eee 80%,\n    #efefef 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #ddd 0%,\n    #eee 80%,\n    #efefef 100%\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 -10rpx 20rpx 0 #aaa, inset 0 10rpx 20rpx 0 #aaa, 0 0 0 2rpx #333;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.1s linear;\n}\n\n#power:checked + label .light {\n  background: -webkit-radial-gradient(\n    center,\n    ellipse cover,\n    #fcc 0%,\n    #f88 60%,\n    #f00 100%\n  );\n  background: -moz-radial-gradient(\n    center,\n    ellipse cover,\n    #fcc 0%,\n    #f88 60%,\n    #f00 100%\n  );\n  background: radial-gradient(\n    center,\n    ellipse cover,\n    #fcc 0%,\n    #f88 60%,\n    #f00 100%\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 2rpx 2rpx 0 #555, inset 0 -2rpx 2rpx 0 #555, 0 0 10rpx 0 #f55;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.1s linear;\n}\n\n#power:checked + label .icon-off {\n  background: transparent;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 10rpx 0 #777;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.1s linear;\n}\n\n#power:checked + label .icon-off:after {\n  background: inherit;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx 0 #777;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n#power:checked + label .icon-off:before {\n  background: #ddd;\n  border-color: #dfdfdf;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inherit;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.1s linear;\n}\n\n",
+    "component_name": "GalaxyOldCobra77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 5077,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.447Z",
+  "updated_at": "2025-07-31T07:55:37.447Z"
+}

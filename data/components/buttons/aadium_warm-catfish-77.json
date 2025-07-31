@@ -1,0 +1,110 @@
+{
+  "id": "aadium_warm-catfish-77",
+  "name": "warm-catfish-77",
+  "category": "buttons",
+  "author": "aadium",
+  "description": "warm-catfish-77 组件 (button, car, formula1, animation, interactive)",
+  "tags": [
+    "button",
+    "car",
+    "formula1",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"carbutton\">\n  <div class=\"caption\">Let's Race</div>\n  <svg viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\" class=\"car\"><path d=\"M355.975 292.25a24.82 24.82 0 1 0 24.82-24.81 24.84 24.84 0 0 0-24.82 24.81zm-253-24.81a24.81 24.81 0 1 1-24.82 24.81 24.84 24.84 0 0 1 24.81-24.81zm-76.67-71.52h67.25l-13.61 49.28 92-50.28h57.36l1.26 34.68 32 14.76 11.74-14.44h15.62l3.16 16c137.56-13 192.61 29.17 192.61 29.17s-7.52 5-25.93 8.39c-3.88 3.31-3.66 14.44-3.66 14.44h24.2v16h-52v-27.48c-1.84.07-4.45.41-7.06.47a40.81 40.81 0 1 0-77.25 23h-204.24a40.81 40.81 0 1 0-77.61-17.67c0 1.24.06 2.46.17 3.67h-36z\"></path></svg>\n</button>",
+    "css": "/* From Uiverse.io by aadium - Tags: button, car, formula1 */\n.carbutton {\n  width: 200px;\n  height: 70px;\n  padding: 20px;\n  background: #212121;\n  border: 6px double #e8e8e8;\n  transition: 0.2s;\n}\n\n.caption {\n  color: #e8e8e8;\n  font-family: 'Courier New', Courier, monospace;\n  font-size: 20px;\n  transition: 0.2s;\n}\n\n.car {\n  fill: #e8e8e8;\n  width: 50px;\n  height: 50px;\n  margin-left: -120px;\n  margin-top: -35px;\n  transition: 0.2s ease-in-out;\n}\n\n.carbutton:not(:hover) .car {\n  opacity: 0%;\n  transform: translateX(-150px);\n}\n\n.carbutton:hover .caption {\n  opacity: 0%;\n}\n\n.carbutton:focus .car {\n  transform: translateX(120px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/aadium_warm-catfish-77.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"carbutton\"></button>\n  <view class=\"caption\">Let's Race</view>\n  <view viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\" class=\"car\"><path d=\"M355.975 292.25a24.82 24.82 0 1 0 24.82-24.81 24.84 24.84 0 0 0-24.82 24.81zm-253-24.81a24.81 24.81 0 1 1-24.82 24.81 24.84 24.84 0 0 1 24.81-24.81zm-76.67-71.52h67.25l-13.61 49.28 92-50.28h57.36l1.26 34.68 32 14.76 11.74-14.44h15.62l3.16 16c137.56-13 192.61 29.17 192.61 29.17s-7.52 5-25.93 8.39c-3.88 3.31-3.66 14.44-3.66 14.44h24.2v16h-52v-27.48c-1.84.07-4.45.41-7.06.47a40.81 40.81 0 1 0-77.25 23h-204.24a40.81 40.81 0 1 0-77.61-17.67c0 1.24.06 2.46.17 3.67h-36z\"></path></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWarmCatfish77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by aadium - Tags: button, car, formula1 */\n.carbutton {\n  width: 400rpx;\n  height: 140rpx;\n  padding: 40rpx;\n  background: #212121;\n  border: 12rpx double #e8e8e8;\n  transition: 0.2s;\n}\n\n.caption {\n  color: #e8e8e8;\n  font-family: 'Courier New', Courier, monospace;\n  font-size: 40rpx;\n  transition: 0.2s;\n}\n\n.car {\n  fill: #e8e8e8;\n  width: 100rpx;\n  height: 100rpx;\n  margin-left: -240rpx;\n  margin-top: -70rpx;\n  transition: 0.2s ease-in-out;\n}\n\n.carbutton:not(:hover) .car {\n  opacity: 0%;\n  transform: translateX(-300rpx);\n}\n\n.carbutton:hover .caption {\n  opacity: 0%;\n}\n\n.carbutton:focus .car {\n  transform: translateX(240rpx);\n}\n\n",
+    "component_name": "GalaxyWarmCatfish77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1287,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.341Z",
+  "updated_at": "2025-07-31T07:55:35.341Z"
+}

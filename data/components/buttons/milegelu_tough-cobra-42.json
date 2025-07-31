@@ -1,0 +1,120 @@
+{
+  "id": "milegelu_tough-cobra-42",
+  "name": "tough-cobra-42",
+  "category": "buttons",
+  "author": "milegelu",
+  "description": "tough-cobra-42 组件 (button, active, hover button, button hover effect, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "active",
+    "hover button",
+    "button hover effect",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div>\n  <button class=\"button\">\n    <svg viewBox=\"0 0 16 16\" class=\"bi bi-lightning-charge-fill\" fill=\"currentColor\" height=\"16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z\"></path></svg>button\n  </button>\n</div>",
+    "css": "/* From Uiverse.io by milegelu  - Tags: button, active, hover button, button hover effect  */\n.button {\n  --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);\n  --edge-light: hsla(0, 0%, 50%, 0.8);\n  --text-light: rgba(255, 255, 255, 0.4);\n  --back-color: 240, 40%;\n\n  cursor: pointer;\n  padding: 0.7em 1em;\n  border-radius: 0.5em;\n  min-height: 2.4em;\n  min-width: 3em;\n  display: flex;\n  align-items: center;\n  gap: 0.5em;\n\n  font-size: 18px;\n  letter-spacing: 0.05em;\n  line-height: 1;\n  font-weight: bold;\n\n  background: linear-gradient(\n    140deg,\n    hsla(var(--back-color), 50%, 1) min(2em, 20%),\n    hsla(var(--back-color), 50%, 0.6) min(8em, 100%)\n  );\n  color: hsla(0, 0%, 90%);\n  border: 0;\n  box-shadow: inset 0.4px 1px 4px var(--edge-light);\n\n  transition: all 0.1s var(--bezier);\n}\n\n.button:hover {\n  --edge-light: hsla(0, 0%, 50%, 1);\n  text-shadow: 0px 0px 10px var(--text-light);\n  box-shadow: inset 0.4px 1px 4px var(--edge-light),\n    2px 4px 8px hsla(0, 0%, 0%, 0.295);\n  transform: scale(1.1);\n}\n\n.button:active {\n  --text-light: rgba(255, 255, 255, 1);\n\n  background: linear-gradient(\n    140deg,\n    hsla(var(--back-color), 50%, 1) min(2em, 20%),\n    hsla(var(--back-color), 50%, 0.6) min(8em, 100%)\n  );\n  box-shadow: inset 0.4px 1px 8px var(--edge-light),\n    0px 0px 8px hsla(var(--back-color), 50%, 0.6);\n  text-shadow: 0px 0px 20px var(--text-light);\n  color: hsla(0, 0%, 100%, 1);\n  letter-spacing: 0.1em;\n  transform: scale(1);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/milegelu_tough-cobra-42.html"
+  },
+  "uniapp": {
+    "template": "<view></view>\n  <button class=\"button\"></button>\n    <view viewBox=\"0 0 16 16\" class=\"bi bi-lightning-charge-fill\" fill=\"currentColor\" height=\"16\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z\"></path></svg>button\n  </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyToughCobra42',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by milegelu  - Tags: button, active, hover button, button hover effect  */\n.button {\n  --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);\n  --edge-light: hsla(0, 0%, 50%, 0.8);\n  --text-light: rgba(255, 255, 255, 0.4);\n  --back-color: 240, 40%;\n\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 0.7em 1em;\n  border-radius: 0.5em;\n  min-height: 2.4em;\n  min-width: 3em;\n  display: flex;\n  align-items: center;\n  gap: 0.5em;\n\n  font-size: 36rpx;\n  letter-spacing: 0.05em;\n  line-height: 1;\n  font-weight: bold;\n\n  background: linear-gradient(\n    140deg,\n    hsla(var(--back-color), 50%, 1) min(2em, 20%),\n    hsla(var(--back-color), 50%, 0.6) min(8em, 100%)\n  );\n  color: hsla(0, 0%, 90%);\n  border: 0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0.8rpx 2rpx 8rpx var(--edge-light);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n\n  transition: all 0.1s var(--bezier);\n}\n\n.button:hover {\n  --edge-light: hsla(0, 0%, 50%, 1);\n  /* #ifdef H5 */\n  text-shadow: 0rpx 0rpx 20rpx var(--text-light);\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0.8rpx 2rpx 8rpx var(--edge-light),\n    4rpx 8rpx 16rpx hsla(0, 0%, 0%, 0.295);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: scale(1.1);\n}\n\n.button:active {\n  --text-light: rgba(255, 255, 255, 1);\n\n  background: linear-gradient(\n    140deg,\n    hsla(var(--back-color), 50%, 1) min(2em, 20%),\n    hsla(var(--back-color), 50%, 0.6) min(8em, 100%)\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0.8rpx 2rpx 16rpx var(--edge-light),\n    0rpx 0rpx 16rpx hsla(var(--back-color), 50%, 0.6);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 0rpx 0rpx 40rpx var(--text-light);\n  /* #endif */\n  color: hsla(0, 0%, 100%, 1);\n  letter-spacing: 0.1em;\n  transform: scale(1);\n}\n\n",
+    "component_name": "GalaxyToughCobra42"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1843,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.253Z",
+  "updated_at": "2025-07-31T07:55:37.253Z"
+}

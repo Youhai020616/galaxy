@@ -1,0 +1,90 @@
+{
+  "id": "Shoh2008_weak-chipmunk-86",
+  "name": "weak-chipmunk-86",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "weak-chipmunk-86 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  height: 150px;\n  width: 100px;\n  border-radius: 55px 55px 10px 10px;\n  position: relative;\n  background: #FF3D00;\n  background-image: linear-gradient(0deg,\n    #f63a99 25%,\n    #30dcf6 25%,\n    #30dcf6 25%,\n    #30dcf6 50%,\n    #f2d200 50%,\n    #f2d200 50%,\n    #f2d200 75%,\n    #70ca5c 75%);\n  background-position: 0px 0px;\n  background-size: auto 175px;\n  background-repeat: repeat-y;\n  animation: colorShift 6s linear infinite;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  left: 10px;\n  bottom: 15px;\n  width: 15px;\n  height: 100px;\n  border-radius: 50px;\n  background: rgba(255, 255, 255, 0.5);\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  left: 50%;\n  top: 100%;\n  transform: translate(-50% , 0);\n  box-shadow: 0 15px 2px rgba(0, 0, 0, 0.25) inset;\n  width: 32px;\n  height: 45px;\n  background: #E09C5F;\n  border-radius: 0 0 12px 12px;\n}\n\n@keyframes colorShift {\n  to {\n    background-position: 0 175px\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_weak-chipmunk-86.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyWeakChipmunk86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  height: 300rpx;\n  width: 200rpx;\n  border-radius: 110rpx 110rpx 20rpx 20rpx;\n  position: relative;\n  background: #FF3D00;\n  background-image: linear-gradient(0deg,\n    #f63a99 25%,\n    #30dcf6 25%,\n    #30dcf6 25%,\n    #30dcf6 50%,\n    #f2d200 50%,\n    #f2d200 50%,\n    #f2d200 75%,\n    #70ca5c 75%);\n  background-position: 0rpx 0rpx;\n  background-size: auto 350rpx;\n  background-repeat: repeat-y;\n  animation: colorShift 6s linear infinite;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  left: 20rpx;\n  bottom: 30rpx;\n  width: 30rpx;\n  height: 200rpx;\n  border-radius: 100rpx;\n  background: rgba(255, 255, 255, 0.5);\n}\n\n.loader:after {\n  content: \"\";\n  position: absolute;\n  left: 50%;\n  top: 100%;\n  transform: translate(-50% , 0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 30rpx 4rpx rgba(0, 0, 0, 0.25) inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  width: 64rpx;\n  height: 90rpx;\n  background: #E09C5F;\n  border-radius: 0 0 24rpx 24rpx;\n}\n\n@keyframes colorShift {\n  to {\n    background-position: 0 350rpx\n  }\n}\n\n  \n",
+    "component_name": "GalaxyWeakChipmunk86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1034,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.472Z",
+  "updated_at": "2025-07-31T07:55:40.472Z"
+}

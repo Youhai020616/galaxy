@@ -1,0 +1,89 @@
+{
+  "id": "Lanicet_fluffy-otter-43",
+  "name": "fluffy-otter-43",
+  "category": "loaders",
+  "author": "Lanicet",
+  "description": "fluffy-otter-43 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div id=\"myProgress\">\n  <div id=\"myBar\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Lanicet - Tags: loader */\n#myProgress {\n  width: 100px;\n  max-width: 200px;\n  background: #F4F4F4;\n  box-shadow: inset -1px 1px 2px rgba(200, 200, 200, 0.2), inset 1px -1px 2px rgba(200, 200, 200, 0.2), inset -1px -1px 2px rgba(255, 255, 255, 0.9), inset 1px 1px 3px rgba(200, 200, 200, 0.9);\n  border-radius: 28px;\n  overflow: hidden;\n}\n\n#myBar {\n  width: 10%;\n  height: 30px;\n  background: rgba(0, 209, 0, 0.35);\n  border-radius: 28px;\n  text-align: center;\n  line-height: 30px;\n  color: white;\n  transition: 0.5s;\n  animation: loading82341 10s ease infinite;\n}\n\n@keyframes loading82341 {\n  0% {\n    width: 0%;\n  }\n\n  10% {\n    width: 10%;\n  }\n\n  50% {\n    width: 40%;\n  }\n\n  60% {\n    width: 60%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Lanicet_fluffy-otter-43.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"myProgress\"></view>\n  <view id=\"myBar\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFluffyOtter43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Lanicet - Tags: loader */\n#myProgress {\n  width: 200rpx;\n  max-width: 400rpx;\n  background: #F4F4F4;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -2rpx 2rpx 4rpx rgba(200, 200, 200, 0.2), inset 2rpx -2rpx 4rpx rgba(200, 200, 200, 0.2), inset -2rpx -2rpx 4rpx rgba(255, 255, 255, 0.9), inset 2rpx 2rpx 6rpx rgba(200, 200, 200, 0.9);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 56rpx;\n  overflow: hidden;\n}\n\n#myBar {\n  width: 10%;\n  height: 60rpx;\n  background: rgba(0, 209, 0, 0.35);\n  border-radius: 56rpx;\n  text-align: center;\n  line-height: 60rpx;\n  color: white;\n  transition: 0.5s;\n  animation: loading82341 10s ease infinite;\n}\n\n@keyframes loading82341 {\n  0% {\n    width: 0%;\n  }\n\n  10% {\n    width: 10%;\n  }\n\n  50% {\n    width: 40%;\n  }\n\n  60% {\n    width: 60%;\n  }\n\n  100% {\n    width: 100%;\n  }\n}\n",
+    "component_name": "GalaxyFluffyOtter43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 815,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.627Z",
+  "updated_at": "2025-07-31T07:55:39.627Z"
+}

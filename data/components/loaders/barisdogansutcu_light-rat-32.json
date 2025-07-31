@@ -1,0 +1,86 @@
+{
+  "id": "barisdogansutcu_light-rat-32",
+  "name": "light-rat-32",
+  "category": "loaders",
+  "author": "barisdogansutcu",
+  "description": "light-rat-32 组件 (loader, spinner, animation)",
+  "tags": [
+    "loader",
+    "spinner",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg viewBox=\"25 25 50 50\">\n  <circle r=\"20\" cy=\"50\" cx=\"50\"></circle>\n</svg>",
+    "css": "/* From Uiverse.io by barisdogansutcu - Tags: loader, spinner */\nsvg {\n width: 3.25em;\n transform-origin: center;\n animation: rotate4 2s linear infinite;\n}\n\ncircle {\n fill: none;\n stroke: hsl(214, 97%, 59%);\n stroke-width: 2;\n stroke-dasharray: 1, 200;\n stroke-dashoffset: 0;\n stroke-linecap: round;\n animation: dash4 1.5s ease-in-out infinite;\n}\n\n@keyframes rotate4 {\n 100% {\n  transform: rotate(360deg);\n }\n}\n\n@keyframes dash4 {\n 0% {\n  stroke-dasharray: 1, 200;\n  stroke-dashoffset: 0;\n }\n\n 50% {\n  stroke-dasharray: 90, 200;\n  stroke-dashoffset: -35px;\n }\n\n 100% {\n  stroke-dashoffset: -125px;\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/barisdogansutcu_light-rat-32.html"
+  },
+  "uniapp": {
+    "template": "<view viewBox=\"25 25 50 50\"></view>\n  <circle r=\"20\" cy=\"50\" cx=\"50\"></circle>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyLightRat32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by barisdogansutcu - Tags: loader, spinner */\nsvg {\n width: 3.25em;\n transform-origin: center;\n animation: rotate4 2s linear infinite;\n}\n\ncircle {\n fill: none;\n stroke: hsl(214, 97%, 59%);\n stroke-width: 2;\n stroke-dasharray: 1, 200;\n stroke-dashoffset: 0;\n stroke-linecap: round;\n animation: dash4 1.5s ease-in-out infinite;\n}\n\n@keyframes rotate4 {\n 100% {\n  transform: rotate(360deg);\n }\n}\n\n@keyframes dash4 {\n 0% {\n  stroke-dasharray: 1, 200;\n  stroke-dashoffset: 0;\n }\n\n 50% {\n  stroke-dasharray: 90, 200;\n  stroke-dashoffset: -70rpx;\n }\n\n 100% {\n  stroke-dashoffset: -250rpx;\n }\n}\n\n",
+    "component_name": "GalaxyLightRat32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 684,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.006Z",
+  "updated_at": "2025-07-31T07:55:41.006Z"
+}

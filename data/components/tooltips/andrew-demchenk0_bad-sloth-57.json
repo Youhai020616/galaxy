@@ -1,0 +1,98 @@
+{
+  "id": "andrew-demchenk0_bad-sloth-57",
+  "name": "bad-sloth-57",
+  "category": "tooltips",
+  "author": "andrew-demchenk0",
+  "description": "bad-sloth-57 组件 (tooltip, animation, action, green, button, hover, click, border, interactive)",
+  "tags": [
+    "tooltip",
+    "animation",
+    "action",
+    "green",
+    "button",
+    "hover",
+    "click",
+    "border",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <input type=\"checkbox\" id=\"showCheckbox\" class=\"toggle-checkbox\">\n  <label for=\"showCheckbox\" class=\"toggle-label\">Show Tooltip</label>\n\n  <div id=\"popup\" class=\"popup\">\n    <label for=\"showCheckbox\" class=\"close-label\"></label>\n    <p>I am looking for a job. Trainee/junior React dev. <br>📍Ukraine.</p>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by andrew-demchenk0  - Tags: tooltip, animation, action, green, button, hover, click, border */\n.container {\n  position: relative;\n  --main-color: #19e68c;\n  --dark-color: #222;\n  --bg-light: #fff;\n  --dark-alternative: #666;\n}\n\n.popup {\n  display: none;\n  padding: 10px 20px;\n  position: absolute;\n  width: 200px;\n  top: -100%;\n  left: -25%;\n  background-color: var(--bg-light);\n  border: 1.5px solid var(--dark-alternative);\n  border-radius: 2px;\n  animation: slideIn 1s;\n}\n\n.toggle-checkbox {\n  display: none;\n}\n\n.toggle-label {\n  position: relative;\n  padding: 10px;\n  background-color: var(--main-color);\n  color: var(--dark-color);\n  font-weight: 600;\n  cursor: help;\n  display: inline-block;\n  border: 2px solid var(--dark-color);\n  border-radius: 3px;\n  box-shadow: 2px 2px var(--dark-color);\n  transition: 0.5s;\n}\n\n.toggle-label::before {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  animation: pulsate 0.7s infinite;\n}\n\n.toggle-label:hover::before {\n  animation: none;\n}\n\n.toggle-label:active {\n  transform: translate(2px, 2px);\n  box-shadow: 0px 0px var(--dark-color);\n}\n\n.close-label {\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  width: 20px;\n  height: 20px;\n}\n.close-label::before {\n  content: \"⊗\";\n  font-size: 22px;\n  position: absolute;\n  top: -7px;\n  left: 0;\n  color: var(--dark-alternative);\n  cursor: pointer;\n}\n.toggle-checkbox:checked ~ .popup {\n  display: block;\n}\n.toggle-checkbox:checked ~ .toggle-label {\n  opacity: 0;\n}\n\n@keyframes slideIn {\n  0% {\n    transform: translateX(200%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateX(200%);\n    opacity: 0;\n  }\n  70% {\n    transform: translateX(-10%);\n    opacity: 0.5;\n  }\n  80% {\n    transform: translateX(5%);\n  }\n  90% {\n    transform: translateX(-5%);\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n@keyframes pulsate {\n  0% {\n    box-shadow: 0 0 -5px rgba(255, 255, 255, 1);\n  }\n  50% {\n    box-shadow: 0 0 10px var(--dark-color);\n  }\n  100% {\n    box-shadow: 0 0 -5px rgb(255, 255, 255);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/andrew-demchenk0_bad-sloth-57.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <input type=\"checkbox\" id=\"showCheckbox\" class=\"toggle-checkbox\"></input>\n  <label for=\"showCheckbox\" class=\"toggle-label\"></label>Show Tooltip</label>\n\n  <view id=\"popup\" class=\"popup\"></view>\n    <label for=\"showCheckbox\" class=\"close-label\"></label></label>\n    <text>I am looking for a job. Trainee/junior React dev. <br>📍Ukraine.</text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBadSloth57',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by andrew-demchenk0  - Tags: tooltip, animation, action, green, button, hover, click, border */\n.container {\n  position: relative;\n  --main-color: #19e68c;\n  --dark-color: #222;\n  --bg-light: #fff;\n  --dark-alternative: #666;\n}\n\n.popup {\n  display: none;\n  padding: 20rpx 40rpx;\n  position: absolute;\n  width: 400rpx;\n  top: -100%;\n  left: -25%;\n  background-color: var(--bg-light);\n  border: 3rpx solid var(--dark-alternative);\n  border-radius: 4rpx;\n  animation: slideIn 1s;\n}\n\n.toggle-checkbox {\n  display: none;\n}\n\n.toggle-label {\n  position: relative;\n  padding: 20rpx;\n  background-color: var(--main-color);\n  color: var(--dark-color);\n  font-weight: 600;\n  /* #ifdef H5 */\n  cursor: help;\n  /* #endif */\n  display: inline-block;\n  border: 4rpx solid var(--dark-color);\n  border-radius: 6rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx var(--dark-color);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: 0.5s;\n}\n\n.toggle-label::before {\n  content: \"\";\n  position: absolute;\n  z-index: -1;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  animation: pulsate 0.7s infinite;\n}\n\n.toggle-label:hover::before {\n  animation: none;\n}\n\n.toggle-label:active {\n  transform: translate(4rpx, 4rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx var(--dark-color);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.close-label {\n  position: absolute;\n  top: 10rpx;\n  right: 10rpx;\n  width: 40rpx;\n  height: 40rpx;\n}\n.close-label::before {\n  content: \"⊗\";\n  font-size: 44rpx;\n  position: absolute;\n  top: -14rpx;\n  left: 0;\n  color: var(--dark-alternative);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n.toggle-checkbox:checked ~ .popup {\n  display: block;\n}\n.toggle-checkbox:checked ~ .toggle-label {\n  opacity: 0;\n}\n\n@keyframes slideIn {\n  0% {\n    transform: translateX(200%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateX(200%);\n    opacity: 0;\n  }\n  70% {\n    transform: translateX(-10%);\n    opacity: 0.5;\n  }\n  80% {\n    transform: translateX(5%);\n  }\n  90% {\n    transform: translateX(-5%);\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n@keyframes pulsate {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 -10rpx rgba(255, 255, 255, 1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  50% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx var(--dark-color);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 -10rpx rgb(255, 255, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n",
+    "component_name": "GalaxyBadSloth57"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2440,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.622Z",
+  "updated_at": "2025-07-31T07:55:38.622Z"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "Jerome-W-90_nervous-dragon-80",
+  "name": "nervous-dragon-80",
+  "category": "buttons",
+  "author": "Jerome-W-90",
+  "description": "nervous-dragon-80 组件 (3d, button, realistic, 3d button, animation, gradient, interactive)",
+  "tags": [
+    "3d",
+    "button",
+    "realistic",
+    "3d button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"box\">\n  <div class=\"container\">\n    <button class=\"button\"><span>A</span></button>\n    <button class=\"button\"><span>B</span></button>\n    <button class=\"button\"><span>C</span></button>\n    <button class=\"button\"><span>D</span></button>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Jerome-W-90  - Website: https://codepen.io/pfndesign/pen/KKYPqMz - Name: pfndesign - Tags: 3d, button, realistic, 3d button */\n.box {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%) skew(15deg);\n  width: 250px;\n  height: 250px;\n}\n.box .container {\n  width: 250px;\n  height: 250px;\n  background: #2f0000;\n  border-radius: 15px;\n  border: 10px solid #cbcdcd;\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5px;\n}\n.box .container .button {\n  position: relative;\n  flex-basis: calc(50% - 0.5px);\n  background: #ca0a0b;\n  border: 0;\n  font-size: 35px;\n  border-radius: 5px;\n  color: white;\n  cursor: pointer;\n  transition: all 0.5s ease;\n}\n.box .container .button::before {\n  content: \"\";\n  position: absolute;\n  width: 94px;\n  height: 94px;\n  border-radius: 100%;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  background: rgb(229, 136, 137);\n  background: linear-gradient(\n    133deg,\n    rgba(229, 136, 137, 1) 0%,\n    rgba(229, 136, 137, 1) 15%,\n    rgba(209, 13, 12, 1) 20%,\n    rgba(209, 13, 12, 1) 65%,\n    rgba(97, 4, 3, 1) 100%\n  );\n}\n.box .container .button::after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 0;\n  background: rgb(80, 8, 8);\n  background: linear-gradient(\n    90deg,\n    #4c0405 1%,\n    rgb(202, 10, 11) 5%,\n    rgb(199, 39, 39) 45%,\n    #d88180 100%\n  );\n  left: 0;\n  bottom: 0;\n  transform: skewY(0deg) skewX(-40deg);\n  z-index: -4;\n  transition: all 0.5s ease;\n}\n.box .container .button:hover::after {\n  height: 13px;\n  bottom: -12px;\n  left: -7px;\n}\n.box .container .button span {\n  position: absolute;\n  z-index: 1;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n.box .container .button:hover {\n  transform: translate(12px, -12px);\n  box-shadow: -30px 10px 26px -5px black, -12px 12px 0 0 #ca0a0b,\n    -11px 11px 0 0 #ca0a0b, -10px 10px 0 0 #ca0a0b, -9px 9px 0 0 #ca0a0b,\n    -8px 8px 0 0 #ca0a0b, -7px 7px 0 0 #ca0a0b, -6px 6px 0 0 #ca0a0b,\n    -5px 5px 0 0 #ca0a0b, -4px 4px 0 0 #ca0a0b, -3px 3px 0 0 #ca0a0b,\n    -2px 2px 0 0 #ca0a0b, -1px 1px 0 0 #ca0a0b;\n  z-index: 999;\n}\n.box::before {\n  content: \"\";\n  width: calc(100% + 25px);\n  height: calc(100% + 10px);\n  position: absolute;\n  left: -25px;\n  top: 35px;\n  background: rgb(100, 104, 106);\n  background: linear-gradient(\n    135deg,\n    rgba(100, 104, 106, 1) 0%,\n    rgba(100, 104, 106, 1) 45%,\n    rgba(222, 221, 221, 1) 55%,\n    rgba(222, 221, 221, 1) 100%\n  );\n  z-index: -1;\n  border-radius: 15px;\n}\n.box::after {\n  content: \"\";\n  width: 30px;\n  height: 45px;\n  position: absolute;\n  left: -14px;\n  top: 12px;\n  background: rgba(100, 104, 106, 1);\n  z-index: -1;\n  transform: rotate(215deg);\n}\n.box .container::before {\n  content: \"\";\n  width: 30px;\n  height: 45px;\n  position: absolute;\n  right: -9px;\n  bottom: -39px;\n  background: rgba(222, 221, 221, 1);\n  z-index: -1;\n  transform: rotate(215deg);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Jerome-W-90_nervous-dragon-80.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>\n  <view class=\"container\"></view>\n    <button class=\"button\"></button><text>A</text></button>\n    <button class=\"button\"></button><text>B</text></button>\n    <button class=\"button\"></button><text>C</text></button>\n    <button class=\"button\"></button><text>D</text></button>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNervousDragon80',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Jerome-W-90  - Website: https://codepen.io/pfndesign/pen/KKYPqMz - Name: pfndesign - Tags: 3d, button, realistic, 3d button */\n.box {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%) skew(15deg);\n  width: 500rpx;\n  height: 500rpx;\n}\n.box .container {\n  width: 500rpx;\n  height: 500rpx;\n  background: #2f0000;\n  border-radius: 30rpx;\n  border: 20rpx solid #cbcdcd;\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1rpx;\n}\n.box .container .button {\n  position: relative;\n  flex-basis: calc(50% - 1rpx);\n  background: #ca0a0b;\n  border: 0;\n  font-size: 70rpx;\n  border-radius: 10rpx;\n  color: white;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.5s ease;\n}\n.box .container .button::before {\n  content: \"\";\n  position: absolute;\n  width: 188rpx;\n  height: 188rpx;\n  border-radius: 100%;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  background: rgb(229, 136, 137);\n  background: linear-gradient(\n    133deg,\n    rgba(229, 136, 137, 1) 0%,\n    rgba(229, 136, 137, 1) 15%,\n    rgba(209, 13, 12, 1) 20%,\n    rgba(209, 13, 12, 1) 65%,\n    rgba(97, 4, 3, 1) 100%\n  );\n}\n.box .container .button::after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 0;\n  background: rgb(80, 8, 8);\n  background: linear-gradient(\n    90deg,\n    #4c0405 1%,\n    rgb(202, 10, 11) 5%,\n    rgb(199, 39, 39) 45%,\n    #d88180 100%\n  );\n  left: 0;\n  bottom: 0;\n  transform: skewY(0deg) skewX(-40deg);\n  z-index: -4;\n  transition: all 0.5s ease;\n}\n.box .container .button:hover::after {\n  height: 26rpx;\n  bottom: -24rpx;\n  left: -14rpx;\n}\n.box .container .button span {\n  position: absolute;\n  z-index: 1;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n.box .container .button:hover {\n  transform: translate(24rpx, -24rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -60rpx 20rpx 52rpx -10rpx black, -24rpx 24rpx 0 0 #ca0a0b,\n    -22rpx 22rpx 0 0 #ca0a0b, -20rpx 20rpx 0 0 #ca0a0b, -18rpx 18rpx 0 0 #ca0a0b,\n    -16rpx 16rpx 0 0 #ca0a0b, -14rpx 14rpx 0 0 #ca0a0b, -12rpx 12rpx 0 0 #ca0a0b,\n    -10rpx 10rpx 0 0 #ca0a0b, -8rpx 8rpx 0 0 #ca0a0b, -6rpx 6rpx 0 0 #ca0a0b,\n    -4rpx 4rpx 0 0 #ca0a0b, -2rpx 2rpx 0 0 #ca0a0b;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: 999;\n}\n.box::before {\n  content: \"\";\n  width: calc(100% + 50rpx);\n  height: calc(100% + 20rpx);\n  position: absolute;\n  left: -50rpx;\n  top: 70rpx;\n  background: rgb(100, 104, 106);\n  background: linear-gradient(\n    135deg,\n    rgba(100, 104, 106, 1) 0%,\n    rgba(100, 104, 106, 1) 45%,\n    rgba(222, 221, 221, 1) 55%,\n    rgba(222, 221, 221, 1) 100%\n  );\n  z-index: -1;\n  border-radius: 30rpx;\n}\n.box::after {\n  content: \"\";\n  width: 60rpx;\n  height: 90rpx;\n  position: absolute;\n  left: -28rpx;\n  top: 24rpx;\n  background: rgba(100, 104, 106, 1);\n  z-index: -1;\n  transform: rotate(215deg);\n}\n.box .container::before {\n  content: \"\";\n  width: 60rpx;\n  height: 90rpx;\n  position: absolute;\n  right: -18rpx;\n  bottom: -78rpx;\n  background: rgba(222, 221, 221, 1);\n  z-index: -1;\n  transform: rotate(215deg);\n}\n\n",
+    "component_name": "GalaxyNervousDragon80"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3172,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.507Z",
+  "updated_at": "2025-07-31T07:55:33.507Z"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "G4b413l_slippery-owl-85",
+  "name": "slippery-owl-85",
+  "category": "buttons",
+  "author": "G4b413l",
+  "description": "slippery-owl-85 组件 (button, download, animation, interactive)",
+  "tags": [
+    "button",
+    "download",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"buttonDownload\">Download</button>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: button, download */\n.buttonDownload {\n display: inline-block;\n position: relative;\n padding: 10px 25px;\n background-color: #4CC713;\n color: white;\n font-family: sans-serif;\n text-decoration: none;\n font-size: 0.9em;\n text-align: center;\n text-indent: 15px;\n border: none;\n}\n\n.buttonDownload:hover {\n background-color: #45a21a;\n color: white;\n}\n\n.buttonDownload:before, .buttonDownload:after {\n content: ' ';\n display: block;\n position: absolute;\n left: 15px;\n top: 52%;\n}\n\n.buttonDownload:before {\n width: 10px;\n height: 2px;\n border-style: solid;\n border-width: 0 2px 2px;\n}\n\n.buttonDownload:after {\n width: 0;\n height: 0;\n margin-left: 3px;\n margin-top: -7px;\n border-style: solid;\n border-width: 4px 4px 0 4px;\n border-color: transparent;\n border-top-color: inherit;\n animation: downloadArrow 1s linear infinite;\n animation-play-state: paused;\n}\n\n.buttonDownload:hover:before {\n border-color: #cdefbd;\n}\n\n.buttonDownload:hover:after {\n border-top-color: #cdefbd;\n animation-play-state: running;\n}\n\n@keyframes downloadArrow {\n 0% {\n  margin-top: -7px;\n  opacity: 1;\n }\n\n 0.001% {\n  margin-top: -15px;\n  opacity: 0.4;\n }\n\n 50% {\n  opacity: 1;\n }\n\n 100% {\n  margin-top: 0;\n  opacity: 0.4;\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/G4b413l_slippery-owl-85.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"buttonDownload\"></button>Download</button>",
+    "script": "export default {\n  name: 'GalaxySlipperyOwl85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: button, download */\n.buttonDownload {\n display: inline-block;\n position: relative;\n padding: 20rpx 50rpx;\n background-color: #4CC713;\n color: white;\n font-family: sans-serif;\n text-decoration: none;\n font-size: 0.9em;\n text-align: center;\n text-indent: 30rpx;\n border: none;\n}\n\n.buttonDownload:hover {\n background-color: #45a21a;\n color: white;\n}\n\n.buttonDownload:before, .buttonDownload:after {\n content: ' ';\n display: block;\n position: absolute;\n left: 30rpx;\n top: 52%;\n}\n\n.buttonDownload:before {\n width: 20rpx;\n height: 4rpx;\n border-style: solid;\n border-width: 0 4rpx 4rpx;\n}\n\n.buttonDownload:after {\n width: 0;\n height: 0;\n margin-left: 6rpx;\n margin-top: -14rpx;\n border-style: solid;\n border-width: 8rpx 8rpx 0 8rpx;\n border-color: transparent;\n border-top-color: inherit;\n animation: downloadArrow 1s linear infinite;\n animation-play-state: paused;\n}\n\n.buttonDownload:hover:before {\n border-color: #cdefbd;\n}\n\n.buttonDownload:hover:after {\n border-top-color: #cdefbd;\n animation-play-state: running;\n}\n\n@keyframes downloadArrow {\n 0% {\n  margin-top: -14rpx;\n  opacity: 1;\n }\n\n 0.001% {\n  margin-top: -30rpx;\n  opacity: 0.4;\n }\n\n 50% {\n  opacity: 1;\n }\n\n 100% {\n  margin-top: 0;\n  opacity: 0.4;\n }\n}\n",
+    "component_name": "GalaxySlipperyOwl85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1283,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.224Z",
+  "updated_at": "2025-07-31T07:55:33.224Z"
+}

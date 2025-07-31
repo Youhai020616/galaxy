@@ -1,0 +1,90 @@
+{
+  "id": "Pradeepsaranbishnoi_fuzzy-newt-54",
+  "name": "fuzzy-newt-54",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "fuzzy-newt-54 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<ul class=\"loader\">\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n</ul>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n@keyframes pound {\n  to {\n    transform: scale(1.2);\n    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.65), 2px 6px 12px 0 rgba(0, 0, 0, 0.5), 3px 8px 15px 0 rgba(0, 0, 0, 0.45)\n  }\n}\n\nul.loader {\n  display: block;\n  position: relative;\n  width: 5em;\n}\n\n.loader li {\n  list-style: none;\n  display: block;\n  float: left;\n  width: 0.5em;\n  height: 3em;\n  margin: 0 0.5em 0 0;\n  background: #635863;\n  background: -moz-linear-gradient(top, #635863 0%, #3d353b 100%);\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#635863),  color-stop(100%,#3d353b));\n  background: -webkit-linear-gradient(top, #635863 0%,#3d353b 100%);\n  background: -o-linear-gradient(top, #635863 0%,#3d353b 100%);\n  background: -ms-linear-gradient(top, #635863 0%,#3d353b 100%);\n  background: linear-gradient(to bottom, #635863 0%,#3d353b 100%);\n  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.0), 1px 1px 1px 0 rgba(0, 0, 0, 0.0), 1px 1px 1px 0 rgba(0, 0, 0, 0.0);\n  animation: pound .7s ease-in-out infinite alternate;\n  animation-delay: 0.05s;\n  transform-origin: center;\n}\n\n.loader li:nth-child(2) {\n  animation-delay: 0.20s;\n}\n\n.loader li:nth-child(3) {\n  animation-delay: 0.35s;\n}\n\n.loader li:nth-child(4) {\n  animation-delay: 0.50s;\n}\n\n.loader li:nth-child(5) {\n  animation-delay: 0.65s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_fuzzy-newt-54.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n</ul>",
+    "script": "export default {\n  name: 'GalaxyFuzzyNewt54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n@keyframes pound {\n  to {\n    transform: scale(1.2);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 4rpx 6rpx 0 rgba(0, 0, 0, 0.65), 4rpx 12rpx 24rpx 0 rgba(0, 0, 0, 0.5), 6rpx 16rpx 30rpx 0 rgba(0, 0, 0, 0.45)\n  }\n}\n\nul.loader {\n  display: block;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: relative;\n  width: 5em;\n}\n\n.loader li {\n  list-style: none;\n  display: block;\n  float: left;\n  width: 0.5em;\n  height: 3em;\n  margin: 0 0.5em 0 0;\n  background: #635863;\n  background: -moz-linear-gradient(top, #635863 0%, #3d353b 100%);\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#635863),  color-stop(100%,#3d353b));\n  background: -webkit-linear-gradient(top, #635863 0%,#3d353b 100%);\n  background: -o-linear-gradient(top, #635863 0%,#3d353b 100%);\n  background: -ms-linear-gradient(top, #635863 0%,#3d353b 100%);\n  background: linear-gradient(to bottom, #635863 0%,#3d353b 100%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 2rpx 0 rgba(0, 0, 0, 0.0), 2rpx 2rpx 2rpx 0 rgba(0, 0, 0, 0.0), 2rpx 2rpx 2rpx 0 rgba(0, 0, 0, 0.0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: pound .7s ease-in-out infinite alternate;\n  animation-delay: 0.05s;\n  transform-origin: center;\n}\n\n.loader li:nth-child(2) {\n  animation-delay: 0.20s;\n}\n\n.loader li:nth-child(3) {\n  animation-delay: 0.35s;\n}\n\n.loader li:nth-child(4) {\n  animation-delay: 0.50s;\n}\n\n.loader li:nth-child(5) {\n  animation-delay: 0.65s;\n}\n\n",
+    "component_name": "GalaxyFuzzyNewt54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1435,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.064Z",
+  "updated_at": "2025-07-31T07:55:40.064Z"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "menezes11_afraid-lizard-67",
+  "name": "afraid-lizard-67",
+  "category": "buttons",
+  "author": "menezes11",
+  "description": "afraid-lizard-67 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span> Hover me\n</button>",
+    "css": "/* From Uiverse.io by menezes11 - Tags: button */\nbutton {\n position: relative;\n padding: 1em 1.8em;\n outline: none;\n border: 1px solid #303030;\n background: #212121;\n color: #ae00ff;\n text-transform: uppercase;\n letter-spacing: 2px;\n font-size: 15px;\n overflow: hidden;\n transition: 0.2s;\n border-radius: 20px;\n cursor: pointer;\n font-weight: bold;\n}\n\nbutton:hover {\n box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;\n transition-delay: 0.6s;\n}\n\nbutton span {\n position: absolute;\n}\n\nbutton span:nth-child(1) {\n top: 0;\n left: -100%;\n width: 100%;\n height: 2px;\n background: linear-gradient(90deg, transparent, #ae00ff);\n}\n\nbutton:hover span:nth-child(1) {\n left: 100%;\n transition: 0.7s;\n}\n\nbutton span:nth-child(3) {\n bottom: 0;\n right: -100%;\n width: 100%;\n height: 2px;\n background: linear-gradient(90deg, transparent, #001eff);\n}\n\nbutton:hover span:nth-child(3) {\n right: 100%;\n transition: 0.7s;\n transition-delay: 0.35s;\n}\n\nbutton span:nth-child(2) {\n top: -100%;\n right: 0;\n width: 2px;\n height: 100%;\n background: linear-gradient(180deg, transparent, #ae00ff);\n}\n\nbutton:hover span:nth-child(2) {\n top: 100%;\n transition: 0.7s;\n transition-delay: 0.17s;\n}\n\nbutton span:nth-child(4) {\n bottom: -100%;\n left: 0;\n width: 2px;\n height: 100%;\n background: linear-gradient(360deg, transparent, #001eff);\n}\n\nbutton:hover span:nth-child(4) {\n bottom: 100%;\n transition: 0.7s;\n transition-delay: 0.52s;\n}\n\nbutton:active {\n background: #ae00af;\n background: linear-gradient(to top right, #ae00af, #001eff);\n color: #bfbfbf;\n box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;\n transition: 0.1s;\n}\n\nbutton:active span:nth-child(1) \nspan:nth-child(2) \nspan:nth-child(2) \nspan:nth-child(2) {\n transition: none;\n transition-delay: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/menezes11_afraid-lizard-67.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text> Hover me\n</button>",
+    "script": "export default {\n  name: 'GalaxyAfraidLizard67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by menezes11 - Tags: button */\nbutton {\n position: relative;\n padding: 1em 1.8em;\n outline: none;\n border: 2rpx solid #303030;\n background: #212121;\n color: #ae00ff;\n text-transform: uppercase;\n letter-spacing: 4rpx;\n font-size: 30rpx;\n overflow: hidden;\n transition: 0.2s;\n border-radius: 40rpx;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n font-weight: bold;\n}\n\nbutton:hover {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx #ae00ff, 0 0 50rpx #001eff, 0 0 100rpx #ae00ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n transition-delay: 0.6s;\n}\n\nbutton span {\n position: absolute;\n}\n\nbutton span:nth-child(1) {\n top: 0;\n left: -100%;\n width: 100%;\n height: 4rpx;\n background: linear-gradient(90deg, transparent, #ae00ff);\n}\n\nbutton:hover span:nth-child(1) {\n left: 100%;\n transition: 0.7s;\n}\n\nbutton span:nth-child(3) {\n bottom: 0;\n right: -100%;\n width: 100%;\n height: 4rpx;\n background: linear-gradient(90deg, transparent, #001eff);\n}\n\nbutton:hover span:nth-child(3) {\n right: 100%;\n transition: 0.7s;\n transition-delay: 0.35s;\n}\n\nbutton span:nth-child(2) {\n top: -100%;\n right: 0;\n width: 4rpx;\n height: 100%;\n background: linear-gradient(180deg, transparent, #ae00ff);\n}\n\nbutton:hover span:nth-child(2) {\n top: 100%;\n transition: 0.7s;\n transition-delay: 0.17s;\n}\n\nbutton span:nth-child(4) {\n bottom: -100%;\n left: 0;\n width: 4rpx;\n height: 100%;\n background: linear-gradient(360deg, transparent, #001eff);\n}\n\nbutton:hover span:nth-child(4) {\n bottom: 100%;\n transition: 0.7s;\n transition-delay: 0.52s;\n}\n\nbutton:active {\n background: #ae00af;\n background: linear-gradient(to top right, #ae00af, #001eff);\n color: #bfbfbf;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 16rpx #ae00ff, 0 0 16rpx #001eff, 0 0 16rpx #ae00ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n transition: 0.1s;\n}\n\nbutton:active span:nth-child(1) \nspan:nth-child(2) \nspan:nth-child(2) \nspan:nth-child(2) {\n transition: none;\n transition-delay: none;\n}\n\n",
+    "component_name": "GalaxyAfraidLizard67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1858,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.227Z",
+  "updated_at": "2025-07-31T07:55:37.227Z"
+}

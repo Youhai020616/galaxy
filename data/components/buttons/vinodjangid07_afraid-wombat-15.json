@@ -1,0 +1,116 @@
+{
+  "id": "vinodjangid07_afraid-wombat-15",
+  "name": "afraid-wombat-15",
+  "category": "buttons",
+  "author": "vinodjangid07",
+  "description": "afraid-wombat-15 组件 (tooltip, button, hover effect, fullscreen, full window, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "button",
+    "hover effect",
+    "fullscreen",
+    "full window",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"fullscreen-btn\">\n  <svg viewBox=\"0 0 448 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z\"></path>\n  </svg>\n  <span class=\"tooltip\">Fullscreen</span>\n</button>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover effect, fullscreen, full window */\n.fullscreen-btn {\n  width: 25px;\n  height: 25px;\n  border: none;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: transparent;\n  cursor: pointer;\n  transition: all 0.3s;\n  position: relative;\n  overflow: hidden;\n}\n\n.fullscreen-btn svg {\n  height: 100%;\n}\n.fullscreen-btn:hover {\n  width: 30px;\n  height: 30px;\n  overflow: visible;\n}\n.tooltip {\n  position: absolute;\n  top: -40px;\n  background-color: rgba(0, 0, 0, 0.753);\n  color: white;\n  padding: 5px 10px;\n  border-radius: 5px;\n  font-size: 0.8em;\n  transition: all 0.3s;\n  opacity: 0;\n}\n.fullscreen-btn:hover .tooltip {\n  transform: translateY(2.5px);\n  opacity: 1;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vinodjangid07_afraid-wombat-15.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"fullscreen-btn\"></button>\n  <view viewBox=\"0 0 448 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n    <path d=\"M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z\"></path>\n  </svg>\n  <text class=\"tooltip\">Fullscreen</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyAfraidWombat15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover effect, fullscreen, full window */\n.fullscreen-btn {\n  width: 50rpx;\n  height: 50rpx;\n  border: none;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: transparent;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.3s;\n  position: relative;\n  overflow: hidden;\n}\n\n.fullscreen-btn svg {\n  height: 100%;\n}\n.fullscreen-btn:hover {\n  width: 60rpx;\n  height: 60rpx;\n  overflow: visible;\n}\n.tooltip {\n  position: absolute;\n  top: -80rpx;\n  background-color: rgba(0, 0, 0, 0.753);\n  color: white;\n  padding: 10rpx 20rpx;\n  border-radius: 10rpx;\n  font-size: 0.8em;\n  transition: all 0.3s;\n  opacity: 0;\n}\n.fullscreen-btn:hover .tooltip {\n  transform: translateY(5rpx);\n  opacity: 1;\n}\n\n",
+    "component_name": "GalaxyAfraidWombat15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1418,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.020Z",
+  "updated_at": "2025-07-31T07:55:38.020Z"
+}

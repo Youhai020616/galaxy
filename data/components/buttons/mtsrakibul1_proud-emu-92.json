@@ -1,0 +1,116 @@
+{
+  "id": "mtsrakibul1_proud-emu-92",
+  "name": "proud-emu-92",
+  "category": "buttons",
+  "author": "mtsrakibul1",
+  "description": "proud-emu-92 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<nav class=\"menu\">\n  <input id=\"menu-open\" name=\"menu-open\" class=\"menu-open\" href=\"#\" type=\"checkbox\">\n  <label for=\"menu-open\" class=\"menu-open-button\">\n    <span class=\"lines line-1\"></span>\n    <span class=\"lines line-2\"></span>\n    <span class=\"lines line-3\"></span>\n  </label>\n\n  <a class=\"menu-item blue\" href=\"#\"> <i class=\"fa fa-anchor\"></i> </a>\n  <a class=\"menu-item green\" href=\"#\"> <i class=\"fa fa-coffee\"></i> </a>\n  <a class=\"menu-item red\" href=\"#\"> <i class=\"fa fa-heart\"></i> </a>\n  <a class=\"menu-item purple\" href=\"#\"> <i class=\"fa fa-microphone\"></i> </a>\n  <a class=\"menu-item orange\" href=\"#\"> <i class=\"fa fa-star\"></i> </a>\n  <a class=\"menu-item lightblue\" href=\"#\"> <i class=\"fa fa-diamond\"></i> </a>\n</nav>",
+    "css": "/* From Uiverse.io by mtsrakibul1  - Tags: button */\n.menu-item,\n.menu-open-button {\n  background: #eeeeee;\n  border-radius: 100%;\n  width: 80px;\n  height: 80px;\n  margin-left: -40px;\n  position: absolute;\n  color: #ffffff;\n  text-align: center;\n  line-height: 80px;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0);\n  -webkit-transition: -webkit-transform ease-out 200ms;\n  transition: -webkit-transform ease-out 200ms;\n  transition: transform ease-out 200ms;\n}\n\n.menu-open {\n  display: none;\n}\n\n.lines {\n  width: 25px;\n  height: 3px;\n  background: #596778;\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-left: -12.5px;\n  margin-top: -1.5px;\n  -webkit-transition: -webkit-transform 200ms;\n  transition: -webkit-transform 200ms;\n  transition: transform 200ms;\n}\n\n.line-1 {\n  -webkit-transform: translate3d(0, -8px, 0);\n  transform: translate3d(0, -8px, 0);\n}\n\n.line-2 {\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0);\n}\n\n.line-3 {\n  -webkit-transform: translate3d(0, 8px, 0);\n  transform: translate3d(0, 8px, 0);\n}\n\n.menu-open:checked + .menu-open-button .line-1 {\n  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);\n  transform: translate3d(0, 0, 0) rotate(45deg);\n}\n\n.menu-open:checked + .menu-open-button .line-2 {\n  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);\n  transform: translate3d(0, 0, 0) scale(0.1, 1);\n}\n\n.menu-open:checked + .menu-open-button .line-3 {\n  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);\n  transform: translate3d(0, 0, 0) rotate(-45deg);\n}\n\n.menu {\n  margin: auto;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  width: 80px;\n  height: 80px;\n  text-align: center;\n  box-sizing: border-box;\n  font-size: 26px;\n}\n\n/* .menu-item {\n   transition: all 0.1s ease 0s;\n} */\n\n.menu-item:hover {\n  background: #eeeeee;\n  color: #091974;\n}\n\n.menu-item:nth-child(3) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(4) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(5) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(6) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(7) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(8) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(9) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-open-button {\n  z-index: 2;\n  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  -webkit-transition-duration: 400ms;\n  transition-duration: 400ms;\n  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);\n  transform: scale(1.1, 1.1) translate3d(0, 0, 0);\n  cursor: pointer;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n}\n\n.menu-open-button:hover {\n  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);\n  transform: scale(1.2, 1.2) translate3d(0, 0, 0);\n}\n\n.menu-open:checked + .menu-open-button {\n  -webkit-transition-timing-function: linear;\n  transition-timing-function: linear;\n  -webkit-transition-duration: 200ms;\n  transition-duration: 200ms;\n  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);\n  transform: scale(0.8, 0.8) translate3d(0, 0, 0);\n}\n\n.menu-open:checked ~ .menu-item {\n  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);\n  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(3) {\n  transition-duration: 180ms;\n  -webkit-transition-duration: 180ms;\n  -webkit-transform: translate3d(0.08361px, -104.99997px, 0);\n  transform: translate3d(0.08361px, -104.99997px, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(4) {\n  transition-duration: 280ms;\n  -webkit-transition-duration: 280ms;\n  -webkit-transform: translate3d(90.9466px, -52.47586px, 0);\n  transform: translate3d(90.9466px, -52.47586px, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(5) {\n  transition-duration: 380ms;\n  -webkit-transition-duration: 380ms;\n  -webkit-transform: translate3d(90.9466px, 52.47586px, 0);\n  transform: translate3d(90.9466px, 52.47586px, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(6) {\n  transition-duration: 480ms;\n  -webkit-transition-duration: 480ms;\n  -webkit-transform: translate3d(0.08361px, 104.99997px, 0);\n  transform: translate3d(0.08361px, 104.99997px, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(7) {\n  transition-duration: 580ms;\n  -webkit-transition-duration: 580ms;\n  -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);\n  transform: translate3d(-90.86291px, 52.62064px, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(8) {\n  transition-duration: 680ms;\n  -webkit-transition-duration: 680ms;\n  -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);\n  transform: translate3d(-91.03006px, -52.33095px, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(9) {\n  transition-duration: 780ms;\n  -webkit-transition-duration: 780ms;\n  -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);\n  transform: translate3d(-0.25084px, -104.9997px, 0);\n}\n\n.blue {\n  background-color: #b908ff;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);\n}\n\n.blue:hover {\n  color: #669ae1;\n  text-shadow: none;\n}\n\n.green {\n  background-color: #70cc72;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);\n}\n\n.green:hover {\n  color: #70cc72;\n  text-shadow: none;\n}\n\n.red {\n  background-color: #fe4365;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);\n}\n\n.red:hover {\n  color: #fe4365;\n  text-shadow: none;\n}\n\n.purple {\n  background-color: #c49cde;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);\n}\n\n.purple:hover {\n  color: #c49cde;\n  text-shadow: none;\n}\n\n.orange {\n  background-color: #fc913a;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);\n}\n\n.orange:hover {\n  color: #fc913a;\n  text-shadow: none;\n}\n\n.lightblue {\n  background-color: #62c2e4;\n  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);\n}\n\n.lightblue:hover {\n  color: #62c2e4;\n  text-shadow: none;\n}\n\n.credit {\n  margin: 24px 20px 120px 0;\n  text-align: right;\n  color: #eeeeee;\n}\n\n.credit a {\n  padding: 8px 0;\n  color: #c49cde;\n  text-decoration: none;\n  transition: all 0.3s ease 0s;\n}\n\n.credit a:hover {\n  text-decoration: underline;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mtsrakibul1_proud-emu-92.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"menu\"></view>\n  <input id=\"menu-open\" name=\"menu-open\" class=\"menu-open\" href=\"#\" type=\"checkbox\"></input>\n  <label for=\"menu-open\" class=\"menu-open-button\"></label>\n    <text class=\"lines line-1\"></text>\n    <text class=\"lines line-2\"></text>\n    <text class=\"lines line-3\"></text>\n  </label>\n\n  <navigator class=\"menu-item blue\" href=\"#\"> <i class=\"fa fa-anchor\"></i> </navigator>\n  <navigator class=\"menu-item green\" href=\"#\"> <i class=\"fa fa-coffee\"></i> </navigator>\n  <navigator class=\"menu-item red\" href=\"#\"> <i class=\"fa fa-heart\"></i> </navigator>\n  <navigator class=\"menu-item purple\" href=\"#\"> <i class=\"fa fa-microphone\"></i> </navigator>\n  <navigator class=\"menu-item orange\" href=\"#\"> <i class=\"fa fa-star\"></i> </navigator>\n  <navigator class=\"menu-item lightblue\" href=\"#\"> <i class=\"fa fa-diamond\"></i> </navigator>\n</nav>",
+    "script": "export default {\n  name: 'GalaxyProudEmu92',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mtsrakibul1  - Tags: button */\n.menu-item,\n.menu-open-button {\n  background: #eeeeee;\n  border-radius: 100%;\n  width: 160rpx;\n  height: 160rpx;\n  margin-left: -80rpx;\n  position: absolute;\n  color: #ffffff;\n  text-align: center;\n  line-height: 160rpx;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0);\n  -webkit-transition: -webkit-transform ease-out 200ms;\n  transition: -webkit-transform ease-out 200ms;\n  transition: transform ease-out 200ms;\n}\n\n.menu-open {\n  display: none;\n}\n\n.lines {\n  width: 50rpx;\n  height: 6rpx;\n  background: #596778;\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-left: -25rpx;\n  margin-top: -3rpx;\n  -webkit-transition: -webkit-transform 200ms;\n  transition: -webkit-transform 200ms;\n  transition: transform 200ms;\n}\n\n.line-1 {\n  -webkit-transform: translate3d(0, -16rpx, 0);\n  transform: translate3d(0, -16rpx, 0);\n}\n\n.line-2 {\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0);\n}\n\n.line-3 {\n  -webkit-transform: translate3d(0, 16rpx, 0);\n  transform: translate3d(0, 16rpx, 0);\n}\n\n.menu-open:checked + .menu-open-button .line-1 {\n  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);\n  transform: translate3d(0, 0, 0) rotate(45deg);\n}\n\n.menu-open:checked + .menu-open-button .line-2 {\n  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);\n  transform: translate3d(0, 0, 0) scale(0.1, 1);\n}\n\n.menu-open:checked + .menu-open-button .line-3 {\n  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);\n  transform: translate3d(0, 0, 0) rotate(-45deg);\n}\n\n.menu {\n  margin: auto;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  width: 160rpx;\n  height: 160rpx;\n  text-align: center;\n  box-sizing: border-box;\n  font-size: 52rpx;\n}\n\n/* .menu-item {\n   transition: all 0.1s ease 0s;\n} */\n\n.menu-item:hover {\n  background: #eeeeee;\n  color: #091974;\n}\n\n.menu-item:nth-child(3) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(4) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(5) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(6) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(7) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(8) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-item:nth-child(9) {\n  -webkit-transition-duration: 180ms;\n  transition-duration: 180ms;\n}\n\n.menu-open-button {\n  z-index: 2;\n  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  -webkit-transition-duration: 400ms;\n  transition-duration: 400ms;\n  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);\n  transform: scale(1.1, 1.1) translate3d(0, 0, 0);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.menu-open-button:hover {\n  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);\n  transform: scale(1.2, 1.2) translate3d(0, 0, 0);\n}\n\n.menu-open:checked + .menu-open-button {\n  -webkit-transition-timing-function: linear;\n  transition-timing-function: linear;\n  -webkit-transition-duration: 200ms;\n  transition-duration: 200ms;\n  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);\n  transform: scale(0.8, 0.8) translate3d(0, 0, 0);\n}\n\n.menu-open:checked ~ .menu-item {\n  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);\n  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(3) {\n  transition-duration: 180ms;\n  -webkit-transition-duration: 180ms;\n  -webkit-transform: translate3d(0.16722rpx, -209.99994rpx, 0);\n  transform: translate3d(0.16722rpx, -209.99994rpx, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(4) {\n  transition-duration: 280ms;\n  -webkit-transition-duration: 280ms;\n  -webkit-transform: translate3d(181.8932rpx, -104.95172rpx, 0);\n  transform: translate3d(181.8932rpx, -104.95172rpx, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(5) {\n  transition-duration: 380ms;\n  -webkit-transition-duration: 380ms;\n  -webkit-transform: translate3d(181.8932rpx, 104.95172rpx, 0);\n  transform: translate3d(181.8932rpx, 104.95172rpx, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(6) {\n  transition-duration: 480ms;\n  -webkit-transition-duration: 480ms;\n  -webkit-transform: translate3d(0.16722rpx, 209.99994rpx, 0);\n  transform: translate3d(0.16722rpx, 209.99994rpx, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(7) {\n  transition-duration: 580ms;\n  -webkit-transition-duration: 580ms;\n  -webkit-transform: translate3d(-181.72582rpx, 105.24128rpx, 0);\n  transform: translate3d(-181.72582rpx, 105.24128rpx, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(8) {\n  transition-duration: 680ms;\n  -webkit-transition-duration: 680ms;\n  -webkit-transform: translate3d(-182.06012rpx, -104.6619rpx, 0);\n  transform: translate3d(-182.06012rpx, -104.6619rpx, 0);\n}\n\n.menu-open:checked ~ .menu-item:nth-child(9) {\n  transition-duration: 780ms;\n  -webkit-transition-duration: 780ms;\n  -webkit-transform: translate3d(-0.50168rpx, -209.9994rpx, 0);\n  transform: translate3d(-0.50168rpx, -209.9994rpx, 0);\n}\n\n.blue {\n  background-color: #b908ff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.12);\n  /* #endif */\n}\n\n.blue:hover {\n  color: #669ae1;\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n\n.green {\n  background-color: #70cc72;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.12);\n  /* #endif */\n}\n\n.green:hover {\n  color: #70cc72;\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n\n.red {\n  background-color: #fe4365;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.12);\n  /* #endif */\n}\n\n.red:hover {\n  color: #fe4365;\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n\n.purple {\n  background-color: #c49cde;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.12);\n  /* #endif */\n}\n\n.purple:hover {\n  color: #c49cde;\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n\n.orange {\n  background-color: #fc913a;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.12);\n  /* #endif */\n}\n\n.orange:hover {\n  color: #fc913a;\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n\n.lightblue {\n  background-color: #62c2e4;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 6rpx 0 0 rgba(0, 0, 0, 0.14);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.12);\n  /* #endif */\n}\n\n.lightblue:hover {\n  color: #62c2e4;\n  /* #ifdef H5 */\n  text-shadow: none;\n  /* #endif */\n}\n\n.credit {\n  margin: 48rpx 40rpx 240rpx 0;\n  text-align: right;\n  color: #eeeeee;\n}\n\n.credit a {\n  padding: 16rpx 0;\n  color: #c49cde;\n  text-decoration: none;\n  transition: all 0.3s ease 0s;\n}\n\n.credit a:hover {\n  text-decoration: underline;\n}\n\n",
+    "component_name": "GalaxyProudEmu92"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 7385,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.409Z",
+  "updated_at": "2025-07-31T07:55:37.409Z"
+}

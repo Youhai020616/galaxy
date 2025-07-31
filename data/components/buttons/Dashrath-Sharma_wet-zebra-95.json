@@ -1,0 +1,119 @@
+{
+  "id": "Dashrath-Sharma_wet-zebra-95",
+  "name": "wet-zebra-95",
+  "category": "buttons",
+  "author": "Dashrath-Sharma",
+  "description": "wet-zebra-95 组件 (button, hover, glow, code, border, box, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "glow",
+    "code",
+    "border",
+    "box",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"border-el-btn\">\n  Button\n  <span class=\"b1\"></span>\n  <span class=\"b2\"></span>\n  <span class=\"b3\"></span>\n  <span class=\"b4\"></span>\n</button>",
+    "css": "/* From Uiverse.io by Dashrath-Sharma - Tags: button, hover, glow, code, border, box */\nbutton {\n  color: red;\n  outline: none;\n  border: none;\n  font-size: 17px;\n  padding: 1em 2em;\n  position: relative;\n  background: none;\n  cursor: pointer;\n}\n\nbutton:active {\n  transform: scale(.98);\n  box-shadow: .1px .1px 2px red;\n}\n\nbutton span {\n  position: absolute;\n  background: red;\n  transition: .5s;\n  box-shadow: 1px 1px 20px red;\n}\n\nbutton span:nth-child(1) {\n  top: 0;\n  left: 0;\n  width: 3px;\n  height: 30%;\n}\n\nbutton:hover span:nth-child(1) {\n  height: 100%;\n}\n\nbutton span:nth-child(2) {\n  top: 0;\n  left: 0;\n  width: 15%;\n  height: 3px;\n}\n\nbutton:hover span:nth-child(2) {\n  width: 100%;\n}\n\nbutton span:nth-child(3) {\n  bottom: 0;\n  right: 0;\n  width: 3px;\n  height: 30%;\n}\n\nbutton:hover span:nth-child(3) {\n  height: 100%;\n}\n\nbutton span:nth-child(4) {\n  bottom: 0;\n  right: 0;\n  width: 15%;\n  height: 3px;\n}\n\nbutton:hover span:nth-child(4) {\n  width: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Dashrath-Sharma_wet-zebra-95.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"border-el-btn\"></button>\n  Button\n  <text class=\"b1\"></text>\n  <text class=\"b2\"></text>\n  <text class=\"b3\"></text>\n  <text class=\"b4\"></text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWetZebra95',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Dashrath-Sharma - Tags: button, hover, glow, code, border, box */\nbutton {\n  color: red;\n  outline: none;\n  border: none;\n  font-size: 34rpx;\n  padding: 1em 2em;\n  position: relative;\n  background: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton:active {\n  transform: scale(.98);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: .2rpx .2rpx 4rpx red;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton span {\n  position: absolute;\n  background: red;\n  transition: .5s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 40rpx red;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton span:nth-child(1) {\n  top: 0;\n  left: 0;\n  width: 6rpx;\n  height: 30%;\n}\n\nbutton:hover span:nth-child(1) {\n  height: 100%;\n}\n\nbutton span:nth-child(2) {\n  top: 0;\n  left: 0;\n  width: 15%;\n  height: 6rpx;\n}\n\nbutton:hover span:nth-child(2) {\n  width: 100%;\n}\n\nbutton span:nth-child(3) {\n  bottom: 0;\n  right: 0;\n  width: 6rpx;\n  height: 30%;\n}\n\nbutton:hover span:nth-child(3) {\n  height: 100%;\n}\n\nbutton span:nth-child(4) {\n  bottom: 0;\n  right: 0;\n  width: 15%;\n  height: 6rpx;\n}\n\nbutton:hover span:nth-child(4) {\n  width: 100%;\n}\n",
+    "component_name": "GalaxyWetZebra95"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1126,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.088Z",
+  "updated_at": "2025-07-31T07:55:33.088Z"
+}

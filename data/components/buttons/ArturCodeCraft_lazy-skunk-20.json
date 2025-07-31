@@ -1,0 +1,122 @@
+{
+  "id": "ArturCodeCraft_lazy-skunk-20",
+  "name": "lazy-skunk-20",
+  "category": "buttons",
+  "author": "ArturCodeCraft",
+  "description": "lazy-skunk-20 组件 (icon, apple, button, menu, menuicon, menu button, hamburger menu, animation, interactive)",
+  "tags": [
+    "icon",
+    "apple",
+    "button",
+    "menu",
+    "menuicon",
+    "menu button",
+    "hamburger menu",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"swallow__icon\">\n  <span></span>\n</button>",
+    "css": "/* From Uiverse.io by ArturCodeCraft - Tags: icon, apple, button, menu, menuicon, menu button , hamburger menu */\n/* <reset-style> ============================ */\nbutton {\n  border: none;\n  background: none;\n  padding: 0;\n  margin: 0;\n  cursor: pointer;\n  font-family: inherit;\n}\n/* <main-style> ============================ */\n.swallow__icon {\n  width: 2rem;\n  height: 2rem;\n  padding: .25rem;\n  background-color: rgb(29, 29, 31, .7);\n  backdrop-filter: saturate(180%) blur(20px);\n  border: solid 1px rgba(66,66,69,0.7);\n  position: relative;\n}\n\n.swallow__icon span {\n  width: 1.5rem;\n  height: .563rem;\n  position: absolute;\n  top: calc(.25rem + .563rem - 1px);\n  left: calc(.25rem - 1px);\n  transition: transform 1s cubic-bezier(.86, 0, .07, 1),\n              transform-origin 1s cubic-bezier(.86, 0, .07, 1);\n}\n\n.swallow__icon span:before,\n.swallow__icon span:after {\n  content: \"\";\n  width: .75rem;\n  height: .125rem;\n  background-color: rgb(245, 245, 247);\n  position: absolute;\n  bottom: 0;\n  transition: transform 1s cubic-bezier(.86, 0, .07, 1),\n              transform-origin 1s cubic-bezier(.86, 0, .07, 1);\n}\n\n.swallow__icon span:before {\n  right: 50%;\n  border-radius: 2px 0 0 2px;\n  transform-origin: 100% 100%;\n  transform: rotate(40deg);\n}\n\n.swallow__icon span:after {\n  left: 50%;\n  border-radius: 0 2px 2px 0;\n  transform-origin: 0 100%;\n  transform: rotate(-40deg);\n}\n\n.swallow__icon:hover span {\n  transform: translateY(-8px);\n}\n\n.swallow__icon:hover span:before {\n  transform-origin: 100% 0;\n  transform: rotate(-40deg);\n}\n\n.swallow__icon:hover span:after {\n  transform-origin: 0 0;\n  transform: rotate(40deg);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ArturCodeCraft_lazy-skunk-20.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"swallow__icon\"></button>\n  <text></text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLazySkunk20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ArturCodeCraft - Tags: icon, apple, button, menu, menuicon, menu button , hamburger menu */\n/* <reset-style> ============================ */\nbutton {\n  border: none;\n  background: none;\n  padding: 0;\n  margin: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: inherit;\n}\n/* <main-style> ============================ */\n.swallow__icon {\n  width: 2rem;\n  height: 2rem;\n  padding: .25rem;\n  background-color: rgb(29, 29, 31, .7);\n  backdrop-\n  border: solid 2rpx rgba(66,66,69,0.7);\n  position: relative;\n}\n\n.swallow__icon span {\n  width: 1.5rem;\n  height: .563rem;\n  position: absolute;\n  top: calc(.25rem + .563rem - 2rpx);\n  left: calc(.25rem - 2rpx);\n  transition: transform 1s cubic-bezier(.86, 0, .07, 1),\n              transform-origin 1s cubic-bezier(.86, 0, .07, 1);\n}\n\n.swallow__icon span:before,\n.swallow__icon span:after {\n  content: \"\";\n  width: .75rem;\n  height: .125rem;\n  background-color: rgb(245, 245, 247);\n  position: absolute;\n  bottom: 0;\n  transition: transform 1s cubic-bezier(.86, 0, .07, 1),\n              transform-origin 1s cubic-bezier(.86, 0, .07, 1);\n}\n\n.swallow__icon span:before {\n  right: 50%;\n  border-radius: 4rpx 0 0 4rpx;\n  transform-origin: 100% 100%;\n  transform: rotate(40deg);\n}\n\n.swallow__icon span:after {\n  left: 50%;\n  border-radius: 0 4rpx 4rpx 0;\n  transform-origin: 0 100%;\n  transform: rotate(-40deg);\n}\n\n.swallow__icon:hover span {\n  transform: translateY(-16rpx);\n}\n\n.swallow__icon:hover span:before {\n  transform-origin: 100% 0;\n  transform: rotate(-40deg);\n}\n\n.swallow__icon:hover span:after {\n  transform-origin: 0 0;\n  transform: rotate(40deg);\n}\n",
+    "component_name": "GalaxyLazySkunk20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1693,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.704Z",
+  "updated_at": "2025-07-31T07:55:32.704Z"
+}

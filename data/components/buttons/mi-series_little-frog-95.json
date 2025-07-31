@@ -1,0 +1,120 @@
+{
+  "id": "mi-series_little-frog-95",
+  "name": "little-frog-95",
+  "category": "buttons",
+  "author": "mi-series",
+  "description": "little-frog-95 组件 (simple, material design, flashy, animation, purple, minimalist, button, animated, interactive)",
+  "tags": [
+    "simple",
+    "material design",
+    "flashy",
+    "animation",
+    "purple",
+    "minimalist",
+    "button",
+    "animated",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div>\n    <button class=\"btn\"><i class=\"animation\"></i>BUTTON<i class=\"animation\"></i>\n    </button>\n</div>",
+    "css": "/* From Uiverse.io by mi-series - Tags: simple, material design, flashy, animation, purple, minimalist, button, animated */\n.btn {\n  outline: 0;\n  display: inline-flex;\n  align-items: center;\n  justify-content: space-between;\n  background: #40B3A2;\n  min-width: 200px;\n  border: 0;\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);\n  box-sizing: border-box;\n  padding: 16px 20px;\n  color: #fff;\n  font-size: 12px;\n  font-weight: 600;\n  letter-spacing: 1.2px;\n  text-transform: uppercase;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.btn:hover {\n  opacity: .95;\n}\n\n.btn .animation {\n  border-radius: 100%;\n  animation: ripple 0.6s linear infinite;\n}\n\n@keyframes ripple {\n  0% {\n    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);\n  }\n\n  100% {\n    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mi-series_little-frog-95.html"
+  },
+  "uniapp": {
+    "template": "<view></view>\n    <button class=\"btn\"></button><i class=\"animation\"></i>BUTTON<i class=\"animation\"></i>\n    </button>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLittleFrog95',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mi-series - Tags: simple, material design, flashy, animation, purple, minimalist, button, animated */\n.btn {\n  outline: 0;\n  display: inline-flex;\n  align-items: center;\n  justify-content: space-between;\n  background: #40B3A2;\n  min-width: 400rpx;\n  border: 0;\n  border-radius: 8rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, .1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  box-sizing: border-box;\n  padding: 32rpx 40rpx;\n  color: #fff;\n  font-size: 24rpx;\n  font-weight: 600;\n  letter-spacing: 2.4rpx;\n  text-transform: uppercase;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.btn:hover {\n  opacity: .95;\n}\n\n.btn .animation {\n  border-radius: 100%;\n  animation: ripple 0.6s linear infinite;\n}\n\n@keyframes ripple {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 40rpx rgba(255, 255, 255, 0.1), 0 0 0 80rpx rgba(255, 255, 255, 0.1), 0 0 0 120rpx rgba(255, 255, 255, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 40rpx rgba(255, 255, 255, 0.1), 0 0 0 80rpx rgba(255, 255, 255, 0.1), 0 0 0 120rpx rgba(255, 255, 255, 0.1), 0 0 0 160rpx rgba(255, 255, 255, 0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n",
+    "component_name": "GalaxyLittleFrog95"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1144,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.238Z",
+  "updated_at": "2025-07-31T07:55:37.238Z"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "omriluz_spotty-mule-31",
+  "name": "spotty-mule-31",
+  "category": "loaders",
+  "author": "omriluz",
+  "description": "spotty-mule-31 组件 (flashy, animation, loader, colorful, multicolor, gradient)",
+  "tags": [
+    "flashy",
+    "animation",
+    "loader",
+    "colorful",
+    "multicolor",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n        <div class=\"loader\"><span></span></div>\n        <div class=\"loader\"><span></span></div>\n        <div class=\"loader\"><i></i></div>\n        <div class=\"loader\"><i></i></div>\n    </div>",
+    "css": "/* From Uiverse.io by omriluz - Source: online tutorials - https://www.youtube.com/watch?v=n6ojK2HmROE&list=PL5e68lK9hEzeeXtsQCQYd9SAzj6u6wZpi&index=153&ab_channel=OnlineTutorials - Tags: flashy, animation, loader, colorful, multicolor */\n.container {\n  position: relative;\n  width: 100%;\n  height: 200px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0005);\n}\n\n.container .loader {\n  position: absolute;\n  width: 200px;\n  height: 200px;\n  border-radius: 50%;\n  animation: animate 2s linear infinite;\n}\n\n.container .loader:nth-child(2),\n.container .loader:nth-child(4) {\n  animation-delay: -1s;\n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(0deg);\n    filter: hue-rotate(360deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n    filter: hue-rotate(0deg);\n  }\n}\n\n.container .loader:nth-child(1)::before,\n.container .loader:nth-child(2)::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 100%;\n  background: linear-gradient(to top, transparent, rgba(0,255,249, 0.4));\n  background-size: 100px 180px;\n  background-repeat: no-repeat;\n  border-top-left-radius: 100px;\n  border-bottom-left-radius: 100px;\n}\n\n.container .loader i {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 20px;\n  height: 20px;\n  background: #00fff9;\n  border-radius: 50%;\n  z-index: 100;\n  box-shadow: 0 0 10px #00fff9,\n    0 0 30px #00fff9,\n    0 0 40px #00fff9,\n    0 0 50px #00fff9,\n    0 0 60px #00fff9,\n    0 0 70px #00fff9,\n    0 0 80px #00fff9,\n    0 0 90px #00fff9,\n    0 0 100px #00fff9;\n}\n\n.container .loader span {\n  position: absolute;\n  inset: 20px;\n  background: #e8e8e8;\n  border-radius: 50%;\n  z-index: 1;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/omriluz_spotty-mule-31.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n        <view class=\"loader\"><text></text></view>\n        <view class=\"loader\"><text></text></view>\n        <view class=\"loader\"><i></i></view>\n        <view class=\"loader\"><i></i></view>\n    </div>",
+    "script": "export default {\n  name: 'GalaxySpottyMule31',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by omriluz - Source: online tutorials - https://www.youtube.com/watch?v=n6ojK2HmROE&list=PL5e68lK9hEzeeXtsQCQYd9SAzj6u6wZpi&index=153&ab_channel=OnlineTutorials - Tags: flashy, animation, loader, colorful, multicolor */\n.container {\n  position: relative;\n  width: 100%;\n  height: 400rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0005);\n}\n\n.container .loader {\n  position: absolute;\n  width: 400rpx;\n  height: 400rpx;\n  border-radius: 50%;\n  animation: animate 2s linear infinite;\n}\n\n.container .loader:nth-child(2),\n.container .loader:nth-child(4) {\n  animation-delay: -1s;\n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(0deg);\n    \n  }\n\n  100% {\n    transform: rotate(360deg);\n    \n  }\n}\n\n.container .loader:nth-child(1)::before,\n.container .loader:nth-child(2)::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 100%;\n  background: linear-gradient(to top, transparent, rgba(0,255,249, 0.4));\n  background-size: 200rpx 360rpx;\n  background-repeat: no-repeat;\n  border-top-left-radius: 200rpx;\n  border-bottom-left-radius: 200rpx;\n}\n\n.container .loader i {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40rpx;\n  height: 40rpx;\n  background: #00fff9;\n  border-radius: 50%;\n  z-index: 100;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx #00fff9,\n    0 0 60rpx #00fff9,\n    0 0 80rpx #00fff9,\n    0 0 100rpx #00fff9,\n    0 0 120rpx #00fff9,\n    0 0 140rpx #00fff9,\n    0 0 160rpx #00fff9,\n    0 0 180rpx #00fff9,\n    0 0 200rpx #00fff9;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.container .loader span {\n  position: absolute;\n  inset: 40rpx;\n  background: #e8e8e8;\n  border-radius: 50%;\n  z-index: 1;\n}\n",
+    "component_name": "GalaxySpottyMule31"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1989,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.510Z",
+  "updated_at": "2025-07-31T07:55:42.510Z"
+}

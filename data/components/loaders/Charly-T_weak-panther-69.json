@@ -1,0 +1,85 @@
+{
+  "id": "Charly-T_weak-panther-69",
+  "name": "weak-panther-69",
+  "category": "loaders",
+  "author": "Charly-T",
+  "description": "weak-panther-69 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n    <svg width=\"100%\" height=\"100\" viewBox=\"-1 -1 22 22\">\n        <path style=\"--order: 7\" class=\"eight e-8\"></path>\n        <path style=\"--order: 6\" class=\"eight e-7\"></path>\n        <path style=\"--order: 5\" class=\"eight e-6\"></path>\n        <path style=\"--order: 4\" class=\"eight e-5\"></path>\n        <path style=\"--order: 3\" class=\"eight e-4\"></path>\n        <path style=\"--order: 2\" class=\"eight e-3\"></path>\n        <path style=\"--order: 1\" class=\"eight e-2\"></path>\n        <path style=\"--order: 0\" class=\"eight e-1\"></path>\n    </svg>\n</div>",
+    "css": "/* From Uiverse.io by Charly-T - Tags: loader */\n.container {\n  overflow: hidden;\n}\n\n.container svg {\n  --spin-duration: 2000ms;\n  --infinity-duration: 2000ms;\n  --hsl-base-h: 5deg;\n  --hsl-base-s: 70%;\n  --hsl-base-l: 50%;\n  animation: spin81213 var(--spin-duration) linear infinite;\n}\n\n.eight {\n  --eight-length-px: 60.84563446044922px;\n /* As seen on getTotalLength */\n  --offset: calc(var(--order) * 5px);\n  animation: infinity8123 var(--infinity-duration) linear infinite;\n  d: path(\"m5 5a1 1 0 0110 0c0 4-10 6-10 10a1 1 0 0010 0c0-4-10-6-10-10\");\n  fill: none;\n  stroke: hsl(calc(var(--hsl-base-h) * var(--order)) var(--hsl-base-s) var(--hsl-base-l));\n  stroke-dasharray: 6px calc(var(--eight-length-px) - 6px);\n  stroke-linecap: round;\n  stroke-width: calc(1 - var(--order) / 10);\n}\n\n@keyframes infinity8123 {\n  0% {\n    stroke-dashoffset: calc(var(--eight-length-px) + var(--offset));\n  }\n\n  100% {\n    stroke-dashoffset: var(--offset);\n  }\n}\n\n@keyframes spin81213 {\n  0% {\n    transform: rotate(0)\n  }\n\n  100% {\n    transform: rotate(360deg)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Charly-T_weak-panther-69.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n    <view width=\"100%\" height=\"100\" viewBox=\"-1 -1 22 22\"></view>\n        <path style=\"--order: 7\" class=\"eight e-8\"></path>\n        <path style=\"--order: 6\" class=\"eight e-7\"></path>\n        <path style=\"--order: 5\" class=\"eight e-6\"></path>\n        <path style=\"--order: 4\" class=\"eight e-5\"></path>\n        <path style=\"--order: 3\" class=\"eight e-4\"></path>\n        <path style=\"--order: 2\" class=\"eight e-3\"></path>\n        <path style=\"--order: 1\" class=\"eight e-2\"></path>\n        <path style=\"--order: 0\" class=\"eight e-1\"></path>\n    </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWeakPanther69',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Charly-T - Tags: loader */\n.container {\n  overflow: hidden;\n}\n\n.container svg {\n  --spin-duration: 2000ms;\n  --infinity-duration: 2000ms;\n  --hsl-base-h: 5deg;\n  --hsl-base-s: 70%;\n  --hsl-base-l: 50%;\n  animation: spin81213 var(--spin-duration) linear infinite;\n}\n\n.eight {\n  --eight-length-px: 121.69126892089844rpx;\n /* As seen on getTotalLength */\n  --offset: calc(var(--order) * 10rpx);\n  animation: infinity8123 var(--infinity-duration) linear infinite;\n  d: path(\"m5 5a1 1 0 0110 0c0 4-10 6-10 10a1 1 0 0010 0c0-4-10-6-10-10\");\n  fill: none;\n  stroke: hsl(calc(var(--hsl-base-h) * var(--order)) var(--hsl-base-s) var(--hsl-base-l));\n  stroke-dasharray: 12rpx calc(var(--eight-length-px) - 12rpx);\n  stroke-linecap: round;\n  stroke-width: calc(1 - var(--order) / 10);\n}\n\n@keyframes infinity8123 {\n  0% {\n    stroke-dashoffset: calc(var(--eight-length-px) + var(--offset));\n  }\n\n  100% {\n    stroke-dashoffset: var(--offset);\n  }\n}\n\n@keyframes spin81213 {\n  0% {\n    transform: rotate(0)\n  }\n\n  100% {\n    transform: rotate(360deg)\n  }\n}\n",
+    "component_name": "GalaxyWeakPanther69"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1631,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.039Z",
+  "updated_at": "2025-07-31T07:55:39.039Z"
+}

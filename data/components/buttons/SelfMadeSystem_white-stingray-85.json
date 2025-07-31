@@ -1,0 +1,124 @@
+{
+  "id": "SelfMadeSystem_white-stingray-85",
+  "name": "white-stingray-85",
+  "category": "buttons",
+  "author": "SelfMadeSystem",
+  "description": "white-stingray-85 组件 (3d, pink, gradient, button, hover, active, 3d button, animation, interactive)",
+  "tags": [
+    "3d",
+    "pink",
+    "gradient",
+    "button",
+    "hover",
+    "active",
+    "3d button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<svg width=\"0\">\n  <filter id=\"l-distort\">\n    <feTurbulence numOctaves=\"20\" baseFrequency=\".03\" type=\"fractalNoise\"></feTurbulence>\n    <feDisplacementMap scale=\"60\" in=\"SourceGraphic\"></feDisplacementMap>\n  </filter>\n  <filter id=\"m-distort\">\n    <feTurbulence numOctaves=\"20\" baseFrequency=\".02\" type=\"fractalNoise\"></feTurbulence>\n    <feDisplacementMap scale=\"30\" in=\"SourceGraphic\"></feDisplacementMap>\n  </filter>\n</svg>\n\n<button class=\"button\">\n  <div class=\"btn-bg\">\n    <div class=\"bg1\"></div>\n    <div class=\"bg2\"></div>\n    <div class=\"bd1\"></div>\n    <div class=\"bd1h\"></div>\n    <div class=\"bg-cloud\" style=\"inset: unset; left: -10px; bottom: -20px; height: 70px; scale: 0.5;\"></div>\n    <div class=\"bd6\"></div>\n    <div class=\"bd-sat\"></div>\n    <div class=\"bg-cloud\" style=\"top: 30px; left: 270px; height: 50px;\"></div>\n    <div class=\"bg-cloud\" style=\"top: 7px; left: 10px; height: 30px;\"></div>\n    <div class=\"bg-cloud\" style=\"top: 0px; left: 70px; height: 30px; aspect-ratio: 5;\"></div>\n    <div class=\"bg-cloud\" style=\"top: 0px; left: -39px; rotate: 215deg; height: 30px; aspect-ratio: 3;\"></div>\n    <div class=\"bd3\"></div>\n    <div class=\"bd3a\"></div>\n    <div class=\"bd4\"></div>\n    <div class=\"bd4h\"></div>\n    <div class=\"bd4d\"></div>\n    <div class=\"bd5\"></div>\n  </div>\n  <span class=\"btn-txt\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n      <path d=\"M11 15H6L13 1V9H18L11 23V15Z\"></path>\n    </svg>\n    Join now\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by SelfMadeSystem  - Tags: 3d, pink, gradient, button, hover, active, 3d button */\n.button {\n  --br: 27px;\n  --w: 360px;\n  --h: 113px;\n  --bg-grad: radial-gradient(#fffd 10px, #0000 calc(var(--w) - 60px)),\n    linear-gradient(\n      70deg in lch,\n      #8e0dff,\n      #e39cf6 15%,\n      #fd9b9a 45%,\n      #ff7139 65%,\n      #fdbff1 85%\n    );\n\n  position: relative;\n  cursor: pointer;\n  border-radius: var(--br);\n  isolation: isolate;\n  border: 0;\n  overflow: hidden;\n  width: var(--w);\n  height: var(--h);\n}\n\n.btn-bg {\n  position: absolute;\n  inset: 0;\n  z-index: -1;\n}\n\n:where(.btn-bg > div) {\n  position: absolute;\n  inset: 0;\n}\n\n.bg1 {\n  inset: -30px;\n  filter: url(\"#l-distort\");\n  background: var(--bg-grad);\n}\n\n.bg2 {\n  left: 0;\n  top: 0;\n  height: 100%;\n  aspect-ratio: 1.5;\n  background: radial-gradient(#fffd 10px, #0000 60px);\n  filter: url(\"#m-distort\");\n}\n\n.bg-cloud {\n  transform: translate(-50%);\n  aspect-ratio: 1.5;\n  background: radial-gradient(#fffd, #0000 70%);\n  filter: url(\"#m-distort\");\n}\n\n.bd-sat {\n  mask: linear-gradient(#fff, #fff0 40% 60%, #fff);\n}\n\n.bd-sat::after {\n  content: \"\";\n  position: absolute;\n  inset: -30px;\n  border-radius: calc(var(--br) + 30px);\n  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);\n  /* I forgor that I need the two mask composites because of firefoxxxxxx */\n  mask-composite: exclude;\n  mask-composite: xor;\n  background: var(--bg-grad);\n  filter: url(\"#l-distort\") saturate(3);\n  padding: calc(30px + 7px);\n}\n\n.bd1 {\n  transition: opacity 0.5s;\n  border-radius: calc(var(--br) - 18px);\n  inset: 6px;\n  box-shadow: inset -13px -13px 5px -10px #fffa;\n}\n\n.button:hover .bd1 {\n  opacity: 0;\n}\n\n.bd1h {\n  transition: opacity 0.5s;\n  border-radius: calc(var(--br) - 18px);\n  opacity: 0;\n  inset: 6px;\n  box-shadow: inset 13px 13px 5px -10px #fffa;\n}\n\n.button:hover:not(:active) .bd1h {\n  opacity: 1;\n}\n\n.bd3 {\n  inset: 20px;\n  border-radius: 17px;\n  border: 2px solid #fff8;\n  box-shadow: 0px 0px 6px 0px #fffa, inset -6px -6px 6px -6px #fffa,\n    inset 0px 6px 6px -6px #0004;\n  filter: blur(1px);\n}\n\n.bd3a {\n  inset: 42px;\n  right: 38px;\n  border-radius: 10px;\n  filter: blur(4px);\n  box-shadow: 0px 0px 20px 2px #0001, inset 0px 0px 3px 0px #fffa;\n}\n\n.bd4 {\n  transition: opacity 0.5s;\n  border-radius: calc(var(--br) - 5px);\n  box-shadow: inset 8px 8px 5px -5px #0005;\n}\n\n.button:hover .bd4 {\n  opacity: 0;\n}\n\n.bd4h {\n  transition: opacity 0.5s;\n  opacity: 0;\n  border-radius: calc(var(--br) - 5px);\n  box-shadow: inset -8px -8px 5px -5px #0005;\n}\n\n.button:hover:not(:active) .bd4h {\n  opacity: 1;\n}\n\n.bd4d {\n  transition: opacity 0.5s;\n  opacity: 0;\n  border-radius: var(--br);\n  box-shadow: inset 0px 0px 5px 3px #0005;\n}\n\n.button:active .bd4d {\n  opacity: 1;\n}\n\n.bd5 {\n  left: 26px;\n  top: 10px;\n  width: 60px;\n  height: 12px;\n  box-shadow: inset 5px -5px 5px -5px #fff;\n  background: linear-gradient(30deg, #fff, #fff0);\n  border-radius: 99px;\n  filter: blur(1.5px);\n}\n\n.bd6 {\n  left: 2px;\n  top: 26px;\n  width: 20px;\n  height: 60px;\n  rotate: 10deg;\n  box-shadow: inset 7px 7px 7px -7px #fff;\n  /* background: linear-gradient(150deg, #fff, #fff0); */\n  border-radius: 99px;\n  filter: blur(1.5px);\n}\n\n.btn-txt {\n  display: flex;\n  align-items: center;\n  font-size: 20px;\n  width: fit-content;\n  margin: auto;\n}\n\n.btn-txt svg {\n  height: 25px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SelfMadeSystem_white-stingray-85.html"
+  },
+  "uniapp": {
+    "template": "<view width=\"0\"></view>\n  <filter id=\"l-distort\">\n    <feTurbulence numOctaves=\"20\" baseFrequency=\".03\" type=\"fractalNoise\"></feTurbulence>\n    <feDisplacementMap scale=\"60\" in=\"SourceGraphic\"></feDisplacementMap>\n  </filter>\n  <filter id=\"m-distort\">\n    <feTurbulence numOctaves=\"20\" baseFrequency=\".02\" type=\"fractalNoise\"></feTurbulence>\n    <feDisplacementMap scale=\"30\" in=\"SourceGraphic\"></feDisplacementMap>\n  </filter>\n</svg>\n\n<button class=\"button\"></button>\n  <view class=\"btn-bg\"></view>\n    <view class=\"bg1\"></view>\n    <view class=\"bg2\"></view>\n    <view class=\"bd1\"></view>\n    <view class=\"bd1h\"></view>\n    <view class=\"bg-cloud\" style=\"inset: unset; left: -10px; bottom: -20px; height: 70px; scale: 0.5;\"></view>\n    <view class=\"bd6\"></view>\n    <view class=\"bd-sat\"></view>\n    <view class=\"bg-cloud\" style=\"top: 30px; left: 270px; height: 50px;\"></view>\n    <view class=\"bg-cloud\" style=\"top: 7px; left: 10px; height: 30px;\"></view>\n    <view class=\"bg-cloud\" style=\"top: 0px; left: 70px; height: 30px; aspect-ratio: 5;\"></view>\n    <view class=\"bg-cloud\" style=\"top: 0px; left: -39px; rotate: 215deg; height: 30px; aspect-ratio: 3;\"></view>\n    <view class=\"bd3\"></view>\n    <view class=\"bd3a\"></view>\n    <view class=\"bd4\"></view>\n    <view class=\"bd4h\"></view>\n    <view class=\"bd4d\"></view>\n    <view class=\"bd5\"></view>\n  </div>\n  <text class=\"btn-txt\"></text>\n    <view xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"></view>\n      <path d=\"M11 15H6L13 1V9H18L11 23V15Z\"></path>\n    </svg>\n    Join now\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWhiteStingray85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem  - Tags: 3d, pink, gradient, button, hover, active, 3d button */\n.button {\n  --br: 54rpx;\n  --w: 720rpx;\n  --h: 226rpx;\n  --bg-grad: radial-gradient(#fffd 20rpx, #0000 calc(var(--w) - 120rpx)),\n    linear-gradient(\n      70deg in lch,\n      #8e0dff,\n      #e39cf6 15%,\n      #fd9b9a 45%,\n      #ff7139 65%,\n      #fdbff1 85%\n    );\n\n  position: relative;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border-radius: var(--br);\n  isolation: isolate;\n  border: 0;\n  overflow: hidden;\n  width: var(--w);\n  height: var(--h);\n}\n\n.btn-bg {\n  position: absolute;\n  inset: 0;\n  z-index: -1;\n}\n\n:where(.btn-bg > div) {\n  position: absolute;\n  inset: 0;\n}\n\n.bg1 {\n  inset: -60rpx;\n  \n  background: var(--bg-grad);\n}\n\n.bg2 {\n  left: 0;\n  top: 0;\n  height: 100%;\n  aspect-ratio: 1.5;\n  background: radial-gradient(#fffd 20rpx, #0000 120rpx);\n  \n}\n\n.bg-cloud {\n  transform: translate(-50%);\n  aspect-ratio: 1.5;\n  background: radial-gradient(#fffd, #0000 70%);\n  \n}\n\n.bd-sat {\n  \n}\n\n.bd-sat::after {\n  content: \"\";\n  position: absolute;\n  inset: -60rpx;\n  border-radius: calc(var(--br) + 60rpx);\n  \n  /* I forgor that I need the two mask composites because of firefoxxxxxx */\n  mask-composite: exclude;\n  mask-composite: xor;\n  background: var(--bg-grad);\n  \n  padding: calc(60rpx + 14rpx);\n}\n\n.bd1 {\n  transition: opacity 0.5s;\n  border-radius: calc(var(--br) - 36rpx);\n  inset: 12rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -26rpx -26rpx 10rpx -20rpx #fffa;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover .bd1 {\n  opacity: 0;\n}\n\n.bd1h {\n  transition: opacity 0.5s;\n  border-radius: calc(var(--br) - 36rpx);\n  opacity: 0;\n  inset: 12rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 26rpx 26rpx 10rpx -20rpx #fffa;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover:not(:active) .bd1h {\n  opacity: 1;\n}\n\n.bd3 {\n  inset: 40rpx;\n  border-radius: 34rpx;\n  border: 4rpx solid #fff8;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 12rpx 0rpx #fffa, inset -12rpx -12rpx 12rpx -12rpx #fffa,\n    inset 0rpx 12rpx 12rpx -12rpx #0004;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  \n}\n\n.bd3a {\n  inset: 84rpx;\n  right: 76rpx;\n  border-radius: 20rpx;\n  \n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 40rpx 4rpx #0001, inset 0rpx 0rpx 6rpx 0rpx #fffa;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.bd4 {\n  transition: opacity 0.5s;\n  border-radius: calc(var(--br) - 10rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 16rpx 16rpx 10rpx -10rpx #0005;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover .bd4 {\n  opacity: 0;\n}\n\n.bd4h {\n  transition: opacity 0.5s;\n  opacity: 0;\n  border-radius: calc(var(--br) - 10rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -16rpx -16rpx 10rpx -10rpx #0005;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:hover:not(:active) .bd4h {\n  opacity: 1;\n}\n\n.bd4d {\n  transition: opacity 0.5s;\n  opacity: 0;\n  border-radius: var(--br);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 10rpx 6rpx #0005;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:active .bd4d {\n  opacity: 1;\n}\n\n.bd5 {\n  left: 52rpx;\n  top: 20rpx;\n  width: 120rpx;\n  height: 24rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 10rpx -10rpx 10rpx -10rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: linear-gradient(30deg, #fff, #fff0);\n  border-radius: 198rpx;\n  \n}\n\n.bd6 {\n  left: 4rpx;\n  top: 52rpx;\n  width: 40rpx;\n  height: 120rpx;\n  rotate: 10deg;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 14rpx 14rpx 14rpx -14rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* background: linear-gradient(150deg, #fff, #fff0); */\n  border-radius: 198rpx;\n  \n}\n\n.btn-txt {\n  display: flex;\n  align-items: center;\n  font-size: 40rpx;\n  width: fit-content;\n  margin: auto;\n}\n\n.btn-txt svg {\n  height: 50rpx;\n}\n\n",
+    "component_name": "GalaxyWhiteStingray85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4843,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.601Z",
+  "updated_at": "2025-07-31T07:55:34.601Z"
+}

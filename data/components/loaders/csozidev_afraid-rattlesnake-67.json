@@ -1,0 +1,86 @@
+{
+  "id": "csozidev_afraid-rattlesnake-67",
+  "name": "afraid-rattlesnake-67",
+  "category": "loaders",
+  "author": "csozidev",
+  "description": "afraid-rattlesnake-67 组件 (simple, animation, loader)",
+  "tags": [
+    "simple",
+    "animation",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"square\">\n    <div class=\"mini_square sq-1\"></div>\n    <div class=\"mini_square sq-2\"></div>\n    <div class=\"mini_square\"></div>\n    <div class=\"mini_square sq-4\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by csozidev - Tags: simple, animation, loader */\n/* Simple loader made by: csozi | Website: www.csozi.hu*/\n\n.square {\n  display: flex;\n  flex-wrap: wrap;\n  width: 100px;\n  height: 100px;\n  box-sizing: content-box;\n  animation: load-big 4s infinite;\n  transform-origin: 0px 100px;\n}\n\n.mini_square {\n  box-sizing: border-box;\n  height: 50px;\n  width: 50px;\n  background-color: darkcyan;\n}\n\n.sq-1 {\n  animation: load-left-top 4s infinite;\n}\n\n.sq-2 {\n  animation: load-right-top 4s infinite;\n}\n\n.sq-4 {\n  animation: load-right-bottom 4s infinite;\n}\n\n@keyframes load-right-bottom {\n  0% {\n    translate: -50px 0px;\n  }\n\n  25% {\n    translate: 0px 0px;\n  }\n\n  100% {\n    translate: 0px 0px;\n  }\n}\n\n@keyframes load-right-top {\n  0% {\n    translate: -50px 50px;\n  }\n\n  25% {\n    translate: 0px 50px;\n  }\n\n  50% {\n    translate: 0px 0px;\n  }\n\n  100% {\n    translate: 0px 0px;\n  }\n}\n\n@keyframes load-left-top {\n  0% {\n    translate: 0px 50px;\n  }\n\n  25% {\n    translate: 50px 50px;\n  }\n\n  50% {\n    translate: 50px 0px;\n  }\n\n  75% {\n    translate: 0px 0px;\n  }\n\n  100% {\n    translate: 0px 0px;\n  }\n}\n\n@keyframes load-big {\n  0% {\n    scale: 1;\n    background-color: rgba(0, 0, 0, 0);\n  }\n\n  74% {\n    scale: 1;\n    background-color: rgba(0, 0, 0, 0);\n  }\n\n  75% {\n    scale: 1;\n    background-color: darkcyan;\n  }\n\n  100% {\n    scale: 0.5;\n    background-color: darkcyan;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csozidev_afraid-rattlesnake-67.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"square\"></view>\n    <view class=\"mini_square sq-1\"></view>\n    <view class=\"mini_square sq-2\"></view>\n    <view class=\"mini_square\"></view>\n    <view class=\"mini_square sq-4\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAfraidRattlesnake67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csozidev - Tags: simple, animation, loader */\n/* Simple loader made by: csozi | Website: www.csozi.hu*/\n\n.square {\n  display: flex;\n  flex-wrap: wrap;\n  width: 200rpx;\n  height: 200rpx;\n  box-sizing: content-box;\n  animation: load-big 4s infinite;\n  transform-origin: 0rpx 200rpx;\n}\n\n.mini_square {\n  box-sizing: border-box;\n  height: 100rpx;\n  width: 100rpx;\n  background-color: darkcyan;\n}\n\n.sq-1 {\n  animation: load-left-top 4s infinite;\n}\n\n.sq-2 {\n  animation: load-right-top 4s infinite;\n}\n\n.sq-4 {\n  animation: load-right-bottom 4s infinite;\n}\n\n@keyframes load-right-bottom {\n  0% {\n    translate: -100rpx 0rpx;\n  }\n\n  25% {\n    translate: 0rpx 0rpx;\n  }\n\n  100% {\n    translate: 0rpx 0rpx;\n  }\n}\n\n@keyframes load-right-top {\n  0% {\n    translate: -100rpx 100rpx;\n  }\n\n  25% {\n    translate: 0rpx 100rpx;\n  }\n\n  50% {\n    translate: 0rpx 0rpx;\n  }\n\n  100% {\n    translate: 0rpx 0rpx;\n  }\n}\n\n@keyframes load-left-top {\n  0% {\n    translate: 0rpx 100rpx;\n  }\n\n  25% {\n    translate: 100rpx 100rpx;\n  }\n\n  50% {\n    translate: 100rpx 0rpx;\n  }\n\n  75% {\n    translate: 0rpx 0rpx;\n  }\n\n  100% {\n    translate: 0rpx 0rpx;\n  }\n}\n\n@keyframes load-big {\n  0% {\n    scale: 1;\n    background-color: rgba(0, 0, 0, 0);\n  }\n\n  74% {\n    scale: 1;\n    background-color: rgba(0, 0, 0, 0);\n  }\n\n  75% {\n    scale: 1;\n    background-color: darkcyan;\n  }\n\n  100% {\n    scale: 0.5;\n    background-color: darkcyan;\n  }\n}\n",
+    "component_name": "GalaxyAfraidRattlesnake67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1609,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.180Z",
+  "updated_at": "2025-07-31T07:55:41.180Z"
+}

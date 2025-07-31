@@ -1,0 +1,88 @@
+{
+  "id": "JaydipPrajapati1910_lazy-lion-40",
+  "name": "lazy-lion-40",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "lazy-lion-40 组件 (loading, loader, square, animation, gradient)",
+  "tags": [
+    "loading",
+    "loader",
+    "square",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: loading, loader, square */\n.loader {\n  width: 100px;\n  height: 100px;\n  display: grid;\n  color: hsl(204, 86%, 69%);\n}\n\n.loader:before,\n.loader:after {\n  content: \"\";\n  grid-area: 1/1;\n  --c1: linear-gradient(90deg,rgb(247, 247, 247) calc(100%/3),currentColor 0 calc(2*100%/3),rgb(247, 247, 247) 0);\n  --c2: linear-gradient( 0deg,rgb(247, 247, 247) calc(100%/3),currentColor 0 calc(2*100%/3),rgb(247, 247, 247) 0);\n  background: var(--c1),\n    var(--c2),\n    var(--c1),\n    var(--c2);\n  background-size: 300% 8px,8px 300%;\n  background-repeat: no-repeat;\n  animation: l1 1s infinite linear;\n}\n\n.loader:after {\n  margin: 10px;\n  transform: scaleX(-1);\n  animation-delay: -.25s;\n}\n\n@keyframes l1 {\n  0% {\n    background-position: 50%  0,100% 100%,0    100%,0 0\n  }\n\n  25% {\n    background-position: 0    0,100% 50% ,0    100%,0 0\n  }\n\n  50% {\n    background-position: 0    0,100% 0   ,50%  100%,0 0\n  }\n\n  75% {\n    background-position: 0    0,100% 0   ,100% 100%,0 50%\n  }\n\n  75.01% {\n    background-position: 100% 0,100% 0   ,100% 100%,0 50%\n  }\n\n  100% {\n    background-position: 50%  0,100% 0   ,100% 100%,0 100%\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_lazy-lion-40.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyLazyLion40',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: loading, loader, square */\n.loader {\n  width: 200rpx;\n  height: 200rpx;\n  display: grid;\n  color: hsl(204, 86%, 69%);\n}\n\n.loader:before,\n.loader:after {\n  content: \"\";\n  grid-area: 1/1;\n  --c1: linear-gradient(90deg,rgb(247, 247, 247) calc(100%/3),currentColor 0 calc(2*100%/3),rgb(247, 247, 247) 0);\n  --c2: linear-gradient( 0deg,rgb(247, 247, 247) calc(100%/3),currentColor 0 calc(2*100%/3),rgb(247, 247, 247) 0);\n  background: var(--c1),\n    var(--c2),\n    var(--c1),\n    var(--c2);\n  background-size: 300% 16rpx,16rpx 300%;\n  background-repeat: no-repeat;\n  animation: l1 1s infinite linear;\n}\n\n.loader:after {\n  margin: 20rpx;\n  transform: scaleX(-1);\n  animation-delay: -.25s;\n}\n\n@keyframes l1 {\n  0% {\n    background-position: 50%  0,100% 100%,0    100%,0 0\n  }\n\n  25% {\n    background-position: 0    0,100% 50% ,0    100%,0 0\n  }\n\n  50% {\n    background-position: 0    0,100% 0   ,50%  100%,0 0\n  }\n\n  75% {\n    background-position: 0    0,100% 0   ,100% 100%,0 50%\n  }\n\n  75.01% {\n    background-position: 100% 0,100% 0   ,100% 100%,0 50%\n  }\n\n  100% {\n    background-position: 50%  0,100% 0   ,100% 100%,0 100%\n  }\n}\n  \n\n",
+    "component_name": "GalaxyLazyLion40"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1203,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.395Z",
+  "updated_at": "2025-07-31T07:55:39.395Z"
+}

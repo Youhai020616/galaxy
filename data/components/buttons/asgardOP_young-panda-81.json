@@ -1,0 +1,119 @@
+{
+  "id": "asgardOP_young-panda-81",
+  "name": "young-panda-81",
+  "category": "buttons",
+  "author": "asgardOP",
+  "description": "young-panda-81 组件 (action, button, modern, menu, btn, hover effect, html, css, animation, interactive)",
+  "tags": [
+    "action",
+    "button",
+    "modern",
+    "menu",
+    "btn",
+    "hover effect",
+    "html",
+    "css",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<ul class=\"ul\">\n  <li class=\"li\">\n    <button class=\"button\"><p class=\"p\">Home</p></button>\n  </li>\n  <li class=\"li\">\n    <button class=\"button\"><p class=\"p\">Store</p></button>\n  </li>\n  <li class=\"li\">\n    <button class=\"button\"><p class=\"p\">Settings</p></button>\n  </li>\n</ul>",
+    "css": "/* From Uiverse.io by asgardOP  - Tags: action, button, modern, menu, btn, hover effect, html, css */\n.ul {\n  width: fit-content;\n  height: fit-content;\n  background-color: transparent;\n  list-style: none;\n}\n.li {\n  margin-bottom: 0px;\n}\n.button {\n  background-color: transparent;\n  font-family: sans-serif;\n  color: rgb(255, 255, 255);\n  border: none;\n  font-size: 22px;\n  font-weight: 700;\n  padding: 10px 30px;\n  cursor: pointer;\n  position: relative;\n  padding-left: 11px;\n  text-align: center;\n  transition: 0.1s;\n  z-index: 1;\n}\n\n.p {\n  z-index: 2;\n  position: relative;\n}\n\n.button:hover {\n  color: rgb(172, 40, 0);\n  text-align: center;\n}\n.button:hover::before {\n  transform: rotate(0deg);\n  width: 100%;\n  height: 40px;\n  top: 2px;\n  border-radius: 3px;\n  background-color: rgb(255, 83, 53);\n}\n.button::before {\n  content: \"\";\n  border-radius: 1px;\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  background-color: tomato;\n  left: -10px;\n  top: 19px;\n  cursor: pointer;\n  transform: rotate(225deg);\n  transition: 0.3s;\n  z-index: -1;\n}\n\n.button:active::before {\n  background-color: rgb(255, 38, 0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/asgardOP_young-panda-81.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"ul\"></view>\n  <view class=\"li\"></view>\n    <button class=\"button\"></button><text class=\"p\">Home</text></button>\n  </li>\n  <view class=\"li\"></view>\n    <button class=\"button\"></button><text class=\"p\">Store</text></button>\n  </li>\n  <view class=\"li\"></view>\n    <button class=\"button\"></button><text class=\"p\">Settings</text></button>\n  </li>\n</ul>",
+    "script": "export default {\n  name: 'GalaxyYoungPanda81',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by asgardOP  - Tags: action, button, modern, menu, btn, hover effect, html, css */\n.ul {\n  width: fit-content;\n  height: fit-content;\n  background-color: transparent;\n  list-style: none;\n}\n.li {\n  margin-bottom: 0rpx;\n}\n.button {\n  background-color: transparent;\n  font-family: sans-serif;\n  color: rgb(255, 255, 255);\n  border: none;\n  font-size: 44rpx;\n  font-weight: 700;\n  padding: 20rpx 60rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  padding-left: 22rpx;\n  text-align: center;\n  transition: 0.1s;\n  z-index: 1;\n}\n\n.p {\n  z-index: 2;\n  position: relative;\n}\n\n.button:hover {\n  color: rgb(172, 40, 0);\n  text-align: center;\n}\n.button:hover::before {\n  transform: rotate(0deg);\n  width: 100%;\n  height: 80rpx;\n  top: 4rpx;\n  border-radius: 6rpx;\n  background-color: rgb(255, 83, 53);\n}\n.button::before {\n  content: \"\";\n  border-radius: 2rpx;\n  position: absolute;\n  width: 12rpx;\n  height: 12rpx;\n  background-color: tomato;\n  left: -20rpx;\n  top: 38rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transform: rotate(225deg);\n  transition: 0.3s;\n  z-index: -1;\n}\n\n.button:active::before {\n  background-color: rgb(255, 38, 0);\n}\n\n",
+    "component_name": "GalaxyYoungPanda81"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1401,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.813Z",
+  "updated_at": "2025-07-31T07:55:35.813Z"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "asgardOP_little-cougar-80",
+  "name": "little-cougar-80",
+  "category": "loaders",
+  "author": "asgardOP",
+  "description": "little-cougar-80 组件 (green, loading, loader, smooth, modern, css, css effect, loading animation, animation)",
+  "tags": [
+    "green",
+    "loading",
+    "loader",
+    "smooth",
+    "modern",
+    "css",
+    "css effect",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader l1\"></div>\n<div class=\"loader l2\"></div>\n<div class=\"loader l3\"></div>\n<div class=\"loader l4\"></div>\n<div class=\"loader l5\"></div>\n<div class=\"loader l6\"></div>\n<div class=\"loader l7\"></div>",
+    "css": "/* From Uiverse.io by asgardOP  - Tags: green, loading, loader, smooth, modern, css, css effect, loading animation */\n.loader {\n  width: 5px;\n  margin-left: 3px;\n  height: 35px;\n  border-top-left-radius: 1px;\n  border-top-right-radius: 1px;\n  background-color: rgb(53, 235, 29);\n  position: relative;\n}\n\n.l1 {\n  animation: l1 1s 0s infinite ease;\n}\n\n.l2 {\n  animation: l1 1s 0.1s infinite ease;\n}\n\n.l3 {\n  animation: l1 1s 0.2s infinite ease;\n}\n\n.l4 {\n  animation: l1 1s 0.3s infinite ease;\n}\n\n.l5 {\n  animation: l1 1s 0.4s infinite ease;\n}\n\n.l6 {\n  animation: l1 1s 0.5s infinite ease;\n}\n\n.l7 {\n  animation: l1 1s 0.6s infinite ease;\n}\n\n@keyframes l1 {\n  0% {\n    height: 35px;\n  }\n  50% {\n    height: 5px;\n    background-color: rgba(0, 190, 16, 0);\n  }\n\n  100% {\n    height: 35px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/asgardOP_little-cougar-80.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader l1\"></view>\n<view class=\"loader l2\"></view>\n<view class=\"loader l3\"></view>\n<view class=\"loader l4\"></view>\n<view class=\"loader l5\"></view>\n<view class=\"loader l6\"></view>\n<view class=\"loader l7\"></view>",
+    "script": "export default {\n  name: 'GalaxyLittleCougar80',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by asgardOP  - Tags: green, loading, loader, smooth, modern, css, css effect, loading animation */\n.loader {\n  width: 10rpx;\n  margin-left: 6rpx;\n  height: 70rpx;\n  border-top-left-radius: 2rpx;\n  border-top-right-radius: 2rpx;\n  background-color: rgb(53, 235, 29);\n  position: relative;\n}\n\n.l1 {\n  animation: l1 1s 0s infinite ease;\n}\n\n.l2 {\n  animation: l1 1s 0.1s infinite ease;\n}\n\n.l3 {\n  animation: l1 1s 0.2s infinite ease;\n}\n\n.l4 {\n  animation: l1 1s 0.3s infinite ease;\n}\n\n.l5 {\n  animation: l1 1s 0.4s infinite ease;\n}\n\n.l6 {\n  animation: l1 1s 0.5s infinite ease;\n}\n\n.l7 {\n  animation: l1 1s 0.6s infinite ease;\n}\n\n@keyframes l1 {\n  0% {\n    height: 70rpx;\n  }\n  50% {\n    height: 10rpx;\n    background-color: rgba(0, 190, 16, 0);\n  }\n\n  100% {\n    height: 70rpx;\n  }\n}\n\n",
+    "component_name": "GalaxyLittleCougar80"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1007,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.981Z",
+  "updated_at": "2025-07-31T07:55:40.981Z"
+}

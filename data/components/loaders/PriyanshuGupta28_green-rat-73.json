@@ -1,0 +1,92 @@
+{
+  "id": "PriyanshuGupta28_green-rat-73",
+  "name": "green-rat-73",
+  "category": "loaders",
+  "author": "PriyanshuGupta28",
+  "description": "green-rat-73 组件 (loader, car loader, 3d loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "car loader",
+    "3d loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader-container\">\n    <div class=\"loader\">\n      <div class=\"circle\"></div>\n      <div class=\"circle\"></div>\n      <div class=\"circle\"></div>\n      <div class=\"circle\"></div>\n    </div>\n  </div>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, car loader, 3d loader */\n.loader-container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%\n}\n\n.loader {\n  width: 80px;\n  height: 80px;\n  position: relative;\n}\n\n.loader .circle {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  animation: pulse 1.2s infinite ease-in-out;\n}\n\n.loader .circle:nth-child(1) {\n  top: 0;\n  left: 30px;\n  background-color: #4158D0;\n  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);\n  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;\n}\n\n.loader .circle:nth-child(2) {\n  top: 30px;\n  left: 60px;\n  background-color: #0093E9;\n  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);\n  animation-delay: 0.4s;\n  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;\n}\n\n.loader .circle:nth-child(3) {\n  top: 60px;\n  left: 30px;\n  background-color: #00DBDE;\n  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);\n  animation-delay: 0.8s;\n  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;\n}\n\n.loader .circle:nth-child(4) {\n  top: 30px;\n  left: 0;\n  background-color: #3EECAC;\n  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);\n  animation-delay: 1.2s;\n  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(0.2);\n    opacity: 0.5;\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/PriyanshuGupta28_green-rat-73.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader-container\"></view>\n    <view class=\"loader\"></view>\n      <view class=\"circle\"></view>\n      <view class=\"circle\"></view>\n      <view class=\"circle\"></view>\n      <view class=\"circle\"></view>\n    </div>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyGreenRat73',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, car loader, 3d loader */\n.loader-container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%\n}\n\n.loader {\n  width: 160rpx;\n  height: 160rpx;\n  position: relative;\n}\n\n.loader .circle {\n  position: absolute;\n  width: 40rpx;\n  height: 40rpx;\n  border-radius: 50%;\n  animation: pulse 1.2s infinite ease-in-out;\n}\n\n.loader .circle:nth-child(1) {\n  top: 0;\n  left: 60rpx;\n  background-color: #4158D0;\n  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgb(38, 57, 77) 0rpx 40rpx 60rpx -20rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader .circle:nth-child(2) {\n  top: 60rpx;\n  left: 120rpx;\n  background-color: #0093E9;\n  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);\n  animation-delay: 0.4s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgb(38, 57, 77) 0rpx 40rpx 60rpx -20rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader .circle:nth-child(3) {\n  top: 120rpx;\n  left: 60rpx;\n  background-color: #00DBDE;\n  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);\n  animation-delay: 0.8s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgb(38, 57, 77) 0rpx 40rpx 60rpx -20rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader .circle:nth-child(4) {\n  top: 60rpx;\n  left: 0;\n  background-color: #3EECAC;\n  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);\n  animation-delay: 1.2s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgb(38, 57, 77) 0rpx 40rpx 60rpx -20rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(0.2);\n    opacity: 0.5;\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n",
+    "component_name": "GalaxyGreenRat73"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1684,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.128Z",
+  "updated_at": "2025-07-31T07:55:40.128Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "Saiyed-Tanvir_terrible-bird-13",
+  "name": "terrible-bird-13",
+  "category": "loaders",
+  "author": "Saiyed-Tanvir",
+  "description": "terrible-bird-13 组件 (loader, animated, circle loader, circular, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "circle loader",
+    "circular",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"quater i\"></div>\n    <div class=\"quater ii\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Saiyed-Tanvir - Tags: loader, animated, circle loader, circular */\n.quater {\n  height: 1.5cm;\n  width: 1.5cm;\n  background-color: skyblue;\n  float: left;\n  position: relative;\n  bottom: 1.25cm;\n}\n\n.i {\n  border-top-left-radius: 100%;\n  animation: spin1 2s ease-in-out infinite;\n  transform-origin: 1.5cm 1.5cm;\n}\n\n.ii {\n  border-top-right-radius: 100%;\n  animation: spin2 2s ease-in-out infinite;\n  transform-origin: 0 1.5cm;\n}\n\n@keyframes spin1 {\n  0% {\n    transform: rotateZ(0deg);\n  }\n\n  25% {\n    transform: rotateZ(0deg);\n  }\n\n  50% {\n    transform: rotateZ(180deg);\n  }\n\n  75% {\n    transform: rotateZ(180deg);\n  }\n\n  100% {\n    transform: rotateZ(360deg);\n  }\n}\n\n@keyframes spin2 {\n  0% {\n    transform: rotateZ(0deg);\n  }\n\n  25% {\n    transform: rotateZ(180deg);\n  }\n\n  50% {\n    transform: rotateZ(180deg);\n  }\n\n  75% {\n    transform: rotateZ(360deg);\n  }\n\n  100% {\n    transform: rotateZ(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Saiyed-Tanvir_terrible-bird-13.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"quater i\"></view>\n    <view class=\"quater ii\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTerribleBird13',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Saiyed-Tanvir - Tags: loader, animated, circle loader, circular */\n.quater {\n  height: 1.5cm;\n  width: 1.5cm;\n  background-color: skyblue;\n  float: left;\n  position: relative;\n  bottom: 1.25cm;\n}\n\n.i {\n  border-top-left-radius: 100%;\n  animation: spin1 2s ease-in-out infinite;\n  transform-origin: 1.5cm 1.5cm;\n}\n\n.ii {\n  border-top-right-radius: 100%;\n  animation: spin2 2s ease-in-out infinite;\n  transform-origin: 0 1.5cm;\n}\n\n@keyframes spin1 {\n  0% {\n    transform: rotateZ(0deg);\n  }\n\n  25% {\n    transform: rotateZ(0deg);\n  }\n\n  50% {\n    transform: rotateZ(180deg);\n  }\n\n  75% {\n    transform: rotateZ(180deg);\n  }\n\n  100% {\n    transform: rotateZ(360deg);\n  }\n}\n\n@keyframes spin2 {\n  0% {\n    transform: rotateZ(0deg);\n  }\n\n  25% {\n    transform: rotateZ(180deg);\n  }\n\n  50% {\n    transform: rotateZ(180deg);\n  }\n\n  75% {\n    transform: rotateZ(360deg);\n  }\n\n  100% {\n    transform: rotateZ(360deg);\n  }\n}\n",
+    "component_name": "GalaxyTerribleBird13"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1033,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.208Z",
+  "updated_at": "2025-07-31T07:55:40.208Z"
+}

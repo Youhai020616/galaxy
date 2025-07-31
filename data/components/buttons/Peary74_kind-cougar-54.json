@@ -1,0 +1,110 @@
+{
+  "id": "Peary74_kind-cougar-54",
+  "name": "kind-cougar-54",
+  "category": "buttons",
+  "author": "Peary74",
+  "description": "kind-cougar-54 组件 (button, hover, hover button, animation, interactive)",
+  "tags": [
+    "button",
+    "hover",
+    "hover button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <div class=\"svg-wrapper-1\">\n    <div class=\"svg-wrapper\">\n      <svg class=\"icon\" height=\"30\" width=\"30\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z\">\n        </path>\n        </svg>\n    </div>\n  </div>\n  <span>Save</span>\n</button>",
+    "css": "/* From Uiverse.io by Peary74 - Tags: button, hover, hover button */\nbutton {\n  font-family: inherit;\n  font-size: 20px;\n  background: #212121;\n  color: white;\n  fill: rgb(155, 153, 153);\n  padding: 0.7em 1em;\n  padding-left: 0.9em;\n  display: flex;\n  align-items: center;\n  border: none;\n  border-radius: 15px;\n  font-weight: 1000;\n}\n\nbutton span {\n  display: block;\n  margin-left: 0.3em;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\nbutton:hover {\n  background: #000;\n  bor\n}\n\nbutton:hover .svg-wrapper {\n  transform: scale(1.25);\n  transition: .5s linear;\n}\n\nbutton:hover svg {\n  transform: translateX(1.2em) scale(1.1);\n  fill: #fff;\n}\n\nbutton:hover span {\n  opacity: 0;\n  transition: .5s linear;\n}\n\nbutton:active {\n  transform: scale(0.95);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Peary74_kind-cougar-54.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view class=\"svg-wrapper-1\"></view>\n    <view class=\"svg-wrapper\"></view>\n      <view class=\"icon\" height=\"30\" width=\"30\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view><path d=\"M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z\">\n        </path>\n        </svg>\n    </div>\n  </div>\n  <text>Save</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyKindCougar54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Peary74 - Tags: button, hover, hover button */\nbutton {\n  font-family: inherit;\n  font-size: 40rpx;\n  background: #212121;\n  color: white;\n  fill: rgb(155, 153, 153);\n  padding: 0.7em 1em;\n  padding-left: 0.9em;\n  display: flex;\n  align-items: center;\n  border: none;\n  border-radius: 30rpx;\n  font-weight: 1000;\n}\n\nbutton span {\n  display: block;\n  margin-left: 0.3em;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\nbutton:hover {\n  background: #000;\n  bor\n}\n\nbutton:hover .svg-wrapper {\n  transform: scale(1.25);\n  transition: .5s linear;\n}\n\nbutton:hover svg {\n  transform: translateX(1.2em) scale(1.1);\n  fill: #fff;\n}\n\nbutton:hover span {\n  opacity: 0;\n  transition: .5s linear;\n}\n\nbutton:active {\n  transform: scale(0.95);\n}\n\n\n\n\n\n\n",
+    "component_name": "GalaxyKindCougar54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1440,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.193Z",
+  "updated_at": "2025-07-31T07:55:34.193Z"
+}

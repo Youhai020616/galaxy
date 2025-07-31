@@ -1,0 +1,112 @@
+{
+  "id": "ZacharyCrespin_dull-dragonfly-23",
+  "name": "dull-dragonfly-23",
+  "category": "buttons",
+  "author": "ZacharyCrespin",
+  "description": "dull-dragonfly-23 组件 (button, stack, interactive)",
+  "tags": [
+    "button",
+    "stack",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>Button</button>",
+    "css": "/* From Uiverse.io by ZacharyCrespin - Tags: button, stack */\nbutton {\n  transition: all 0.5s;\n  font-size: 17px;\n  padding: 1ch 2ch;\n  background-color: white;\n  color: #000;\n  font-family: Roboto, sans-serif;\n  border: none;\n  border-radius: 2px;\n  box-shadow: 2px 2px 0px hsl(0, 0%, 90%),\n    4px 4px 0px hsl(0, 0%, 80%),\n    6px 6px 0px hsl(0, 0%, 70%),\n    8px 8px 0px hsl(0, 0%, 60%),\n    10px 10px 0px hsl(0, 0%, 50%),\n    12px 12px 0px hsl(0, 0%, 40%),\n    14px 14px 0px hsl(0, 0%, 30%),\n    16px 16px 0px hsl(0, 0%, 20%),\n    18px 18px 0px hsl(0, 0%, 10%);\n}\n\nbutton:hover {\n  background-color: hsl(0, 0%, 50%);\n  color: #fff;\n  box-shadow: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/ZacharyCrespin_dull-dragonfly-23.html"
+  },
+  "uniapp": {
+    "template": "<button></button>Button</button>",
+    "script": "export default {\n  name: 'GalaxyDullDragonfly23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ZacharyCrespin - Tags: button, stack */\nbutton {\n  transition: all 0.5s;\n  font-size: 34rpx;\n  padding: 1ch 2ch;\n  background-color: white;\n  color: #000;\n  font-family: Roboto, sans-serif;\n  border: none;\n  border-radius: 4rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 0rpx hsl(0, 0%, 90%),\n    8rpx 8rpx 0rpx hsl(0, 0%, 80%),\n    12rpx 12rpx 0rpx hsl(0, 0%, 70%),\n    16rpx 16rpx 0rpx hsl(0, 0%, 60%),\n    20rpx 20rpx 0rpx hsl(0, 0%, 50%),\n    24rpx 24rpx 0rpx hsl(0, 0%, 40%),\n    28rpx 28rpx 0rpx hsl(0, 0%, 30%),\n    32rpx 32rpx 0rpx hsl(0, 0%, 20%),\n    36rpx 36rpx 0rpx hsl(0, 0%, 10%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover {\n  background-color: hsl(0, 0%, 50%);\n  color: #fff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyDullDragonfly23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 684,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.303Z",
+  "updated_at": "2025-07-31T07:55:35.303Z"
+}

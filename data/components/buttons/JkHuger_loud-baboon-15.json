@@ -1,0 +1,115 @@
+{
+  "id": "JkHuger_loud-baboon-15",
+  "name": "loud-baboon-15",
+  "category": "buttons",
+  "author": "JkHuger",
+  "description": "loud-baboon-15 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button data-label=\"Register\" class=\"rainbow-hover\">\n  <span class=\"sp\">Register</span>\n</button>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: button */\n.rainbow-hover {\n  font-size: 16px;\n  font-weight: 700;\n  color: #ff7576;\n  background-color: #2B3044;\n  border: none;\n  outline: none;\n  cursor: pointer;\n  padding: 12px 24px;\n  position: relative;\n  line-height: 24px;\n  border-radius: 9px;\n  box-shadow: 0px 1px 2px #2B3044,\n    0px 4px 16px #2B3044;\n  transform-style: preserve-3d;\n  transform: scale(var(--s, 1)) perspective(600px)\n    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));\n  perspective: 600px;\n  transition: transform 0.1s;\n}\n\n.sp {\n  background: linear-gradient(\n      90deg,\n      #866ee7,\n      #ea60da,\n      #ed8f57,\n      #fbd41d,\n      #2cca91\n    );\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  text-fill-color: transparent;\n  display: block;\n}\n\n.rainbow-hover:active {\n  transition: 0.3s;\n  transform: scale(0.93);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JkHuger_loud-baboon-15.html"
+  },
+  "uniapp": {
+    "template": "<button data-label=\"Register\" class=\"rainbow-hover\"></button>\n  <text class=\"sp\">Register</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLoudBaboon15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: button */\n.rainbow-hover {\n  font-size: 32rpx;\n  font-weight: 700;\n  color: #ff7576;\n  background-color: #2B3044;\n  border: none;\n  outline: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 24rpx 48rpx;\n  position: relative;\n  line-height: 48rpx;\n  border-radius: 18rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 2rpx 4rpx #2B3044,\n    0rpx 8rpx 32rpx #2B3044;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform-style: preserve-3d;\n  transform: scale(var(--s, 1)) perspective(1200rpx)\n    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));\n  perspective: 1200rpx;\n  transition: transform 0.1s;\n}\n\n.sp {\n  background: linear-gradient(\n      90deg,\n      #866ee7,\n      #ea60da,\n      #ed8f57,\n      #fbd41d,\n      #2cca91\n    );\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  text-fill-color: transparent;\n  display: block;\n}\n\n.rainbow-hover:active {\n  transition: 0.3s;\n  transform: scale(0.93);\n}\n",
+    "component_name": "GalaxyLoudBaboon15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 999,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.562Z",
+  "updated_at": "2025-07-31T07:55:33.562Z"
+}

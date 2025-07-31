@@ -1,0 +1,90 @@
+{
+  "id": "terenceodonoghue_rare-cow-16",
+  "name": "rare-cow-16",
+  "category": "loaders",
+  "author": "terenceodonoghue",
+  "description": "rare-cow-16 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n</div>",
+    "css": "/* From Uiverse.io by terenceodonoghue - Tags: loader */\n.container {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  border-radius: 50%;\n  height: 96px;\n  width: 96px;\n  animation: rotate_3922 1.2s linear infinite;\n  background-color: #9b59b6;\n  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);\n}\n\n.container span {\n  position: absolute;\n  border-radius: 50%;\n  height: 100%;\n  width: 100%;\n  background-color: #9b59b6;\n  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);\n}\n\n.container span:nth-of-type(1) {\n  filter: blur(5px);\n}\n\n.container span:nth-of-type(2) {\n  filter: blur(10px);\n}\n\n.container span:nth-of-type(3) {\n  filter: blur(25px);\n}\n\n.container span:nth-of-type(4) {\n  filter: blur(50px);\n}\n\n.container::after {\n  content: \"\";\n  position: absolute;\n  top: 10px;\n  left: 10px;\n  right: 10px;\n  bottom: 10px;\n  background-color: #fff;\n  border: solid 5px #ffffff;\n  border-radius: 50%;\n}\n\n@keyframes rotate_3922 {\n  from {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n\n  to {\n    transform: translate(-50%, -50%) rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/terenceodonoghue_rare-cow-16.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyRareCow16',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by terenceodonoghue - Tags: loader */\n.container {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  border-radius: 50%;\n  height: 192rpx;\n  width: 192rpx;\n  animation: rotate_3922 1.2s linear infinite;\n  background-color: #9b59b6;\n  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);\n}\n\n.container span {\n  position: absolute;\n  border-radius: 50%;\n  height: 100%;\n  width: 100%;\n  background-color: #9b59b6;\n  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);\n}\n\n.container span:nth-of-type(1) {\n  \n}\n\n.container span:nth-of-type(2) {\n  \n}\n\n.container span:nth-of-type(3) {\n  \n}\n\n.container span:nth-of-type(4) {\n  \n}\n\n.container::after {\n  content: \"\";\n  position: absolute;\n  top: 20rpx;\n  left: 20rpx;\n  right: 20rpx;\n  bottom: 20rpx;\n  background-color: #fff;\n  border: solid 10rpx #ffffff;\n  border-radius: 50%;\n}\n\n@keyframes rotate_3922 {\n  from {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n\n  to {\n    transform: translate(-50%, -50%) rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyRareCow16"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1182,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.690Z",
+  "updated_at": "2025-07-31T07:55:42.690Z"
+}

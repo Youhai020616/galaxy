@@ -1,0 +1,92 @@
+{
+  "id": "xXJollyHAKERXx_lucky-falcon-75",
+  "name": "lucky-falcon-75",
+  "category": "loaders",
+  "author": "xXJollyHAKERXx",
+  "description": "lucky-falcon-75 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n    <div class=\"spinner1\"></div>\n</div>",
+    "css": "/* From Uiverse.io by xXJollyHAKERXx - Tags: loader */\n.spinner {\n  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));\n  width: 100px;\n  height: 100px;\n  animation: spinning82341 1.7s linear infinite;\n  text-align: center;\n  border-radius: 50px;\n  filter: blur(1px);\n  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);\n}\n\n.spinner1 {\n  background-color: rgb(36, 36, 36);\n  width: 100px;\n  height: 100px;\n  border-radius: 50px;\n  filter: blur(10px);\n}\n\n@keyframes spinning82341 {\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/xXJollyHAKERXx_lucky-falcon-75.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n    <view class=\"spinner1\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyLuckyFalcon75',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by xXJollyHAKERXx - Tags: loader */\n.spinner {\n  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));\n  width: 200rpx;\n  height: 200rpx;\n  animation: spinning82341 1.7s linear infinite;\n  text-align: center;\n  border-radius: 100rpx;\n  \n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx -10rpx 40rpx 0rpx rgb(186, 66, 255), 0rpx 10rpx 40rpx 0rpx rgb(0, 225, 255);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.spinner1 {\n  background-color: rgb(36, 36, 36);\n  width: 200rpx;\n  height: 200rpx;\n  border-radius: 100rpx;\n  \n}\n\n@keyframes spinning82341 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyLuckyFalcon75"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 645,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.851Z",
+  "updated_at": "2025-07-31T07:55:42.851Z"
+}

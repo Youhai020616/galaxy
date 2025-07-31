@@ -1,0 +1,91 @@
+{
+  "id": "Hashir-Ahmed123_spotty-mouse-64",
+  "name": "spotty-mouse-64",
+  "category": "loaders",
+  "author": "Hashir-Ahmed123",
+  "description": "spotty-mouse-64 组件 (animation, red, green, blue, purple, pink, gradient, smooth)",
+  "tags": [
+    "animation",
+    "red",
+    "green",
+    "blue",
+    "purple",
+    "pink",
+    "gradient",
+    "smooth"
+  ],
+  "original": {
+    "html": "<div class=\"lava-lamp\">\n  <div class=\"bubble\"></div>\n  <div class=\"bubble1\"></div>\n  <div class=\"bubble2\"></div>\n  <div class=\"bubble3\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Hashir-Ahmed123  - Tags: animation, red, green, blue, purple, pink, gradient, smooth */\n@keyframes drop {\n  0% {\n    transform: translateY(0px);\n  }\n  50% {\n    transform: translateY(80px);\n  }\n  100% {\n    transform: translateY(0px);\n  }\n}\n\n.lava-lamp {\n  position: relative;\n  width: 50px;\n  height: 100px;\n  background: #000;\n  border-radius: 25px;\n  overflow: hidden;\n}\n\n.bubble {\n  position: absolute;\n  top: 0;\n  width: 20px;\n  height: 20px;\n  background: linear-gradient(to bottom, #e64980, #ff8787);\n  border-radius: 50%;\n  left: 15px;\n  animation: drop 5s ease-in-out infinite;\n}\n.bubble1 {\n  position: absolute;\n  top: 0;\n  width: 20px;\n  height: 20px;\n  background: linear-gradient(to bottom, #82c91e, #3bc9db);\n  border-radius: 50%;\n  left: 1px;\n  animation: drop 3s ease-in-out infinite;\n}\n.bubble2 {\n  position: absolute;\n  top: 0;\n  width: 20px;\n  height: 20px;\n  background: linear-gradient(to bottom, #7950f2, #f783ac);\n  border-radius: 50%;\n  left: 30px;\n  animation: drop 4s ease-in-out infinite;\n}\n.bubble3 {\n  position: absolute;\n  top: 0;\n  width: 20px;\n  height: 20px;\n  background: linear-gradient(to bottom, #4481eb, #04befe);\n  border-radius: 50%;\n  left: 20px;\n  animation: drop 6s ease-in-out infinite;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Hashir-Ahmed123_spotty-mouse-64.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"lava-lamp\"></view>\n  <view class=\"bubble\"></view>\n  <view class=\"bubble1\"></view>\n  <view class=\"bubble2\"></view>\n  <view class=\"bubble3\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySpottyMouse64',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Hashir-Ahmed123  - Tags: animation, red, green, blue, purple, pink, gradient, smooth */\n@keyframes drop {\n  0% {\n    transform: translateY(0rpx);\n  }\n  50% {\n    transform: translateY(160rpx);\n  }\n  100% {\n    transform: translateY(0rpx);\n  }\n}\n\n.lava-lamp {\n  position: relative;\n  width: 100rpx;\n  height: 200rpx;\n  background: #000;\n  border-radius: 50rpx;\n  overflow: hidden;\n}\n\n.bubble {\n  position: absolute;\n  top: 0;\n  width: 40rpx;\n  height: 40rpx;\n  background: linear-gradient(to bottom, #e64980, #ff8787);\n  border-radius: 50%;\n  left: 30rpx;\n  animation: drop 5s ease-in-out infinite;\n}\n.bubble1 {\n  position: absolute;\n  top: 0;\n  width: 40rpx;\n  height: 40rpx;\n  background: linear-gradient(to bottom, #82c91e, #3bc9db);\n  border-radius: 50%;\n  left: 2rpx;\n  animation: drop 3s ease-in-out infinite;\n}\n.bubble2 {\n  position: absolute;\n  top: 0;\n  width: 40rpx;\n  height: 40rpx;\n  background: linear-gradient(to bottom, #7950f2, #f783ac);\n  border-radius: 50%;\n  left: 60rpx;\n  animation: drop 4s ease-in-out infinite;\n}\n.bubble3 {\n  position: absolute;\n  top: 0;\n  width: 40rpx;\n  height: 40rpx;\n  background: linear-gradient(to bottom, #4481eb, #04befe);\n  border-radius: 50%;\n  left: 40rpx;\n  animation: drop 6s ease-in-out infinite;\n}\n\n",
+    "component_name": "GalaxySpottyMouse64"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1413,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.347Z",
+  "updated_at": "2025-07-31T07:55:39.347Z"
+}

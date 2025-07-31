@@ -1,0 +1,109 @@
+{
+  "id": "Botwe-Felix5820_big-baboon-67",
+  "name": "big-baboon-67",
+  "category": "buttons",
+  "author": "Botwe-Felix5820",
+  "description": "big-baboon-67 组件 (button, squishy, animation, interactive)",
+  "tags": [
+    "button",
+    "squishy",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Squeeze me\n</button>",
+    "css": "/* From Uiverse.io by Botwe-Felix5820 - Tags: button, squishy */\nbutton {\n height: 2.8em;\n width: 9em;\n background: transparent;\n -webkit-animation: jello-horizontal 0.9s both;\n animation: jello-horizontal 0.9s both;\n border: 2px solid #016DD9;\n outline: none;\n color: #016DD9;\n font-size: 17px;\n}\n\nbutton:hover {\n background: #016DD9;\n color: #ffffff;\n animation: squeeze3124 0.9s both;\n}\n\n@keyframes squeeze3124 {\n 0% {\n  -webkit-transform: scale3d(1, 1, 1);\n  transform: scale3d(1, 1, 1);\n }\n\n 30% {\n  -webkit-transform: scale3d(1.25, 0.75, 1);\n  transform: scale3d(1.25, 0.75, 1);\n }\n\n 40% {\n  -webkit-transform: scale3d(0.75, 1.25, 1);\n  transform: scale3d(0.75, 1.25, 1);\n }\n\n 50% {\n  -webkit-transform: scale3d(1.15, 0.85, 1);\n  transform: scale3d(1.15, 0.85, 1);\n }\n\n 65% {\n  -webkit-transform: scale3d(0.95, 1.05, 1);\n  transform: scale3d(0.95, 1.05, 1);\n }\n\n 75% {\n  -webkit-transform: scale3d(1.05, 0.95, 1);\n  transform: scale3d(1.05, 0.95, 1);\n }\n\n 100% {\n  -webkit-transform: scale3d(1, 1, 1);\n  transform: scale3d(1, 1, 1);\n }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Botwe-Felix5820_big-baboon-67.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Squeeze me\n</button>",
+    "script": "export default {\n  name: 'GalaxyBigBaboon67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Botwe-Felix5820 - Tags: button, squishy */\nbutton {\n height: 2.8em;\n width: 9em;\n background: transparent;\n -webkit-animation: jello-horizontal 0.9s both;\n animation: jello-horizontal 0.9s both;\n border: 4rpx solid #016DD9;\n outline: none;\n color: #016DD9;\n font-size: 34rpx;\n}\n\nbutton:hover {\n background: #016DD9;\n color: #ffffff;\n animation: squeeze3124 0.9s both;\n}\n\n@keyframes squeeze3124 {\n 0% {\n  -webkit-transform: scale3d(1, 1, 1);\n  transform: scale3d(1, 1, 1);\n }\n\n 30% {\n  -webkit-transform: scale3d(1.25, 0.75, 1);\n  transform: scale3d(1.25, 0.75, 1);\n }\n\n 40% {\n  -webkit-transform: scale3d(0.75, 1.25, 1);\n  transform: scale3d(0.75, 1.25, 1);\n }\n\n 50% {\n  -webkit-transform: scale3d(1.15, 0.85, 1);\n  transform: scale3d(1.15, 0.85, 1);\n }\n\n 65% {\n  -webkit-transform: scale3d(0.95, 1.05, 1);\n  transform: scale3d(0.95, 1.05, 1);\n }\n\n 75% {\n  -webkit-transform: scale3d(1.05, 0.95, 1);\n  transform: scale3d(1.05, 0.95, 1);\n }\n\n 100% {\n  -webkit-transform: scale3d(1, 1, 1);\n  transform: scale3d(1, 1, 1);\n }\n}\n\n",
+    "component_name": "GalaxyBigBaboon67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1077,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.816Z",
+  "updated_at": "2025-07-31T07:55:32.816Z"
+}

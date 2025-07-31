@@ -1,0 +1,90 @@
+{
+  "id": "cohencoo_dry-rat-94",
+  "name": "dry-rat-94",
+  "category": "loaders",
+  "author": "cohencoo",
+  "description": "dry-rat-94 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"custom-loader\"></div>",
+    "css": "/* From Uiverse.io by cohencoo - Tags: loader */\n.custom-loader {\n  width: 70px;\n  height: 70px;\n  background: #ffa600;\n  border-radius: 50px;\n  -webkit-mask: radial-gradient(circle 31px at 50% calc(100% + 13px),#000 95%,#0000) top 4px left 50%,\n    radial-gradient(circle 31px,#000 95%,#0000) center,\n    radial-gradient(circle 31px at 50% -13px,#000 95%,#0000) bottom 4px left 50%,\n    linear-gradient(#000 0 0);\n  -webkit-mask-composite: xor;\n  mask-composite: exclude;\n  -webkit-mask-repeat: no-repeat;\n  animation: cu10 1.5s infinite;\n}\n\n@keyframes cu10 {\n  0% {\n    -webkit-mask-size: 0    18px,0    18px,0    18px,auto\n  }\n\n  16.67% {\n    -webkit-mask-size: 100% 18px,0    18px,0    18px,auto\n  }\n\n  33.33% {\n    -webkit-mask-size: 100% 18px,100% 18px,0    18px,auto\n  }\n\n  50% {\n    -webkit-mask-size: 100% 18px,100% 18px,100% 18px,auto\n  }\n\n  66.67% {\n    -webkit-mask-size: 0    18px,100% 18px,100% 18px,auto\n  }\n\n  83.33% {\n    -webkit-mask-size: 0    18px,0    18px,100% 18px,auto\n  }\n\n  100% {\n    -webkit-mask-size: 0    18px,0    18px,0    18px,auto\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/cohencoo_dry-rat-94.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"custom-loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyDryRat94',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cohencoo - Tags: loader */\n.custom-loader {\n  width: 140rpx;\n  height: 140rpx;\n  background: #ffa600;\n  border-radius: 100rpx;\n  -webkit-\n  -webkit-mask-composite: xor;\n  mask-composite: exclude;\n  -webkit-mask-repeat: no-repeat;\n  animation: cu10 1.5s infinite;\n}\n\n@keyframes cu10 {\n  0% {\n    -webkit-mask-size: 0    36rpx,0    36rpx,0    36rpx,auto\n  }\n\n  16.67% {\n    -webkit-mask-size: 100% 36rpx,0    36rpx,0    36rpx,auto\n  }\n\n  33.33% {\n    -webkit-mask-size: 100% 36rpx,100% 36rpx,0    36rpx,auto\n  }\n\n  50% {\n    -webkit-mask-size: 100% 36rpx,100% 36rpx,100% 36rpx,auto\n  }\n\n  66.67% {\n    -webkit-mask-size: 0    36rpx,100% 36rpx,100% 36rpx,auto\n  }\n\n  83.33% {\n    -webkit-mask-size: 0    36rpx,0    36rpx,100% 36rpx,auto\n  }\n\n  100% {\n    -webkit-mask-size: 0    36rpx,0    36rpx,0    36rpx,auto\n  }\n}\n",
+    "component_name": "GalaxyDryRat94"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1107,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.129Z",
+  "updated_at": "2025-07-31T07:55:41.129Z"
+}

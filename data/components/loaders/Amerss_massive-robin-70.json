@@ -1,0 +1,82 @@
+{
+  "id": "Amerss_massive-robin-70",
+  "name": "massive-robin-70",
+  "category": "loaders",
+  "author": "Amerss",
+  "description": "massive-robin-70 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"mx-auto w-[500px] bg-gray-950 rounded-xl overflow-hidden drop-shadow-xl\">\n  <div class=\"bg-[#333] flex items-center p-[5px] text-whitec relative\">\n    <div class=\"flex absolute left-3\">\n      <span class=\"h-3.5 w-3.5 bg-[#ff605c] rounded-xl mr-2\"></span>\n      <span class=\"h-3.5 w-3.5 bg-[#ffbd44] rounded-xl mr-2\"></span>\n      <span class=\"h-3.5 w-3.5 bg-[#00ca4e] rounded-xl\"></span>\n    </div>\n    <div class=\"flex-1 text-center text-white\">status</div>\n  </div>\n  <div class=\"p-2.5 text-[#0f0]\">\n    <div>\n      <span class=\"mr-2\">Loading</span>\n      <span class=\"animate-[ping_1.5s_0.5s_ease-in-out_infinite]\">.</span>\n      <span class=\"animate-[ping_1.5s_0.7s_ease-in-out_infinite]\">.</span>\n      <span class=\"animate-[ping_1.5s_0.9s_ease-in-out_infinite]\">.</span>\n    </div>\n  </div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/Amerss_massive-robin-70.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"mx-auto w-[500px] bg-gray-950 rounded-xl overflow-hidden drop-shadow-xl\"></view>\n  <view class=\"bg-[#333] flex items-center p-[5px] text-whitec relative\"></view>\n    <view class=\"flex absolute left-3\"></view>\n      <text class=\"h-3.5 w-3.5 bg-[#ff605c] rounded-xl mr-2\"></text>\n      <text class=\"h-3.5 w-3.5 bg-[#ffbd44] rounded-xl mr-2\"></text>\n      <text class=\"h-3.5 w-3.5 bg-[#00ca4e] rounded-xl\"></text>\n    </div>\n    <view class=\"flex-1 text-center text-white\">status</view>\n  </div>\n  <view class=\"p-2.5 text-[#0f0]\"></view>\n    <view></view>\n      <text class=\"mr-2\">Loading</text>\n      <text class=\"animate-[ping_1.5s_0.5s_ease-in-out_infinite]\">.</text>\n      <text class=\"animate-[ping_1.5s_0.7s_ease-in-out_infinite]\">.</text>\n      <text class=\"animate-[ping_1.5s_0.9s_ease-in-out_infinite]\">.</text>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMassiveRobin70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyMassiveRobin70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 822,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.913Z",
+  "updated_at": "2025-07-31T07:55:38.913Z"
+}

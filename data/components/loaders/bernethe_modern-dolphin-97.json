@@ -1,0 +1,85 @@
+{
+  "id": "bernethe_modern-dolphin-97",
+  "name": "modern-dolphin-97",
+  "category": "loaders",
+  "author": "bernethe",
+  "description": "modern-dolphin-97 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by bernethe - Tags: loader */\n.loader {\n  width: 2rem;\n  height: 2rem;\n  clear: both;\n  margin: 1rem auto;\n  border-radius: 50%;\n  border-left: 0 #000 solid;\n  border-right: 0 #000 solid;\n  animation: spSphere 1s infinite linear;\n}\n\n@keyframes spSphere {\n  0% {\n    border-left: 0 #000 solid;\n    border-right: 0 #000 solid;\n  }\n\n  33% {\n    border-left: 2rem #000 solid;\n    border-right: 0 #000 solid;\n  }\n\n  34% {\n    border-left: 0 #000 solid;\n    border-right: 2rem #000 solid;\n  }\n\n  66% {\n    border-left: 0 #000 solid;\n    border-right: 0 #000 solid;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bernethe_modern-dolphin-97.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyModernDolphin97',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bernethe - Tags: loader */\n.loader {\n  width: 2rem;\n  height: 2rem;\n  clear: both;\n  margin: 1rem auto;\n  border-radius: 50%;\n  border-left: 0 #000 solid;\n  border-right: 0 #000 solid;\n  animation: spSphere 1s infinite linear;\n}\n\n@keyframes spSphere {\n  0% {\n    border-left: 0 #000 solid;\n    border-right: 0 #000 solid;\n  }\n\n  33% {\n    border-left: 2rem #000 solid;\n    border-right: 0 #000 solid;\n  }\n\n  34% {\n    border-left: 0 #000 solid;\n    border-right: 2rem #000 solid;\n  }\n\n  66% {\n    border-left: 0 #000 solid;\n    border-right: 0 #000 solid;\n  }\n}\n\n",
+    "component_name": "GalaxyModernDolphin97"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 614,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.033Z",
+  "updated_at": "2025-07-31T07:55:41.033Z"
+}

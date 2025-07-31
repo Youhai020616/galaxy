@@ -1,0 +1,85 @@
+{
+  "id": "HyuOniichan_proud-rat-96",
+  "name": "proud-rat-96",
+  "category": "loaders",
+  "author": "HyuOniichan",
+  "description": "proud-rat-96 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"eye\">\n    <div class=\"up\"></div>\n    <div class=\"mid\"></div> \n    <div class=\"down\"></div> \n</div>",
+    "css": "/* From Uiverse.io by HyuOniichan - Tags: loader */\n.eye {\n  width: 100px;\n  height: 60px;\n  position: relative;\n  z-index: 1;\n}\n\n.up {\n  position: absolute;\n  top: 0px;\n  height: 100px;\n  width: 100px;\n  border-width: 2px;\n  border-style: solid;\n  border-color: black transparent transparent transparent;\n  border-radius: 50%;\n  z-index: 1;\n}\n\n.down {\n  position: absolute;\n  top: -70px;\n  height: 100px;\n  width: 100px;\n  border-width: 2px;\n  border-style: solid;\n  border-color: transparent transparent black transparent;\n  border-radius: 50%;\n  z-index: 1;\n}\n\n.mid {\n  position: absolute;\n  top: 1px;\n  left: 39px;\n  width: 27px;\n  height: 27px;\n  border: none;\n  border-radius: 50%;\n  background-color: black;\n  z-index: 0;\n  animation: eyemove 4s infinite;\n}\n\n@keyframes eyemove {\n  0% {\n    left: 30px;\n    background-color: rgb(164, 213, 230);\n  }\n\n  50% {\n    left: 43px;\n    background-color: rgb(45, 187, 235);\n  }\n\n  100% {\n    left: 30px;\n    background-color: rgb(164, 213, 230);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/HyuOniichan_proud-rat-96.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"eye\"></view>\n    <view class=\"up\"></view>\n    <view class=\"mid\"></view> \n    <view class=\"down\"></view> \n</div>",
+    "script": "export default {\n  name: 'GalaxyProudRat96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by HyuOniichan - Tags: loader */\n.eye {\n  width: 200rpx;\n  height: 120rpx;\n  position: relative;\n  z-index: 1;\n}\n\n.up {\n  position: absolute;\n  top: 0rpx;\n  height: 200rpx;\n  width: 200rpx;\n  border-width: 4rpx;\n  border-style: solid;\n  border-color: black transparent transparent transparent;\n  border-radius: 50%;\n  z-index: 1;\n}\n\n.down {\n  position: absolute;\n  top: -140rpx;\n  height: 200rpx;\n  width: 200rpx;\n  border-width: 4rpx;\n  border-style: solid;\n  border-color: transparent transparent black transparent;\n  border-radius: 50%;\n  z-index: 1;\n}\n\n.mid {\n  position: absolute;\n  top: 2rpx;\n  left: 78rpx;\n  width: 54rpx;\n  height: 54rpx;\n  border: none;\n  border-radius: 50%;\n  background-color: black;\n  z-index: 0;\n  animation: eyemove 4s infinite;\n}\n\n@keyframes eyemove {\n  0% {\n    left: 60rpx;\n    background-color: rgb(164, 213, 230);\n  }\n\n  50% {\n    left: 86rpx;\n    background-color: rgb(45, 187, 235);\n  }\n\n  100% {\n    left: 60rpx;\n    background-color: rgb(164, 213, 230);\n  }\n}\n\n\n",
+    "component_name": "GalaxyProudRat96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1115,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.351Z",
+  "updated_at": "2025-07-31T07:55:39.351Z"
+}

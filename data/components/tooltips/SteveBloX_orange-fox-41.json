@@ -1,0 +1,96 @@
+{
+  "id": "SteveBloX_orange-fox-41",
+  "name": "orange-fox-41",
+  "category": "tooltips",
+  "author": "SteveBloX",
+  "description": "orange-fox-41 组件 (material design, tooltip, shadow, md, md3, animation, interactive)",
+  "tags": [
+    "material design",
+    "tooltip",
+    "shadow",
+    "md",
+    "md3",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">\n    <p class=\"title\">Title</p>\n    <p class=\"content\">\n      Lorem ipsum dolor sit amet consectetur adipisicing elit.\n    </p>\n  </span>\n  <span class=\"text\">Material Design Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by SteveBloX  - Tags: material design, tooltip, shadow, md, md3 */\n/* Material Design 3 tooltip */\n.tooltip-container {\n  position: relative;\n  background: #e8def8;\n  color: #1d192b;\n  cursor: pointer;\n  transition: all 0.2s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n  font-family: Montserrat, sans-serif;\n  border-radius: 50px;\n}\n.tooltip-container .text {\n  font-weight: bold;\n}\n\n.tooltip {\n  transform-origin: center left;\n  scale: 0;\n  position: absolute;\n  top: 130%;\n  left: 50%;\n  transform: translate(-50%, -10px);\n  transition: all 0.25s;\n  background: #f3edf7;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);\n  padding: 17px;\n  border-radius: 12px;\n  color: #49454f;\n  min-width: 312px;\n}\n\n.tooltip-container:hover .tooltip {\n  scale: 1;\n}\n\n.tooltip .title {\n  font-weight: bold;\n  font-size: 1em;\n}\n\n.tooltip .content {\n  font-size: 0.85em;\n  font-weight: semibold;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/SteveBloX_orange-fox-41.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\"></text>\n    <text class=\"title\">Title</text>\n    <text class=\"content\"></text>\n      Lorem ipsum dolor sit amet consectetur adipisicing elit.\n    </p>\n  </span>\n  <text class=\"text\">Material Design Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOrangeFox41',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SteveBloX  - Tags: material design, tooltip, shadow, md, md3 */\n/* Material Design 3 tooltip */\n.tooltip-container {\n  position: relative;\n  background: #e8def8;\n  color: #1d192b;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n  font-family: Montserrat, sans-serif;\n  border-radius: 100rpx;\n}\n.tooltip-container .text {\n  font-weight: bold;\n}\n\n.tooltip {\n  transform-origin: center left;\n  scale: 0;\n  position: absolute;\n  top: 130%;\n  left: 50%;\n  transform: translate(-50%, -20rpx);\n  transition: all 0.25s;\n  background: #f3edf7;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.3), 0 4rpx 12rpx 4rpx rgba(0, 0, 0, 0.15);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  padding: 34rpx;\n  border-radius: 24rpx;\n  color: #49454f;\n  min-width: 624rpx;\n}\n\n.tooltip-container:hover .tooltip {\n  scale: 1;\n}\n\n.tooltip .title {\n  font-weight: bold;\n  font-size: 1em;\n}\n\n.tooltip .content {\n  font-size: 0.85em;\n  font-weight: semibold;\n}\n\n",
+    "component_name": "GalaxyOrangeFox41"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1192,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.580Z",
+  "updated_at": "2025-07-31T07:55:38.580Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "TimTrayler_chilly-turtle-66",
+  "name": "chilly-turtle-66",
+  "category": "loaders",
+  "author": "TimTrayler",
+  "description": "chilly-turtle-66 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <span class=\"spinner-part-0\"></span>\n  <span class=\"spinner-part-1\"></span>\n  <span class=\"spinner-part-2\"></span>\n  <span class=\"spinner-part-3\"></span>\n  <span class=\"spinner-part-0\"></span>\n  <span class=\"spinner-part-1\"></span>\n  <span class=\"spinner-part-2\"></span>\n  <span class=\"spinner-part-3\"></span>\n</div>",
+    "css": "/* From Uiverse.io by TimTrayler - Tags: loader */\n.spinner {\n --accent: fuchsia;\n --max-scale: 4;\n --speed: 0.2;\n display: flex;\n gap: 0.3em;\n transform: skew(15deg, 10deg);\n}\n\n.spinner span {\n display: block;\n background-color: var(--accent);\n box-shadow: 1px 1px 5px 0.2px var(--accent);\n width: 0.7px;\n height: 0.6em;\n}\n\n.spinner .spinner-part-0 {\n animation: load432 calc(1s/var(--speed)) linear infinite;\n}\n\n.spinner .spinner-part-1 {\n animation: load432 calc(0.16s/var(--speed)) linear infinite;\n}\n\n.spinner .spinner-part-2 {\n animation: load432 calc(0.4s/var(--speed)) linear infinite;\n}\n\n.spinner .spinner-part-3 {\n animation: load432 calc(0.5s/var(--speed)) linear infinite;\n}\n\n@keyframes load432 {\n 50% {\n  transform: scaleY(var(--max-scale));\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/TimTrayler_chilly-turtle-66.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <text class=\"spinner-part-0\"></text>\n  <text class=\"spinner-part-1\"></text>\n  <text class=\"spinner-part-2\"></text>\n  <text class=\"spinner-part-3\"></text>\n  <text class=\"spinner-part-0\"></text>\n  <text class=\"spinner-part-1\"></text>\n  <text class=\"spinner-part-2\"></text>\n  <text class=\"spinner-part-3\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyChillyTurtle66',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TimTrayler - Tags: loader */\n.spinner {\n --accent: fuchsia;\n --max-scale: 4;\n --speed: 0.2;\n display: flex;\n gap: 0.3em;\n transform: skew(15deg, 10deg);\n}\n\n.spinner span {\n display: block;\n background-color: var(--accent);\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 10rpx 0.4rpx var(--accent);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n width: 1.4rpx;\n height: 0.6em;\n}\n\n.spinner .spinner-part-0 {\n animation: load432 calc(1s/var(--speed)) linear infinite;\n}\n\n.spinner .spinner-part-1 {\n animation: load432 calc(0.16s/var(--speed)) linear infinite;\n}\n\n.spinner .spinner-part-2 {\n animation: load432 calc(0.4s/var(--speed)) linear infinite;\n}\n\n.spinner .spinner-part-3 {\n animation: load432 calc(0.5s/var(--speed)) linear infinite;\n}\n\n@keyframes load432 {\n 50% {\n  transform: scaleY(var(--max-scale));\n }\n}\n\n",
+    "component_name": "GalaxyChillyTurtle66"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1104,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.689Z",
+  "updated_at": "2025-07-31T07:55:40.689Z"
+}

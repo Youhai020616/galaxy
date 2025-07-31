@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_thin-turkey-8",
+  "name": "thin-turkey-8",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "thin-turkey-8 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 70px;\n  height: 35px;\n  position: relative;\n  overflow: hidden;\n}\n\n.loader:before {\n  content: \"\";\n  width: 70px;\n  height: 70px;\n  position: absolute;\n  left: 0;\n  top: 0;\n  border: 5px solid #0000;\n  border-color: #fff #fff #0000 #0000;\n  border-radius: 50%;\n  box-sizing: border-box;\n  animation: rotate_5131 3s ease-in-out infinite;\n  transform: rotate(-200deg);\n}\n\n@keyframes rotate_5131 {\n  0% {\n    border-width: 10px;\n  }\n\n  25% {\n    border-width: 3px;\n  }\n\n  50% {\n    transform: rotate(115deg);\n    border-width: 10px;\n  }\n\n  75% {\n    border-width: 3px;\n  }\n\n  100% {\n    border-width: 10px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_thin-turkey-8.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyThinTurkey8',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  width: 140rpx;\n  height: 70rpx;\n  position: relative;\n  overflow: hidden;\n}\n\n.loader:before {\n  content: \"\";\n  width: 140rpx;\n  height: 140rpx;\n  position: absolute;\n  left: 0;\n  top: 0;\n  border: 10rpx solid #0000;\n  border-color: #fff #fff #0000 #0000;\n  border-radius: 50%;\n  box-sizing: border-box;\n  animation: rotate_5131 3s ease-in-out infinite;\n  transform: rotate(-200deg);\n}\n\n@keyframes rotate_5131 {\n  0% {\n    border-width: 20rpx;\n  }\n\n  25% {\n    border-width: 6rpx;\n  }\n\n  50% {\n    transform: rotate(115deg);\n    border-width: 20rpx;\n  }\n\n  75% {\n    border-width: 6rpx;\n  }\n\n  100% {\n    border-width: 20rpx;\n  }\n}\n      \n",
+    "component_name": "GalaxyThinTurkey8"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 714,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.462Z",
+  "updated_at": "2025-07-31T07:55:40.462Z"
+}

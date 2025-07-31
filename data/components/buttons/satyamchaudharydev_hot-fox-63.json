@@ -1,0 +1,112 @@
+{
+  "id": "satyamchaudharydev_hot-fox-63",
+  "name": "hot-fox-63",
+  "category": "buttons",
+  "author": "satyamchaudharydev",
+  "description": "hot-fox-63 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <p>Crush!</p>\n</button>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: button */\nbutton {\n border: none;\n width: 140px;\n height: 50px;\n color: #fff;\n z-index: 1;\n display: flex;\n background: #000;\n position: relative;\n}\n\nbutton p {\n margin: 0 auto;\n align-self: center;\n font-size: 17px;\n font-weight: bold;\n text-align: center;\n}\n\nbutton::after {\n position: absolute;\n content: \"\";\n width: 100%;\n z-index: -1;\n height: 10%;\n bottom: 0;\n clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);\n background: #8792eb;\n transition: 0.2s ease;\n}\n\nbutton::before {\n position: absolute;\n content: \"\";\n/*   bottom: 80%; */\n transform: rotate(180deg);\n width: 100%;\n height: 10%;\n transition: 0.2s ease;\n/*   bottom:; */\n z-index: -1;\n clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);\n background: #8792eb;\n}\n\nbutton:hover::after {\n clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);\n height: 80%;\n}\n\nbutton:hover::before {\n clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);\n height: 80%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/satyamchaudharydev_hot-fox-63.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text>Crush!</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHotFox63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: button */\nbutton {\n border: none;\n width: 280rpx;\n height: 100rpx;\n color: #fff;\n z-index: 1;\n display: flex;\n background: #000;\n position: relative;\n}\n\nbutton p {\n margin: 0 auto;\n align-self: center;\n font-size: 34rpx;\n font-weight: bold;\n text-align: center;\n}\n\nbutton::after {\n position: absolute;\n content: \"\";\n width: 100%;\n z-index: -1;\n height: 10%;\n bottom: 0;\n \n background: #8792eb;\n transition: 0.2s ease;\n}\n\nbutton::before {\n position: absolute;\n content: \"\";\n/*   bottom: 80%; */\n transform: rotate(180deg);\n width: 100%;\n height: 10%;\n transition: 0.2s ease;\n/*   bottom:; */\n z-index: -1;\n \n background: #8792eb;\n}\n\nbutton:hover::after {\n \n height: 80%;\n}\n\nbutton:hover::before {\n \n height: 80%;\n}\n\n\n",
+    "component_name": "GalaxyHotFox63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1840,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.761Z",
+  "updated_at": "2025-07-31T07:55:37.761Z"
+}

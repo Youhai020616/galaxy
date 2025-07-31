@@ -1,0 +1,86 @@
+{
+  "id": "G4b413l_massive-vampirebat-17",
+  "name": "massive-vampirebat-17",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "massive-vampirebat-17 组件 (loader, ball, animation)",
+  "tags": [
+    "loader",
+    "ball",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"bar\">\n    <div class=\"ball\"></div>\n</div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader, ball */\n.ball {\n  position: relative;\n  bottom: 50px;\n  left: calc(100% - 20px);\n  width: 50px;\n  height: 50px;\n  background: #fff;\n  border-radius: 50%;\n  animation: ball-move8234 3s ease-in-out 1s infinite alternate;\n}\n\n.ball::after {\n  position: absolute;\n  content: '';\n  top: 25px;\n  right: 5px;\n  width: 5px;\n  height: 5px;\n  background: #000;\n  border-radius: 50%;\n}\n\n.bar {\n  width: 200px;\n  height: 12.5px;\n  background: #FFDAAF;\n  border-radius: 30px;\n  transform: rotate(-15deg);\n  animation: up-down6123 3s ease-in-out 1s infinite alternate;\n}\n\n@keyframes up-down6123 {\n  from {\n    transform: rotate(-15deg);\n  }\n\n  to {\n    transform: rotate(15deg);\n  }\n}\n\n@keyframes ball-move8234 {\n  from {\n    left: calc(100% - 40px);\n    transform: rotate(360deg);\n  }\n\n  to {\n    left: calc(0% - 20px);\n    transform: rotate(0deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_massive-vampirebat-17.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"bar\"></view>\n    <view class=\"ball\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMassiveVampirebat17',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader, ball */\n.ball {\n  position: relative;\n  bottom: 100rpx;\n  left: calc(100% - 40rpx);\n  width: 100rpx;\n  height: 100rpx;\n  background: #fff;\n  border-radius: 50%;\n  animation: ball-move8234 3s ease-in-out 1s infinite alternate;\n}\n\n.ball::after {\n  position: absolute;\n  content: '';\n  top: 50rpx;\n  right: 10rpx;\n  width: 10rpx;\n  height: 10rpx;\n  background: #000;\n  border-radius: 50%;\n}\n\n.bar {\n  width: 400rpx;\n  height: 25rpx;\n  background: #FFDAAF;\n  border-radius: 60rpx;\n  transform: rotate(-15deg);\n  animation: up-down6123 3s ease-in-out 1s infinite alternate;\n}\n\n@keyframes up-down6123 {\n  from {\n    transform: rotate(-15deg);\n  }\n\n  to {\n    transform: rotate(15deg);\n  }\n}\n\n@keyframes ball-move8234 {\n  from {\n    left: calc(100% - 80rpx);\n    transform: rotate(360deg);\n  }\n\n  to {\n    left: calc(0% - 40rpx);\n    transform: rotate(0deg);\n  }\n}\n",
+    "component_name": "GalaxyMassiveVampirebat17"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 943,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.301Z",
+  "updated_at": "2025-07-31T07:55:39.301Z"
+}

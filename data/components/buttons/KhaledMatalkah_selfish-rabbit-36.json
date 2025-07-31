@@ -1,0 +1,120 @@
+{
+  "id": "KhaledMatalkah_selfish-rabbit-36",
+  "name": "selfish-rabbit-36",
+  "category": "buttons",
+  "author": "KhaledMatalkah",
+  "description": "selfish-rabbit-36 组件 (material design, button, custom, hover button, animation, gradient, interactive)",
+  "tags": [
+    "material design",
+    "button",
+    "custom",
+    "hover button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"realistic-button\">\n  Button\n</button>",
+    "css": "/* From Uiverse.io by KhaledMatalkah - Tags: material design, button, custom, hover button */\n.realistic-button {\n  display: inline-block;\n  position: relative;\n  padding: 15px 30px;\n  font-size: 18px;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #fff;\n  background: linear-gradient(to bottom, #3498db, #2980b9);\n  border: 1px solid #2980b9;\n  border-radius: 5px;\n  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(255, 255, 255, 0.2);\n  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\n  cursor: pointer;\n  overflow: hidden;\n  transition: background-color 0.3s, transform 0.3s;\n}\n\n.realistic-button::before,\n        .realistic-button::after {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: inherit;\n  z-index: -1;\n  transition: transform 0.3s;\n}\n\n.realistic-button::before {\n  top: 0;\n  left: -100%;\n  transform: skewX(-45deg);\n}\n\n.realistic-button::after {\n  bottom: 0;\n  right: -100%;\n  transform: skewX(45deg);\n}\n\n.realistic-button:hover {\n  background: linear-gradient(to bottom, #042b46, #0a525cd8);\n  transform: translateY(-2px);\n  box-shadow: 0px 6px 8px rgba(0, 195, 255, 0.2), inset 0px 2px 4px rgba(255, 255, 255, 0.1);\n}\n\n.realistic-button:hover::before {\n  transform: translateX(100%);\n}\n\n.realistic-button:hover::after {\n  transform: translateX(-100%);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KhaledMatalkah_selfish-rabbit-36.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"realistic-button\"></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxySelfishRabbit36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KhaledMatalkah - Tags: material design, button, custom, hover button */\n.realistic-button {\n  display: inline-block;\n  position: relative;\n  padding: 30rpx 60rpx;\n  font-size: 36rpx;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #fff;\n  background: linear-gradient(to bottom, #3498db, #2980b9);\n  border: 2rpx solid #2980b9;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 8rpx 12rpx rgba(0, 0, 0, 0.1), inset 0rpx 4rpx 8rpx rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 0rpx 4rpx 4rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  overflow: hidden;\n  transition: background-color 0.3s, transform 0.3s;\n}\n\n.realistic-button::before,\n        .realistic-button::after {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: inherit;\n  z-index: -1;\n  transition: transform 0.3s;\n}\n\n.realistic-button::before {\n  top: 0;\n  left: -100%;\n  transform: skewX(-45deg);\n}\n\n.realistic-button::after {\n  bottom: 0;\n  right: -100%;\n  transform: skewX(45deg);\n}\n\n.realistic-button:hover {\n  background: linear-gradient(to bottom, #042b46, #0a525cd8);\n  transform: translateY(-4rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 12rpx 16rpx rgba(0, 195, 255, 0.2), inset 0rpx 4rpx 8rpx rgba(255, 255, 255, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.realistic-button:hover::before {\n  transform: translateX(100%);\n}\n\n.realistic-button:hover::after {\n  transform: translateX(-100%);\n}\n",
+    "component_name": "GalaxySelfishRabbit36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1387,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.725Z",
+  "updated_at": "2025-07-31T07:55:33.725Z"
+}

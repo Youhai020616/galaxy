@@ -1,0 +1,120 @@
+{
+  "id": "doniaskima_wise-goat-6",
+  "name": "wise-goat-6",
+  "category": "buttons",
+  "author": "doniaskima",
+  "description": "wise-goat-6 组件 (button, bounce animation, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "bounce animation",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-31\">\n  <span class=\"text-container\">\n    <span class=\"text\">Button</span>\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: button, bounce animation */\n.btn-31,\n.btn-31 *,\n.btn-31 :after,\n.btn-31 :before,\n.btn-31:after,\n.btn-31:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n\n.btn-31 {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  cursor: pointer;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  font-weight: 900;\n  line-height: 1.5;\n  margin: 0;\n  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n}\n\n.btn-31:disabled {\n  cursor: default;\n}\n\n.btn-31:-moz-focusring {\n  outline: auto;\n}\n\n.btn-31 svg {\n  display: block;\n  vertical-align: middle;\n}\n\n.btn-31 [hidden] {\n  display: none;\n}\n\n.btn-31 {\n  border-width: 1px;\n  padding: 1rem 2rem;\n  position: relative;\n  text-transform: uppercase;\n}\n\n.btn-31:before {\n  --progress: 100%;\n  background: #fff;\n  -webkit-clip-path: polygon(\n    100% 0,\n    var(--progress) var(--progress),\n    0 100%,\n    100% 100%\n  );\n  clip-path: polygon(\n    100% 0,\n    var(--progress) var(--progress),\n    0 100%,\n    100% 100%\n  );\n  content: \"\";\n  inset: 0;\n  position: absolute;\n  transition: -webkit-clip-path 0.2s ease;\n  transition: clip-path 0.2s ease;\n  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;\n}\n\n.btn-31:hover:before {\n  --progress: 0%;\n}\n\n.btn-31 .text-container {\n  display: block;\n  overflow: hidden;\n  position: relative;\n}\n\n.btn-31 .text {\n  display: block;\n  font-weight: 900;\n  mix-blend-mode: difference;\n  position: relative;\n}\n\n.btn-31:hover .text {\n  -webkit-animation: move-up-alternate 0.3s ease forwards;\n  animation: move-up-alternate 0.3s ease forwards;\n}\n\n@-webkit-keyframes move-up-alternate {\n  0% {\n    transform: translateY(0);\n  }\n\n  50% {\n    transform: translateY(80%);\n  }\n\n  51% {\n    transform: translateY(-80%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n@keyframes move-up-alternate {\n  0% {\n    transform: translateY(0);\n  }\n\n  50% {\n    transform: translateY(80%);\n  }\n\n  51% {\n    transform: translateY(-80%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/doniaskima_wise-goat-6.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-31\"></button>\n  <text class=\"text-container\"></text>\n    <text class=\"text\">Button</text>\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWiseGoat6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: button, bounce animation */\n.btn-31,\n.btn-31 *,\n.btn-31 :after,\n.btn-31 :before,\n.btn-31:after,\n.btn-31:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n\n.btn-31 {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  font-weight: 900;\n  line-height: 1.5;\n  margin: 0;\n  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n}\n\n.btn-31:disabled {\n  /* #ifdef H5 */\n  cursor: default;\n  /* #endif */\n}\n\n.btn-31:-moz-focusring {\n  outline: auto;\n}\n\n.btn-31 svg {\n  display: block;\n  vertical-align: middle;\n}\n\n.btn-31 [hidden] {\n  display: none;\n}\n\n.btn-31 {\n  border-width: 2rpx;\n  padding: 1rem 2rem;\n  position: relative;\n  text-transform: uppercase;\n}\n\n.btn-31:before {\n  --progress: 100%;\n  background: #fff;\n  -webkit-\n  \n  content: \"\";\n  inset: 0;\n  position: absolute;\n  transition: -webkit-clip-path 0.2s ease;\n  transition: clip-path 0.2s ease;\n  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;\n}\n\n.btn-31:hover:before {\n  --progress: 0%;\n}\n\n.btn-31 .text-container {\n  display: block;\n  overflow: hidden;\n  position: relative;\n}\n\n.btn-31 .text {\n  display: block;\n  font-weight: 900;\n  \n  position: relative;\n}\n\n.btn-31:hover .text {\n  -webkit-animation: move-up-alternate 0.3s ease forwards;\n  animation: move-up-alternate 0.3s ease forwards;\n}\n\n@-webkit-keyframes move-up-alternate {\n  0% {\n    transform: translateY(0);\n  }\n\n  50% {\n    transform: translateY(80%);\n  }\n\n  51% {\n    transform: translateY(-80%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n@keyframes move-up-alternate {\n  0% {\n    transform: translateY(0);\n  }\n\n  50% {\n    transform: translateY(80%);\n  }\n\n  51% {\n    transform: translateY(-80%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n",
+    "component_name": "GalaxyWiseGoat6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性",
+        "不支持 mask 属性",
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性",
+        "不支持 mask 属性",
+        "不支持 mix-blend-mode 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2411,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.412Z",
+  "updated_at": "2025-07-31T07:55:36.412Z"
+}

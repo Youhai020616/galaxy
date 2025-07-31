@@ -1,0 +1,91 @@
+{
+  "id": "gagan-gv_nervous-wasp-20",
+  "name": "nervous-wasp-20",
+  "category": "loaders",
+  "author": "gagan-gv",
+  "description": "nervous-wasp-20 组件 (loading, loader, glow, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "glow",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <span>L</span>\n  <span>O</span>\n  <span>A</span>\n  <span>D</span>\n  <span>I</span>\n  <span>N</span>\n  <span>G</span>\n</div>",
+    "css": "/* From Uiverse.io by gagan-gv - Tags: loading, loader, glow */\n.spinner {\n height: 50px;\n width: max-content;\n font-size: 18px;\n font-weight: 600;\n font-family: monospace;\n letter-spacing: 1em;\n color: #f5f5f5;\n filter: drop-shadow(0 0 10px);\n display: flex;\n justify-content: center;\n align-items: center;\n}\n\n.spinner span {\n animation: loading6454 1.75s ease infinite;\n}\n\n.spinner span:nth-child(2) {\n animation-delay: 0.25s;\n}\n\n.spinner span:nth-child(3) {\n animation-delay: 0.5s;\n}\n\n.spinner span:nth-child(4) {\n animation-delay: 0.75s;\n}\n\n.spinner span:nth-child(5) {\n animation-delay: 1s;\n}\n\n.spinner span:nth-child(6) {\n animation-delay: 1.25s;\n}\n\n.spinner span:nth-child(7) {\n animation-delay: 1.5s;\n}\n\n@keyframes loading6454 {\n 0%, 100% {\n  transform: translateY(0);\n }\n\n 50% {\n  transform: translateY(-10px);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/gagan-gv_nervous-wasp-20.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <text>L</text>\n  <text>O</text>\n  <text>A</text>\n  <text>D</text>\n  <text>I</text>\n  <text>N</text>\n  <text>G</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNervousWasp20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by gagan-gv - Tags: loading, loader, glow */\n.spinner {\n height: 100rpx;\n width: max-content;\n font-size: 36rpx;\n font-weight: 600;\n font-family: monospace;\n letter-spacing: 1em;\n color: #f5f5f5;\n \n display: flex;\n justify-content: center;\n align-items: center;\n}\n\n.spinner span {\n animation: loading6454 1.75s ease infinite;\n}\n\n.spinner span:nth-child(2) {\n animation-delay: 0.25s;\n}\n\n.spinner span:nth-child(3) {\n animation-delay: 0.5s;\n}\n\n.spinner span:nth-child(4) {\n animation-delay: 0.75s;\n}\n\n.spinner span:nth-child(5) {\n animation-delay: 1s;\n}\n\n.spinner span:nth-child(6) {\n animation-delay: 1.25s;\n}\n\n.spinner span:nth-child(7) {\n animation-delay: 1.5s;\n}\n\n@keyframes loading6454 {\n 0%, 100% {\n  transform: translateY(0);\n }\n\n 50% {\n  transform: translateY(-20rpx);\n }\n}\n",
+    "component_name": "GalaxyNervousWasp20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 975,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.135Z",
+  "updated_at": "2025-07-31T07:55:42.135Z"
+}

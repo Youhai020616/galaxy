@@ -1,0 +1,85 @@
+{
+  "id": "Cornerstone-04_ugly-rattlesnake-41",
+  "name": "ugly-rattlesnake-41",
+  "category": "loaders",
+  "author": "Cornerstone-04",
+  "description": "ugly-rattlesnake-41 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Cornerstone-04 - Tags: loader */\n.loader {\n  width: 150px;\n  height: 150px;\n  border-left: 5px solid #38ff8e;\n  border-radius: 50%;\n  animation: right5231 0.9s linear infinite;\n}\n\n.loader::before,\n  .loader::after {\n  content: \"\";\n  width: 120px;\n  height: 120px;\n  display: block;\n  position: absolute;\n  top: calc(50% - 60px);\n  left: calc(50% - 60px);\n  border-right: 5px solid #ffbe0b;\n  border-radius: 50%;\n  animation: left036 0.9s linear infinite;\n}\n\n.loader::after {\n  width: 90px;\n  height: 90px;\n  top: calc(50% - 45px);\n  left: calc(50% - 45px);\n  border: 0;\n  border-top: 5px solid #ff086e;\n  animation: none;\n}\n\n@keyframes right5231 {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes left036 {\n  from {\n    transform: rotate(720deg);\n  }\n\n  to {\n    transform: rotate(0deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Cornerstone-04_ugly-rattlesnake-41.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyUglyRattlesnake41',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Cornerstone-04 - Tags: loader */\n.loader {\n  width: 300rpx;\n  height: 300rpx;\n  border-left: 10rpx solid #38ff8e;\n  border-radius: 50%;\n  animation: right5231 0.9s linear infinite;\n}\n\n.loader::before,\n  .loader::after {\n  content: \"\";\n  width: 240rpx;\n  height: 240rpx;\n  display: block;\n  position: absolute;\n  top: calc(50% - 120rpx);\n  left: calc(50% - 120rpx);\n  border-right: 10rpx solid #ffbe0b;\n  border-radius: 50%;\n  animation: left036 0.9s linear infinite;\n}\n\n.loader::after {\n  width: 180rpx;\n  height: 180rpx;\n  top: calc(50% - 90rpx);\n  left: calc(50% - 90rpx);\n  border: 0;\n  border-top: 10rpx solid #ff086e;\n  animation: none;\n}\n\n@keyframes right5231 {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes left036 {\n  from {\n    transform: rotate(720deg);\n  }\n\n  to {\n    transform: rotate(0deg);\n  }\n}\n",
+    "component_name": "GalaxyUglyRattlesnake41"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 895,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.128Z",
+  "updated_at": "2025-07-31T07:55:39.128Z"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "Gaurav-WebDev_hard-cougar-70",
+  "name": "hard-cougar-70",
+  "category": "buttons",
+  "author": "Gaurav-WebDev",
+  "description": "hard-cougar-70 组件 (simple, button, hover, smooth, btn, hover effect, animation, interactive)",
+  "tags": [
+    "simple",
+    "button",
+    "hover",
+    "smooth",
+    "btn",
+    "hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <p class=\"btn-txt\">Hello !</p>\n</button>",
+    "css": "/* From Uiverse.io by Gaurav-WebDev  - Tags: simple, button, hover, smooth, btn, hover effect */\n.button {\n  height: 50px;\n  width: 150px;\n  font-weight: 800;\n  border: none;\n  background-color: #3434;\n  color: #ffff;\n  border-radius: 20px;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n  transition: all 0.7s;\n}\n\n.button::after {\n  content: \"Me\";\n  height: 100%;\n  width: 50%;\n  background-color: coral;\n  position: absolute;\n  right: 0px;\n  bottom: 0px;\n  display: flex;\n  align-items: center;\n  justify-content: start;\n  padding-left: 10px;\n  box-sizing: border-box;\n  transition: all 0.7s;\n}\n\n.button::before {\n  content: \"Hover\";\n  height: 100%;\n  width: 50%;\n  background-color: teal;\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  display: flex;\n  align-items: center;\n  justify-content: end;\n  padding-right: 10px;\n  box-sizing: border-box;\n  transition: all 0.7s;\n}\n\n.button:hover::after {\n  right: -100px;\n}\n\n.button:hover::before {\n  left: -100px;\n}\n\n.button:hover {\n  background-color: #000;\n  color: #fff;\n  transform: scale(1.2);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Gaurav-WebDev_hard-cougar-70.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text class=\"btn-txt\">Hello !</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHardCougar70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Gaurav-WebDev  - Tags: simple, button, hover, smooth, btn, hover effect */\n.button {\n  height: 100rpx;\n  width: 300rpx;\n  font-weight: 800;\n  border: none;\n  background-color: #3434;\n  color: #ffff;\n  border-radius: 40rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n  transition: all 0.7s;\n}\n\n.button::after {\n  content: \"Me\";\n  height: 100%;\n  width: 50%;\n  background-color: coral;\n  position: absolute;\n  right: 0rpx;\n  bottom: 0rpx;\n  display: flex;\n  align-items: center;\n  justify-content: start;\n  padding-left: 20rpx;\n  box-sizing: border-box;\n  transition: all 0.7s;\n}\n\n.button::before {\n  content: \"Hover\";\n  height: 100%;\n  width: 50%;\n  background-color: teal;\n  position: absolute;\n  left: 0rpx;\n  top: 0rpx;\n  display: flex;\n  align-items: center;\n  justify-content: end;\n  padding-right: 20rpx;\n  box-sizing: border-box;\n  transition: all 0.7s;\n}\n\n.button:hover::after {\n  right: -200rpx;\n}\n\n.button:hover::before {\n  left: -200rpx;\n}\n\n.button:hover {\n  background-color: #000;\n  color: #fff;\n  transform: scale(1.2);\n}\n\n",
+    "component_name": "GalaxyHardCougar70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1138,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.253Z",
+  "updated_at": "2025-07-31T07:55:33.253Z"
+}

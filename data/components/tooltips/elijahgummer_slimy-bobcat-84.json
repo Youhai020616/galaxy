@@ -1,0 +1,96 @@
+{
+  "id": "elijahgummer_slimy-bobcat-84",
+  "name": "slimy-bobcat-84",
+  "category": "tooltips",
+  "author": "elijahgummer",
+  "description": "slimy-bobcat-84 组件 (simple, tooltip, animation, blue, modern, transition, interactive)",
+  "tags": [
+    "simple",
+    "tooltip",
+    "animation",
+    "blue",
+    "modern",
+    "transition",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">Uiverse.io</span>\n  <span class=\"text\">Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: simple, tooltip, animation, blue, modern, transition */\n.tooltip-container {\n  --background: #22d3ee;\n  position: relative;\n  background: var(--background);\n  cursor: pointer;\n  transition: background 0.3s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n}\n\n.tooltip {\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%) translateY(-10%); /* Adjusted the initial position */\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);\n  background: var(--background);\n  color: #fff;\n  border-radius: 0.3em;\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n  text-align: center;\n  font-size: 14px;\n  width: 120%; /* Adjusted the width */\n  padding: 0.5em 1em; /* Adjusted padding */\n  white-space: nowrap; /* Prevent text wrapping */\n}\n\n.tooltip-container:hover .tooltip {\n  top: -100%; /* Adjusted the tooltip position */\n  opacity: 1;\n  pointer-events: auto;\n  transform: translateX(-50%) translateY(0);\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/elijahgummer_slimy-bobcat-84.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\">Uiverse.io</text>\n  <text class=\"text\">Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxySlimyBobcat84',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: simple, tooltip, animation, blue, modern, transition */\n.tooltip-container {\n  --background: #22d3ee;\n  position: relative;\n  background: var(--background);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: background 0.3s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n}\n\n.tooltip {\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%) translateY(-10%); /* Adjusted the initial position */\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);\n  background: var(--background);\n  color: #fff;\n  border-radius: 0.3em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 16rpx 32rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  text-align: center;\n  font-size: 28rpx;\n  width: 120%; /* Adjusted the width */\n  padding: 0.5em 1em; /* Adjusted padding */\n  white-space: nowrap; /* Prevent text wrapping */\n}\n\n.tooltip-container:hover .tooltip {\n  top: -100%; /* Adjusted the tooltip position */\n  opacity: 1;\n  pointer-events: auto;\n  transform: translateX(-50%) translateY(0);\n}\n\n",
+    "component_name": "GalaxySlimyBobcat84"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1133,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.667Z",
+  "updated_at": "2025-07-31T07:55:38.667Z"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "Subaashbala_polite-newt-9",
+  "name": "polite-newt-9",
+  "category": "loaders",
+  "author": "Subaashbala",
+  "description": "polite-newt-9 组件 (loader, animated, loading animation, 3d loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animated",
+    "loading animation",
+    "3d loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"modelViewPort\">\n    <div class=\"eva\">\n      <div class=\"head\">\n        <div class=\"eyeChamber\">\n          <div class=\"eye\"></div>\n          <div class=\"eye\"></div>\n        </div>\n      </div>\n      <div class=\"body\">\n        <div class=\"hand\"></div>\n        <div class=\"hand\"></div>\n        <div class=\"scannerThing\"></div>\n        <div class=\"scannerOrigin\"></div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Subaashbala  - Tags: loader, animated, loading animation, 3d loader */\n.modelViewPort {\n  /* The black circle background around the model*/\n  perspective: 1000px;\n  width: 20rem;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #000;\n  overflow: hidden;\n}\n.eva {\n  --EVA-ROTATION-DURATION: 4s;\n  transform-style: preserve-3d;\n  animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;\n}\n.head {\n  position: relative;\n  width: 6rem;\n  height: 4rem;\n  border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;\n  background: linear-gradient(to right, white 45%, gray);\n}\n.eyeChamber {\n  width: 4.5rem;\n  height: 2.75rem;\n  position: relative;\n  left: 50%;\n  top: 55%;\n  border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;\n  background-color: #0c203c;\n  box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;\n  transform: translate(-50%, -50%);\n  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;\n}\n.eye {\n  width: 1.2rem;\n  height: 1.5rem;\n  position: absolute;\n  border-radius: 50%;\n}\n.eye:first-child {\n  left: 12px;\n  top: 50%;\n  background: repeating-linear-gradient(\n    65deg,\n    #9bdaeb 0px,\n    #9bdaeb 1px,\n    white 2px\n  );\n  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;\n  transform: translate(0, -50%) rotate(-65deg);\n}\n.eye:nth-child(2) {\n  right: 12px;\n  top: 50%;\n  background: repeating-linear-gradient(\n    -65deg,\n    #9bdaeb 0px,\n    #9bdaeb 1px,\n    white 2px\n  );\n  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;\n  transform: translate(0, -50%) rotate(65deg);\n}\n.body {\n  width: 6rem;\n  height: 8rem;\n  position: relative;\n  margin-block-start: 0.25rem;\n  border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;\n  background: linear-gradient(to right, white 35%, gray);\n}\n.hand {\n  position: absolute;\n  left: -1.5rem;\n  top: 0.75rem;\n  width: 2rem;\n  height: 5.5rem;\n  border-radius: 40%;\n  background: linear-gradient(to left, white 15%, gray);\n  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);\n  transform: rotateY(55deg) rotateZ(10deg);\n}\n.hand:first-child {\n  animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite\n    alternate;\n}\n.hand:nth-child(2) {\n  left: 92%;\n  background: linear-gradient(to right, white 15%, gray);\n  transform: rotateY(55deg) rotateZ(-10deg);\n  animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear\n    infinite alternate;\n}\n.scannerThing {\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 60%;\n  top: 10%;\n  border-top: 180px solid #9bdaeb;\n  border-left: 250px solid transparent;\n  border-right: 250px solid transparent;\n  transform-origin: top left;\n  mask: linear-gradient(to right, white, transparent 35%);\n  animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;\n}\n.scannerOrigin {\n  position: absolute;\n  width: 8px;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  left: 60%;\n  top: 10%;\n  background: #9bdaeb;\n  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);\n  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;\n}\n@keyframes rotateRight {\n  from {\n    transform: rotateY(0deg);\n  }\n  to {\n    transform: rotateY(25deg);\n  }\n}\n@keyframes moveRight {\n  from {\n    transform: translate(-50%, -50%);\n  }\n  to {\n    transform: translate(-40%, -50%);\n  }\n}\n@keyframes compensateRotation {\n  from {\n    transform: rotateY(55deg) rotateZ(10deg);\n  }\n  to {\n    transform: rotatey(30deg) rotateZ(10deg);\n  }\n}\n@keyframes compensateRotationRight {\n  from {\n    transform: rotateY(55deg) rotateZ(-10deg);\n  }\n  to {\n    transform: rotateY(70deg) rotateZ(-10deg);\n  }\n}\n@keyframes glow {\n  from {\n    opacity: 0;\n  }\n  20% {\n    opacity: 1;\n  }\n  45% {\n    transform: rotate(-25deg);\n  }\n  75% {\n    transform: rotate(5deg);\n  }\n  100% {\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Subaashbala_polite-newt-9.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"modelViewPort\"></view>\n    <view class=\"eva\"></view>\n      <view class=\"head\"></view>\n        <view class=\"eyeChamber\"></view>\n          <view class=\"eye\"></view>\n          <view class=\"eye\"></view>\n        </div>\n      </div>\n      <view class=\"body\"></view>\n        <view class=\"hand\"></view>\n        <view class=\"hand\"></view>\n        <view class=\"scannerThing\"></view>\n        <view class=\"scannerOrigin\"></view>\n      </div>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPoliteNewt9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Subaashbala  - Tags: loader, animated, loading animation, 3d loader */\n.modelViewPort {\n  /* The black circle background around the model*/\n  perspective: 2000rpx;\n  width: 20rem;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #000;\n  overflow: hidden;\n}\n.eva {\n  --EVA-ROTATION-DURATION: 4s;\n  transform-style: preserve-3d;\n  animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;\n}\n.head {\n  position: relative;\n  width: 6rem;\n  height: 4rem;\n  border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;\n  background: linear-gradient(to right, white 45%, gray);\n}\n.eyeChamber {\n  width: 4.5rem;\n  height: 2.75rem;\n  position: relative;\n  left: 50%;\n  top: 55%;\n  border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;\n  background-color: #0c203c;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 4rpx 4rpx white, inset 0rpx 0rpx 0rpx 4rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(-50%, -50%);\n  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;\n}\n.eye {\n  width: 1.2rem;\n  height: 1.5rem;\n  position: absolute;\n  border-radius: 50%;\n}\n.eye:first-child {\n  left: 24rpx;\n  top: 50%;\n  background: repeating-linear-gradient(\n    65deg,\n    #9bdaeb 0rpx,\n    #9bdaeb 2rpx,\n    white 4rpx\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 10rpx #04b8d5, 0rpx 0rpx 30rpx 2rpx #0bdaeb;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(0, -50%) rotate(-65deg);\n}\n.eye:nth-child(2) {\n  right: 24rpx;\n  top: 50%;\n  background: repeating-linear-gradient(\n    -65deg,\n    #9bdaeb 0rpx,\n    #9bdaeb 2rpx,\n    white 4rpx\n  );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 10rpx #04b8d5, 0rpx 0rpx 30rpx 2rpx #0bdaeb;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(0, -50%) rotate(65deg);\n}\n.body {\n  width: 6rem;\n  height: 8rem;\n  position: relative;\n  margin-block-start: 0.25rem;\n  border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;\n  background: linear-gradient(to right, white 35%, gray);\n}\n.hand {\n  position: absolute;\n  left: -1.5rem;\n  top: 0.75rem;\n  width: 2rem;\n  height: 5.5rem;\n  border-radius: 40%;\n  background: linear-gradient(to left, white 15%, gray);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 0rpx 10rpx rgba(0, 0, 0, 0.25);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotateY(55deg) rotateZ(10deg);\n}\n.hand:first-child {\n  animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite\n    alternate;\n}\n.hand:nth-child(2) {\n  left: 92%;\n  background: linear-gradient(to right, white 15%, gray);\n  transform: rotateY(55deg) rotateZ(-10deg);\n  animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear\n    infinite alternate;\n}\n.scannerThing {\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 60%;\n  top: 10%;\n  border-top: 360rpx solid #9bdaeb;\n  border-left: 500rpx solid transparent;\n  border-right: 500rpx solid transparent;\n  transform-origin: top left;\n  \n  animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;\n}\n.scannerOrigin {\n  position: absolute;\n  width: 16rpx;\n  aspect-ratio: 1;\n  border-radius: 50%;\n  left: 60%;\n  top: 10%;\n  background: #9bdaeb;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 10rpx rgba(0, 0, 0, 0.5);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;\n}\n@keyframes rotateRight {\n  from {\n    transform: rotateY(0deg);\n  }\n  to {\n    transform: rotateY(25deg);\n  }\n}\n@keyframes moveRight {\n  from {\n    transform: translate(-50%, -50%);\n  }\n  to {\n    transform: translate(-40%, -50%);\n  }\n}\n@keyframes compensateRotation {\n  from {\n    transform: rotateY(55deg) rotateZ(10deg);\n  }\n  to {\n    transform: rotatey(30deg) rotateZ(10deg);\n  }\n}\n@keyframes compensateRotationRight {\n  from {\n    transform: rotateY(55deg) rotateZ(-10deg);\n  }\n  to {\n    transform: rotateY(70deg) rotateZ(-10deg);\n  }\n}\n@keyframes glow {\n  from {\n    opacity: 0;\n  }\n  20% {\n    opacity: 1;\n  }\n  45% {\n    transform: rotate(-25deg);\n  }\n  75% {\n    transform: rotate(5deg);\n  }\n  100% {\n    opacity: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyPoliteNewt9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4288,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.627Z",
+  "updated_at": "2025-07-31T07:55:40.627Z"
+}

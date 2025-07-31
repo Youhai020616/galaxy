@@ -1,0 +1,104 @@
+{
+  "id": "Uncannypotato69_loud-cow-23",
+  "name": "loud-cow-23",
+  "category": "buttons",
+  "author": "Uncannypotato69",
+  "description": "loud-cow-23 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"flex h-fit w-fit items-center justify-center gap-[0.5em] rounded-full bg-[#c60808] px-[2em] py-[1em] text-white shadow-[inset_0px_-4px_4px_0px_#f05b5b,0px_0px_0px_2px_#f9d1d1,0px_4px_0px_0px_#A60000] duration-[250ms] hover:translate-y-[0.25em] active:translate-y-[0.5em] active:shadow-[inset_0px_-4px_4px_0px_#f05b5b,0px_0px_0px_2px_#f9d1d1]\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"h-[1.5em] w-[1.5em]\">\n    <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n    <g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g>\n    <g id=\"SVGRepo_iconCarrier\">\n      <circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#fff\" stroke-width=\"1.5\"></circle>\n      <path d=\"M9 17C9.85038 16.3697 10.8846 16 12 16C13.1154 16 14.1496 16.3697 15 17\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n      <ellipse cx=\"15\" cy=\"10.5\" rx=\"1\" ry=\"1.5\" fill=\"#fff\"></ellipse>\n      <ellipse cx=\"9\" cy=\"10.5\" rx=\"1\" ry=\"1.5\" fill=\"#fff\"></ellipse>\n    </g>\n  </svg>\n  <p class=\"[text-shadow:0px_1px_1px_0px_#950000]\">Delete Account</p>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/Uncannypotato69_loud-cow-23.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"flex h-fit w-fit items-center justify-center gap-[0.5em] rounded-full bg-[#c60808] px-[2em] py-[1em] text-white shadow-[inset_0px_-4px_4px_0px_#f05b5b,0px_0px_0px_2px_#f9d1d1,0px_4px_0px_0px_#A60000] duration-[250ms] hover:translate-y-[0.25em] active:translate-y-[0.5em] active:shadow-[inset_0px_-4px_4px_0px_#f05b5b,0px_0px_0px_2px_#f9d1d1]\"></button>\n  <view viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"h-[1.5em] w-[1.5em]\"></view>\n    <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n    <g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g>\n    <g id=\"SVGRepo_iconCarrier\">\n      <circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#fff\" stroke-width=\"1.5\"></circle>\n      <path d=\"M9 17C9.85038 16.3697 10.8846 16 12 16C13.1154 16 14.1496 16.3697 15 17\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n      <ellipse cx=\"15\" cy=\"10.5\" rx=\"1\" ry=\"1.5\" fill=\"#fff\"></ellipse>\n      <ellipse cx=\"9\" cy=\"10.5\" rx=\"1\" ry=\"1.5\" fill=\"#fff\"></ellipse>\n    </g>\n  </svg>\n  <text class=\"[text-shadow:0px_1px_1px_0px_#950000]\">Delete Account</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLoudCow23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyLoudCow23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1112,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.061Z",
+  "updated_at": "2025-07-31T07:55:35.061Z"
+}

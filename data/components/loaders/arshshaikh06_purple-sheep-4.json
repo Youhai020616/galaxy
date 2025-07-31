@@ -1,0 +1,88 @@
+{
+  "id": "arshshaikh06_purple-sheep-4",
+  "name": "purple-sheep-4",
+  "category": "loaders",
+  "author": "arshshaikh06",
+  "description": "purple-sheep-4 组件 (loader, dark, shimmer, animation, gradient)",
+  "tags": [
+    "loader",
+    "dark",
+    "shimmer",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div id=\"container\">\n  <div id=\"square\" class=\"shimmer\"></div>\n  <div id=\"content\">\n    <div id=\"content-title\" class=\"shimmer\"></div>\n    <div id=\"content-desc\">\n      <div class=\"line shimmer\"></div>\n      <div class=\"line shimmer\"></div>\n      <div class=\"line shimmer\"></div>\n      <div class=\"line shimmer\"></div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by arshshaikh06 - Source: https://codepen.io/arsh-shaikh/pen/JjEQYmW - Tags: loader, dark, shimmer */\n.shimmer {\n  position: relative;\n  background: #3a3a3a;\n  background-image: linear-gradient(to right, #3a3a3a 0%, #3f3f3f 10%, #4a4a4a 20%, #3f3f3f 30%, #3a3a3a 50%, #3a3a3a 100%);\n  background-repeat: no-repeat;\n  background-size: 800px 200px;\n  -webkit-animation-duration: 1s;\n  -webkit-animation-fill-mode: forwards;\n  -webkit-animation-iteration-count: infinite;\n  -webkit-animation-name: shimmer;\n  -webkit-animation-timing-function: ease-in-out;\n}\n\n@-webkit-keyframes shimmer {\n  0% {\n    background-position: -400px 0;\n  }\n\n  100% {\n    background-position: 400px 0;\n  }\n}\n\n#container {\n  width: 400px;\n  height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#square {\n  width: 135px;\n  height: 135px;\n}\n\n#content {\n  flex: 1;\n  height: 150px;\n  width: 100%;\n  padding: 0.5rem 1rem 0 1rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: flex-end;\n}\n\n#content-title {\n  width: 100%;\n  height: 30px;\n  margin-bottom: 1rem;\n}\n\n#content-desc {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: flex-end;\n}\n\n.line {\n  width: 100%;\n  height: 10px;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/arshshaikh06_purple-sheep-4.html"
+  },
+  "uniapp": {
+    "template": "<view id=\"container\"></view>\n  <view id=\"square\" class=\"shimmer\"></view>\n  <view id=\"content\"></view>\n    <view id=\"content-title\" class=\"shimmer\"></view>\n    <view id=\"content-desc\"></view>\n      <view class=\"line shimmer\"></view>\n      <view class=\"line shimmer\"></view>\n      <view class=\"line shimmer\"></view>\n      <view class=\"line shimmer\"></view>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPurpleSheep4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by arshshaikh06 - Source: https://codepen.io/arsh-shaikh/pen/JjEQYmW - Tags: loader, dark, shimmer */\n.shimmer {\n  position: relative;\n  background: #3a3a3a;\n  background-image: linear-gradient(to right, #3a3a3a 0%, #3f3f3f 10%, #4a4a4a 20%, #3f3f3f 30%, #3a3a3a 50%, #3a3a3a 100%);\n  background-repeat: no-repeat;\n  background-size: 1600rpx 400rpx;\n  -webkit-animation-duration: 1s;\n  -webkit-animation-fill-mode: forwards;\n  -webkit-animation-iteration-count: infinite;\n  -webkit-animation-name: shimmer;\n  -webkit-animation-timing-function: ease-in-out;\n}\n\n@-webkit-keyframes shimmer {\n  0% {\n    background-position: -800rpx 0;\n  }\n\n  100% {\n    background-position: 800rpx 0;\n  }\n}\n\n#container {\n  width: 800rpx;\n  height: 400rpx;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#square {\n  width: 270rpx;\n  height: 270rpx;\n}\n\n#content {\n  flex: 1;\n  height: 300rpx;\n  width: 100%;\n  padding: 0.5rem 1rem 0 1rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: flex-end;\n}\n\n#content-title {\n  width: 100%;\n  height: 60rpx;\n  margin-bottom: 1rem;\n}\n\n#content-desc {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: flex-end;\n}\n\n.line {\n  width: 100%;\n  height: 20rpx;\n}\n",
+    "component_name": "GalaxyPurpleSheep4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1668,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.971Z",
+  "updated_at": "2025-07-31T07:55:40.971Z"
+}

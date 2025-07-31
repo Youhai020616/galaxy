@@ -1,0 +1,89 @@
+{
+  "id": "david-mohseni_breezy-penguin-47",
+  "name": "breezy-penguin-47",
+  "category": "loaders",
+  "author": "david-mohseni",
+  "description": "breezy-penguin-47 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"arrow\">\n    <span></span>\n    <span></span>\n    <span></span>\n</div>",
+    "css": "/* From Uiverse.io by david-mohseni - Tags: loader */\n.arrow {\n  transform: rotate(90deg);\n  cursor: pointer;\n}\n\n.arrow span {\n  display: block;\n  width: 15px;\n  height: 15px;\n  border-bottom: 5px solid red;\n  border-right: 5px solid red;\n  transform: rotate(45deg);\n  margin: -15px;\n  animation: animate28797 2s infinite;\n}\n\n.arrow span:nth-child(2) {\n  animation-delay: -0.2s;\n}\n\n.arrow span:nth-child(3) {\n  animation-delay: -0.4s;\n}\n\n@keyframes animate28797 {\n  0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/david-mohseni_breezy-penguin-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"arrow\"></view>\n    <text></text>\n    <text></text>\n    <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBreezyPenguin47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by david-mohseni - Tags: loader */\n.arrow {\n  transform: rotate(90deg);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.arrow span {\n  display: block;\n  width: 30rpx;\n  height: 30rpx;\n  border-bottom: 10rpx solid red;\n  border-right: 10rpx solid red;\n  transform: rotate(45deg);\n  margin: -30rpx;\n  animation: animate28797 2s infinite;\n}\n\n.arrow span:nth-child(2) {\n  animation-delay: -0.2s;\n}\n\n.arrow span:nth-child(3) {\n  animation-delay: -0.4s;\n}\n\n@keyframes animate28797 {\n  0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-40rpx, -40rpx);\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(40rpx, 40rpx);\n  }\n}\n",
+    "component_name": "GalaxyBreezyPenguin47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 741,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.219Z",
+  "updated_at": "2025-07-31T07:55:41.219Z"
+}

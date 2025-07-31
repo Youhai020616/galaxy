@@ -1,0 +1,85 @@
+{
+  "id": "G4b413l_big-bulldog-8",
+  "name": "big-bulldog-8",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "big-bulldog-8 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"chaotic-orbit\"></div>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader */\n.chaotic-orbit {\n --uib-size: 25px;\n --uib-speed: 1.5s;\n --uib-color: black;\n position: relative;\n display: flex;\n align-items: center;\n justify-content: center;\n height: var(--uib-size);\n width: var(--uib-size);\n animation: rotate936 calc(var(--uib-speed) * 1.667) infinite linear;\n}\n\n.chaotic-orbit::before,\n.chaotic-orbit::after {\n content: '';\n position: absolute;\n height: 60%;\n width: 60%;\n border-radius: 50%;\n background-color: var(--uib-color);\n will-change: transform;\n flex-shrink: 0;\n}\n\n.chaotic-orbit::before {\n animation: orbit var(--uib-speed) linear infinite;\n}\n\n.chaotic-orbit::after {\n animation: orbit var(--uib-speed) linear calc(var(--uib-speed) / -2)\n    infinite;\n}\n\n@keyframes rotate936 {\n 0% {\n  transform: rotate(0deg);\n }\n\n 100% {\n  transform: rotate(360deg);\n }\n}\n\n@keyframes orbit {\n 0% {\n  transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);\n  opacity: 0.65;\n }\n\n 5% {\n  transform: translate(calc(var(--uib-size) * 0.4)) scale(0.684208);\n  opacity: 0.58;\n }\n\n 10% {\n  transform: translate(calc(var(--uib-size) * 0.3)) scale(0.631576);\n  opacity: 0.51;\n }\n\n 15% {\n  transform: translate(calc(var(--uib-size) * 0.2)) scale(0.578944);\n  opacity: 0.44;\n }\n\n 20% {\n  transform: translate(calc(var(--uib-size) * 0.1)) scale(0.526312);\n  opacity: 0.37;\n }\n\n 25% {\n  transform: translate(0%) scale(0.47368);\n  opacity: 0.3;\n }\n\n 30% {\n  transform: translate(calc(var(--uib-size) * -0.1)) scale(0.526312);\n  opacity: 0.37;\n }\n\n 35% {\n  transform: translate(calc(var(--uib-size) * -0.2)) scale(0.578944);\n  opacity: 0.44;\n }\n\n 40% {\n  transform: translate(calc(var(--uib-size) * -0.3)) scale(0.631576);\n  opacity: 0.51;\n }\n\n 45% {\n  transform: translate(calc(var(--uib-size) * -0.4)) scale(0.684208);\n  opacity: 0.58;\n }\n\n 50% {\n  transform: translate(calc(var(--uib-size) * -0.5)) scale(0.73684);\n  opacity: 0.65;\n }\n\n 55% {\n  transform: translate(calc(var(--uib-size) * -0.4)) scale(0.789472);\n  opacity: 0.72;\n }\n\n 60% {\n  transform: translate(calc(var(--uib-size) * -0.3)) scale(0.842104);\n  opacity: 0.79;\n }\n\n 65% {\n  transform: translate(calc(var(--uib-size) * -0.2)) scale(0.894736);\n  opacity: 0.86;\n }\n\n 70% {\n  transform: translate(calc(var(--uib-size) * -0.1)) scale(0.947368);\n  opacity: 0.93;\n }\n\n 75% {\n  transform: translate(0%) scale(1);\n  opacity: 1;\n }\n\n 80% {\n  transform: translate(calc(var(--uib-size) * 0.1)) scale(0.947368);\n  opacity: 0.93;\n }\n\n 85% {\n  transform: translate(calc(var(--uib-size) * 0.2)) scale(0.894736);\n  opacity: 0.86;\n }\n\n 90% {\n  transform: translate(calc(var(--uib-size) * 0.3)) scale(0.842104);\n  opacity: 0.79;\n }\n\n 95% {\n  transform: translate(calc(var(--uib-size) * 0.4)) scale(0.789472);\n  opacity: 0.72;\n }\n\n 100% {\n  transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);\n  opacity: 0.65;\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_big-bulldog-8.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"chaotic-orbit\"></view>",
+    "script": "export default {\n  name: 'GalaxyBigBulldog8',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader */\n.chaotic-orbit {\n --uib-size: 50rpx;\n --uib-speed: 1.5s;\n --uib-color: black;\n position: relative;\n display: flex;\n align-items: center;\n justify-content: center;\n height: var(--uib-size);\n width: var(--uib-size);\n animation: rotate936 calc(var(--uib-speed) * 1.667) infinite linear;\n}\n\n.chaotic-orbit::before,\n.chaotic-orbit::after {\n content: '';\n position: absolute;\n height: 60%;\n width: 60%;\n border-radius: 50%;\n background-color: var(--uib-color);\n will-change: transform;\n flex-shrink: 0;\n}\n\n.chaotic-orbit::before {\n animation: orbit var(--uib-speed) linear infinite;\n}\n\n.chaotic-orbit::after {\n animation: orbit var(--uib-speed) linear calc(var(--uib-speed) / -2)\n    infinite;\n}\n\n@keyframes rotate936 {\n 0% {\n  transform: rotate(0deg);\n }\n\n 100% {\n  transform: rotate(360deg);\n }\n}\n\n@keyframes orbit {\n 0% {\n  transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);\n  opacity: 0.65;\n }\n\n 5% {\n  transform: translate(calc(var(--uib-size) * 0.4)) scale(0.684208);\n  opacity: 0.58;\n }\n\n 10% {\n  transform: translate(calc(var(--uib-size) * 0.3)) scale(0.631576);\n  opacity: 0.51;\n }\n\n 15% {\n  transform: translate(calc(var(--uib-size) * 0.2)) scale(0.578944);\n  opacity: 0.44;\n }\n\n 20% {\n  transform: translate(calc(var(--uib-size) * 0.1)) scale(0.526312);\n  opacity: 0.37;\n }\n\n 25% {\n  transform: translate(0%) scale(0.47368);\n  opacity: 0.3;\n }\n\n 30% {\n  transform: translate(calc(var(--uib-size) * -0.1)) scale(0.526312);\n  opacity: 0.37;\n }\n\n 35% {\n  transform: translate(calc(var(--uib-size) * -0.2)) scale(0.578944);\n  opacity: 0.44;\n }\n\n 40% {\n  transform: translate(calc(var(--uib-size) * -0.3)) scale(0.631576);\n  opacity: 0.51;\n }\n\n 45% {\n  transform: translate(calc(var(--uib-size) * -0.4)) scale(0.684208);\n  opacity: 0.58;\n }\n\n 50% {\n  transform: translate(calc(var(--uib-size) * -0.5)) scale(0.73684);\n  opacity: 0.65;\n }\n\n 55% {\n  transform: translate(calc(var(--uib-size) * -0.4)) scale(0.789472);\n  opacity: 0.72;\n }\n\n 60% {\n  transform: translate(calc(var(--uib-size) * -0.3)) scale(0.842104);\n  opacity: 0.79;\n }\n\n 65% {\n  transform: translate(calc(var(--uib-size) * -0.2)) scale(0.894736);\n  opacity: 0.86;\n }\n\n 70% {\n  transform: translate(calc(var(--uib-size) * -0.1)) scale(0.947368);\n  opacity: 0.93;\n }\n\n 75% {\n  transform: translate(0%) scale(1);\n  opacity: 1;\n }\n\n 80% {\n  transform: translate(calc(var(--uib-size) * 0.1)) scale(0.947368);\n  opacity: 0.93;\n }\n\n 85% {\n  transform: translate(calc(var(--uib-size) * 0.2)) scale(0.894736);\n  opacity: 0.86;\n }\n\n 90% {\n  transform: translate(calc(var(--uib-size) * 0.3)) scale(0.842104);\n  opacity: 0.79;\n }\n\n 95% {\n  transform: translate(calc(var(--uib-size) * 0.4)) scale(0.789472);\n  opacity: 0.72;\n }\n\n 100% {\n  transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);\n  opacity: 0.65;\n }\n}\n\n\n",
+    "component_name": "GalaxyBigBulldog8"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2879,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.261Z",
+  "updated_at": "2025-07-31T07:55:39.261Z"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "G27XLEO_spotty-chipmunk-84",
+  "name": "spotty-chipmunk-84",
+  "category": "loaders",
+  "author": "G27XLEO",
+  "description": "spotty-chipmunk-84 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg class=\"heart\" viewBox=\"-5 -5 278 56\" version=\"1.1\" id=\"svg5\" xmlns=\"http://www.w3.org/2000/svg\">\n  <filter>\n    <feGaussianBlur stdDeviation=\"1.6\"></feGaussianBlur>\n  </filter>\n  <g transform=\"translate(29.1 -127.42)\" id=\"layer1\">\n    <path pathLength=\"1\" d=\"M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36\" id=\"line\"></path>\n  </g>\n  <g transform=\"translate(29.1 -127.42)\" id=\"layer2\">\n    <path pathLength=\"1\" d=\"M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36\" id=\"point\" filter=\"url(#blur)\"></path>\n  </g>\n</svg>",
+    "css": "/* From Uiverse.io by G27XLEO  - Tags: loader */\n.heart #line {\n  fill: none;\n  stroke: #e00000;\n  stroke-width: 1.5;\n  stroke-linecap: butt;\n  stroke-linejoin: round;\n  stroke-miterlimit: 4;\n  stroke-opacity: 1;\n  stroke-dasharray: 1;\n  stroke-dashoffset: 1;\n  animation: dash 3s linear infinite;\n}\n.heart #point {\n  fill: none;\n  stroke: #f00000;\n  stroke-width: 5;\n  stroke-linecap: round;\n  stroke-linejoin: round;\n  stroke-miterlimit: 0.1;\n  stroke-opacity: 1;\n  stroke-dasharray: 0.0001, 0.9999;\n  stroke-dashoffset: 1;\n  animation: dash 3s linear infinite;\n}\n@keyframes dash {\n  0% {\n    stroke-dashoffset: 1;\n  }\n  80% {\n    stroke-dashoffset: 0;\n  }\n  100% {\n    stroke-dashoffset: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G27XLEO_spotty-chipmunk-84.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"heart\" viewBox=\"-5 -5 278 56\" version=\"1.1\" id=\"svg5\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n  <filter>\n    <feGaussianBlur stdDeviation=\"1.6\"></feGaussianBlur>\n  </filter>\n  <g transform=\"translate(29.1 -127.42)\" id=\"layer1\">\n    <path pathLength=\"1\" d=\"M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36\" id=\"line\"></path>\n  </g>\n  <g transform=\"translate(29.1 -127.42)\" id=\"layer2\">\n    <path pathLength=\"1\" d=\"M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36\" id=\"point\" filter=\"url(#blur)\"></path>\n  </g>\n</svg>",
+    "script": "export default {\n  name: 'GalaxySpottyChipmunk84',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G27XLEO  - Tags: loader */\n.heart #line {\n  fill: none;\n  stroke: #e00000;\n  stroke-width: 1.5;\n  stroke-linecap: butt;\n  stroke-linejoin: round;\n  stroke-miterlimit: 4;\n  stroke-opacity: 1;\n  stroke-dasharray: 1;\n  stroke-dashoffset: 1;\n  animation: dash 3s linear infinite;\n}\n.heart #point {\n  fill: none;\n  stroke: #f00000;\n  stroke-width: 5;\n  stroke-linecap: round;\n  stroke-linejoin: round;\n  stroke-miterlimit: 0.1;\n  stroke-opacity: 1;\n  stroke-dasharray: 0.0001, 0.9999;\n  stroke-dashoffset: 1;\n  animation: dash 3s linear infinite;\n}\n@keyframes dash {\n  0% {\n    stroke-dashoffset: 1;\n  }\n  80% {\n    stroke-dashoffset: 0;\n  }\n  100% {\n    stroke-dashoffset: 0;\n  }\n}\n\n",
+    "component_name": "GalaxySpottyChipmunk84"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1680,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.253Z",
+  "updated_at": "2025-07-31T07:55:39.253Z"
+}

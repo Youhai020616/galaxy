@@ -1,0 +1,89 @@
+{
+  "id": "Mhyar-nsi_lucky-chicken-20",
+  "name": "lucky-chicken-20",
+  "category": "loaders",
+  "author": "Mhyar-nsi",
+  "description": "lucky-chicken-20 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Mhyar-nsi - Tags: loader */\n.loader {\n  display: inline-block;\n  vertical-align: middle;\n  position: relative;\n  margin: 10px;\n}\n\n@keyframes loader-bubbles {\n  0% {\n    box-shadow: 0 -10px #3b82f6,\n                3px 0 #3b82f6,\n                5px 0 #3b82f6;\n  }\n\n  30% {\n    box-shadow: 3px -20px rgba(239,223,255,0),\n                5px -10px #3b82f6,\n                5px 0 #3b82f6;\n  }\n\n  60% {\n    box-shadow: 3px 0 rgba(239,223,255,0),\n                4px -20px rgba(239,223,255,0),\n                3px -10px #3b82f6;\n  }\n\n  61% {\n    box-shadow: 3px 0 #3b82f6,\n                4px -20px rgba(239,223,255,0),\n                3px -10px #3b82f6;\n  }\n\n  100% {\n    box-shadow: 0 -10px #3b82f6,\n                4px -20px rgba(239,223,255,0),\n                5px -20px rgba(239,223,255,0);\n  }\n}\n\n.loader {\n  width: 10px;\n  height: 20px;\n  margin-left: 20px;\n  margin-right: 20px;\n  background: #3b82f6;\n}\n\n.loader:before,\n.loader:after {\n  content: '';\n  position: absolute;\n}\n\n.loader:before {\n  top: -8px;\n  left: -13px;\n  width: 0;\n  height: 0;\n  border: 18px solid transparent;\n  border-bottom: 20px solid #3b82f6;\n  border-radius: 3px;\n}\n\n.loader:after {\n  top: 0;\n  left: 0;\n  width: 4px;\n  height: 4px;\n  background: #3b82f6;\n  border-radius: 50%;\n  animation: loader-bubbles 1s linear infinite forwards;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Mhyar-nsi_lucky-chicken-20.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyLuckyChicken20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Mhyar-nsi - Tags: loader */\n.loader {\n  display: inline-block;\n  vertical-align: middle;\n  position: relative;\n  margin: 20rpx;\n}\n\n@keyframes loader-bubbles {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -20rpx #3b82f6,\n                6rpx 0 #3b82f6,\n                10rpx 0 #3b82f6;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  30% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx -40rpx rgba(239,223,255,0),\n                10rpx -20rpx #3b82f6,\n                10rpx 0 #3b82f6;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  60% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 0 rgba(239,223,255,0),\n                8rpx -40rpx rgba(239,223,255,0),\n                6rpx -20rpx #3b82f6;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  61% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 6rpx 0 #3b82f6,\n                8rpx -40rpx rgba(239,223,255,0),\n                6rpx -20rpx #3b82f6;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 -20rpx #3b82f6,\n                8rpx -40rpx rgba(239,223,255,0),\n                10rpx -40rpx rgba(239,223,255,0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n.loader {\n  width: 20rpx;\n  height: 40rpx;\n  margin-left: 40rpx;\n  margin-right: 40rpx;\n  background: #3b82f6;\n}\n\n.loader:before,\n.loader:after {\n  content: '';\n  position: absolute;\n}\n\n.loader:before {\n  top: -16rpx;\n  left: -26rpx;\n  width: 0;\n  height: 0;\n  border: 36rpx solid transparent;\n  border-bottom: 40rpx solid #3b82f6;\n  border-radius: 6rpx;\n}\n\n.loader:after {\n  top: 0;\n  left: 0;\n  width: 8rpx;\n  height: 8rpx;\n  background: #3b82f6;\n  border-radius: 50%;\n  animation: loader-bubbles 1s linear infinite forwards;\n}\n",
+    "component_name": "GalaxyLuckyChicken20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1367,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.674Z",
+  "updated_at": "2025-07-31T07:55:39.674Z"
+}

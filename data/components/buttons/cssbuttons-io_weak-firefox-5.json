@@ -1,0 +1,110 @@
+{
+  "id": "cssbuttons-io_weak-firefox-5",
+  "name": "weak-firefox-5",
+  "category": "buttons",
+  "author": "cssbuttons-io",
+  "description": "weak-firefox-5 组件 (button, ripple, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "ripple",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span class=\"transition\"></span>\n  <span class=\"gradient\"></span>\n  <span class=\"label\">Button</span>\n</button>",
+    "css": "/* From Uiverse.io by cssbuttons-io - Tags: button, ripple */\nbutton {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  font-size: 17px;\n  padding: 1em 2.7em;\n  font-weight: 500;\n  background: #1F2937;\n  color: white;\n  border: none;\n  position: relative;\n  overflow: hidden;\n  border-radius: 0.6em;\n}\n\n.gradient {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 0.6em;\n  margin-top: -0.25em;\n  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));\n}\n\n.label {\n  position: relative;\n  top: -1px;\n}\n\n.transition {\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  transition-duration: 500ms;\n  background-color: rgba(16, 185, 129, 0.6);\n  border-radius: 9999px;\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n\nbutton:hover .transition {\n  width: 14em;\n  height: 14em;\n}\n\nbutton:active {\n  transform: scale(0.97);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cssbuttons-io_weak-firefox-5.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text class=\"transition\"></text>\n  <text class=\"gradient\"></text>\n  <text class=\"label\">Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWeakFirefox5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cssbuttons-io - Tags: button, ripple */\nbutton {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  font-size: 34rpx;\n  padding: 1em 2.7em;\n  font-weight: 500;\n  background: #1F2937;\n  color: white;\n  border: none;\n  position: relative;\n  overflow: hidden;\n  border-radius: 0.6em;\n}\n\n.gradient {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 0.6em;\n  margin-top: -0.25em;\n  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));\n}\n\n.label {\n  position: relative;\n  top: -2rpx;\n}\n\n.transition {\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  transition-duration: 500ms;\n  background-color: rgba(16, 185, 129, 0.6);\n  border-radius: 19998rpx;\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n\nbutton:hover .transition {\n  width: 14em;\n  height: 14em;\n}\n\nbutton:active {\n  transform: scale(0.97);\n}\n",
+    "component_name": "GalaxyWeakFirefox5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1160,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.235Z",
+  "updated_at": "2025-07-31T07:55:36.235Z"
+}

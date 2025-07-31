@@ -1,0 +1,114 @@
+{
+  "id": "KSAplay_horrible-jellyfish-30",
+  "name": "horrible-jellyfish-30",
+  "category": "buttons",
+  "author": "KSAplay",
+  "description": "horrible-jellyfish-30 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n  DOWNLOAD\n</button>",
+    "css": "/* From Uiverse.io by KSAplay - Tags: button */\n.btn {\n  padding: 0.8em 2em 0.8em 2.5em;\n  font-size: 15px;\n  font-weight: bold;\n  border-radius: 15px;\n  color: #f6fff6;\n  letter-spacing: 0.3em;\n  text-shadow: -2px 2px 5px #33fd30;\n  background-color: transparent;\n  border: 2px solid #bbfeb1;\n  box-shadow: 0 0 0px 1px #42f112,\n    0 0 10px 2px #33fd30,\n    inset 0 0 0px 1px #42f112,\n    inset 0 0 10px 2px #33fd30;\n  transition: 100ms;\n}\n\n.btn:hover {\n  box-shadow: 0 0 0px 1px #42f112,\n    0 0 10px 2px #33fd30,\n    inset 0 0 0px 1px #42f112,\n    inset 0 0 30px 2px #33fd30;\n  text-shadow: 0 0 10px #33fd30;\n  transform: translateY(-5px);\n}\n\n.btn:active {\n  box-shadow: 0 0 0px 1px #42f112,\n    0 0 25px 2px #33fd30,\n    inset 0 0 0px 1px #42f112,\n    inset 0 0 30px 2px #33fd30;\n  transform: translateY(1px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/KSAplay_horrible-jellyfish-30.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n  DOWNLOAD\n</button>",
+    "script": "export default {\n  name: 'GalaxyHorribleJellyfish30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KSAplay - Tags: button */\n.btn {\n  padding: 0.8em 2em 0.8em 2.5em;\n  font-size: 30rpx;\n  font-weight: bold;\n  border-radius: 30rpx;\n  color: #f6fff6;\n  letter-spacing: 0.3em;\n  /* #ifdef H5 */\n  text-shadow: -4rpx 4rpx 10rpx #33fd30;\n  /* #endif */\n  background-color: transparent;\n  border: 4rpx solid #bbfeb1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0rpx 2rpx #42f112,\n    0 0 20rpx 4rpx #33fd30,\n    inset 0 0 0rpx 2rpx #42f112,\n    inset 0 0 20rpx 4rpx #33fd30;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: 100ms;\n}\n\n.btn:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0rpx 2rpx #42f112,\n    0 0 20rpx 4rpx #33fd30,\n    inset 0 0 0rpx 2rpx #42f112,\n    inset 0 0 60rpx 4rpx #33fd30;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  text-shadow: 0 0 20rpx #33fd30;\n  /* #endif */\n  transform: translateY(-10rpx);\n}\n\n.btn:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0rpx 2rpx #42f112,\n    0 0 50rpx 4rpx #33fd30,\n    inset 0 0 0rpx 2rpx #42f112,\n    inset 0 0 60rpx 4rpx #33fd30;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(2rpx);\n}\n",
+    "component_name": "GalaxyHorribleJellyfish30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 860,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.645Z",
+  "updated_at": "2025-07-31T07:55:33.645Z"
+}

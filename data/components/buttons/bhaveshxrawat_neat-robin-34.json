@@ -1,0 +1,109 @@
+{
+  "id": "bhaveshxrawat_neat-robin-34",
+  "name": "neat-robin-34",
+  "category": "buttons",
+  "author": "bhaveshxrawat",
+  "description": "neat-robin-34 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button id=\"br__btn\">\n  <i id=\"br__gradient\"></i>\n  <i class=\"star\" style=\"--order: 1;\"></i>\n  <i class=\"star\" style=\"--order: 2;\"></i>\n  <i class=\"star\" style=\"--order: 3;\"></i>\n  <i class=\"star\" style=\"--order: 4;\"></i>\n  <i class=\"star\" style=\"--order: 5;\"></i>\n  <i class=\"star\" style=\"--order: 6;\"></i>\n  <i class=\"star\" style=\"--order: 7;\"></i>\n  <i class=\"star\" style=\"--order: 8;\"></i>\n  <i class=\"star\" style=\"--order: 9;\"></i>\n  <span class=\"txt\">Explore</span>\n</button>",
+    "css": "/* From Uiverse.io by bhaveshxrawat - Tags: button */\n#br__btn {\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 1.188rem;\n  padding: .625em 1.25em;\n  position: relative;\n  overflow: hidden;\n  border-radius: .75em;\n  border: 0;\n  color: #fff;\n  --degPrimary: 100.98deg;\n}\n\n#br__gradient {\n  position: absolute;\n  background: conic-gradient(from var(--degPrimary) at 50% 50%, #0E6CB9 -14.31deg, rgba(251, 251, 251, 0.5) 4.98deg, #1F1F1F 90.36deg, #FFFFFF 97.67deg, #151250 288.5deg, #401C73 315.27deg, #0E6CB9 345.69deg, rgba(251, 251, 251, 0.5) 364.98deg);\n  aspect-ratio: 1 / 1;\n  width: 220%;\n  bottom: -320%;\n  left: -110%;\n  border-radius: 50%;\n  z-index: 0;\n  user-select: none;\n  transition: transform 0.5s ease-in;\n}\n\n#br__btn:hover i {\n  transform: rotate(-105deg);\n}\n\n#br__btn:hover span {\n  transform: scale(0.62);\n  transition: 3s ease-in-out;\n}\n\n.star {\n  width: 1px;\n  height: 1px;\n  background-color: white;\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  visibility: hidden;\n}\n\n.star:not(:hover) {\n  transition-duration: 0s;\n}\n\n.star:nth-child(2) {\n  right: 25%;\n}\n\n.star:nth-child(3) {\n  right: 60%;\n}\n\n.star:nth-child(4) {\n  right: 11%;\n}\n\n.star:nth-child(5) {\n  right: 22%;\n}\n\n.star:nth-child(6) {\n  right: 42%;\n}\n\n.star:nth-child(7) {\n  right: 62%;\n}\n\n.star:nth-child(8) {\n  right: 12%;\n}\n\n.star:nth-child(9) {\n  right: 82%;\n}\n\n#br__btn:hover .star {\n  visibility: visible;\n  top: calc(5px * var(--order)/2);\n  transition: top 1s ease-in 2s, 2s visibility ease-in 2s;\n}\n\n#br__btn:not(:hover) .txt {\n  transition-delay: 0.3s;\n  transition-duration: 0.5s;\n}\n\n.txt {\n  position: relative;\n  display: block;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/bhaveshxrawat_neat-robin-34.html"
+  },
+  "uniapp": {
+    "template": "<button id=\"br__btn\"></button>\n  <i id=\"br__gradient\"></i>\n  <i class=\"star\" style=\"--order: 1;\"></i>\n  <i class=\"star\" style=\"--order: 2;\"></i>\n  <i class=\"star\" style=\"--order: 3;\"></i>\n  <i class=\"star\" style=\"--order: 4;\"></i>\n  <i class=\"star\" style=\"--order: 5;\"></i>\n  <i class=\"star\" style=\"--order: 6;\"></i>\n  <i class=\"star\" style=\"--order: 7;\"></i>\n  <i class=\"star\" style=\"--order: 8;\"></i>\n  <i class=\"star\" style=\"--order: 9;\"></i>\n  <text class=\"txt\">Explore</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyNeatRobin34',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bhaveshxrawat - Tags: button */\n#br__btn {\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 1.188rem;\n  padding: .625em 1.25em;\n  position: relative;\n  overflow: hidden;\n  border-radius: .75em;\n  border: 0;\n  color: #fff;\n  --degPrimary: 100.98deg;\n}\n\n#br__gradient {\n  position: absolute;\n  background: conic-gradient(from var(--degPrimary) at 50% 50%, #0E6CB9 -14.31deg, rgba(251, 251, 251, 0.5) 4.98deg, #1F1F1F 90.36deg, #FFFFFF 97.67deg, #151250 288.5deg, #401C73 315.27deg, #0E6CB9 345.69deg, rgba(251, 251, 251, 0.5) 364.98deg);\n  aspect-ratio: 1 / 1;\n  width: 220%;\n  bottom: -320%;\n  left: -110%;\n  border-radius: 50%;\n  z-index: 0;\n  user-select: none;\n  transition: transform 0.5s ease-in;\n}\n\n#br__btn:hover i {\n  transform: rotate(-105deg);\n}\n\n#br__btn:hover span {\n  transform: scale(0.62);\n  transition: 3s ease-in-out;\n}\n\n.star {\n  width: 2rpx;\n  height: 2rpx;\n  background-color: white;\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  visibility: hidden;\n}\n\n.star:not(:hover) {\n  transition-duration: 0s;\n}\n\n.star:nth-child(2) {\n  right: 25%;\n}\n\n.star:nth-child(3) {\n  right: 60%;\n}\n\n.star:nth-child(4) {\n  right: 11%;\n}\n\n.star:nth-child(5) {\n  right: 22%;\n}\n\n.star:nth-child(6) {\n  right: 42%;\n}\n\n.star:nth-child(7) {\n  right: 62%;\n}\n\n.star:nth-child(8) {\n  right: 12%;\n}\n\n.star:nth-child(9) {\n  right: 82%;\n}\n\n#br__btn:hover .star {\n  visibility: visible;\n  top: calc(10rpx * var(--order)/2);\n  transition: top 1s ease-in 2s, 2s visibility ease-in 2s;\n}\n\n#br__btn:not(:hover) .txt {\n  transition-delay: 0.3s;\n  transition-duration: 0.5s;\n}\n\n.txt {\n  position: relative;\n  display: block;\n}\n",
+    "component_name": "GalaxyNeatRobin34"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2134,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.967Z",
+  "updated_at": "2025-07-31T07:55:35.967Z"
+}

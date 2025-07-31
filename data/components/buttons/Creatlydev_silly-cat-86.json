@@ -1,0 +1,110 @@
+{
+  "id": "Creatlydev_silly-cat-86",
+  "name": "silly-cat-86",
+  "category": "buttons",
+  "author": "Creatlydev",
+  "description": "silly-cat-86 组件 (button, hover effect, hover button, animation, interactive)",
+  "tags": [
+    "button",
+    "hover effect",
+    "hover button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a style=\"--clr: #7808d0\" class=\"button\" href=\"#\">\n            <span class=\"button__icon-wrapper\">\n                <svg width=\"10\" class=\"button__icon-svg\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 14 15\">\n                    <path fill=\"currentColor\" d=\"M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z\"></path>\n                </svg>\n                \n                <svg class=\"button__icon-svg  button__icon-svg--copy\" xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" fill=\"none\" viewBox=\"0 0 14 15\">\n                    <path fill=\"currentColor\" d=\"M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z\"></path>\n                </svg>\n            </span>\n            Explore All\n        </a>",
+    "css": "/* From Uiverse.io by Creatlydev - Tags: button, hover effect, hover button */\n.button {\n  line-height: 1;\n  text-decoration: none;\n  display: inline-flex;\n  align-items: center;\n  gap: .75rem;\n  background-color: var(--clr);\n  color: #fff;\n  border-radius: 10rem;\n  font-weight: 600;\n  padding: .75rem 1.5rem;\n  padding-left: 20px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: background-color .3s;\n}\n\n.button__icon-wrapper {\n  flex-shrink: 0;\n  width: 25px;\n  height: 25px;\n  position: relative;\n  color: var(--clr);\n  background-color: #fff;\n  border-radius: 50%;\n  display: grid;\n  place-items: center;\n  overflow: hidden;\n}\n\n.button:hover {\n  background-color: #000;\n}\n\n.button:hover .button__icon-wrapper {\n  color: #000;\n}\n\n.button__icon-svg--copy {\n  position: absolute;\n  transform: translate(-150%, 150%);\n}\n\n.button:hover .button__icon-svg:first-child {\n  transition: transform .3s ease-in-out;\n  transform: translate(150%, -150%);\n}\n\n.button:hover .button__icon-svg--copy {\n  transition: transform .3s ease-in-out .1s;\n  transform: translate(0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Creatlydev_silly-cat-86.html"
+  },
+  "uniapp": {
+    "template": "<navigator style=\"--clr: #7808d0\" class=\"button\" href=\"#\"></navigator>\n            <text class=\"button__icon-wrapper\"></text>\n                <view width=\"10\" class=\"button__icon-svg\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 14 15\"></view>\n                    <path fill=\"currentColor\" d=\"M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z\"></path>\n                </svg>\n                \n                <view class=\"button__icon-svg  button__icon-svg--copy\" xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" fill=\"none\" viewBox=\"0 0 14 15\"></view>\n                    <path fill=\"currentColor\" d=\"M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z\"></path>\n                </svg>\n            </span>\n            Explore All\n        </a>",
+    "script": "export default {\n  name: 'GalaxySillyCat86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Creatlydev - Tags: button, hover effect, hover button */\n.button {\n  line-height: 1;\n  text-decoration: none;\n  display: inline-flex;\n  align-items: center;\n  gap: .75rem;\n  background-color: var(--clr);\n  color: #fff;\n  border-radius: 10rem;\n  font-weight: 600;\n  padding: .75rem 1.5rem;\n  padding-left: 40rpx;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: background-color .3s;\n}\n\n.button__icon-wrapper {\n  flex-shrink: 0;\n  width: 50rpx;\n  height: 50rpx;\n  position: relative;\n  color: var(--clr);\n  background-color: #fff;\n  border-radius: 50%;\n  display: grid;\n  place-items: center;\n  overflow: hidden;\n}\n\n.button:hover {\n  background-color: #000;\n}\n\n.button:hover .button__icon-wrapper {\n  color: #000;\n}\n\n.button__icon-svg--copy {\n  position: absolute;\n  transform: translate(-150%, 150%);\n}\n\n.button:hover .button__icon-svg:first-child {\n  transition: transform .3s ease-in-out;\n  transform: translate(150%, -150%);\n}\n\n.button:hover .button__icon-svg--copy {\n  transition: transform .3s ease-in-out .1s;\n  transform: translate(0);\n}\n",
+    "component_name": "GalaxySillyCat86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1932,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.015Z",
+  "updated_at": "2025-07-31T07:55:33.015Z"
+}

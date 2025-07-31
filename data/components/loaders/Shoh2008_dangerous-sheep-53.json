@@ -1,0 +1,85 @@
+{
+  "id": "Shoh2008_dangerous-sheep-53",
+  "name": "dangerous-sheep-53",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "dangerous-sheep-53 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  display: block;\n  position: relative;\n  height: 32px;\n  width: 140px;\n  border: 3px solid #fff;\n  border-radius: 20px;\n  box-sizing: border-box;\n  animation: balancing 2s linear infinite alternate;\n  transform-origin: center center;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  width: 52px;\n  height: 26px;\n  border-radius: 20px;\n  background: gold;\n  animation: ballbns 2s linear infinite alternate;\n}\n\n@keyframes ballbns {\n  0% {\n    left: 0;\n    transform: translateX(0%);\n  }\n\n  100% {\n    left: 100%;\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes balancing {\n  0% {\n    transform: rotate(-25deg);\n  }\n\n  50% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(25deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_dangerous-sheep-53.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyDangerousSheep53',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  display: block;\n  position: relative;\n  height: 64rpx;\n  width: 280rpx;\n  border: 6rpx solid #fff;\n  border-radius: 40rpx;\n  box-sizing: border-box;\n  animation: balancing 2s linear infinite alternate;\n  transform-origin: center center;\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  width: 104rpx;\n  height: 52rpx;\n  border-radius: 40rpx;\n  background: gold;\n  animation: ballbns 2s linear infinite alternate;\n}\n\n@keyframes ballbns {\n  0% {\n    left: 0;\n    transform: translateX(0%);\n  }\n\n  100% {\n    left: 100%;\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes balancing {\n  0% {\n    transform: rotate(-25deg);\n  }\n\n  50% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(25deg);\n  }\n}\n  \n",
+    "component_name": "GalaxyDangerousSheep53"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 831,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.343Z",
+  "updated_at": "2025-07-31T07:55:40.343Z"
+}

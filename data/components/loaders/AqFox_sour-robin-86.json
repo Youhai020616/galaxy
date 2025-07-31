@@ -1,0 +1,85 @@
+{
+  "id": "AqFox_sour-robin-86",
+  "name": "sour-robin-86",
+  "category": "loaders",
+  "author": "AqFox",
+  "description": "sour-robin-86 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n</div>",
+    "css": "/* From Uiverse.io by AqFox - Tags: loader */\n.spinner {\n position: relative;\n width: 16px;\n height: 16px;\n}\n\n.spinner div {\n width: 100%;\n height: 100%;\n background-color: #004dff;\n border-radius: 50%;\n animation: spinner-4t3wzl 1.25s infinite backwards;\n}\n\n.spinner div:nth-child(1) {\n animation-delay: 0.15s;\n background-color: rgba(0,77,255,0.9);\n}\n\n.spinner div:nth-child(2) {\n animation-delay: 0.3s;\n background-color: rgba(0,77,255,0.8);\n}\n\n.spinner div:nth-child(3) {\n animation-delay: 0.45s;\n background-color: rgba(0,77,255,0.7);\n}\n\n.spinner div:nth-child(4) {\n animation-delay: 0.6s;\n background-color: rgba(0,77,255,0.6);\n}\n\n.spinner div:nth-child(5) {\n animation-delay: 0.75s;\n background-color: rgba(0,77,255,0.5);\n}\n\n@keyframes spinner-4t3wzl {\n 0% {\n  transform: rotate(0deg) translateY(-200%);\n }\n\n 60%, 100% {\n  transform: rotate(360deg) translateY(-200%);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/AqFox_sour-robin-86.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySourRobin86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AqFox - Tags: loader */\n.spinner {\n position: relative;\n width: 32rpx;\n height: 32rpx;\n}\n\n.spinner div {\n width: 100%;\n height: 100%;\n background-color: #004dff;\n border-radius: 50%;\n animation: spinner-4t3wzl 1.25s infinite backwards;\n}\n\n.spinner div:nth-child(1) {\n animation-delay: 0.15s;\n background-color: rgba(0,77,255,0.9);\n}\n\n.spinner div:nth-child(2) {\n animation-delay: 0.3s;\n background-color: rgba(0,77,255,0.8);\n}\n\n.spinner div:nth-child(3) {\n animation-delay: 0.45s;\n background-color: rgba(0,77,255,0.7);\n}\n\n.spinner div:nth-child(4) {\n animation-delay: 0.6s;\n background-color: rgba(0,77,255,0.6);\n}\n\n.spinner div:nth-child(5) {\n animation-delay: 0.75s;\n background-color: rgba(0,77,255,0.5);\n}\n\n@keyframes spinner-4t3wzl {\n 0% {\n  transform: rotate(0deg) translateY(-200%);\n }\n\n 60%, 100% {\n  transform: rotate(360deg) translateY(-200%);\n }\n}\n",
+    "component_name": "GalaxySourRobin86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 971,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.941Z",
+  "updated_at": "2025-07-31T07:55:38.941Z"
+}

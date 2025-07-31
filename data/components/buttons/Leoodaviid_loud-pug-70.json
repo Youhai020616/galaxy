@@ -1,0 +1,113 @@
+{
+  "id": "Leoodaviid_loud-pug-70",
+  "name": "loud-pug-70",
+  "category": "buttons",
+  "author": "Leoodaviid",
+  "description": "loud-pug-70 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"loading\">\n  <p>Loading...</p>\n</button>",
+    "css": "/* From Uiverse.io by Leoodaviid - Tags: button */\nbutton {\n  position: relative;\n  overflow: hidden;\n  padding: 1rem 2.5rem 1rem 2.5rem;\n  border: 0;\n  border-radius: 2rem;\n  font-size: 18px;\n  font-weight: 500;\n  background: transparent;\n  color: #1d1d1d;\n}\n\nbutton:hover {\n  cursor: wait;\n}\n\nbutton > p {\n  position: relative;\n  z-index: 3;\n}\n\nbutton::before,\nbutton::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 300%;\n  height: 100%;\n  opacity: 0;\n}\n\nbutton::before {\n  background: #79efff repeating-linear-gradient(50deg, transparent, transparent 10px, #71e0ef 10px, #71e0ef 20px);\n}\n\nbutton::after {\n  z-index: 2;\n  background: linear-gradient(#79efff 30%, transparent 100%);\n}\n\nbutton.loading::before,\nbutton.loading::after {\n  opacity: 1;\n}\n\n@keyframes loading_49100 {\n  0% {\n    translate: 25px 0;\n  }\n\n  100% {\n    translate: -30px 0;\n  }\n}\n\nbutton.loading::before {\n  animation: loading_49100 0.6s infinite linear;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Leoodaviid_loud-pug-70.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"loading\"></button>\n  <text>Loading...</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLoudPug70',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Leoodaviid - Tags: button */\nbutton {\n  position: relative;\n  overflow: hidden;\n  padding: 1rem 2.5rem 1rem 2.5rem;\n  border: 0;\n  border-radius: 2rem;\n  font-size: 36rpx;\n  font-weight: 500;\n  background: transparent;\n  color: #1d1d1d;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  cursor: wait;\n  /* #endif */\n}\n\nbutton > p {\n  position: relative;\n  z-index: 3;\n}\n\nbutton::before,\nbutton::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 300%;\n  height: 100%;\n  opacity: 0;\n}\n\nbutton::before {\n  background: #79efff repeating-linear-gradient(50deg, transparent, transparent 20rpx, #71e0ef 20rpx, #71e0ef 40rpx);\n}\n\nbutton::after {\n  z-index: 2;\n  background: linear-gradient(#79efff 30%, transparent 100%);\n}\n\nbutton.loading::before,\nbutton.loading::after {\n  opacity: 1;\n}\n\n@keyframes loading_49100 {\n  0% {\n    translate: 50rpx 0;\n  }\n\n  100% {\n    translate: -60rpx 0;\n  }\n}\n\nbutton.loading::before {\n  animation: loading_49100 0.6s infinite linear;\n}\n",
+    "component_name": "GalaxyLoudPug70"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1019,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.797Z",
+  "updated_at": "2025-07-31T07:55:33.797Z"
+}

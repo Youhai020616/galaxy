@@ -1,0 +1,86 @@
+{
+  "id": "SelfMadeSystem_black-yak-68",
+  "name": "black-yak-68",
+  "category": "loaders",
+  "author": "SelfMadeSystem",
+  "description": "black-yak-68 组件 (loader, windows, animation)",
+  "tags": [
+    "loader",
+    "windows",
+    "animation"
+  ],
+  "original": {
+    "html": "<div style=\"--size: 64px; --dot-size: 6px; --dot-count: 6; --color: #fff; --speed: 1s; --spread: 60deg;\" class=\"dots\">\n  <div style=\"--i: 0;\" class=\"dot\"></div>\n  <div style=\"--i: 1;\" class=\"dot\"></div>\n  <div style=\"--i: 2;\" class=\"dot\"></div>\n  <div style=\"--i: 3;\" class=\"dot\"></div>\n  <div style=\"--i: 4;\" class=\"dot\"></div>\n  <div style=\"--i: 5;\" class=\"dot\"></div>\n</div>",
+    "css": "/* From Uiverse.io by SelfMadeSystem - Tags: loader, windows */\n.dots {\n  width: var(--size);\n  height: var(--size);\n  position: relative;\n}\n\n.dot {\n  width: var(--size);\n  height: var(--size);\n  animation: dwl-dot-spin calc(var(--speed) * 5) infinite linear both;\n  animation-delay: calc(var(--i) * var(--speed) / (var(--dot-count) + 2) * -1);\n  rotate: calc(var(--i) * var(--spread) / (var(--dot-count) - 1));\n  position: absolute;\n}\n\n.dot::before {\n  content: \"\";\n  display: block;\n  width: var(--dot-size);\n  height: var(--dot-size);\n  background-color: var(--color);\n  border-radius: 50%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  bottom: 0;\n  left: 50%;\n}\n\n@keyframes dwl-dot-spin {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);\n    opacity: 1;\n  }\n\n  2% {\n    transform: rotate(20deg);\n    animation-timing-function: linear;\n    opacity: 1;\n  }\n\n  30% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);\n    opacity: 1;\n  }\n\n  41% {\n    transform: rotate(380deg);\n    animation-timing-function: linear;\n    opacity: 1;\n  }\n\n  69% {\n    transform: rotate(520deg);\n    animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);\n    opacity: 1;\n  }\n\n  76% {\n    opacity: 1;\n  }\n\n  76.1% {\n    opacity: 0;\n  }\n\n  80% {\n    transform: rotate(720deg);\n  }\n\n  100% {\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SelfMadeSystem_black-yak-68.html"
+  },
+  "uniapp": {
+    "template": "<view style=\"--size: 64px; --dot-size: 6px; --dot-count: 6; --color: #fff; --speed: 1s; --spread: 60deg;\" class=\"dots\"></view>\n  <view style=\"--i: 0;\" class=\"dot\"></view>\n  <view style=\"--i: 1;\" class=\"dot\"></view>\n  <view style=\"--i: 2;\" class=\"dot\"></view>\n  <view style=\"--i: 3;\" class=\"dot\"></view>\n  <view style=\"--i: 4;\" class=\"dot\"></view>\n  <view style=\"--i: 5;\" class=\"dot\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBlackYak68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem - Tags: loader, windows */\n.dots {\n  width: var(--size);\n  height: var(--size);\n  position: relative;\n}\n\n.dot {\n  width: var(--size);\n  height: var(--size);\n  animation: dwl-dot-spin calc(var(--speed) * 5) infinite linear both;\n  animation-delay: calc(var(--i) * var(--speed) / (var(--dot-count) + 2) * -1);\n  rotate: calc(var(--i) * var(--spread) / (var(--dot-count) - 1));\n  position: absolute;\n}\n\n.dot::before {\n  content: \"\";\n  display: block;\n  width: var(--dot-size);\n  height: var(--dot-size);\n  background-color: var(--color);\n  border-radius: 50%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  bottom: 0;\n  left: 50%;\n}\n\n@keyframes dwl-dot-spin {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);\n    opacity: 1;\n  }\n\n  2% {\n    transform: rotate(20deg);\n    animation-timing-function: linear;\n    opacity: 1;\n  }\n\n  30% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);\n    opacity: 1;\n  }\n\n  41% {\n    transform: rotate(380deg);\n    animation-timing-function: linear;\n    opacity: 1;\n  }\n\n  69% {\n    transform: rotate(520deg);\n    animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);\n    opacity: 1;\n  }\n\n  76% {\n    opacity: 1;\n  }\n\n  76.1% {\n    opacity: 0;\n  }\n\n  80% {\n    transform: rotate(720deg);\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n",
+    "component_name": "GalaxyBlackYak68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1814,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.258Z",
+  "updated_at": "2025-07-31T07:55:40.258Z"
+}

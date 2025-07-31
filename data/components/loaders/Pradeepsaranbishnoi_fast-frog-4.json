@@ -1,0 +1,89 @@
+{
+  "id": "Pradeepsaranbishnoi_fast-frog-4",
+  "name": "fast-frog-4",
+  "category": "loaders",
+  "author": "Pradeepsaranbishnoi",
+  "description": "fast-frog-4 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div>\n<div class=\"loader\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n.loader {\n  animation: rotate 1s infinite;\n  height: 50px;\n  width: 50px;\n}\n\n.loader:before,\n.loader:after {\n  border-radius: 50%;\n  content: '';\n  display: block;\n  height: 20px;\n  width: 20px;\n}\n\n.loader:before {\n  animation: ball1 1s infinite;\n  background-color: #cb2025;\n  box-shadow: 30px 0 0 #f8b334;\n  margin-bottom: 10px;\n}\n\n.loader:after {\n  animation: ball2 1s infinite;\n  background-color: #00a096;\n  box-shadow: 30px 0 0 #97bf0d;\n}\n\n@keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg) scale(0.8);\n    -moz-transform: rotate(0deg) scale(0.8);\n  }\n\n  50% {\n    -webkit-transform: rotate(360deg) scale(1.2);\n    -moz-transform: rotate(360deg) scale(1.2);\n  }\n\n  100% {\n    -webkit-transform: rotate(720deg) scale(0.8);\n    -moz-transform: rotate(720deg) scale(0.8);\n  }\n}\n\n@keyframes ball1 {\n  0% {\n    box-shadow: 30px 0 0 #f8b334;\n  }\n\n  50% {\n    box-shadow: 0 0 0 #f8b334;\n    margin-bottom: 0;\n    -webkit-transform: translate(15px,15px);\n    -moz-transform: translate(15px, 15px);\n  }\n\n  100% {\n    box-shadow: 30px 0 0 #f8b334;\n    margin-bottom: 10px;\n  }\n}\n\n@keyframes ball2 {\n  0% {\n    box-shadow: 30px 0 0 #97bf0d;\n  }\n\n  50% {\n    box-shadow: 0 0 0 #97bf0d;\n    margin-top: -20px;\n    -webkit-transform: translate(15px,15px);\n    -moz-transform: translate(15px, 15px);\n  }\n\n  100% {\n    box-shadow: 30px 0 0 #97bf0d;\n    margin-top: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Pradeepsaranbishnoi_fast-frog-4.html"
+  },
+  "uniapp": {
+    "template": "<view></view>\n<view class=\"loader\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastFrog4',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */\n.loader {\n  animation: rotate 1s infinite;\n  height: 100rpx;\n  width: 100rpx;\n}\n\n.loader:before,\n.loader:after {\n  border-radius: 50%;\n  content: '';\n  display: block;\n  height: 40rpx;\n  width: 40rpx;\n}\n\n.loader:before {\n  animation: ball1 1s infinite;\n  background-color: #cb2025;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 #f8b334;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  margin-bottom: 20rpx;\n}\n\n.loader:after {\n  animation: ball2 1s infinite;\n  background-color: #00a096;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 #97bf0d;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg) scale(0.8);\n    -moz-transform: rotate(0deg) scale(0.8);\n  }\n\n  50% {\n    -webkit-transform: rotate(360deg) scale(1.2);\n    -moz-transform: rotate(360deg) scale(1.2);\n  }\n\n  100% {\n    -webkit-transform: rotate(720deg) scale(0.8);\n    -moz-transform: rotate(720deg) scale(0.8);\n  }\n}\n\n@keyframes ball1 {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 #f8b334;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  50% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 #f8b334;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    margin-bottom: 0;\n    -webkit-transform: translate(30rpx,30rpx);\n    -moz-transform: translate(30rpx, 30rpx);\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 #f8b334;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    margin-bottom: 20rpx;\n  }\n}\n\n@keyframes ball2 {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 #97bf0d;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  50% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 #97bf0d;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    margin-top: -40rpx;\n    -webkit-transform: translate(30rpx,30rpx);\n    -moz-transform: translate(30rpx, 30rpx);\n  }\n\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 60rpx 0 0 #97bf0d;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n    margin-top: 0;\n  }\n}\n",
+    "component_name": "GalaxyFastFrog4"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1478,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.060Z",
+  "updated_at": "2025-07-31T07:55:40.060Z"
+}

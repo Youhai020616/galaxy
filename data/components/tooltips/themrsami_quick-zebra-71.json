@@ -1,0 +1,82 @@
+{
+  "id": "themrsami_quick-zebra-71",
+  "name": "quick-zebra-71",
+  "category": "tooltips",
+  "author": "themrsami",
+  "description": "quick-zebra-71 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"relative group inline-block\">\n  <div class=\"bg-white py-2 rounded-md shadow-lg hover:cursor-pointer flex justify-center items-center gap-4 px-4\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 18 14\" height=\"25\" width=\"25\">\n      <path fill=\"#FFA000\" d=\"M16.2 1.75H8.1L6.3 0H1.8C0.81 0 0 0.7875 0 1.75V12.25C0 13.2125 0.81 14 1.8 14H15.165L18 9.1875V3.5C18 2.5375 17.19 1.75 16.2 1.75Z\"></path>\n      <path fill=\"#FFCA28\" d=\"M16.2 2H1.8C0.81 2 0 2.77143 0 3.71429V12.2857C0 13.2286 0.81 14 1.8 14H16.2C17.19 14 18 13.2286 18 12.2857V3.71429C18 2.77143 17.19 2 16.2 2Z\"></path>\n    </svg>\n    <p>Project Structure</p>\n  </div>\n\n  <div class=\"absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-1000\">\n    <ul class=\"p-4 space-y-1\">\n      <li class=\"py-1\">📁 src</li>\n      <li class=\"pl-4 py-1\">📁 app</li>\n      <li class=\"pl-8 py-1\">📄 layout.js</li>\n      <li class=\"pl-8 py-1\">📄 page.js</li>\n      <li class=\"pl-4 py-1\">📁 components</li>\n      <li class=\"pl-8 py-1\">📄 header.js</li>\n      <li class=\"pl-8 py-1\">📄 footer.js</li>\n      <li class=\"pl-4 py-1\">📁 styles</li>\n      <li class=\"pl-8 py-1\">📄 globals.css</li>\n    </ul>\n  </div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Tooltips/themrsami_quick-zebra-71.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"relative group inline-block\"></view>\n  <view class=\"bg-white py-2 rounded-md shadow-lg hover:cursor-pointer flex justify-center items-center gap-4 px-4\"></view>\n    <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 18 14\" height=\"25\" width=\"25\"></view>\n      <path fill=\"#FFA000\" d=\"M16.2 1.75H8.1L6.3 0H1.8C0.81 0 0 0.7875 0 1.75V12.25C0 13.2125 0.81 14 1.8 14H15.165L18 9.1875V3.5C18 2.5375 17.19 1.75 16.2 1.75Z\"></path>\n      <path fill=\"#FFCA28\" d=\"M16.2 2H1.8C0.81 2 0 2.77143 0 3.71429V12.2857C0 13.2286 0.81 14 1.8 14H16.2C17.19 14 18 13.2286 18 12.2857V3.71429C18 2.77143 17.19 2 16.2 2Z\"></path>\n    </svg>\n    <text>Project Structure</text>\n  </div>\n\n  <view class=\"absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-1000\"></view>\n    <view class=\"p-4 space-y-1\"></view>\n      <view class=\"py-1\">📁 src</view>\n      <view class=\"pl-4 py-1\">📁 app</view>\n      <view class=\"pl-8 py-1\">📄 layout.js</view>\n      <view class=\"pl-8 py-1\">📄 page.js</view>\n      <view class=\"pl-4 py-1\">📁 components</view>\n      <view class=\"pl-8 py-1\">📄 header.js</view>\n      <view class=\"pl-8 py-1\">📄 footer.js</view>\n      <view class=\"pl-4 py-1\">📁 styles</view>\n      <view class=\"pl-8 py-1\">📄 globals.css</view>\n    </ul>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuickZebra71',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyQuickZebra71"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1281,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.765Z",
+  "updated_at": "2025-07-31T07:55:38.765Z"
+}

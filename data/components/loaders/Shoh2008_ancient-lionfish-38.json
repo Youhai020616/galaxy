@@ -1,0 +1,89 @@
+{
+  "id": "Shoh2008_ancient-lionfish-38",
+  "name": "ancient-lionfish-38",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "ancient-lionfish-38 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  transform: translateZ(1px);\n}\n\n.loader:after {\n  content: '$';\n  display: inline-block;\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 40px;\n  font-size: 32px;\n  font-weight: bold;\n  background: #FFD700;\n  color: #DAA520;\n  border: 4px double;\n  box-sizing: border-box;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);\n  animation: coin-flip 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n}\n\n@keyframes coin-flip {\n  0%, 100% {\n    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);\n  }\n\n  0% {\n    transform: rotateY(0deg);\n  }\n\n  50% {\n    transform: rotateY(1800deg);\n    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);\n  }\n\n  100% {\n    transform: rotateY(3600deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_ancient-lionfish-38.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyAncientLionfish38',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  transform: translateZ(2rpx);\n}\n\n.loader:after {\n  content: '$';\n  display: inline-block;\n  width: 96rpx;\n  height: 96rpx;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 80rpx;\n  font-size: 64rpx;\n  font-weight: bold;\n  background: #FFD700;\n  color: #DAA520;\n  border: 8rpx double;\n  box-sizing: border-box;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 4rpx 2rpx rgba(0, 0, 0, .1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: coin-flip 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n}\n\n@keyframes coin-flip {\n  0%, 100% {\n    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);\n  }\n\n  0% {\n    transform: rotateY(0deg);\n  }\n\n  50% {\n    transform: rotateY(1800deg);\n    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);\n  }\n\n  100% {\n    transform: rotateY(3600deg);\n  }\n}\n      \n",
+    "component_name": "GalaxyAncientLionfish38"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 826,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.300Z",
+  "updated_at": "2025-07-31T07:55:40.300Z"
+}

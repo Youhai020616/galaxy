@@ -1,0 +1,113 @@
+{
+  "id": "rhino-corey_cowardly-chicken-15",
+  "name": "cowardly-chicken-15",
+  "category": "buttons",
+  "author": "rhino-corey",
+  "description": "cowardly-chicken-15 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Hexagonal Button\n</button>",
+    "css": "/* From Uiverse.io by rhino-corey - Tags: button */\nbutton {\n display: inline-block;\n position: relative;\n color: #fff;\n font-weight: 500;\n font-size: 14px;\n text-decoration: none;\n text-transform: uppercase;\n padding: 15px 30px;\n text-align: center;\n border: none;\n clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);\n background-color: #000000;\n background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);\n background-repeat: no-repeat;\n transition: background-position-y ease-in-out 250ms;\n}\n\nbutton:hover {\n background-position-y: -50px;\n}\n\nbutton:active {\n transform: scale(0.99);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/rhino-corey_cowardly-chicken-15.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Hexagonal Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyCowardlyChicken15',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by rhino-corey - Tags: button */\nbutton {\n display: inline-block;\n position: relative;\n color: #fff;\n font-weight: 500;\n font-size: 28rpx;\n text-decoration: none;\n text-transform: uppercase;\n padding: 30rpx 60rpx;\n text-align: center;\n border: none;\n \n background-color: #000000;\n background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);\n background-repeat: no-repeat;\n transition: background-position-y ease-in-out 250ms;\n}\n\nbutton:hover {\n background-position-y: -100rpx;\n}\n\nbutton:active {\n transform: scale(0.99);\n}\n",
+    "component_name": "GalaxyCowardlyChicken15"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 732,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.663Z",
+  "updated_at": "2025-07-31T07:55:37.663Z"
+}

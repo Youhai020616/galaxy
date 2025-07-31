@@ -1,0 +1,87 @@
+{
+  "id": "shadowfax29_stupid-lionfish-35",
+  "name": "stupid-lionfish-35",
+  "category": "loaders",
+  "author": "shadowfax29",
+  "description": "stupid-lionfish-35 组件 (loader, infinitity, Infinite Spin, animation)",
+  "tags": [
+    "loader",
+    "infinitity",
+    "Infinite Spin",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading\">\n <svg viewBox=\"0 0 187.3 93.7\" height=\"200px\" width=\"300px\" class=\"svgbox\">\n  <defs>\n    <linearGradient y2=\"0%\" x2=\"100%\" y1=\"0%\" x1=\"0%\" id=\"gradient\">\n      <stop stop-color=\"pink\" offset=\"0%\"></stop>\n      \n         <stop stop-color=\"blue\" offset=\"100%\"></stop>\n    </linearGradient>\n  </defs>\n\n  <path stroke=\"url(#gradient)\" d=\"M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z\"></path>\n</svg>\n\n</div>",
+    "css": "/* From Uiverse.io by shadowfax29 - Tags: loader, infinitity, Infinite Spin */\n.svgbox {\n  --blue: rgb(148, 66, 63);\n  stroke: var(--blue);\n  stroke-width: 5;\n  fill: none;\n  stroke-dasharray: 50, 14;\n  stroke-dashoffset: 192;\n  animation: dash_682 1.4s linear infinite;\n}\n\n@keyframes dash_682 {\n  72.5% {\n    opacity: 1;\n  }\n\n  to {\n    stroke-dashoffset: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/shadowfax29_stupid-lionfish-35.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading\"></view>\n <view viewBox=\"0 0 187.3 93.7\" height=\"200px\" width=\"300px\" class=\"svgbox\"></view>\n  <defs>\n    <linearGradient y2=\"0%\" x2=\"100%\" y1=\"0%\" x1=\"0%\" id=\"gradient\">\n      <stop stop-color=\"pink\" offset=\"0%\"></stop>\n      \n         <stop stop-color=\"blue\" offset=\"100%\"></stop>\n    </linearGradient>\n  </defs>\n\n  <path stroke=\"url(#gradient)\" d=\"M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z\"></path>\n</svg>\n\n</div>",
+    "script": "export default {\n  name: 'GalaxyStupidLionfish35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by shadowfax29 - Tags: loader, infinitity, Infinite Spin */\n.svgbox {\n  --blue: rgb(148, 66, 63);\n  stroke: var(--blue);\n  stroke-width: 5;\n  fill: none;\n  stroke-dasharray: 50, 14;\n  stroke-dashoffset: 192;\n  animation: dash_682 1.4s linear infinite;\n}\n\n@keyframes dash_682 {\n  72.5% {\n    opacity: 1;\n  }\n\n  to {\n    stroke-dashoffset: 1;\n  }\n}\n\n\n\n",
+    "component_name": "GalaxyStupidLionfish35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 946,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.658Z",
+  "updated_at": "2025-07-31T07:55:42.658Z"
+}

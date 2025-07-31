@@ -1,0 +1,93 @@
+{
+  "id": "Galahhad_cold-yak-10",
+  "name": "cold-yak-10",
+  "category": "loaders",
+  "author": "Galahhad",
+  "description": "cold-yak-10 组件 (loader, assassin, animation, interactive)",
+  "tags": [
+    "loader",
+    "assassin",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"ui-abstergo\">\n  <div class=\"abstergo-loader\">\n    <div></div>\n    <div></div>\n    <div></div>\n  </div>\n  <div class=\"ui-text\">\n    Synchronization\n    <div class=\"ui-dot\"></div>\n    <div class=\"ui-dot\"></div>\n    <div class=\"ui-dot\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Galahhad - Tags: loader, assassin */\n.ui-abstergo {\n  --primary: #fff;\n  --secondary: rgba(255, 255, 255, 0.3);\n  --shadow-blur: 3px;\n  --text-shadow-blur: 3px;\n  --animation-duration: 2s;\n  --size: 1;\n}\n\n.abstergo-loader * {\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n\n.ui-abstergo {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  row-gap: 30px;\n  scale: var(--size);\n}\n\n.ui-abstergo .ui-text {\n  color: var(--primary);\n  text-shadow: 0 0 var(--text-shadow-blur) var(--secondary);\n  font-family: Menlo, sans-serif;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: baseline;\n  -ms-flex-align: baseline;\n  align-items: baseline;\n  -webkit-column-gap: 3px;\n  -moz-column-gap: 3px;\n  column-gap: 3px;\n}\n\n.ui-abstergo .ui-dot {\n  content: \"\";\n  display: block;\n  width: 3px;\n  height: 3px;\n  -webkit-animation: dots var(--animation-duration) infinite linear;\n  animation: dots var(--animation-duration) infinite linear;\n  -webkit-animation-delay: .4s;\n  animation-delay: .4s;\n  background-color: var(--primary);\n}\n\n.ui-abstergo .ui-dot:nth-child(2) {\n  -webkit-animation-delay: .8s;\n  animation-delay: .8s;\n}\n\n.ui-abstergo .ui-dot:nth-child(3) {\n  -webkit-animation-delay: 1.2s;\n  animation-delay: 1.2s;\n}\n\n.ui-abstergo .ui-dot+.ui-dot {\n  margin-left: 3px;\n}\n\n.abstergo-loader {\n  width: 103px;\n  height: 90px;\n  position: relative;\n}\n\n.abstergo-loader div {\n  width: 50px;\n  border-right: 12px solid transparent;\n  border-left: 12px solid transparent;\n  border-top: 21px solid var(--primary);\n  position: absolute;\n  -webkit-filter: drop-shadow(0 0 var(--shadow-blur) var(--secondary));\n  filter: drop-shadow(0 0 var(--shadow-blur) var(--secondary));\n}\n\n.abstergo-loader div:nth-child(1) {\n  top: 27px;\n  left: 7px;\n  rotate: -60deg;\n  -webkit-animation: line1 var(--animation-duration) linear infinite alternate;\n  animation: line1 var(--animation-duration) linear infinite alternate;\n}\n\n.abstergo-loader div:nth-child(2) {\n  bottom: 2px;\n  left: 0;\n  rotate: 180deg;\n  -webkit-animation: line2 var(--animation-duration) linear infinite alternate;\n  animation: line2 var(--animation-duration) linear infinite alternate;\n}\n\n.abstergo-loader div:nth-child(3) {\n  bottom: 16px;\n  right: -9px;\n  rotate: 60deg;\n  -webkit-animation: line3 var(--animation-duration) linear infinite alternate;\n  animation: line3 var(--animation-duration) linear infinite alternate;\n}\n\n.abstergo-loader:hover div:nth-child(1) {\n  top: 21px;\n  left: 14px;\n  rotate: 60deg;\n}\n\n.abstergo-loader:hover div:nth-child(2) {\n  bottom: 5px;\n  left: -8px;\n  rotate: 300deg;\n}\n\n.abstergo-loader:hover div:nth-child(3) {\n  bottom: 7px;\n  right: -11px;\n  rotate: 180deg;\n}\n\n@-webkit-keyframes line1 {\n  0%,\n  40% {\n    top: 27px;\n    left: 7px;\n    rotate: -60deg;\n  }\n\n  60%,\n  100% {\n    top: 22px;\n    left: 14px;\n    rotate: 60deg;\n  }\n}\n\n@keyframes line1 {\n  0%,\n  40% {\n    top: 27px;\n    left: 7px;\n    rotate: -60deg;\n  }\n\n  60%,\n  100% {\n    top: 22px;\n    left: 14px;\n    rotate: 60deg;\n  }\n}\n\n@-webkit-keyframes line2 {\n  0%,\n  40% {\n    bottom: 2px;\n    left: 0;\n    rotate: 180deg;\n  }\n\n  60%,\n  100% {\n    bottom: 5px;\n    left: -8px;\n    rotate: 300deg;\n  }\n}\n\n@keyframes line2 {\n  0%,\n  40% {\n    bottom: 2px;\n    left: 0;\n    rotate: 180deg;\n  }\n\n  60%,\n  100% {\n    bottom: 5px;\n    left: -8px;\n    rotate: 300deg;\n  }\n}\n\n@-webkit-keyframes line3 {\n  0%,\n  40% {\n    bottom: 16px;\n    right: -9px;\n    rotate: 60deg;\n  }\n\n  60%,\n  100% {\n    bottom: 7px;\n    right: -11px;\n    rotate: 180deg;\n  }\n}\n\n@keyframes line3 {\n  0%,\n  40% {\n    bottom: 16px;\n    right: -9px;\n    rotate: 60deg;\n  }\n\n  60%,\n  100% {\n    bottom: 7px;\n    right: -11px;\n    rotate: 180deg;\n  }\n}\n\n@-webkit-keyframes dots {\n  0% {\n    background-color: var(--secondary);\n  }\n\n  30% {\n    background-color: var(--primary);\n  }\n\n  70%, 100% {\n    background-color: var(--secondary);\n  }\n}\n\n@keyframes dots {\n  0% {\n    background-color: var(--secondary);\n  }\n\n  30% {\n    background-color: var(--primary);\n  }\n\n  70%, 100% {\n    background-color: var(--secondary);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Galahhad_cold-yak-10.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"ui-abstergo\"></view>\n  <view class=\"abstergo-loader\"></view>\n    <view></view>\n    <view></view>\n    <view></view>\n  </div>\n  <view class=\"ui-text\"></view>\n    Synchronization\n    <view class=\"ui-dot\"></view>\n    <view class=\"ui-dot\"></view>\n    <view class=\"ui-dot\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyColdYak10',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Galahhad - Tags: loader, assassin */\n.ui-abstergo {\n  --primary: #fff;\n  --secondary: rgba(255, 255, 255, 0.3);\n  --shadow-blur: 6rpx;\n  --text-shadow-blur: 6rpx;\n  --animation-duration: 2s;\n  --size: 1;\n}\n\n.abstergo-loader * {\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n\n.ui-abstergo {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  row-gap: 60rpx;\n  scale: var(--size);\n}\n\n.ui-abstergo .ui-text {\n  color: var(--primary);\n  /* #ifdef H5 */\n  text-shadow: 0 0 var(--text-shadow-blur) var(--secondary);\n  /* #endif */\n  font-family: Menlo, sans-serif;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: baseline;\n  -ms-flex-align: baseline;\n  align-items: baseline;\n  -webkit-column-gap: 6rpx;\n  -moz-column-gap: 6rpx;\n  column-gap: 6rpx;\n}\n\n.ui-abstergo .ui-dot {\n  content: \"\";\n  display: block;\n  width: 6rpx;\n  height: 6rpx;\n  -webkit-animation: dots var(--animation-duration) infinite linear;\n  animation: dots var(--animation-duration) infinite linear;\n  -webkit-animation-delay: .4s;\n  animation-delay: .4s;\n  background-color: var(--primary);\n}\n\n.ui-abstergo .ui-dot:nth-child(2) {\n  -webkit-animation-delay: .8s;\n  animation-delay: .8s;\n}\n\n.ui-abstergo .ui-dot:nth-child(3) {\n  -webkit-animation-delay: 1.2s;\n  animation-delay: 1.2s;\n}\n\n.ui-abstergo .ui-dot+.ui-dot {\n  margin-left: 6rpx;\n}\n\n.abstergo-loader {\n  width: 206rpx;\n  height: 180rpx;\n  position: relative;\n}\n\n.abstergo-loader div {\n  width: 100rpx;\n  border-right: 24rpx solid transparent;\n  border-left: 24rpx solid transparent;\n  border-top: 42rpx solid var(--primary);\n  position: absolute;\n  -webkit-\n  \n}\n\n.abstergo-loader div:nth-child(1) {\n  top: 54rpx;\n  left: 14rpx;\n  rotate: -60deg;\n  -webkit-animation: line1 var(--animation-duration) linear infinite alternate;\n  animation: line1 var(--animation-duration) linear infinite alternate;\n}\n\n.abstergo-loader div:nth-child(2) {\n  bottom: 4rpx;\n  left: 0;\n  rotate: 180deg;\n  -webkit-animation: line2 var(--animation-duration) linear infinite alternate;\n  animation: line2 var(--animation-duration) linear infinite alternate;\n}\n\n.abstergo-loader div:nth-child(3) {\n  bottom: 32rpx;\n  right: -18rpx;\n  rotate: 60deg;\n  -webkit-animation: line3 var(--animation-duration) linear infinite alternate;\n  animation: line3 var(--animation-duration) linear infinite alternate;\n}\n\n.abstergo-loader:hover div:nth-child(1) {\n  top: 42rpx;\n  left: 28rpx;\n  rotate: 60deg;\n}\n\n.abstergo-loader:hover div:nth-child(2) {\n  bottom: 10rpx;\n  left: -16rpx;\n  rotate: 300deg;\n}\n\n.abstergo-loader:hover div:nth-child(3) {\n  bottom: 14rpx;\n  right: -22rpx;\n  rotate: 180deg;\n}\n\n@-webkit-keyframes line1 {\n  0%,\n  40% {\n    top: 54rpx;\n    left: 14rpx;\n    rotate: -60deg;\n  }\n\n  60%,\n  100% {\n    top: 44rpx;\n    left: 28rpx;\n    rotate: 60deg;\n  }\n}\n\n@keyframes line1 {\n  0%,\n  40% {\n    top: 54rpx;\n    left: 14rpx;\n    rotate: -60deg;\n  }\n\n  60%,\n  100% {\n    top: 44rpx;\n    left: 28rpx;\n    rotate: 60deg;\n  }\n}\n\n@-webkit-keyframes line2 {\n  0%,\n  40% {\n    bottom: 4rpx;\n    left: 0;\n    rotate: 180deg;\n  }\n\n  60%,\n  100% {\n    bottom: 10rpx;\n    left: -16rpx;\n    rotate: 300deg;\n  }\n}\n\n@keyframes line2 {\n  0%,\n  40% {\n    bottom: 4rpx;\n    left: 0;\n    rotate: 180deg;\n  }\n\n  60%,\n  100% {\n    bottom: 10rpx;\n    left: -16rpx;\n    rotate: 300deg;\n  }\n}\n\n@-webkit-keyframes line3 {\n  0%,\n  40% {\n    bottom: 32rpx;\n    right: -18rpx;\n    rotate: 60deg;\n  }\n\n  60%,\n  100% {\n    bottom: 14rpx;\n    right: -22rpx;\n    rotate: 180deg;\n  }\n}\n\n@keyframes line3 {\n  0%,\n  40% {\n    bottom: 32rpx;\n    right: -18rpx;\n    rotate: 60deg;\n  }\n\n  60%,\n  100% {\n    bottom: 14rpx;\n    right: -22rpx;\n    rotate: 180deg;\n  }\n}\n\n@-webkit-keyframes dots {\n  0% {\n    background-color: var(--secondary);\n  }\n\n  30% {\n    background-color: var(--primary);\n  }\n\n  70%, 100% {\n    background-color: var(--secondary);\n  }\n}\n\n@keyframes dots {\n  0% {\n    background-color: var(--secondary);\n  }\n\n  30% {\n    background-color: var(--primary);\n  }\n\n  70%, 100% {\n    background-color: var(--secondary);\n  }\n}\n",
+    "component_name": "GalaxyColdYak10"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4590,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.336Z",
+  "updated_at": "2025-07-31T07:55:39.336Z"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "Gianluks90_smart-otter-24",
+  "name": "smart-otter-24",
+  "category": "loaders",
+  "author": "Gianluks90",
+  "description": "smart-otter-24 组件 (loader, rainbow, animation)",
+  "tags": [
+    "loader",
+    "rainbow",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"red bar\"></div>\n  <div class=\"orange bar\"></div>\n  <div class=\"yellow bar\"></div>\n  <div class=\"green bar\"></div>\n  <div class=\"blue bar\"></div>\n  <div class=\"violet bar\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Gianluks90 - Tags: loader, rainbow */\n.loader {\n  height: 50px;\n  display: flex;\n  align-items: flex-end;\n  gap: 3px;\n}\n\n.bar {\n  height: 5px;\n  width: 12px;\n  animation-duration: 0.45s;\n  animation-name: changeHeight;\n  animation-iteration-count: infinite;\n  animation-direction: alternate;\n}\n\n.red {\n  background-color: #E50000;\n  box-shadow: 1px 1px 10px #E50000;\n  animation-delay: 0.10s;\n}\n\n.orange {\n  background-color: #FF8D00;\n  box-shadow: 1px 1px 10px #FF8D00;\n  animation-delay: 0.20s;\n}\n\n.yellow {\n  background-color: #FFEE00;\n  box-shadow: 1px 1px 10px #FFEE00;\n  animation-delay: 0.25s;\n}\n\n.green {\n  background-color: #008121;\n  box-shadow: 1px 1px 10px #008121;\n  animation-delay: 0.30s;\n}\n\n.blue {\n  background-color: #004CFF;\n  box-shadow: 1px 1px 10px #004CFF;\n  animation-delay: 0.35s;\n}\n\n.violet {\n  background-color: #760188;\n  box-shadow: 1px 1px 10px #760188;\n  animation-delay: 0.40s;\n}\n\n@keyframes changeHeight {\n  from {\n    height: 5px;\n  }\n\n  to {\n    height: 40px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Gianluks90_smart-otter-24.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"red bar\"></view>\n  <view class=\"orange bar\"></view>\n  <view class=\"yellow bar\"></view>\n  <view class=\"green bar\"></view>\n  <view class=\"blue bar\"></view>\n  <view class=\"violet bar\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySmartOtter24',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Gianluks90 - Tags: loader, rainbow */\n.loader {\n  height: 100rpx;\n  display: flex;\n  align-items: flex-end;\n  gap: 6rpx;\n}\n\n.bar {\n  height: 10rpx;\n  width: 24rpx;\n  animation-duration: 0.45s;\n  animation-name: changeHeight;\n  animation-iteration-count: infinite;\n  animation-direction: alternate;\n}\n\n.red {\n  background-color: #E50000;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 20rpx #E50000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation-delay: 0.10s;\n}\n\n.orange {\n  background-color: #FF8D00;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 20rpx #FF8D00;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation-delay: 0.20s;\n}\n\n.yellow {\n  background-color: #FFEE00;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 20rpx #FFEE00;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation-delay: 0.25s;\n}\n\n.green {\n  background-color: #008121;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 20rpx #008121;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation-delay: 0.30s;\n}\n\n.blue {\n  background-color: #004CFF;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 20rpx #004CFF;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation-delay: 0.35s;\n}\n\n.violet {\n  background-color: #760188;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 20rpx #760188;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation-delay: 0.40s;\n}\n\n@keyframes changeHeight {\n  from {\n    height: 10rpx;\n  }\n\n  to {\n    height: 80rpx;\n  }\n}\n",
+    "component_name": "GalaxySmartOtter24"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1245,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.344Z",
+  "updated_at": "2025-07-31T07:55:39.344Z"
+}

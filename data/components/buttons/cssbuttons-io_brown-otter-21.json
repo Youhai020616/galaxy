@@ -1,0 +1,112 @@
+{
+  "id": "cssbuttons-io_brown-otter-21",
+  "name": "brown-otter-21",
+  "category": "buttons",
+  "author": "cssbuttons-io",
+  "description": "brown-otter-21 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a class=\"fancy\" href=\"#\">\n  <span class=\"top-key\"></span>\n  <span class=\"text\">Buy Tickets</span>\n  <span class=\"bottom-key-1\"></span>\n  <span class=\"bottom-key-2\"></span>\n</a>",
+    "css": "/* From Uiverse.io by cssbuttons-io - Tags: button */\n.fancy {\n background-color: transparent;\n border: 2px solid #000;\n border-radius: 0;\n box-sizing: border-box;\n color: #fff;\n cursor: pointer;\n display: inline-block;\n float: right;\n font-weight: 700;\n letter-spacing: 0.05em;\n margin: 0;\n outline: none;\n overflow: visible;\n padding: 1.25em 2em;\n position: relative;\n text-align: center;\n text-decoration: none;\n text-transform: none;\n transition: all 0.3s ease-in-out;\n user-select: none;\n font-size: 13px;\n}\n\n.fancy::before {\n content: \" \";\n width: 1.5625rem;\n height: 2px;\n background: black;\n top: 50%;\n left: 1.5em;\n position: absolute;\n transform: translateY(-50%);\n transform-origin: center;\n transition: background 0.3s linear, width 0.3s linear;\n}\n\n.fancy .text {\n font-size: 1.125em;\n line-height: 1.33333em;\n padding-left: 2em;\n display: block;\n text-align: left;\n transition: all 0.3s ease-in-out;\n text-transform: uppercase;\n text-decoration: none;\n color: black;\n}\n\n.fancy .top-key {\n height: 2px;\n width: 1.5625rem;\n top: -2px;\n left: 0.625rem;\n position: absolute;\n background: #e8e8e8;\n transition: width 0.5s ease-out, left 0.3s ease-out;\n}\n\n.fancy .bottom-key-1 {\n height: 2px;\n width: 1.5625rem;\n right: 1.875rem;\n bottom: -2px;\n position: absolute;\n background: #e8e8e8;\n transition: width 0.5s ease-out, right 0.3s ease-out;\n}\n\n.fancy .bottom-key-2 {\n height: 2px;\n width: 0.625rem;\n right: 0.625rem;\n bottom: -2px;\n position: absolute;\n background: #e8e8e8;\n transition: width 0.5s ease-out, right 0.3s ease-out;\n}\n\n.fancy:hover {\n color: white;\n background: black;\n}\n\n.fancy:hover::before {\n width: 0.9375rem;\n background: white;\n}\n\n.fancy:hover .text {\n color: white;\n padding-left: 1.5em;\n}\n\n.fancy:hover .top-key {\n left: -2px;\n width: 0px;\n}\n\n.fancy:hover .bottom-key-1,\n .fancy:hover .bottom-key-2 {\n right: 0;\n width: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/cssbuttons-io_brown-otter-21.html"
+  },
+  "uniapp": {
+    "template": "<navigator class=\"fancy\" href=\"#\"></navigator>\n  <text class=\"top-key\"></text>\n  <text class=\"text\">Buy Tickets</text>\n  <text class=\"bottom-key-1\"></text>\n  <text class=\"bottom-key-2\"></text>\n</a>",
+    "script": "export default {\n  name: 'GalaxyBrownOtter21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cssbuttons-io - Tags: button */\n.fancy {\n background-color: transparent;\n border: 4rpx solid #000;\n border-radius: 0;\n box-sizing: border-box;\n color: #fff;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n display: inline-block;\n float: right;\n font-weight: 700;\n letter-spacing: 0.05em;\n margin: 0;\n outline: none;\n overflow: visible;\n padding: 1.25em 2em;\n position: relative;\n text-align: center;\n text-decoration: none;\n text-transform: none;\n transition: all 0.3s ease-in-out;\n user-select: none;\n font-size: 26rpx;\n}\n\n.fancy::before {\n content: \" \";\n width: 1.5625rem;\n height: 4rpx;\n background: black;\n top: 50%;\n left: 1.5em;\n position: absolute;\n transform: translateY(-50%);\n transform-origin: center;\n transition: background 0.3s linear, width 0.3s linear;\n}\n\n.fancy .text {\n font-size: 1.125em;\n line-height: 1.33333em;\n padding-left: 2em;\n display: block;\n text-align: left;\n transition: all 0.3s ease-in-out;\n text-transform: uppercase;\n text-decoration: none;\n color: black;\n}\n\n.fancy .top-key {\n height: 4rpx;\n width: 1.5625rem;\n top: -4rpx;\n left: 0.625rem;\n position: absolute;\n background: #e8e8e8;\n transition: width 0.5s ease-out, left 0.3s ease-out;\n}\n\n.fancy .bottom-key-1 {\n height: 4rpx;\n width: 1.5625rem;\n right: 1.875rem;\n bottom: -4rpx;\n position: absolute;\n background: #e8e8e8;\n transition: width 0.5s ease-out, right 0.3s ease-out;\n}\n\n.fancy .bottom-key-2 {\n height: 4rpx;\n width: 0.625rem;\n right: 0.625rem;\n bottom: -4rpx;\n position: absolute;\n background: #e8e8e8;\n transition: width 0.5s ease-out, right 0.3s ease-out;\n}\n\n.fancy:hover {\n color: white;\n background: black;\n}\n\n.fancy:hover::before {\n width: 0.9375rem;\n background: white;\n}\n\n.fancy:hover .text {\n color: white;\n padding-left: 1.5em;\n}\n\n.fancy:hover .top-key {\n left: -4rpx;\n width: 0rpx;\n}\n\n.fancy:hover .bottom-key-1,\n .fancy:hover .bottom-key-2 {\n right: 0;\n width: 0;\n}\n",
+    "component_name": "GalaxyBrownOtter21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2036,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.165Z",
+  "updated_at": "2025-07-31T07:55:36.165Z"
+}

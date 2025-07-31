@@ -1,0 +1,117 @@
+{
+  "id": "Praashoo7_average-swan-99",
+  "name": "average-swan-99",
+  "category": "buttons",
+  "author": "Praashoo7",
+  "description": "average-swan-99 组件 (neumorphism, button, realistic, buttons, teenage engineering, animation)",
+  "tags": [
+    "neumorphism",
+    "button",
+    "realistic",
+    "buttons",
+    "teenage engineering",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"main\">\n  <div class=\"buttons\">\n    <div class=\"button_pair\">\n      <div class=\"btn\">\n        <button class=\"button1\">\n          <svg viewBox=\"0 -960 960 960\" class=\"svg1\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M200-440v-80h560v80H200Z\"></path>\n          </svg>\n        </button>\n      </div>\n      <div class=\"btn\">\n        <button class=\"button2\">\n          <svg viewBox=\"0 -960 960 960\" xmlns=\"http://www.w3.org/2000/svg\" class=\"svg2\">\n            <path d=\"M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z\"></path>\n          </svg>\n        </button>\n      </div>\n    </div>\n    <div class=\"button_pair\">\n      <div class=\"btn\">\n        <button class=\"button3\">\n          <span class=\"button_text\">RECORD</span>\n        </button>\n      </div>\n      <div class=\"btn\">\n        <button class=\"button4\">\n          <span class=\"button_text\">PLAY</span>\n        </button>\n      </div>\n    </div>\n  </div>\n  <div class=\"text\">Teenage Engineering [EP-133 K.O. II] - Buttons</div>\n</div>",
+    "css": "/* From Uiverse.io by Praashoo7  - Tags: neumorphism, button, realistic, buttons, teenage engineering */\n/* Teenage Engineering [EP-133 K.O. II] - Buttons */\n\n.main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  row-gap: 1.25em;\n}\n\n.buttons {\n  display: flex;\n  flex-direction: column;\n  row-gap: 1.5em;\n}\n.button_pair {\n  display: flex;\n  column-gap: 1.5em;\n}\n.button_pair1 {\n  display: flex;\n  flex-direction: column;\n  row-gap: 0.9em;\n}\n\n.btn {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 5em;\n  height: 5em;\n  background-color: #171717;\n  border-radius: 5px;\n}\n\n.button1 {\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 10px;\n  border: none;\n  outline: none;\n  background-color: #c7c3c0;\n  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,\n    #ffffff 1.5px 1.5px 2px 0px inset, #c7c3c0 -3.2px -3.2px 8px 0px inset;\n  cursor: pointer;\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n.button2 {\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 10px;\n  border: none;\n  outline: none;\n  background-color: #c7c3c0;\n  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,\n    #ffffff 1.5px 1.5px 2px 0px inset, #c7c3c0 -3.2px -3.2px 8px 0px inset;\n  cursor: pointer;\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n.svg1 {\n  fill: #5f5f5f;\n  width: 25px;\n  height: 25px;\n  transition: 0.1s ease-in-out;\n}\n.svg2 {\n  fill: #5f5f5f;\n  width: 25px;\n  height: 25px;\n  transition: 0.1s ease-in-out;\n}\n\n.button3 {\n  display: flex;\n  align-items: flex-start;\n  justify-content: center;\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 10px;\n  border: none;\n  outline: none;\n  background-color: #d42a02;\n  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px, #fb702c 2px 2px 10px 0px inset,\n    #d42a02 -4px -4px 1px 0px inset;\n  cursor: pointer;\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n.button4 {\n  display: flex;\n  align-items: flex-start;\n  justify-content: center;\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 10px;\n  border: none;\n  outline: none;\n  background-color: #545251;\n  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,\n    #a8a6a4 1.5px 1.5px 1px 0px inset, #545251 -3.2px -3.2px 8px 0px inset;\n  cursor: pointer;\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n\n.button_text {\n  color: white;\n  padding-top: 0.9em;\n  letter-spacing: 0.075em;\n  font-size: 0.85em;\n  transition: 0.1s ease-in-out;\n}\n\n.text {\n  font-family: Montserrat;\n  text-align: center;\n  font-size: 0.65em;\n}\n\n.button1:active,\n.button2:active {\n  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,\n    #c7c3c0 -3.2px -3.2px 8px 0px inset;\n}\n.button1:active .svg1,\n.button2:active .svg2 {\n  scale: 0.95;\n}\n.button3:active {\n  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,\n    #d42a02 -3.2px -3.2px 8px 0px inset;\n}\n.button3:active .button_text {\n  transform: translateY(0.5px);\n}\n.button4:active {\n  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,\n    #545251 -3.2px -3.2px 8px 0px inset;\n}\n.button4:active .button_text {\n  transform: translateY(0.5px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Praashoo7_average-swan-99.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"main\"></view>\n  <view class=\"buttons\"></view>\n    <view class=\"button_pair\"></view>\n      <view class=\"btn\"></view>\n        <button class=\"button1\"></button>\n          <view viewBox=\"0 -960 960 960\" class=\"svg1\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n            <path d=\"M200-440v-80h560v80H200Z\"></path>\n          </svg>\n        </button>\n      </div>\n      <view class=\"btn\"></view>\n        <button class=\"button2\"></button>\n          <view viewBox=\"0 -960 960 960\" xmlns=\"http://www.w3.org/2000/svg\" class=\"svg2\"></view>\n            <path d=\"M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z\"></path>\n          </svg>\n        </button>\n      </div>\n    </div>\n    <view class=\"button_pair\"></view>\n      <view class=\"btn\"></view>\n        <button class=\"button3\"></button>\n          <text class=\"button_text\">RECORD</text>\n        </button>\n      </div>\n      <view class=\"btn\"></view>\n        <button class=\"button4\"></button>\n          <text class=\"button_text\">PLAY</text>\n        </button>\n      </div>\n    </div>\n  </div>\n  <view class=\"text\">Teenage Engineering [EP-133 K.O. II] - Buttons</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAverageSwan99',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Praashoo7  - Tags: neumorphism, button, realistic, buttons, teenage engineering */\n/* Teenage Engineering [EP-133 K.O. II] - Buttons */\n\n.main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  row-gap: 1.25em;\n}\n\n.buttons {\n  display: flex;\n  flex-direction: column;\n  row-gap: 1.5em;\n}\n.button_pair {\n  display: flex;\n  column-gap: 1.5em;\n}\n.button_pair1 {\n  display: flex;\n  flex-direction: column;\n  row-gap: 0.9em;\n}\n\n.btn {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 5em;\n  height: 5em;\n  background-color: #171717;\n  border-radius: 10rpx;\n}\n\n.button1 {\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 20rpx;\n  border: none;\n  outline: none;\n  background-color: #c7c3c0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 20rpx 20rpx 16rpx,\n    #ffffff 3rpx 3rpx 4rpx 0rpx inset, #c7c3c0 -6.4rpx -6.4rpx 16rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n.button2 {\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 20rpx;\n  border: none;\n  outline: none;\n  background-color: #c7c3c0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 20rpx 20rpx 16rpx,\n    #ffffff 3rpx 3rpx 4rpx 0rpx inset, #c7c3c0 -6.4rpx -6.4rpx 16rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n.svg1 {\n  fill: #5f5f5f;\n  width: 50rpx;\n  height: 50rpx;\n  transition: 0.1s ease-in-out;\n}\n.svg2 {\n  fill: #5f5f5f;\n  width: 50rpx;\n  height: 50rpx;\n  transition: 0.1s ease-in-out;\n}\n\n.button3 {\n  display: flex;\n  align-items: flex-start;\n  justify-content: center;\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 20rpx;\n  border: none;\n  outline: none;\n  background-color: #d42a02;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 20rpx 20rpx 16rpx, #fb702c 4rpx 4rpx 20rpx 0rpx inset,\n    #d42a02 -8rpx -8rpx 2rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n.button4 {\n  display: flex;\n  align-items: flex-start;\n  justify-content: center;\n  width: 5.7em;\n  height: 5.7em;\n  border-radius: 20rpx;\n  border: none;\n  outline: none;\n  background-color: #545251;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 20rpx 20rpx 16rpx,\n    #a8a6a4 3rpx 3rpx 2rpx 0rpx inset, #545251 -6.4rpx -6.4rpx 16rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: Montserrat;\n  transition: 0.1s ease-in-out;\n}\n\n.button_text {\n  color: white;\n  padding-top: 0.9em;\n  letter-spacing: 0.075em;\n  font-size: 0.85em;\n  transition: 0.1s ease-in-out;\n}\n\n.text {\n  font-family: Montserrat;\n  text-align: center;\n  font-size: 0.65em;\n}\n\n.button1:active,\n.button2:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 0rpx 0rpx 0rpx, inset 1rpx 1rpx 8rpx #000000,\n    #c7c3c0 -6.4rpx -6.4rpx 16rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.button1:active .svg1,\n.button2:active .svg2 {\n  scale: 0.95;\n}\n.button3:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 0rpx 0rpx 0rpx, inset 1rpx 1rpx 8rpx #000000,\n    #d42a02 -6.4rpx -6.4rpx 16rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.button3:active .button_text {\n  transform: translateY(1rpx);\n}\n.button4:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgba(0, 0, 0, 0.377) 0rpx 0rpx 0rpx, inset 1rpx 1rpx 8rpx #000000,\n    #545251 -6.4rpx -6.4rpx 16rpx 0rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.button4:active .button_text {\n  transform: translateY(1rpx);\n}\n\n",
+    "component_name": "GalaxyAverageSwan99"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4180,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.242Z",
+  "updated_at": "2025-07-31T07:55:34.242Z"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "newrocker2468_tiny-frog-22",
+  "name": "tiny-frog-22",
+  "category": "buttons",
+  "author": "newrocker2468",
+  "description": "tiny-frog-22 组件 (simple, green, button, hover, simple button, #button, animation, interactive)",
+  "tags": [
+    "simple",
+    "green",
+    "button",
+    "hover",
+    "simple button",
+    "#button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button1\">\n Click me!\n</button>",
+    "css": "/* From Uiverse.io by newrocker2468 - Tags: simple, green, button, hover, simple button, #button */\n.button1 {\n  background-color: white;\n  font-weight: bold;\n  font-size: 1em;\n  border: none;\n  border-radius: 5px;\n  padding: 1.2em;\n  color: rgb(0, 0, 0);\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n  transition: all 500ms;\n  z-index: 99;\n}\n\n.button1::after {\n  content: \"\";\n  position: absolute;\n  width: 25px;\n  height: 25px;\n  border-radius: 20px;\n  bottom: -30px;\n  left: 45px;\n  background-color: #5affc0;\n  z-index: -99;\n  transition: all 500ms;\n}\n\n.button1:hover::after {\n  width: 120px;\n  height: 60px;\n  border-radius: 10px;\n  transition: all 500ms;\n  bottom: -1px;\n  left: -1px;\n}\n\n.button1:hover {\n  border-radius: 20px;\n  box-shadow: 0 0 100px 20px #5affc0;\n}\n\n.button1:active {\n  transform: translateY(10px);\n}\n\n.button1:focus {\n  border: 5px solid #a0fad8;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/newrocker2468_tiny-frog-22.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button1\"></button>\n Click me!\n</button>",
+    "script": "export default {\n  name: 'GalaxyTinyFrog22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by newrocker2468 - Tags: simple, green, button, hover, simple button, #button */\n.button1 {\n  background-color: white;\n  font-weight: bold;\n  font-size: 1em;\n  border: none;\n  border-radius: 10rpx;\n  padding: 1.2em;\n  color: rgb(0, 0, 0);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n  transition: all 500ms;\n  z-index: 99;\n}\n\n.button1::after {\n  content: \"\";\n  position: absolute;\n  width: 50rpx;\n  height: 50rpx;\n  border-radius: 40rpx;\n  bottom: -60rpx;\n  left: 90rpx;\n  background-color: #5affc0;\n  z-index: -99;\n  transition: all 500ms;\n}\n\n.button1:hover::after {\n  width: 240rpx;\n  height: 120rpx;\n  border-radius: 20rpx;\n  transition: all 500ms;\n  bottom: -2rpx;\n  left: -2rpx;\n}\n\n.button1:hover {\n  border-radius: 40rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 200rpx 40rpx #5affc0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button1:active {\n  transform: translateY(20rpx);\n}\n\n.button1:focus {\n  border: 10rpx solid #a0fad8;\n}\n\n",
+    "component_name": "GalaxyTinyFrog22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 940,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.454Z",
+  "updated_at": "2025-07-31T07:55:37.454Z"
+}

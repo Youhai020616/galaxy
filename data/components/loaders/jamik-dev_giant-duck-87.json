@@ -1,0 +1,89 @@
+{
+  "id": "jamik-dev_giant-duck-87",
+  "name": "giant-duck-87",
+  "category": "loaders",
+  "author": "jamik-dev",
+  "description": "giant-duck-87 组件 (loader, smooth, cube, modern, animated, animation)",
+  "tags": [
+    "loader",
+    "smooth",
+    "cube",
+    "modern",
+    "animated",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"cube\">\n  <div class=\"cube_item cube_x\"></div>\n  <div class=\"cube_item cube_y\"></div>\n  <div class=\"cube_item cube_y\"></div>\n  <div class=\"cube_item cube_x\"></div>\n</div>",
+    "css": "/* From Uiverse.io by jamik-dev  - Tags: loader, smooth, cube, modern, animated */\n.cube {\n  height: 80px;\n  width: 80px;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 6px;\n}\n\n.cube_item {\n  height: 40px;\n  width: 40px;\n  border-radius: 10px;\n  transition: all 0.2s ease-in;\n}\n\n.cube_x {\n  background-color: blueviolet;\n  animation: animateLoaders 1s infinite;\n}\n\n.cube_y {\n  background-color: aqua;\n  animation: animateLoaders 1s 0.5s infinite;\n}\n\n@keyframes animateLoaders {\n  0% {\n    transform: scale(0.8);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(0.8);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/jamik-dev_giant-duck-87.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cube\"></view>\n  <view class=\"cube_item cube_x\"></view>\n  <view class=\"cube_item cube_y\"></view>\n  <view class=\"cube_item cube_y\"></view>\n  <view class=\"cube_item cube_x\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGiantDuck87',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by jamik-dev  - Tags: loader, smooth, cube, modern, animated */\n.cube {\n  height: 160rpx;\n  width: 160rpx;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 12rpx;\n}\n\n.cube_item {\n  height: 80rpx;\n  width: 80rpx;\n  border-radius: 20rpx;\n  transition: all 0.2s ease-in;\n}\n\n.cube_x {\n  background-color: blueviolet;\n  animation: animateLoaders 1s infinite;\n}\n\n.cube_y {\n  background-color: aqua;\n  animation: animateLoaders 1s 0.5s infinite;\n}\n\n@keyframes animateLoaders {\n  0% {\n    transform: scale(0.8);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(0.8);\n  }\n}\n\n",
+    "component_name": "GalaxyGiantDuck87"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 800,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.240Z",
+  "updated_at": "2025-07-31T07:55:42.240Z"
+}

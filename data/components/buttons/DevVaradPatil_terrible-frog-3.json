@@ -1,0 +1,113 @@
+{
+  "id": "DevVaradPatil_terrible-frog-3",
+  "name": "terrible-frog-3",
+  "category": "buttons",
+  "author": "DevVaradPatil",
+  "description": "terrible-frog-3 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by DevVaradPatil - Tags: button */\nbutton {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  width: 130px;\n  height: 45px;\n  text-align: center;\n  line-height: 45px;\n  color: #fff;\n  font-size: 15px;\n  text-transform: uppercase;\n  text-decoration: none;\n  font-family: sans-serif;\n  box-sizing: border-box;\n  background: linear-gradient(90deg,#03a9f4,#ffeb3b,#f441af,#03a9f4);\n  background-size: 400%;\n  border-radius: 30px;\n  z-index: 1;\n  border: none;\n  outline: none;\n}\n\nbutton:hover {\n  animation: animate 6s linear infinite;\n}\n\n@keyframes animate {\n  0% {\n    background-position: 0%;\n  }\n\n  100% {\n    background-position: 400%;\n  }\n}\n\nbutton::before {\n  content: '';\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  right: -5px;\n  bottom: -5px;\n  z-index: -1;\n  background: linear-gradient(90deg,#03a9f4,#ffeb3b,#f441af,#03a9f4);\n  border-radius: 40px;\n  filter: blur(20px);\n  opacity: 0;\n  transition: 0.5s;\n}\n\nbutton:hover::before {\n  filter: blur(20px);\n  opacity: 1;\n  animation: animate 6s linear infinite;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/DevVaradPatil_terrible-frog-3.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyTerribleFrog3',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by DevVaradPatil - Tags: button */\nbutton {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  width: 260rpx;\n  height: 90rpx;\n  text-align: center;\n  line-height: 90rpx;\n  color: #fff;\n  font-size: 30rpx;\n  text-transform: uppercase;\n  text-decoration: none;\n  font-family: sans-serif;\n  box-sizing: border-box;\n  background: linear-gradient(90deg,#03a9f4,#ffeb3b,#f441af,#03a9f4);\n  background-size: 400%;\n  border-radius: 60rpx;\n  z-index: 1;\n  border: none;\n  outline: none;\n}\n\nbutton:hover {\n  animation: animate 6s linear infinite;\n}\n\n@keyframes animate {\n  0% {\n    background-position: 0%;\n  }\n\n  100% {\n    background-position: 400%;\n  }\n}\n\nbutton::before {\n  content: '';\n  position: absolute;\n  top: -10rpx;\n  left: -10rpx;\n  right: -10rpx;\n  bottom: -10rpx;\n  z-index: -1;\n  background: linear-gradient(90deg,#03a9f4,#ffeb3b,#f441af,#03a9f4);\n  border-radius: 80rpx;\n  \n  opacity: 0;\n  transition: 0.5s;\n}\n\nbutton:hover::before {\n  \n  opacity: 1;\n  animation: animate 6s linear infinite;\n}\n",
+    "component_name": "GalaxyTerribleFrog3"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1108,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.130Z",
+  "updated_at": "2025-07-31T07:55:33.130Z"
+}

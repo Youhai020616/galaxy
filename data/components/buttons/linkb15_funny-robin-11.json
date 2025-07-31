@@ -1,0 +1,115 @@
+{
+  "id": "linkb15_funny-robin-11",
+  "name": "funny-robin-11",
+  "category": "buttons",
+  "author": "linkb15",
+  "description": "funny-robin-11 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by linkb15 - Tags: button */\nbutton {\n  --min-width: 180px;\n  --min-height: 42px;\n  --ring-min-size: 20px;\n  --ring-max-size: 150px;\n  --ring-width: 3px;\n  --main-bg-color: #814fd1;\n  --gradient-bg-color-1: rgb(222, 203, 226);\n  --gradient-bg-color-2: rgb(79, 131, 209);\n  --ring-color: #6f00ff;\n  --shadow-color: rgba(79, 99, 209, 0.64);\n  --hover-shadow-color: rgba(79, 99, 209, 0.64);\n  --main-fg-color: #313133;\n  --hover-fg-color: rgb(38, 11, 53);\n  min-width: var(--min-width);\n  min-height: var(--min-height);\n  font-size: 17px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: var(--main-fg-color);\n  background: var(--main-bg-color);\n  background: linear-gradient(66deg, var(--gradient-bg-color-1) 0%, var(--gradient-bg-color-2) 100%);\n  border: none;\n  border-radius: 999px;\n  box-shadow: 12px 2px 24px var(--shadow-color);\n  transition: all 0.3s ease-in-out 0s;\n  cursor: pointer;\n  outline: none;\n  position: relative;\n  padding: 10px;\n}\n\nbutton::before {\n  content: '';\n  border-radius: 999px;\n  min-width: calc(var(--min-width) + 12px);\n  min-height: calc(var(--min-height) + 12px);\n  border: var(--ring-width) solid var(--ring-color);\n  box-shadow: 0 0 60px var(--hover-shadow-color);\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  opacity: 0;\n  transition: all .3s ease-in-out 0s;\n}\n\nbutton:hover, .button:focus {\n  color: var(--hover-fg-color);\n  transform: translateY(-6px);\n}\n\nbutton:active {\n  color: var(--main-fg-color);\n  transform: scale(0.95);\n}\n\nbutton:active::before {\n  border: 0px solid var(--ring-color);\n}\n\nbutton:hover::before, button:focus::before {\n  opacity: 1;\n}\n\n/* ring */\nbutton::after {\n  content: '';\n  width: var(--ring-min-size);\n  height: var(--ring-min-size);\n  border-radius: 100%;\n  border: var(--ring-width) solid var(--ring-color);\n  position: absolute;\n  z-index: -1;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: ring 1.5s infinite;\n}\n\nbutton:hover::after, button:focus::after {\n  animation: none;\n  display: none;\n}\n\n@keyframes ring {\n  0% {\n    width: var(--ring-min-size);\n    height: var(--ring-min-size);\n    opacity: 0.5;\n  }\n\n  100% {\n    width: var(--ring-max-size);\n    height: var(--ring-max-size);\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/linkb15_funny-robin-11.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyFunnyRobin11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by linkb15 - Tags: button */\nbutton {\n  --min-width: 360rpx;\n  --min-height: 84rpx;\n  --ring-min-size: 40rpx;\n  --ring-max-size: 300rpx;\n  --ring-width: 6rpx;\n  --main-bg-color: #814fd1;\n  --gradient-bg-color-1: rgb(222, 203, 226);\n  --gradient-bg-color-2: rgb(79, 131, 209);\n  --ring-color: #6f00ff;\n  --shadow-color: rgba(79, 99, 209, 0.64);\n  --hover-shadow-color: rgba(79, 99, 209, 0.64);\n  --main-fg-color: #313133;\n  --hover-fg-color: rgb(38, 11, 53);\n  min-width: var(--min-width);\n  min-height: var(--min-height);\n  font-size: 34rpx;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: var(--main-fg-color);\n  background: var(--main-bg-color);\n  background: linear-gradient(66deg, var(--gradient-bg-color-1) 0%, var(--gradient-bg-color-2) 100%);\n  border: none;\n  border-radius: 1998rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 24rpx 4rpx 48rpx var(--shadow-color);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease-in-out 0s;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  outline: none;\n  position: relative;\n  padding: 20rpx;\n}\n\nbutton::before {\n  content: '';\n  border-radius: 1998rpx;\n  min-width: calc(var(--min-width) + 24rpx);\n  min-height: calc(var(--min-height) + 24rpx);\n  border: var(--ring-width) solid var(--ring-color);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 120rpx var(--hover-shadow-color);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  opacity: 0;\n  transition: all .3s ease-in-out 0s;\n}\n\nbutton:hover, .button:focus {\n  color: var(--hover-fg-color);\n  transform: translateY(-12rpx);\n}\n\nbutton:active {\n  color: var(--main-fg-color);\n  transform: scale(0.95);\n}\n\nbutton:active::before {\n  border: 0rpx solid var(--ring-color);\n}\n\nbutton:hover::before, button:focus::before {\n  opacity: 1;\n}\n\n/* ring */\nbutton::after {\n  content: '';\n  width: var(--ring-min-size);\n  height: var(--ring-min-size);\n  border-radius: 100%;\n  border: var(--ring-width) solid var(--ring-color);\n  position: absolute;\n  z-index: -1;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: ring 1.5s infinite;\n}\n\nbutton:hover::after, button:focus::after {\n  animation: none;\n  display: none;\n}\n\n@keyframes ring {\n  0% {\n    width: var(--ring-min-size);\n    height: var(--ring-min-size);\n    opacity: 0.5;\n  }\n\n  100% {\n    width: var(--ring-max-size);\n    height: var(--ring-max-size);\n    opacity: 0;\n  }\n}\n",
+    "component_name": "GalaxyFunnyRobin11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2306,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.157Z",
+  "updated_at": "2025-07-31T07:55:37.157Z"
+}

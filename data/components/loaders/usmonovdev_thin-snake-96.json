@@ -1,0 +1,85 @@
+{
+  "id": "usmonovdev_thin-snake-96",
+  "name": "thin-snake-96",
+  "category": "loaders",
+  "author": "usmonovdev",
+  "description": "thin-snake-96 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div></div>\n<div></div>\n</div>",
+    "css": "/* From Uiverse.io by usmonovdev - Tags: loader */\n.spinner {\n position: relative;\n width: 56px;\n height: 56px;\n}\n\n.spinner > div {\n width: 100%;\n height: 100%;\n border-radius: 50%;\n border: 13px solid rgba(181, 126, 16, 0.196);\n position: absolute;\n top: 0;\n left: 0;\n animation: spinner-g7vlvwmd 0.65s linear infinite;\n z-index: 0;\n}\n\n.spinner > div::before {\n content: '';\n height: 13px;\n width: 13px;\n border-radius: 50%;\n background: #ff8a23;\n position: absolute;\n top: 50%;\n animation: spinner-h1vps1md 1.3s infinite reverse steps(1);\n transform: translate(calc(2 * var(--translate-2)), calc(var(--translate) * 1%));\n z-index: 1;\n}\n\n.spinner > div:nth-of-type(1) {\n --translate: -50;\n --translate-2: calc(56px / 8);\n}\n\n.spinner > div:nth-of-type(1)::before {\n right: 0;\n}\n\n.spinner > div:nth-of-type(2) {\n --translate: 50;\n --translate-2: calc(-56px / 8);\n animation-delay: 0.65s;\n animation-direction: reverse;\n transform: translate(21.5px, 0);\n}\n\n.spinner > div:nth-of-type(2)::before {\n left: 0;\n transform: translate(calc(-56px / 4), -50%);\n animation-direction: normal;\n}\n\n@keyframes spinner-h1vps1md {\n 0% {\n  opacity: 0;\n }\n\n 50% {\n  opacity: 1;\n }\n}\n\n@keyframes spinner-g7vlvwmd {\n from {\n  transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2)), 0) rotate(0deg);\n }\n\n to {\n  transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2)), 0) rotate(360deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/usmonovdev_thin-snake-96.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view></view>\n<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyThinSnake96',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by usmonovdev - Tags: loader */\n.spinner {\n position: relative;\n width: 112rpx;\n height: 112rpx;\n}\n\n.spinner > div {\n width: 100%;\n height: 100%;\n border-radius: 50%;\n border: 26rpx solid rgba(181, 126, 16, 0.196);\n position: absolute;\n top: 0;\n left: 0;\n animation: spinner-g7vlvwmd 0.65s linear infinite;\n z-index: 0;\n}\n\n.spinner > div::before {\n content: '';\n height: 26rpx;\n width: 26rpx;\n border-radius: 50%;\n background: #ff8a23;\n position: absolute;\n top: 50%;\n animation: spinner-h1vps1md 1.3s infinite reverse steps(1);\n transform: translate(calc(2 * var(--translate-2)), calc(var(--translate) * 1%));\n z-index: 1;\n}\n\n.spinner > div:nth-of-type(1) {\n --translate: -50;\n --translate-2: calc(112rpx / 8);\n}\n\n.spinner > div:nth-of-type(1)::before {\n right: 0;\n}\n\n.spinner > div:nth-of-type(2) {\n --translate: 50;\n --translate-2: calc(-112rpx / 8);\n animation-delay: 0.65s;\n animation-direction: reverse;\n transform: translate(43rpx, 0);\n}\n\n.spinner > div:nth-of-type(2)::before {\n left: 0;\n transform: translate(calc(-112rpx / 4), -50%);\n animation-direction: normal;\n}\n\n@keyframes spinner-h1vps1md {\n 0% {\n  opacity: 0;\n }\n\n 50% {\n  opacity: 1;\n }\n}\n\n@keyframes spinner-g7vlvwmd {\n from {\n  transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2)), 0) rotate(0deg);\n }\n\n to {\n  transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2)), 0) rotate(360deg);\n }\n}\n",
+    "component_name": "GalaxyThinSnake96"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1491,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.710Z",
+  "updated_at": "2025-07-31T07:55:42.710Z"
+}

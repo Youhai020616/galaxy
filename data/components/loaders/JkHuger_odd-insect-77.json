@@ -1,0 +1,92 @@
+{
+  "id": "JkHuger_odd-insect-77",
+  "name": "odd-insect-77",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "odd-insect-77 组件 (3d, loader, rotate, box, animation)",
+  "tags": [
+    "3d",
+    "loader",
+    "rotate",
+    "box",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"cube\">\n    <div class=\"face front\"></div>\n    <div class=\"face back\"></div>\n    <div class=\"face right\"></div>\n    <div class=\"face left\"></div>\n    <div class=\"face top\"></div>\n    <div class=\"face bottom\"></div>\n</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: 3d, loader, rotate, box */\n.cube {\n  top: -100px;\n  margin: 200px auto 0;\n  width: 100px;\n  height: 100Px;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: spin 3s infinite cubic-bezier(0.16, 0.61, 0.49, 0.91);\n}\n\n.face {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgb(67, 191, 207);\n  border: 2px solid #fff;\n  border-radius: 5px;\n  box-shadow: 0 0 15px #fff;\n}\n\n.top {\n  transform: rotateX(90deg) translateZ(50px);\n  animation: shift-top 3s infinite ease-out;\n}\n\n.bottom {\n  transform: rotateX(-90deg) translateZ(50px);\n  animation: shift-bottom 3s infinite ease-out;\n}\n\n.right {\n  transform: rotateY(90deg) translateZ(50px);\n  animation: shift-right 3s infinite ease-out;\n}\n\n.left {\n  transform: rotateY(-90deg) translateZ(50px);\n  animation: shift-left 3s infinite ease-out;\n}\n\n.front {\n  transform: translateZ(50px);\n  animation: shift-front 3s infinite ease-out;\n}\n\n.back {\n  transform: rotateY(-180deg) translateZ(50px);\n  animation: shift-back 3s infinite ease-out;\n}\n\n@keyframes spin {\n  33% {\n    transform: rotateX(-36deg) rotateY(-405deg);\n  }\n\n  100% {\n    transform: rotateX(-36deg) rotateY(-405deg);\n  }\n}\n\n@keyframes shift-top {\n  33% {\n    transform: rotateX(90deg) translateZ(50px);\n  }\n\n  50% {\n    transform: rotateX(90deg) translateZ(100px);\n  }\n\n  60% {\n    transform: rotateX(90deg) translateZ(100px);\n  }\n\n  75% {\n    transform: rotateX(90deg) translateZ(50px);\n  }\n}\n\n@keyframes shift-bottom {\n  33% {\n    transform: rotateX(-90deg) translateZ(50px);\n  }\n\n  50% {\n    transform: rotateX(-90deg) translateZ(100px);\n  }\n\n  60% {\n    transform: rotateX(-90deg) translateZ(100px);\n  }\n\n  75% {\n    transform: rotateX(-90deg) translateZ(50px);\n  }\n}\n\n@keyframes shift-right {\n  33% {\n    transform: rotateY(90deg) translateZ(50px);\n  }\n\n  50% {\n    transform: rotateY(90deg) translateZ(100px);\n  }\n\n  60% {\n    transform: rotateY(90deg) translateZ(100px);\n  }\n\n  75% {\n    transform: rotateY(90deg) translateZ(50px);\n  }\n}\n\n@keyframes shift-left {\n  33% {\n    transform: rotateY(-90deg) translateZ(50px);\n  }\n\n  50% {\n    transform: rotateY(-90deg) translateZ(100px);\n  }\n\n  60% {\n    transform: rotateY(-90deg) translateZ(100px);\n  }\n\n  75% {\n    transform: rotateY(-90deg) translateZ(50px);\n  }\n}\n\n@keyframes shift-front {\n  33% {\n    transform: translateZ(50px);\n  }\n\n  50% {\n    transform: translateZ(100px);\n  }\n\n  60% {\n    transform: translateZ(100px);\n  }\n\n  75% {\n    transform: translateZ(50px);\n  }\n}\n\n@keyframes shift-back {\n  33% {\n    transform: rotateY(-180deg) translateZ(50px);\n  }\n\n  50% {\n    transform: rotateY(-180deg) translateZ(100px);\n  }\n\n  60% {\n    transform: rotateY(-180deg) translateZ(100px);\n  }\n\n  75% {\n    transform: rotateY(-180deg) translateZ(50px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_odd-insect-77.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"cube\"></view>\n    <view class=\"face front\"></view>\n    <view class=\"face back\"></view>\n    <view class=\"face right\"></view>\n    <view class=\"face left\"></view>\n    <view class=\"face top\"></view>\n    <view class=\"face bottom\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOddInsect77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: 3d, loader, rotate, box */\n.cube {\n  top: -200rpx;\n  margin: 400rpx auto 0;\n  width: 200rpx;\n  height: 100Px;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: spin 3s infinite cubic-bezier(0.16, 0.61, 0.49, 0.91);\n}\n\n.face {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgb(67, 191, 207);\n  border: 4rpx solid #fff;\n  border-radius: 10rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 30rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.top {\n  transform: rotateX(90deg) translateZ(100rpx);\n  animation: shift-top 3s infinite ease-out;\n}\n\n.bottom {\n  transform: rotateX(-90deg) translateZ(100rpx);\n  animation: shift-bottom 3s infinite ease-out;\n}\n\n.right {\n  transform: rotateY(90deg) translateZ(100rpx);\n  animation: shift-right 3s infinite ease-out;\n}\n\n.left {\n  transform: rotateY(-90deg) translateZ(100rpx);\n  animation: shift-left 3s infinite ease-out;\n}\n\n.front {\n  transform: translateZ(100rpx);\n  animation: shift-front 3s infinite ease-out;\n}\n\n.back {\n  transform: rotateY(-180deg) translateZ(100rpx);\n  animation: shift-back 3s infinite ease-out;\n}\n\n@keyframes spin {\n  33% {\n    transform: rotateX(-36deg) rotateY(-405deg);\n  }\n\n  100% {\n    transform: rotateX(-36deg) rotateY(-405deg);\n  }\n}\n\n@keyframes shift-top {\n  33% {\n    transform: rotateX(90deg) translateZ(100rpx);\n  }\n\n  50% {\n    transform: rotateX(90deg) translateZ(200rpx);\n  }\n\n  60% {\n    transform: rotateX(90deg) translateZ(200rpx);\n  }\n\n  75% {\n    transform: rotateX(90deg) translateZ(100rpx);\n  }\n}\n\n@keyframes shift-bottom {\n  33% {\n    transform: rotateX(-90deg) translateZ(100rpx);\n  }\n\n  50% {\n    transform: rotateX(-90deg) translateZ(200rpx);\n  }\n\n  60% {\n    transform: rotateX(-90deg) translateZ(200rpx);\n  }\n\n  75% {\n    transform: rotateX(-90deg) translateZ(100rpx);\n  }\n}\n\n@keyframes shift-right {\n  33% {\n    transform: rotateY(90deg) translateZ(100rpx);\n  }\n\n  50% {\n    transform: rotateY(90deg) translateZ(200rpx);\n  }\n\n  60% {\n    transform: rotateY(90deg) translateZ(200rpx);\n  }\n\n  75% {\n    transform: rotateY(90deg) translateZ(100rpx);\n  }\n}\n\n@keyframes shift-left {\n  33% {\n    transform: rotateY(-90deg) translateZ(100rpx);\n  }\n\n  50% {\n    transform: rotateY(-90deg) translateZ(200rpx);\n  }\n\n  60% {\n    transform: rotateY(-90deg) translateZ(200rpx);\n  }\n\n  75% {\n    transform: rotateY(-90deg) translateZ(100rpx);\n  }\n}\n\n@keyframes shift-front {\n  33% {\n    transform: translateZ(100rpx);\n  }\n\n  50% {\n    transform: translateZ(200rpx);\n  }\n\n  60% {\n    transform: translateZ(200rpx);\n  }\n\n  75% {\n    transform: translateZ(100rpx);\n  }\n}\n\n@keyframes shift-back {\n  33% {\n    transform: rotateY(-180deg) translateZ(100rpx);\n  }\n\n  50% {\n    transform: rotateY(-180deg) translateZ(200rpx);\n  }\n\n  60% {\n    transform: rotateY(-180deg) translateZ(200rpx);\n  }\n\n  75% {\n    transform: rotateY(-180deg) translateZ(100rpx);\n  }\n}\n",
+    "component_name": "GalaxyOddInsect77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3027,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.507Z",
+  "updated_at": "2025-07-31T07:55:39.507Z"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "fanishah_quick-deer-33",
+  "name": "quick-deer-33",
+  "category": "loaders",
+  "author": "fanishah",
+  "description": "quick-deer-33 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\" fill=\"none\">\n    <path stroke=\"#E91E63\" stroke-width=\"1.5\" d=\"M9.743 10.25c3.213 1.96 5.017 4.676 7.248 4.676 2.588 0 2.791-4.8.518-5.668-3.107-1.187-5.178 3.719-8.284 5.03-1.415.677-3.41 1.014-4.09-1.14-.251-.797-.13-1.65.133-2.442v0c.425-1.278 2.132-1.66 3.35-1.081.304.144.668.346 1.125.625z\" stroke-dashoffset=\"100\" stroke-dasharray=\"100\" class=\"path\">\n    </path>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by fanishah - Tags: loader */\n.spinner .path {\n animation: infinity-load 1.5s infinite cubic-bezier(.65,.05,.36,1)\n}\n\n@keyframes infinity-load {\n to {\n  stroke-dashoffset: 10\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/fanishah_quick-deer-33.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <view viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\" fill=\"none\"></view>\n    <path stroke=\"#E91E63\" stroke-width=\"1.5\" d=\"M9.743 10.25c3.213 1.96 5.017 4.676 7.248 4.676 2.588 0 2.791-4.8.518-5.668-3.107-1.187-5.178 3.719-8.284 5.03-1.415.677-3.41 1.014-4.09-1.14-.251-.797-.13-1.65.133-2.442v0c.425-1.278 2.132-1.66 3.35-1.081.304.144.668.346 1.125.625z\" stroke-dashoffset=\"100\" stroke-dasharray=\"100\" class=\"path\">\n    </path>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuickDeer33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by fanishah - Tags: loader */\n.spinner .path {\n animation: infinity-load 1.5s infinite cubic-bezier(.65,.05,.36,1)\n}\n\n@keyframes infinity-load {\n to {\n  stroke-dashoffset: 10\n }\n}\n",
+    "component_name": "GalaxyQuickDeer33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 695,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.027Z",
+  "updated_at": "2025-07-31T07:55:42.027Z"
+}

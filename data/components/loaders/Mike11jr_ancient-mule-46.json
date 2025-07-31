@@ -1,0 +1,85 @@
+{
+  "id": "Mike11jr_ancient-mule-46",
+  "name": "ancient-mule-46",
+  "category": "loaders",
+  "author": "Mike11jr",
+  "description": "ancient-mule-46 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div class=\"dot1\"></div>\n<div class=\"dot2\"></div>\n<div class=\"dot3\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Mike11jr - Tags: loader */\n.spinner {\n flex-direction: row;\n display: flex;\n align-items: center;\n justify-content: center;\n}\n\n.dot1, .dot2, .dot3 {\n width: 15px;\n height: 15px;\n border: double;\n border-color: white;\n border-radius: 50%;\n margin: 10px;\n}\n\n.dot1 {\n animation: jump765 1.6s -0.32s linear infinite;\n background: #2495ff;\n}\n\n.dot2 {\n animation: jump765 1.6s -0.16s linear infinite;\n background: #2495ff;\n}\n\n.dot3 {\n animation: jump765 1.6s linear infinite;\n background: #2495ff;\n}\n\n@keyframes jump765 {\n 0%, 80%, 100% {\n  -webkit-transform: scale(0);\n  transform: scale(0);\n }\n\n 40% {\n  -webkit-transform: scale(2.0);\n  transform: scale(2.0);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Mike11jr_ancient-mule-46.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view class=\"dot1\"></view>\n<view class=\"dot2\"></view>\n<view class=\"dot3\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyAncientMule46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Mike11jr - Tags: loader */\n.spinner {\n flex-direction: row;\n display: flex;\n align-items: center;\n justify-content: center;\n}\n\n.dot1, .dot2, .dot3 {\n width: 30rpx;\n height: 30rpx;\n border: double;\n border-color: white;\n border-radius: 50%;\n margin: 20rpx;\n}\n\n.dot1 {\n animation: jump765 1.6s -0.32s linear infinite;\n background: #2495ff;\n}\n\n.dot2 {\n animation: jump765 1.6s -0.16s linear infinite;\n background: #2495ff;\n}\n\n.dot3 {\n animation: jump765 1.6s linear infinite;\n background: #2495ff;\n}\n\n@keyframes jump765 {\n 0%, 80%, 100% {\n  -webkit-transform: scale(0);\n  transform: scale(0);\n }\n\n 40% {\n  -webkit-transform: scale(2.0);\n  transform: scale(2.0);\n }\n}\n\n\n",
+    "component_name": "GalaxyAncientMule46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 791,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.678Z",
+  "updated_at": "2025-07-31T07:55:39.678Z"
+}

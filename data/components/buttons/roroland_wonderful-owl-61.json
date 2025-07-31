@@ -1,0 +1,127 @@
+{
+  "id": "roroland_wonderful-owl-61",
+  "name": "wonderful-owl-61",
+  "category": "buttons",
+  "author": "roroland",
+  "description": "wonderful-owl-61 组件 (glassmorphism, pink, gradient, button, rounded, smooth, colorful, interactive)",
+  "tags": [
+    "glassmorphism",
+    "pink",
+    "gradient",
+    "button",
+    "rounded",
+    "smooth",
+    "colorful",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Join now</button>",
+    "css": "/* From Uiverse.io by roroland  - Tags: glassmorphism, pink, gradient, button, rounded, smooth, colorful */\n.button {\n  --radius: 20px;\n  --col0: 0, 0, 0;\n  --col1: 219, 161, 240;\n  --col2: 239, 214, 248;\n  --col3: 255, 255, 255;\n  --col4: 270, 153, 138;\n  --col5: 244, 164, 177;\n  --col6: 244, 136, 136;\n  --col7: 243, 136, 94;\n  --col8: 252, 187, 165;\n  --col9: 254, 230, 222;\n  --col10: 247, 197, 161;\n  --col11: 245, 205, 238;\n  --col12: 252, 67, 130;\n  position: relative;\n  background: linear-gradient(\n    65deg,\n    rgba(var(--col1), 0.81) 0%,\n    rgba(var(--col2), 0.81) 11%,\n    rgba(var(--col3), 0.81) 21%,\n    rgba(var(--col3), 0.81) 24%,\n    rgba(var(--col4), 0.5) 37%,\n    rgba(var(--col5), 0.81) 42%,\n    rgba(var(--col6), 0.81) 50%,\n    rgba(var(--col7), 0.9) 58%,\n    rgba(var(--col8), 0.81) 68%,\n    rgba(var(--col9), 0.81) 72%,\n    rgba(var(--col3), 0.81) 78%,\n    rgba(var(--col10), 0.81) 86%,\n    rgba(var(--col11), 0.81) 93%,\n    rgba(var(--col1), 0.81) 98%\n  );\n  background-size: 105%;\n  box-shadow: -10px 10px 0px rgba(var(--col0), 0.005),\n    0px 20px 30px rgba(var(--col0), 0.16),\n    inset 5px 0 20px rgba(var(--col1), 0.5),\n    inset -5px 20px 10px rgba(var(--col4), 0.5),\n    inset 1px 3px 3px rgba(var(--col0), 0.25),\n    inset 0px -5px 1px rgba(var(--col7), 0.5),\n    inset 0px -5px 1px rgba(var(--col2), 0.95),\n    inset 1px 2px 1px rgba(var(--col12), 0.15),\n    inset 5px 5px 1px rgba(var(--col12), 0.35),\n    inset -5px 5px 1px rgba(var(--col12), 0.15),\n    inset 0px -20px 10px rgba(var(--col12), 0.15);\n  cursor: pointer;\n  padding: 1rem 2rem;\n  min-height: 5rem;\n  min-width: 16rem;\n  font-size: 1rem;\n  padding-inline-start: 10%;\n  font-weight: 600;\n  filter: hue-rotate(0deg);\n  color: #505050;\n  border-radius: var(--radius);\n  appearance: none;\n  border: 0;\n  transition: all 3s ease-in-out;\n  z-index: 0;\n}\n.button:hover {\n  color: rgba(var(--col7), 1);\n  text-shadow: 2px 2px 5px rgba(var(--col1), 0.75);\n  background-size: 350%;\n  filter: hue-rotate(125deg);\n}\n.button:active {\n  transition: all 0.1s ease-out;\n  scale: 0.95;\n}\n\n.button:hover::after {\n  backdrop-filter: blur(1px);\n  opacity: 0.25;\n  box-shadow: 0;\n  translate: 10%;\n}\n.button::before {\n  --border: 4px;\n  box-shadow: inset 0px 0px 20px rgba(var(--col1), 0.5),\n    0px 0px 1px rgba(var(--col2), 0.95);\n  content: \"\";\n  border-radius: inherit;\n  position: absolute;\n  display: block;\n  width: calc(90% - var(--border));\n  height: calc(75% - var(--border));\n  inset: 0.5rem 0.5rem 0.5rem;\n  z-index: 0;\n  border: var(--border) solid transparent;\n  transition: all 3s ease-out;\n}\n.button::after {\n  content: \"\";\n  aspect-ratio: 1;\n  clip-path: polygon(88% 0, 70% 45%, 100% 45%, 61% 100%, 72% 57%, 43% 57%);\n  position: absolute;\n  background: #505050;\n  backdrop-filter: blur(5px);\n  width: 10%;\n  opacity: 1;\n  inset: 33% 0 0 25%;\n  z-index: -1;\n  transition: all 1s ease-out;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/roroland_wonderful-owl-61.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Join now</button>",
+    "script": "export default {\n  name: 'GalaxyWonderfulOwl61',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by roroland  - Tags: glassmorphism, pink, gradient, button, rounded, smooth, colorful */\n.button {\n  --radius: 40rpx;\n  --col0: 0, 0, 0;\n  --col1: 219, 161, 240;\n  --col2: 239, 214, 248;\n  --col3: 255, 255, 255;\n  --col4: 270, 153, 138;\n  --col5: 244, 164, 177;\n  --col6: 244, 136, 136;\n  --col7: 243, 136, 94;\n  --col8: 252, 187, 165;\n  --col9: 254, 230, 222;\n  --col10: 247, 197, 161;\n  --col11: 245, 205, 238;\n  --col12: 252, 67, 130;\n  position: relative;\n  background: linear-gradient(\n    65deg,\n    rgba(var(--col1), 0.81) 0%,\n    rgba(var(--col2), 0.81) 11%,\n    rgba(var(--col3), 0.81) 21%,\n    rgba(var(--col3), 0.81) 24%,\n    rgba(var(--col4), 0.5) 37%,\n    rgba(var(--col5), 0.81) 42%,\n    rgba(var(--col6), 0.81) 50%,\n    rgba(var(--col7), 0.9) 58%,\n    rgba(var(--col8), 0.81) 68%,\n    rgba(var(--col9), 0.81) 72%,\n    rgba(var(--col3), 0.81) 78%,\n    rgba(var(--col10), 0.81) 86%,\n    rgba(var(--col11), 0.81) 93%,\n    rgba(var(--col1), 0.81) 98%\n  );\n  background-size: 105%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx 20rpx 0rpx rgba(var(--col0), 0.005),\n    0rpx 40rpx 60rpx rgba(var(--col0), 0.16),\n    inset 10rpx 0 40rpx rgba(var(--col1), 0.5),\n    inset -10rpx 40rpx 20rpx rgba(var(--col4), 0.5),\n    inset 2rpx 6rpx 6rpx rgba(var(--col0), 0.25),\n    inset 0rpx -10rpx 2rpx rgba(var(--col7), 0.5),\n    inset 0rpx -10rpx 2rpx rgba(var(--col2), 0.95),\n    inset 2rpx 4rpx 2rpx rgba(var(--col12), 0.15),\n    inset 10rpx 10rpx 2rpx rgba(var(--col12), 0.35),\n    inset -10rpx 10rpx 2rpx rgba(var(--col12), 0.15),\n    inset 0rpx -40rpx 20rpx rgba(var(--col12), 0.15);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 1rem 2rem;\n  min-height: 5rem;\n  min-width: 16rem;\n  font-size: 1rem;\n  padding-inline-start: 10%;\n  font-weight: 600;\n  \n  color: #505050;\n  border-radius: var(--radius);\n  appearance: none;\n  border: 0;\n  transition: all 3s ease-in-out;\n  z-index: 0;\n}\n.button:hover {\n  color: rgba(var(--col7), 1);\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 10rpx rgba(var(--col1), 0.75);\n  /* #endif */\n  background-size: 350%;\n  \n}\n.button:active {\n  transition: all 0.1s ease-out;\n  scale: 0.95;\n}\n\n.button:hover::after {\n  backdrop-\n  opacity: 0.25;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  translate: 10%;\n}\n.button::before {\n  --border: 8rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0rpx 40rpx rgba(var(--col1), 0.5),\n    0rpx 0rpx 2rpx rgba(var(--col2), 0.95);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  content: \"\";\n  border-radius: inherit;\n  position: absolute;\n  display: block;\n  width: calc(90% - var(--border));\n  height: calc(75% - var(--border));\n  inset: 0.5rem 0.5rem 0.5rem;\n  z-index: 0;\n  border: var(--border) solid transparent;\n  transition: all 3s ease-out;\n}\n.button::after {\n  content: \"\";\n  aspect-ratio: 1;\n  \n  position: absolute;\n  background: #505050;\n  backdrop-\n  width: 10%;\n  opacity: 1;\n  inset: 33% 0 0 25%;\n  z-index: -1;\n  transition: all 1s ease-out;\n}\n\n",
+    "component_name": "GalaxyWonderfulOwl61"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2938,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.679Z",
+  "updated_at": "2025-07-31T07:55:37.679Z"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "SmookyDev_plastic-dragonfly-83",
+  "name": "plastic-dragonfly-83",
+  "category": "tooltips",
+  "author": "SmookyDev",
+  "description": "plastic-dragonfly-83 组件 (simple, neumorphism, skeuomorphism, flashy, tooltip, icon, hover effect, css, interactive)",
+  "tags": [
+    "simple",
+    "neumorphism",
+    "skeuomorphism",
+    "flashy",
+    "tooltip",
+    "icon",
+    "hover effect",
+    "css",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip\">\n  <div class=\"icon\">i</div>\n  <div class=\"tooltiptext\">This is a cool tooltip!</div>\n</div>",
+    "css": "/* From Uiverse.io by SmookyDev  - Tags: simple, neumorphism, skeuomorphism, flashy, tooltip, icon, hover effect, css */\n.tooltip {\n  position: relative;\n  display: inline-block;\n  cursor: pointer;\n  font-family: \"Arial\", sans-serif;\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n\n.tooltiptext {\n  visibility: hidden;\n  width: 200px;\n  background-color: #333;\n  color: #fff;\n  text-align: center;\n  border-radius: 5px;\n  padding: 10px;\n  position: absolute;\n  z-index: 1;\n  top: 125%;\n  left: 50%;\n  margin-left: -100px;\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: -10px;\n  left: 50%;\n  margin-left: -10px;\n  border-width: 10px;\n  border-style: solid;\n  border-color: transparent transparent #333 transparent;\n}\n\n.tooltip .icon {\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  background-color: #4caf50;\n  color: #fff;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 20px;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/SmookyDev_plastic-dragonfly-83.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip\"></view>\n  <view class=\"icon\">i</view>\n  <view class=\"tooltiptext\">This is a cool tooltip!</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPlasticDragonfly83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SmookyDev  - Tags: simple, neumorphism, skeuomorphism, flashy, tooltip, icon, hover effect, css */\n.tooltip {\n  position: relative;\n  display: inline-block;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: \"Arial\", sans-serif;\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n\n.tooltiptext {\n  visibility: hidden;\n  width: 400rpx;\n  background-color: #333;\n  color: #fff;\n  text-align: center;\n  border-radius: 10rpx;\n  padding: 20rpx;\n  position: absolute;\n  z-index: 1;\n  top: 125%;\n  left: 50%;\n  margin-left: -200rpx;\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: -20rpx;\n  left: 50%;\n  margin-left: -20rpx;\n  border-width: 20rpx;\n  border-style: solid;\n  border-color: transparent transparent #333 transparent;\n}\n\n.tooltip .icon {\n  display: inline-block;\n  width: 40rpx;\n  height: 40rpx;\n  background-color: #4caf50;\n  color: #fff;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 40rpx;\n}\n\n",
+    "component_name": "GalaxyPlasticDragonfly83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1112,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.568Z",
+  "updated_at": "2025-07-31T07:55:38.568Z"
+}

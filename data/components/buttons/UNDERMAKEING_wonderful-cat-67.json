@@ -1,0 +1,112 @@
+{
+  "id": "UNDERMAKEING_wonderful-cat-67",
+  "name": "wonderful-cat-67",
+  "category": "buttons",
+  "author": "UNDERMAKEING",
+  "description": "wonderful-cat-67 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"reward-btn\">\n  <span class=\"IconContainer\">\n    <svg class=\"box-top box\" viewBox=\"0 0 60 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M2 18L58 18\" stroke=\"#6A8EF6\" stroke-width=\"4\" stroke-linecap=\"round\"></path>\n      <circle cx=\"20.5\" cy=\"9.5\" r=\"7\" fill=\"#101218\" stroke=\"#6A8EF6\" stroke-width=\"5\"></circle>\n      <circle cx=\"38.5\" cy=\"9.5\" r=\"7\" fill=\"#101218\" stroke=\"#6A8EF6\" stroke-width=\"5\"></circle>\n    </svg>\n\n    <svg class=\"box-body box\" viewBox=\"0 0 58 44\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <mask id=\"path-1-inside-1_81_19\" fill=\"white\">\n        <rect width=\"58\" height=\"44\" rx=\"3\"></rect>\n      </mask>\n      <rect width=\"58\" height=\"44\" rx=\"3\" fill=\"#101218\" stroke=\"#6A8EF6\" stroke-width=\"8\" mask=\"url(#path-1-inside-1_81_19)\"></rect>\n      <line x1=\"-3.61529e-09\" y1=\"29\" x2=\"58\" y2=\"29\" stroke=\"#6A8EF6\" stroke-width=\"6\"></line>\n      <path d=\"M45.0005 20L36 3\" stroke=\"#6A8EF6\" stroke-width=\"5\" stroke-linecap=\"round\"></path>\n      <path d=\"M21 3L13.0002 19.9992\" stroke=\"#6A8EF6\" stroke-width=\"5\" stroke-linecap=\"round\"></path>\n    </svg>\n\n    <span class=\"coin\"></span>\n  </span>\n  <span class=\"text\">Rewards</span>\n</button>",
+    "css": "/* From Uiverse.io by UNDERMAKEING  - Tags: button */\n/* From Uiverse.io by vinodjangid07 */\n.reward-btn {\n  width: 120px;\n  height: 40px;\n  background-color: #101218;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: none;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n.IconContainer {\n  width: 40px;\n  height: 40px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n}\n.IconContainer svg {\n  width: 40%;\n  z-index: 3;\n}\n.box-top {\n  transition: all 0.3s;\n}\n.text {\n  width: 70px;\n  height: 100%;\n  font-size: 13px;\n  color: #6a8ef6;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  font-weight: 600;\n}\n.reward-btn:hover .IconContainer .box-top {\n  transform: translateY(-5px);\n}\n.reward-btn:hover {\n  background-color: #202531;\n}\n.reward-btn:hover .coin {\n  transform: translateY(-5px);\n  transition-delay: 0.2s;\n}\n.coin {\n  width: 25%;\n  height: 25%;\n  background-color: #e4d61a;\n  position: absolute;\n  border-radius: 50%;\n  transition: all 0.3s;\n  z-index: 1;\n  border: 2px solid #ffe956;\n  margin-top: 4px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/UNDERMAKEING_wonderful-cat-67.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"reward-btn\"></button>\n  <text class=\"IconContainer\"></text>\n    <view class=\"box-top box\" viewBox=\"0 0 60 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M2 18L58 18\" stroke=\"#6A8EF6\" stroke-width=\"4\" stroke-linecap=\"round\"></path>\n      <circle cx=\"20.5\" cy=\"9.5\" r=\"7\" fill=\"#101218\" stroke=\"#6A8EF6\" stroke-width=\"5\"></circle>\n      <circle cx=\"38.5\" cy=\"9.5\" r=\"7\" fill=\"#101218\" stroke=\"#6A8EF6\" stroke-width=\"5\"></circle>\n    </svg>\n\n    <view class=\"box-body box\" viewBox=\"0 0 58 44\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <mask id=\"path-1-inside-1_81_19\" fill=\"white\">\n        <rect width=\"58\" height=\"44\" rx=\"3\"></rect>\n      </mask>\n      <rect width=\"58\" height=\"44\" rx=\"3\" fill=\"#101218\" stroke=\"#6A8EF6\" stroke-width=\"8\" mask=\"url(#path-1-inside-1_81_19)\"></rect>\n      <line x1=\"-3.61529e-09\" y1=\"29\" x2=\"58\" y2=\"29\" stroke=\"#6A8EF6\" stroke-width=\"6\"></line>\n      <path d=\"M45.0005 20L36 3\" stroke=\"#6A8EF6\" stroke-width=\"5\" stroke-linecap=\"round\"></path>\n      <path d=\"M21 3L13.0002 19.9992\" stroke=\"#6A8EF6\" stroke-width=\"5\" stroke-linecap=\"round\"></path>\n    </svg>\n\n    <text class=\"coin\"></text>\n  </span>\n  <text class=\"text\">Rewards</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWonderfulCat67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by UNDERMAKEING  - Tags: button */\n/* From Uiverse.io by vinodjangid07 */\n.reward-btn {\n  width: 240rpx;\n  height: 80rpx;\n  background-color: #101218;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: none;\n  border-radius: 16rpx;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.3s;\n}\n.IconContainer {\n  width: 80rpx;\n  height: 80rpx;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n}\n.IconContainer svg {\n  width: 40%;\n  z-index: 3;\n}\n.box-top {\n  transition: all 0.3s;\n}\n.text {\n  width: 140rpx;\n  height: 100%;\n  font-size: 26rpx;\n  color: #6a8ef6;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  font-weight: 600;\n}\n.reward-btn:hover .IconContainer .box-top {\n  transform: translateY(-10rpx);\n}\n.reward-btn:hover {\n  background-color: #202531;\n}\n.reward-btn:hover .coin {\n  transform: translateY(-10rpx);\n  transition-delay: 0.2s;\n}\n.coin {\n  width: 25%;\n  height: 25%;\n  background-color: #e4d61a;\n  position: absolute;\n  border-radius: 50%;\n  transition: all 0.3s;\n  z-index: 1;\n  border: 4rpx solid #ffe956;\n  margin-top: 8rpx;\n}\n\n",
+    "component_name": "GalaxyWonderfulCat67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2363,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.043Z",
+  "updated_at": "2025-07-31T07:55:35.043Z"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "VashonG_hot-baboon-9",
+  "name": "hot-baboon-9",
+  "category": "buttons",
+  "author": "VashonG",
+  "description": "hot-baboon-9 组件 (glassmorphism, button, glow, animation, gradient, interactive)",
+  "tags": [
+    "glassmorphism",
+    "button",
+    "glow",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n    <div class=\"btn\"><a href=\"#\">Read More</a></div>\n </div>",
+    "css": "/* From Uiverse.io by VashonG - Tags: glassmorphism, button, glow */\n.container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  width: 200px;\n}\n\n.container .btn {\n  height: 50px;\n  margin: 20px;\n  margin-bottom: 40px;\n  position: relative;\n  width: 155px;\n}\n\n.container .btn a {\n  align-items: center;\n  background: rgba(255, 255, 255, 0.05);\n  border-bottom: 1px solid rgba(255, 255, 255, 0.1);\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  border-radius: 30px;\n  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);\n  color: #fff;\n  display: flex;\n  font-size: 18px;\n  font-weight: 700;\n  left: 0;\n  top: 0;\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  justify-content: center;\n  letter-spacing: 1px;\n  text-decoration: none;\n  overflow: hidden;\n  -webkit-backdrop-filter: blur(10px);\n  backdrop-filter: blur(15px);\n  z-index: 1;\n  transition: 0.5s;\n}\n\n.container .btn:hover a {\n  letter-spacing: 2px;\n}\n\n.container .btn a::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 100%;\n  background: linear-gradient(to left,\n                rgba(255,255,255,0.15),\n                transparent);\n  transform: skewX(45deg) translateX(0);\n  transition: 0.5s;\n}\n\n.container .btn:hover a::before {\n  transform: skewX(45deg) translateX(200%);\n}\n\n.container .btn::before {\n  content: '';\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  bottom: -5px;\n  height: 10px;\n  width: 30px;\n  background: rgb(8, 107, 183);\n  border-radius: 10px;\n  transition: 0.5s;\n  transition-delay: 0s;\n}\n\n.container .btn:hover::before {\n  bottom: 0;\n  height: 50%;\n  width: 80%;\n  border-radius: 30px;\n  transition-delay: 0.5s;\n}\n\n.container .btn::after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  top: -5px;\n  height: 10px;\n  width: 30px;\n  background: rgb(7, 95, 189);\n  border-radius: 10px;\n  transition: 0.5s;\n  transition-delay: 0s;\n}\n\n.container .btn:hover::after {\n  top: 0;\n  height: 50%;\n  width: 80%;\n  border-radius: 30px;\n  transition-delay: 0.5s;\n}\n\n.container .btn:nth-child(1):before,\n.container .btn:nth-child(1)::after {\n  background: #2bd2ff;\n  box-shadow: 0 0 5px #2bd2ff,\n    0 0 15px #2bd2ff,\n    0 0 30px #2bd2ff,\n    0 0 60px #2bd2ff;\n}\n\n.container .btn:active a {\n  color: #000;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/VashonG_hot-baboon-9.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n    <view class=\"btn\"><navigator href=\"#\">Read More</navigator></view>\n </div>",
+    "script": "export default {\n  name: 'GalaxyHotBaboon9',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by VashonG - Tags: glassmorphism, button, glow */\n.container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  width: 400rpx;\n}\n\n.container .btn {\n  height: 100rpx;\n  margin: 40rpx;\n  margin-bottom: 80rpx;\n  position: relative;\n  width: 310rpx;\n}\n\n.container .btn a {\n  align-items: center;\n  background: rgba(255, 255, 255, 0.05);\n  border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);\n  border-top: 2rpx solid rgba(255, 255, 255, 0.1);\n  border-radius: 60rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 30rpx 70rpx rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  color: #fff;\n  display: flex;\n  font-size: 36rpx;\n  font-weight: 700;\n  left: 0;\n  top: 0;\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  justify-content: center;\n  letter-spacing: 2rpx;\n  text-decoration: none;\n  overflow: hidden;\n  -webkit-backdrop-\n  backdrop-\n  z-index: 1;\n  transition: 0.5s;\n}\n\n.container .btn:hover a {\n  letter-spacing: 4rpx;\n}\n\n.container .btn a::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 50%;\n  height: 100%;\n  background: linear-gradient(to left,\n                rgba(255,255,255,0.15),\n                transparent);\n  transform: skewX(45deg) translateX(0);\n  transition: 0.5s;\n}\n\n.container .btn:hover a::before {\n  transform: skewX(45deg) translateX(200%);\n}\n\n.container .btn::before {\n  content: '';\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  bottom: -10rpx;\n  height: 20rpx;\n  width: 60rpx;\n  background: rgb(8, 107, 183);\n  border-radius: 20rpx;\n  transition: 0.5s;\n  transition-delay: 0s;\n}\n\n.container .btn:hover::before {\n  bottom: 0;\n  height: 50%;\n  width: 80%;\n  border-radius: 60rpx;\n  transition-delay: 0.5s;\n}\n\n.container .btn::after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  top: -10rpx;\n  height: 20rpx;\n  width: 60rpx;\n  background: rgb(7, 95, 189);\n  border-radius: 20rpx;\n  transition: 0.5s;\n  transition-delay: 0s;\n}\n\n.container .btn:hover::after {\n  top: 0;\n  height: 50%;\n  width: 80%;\n  border-radius: 60rpx;\n  transition-delay: 0.5s;\n}\n\n.container .btn:nth-child(1):before,\n.container .btn:nth-child(1)::after {\n  background: #2bd2ff;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx #2bd2ff,\n    0 0 30rpx #2bd2ff,\n    0 0 60rpx #2bd2ff,\n    0 0 120rpx #2bd2ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.container .btn:active a {\n  color: #000;\n}\n\n",
+    "component_name": "GalaxyHotBaboon9"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2404,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.090Z",
+  "updated_at": "2025-07-31T07:55:35.090Z"
+}

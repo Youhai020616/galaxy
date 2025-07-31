@@ -1,0 +1,123 @@
+{
+  "id": "SelfMadeSystem_lucky-cougar-76",
+  "name": "lucky-cougar-76",
+  "category": "buttons",
+  "author": "SelfMadeSystem",
+  "description": "lucky-cougar-76 组件 (simple, neumorphism, skeuomorphism, icon, animation, gradient, button, interactive)",
+  "tags": [
+    "simple",
+    "neumorphism",
+    "skeuomorphism",
+    "icon",
+    "animation",
+    "gradient",
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"border\">\n  <div class=\"outer\">\n    <div class=\"inner\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"1.125rem\" width=\"1.125rem\">\n        <path fill=\"#000000\" d=\"M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z\"></path>\n        <path fill=\"#000000\" d=\"M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z\"></path>\n      </svg>\n      Send Message\n    </div>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by SelfMadeSystem  - Tags: simple, neumorphism, skeuomorphism, icon, animation, gradient, button */\n:focus {\n  outline: none;\n}\n::-moz-focus-inner {\n  border: 0;\n}\n\n.border {\n  position: relative;\n  cursor: pointer;\n  padding: 3px;\n  border-radius: calc(6pt + 3px);\n  appearance: none;\n  font-weight: 600;\n  background: linear-gradient(#dfe1e0, #7f8180);\n  border: 1pt solid #e9ebea;\n  border-top-width: 0;\n  box-shadow: 0px 5px 15px 0px #0004;\n  transition: all 0.4s;\n}\n\n.border::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0px;\n  left: 0;\n  right: 0;\n  height: 50%;\n  transition: inherit;\n}\n\n.border:hover {\n  transform: translateY(-5px);\n  box-shadow: 0px 10px 15px 0px #0004;\n}\n\n.border:hover:not(:active)::before {\n  bottom: -6px;\n}\n\n.border:active {\n  transform: translateY(0px);\n  box-shadow: 0px 5px 15px 0px #0000;\n  transition: all 0.3s;\n}\n\n.outer {\n  padding: 4pt;\n  background: linear-gradient(#fdfffe, #eceeed, #fdfffe);\n  border-radius: 6pt;\n}\n\n.inner {\n  background: linear-gradient(#eef0ef, #fafcfb, #eef0ef);\n  padding: 8pt;\n  border-radius: 9999px;\n  display: flex;\n  align-items: center;\n  gap: 4pt;\n  text-shadow: 0px 1px 1px #0004;\n}\n\n.inner svg {\n  filter: drop-shadow(0px 1px 0px #0007);\n}\n\n:is(.inner, .outer) {\n  background-size: 100% 200%;\n  transition: background-position-y 0.5s;\n}\n\n:active :is(.inner, .outer) {\n  background-position-y: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SelfMadeSystem_lucky-cougar-76.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"border\"></button>\n  <view class=\"outer\"></view>\n    <view class=\"inner\"></view>\n      <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"1.125rem\" width=\"1.125rem\"></view>\n        <path fill=\"#000000\" d=\"M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z\"></path>\n        <path fill=\"#000000\" d=\"M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z\"></path>\n      </svg>\n      Send Message\n    </div>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyLuckyCougar76',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem  - Tags: simple, neumorphism, skeuomorphism, icon, animation, gradient, button */\n:focus {\n  outline: none;\n}\n::-moz-focus-inner {\n  border: 0;\n}\n\n.border {\n  position: relative;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 6rpx;\n  border-radius: calc(6pt + 6rpx);\n  appearance: none;\n  font-weight: 600;\n  background: linear-gradient(#dfe1e0, #7f8180);\n  border: 1pt solid #e9ebea;\n  border-top-width: 0;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 10rpx 30rpx 0rpx #0004;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.4s;\n}\n\n.border::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0rpx;\n  left: 0;\n  right: 0;\n  height: 50%;\n  transition: inherit;\n}\n\n.border:hover {\n  transform: translateY(-10rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 20rpx 30rpx 0rpx #0004;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.border:hover:not(:active)::before {\n  bottom: -12rpx;\n}\n\n.border:active {\n  transform: translateY(0rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 10rpx 30rpx 0rpx #0000;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s;\n}\n\n.outer {\n  padding: 4pt;\n  background: linear-gradient(#fdfffe, #eceeed, #fdfffe);\n  border-radius: 6pt;\n}\n\n.inner {\n  background: linear-gradient(#eef0ef, #fafcfb, #eef0ef);\n  padding: 8pt;\n  border-radius: 19998rpx;\n  display: flex;\n  align-items: center;\n  gap: 4pt;\n  /* #ifdef H5 */\n  text-shadow: 0rpx 2rpx 2rpx #0004;\n  /* #endif */\n}\n\n.inner svg {\n  \n}\n\n:is(.inner, .outer) {\n  background-size: 100% 200%;\n  transition: background-position-y 0.5s;\n}\n\n:active :is(.inner, .outer) {\n  background-position-y: 100%;\n}\n\n",
+    "component_name": "GalaxyLuckyCougar76"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2690,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.574Z",
+  "updated_at": "2025-07-31T07:55:34.574Z"
+}

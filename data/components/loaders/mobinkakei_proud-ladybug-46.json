@@ -1,0 +1,87 @@
+{
+  "id": "mobinkakei_proud-ladybug-46",
+  "name": "proud-ladybug-46",
+  "category": "loaders",
+  "author": "mobinkakei",
+  "description": "proud-ladybug-46 组件 (loader, square, triangle, animation)",
+  "tags": [
+    "loader",
+    "square",
+    "triangle",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <svg viewBox=\"0 0 80 80\">\n    <circle r=\"32\" cy=\"40\" cx=\"40\" id=\"test\"></circle>\n  </svg>\n</div>\n\n<div class=\"loader triangle\">\n  <svg viewBox=\"0 0 86 80\">\n    <polygon points=\"43 8 79 72 7 72\"></polygon>\n  </svg>\n</div>\n\n<div class=\"loader\">\n  <svg viewBox=\"0 0 80 80\">\n    <rect height=\"64\" width=\"64\" y=\"8\" x=\"8\"></rect>\n  </svg>\n</div>",
+    "css": "/* From Uiverse.io by mobinkakei  - Website: https://codepen.io/aaroniker/pen/omvYNZ - Name: Aaron Iker - Tags: loader, square, triangle, loader, square */\n.loader {\n  --path: #2f3545;\n  --dot: #5628ee;\n  --duration: 3s;\n  width: 44px;\n  height: 44px;\n  position: relative;\n}\n\n.loader:before {\n  content: \"\";\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  position: absolute;\n  display: block;\n  background: var(--dot);\n  top: 37px;\n  left: 19px;\n  transform: translate(-18px, -18px);\n  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n.loader svg {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.loader svg rect,\n.loader svg polygon,\n.loader svg circle {\n  fill: none;\n  stroke: var(--path);\n  stroke-width: 10px;\n  stroke-linejoin: round;\n  stroke-linecap: round;\n}\n\n.loader svg polygon {\n  stroke-dasharray: 145 76 145 76;\n  stroke-dashoffset: 0;\n  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n.loader svg rect {\n  stroke-dasharray: 192 64 192 64;\n  stroke-dashoffset: 0;\n  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n.loader svg circle {\n  stroke-dasharray: 150 50 150 50;\n  stroke-dashoffset: 75;\n  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n.loader.triangle {\n  width: 48px;\n}\n\n.loader.triangle:before {\n  left: 21px;\n  transform: translate(-10px, -18px);\n  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n@keyframes pathTriangle {\n  33% {\n    stroke-dashoffset: 74;\n  }\n\n  66% {\n    stroke-dashoffset: 147;\n  }\n\n  100% {\n    stroke-dashoffset: 221;\n  }\n}\n\n@keyframes dotTriangle {\n  33% {\n    transform: translate(0, 0);\n  }\n\n  66% {\n    transform: translate(10px, -18px);\n  }\n\n  100% {\n    transform: translate(-10px, -18px);\n  }\n}\n\n@keyframes pathRect {\n  25% {\n    stroke-dashoffset: 64;\n  }\n\n  50% {\n    stroke-dashoffset: 128;\n  }\n\n  75% {\n    stroke-dashoffset: 192;\n  }\n\n  100% {\n    stroke-dashoffset: 256;\n  }\n}\n\n@keyframes dotRect {\n  25% {\n    transform: translate(0, 0);\n  }\n\n  50% {\n    transform: translate(18px, -18px);\n  }\n\n  75% {\n    transform: translate(0, -36px);\n  }\n\n  100% {\n    transform: translate(-18px, -18px);\n  }\n}\n\n@keyframes pathCircle {\n  25% {\n    stroke-dashoffset: 125;\n  }\n\n  50% {\n    stroke-dashoffset: 175;\n  }\n\n  75% {\n    stroke-dashoffset: 225;\n  }\n\n  100% {\n    stroke-dashoffset: 275;\n  }\n}\n\n.loader {\n  display: inline-block;\n  margin: 0 16px;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mobinkakei_proud-ladybug-46.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view viewBox=\"0 0 80 80\"></view>\n    <circle r=\"32\" cy=\"40\" cx=\"40\" id=\"test\"></circle>\n  </svg>\n</div>\n\n<view class=\"loader triangle\"></view>\n  <view viewBox=\"0 0 86 80\"></view>\n    <polygon points=\"43 8 79 72 7 72\"></polygon>\n  </svg>\n</div>\n\n<view class=\"loader\"></view>\n  <view viewBox=\"0 0 80 80\"></view>\n    <rect height=\"64\" width=\"64\" y=\"8\" x=\"8\"></rect>\n  </svg>\n</div>",
+    "script": "export default {\n  name: 'GalaxyProudLadybug46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mobinkakei  - Website: https://codepen.io/aaroniker/pen/omvYNZ - Name: Aaron Iker - Tags: loader, square, triangle, loader, square */\n.loader {\n  --path: #2f3545;\n  --dot: #5628ee;\n  --duration: 3s;\n  width: 88rpx;\n  height: 88rpx;\n  position: relative;\n}\n\n.loader:before {\n  content: \"\";\n  width: 12rpx;\n  height: 12rpx;\n  border-radius: 50%;\n  position: absolute;\n  display: block;\n  background: var(--dot);\n  top: 74rpx;\n  left: 38rpx;\n  transform: translate(-36rpx, -36rpx);\n  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n.loader svg {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.loader svg rect,\n.loader svg polygon,\n.loader svg circle {\n  fill: none;\n  stroke: var(--path);\n  stroke-width: 20rpx;\n  stroke-linejoin: round;\n  stroke-linecap: round;\n}\n\n.loader svg polygon {\n  stroke-dasharray: 145 76 145 76;\n  stroke-dashoffset: 0;\n  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n.loader svg rect {\n  stroke-dasharray: 192 64 192 64;\n  stroke-dashoffset: 0;\n  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n.loader svg circle {\n  stroke-dasharray: 150 50 150 50;\n  stroke-dashoffset: 75;\n  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n.loader.triangle {\n  width: 96rpx;\n}\n\n.loader.triangle:before {\n  left: 42rpx;\n  transform: translate(-20rpx, -36rpx);\n  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)\n    infinite;\n}\n\n@keyframes pathTriangle {\n  33% {\n    stroke-dashoffset: 74;\n  }\n\n  66% {\n    stroke-dashoffset: 147;\n  }\n\n  100% {\n    stroke-dashoffset: 221;\n  }\n}\n\n@keyframes dotTriangle {\n  33% {\n    transform: translate(0, 0);\n  }\n\n  66% {\n    transform: translate(20rpx, -36rpx);\n  }\n\n  100% {\n    transform: translate(-20rpx, -36rpx);\n  }\n}\n\n@keyframes pathRect {\n  25% {\n    stroke-dashoffset: 64;\n  }\n\n  50% {\n    stroke-dashoffset: 128;\n  }\n\n  75% {\n    stroke-dashoffset: 192;\n  }\n\n  100% {\n    stroke-dashoffset: 256;\n  }\n}\n\n@keyframes dotRect {\n  25% {\n    transform: translate(0, 0);\n  }\n\n  50% {\n    transform: translate(36rpx, -36rpx);\n  }\n\n  75% {\n    transform: translate(0, -72rpx);\n  }\n\n  100% {\n    transform: translate(-36rpx, -36rpx);\n  }\n}\n\n@keyframes pathCircle {\n  25% {\n    stroke-dashoffset: 125;\n  }\n\n  50% {\n    stroke-dashoffset: 175;\n  }\n\n  75% {\n    stroke-dashoffset: 225;\n  }\n\n  100% {\n    stroke-dashoffset: 275;\n  }\n}\n\n.loader {\n  display: inline-block;\n  margin: 0 32rpx;\n}\n\n",
+    "component_name": "GalaxyProudLadybug46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2903,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.368Z",
+  "updated_at": "2025-07-31T07:55:42.368Z"
+}

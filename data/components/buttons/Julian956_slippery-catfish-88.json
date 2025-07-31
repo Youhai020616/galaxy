@@ -1,0 +1,110 @@
+{
+  "id": "Julian956_slippery-catfish-88",
+  "name": "slippery-catfish-88",
+  "category": "buttons",
+  "author": "Julian956",
+  "description": "slippery-catfish-88 组件 (button, buy now, cart, animation, interactive)",
+  "tags": [
+    "button",
+    "buy now",
+    "cart",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button data-quantity=\"0\" class=\"btn-cart\">\n          <svg class=\"icon-cart\" viewBox=\"0 0 24.38 30.52\" height=\"30.52\" width=\"24.38\" xmlns=\"http://www.w3.org/2000/svg\">\n            <title>icon-cart</title>\n            <path transform=\"translate(-3.62 -0.85)\" d=\"M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0\"></path>\n          </svg>\n          <span class=\"quantity\"></span>\n        </button>",
+    "css": "/* From Uiverse.io by Julian956 - Tags: button, buy now, cart */\n.btn-cart {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 50px;\n  height: 50px;\n  border-radius: 10px;\n  border: none;\n  background-color: transparent;\n  position: relative;\n}\n\n.btn-cart::after {\n  content: attr(data-quantity);\n  width: fit-content;\n  height: fit-content;\n  position: absolute;\n  font-size: 15px;\n  color: white;\n  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\n  opacity: 0;\n  visibility: hidden;\n  transition: .2s linear;\n  top: 115%;\n}\n\n.icon-cart {\n  width: 24.38px;\n  height: 30.52px;\n  transition: .2s linear;\n}\n\n.icon-cart path {\n  fill: rgb(240, 8, 8);\n  transition: .2s linear;\n}\n\n.btn-cart:hover > .icon-cart {\n  transform: scale(1.2);\n}\n\n.btn-cart:hover > .icon-cart path {\n  fill: rgb(186, 34, 233);\n}\n\n.btn-cart:hover::after {\n  visibility: visible;\n  opacity: 1;\n  top: 105%;\n}\n\n.quantity {\n  display: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Julian956_slippery-catfish-88.html"
+  },
+  "uniapp": {
+    "template": "<button data-quantity=\"0\" class=\"btn-cart\"></button>\n          <view class=\"icon-cart\" viewBox=\"0 0 24.38 30.52\" height=\"30.52\" width=\"24.38\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n            <title>icon-cart</title>\n            <path transform=\"translate(-3.62 -0.85)\" d=\"M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0\"></path>\n          </svg>\n          <text class=\"quantity\"></text>\n        </button>",
+    "script": "export default {\n  name: 'GalaxySlipperyCatfish88',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Julian956 - Tags: button, buy now, cart */\n.btn-cart {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 20rpx;\n  border: none;\n  background-color: transparent;\n  position: relative;\n}\n\n.btn-cart::after {\n  content: attr(data-quantity);\n  width: fit-content;\n  height: fit-content;\n  position: absolute;\n  font-size: 30rpx;\n  color: white;\n  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\n  opacity: 0;\n  visibility: hidden;\n  transition: .2s linear;\n  top: 115%;\n}\n\n.icon-cart {\n  width: 48.76rpx;\n  height: 61.04rpx;\n  transition: .2s linear;\n}\n\n.icon-cart path {\n  fill: rgb(240, 8, 8);\n  transition: .2s linear;\n}\n\n.btn-cart:hover > .icon-cart {\n  transform: scale(1.2);\n}\n\n.btn-cart:hover > .icon-cart path {\n  fill: rgb(186, 34, 233);\n}\n\n.btn-cart:hover::after {\n  visibility: visible;\n  opacity: 1;\n  top: 105%;\n}\n\n.quantity {\n  display: none;\n}\n\n",
+    "component_name": "GalaxySlipperyCatfish88"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1734,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.619Z",
+  "updated_at": "2025-07-31T07:55:33.619Z"
+}

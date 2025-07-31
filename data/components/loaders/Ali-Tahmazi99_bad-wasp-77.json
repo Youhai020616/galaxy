@@ -1,0 +1,85 @@
+{
+  "id": "Ali-Tahmazi99_bad-wasp-77",
+  "name": "bad-wasp-77",
+  "category": "loaders",
+  "author": "Ali-Tahmazi99",
+  "description": "bad-wasp-77 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading\">\n    <div class=\"d1\"></div>\n    <div class=\"d2\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */\n.loading {\n  width: 60px;\n  height: 60px;\n  position: relative;\n}\n\n.d1 , .d2 {\n  border: 5px solid #6c757d;\n  border-radius: 50px;\n}\n\n.loading .d1 {\n  width: 55px;\n  height: 55px;\n  position: absolute;\n  border-left-color: transparent;\n  animation: load161 1s linear infinite;\n}\n\n.loading .d2 {\n  width: 40px;\n  height: 40px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  margin: 7.5px;\n  animation: load2812 1.5s linear infinite;\n}\n\n@keyframes load161 {\n  0% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes load2812 {\n  0% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Ali-Tahmazi99_bad-wasp-77.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading\"></view>\n    <view class=\"d1\"></view>\n    <view class=\"d2\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBadWasp77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */\n.loading {\n  width: 120rpx;\n  height: 120rpx;\n  position: relative;\n}\n\n.d1 , .d2 {\n  border: 10rpx solid #6c757d;\n  border-radius: 100rpx;\n}\n\n.loading .d1 {\n  width: 110rpx;\n  height: 110rpx;\n  position: absolute;\n  border-left-color: transparent;\n  animation: load161 1s linear infinite;\n}\n\n.loading .d2 {\n  width: 80rpx;\n  height: 80rpx;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  margin: 15rpx;\n  animation: load2812 1.5s linear infinite;\n}\n\n@keyframes load161 {\n  0% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes load2812 {\n  0% {\n    transform: rotate(0);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}\n",
+    "component_name": "GalaxyBadWasp77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 810,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.889Z",
+  "updated_at": "2025-07-31T07:55:38.889Z"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "boryanakrasteva_shy-treefrog-100",
+  "name": "shy-treefrog-100",
+  "category": "buttons",
+  "author": "boryanakrasteva",
+  "description": "shy-treefrog-100 组件 (button, like, animation, interactive)",
+  "tags": [
+    "button",
+    "like",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n  <svg viewBox=\"0 0 17.503 15.625\" height=\"20.625\" width=\"20.503\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\">\n    <path transform=\"translate(0 0)\" d=\"M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z\" id=\"Fill\"></path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by boryanakrasteva - Tags: button, like */\n.btn {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 50px;\n  height: 50px;\n  border-radius: 10px;\n  border: none;\n  background-color: transparent;\n  position: relative;\n}\n\n.btn::after {\n  content: 'like';\n  width: fit-content;\n  height: fit-content;\n  position: absolute;\n  font-size: 15px;\n  color: white;\n  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\n  opacity: 0;\n  visibility: hidden;\n  transition: .2s linear;\n  top: 115%;\n}\n\n.icon {\n  width: 30px;\n  height: 30px;\n  transition: .2s linear;\n}\n\n.icon path {\n  fill: white;\n  transition: .2s linear;\n}\n\n.btn:hover > .icon {\n  transform: scale(1.2);\n}\n\n.btn:hover > .icon path {\n  fill: rgb(177, 139, 189);\n}\n\n.btn:hover::after {\n  visibility: visible;\n  opacity: 1;\n  top: 105%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/boryanakrasteva_shy-treefrog-100.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n  <view viewBox=\"0 0 17.503 15.625\" height=\"20.625\" width=\"20.503\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\"></view>\n    <path transform=\"translate(0 0)\" d=\"M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z\" id=\"Fill\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyShyTreefrog100',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by boryanakrasteva - Tags: button, like */\n.btn {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100rpx;\n  height: 100rpx;\n  border-radius: 20rpx;\n  border: none;\n  background-color: transparent;\n  position: relative;\n}\n\n.btn::after {\n  content: 'like';\n  width: fit-content;\n  height: fit-content;\n  position: absolute;\n  font-size: 30rpx;\n  color: white;\n  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\n  opacity: 0;\n  visibility: hidden;\n  transition: .2s linear;\n  top: 115%;\n}\n\n.icon {\n  width: 60rpx;\n  height: 60rpx;\n  transition: .2s linear;\n}\n\n.icon path {\n  fill: white;\n  transition: .2s linear;\n}\n\n.btn:hover > .icon {\n  transform: scale(1.2);\n}\n\n.btn:hover > .icon path {\n  fill: rgb(177, 139, 189);\n}\n\n.btn:hover::after {\n  visibility: visible;\n  opacity: 1;\n  top: 105%;\n}\n\n\n",
+    "component_name": "GalaxyShyTreefrog100"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1504,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.010Z",
+  "updated_at": "2025-07-31T07:55:36.010Z"
+}

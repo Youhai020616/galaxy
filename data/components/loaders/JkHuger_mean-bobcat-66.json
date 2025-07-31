@@ -1,0 +1,86 @@
+{
+  "id": "JkHuger_mean-bobcat-66",
+  "name": "mean-bobcat-66",
+  "category": "loaders",
+  "author": "JkHuger",
+  "description": "mean-bobcat-66 组件 (animation, text, writing)",
+  "tags": [
+    "animation",
+    "text",
+    "writing"
+  ],
+  "original": {
+    "html": "<div class=\"animation\">Text writing!</div>",
+    "css": "/* From Uiverse.io by JkHuger - Tags: animation, text, writing */\n@keyframes typing {\n  from {\n    width: 0;\n  }\n}\n\n@keyframes blink-caret {\n  50% {\n    border-color: transparent;\n  }\n}\n/* When you change the amount of characters in the h1, you have to change \nthe with: 14ch and  steps(14, end), if there is 14 characters, put 14, \nif there is 20 put 20 */\n.animation {\n  font: bold 200% Consolas, Monaco, monospace;\n  border-right: .1em solid black;\n  width: 13.20ch;\n  margin: 2em 2em;\n  white-space: nowrap;\n  overflow: hidden;\n  -webkit-animation: typing 5s steps(13, end),\n\t           blink-caret .5s step-end infinite alternate;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JkHuger_mean-bobcat-66.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"animation\">Text writing!</view>",
+    "script": "export default {\n  name: 'GalaxyMeanBobcat66',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JkHuger - Tags: animation, text, writing */\n@keyframes typing {\n  from {\n    width: 0;\n  }\n}\n\n@keyframes blink-caret {\n  50% {\n    border-color: transparent;\n  }\n}\n/* When you change the amount of characters in the h1, you have to change \nthe with: 14ch and  steps(14, end), if there is 14 characters, put 14, \nif there is 20 put 20 */\n.animation {\n  font: bold 200% Consolas, Monaco, monospace;\n  border-right: .1em solid black;\n  width: 13.20ch;\n  margin: 2em 2em;\n  white-space: nowrap;\n  overflow: hidden;\n  -webkit-animation: typing 5s steps(13, end),\n\t           blink-caret .5s step-end infinite alternate;\n}\n",
+    "component_name": "GalaxyMeanBobcat66"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 683,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.486Z",
+  "updated_at": "2025-07-31T07:55:39.486Z"
+}

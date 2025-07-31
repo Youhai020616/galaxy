@@ -1,0 +1,89 @@
+{
+  "id": "Nawsome_spicy-wolverine-85",
+  "name": "spicy-wolverine-85",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "spicy-wolverine-85 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"loader__bar\"></div>\n  <div class=\"loader__bar\"></div>\n  <div class=\"loader__bar\"></div>\n  <div class=\"loader__bar\"></div>\n  <div class=\"loader__bar\"></div>\n  <div class=\"loader__ball\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.loader {\n  position: relative;\n  width: 75px;\n  height: 100px;\n}\n\n.loader__bar {\n  position: absolute;\n  bottom: 0;\n  width: 10px;\n  height: 50%;\n  background: rgb(0, 0, 0);\n  transform-origin: center bottom;\n  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);\n}\n\n.loader__bar:nth-child(1) {\n  left: 0px;\n  transform: scale(1, 0.2);\n  -webkit-animation: barUp1 4s infinite;\n  animation: barUp1 4s infinite;\n}\n\n.loader__bar:nth-child(2) {\n  left: 15px;\n  transform: scale(1, 0.4);\n  -webkit-animation: barUp2 4s infinite;\n  animation: barUp2 4s infinite;\n}\n\n.loader__bar:nth-child(3) {\n  left: 30px;\n  transform: scale(1, 0.6);\n  -webkit-animation: barUp3 4s infinite;\n  animation: barUp3 4s infinite;\n}\n\n.loader__bar:nth-child(4) {\n  left: 45px;\n  transform: scale(1, 0.8);\n  -webkit-animation: barUp4 4s infinite;\n  animation: barUp4 4s infinite;\n}\n\n.loader__bar:nth-child(5) {\n  left: 60px;\n  transform: scale(1, 1);\n  -webkit-animation: barUp5 4s infinite;\n  animation: barUp5 4s infinite;\n}\n\n.loader__ball {\n  position: absolute;\n  bottom: 10px;\n  left: 0;\n  width: 10px;\n  height: 10px;\n  background: rgb(44, 143, 255);\n  border-radius: 50%;\n  -webkit-animation: ball624 4s infinite;\n  animation: ball624 4s infinite;\n}\n\n@keyframes ball624 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  5% {\n    transform: translate(8px, -14px);\n  }\n\n  10% {\n    transform: translate(15px, -10px);\n  }\n\n  17% {\n    transform: translate(23px, -24px);\n  }\n\n  20% {\n    transform: translate(30px, -20px);\n  }\n\n  27% {\n    transform: translate(38px, -34px);\n  }\n\n  30% {\n    transform: translate(45px, -30px);\n  }\n\n  37% {\n    transform: translate(53px, -44px);\n  }\n\n  40% {\n    transform: translate(60px, -40px);\n  }\n\n  50% {\n    transform: translate(60px, 0);\n  }\n\n  57% {\n    transform: translate(53px, -14px);\n  }\n\n  60% {\n    transform: translate(45px, -10px);\n  }\n\n  67% {\n    transform: translate(37px, -24px);\n  }\n\n  70% {\n    transform: translate(30px, -20px);\n  }\n\n  77% {\n    transform: translate(22px, -34px);\n  }\n\n  80% {\n    transform: translate(15px, -30px);\n  }\n\n  87% {\n    transform: translate(7px, -44px);\n  }\n\n  90% {\n    transform: translate(0, -40px);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@-webkit-keyframes barUp1 {\n  0% {\n    transform: scale(1, 0.2);\n  }\n\n  40% {\n    transform: scale(1, 0.2);\n  }\n\n  50% {\n    transform: scale(1, 1);\n  }\n\n  90% {\n    transform: scale(1, 1);\n  }\n\n  100% {\n    transform: scale(1, 0.2);\n  }\n}\n\n@keyframes barUp1 {\n  0% {\n    transform: scale(1, 0.2);\n  }\n\n  40% {\n    transform: scale(1, 0.2);\n  }\n\n  50% {\n    transform: scale(1, 1);\n  }\n\n  90% {\n    transform: scale(1, 1);\n  }\n\n  100% {\n    transform: scale(1, 0.2);\n  }\n}\n\n@-webkit-keyframes barUp2 {\n  0% {\n    transform: scale(1, 0.4);\n  }\n\n  40% {\n    transform: scale(1, 0.4);\n  }\n\n  50% {\n    transform: scale(1, 0.8);\n  }\n\n  90% {\n    transform: scale(1, 0.8);\n  }\n\n  100% {\n    transform: scale(1, 0.4);\n  }\n}\n\n@keyframes barUp2 {\n  0% {\n    transform: scale(1, 0.4);\n  }\n\n  40% {\n    transform: scale(1, 0.4);\n  }\n\n  50% {\n    transform: scale(1, 0.8);\n  }\n\n  90% {\n    transform: scale(1, 0.8);\n  }\n\n  100% {\n    transform: scale(1, 0.4);\n  }\n}\n\n@-webkit-keyframes barUp3 {\n  0% {\n    transform: scale(1, 0.6);\n  }\n\n  100% {\n    transform: scale(1, 0.6);\n  }\n}\n\n@keyframes barUp3 {\n  0% {\n    transform: scale(1, 0.6);\n  }\n\n  100% {\n    transform: scale(1, 0.6);\n  }\n}\n\n@-webkit-keyframes barUp4 {\n  0% {\n    transform: scale(1, 0.8);\n  }\n\n  40% {\n    transform: scale(1, 0.8);\n  }\n\n  50% {\n    transform: scale(1, 0.4);\n  }\n\n  90% {\n    transform: scale(1, 0.4);\n  }\n\n  100% {\n    transform: scale(1, 0.8);\n  }\n}\n\n@keyframes barUp4 {\n  0% {\n    transform: scale(1, 0.8);\n  }\n\n  40% {\n    transform: scale(1, 0.8);\n  }\n\n  50% {\n    transform: scale(1, 0.4);\n  }\n\n  90% {\n    transform: scale(1, 0.4);\n  }\n\n  100% {\n    transform: scale(1, 0.8);\n  }\n}\n\n@-webkit-keyframes barUp5 {\n  0% {\n    transform: scale(1, 1);\n  }\n\n  40% {\n    transform: scale(1, 1);\n  }\n\n  50% {\n    transform: scale(1, 0.2);\n  }\n\n  90% {\n    transform: scale(1, 0.2);\n  }\n\n  100% {\n    transform: scale(1, 1);\n  }\n}\n\n@keyframes barUp5 {\n  0% {\n    transform: scale(1, 1);\n  }\n\n  40% {\n    transform: scale(1, 1);\n  }\n\n  50% {\n    transform: scale(1, 0.2);\n  }\n\n  90% {\n    transform: scale(1, 0.2);\n  }\n\n  100% {\n    transform: scale(1, 1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_spicy-wolverine-85.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"loader__bar\"></view>\n  <view class=\"loader__bar\"></view>\n  <view class=\"loader__bar\"></view>\n  <view class=\"loader__bar\"></view>\n  <view class=\"loader__bar\"></view>\n  <view class=\"loader__ball\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySpicyWolverine85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.loader {\n  position: relative;\n  width: 150rpx;\n  height: 200rpx;\n}\n\n.loader__bar {\n  position: absolute;\n  bottom: 0;\n  width: 20rpx;\n  height: 50%;\n  background: rgb(0, 0, 0);\n  transform-origin: center bottom;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 2rpx 2rpx 0 rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader__bar:nth-child(1) {\n  left: 0rpx;\n  transform: scale(1, 0.2);\n  -webkit-animation: barUp1 4s infinite;\n  animation: barUp1 4s infinite;\n}\n\n.loader__bar:nth-child(2) {\n  left: 30rpx;\n  transform: scale(1, 0.4);\n  -webkit-animation: barUp2 4s infinite;\n  animation: barUp2 4s infinite;\n}\n\n.loader__bar:nth-child(3) {\n  left: 60rpx;\n  transform: scale(1, 0.6);\n  -webkit-animation: barUp3 4s infinite;\n  animation: barUp3 4s infinite;\n}\n\n.loader__bar:nth-child(4) {\n  left: 90rpx;\n  transform: scale(1, 0.8);\n  -webkit-animation: barUp4 4s infinite;\n  animation: barUp4 4s infinite;\n}\n\n.loader__bar:nth-child(5) {\n  left: 120rpx;\n  transform: scale(1, 1);\n  -webkit-animation: barUp5 4s infinite;\n  animation: barUp5 4s infinite;\n}\n\n.loader__ball {\n  position: absolute;\n  bottom: 20rpx;\n  left: 0;\n  width: 20rpx;\n  height: 20rpx;\n  background: rgb(44, 143, 255);\n  border-radius: 50%;\n  -webkit-animation: ball624 4s infinite;\n  animation: ball624 4s infinite;\n}\n\n@keyframes ball624 {\n  0% {\n    transform: translate(0, 0);\n  }\n\n  5% {\n    transform: translate(16rpx, -28rpx);\n  }\n\n  10% {\n    transform: translate(30rpx, -20rpx);\n  }\n\n  17% {\n    transform: translate(46rpx, -48rpx);\n  }\n\n  20% {\n    transform: translate(60rpx, -40rpx);\n  }\n\n  27% {\n    transform: translate(76rpx, -68rpx);\n  }\n\n  30% {\n    transform: translate(90rpx, -60rpx);\n  }\n\n  37% {\n    transform: translate(106rpx, -88rpx);\n  }\n\n  40% {\n    transform: translate(120rpx, -80rpx);\n  }\n\n  50% {\n    transform: translate(120rpx, 0);\n  }\n\n  57% {\n    transform: translate(106rpx, -28rpx);\n  }\n\n  60% {\n    transform: translate(90rpx, -20rpx);\n  }\n\n  67% {\n    transform: translate(74rpx, -48rpx);\n  }\n\n  70% {\n    transform: translate(60rpx, -40rpx);\n  }\n\n  77% {\n    transform: translate(44rpx, -68rpx);\n  }\n\n  80% {\n    transform: translate(30rpx, -60rpx);\n  }\n\n  87% {\n    transform: translate(14rpx, -88rpx);\n  }\n\n  90% {\n    transform: translate(0, -80rpx);\n  }\n\n  100% {\n    transform: translate(0, 0);\n  }\n}\n\n@-webkit-keyframes barUp1 {\n  0% {\n    transform: scale(1, 0.2);\n  }\n\n  40% {\n    transform: scale(1, 0.2);\n  }\n\n  50% {\n    transform: scale(1, 1);\n  }\n\n  90% {\n    transform: scale(1, 1);\n  }\n\n  100% {\n    transform: scale(1, 0.2);\n  }\n}\n\n@keyframes barUp1 {\n  0% {\n    transform: scale(1, 0.2);\n  }\n\n  40% {\n    transform: scale(1, 0.2);\n  }\n\n  50% {\n    transform: scale(1, 1);\n  }\n\n  90% {\n    transform: scale(1, 1);\n  }\n\n  100% {\n    transform: scale(1, 0.2);\n  }\n}\n\n@-webkit-keyframes barUp2 {\n  0% {\n    transform: scale(1, 0.4);\n  }\n\n  40% {\n    transform: scale(1, 0.4);\n  }\n\n  50% {\n    transform: scale(1, 0.8);\n  }\n\n  90% {\n    transform: scale(1, 0.8);\n  }\n\n  100% {\n    transform: scale(1, 0.4);\n  }\n}\n\n@keyframes barUp2 {\n  0% {\n    transform: scale(1, 0.4);\n  }\n\n  40% {\n    transform: scale(1, 0.4);\n  }\n\n  50% {\n    transform: scale(1, 0.8);\n  }\n\n  90% {\n    transform: scale(1, 0.8);\n  }\n\n  100% {\n    transform: scale(1, 0.4);\n  }\n}\n\n@-webkit-keyframes barUp3 {\n  0% {\n    transform: scale(1, 0.6);\n  }\n\n  100% {\n    transform: scale(1, 0.6);\n  }\n}\n\n@keyframes barUp3 {\n  0% {\n    transform: scale(1, 0.6);\n  }\n\n  100% {\n    transform: scale(1, 0.6);\n  }\n}\n\n@-webkit-keyframes barUp4 {\n  0% {\n    transform: scale(1, 0.8);\n  }\n\n  40% {\n    transform: scale(1, 0.8);\n  }\n\n  50% {\n    transform: scale(1, 0.4);\n  }\n\n  90% {\n    transform: scale(1, 0.4);\n  }\n\n  100% {\n    transform: scale(1, 0.8);\n  }\n}\n\n@keyframes barUp4 {\n  0% {\n    transform: scale(1, 0.8);\n  }\n\n  40% {\n    transform: scale(1, 0.8);\n  }\n\n  50% {\n    transform: scale(1, 0.4);\n  }\n\n  90% {\n    transform: scale(1, 0.4);\n  }\n\n  100% {\n    transform: scale(1, 0.8);\n  }\n}\n\n@-webkit-keyframes barUp5 {\n  0% {\n    transform: scale(1, 1);\n  }\n\n  40% {\n    transform: scale(1, 1);\n  }\n\n  50% {\n    transform: scale(1, 0.2);\n  }\n\n  90% {\n    transform: scale(1, 0.2);\n  }\n\n  100% {\n    transform: scale(1, 1);\n  }\n}\n\n@keyframes barUp5 {\n  0% {\n    transform: scale(1, 1);\n  }\n\n  40% {\n    transform: scale(1, 1);\n  }\n\n  50% {\n    transform: scale(1, 0.2);\n  }\n\n  90% {\n    transform: scale(1, 0.2);\n  }\n\n  100% {\n    transform: scale(1, 1);\n  }\n}\n",
+    "component_name": "GalaxySpicyWolverine85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4620,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.849Z",
+  "updated_at": "2025-07-31T07:55:39.849Z"
+}

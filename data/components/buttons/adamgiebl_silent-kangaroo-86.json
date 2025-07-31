@@ -1,0 +1,117 @@
+{
+  "id": "adamgiebl_silent-kangaroo-86",
+  "name": "silent-kangaroo-86",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "silent-kangaroo-86 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Button\n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: button */\nbutton {\n  font-size: 18px;\n  display: inline-block;\n  outline: 0;\n  border: 0;\n  cursor: pointer;\n  will-change: box-shadow,transform;\n  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );\n  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);\n  padding: 0 2em;\n  border-radius: 0.3em;\n  color: #fff;\n  height: 2.6em;\n  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);\n  transition: box-shadow 0.15s ease, transform 0.15s ease;\n}\n\nbutton:hover {\n  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;\n  transform: translateY(-0.1em);\n}\n\nbutton:active {\n  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;\n  transform: translateY(0em);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_silent-kangaroo-86.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Button\n</button>",
+    "script": "export default {\n  name: 'GalaxySilentKangaroo86',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: button */\nbutton {\n  font-size: 36rpx;\n  display: inline-block;\n  outline: 0;\n  border: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  will-change: box-shadow,transform;\n  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0.01em 0.01em rgb(45 35 66 / 40%), 0rpx 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0rpx -0.01em 0rpx rgb(58 65 111 / 50%);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  padding: 0 2em;\n  border-radius: 0.3em;\n  color: #fff;\n  height: 2.6em;\n  /* #ifdef H5 */\n  text-shadow: 0 2rpx 0 rgb(0 0 0 / 40%);\n  /* #endif */\n  transition: box-shadow 0.15s ease, transform 0.15s ease;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0.1em 0.2em rgb(45 35 66 / 40%), 0rpx 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0rpx -0.1em 0rpx #3c4fe0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(-0.1em);\n}\n\nbutton:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 0.1em 0.6em #3c4fe0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(0em);\n}\n",
+    "component_name": "GalaxySilentKangaroo86"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 883,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.498Z",
+  "updated_at": "2025-07-31T07:55:35.498Z"
+}

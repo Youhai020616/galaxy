@@ -1,0 +1,90 @@
+{
+  "id": "AqFox_fast-bat-33",
+  "name": "fast-bat-33",
+  "category": "loaders",
+  "author": "AqFox",
+  "description": "fast-bat-33 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\"></div>",
+    "css": "/* From Uiverse.io by AqFox - Tags: loader */\n.spinner {\n --R: 28px;\n --g1: #004dff 96%, #0000;\n --g2: #d6d6fc 96%, #0000;\n width: calc(2*var(--R));\n height: calc(2*var(--R));\n border-radius: 50%;\n display: grid;\n -webkit-mask: linear-gradient(#000 0 0);\n animation: spinner-maxc6n 2s infinite linear;\n}\n\n.spinner::before,\n.spinner::after {\n content: \"\";\n grid-area: 1/1;\n width: 50%;\n background: radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),\n        radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),\n        radial-gradient(farthest-side,var(--g2)) calc(var(--R) + 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),\n        radial-gradient(farthest-side,var(--g1)) 0 calc(-1*var(--R)),\n        radial-gradient(farthest-side,var(--g2)) calc(var(--R) - 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),\n        radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),\n        radial-gradient(farthest-side,var(--g2)) calc(-1*var(--R))  0,\n        radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) + 0.5*var(--R)   - var(--R));\n background-size: calc(2*var(--R)) calc(2*var(--R));\n background-repeat: no-repeat;\n}\n\n.spinner::after {\n transform: rotate(180deg);\n transform-origin: right;\n}\n\n@keyframes spinner-maxc6n {\n 100% {\n  transform: rotate(-1turn);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/AqFox_fast-bat-33.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>",
+    "script": "export default {\n  name: 'GalaxyFastBat33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AqFox - Tags: loader */\n.spinner {\n --R: 56rpx;\n --g1: #004dff 96%, #0000;\n --g2: #d6d6fc 96%, #0000;\n width: calc(2*var(--R));\n height: calc(2*var(--R));\n border-radius: 50%;\n display: grid;\n -webkit-\n animation: spinner-maxc6n 2s infinite linear;\n}\n\n.spinner::before,\n.spinner::after {\n content: \"\";\n grid-area: 1/1;\n width: 50%;\n background: radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),\n        radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),\n        radial-gradient(farthest-side,var(--g2)) calc(var(--R) + 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),\n        radial-gradient(farthest-side,var(--g1)) 0 calc(-1*var(--R)),\n        radial-gradient(farthest-side,var(--g2)) calc(var(--R) - 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),\n        radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),\n        radial-gradient(farthest-side,var(--g2)) calc(-1*var(--R))  0,\n        radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) + 0.5*var(--R)   - var(--R));\n background-size: calc(2*var(--R)) calc(2*var(--R));\n background-repeat: no-repeat;\n}\n\n.spinner::after {\n transform: rotate(180deg);\n transform-origin: right;\n}\n\n@keyframes spinner-maxc6n {\n 100% {\n  transform: rotate(-1turn);\n }\n}\n",
+    "component_name": "GalaxyFastBat33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1609,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.931Z",
+  "updated_at": "2025-07-31T07:55:38.931Z"
+}

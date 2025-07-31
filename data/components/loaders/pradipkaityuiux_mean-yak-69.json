@@ -1,0 +1,97 @@
+{
+  "id": "pradipkaityuiux_mean-yak-69",
+  "name": "mean-yak-69",
+  "category": "loaders",
+  "author": "pradipkaityuiux",
+  "description": "mean-yak-69 组件 (loading, loader, circle loader, click animation, line loader, loading animation, bounce animation, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "circle loader",
+    "click animation",
+    "line loader",
+    "loading animation",
+    "bounce animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">Loading\n  <span></span>\n</div>",
+    "css": "/* From Uiverse.io by pradipkaityuiux - Tags: loading, loader, circle loader, click animation, line loader, loading animation, bounce animation */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 150px;\n  height: 150px;\n  background: transparent;\n  border: 3px solid rgba(0, 102, 255, 0.1);\n  border-radius: 50%;\n  text-align: center;\n  line-height: 150px;\n  font-family: sans-serif;\n  font-size: 20px;\n  color: #0066ff;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  text-shadow: 0 0 10px #0066ff;\n  box-shadow: 0 0 20px rgba(0, 0, 0, .15);\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  top: -3px;\n  left: -3px;\n  width: 100%;\n  height: 100%;\n  border: 3px solid transparent;\n  border-top: 3px solid #0066ff;\n  border-right: 3px solid #0066ff;\n  border-radius: 50%;\n  animation: animateC 2s linear infinite;\n}\n\n.loader span {\n  display: block;\n  position: absolute;\n  top: calc(50% - 2px);\n  left: 50%;\n  width: 50%;\n  height: 4px;\n  background: transparent;\n  transform-origin: left;\n  animation: animate 2s linear infinite;\n}\n\n.loader span::before {\n  content: '';\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  border-radius: 50%;\n  background: #00aeff;\n  top: -6px;\n  right: -8px;\n  box-shadow: 0 0 20px 5px #0066ff;\n}\n\n@keyframes animateC {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(45deg);\n  }\n\n  100% {\n    transform: rotate(405deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/pradipkaityuiux_mean-yak-69.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>Loading\n  <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMeanYak69',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by pradipkaityuiux - Tags: loading, loader, circle loader, click animation, line loader, loading animation, bounce animation */\n.loader {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 300rpx;\n  height: 300rpx;\n  background: transparent;\n  border: 6rpx solid rgba(0, 102, 255, 0.1);\n  border-radius: 50%;\n  text-align: center;\n  line-height: 300rpx;\n  font-family: sans-serif;\n  font-size: 40rpx;\n  color: #0066ff;\n  letter-spacing: 4rpx;\n  text-transform: uppercase;\n  /* #ifdef H5 */\n  text-shadow: 0 0 20rpx #0066ff;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx rgba(0, 0, 0, .15);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader::before {\n  content: '';\n  position: absolute;\n  top: -6rpx;\n  left: -6rpx;\n  width: 100%;\n  height: 100%;\n  border: 6rpx solid transparent;\n  border-top: 6rpx solid #0066ff;\n  border-right: 6rpx solid #0066ff;\n  border-radius: 50%;\n  animation: animateC 2s linear infinite;\n}\n\n.loader span {\n  display: block;\n  position: absolute;\n  top: calc(50% - 4rpx);\n  left: 50%;\n  width: 50%;\n  height: 8rpx;\n  background: transparent;\n  transform-origin: left;\n  animation: animate 2s linear infinite;\n}\n\n.loader span::before {\n  content: '';\n  position: absolute;\n  width: 32rpx;\n  height: 32rpx;\n  border-radius: 50%;\n  background: #00aeff;\n  top: -12rpx;\n  right: -16rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx 10rpx #0066ff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n@keyframes animateC {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(45deg);\n  }\n\n  100% {\n    transform: rotate(405deg);\n  }\n}\n",
+    "component_name": "GalaxyMeanYak69"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1579,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.540Z",
+  "updated_at": "2025-07-31T07:55:42.540Z"
+}

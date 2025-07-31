@@ -1,0 +1,92 @@
+{
+  "id": "Pipo-13_ugly-swan-20",
+  "name": "ugly-swan-20",
+  "category": "tooltips",
+  "author": "Pipo-13",
+  "description": "ugly-swan-20 组件 (simple, tooltip, svg, animation, interactive)",
+  "tags": [
+    "simple",
+    "tooltip",
+    "svg",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"80\" zoomAndPan=\"magnify\" viewBox=\"0 0 60 44.999999\" height=\"60\" preserveAspectRatio=\"xMidYMid meet\" version=\"1.0\">\n      <defs>\n        <clipPath id=\"e2947948d6\">\n          <path d=\"M 2.25 6.75 L 57.75 6.75 C 58.992188 6.75 60 7.757812 60 9 L 60 42.75 C 60 43.992188 58.992188 45 57.75 45 L 2.25 45 C 1.007812 45 0 43.992188 0 42.75 L 0 9 C 0 7.757812 1.007812 6.75 2.25 6.75 Z M 2.25 6.75\" clip-rule=\"nonzero\"></path>\n        </clipPath>\n      </defs>\n      <g clip-path=\"url(#e2947948d6)\">\n        <path fill=\"#ff914d\" d=\"M 0 6.75 L 60.0625 6.75 L 60.0625 45 L 0 45 Z M 0 6.75\" fill-opacity=\"1\" fill-rule=\"nonzero\"></path>\n        <text x=\"15\" y=\"30\" fill=\"white\" style=\"font-size:12px\">hello</text>\n      </g>\n      <path fill=\"#ff914d\" d=\"M 38.988281 12.292969 C 38.988281 11.898438 38.820312 11.449219 38.496094 10.988281 L 31.664062 0.996094 C 31.226562 0.351562 30.625 0 29.992188 0 C 29.363281 0 28.757812 0.351562 28.324219 0.996094 L 21.488281 10.972656 C 21.167969 11.4375 21.011719 11.898438 21.011719 12.292969 C 21.011719 13.035156 21.613281 13.5 22.613281 13.5 L 37.386719 13.5 C 38.386719 13.5 38.988281 13.035156 38.988281 12.292969 Z M 38.988281 12.292969\" fill-opacity=\"1\" fill-rule=\"nonzero\"></path>\n    </svg>\n  </span>\n  <span class=\"text\">Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by Pipo-13  - Tags: simple, tooltip, svg */\n.tooltip-container {\n  --background: #d87639;\n  position: relative;\n  background: var(--background);\n  cursor: pointer;\n  transition: all 0.2s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n  border-radius: 0.2rem;\n}\n\n.tooltip {\n  position: absolute;\n  top: 90%;\n  left: 50%;\n  transform: translateX(-50%) rotateX(90deg);\n  padding: 0.6em;\n  opacity: 0.6;\n  transition: all 0.5s ease;\n  background: transparent;\n  height: 0px;\n  cursor: default;\n}\n\n.tooltip-container:hover .tooltip {\n  opacity: 1;\n  pointer-events: auto;\n  background: none;\n  transform: translateX(-50%) rotateX(0deg);\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/Pipo-13_ugly-swan-20.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\"></text>\n    <view xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"80\" zoomAndPan=\"magnify\" viewBox=\"0 0 60 44.999999\" height=\"60\" preserveAspectRatio=\"xMidYMid meet\" version=\"1.0\"></view>\n      <defs>\n        <clipPath id=\"e2947948d6\">\n          <path d=\"M 2.25 6.75 L 57.75 6.75 C 58.992188 6.75 60 7.757812 60 9 L 60 42.75 C 60 43.992188 58.992188 45 57.75 45 L 2.25 45 C 1.007812 45 0 43.992188 0 42.75 L 0 9 C 0 7.757812 1.007812 6.75 2.25 6.75 Z M 2.25 6.75\" clip-rule=\"nonzero\"></path>\n        </clipPath>\n      </defs>\n      <g clip-path=\"url(#e2947948d6)\">\n        <path fill=\"#ff914d\" d=\"M 0 6.75 L 60.0625 6.75 L 60.0625 45 L 0 45 Z M 0 6.75\" fill-opacity=\"1\" fill-rule=\"nonzero\"></path>\n        <text x=\"15\" y=\"30\" fill=\"white\" style=\"font-size:12px\">hello</text>\n      </g>\n      <path fill=\"#ff914d\" d=\"M 38.988281 12.292969 C 38.988281 11.898438 38.820312 11.449219 38.496094 10.988281 L 31.664062 0.996094 C 31.226562 0.351562 30.625 0 29.992188 0 C 29.363281 0 28.757812 0.351562 28.324219 0.996094 L 21.488281 10.972656 C 21.167969 11.4375 21.011719 11.898438 21.011719 12.292969 C 21.011719 13.035156 21.613281 13.5 22.613281 13.5 L 37.386719 13.5 C 38.386719 13.5 38.988281 13.035156 38.988281 12.292969 Z M 38.988281 12.292969\" fill-opacity=\"1\" fill-rule=\"nonzero\"></path>\n    </svg>\n  </span>\n  <text class=\"text\">Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUglySwan20',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pipo-13  - Tags: simple, tooltip, svg */\n.tooltip-container {\n  --background: #d87639;\n  position: relative;\n  background: var(--background);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n  border-radius: 0.2rem;\n}\n\n.tooltip {\n  position: absolute;\n  top: 90%;\n  left: 50%;\n  transform: translateX(-50%) rotateX(90deg);\n  padding: 0.6em;\n  opacity: 0.6;\n  transition: all 0.5s ease;\n  background: transparent;\n  height: 0rpx;\n  /* #ifdef H5 */\n  cursor: default;\n  /* #endif */\n}\n\n.tooltip-container:hover .tooltip {\n  opacity: 1;\n  pointer-events: auto;\n  background: none;\n  transform: translateX(-50%) rotateX(0deg);\n}\n\n",
+    "component_name": "GalaxyUglySwan20"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2093,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.525Z",
+  "updated_at": "2025-07-31T07:55:38.525Z"
+}

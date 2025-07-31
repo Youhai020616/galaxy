@@ -1,0 +1,115 @@
+{
+  "id": "GetYourCode8605_ordinary-wombat-64",
+  "name": "ordinary-wombat-64",
+  "category": "buttons",
+  "author": "GetYourCode8605",
+  "description": "ordinary-wombat-64 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button type=\"button\" class=\"glow-on-hover\">\n  HOVER AND CLICK ME!\n</button>",
+    "css": "/* From Uiverse.io by GetYourCode8605 - Tags: button */\n.glow-on-hover {\n  width: 220px;\n  height: 50px;\n  border: none;\n  outline: none;\n  color: #fff;\n  background: rgb(17, 17, 17);\n  cursor: pointer;\n  position: relative;\n  z-index: 0;\n  border-radius: 10px;\n  font-weight: 600;\n}\n\n.glow-on-hover:before {\n  content: '';\n  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);\n  position: absolute;\n  top: -2px;\n  left: -2px;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(5px);\n  width: calc(100% + 4px);\n  height: calc(100% + 4px);\n  animation: glowing_54134 20s linear infinite;\n  opacity: 0;\n  transition: opacity .3s ease-in-out;\n  border-radius: 10px;\n}\n\n.glow-on-hover:active {\n  color: #000\n}\n\n.glow-on-hover:active:after {\n  background: transparent;\n}\n\n.glow-on-hover:hover:before {\n  opacity: 1;\n}\n\n.glow-on-hover:after {\n  z-index: -1;\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #111;\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n@keyframes glowing_54134 {\n  0% {\n    background-position: 0 0;\n  }\n\n  50% {\n    background-position: 400% 0;\n  }\n\n  100% {\n    background-position: 0 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/GetYourCode8605_ordinary-wombat-64.html"
+  },
+  "uniapp": {
+    "template": "<button type=\"button\" class=\"glow-on-hover\"></button>\n  HOVER AND CLICK ME!\n</button>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryWombat64',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by GetYourCode8605 - Tags: button */\n.glow-on-hover {\n  width: 440rpx;\n  height: 100rpx;\n  border: none;\n  outline: none;\n  color: #fff;\n  background: rgb(17, 17, 17);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  z-index: 0;\n  border-radius: 20rpx;\n  font-weight: 600;\n}\n\n.glow-on-hover:before {\n  content: '';\n  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);\n  position: absolute;\n  top: -4rpx;\n  left: -4rpx;\n  background-size: 400%;\n  z-index: -1;\n  \n  width: calc(100% + 8rpx);\n  height: calc(100% + 8rpx);\n  animation: glowing_54134 20s linear infinite;\n  opacity: 0;\n  transition: opacity .3s ease-in-out;\n  border-radius: 20rpx;\n}\n\n.glow-on-hover:active {\n  color: #000\n}\n\n.glow-on-hover:active:after {\n  background: transparent;\n}\n\n.glow-on-hover:hover:before {\n  opacity: 1;\n}\n\n.glow-on-hover:after {\n  z-index: -1;\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #111;\n  left: 0;\n  top: 0;\n  border-radius: 20rpx;\n}\n\n@keyframes glowing_54134 {\n  0% {\n    background-position: 0 0;\n  }\n\n  50% {\n    background-position: 400% 0;\n  }\n\n  100% {\n    background-position: 0 0;\n  }\n}\n",
+    "component_name": "GalaxyOrdinaryWombat64"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1295,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.282Z",
+  "updated_at": "2025-07-31T07:55:33.282Z"
+}

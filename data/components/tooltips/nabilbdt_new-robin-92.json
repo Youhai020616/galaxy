@@ -1,0 +1,95 @@
+{
+  "id": "nabilbdt_new-robin-92",
+  "name": "new-robin-92",
+  "category": "tooltips",
+  "author": "nabilbdt",
+  "description": "new-robin-92 组件 (simple, tooltip, action, alert, green, creative, animation, interactive)",
+  "tags": [
+    "simple",
+    "tooltip",
+    "action",
+    "alert",
+    "green",
+    "creative",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"Tooltip\">\n  Tooltip\n  <div class=\"Tip\">Uiverse.io</div>\n</div>",
+    "css": "/* From Uiverse.io by nabilbdt  - Tags: simple, tooltip, action, alert, green, creative */\n.Tooltip {\n  color: #ebebeb;\n  border-radius: 0.8em;\n  padding: 1em 4em;\n  position: relative;\n  display: inline-block;\n  cursor: pointer;\n  background-color: #00641e;\n  -webkit-transition: background-color 2s ease-out;\n  -moz-transition: background-color 2s ease-out;\n  -o-transition: background-color 2s ease-out;\n  transition: background-color 2s ease-out;\n}\n.Tooltip .Tip {\n  color: #003b12;\n  text-align: center;\n  border-radius: 5px;\n  visibility: hidden;\n  width: 100px;\n  left: 100%;\n  transform: translateX(-50%);\n  opacity: 0;\n  background-color: #28282817;\n  padding: 10px;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  transition: opacity 0.3s;\n}\n.Tooltip:hover .Tip {\n  opacity: 1;\n  visibility: visible;\n}\n.Tooltip:hover {\n  background-color: rgb(100, 100, 100);\n}\n.Tooltip .Tip::after {\n  left: 10%;\n  border-width: 8px;\n  border-style: solid;\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  border-color: #28282817 transparent transparent transparent;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/nabilbdt_new-robin-92.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"Tooltip\"></view>\n  Tooltip\n  <view class=\"Tip\">Uiverse.io</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNewRobin92',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by nabilbdt  - Tags: simple, tooltip, action, alert, green, creative */\n.Tooltip {\n  color: #ebebeb;\n  border-radius: 0.8em;\n  padding: 1em 4em;\n  position: relative;\n  display: inline-block;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background-color: #00641e;\n  -webkit-transition: background-color 2s ease-out;\n  -moz-transition: background-color 2s ease-out;\n  -o-transition: background-color 2s ease-out;\n  transition: background-color 2s ease-out;\n}\n.Tooltip .Tip {\n  color: #003b12;\n  text-align: center;\n  border-radius: 10rpx;\n  visibility: hidden;\n  width: 200rpx;\n  left: 100%;\n  transform: translateX(-50%);\n  opacity: 0;\n  background-color: #28282817;\n  padding: 20rpx;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  transition: opacity 0.3s;\n}\n.Tooltip:hover .Tip {\n  opacity: 1;\n  visibility: visible;\n}\n.Tooltip:hover {\n  background-color: rgb(100, 100, 100);\n}\n.Tooltip .Tip::after {\n  left: 10%;\n  border-width: 16rpx;\n  border-style: solid;\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  border-color: #28282817 transparent transparent transparent;\n}\n\n",
+    "component_name": "GalaxyNewRobin92"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1156,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.715Z",
+  "updated_at": "2025-07-31T07:55:38.715Z"
+}

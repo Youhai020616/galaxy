@@ -1,0 +1,89 @@
+{
+  "id": "PriyanshuGupta28_strong-monkey-50",
+  "name": "strong-monkey-50",
+  "category": "loaders",
+  "author": "PriyanshuGupta28",
+  "description": "strong-monkey-50 组件 (loader, circle loader, cool loader, 3d loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "circle loader",
+    "cool loader",
+    "3d loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n  </div>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, circle loader, cool loader, 3d loader */\n.loader {\n  flex-direction: row;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.circle {\n  width: 20px;\n  height: 20px;\n  background-color: #8BC6EC;\n  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);\n  border-radius: 50%;\n  margin-right: 1rem;\n  animation: pulse 1.2s ease-in-out infinite;\n}\n\n.circle:nth-child(2) {\n  animation-delay: 0.2s;\n  background-color: #4158D0;\n  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);\n}\n\n.circle:nth-child(3) {\n  animation-delay: 0.4s;\n  background-color: #0093E9;\n  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);\n}\n\n.circle:nth-child(4) {\n  animation-delay: 0.6s;\n  background-color: #8EC5FC;\n  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n}\n\n.circle:nth-child(5) {\n  animation-delay: 0.8s;\n  background-color: #00DBDE;\n  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.8);\n    opacity: 0.7;\n  }\n\n  50% {\n    transform: scale(1);\n    opacity: 1;\n  }\n\n  100% {\n    transform: scale(0.8);\n    opacity: 0.7;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/PriyanshuGupta28_strong-monkey-50.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"circle\"></view>\n    <view class=\"circle\"></view>\n    <view class=\"circle\"></view>\n    <view class=\"circle\"></view>\n    <view class=\"circle\"></view>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyStrongMonkey50',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, circle loader, cool loader, 3d loader */\n.loader {\n  flex-direction: row;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.circle {\n  width: 40rpx;\n  height: 40rpx;\n  background-color: #8BC6EC;\n  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);\n  border-radius: 50%;\n  margin-right: 1rem;\n  animation: pulse 1.2s ease-in-out infinite;\n}\n\n.circle:nth-child(2) {\n  animation-delay: 0.2s;\n  background-color: #4158D0;\n  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);\n}\n\n.circle:nth-child(3) {\n  animation-delay: 0.4s;\n  background-color: #0093E9;\n  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);\n}\n\n.circle:nth-child(4) {\n  animation-delay: 0.6s;\n  background-color: #8EC5FC;\n  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n}\n\n.circle:nth-child(5) {\n  animation-delay: 0.8s;\n  background-color: #00DBDE;\n  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.8);\n    opacity: 0.7;\n  }\n\n  50% {\n    transform: scale(1);\n    opacity: 1;\n  }\n\n  100% {\n    transform: scale(0.8);\n    opacity: 0.7;\n  }\n}\n",
+    "component_name": "GalaxyStrongMonkey50"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1424,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.142Z",
+  "updated_at": "2025-07-31T07:55:40.142Z"
+}

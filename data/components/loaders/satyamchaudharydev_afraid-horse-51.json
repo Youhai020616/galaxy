@@ -1,0 +1,85 @@
+{
+  "id": "satyamchaudharydev_afraid-horse-51",
+  "name": "afraid-horse-51",
+  "category": "loaders",
+  "author": "satyamchaudharydev",
+  "description": "afraid-horse-51 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\"></div>",
+    "css": "/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n --size: 30px;\n --first-block-clr: #005bba;\n --second-block-clr: #fed500;\n --clr: #111;\n width: 100px;\n height: 100px;\n position: relative;\n}\n\n.spinner::after,.spinner::before {\n box-sizing: border-box;\n position: absolute;\n content: \"\";\n width: var(--size);\n height: var(--size);\n top: 50%;\n animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;\n left: 50%;\n background: var(--first-block-clr);\n}\n\n.spinner::after {\n background: var(--second-block-clr);\n top: calc(50% - var(--size));\n left: calc(50% - var(--size));\n animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;\n}\n\n@keyframes down {\n 0%, 100% {\n  transform: none;\n }\n\n 25% {\n  transform: translateX(100%);\n }\n\n 50% {\n  transform: translateX(100%) translateY(100%);\n }\n\n 75% {\n  transform: translateY(100%);\n }\n}\n\n@keyframes up {\n 0%, 100% {\n  transform: none;\n }\n\n 25% {\n  transform: translateX(-100%);\n }\n\n 50% {\n  transform: translateX(-100%) translateY(-100%);\n }\n\n 75% {\n  transform: translateY(-100%);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/satyamchaudharydev_afraid-horse-51.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>",
+    "script": "export default {\n  name: 'GalaxyAfraidHorse51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by satyamchaudharydev - Tags: loader */\n.spinner {\n --size: 60rpx;\n --first-block-clr: #005bba;\n --second-block-clr: #fed500;\n --clr: #111;\n width: 200rpx;\n height: 200rpx;\n position: relative;\n}\n\n.spinner::after,.spinner::before {\n box-sizing: border-box;\n position: absolute;\n content: \"\";\n width: var(--size);\n height: var(--size);\n top: 50%;\n animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;\n left: 50%;\n background: var(--first-block-clr);\n}\n\n.spinner::after {\n background: var(--second-block-clr);\n top: calc(50% - var(--size));\n left: calc(50% - var(--size));\n animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;\n}\n\n@keyframes down {\n 0%, 100% {\n  transform: none;\n }\n\n 25% {\n  transform: translateX(100%);\n }\n\n 50% {\n  transform: translateX(100%) translateY(100%);\n }\n\n 75% {\n  transform: translateY(100%);\n }\n}\n\n@keyframes up {\n 0%, 100% {\n  transform: none;\n }\n\n 25% {\n  transform: translateX(-100%);\n }\n\n 50% {\n  transform: translateX(-100%) translateY(-100%);\n }\n\n 75% {\n  transform: translateY(-100%);\n }\n}\n\n",
+    "component_name": "GalaxyAfraidHorse51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1088,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.580Z",
+  "updated_at": "2025-07-31T07:55:42.580Z"
+}

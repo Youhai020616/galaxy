@@ -1,0 +1,116 @@
+{
+  "id": "laminelawal_wise-turtle-66",
+  "name": "wise-turtle-66",
+  "category": "buttons",
+  "author": "laminelawal",
+  "description": "wise-turtle-66 组件 (alert, button, 2d button, animation, interactive)",
+  "tags": [
+    "alert",
+    "button",
+    "2d button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"frame\">\n  <div class=\"center\">\n\t\t<button>Hover me</button>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by laminelawal - Tags: alert, button, 2d button */\n.frame {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 400px;\n  height: 400px;\n  margin-top: -200px;\n  margin-left: -200px;\n  border-radius: 2px;\n  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);\n  overflow: hidden;\n  background: #fff;\n  color: #333;\n  font-family: 'Open Sans', Helvetica, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n}\n\nbutton {\n  padding: 15px 15px;\n  border: none;\n  width: 170px;\n  height: 55px;\n  box-shadow: 15px 15px darkblue;\n  cursor: pointer;\n  transition: 0.5s ease;\n  background: lightgray;\n  font-size: 18px;\n  font-weight: bolder;\n  text-transform: uppercase;\n}\n\nbutton:hover {\n  box-shadow: -15px -15px lightgray;\n  transform: translate(15px, 15px);\n  background: darkblue;\n  color: white;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/laminelawal_wise-turtle-66.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"frame\"></view>\n  <view class=\"center\"></view>\n\t\t<button></button>Hover me</button>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyWiseTurtle66',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by laminelawal - Tags: alert, button, 2d button */\n.frame {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 800rpx;\n  height: 800rpx;\n  margin-top: -400rpx;\n  margin-left: -400rpx;\n  border-radius: 4rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 16rpx 32rpx 0 rgba(0,0,0,0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  overflow: hidden;\n  background: #fff;\n  color: #333;\n  font-family: 'Open Sans', Helvetica, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n}\n\nbutton {\n  padding: 30rpx 30rpx;\n  border: none;\n  width: 340rpx;\n  height: 110rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 30rpx 30rpx darkblue;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: 0.5s ease;\n  background: lightgray;\n  font-size: 36rpx;\n  font-weight: bolder;\n  text-transform: uppercase;\n}\n\nbutton:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -30rpx -30rpx lightgray;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(30rpx, 30rpx);\n  background: darkblue;\n  color: white;\n}\n",
+    "component_name": "GalaxyWiseTurtle66"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1028,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.133Z",
+  "updated_at": "2025-07-31T07:55:37.133Z"
+}

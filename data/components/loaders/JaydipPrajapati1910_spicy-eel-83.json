@@ -1,0 +1,91 @@
+{
+  "id": "JaydipPrajapati1910_spicy-eel-83",
+  "name": "spicy-eel-83",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "spicy-eel-83 组件 (animation, loader, ninja loader, gradient)",
+  "tags": [
+    "animation",
+    "loader",
+    "ninja loader",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loader, ninja loader */\n.loader {\n  width: 160px;\n  height: 160px;\n  color: #0000F4;\n  background: conic-gradient(from  165deg at top   ,#0000, currentColor 1deg 30deg,#0000 31deg) top,\n    conic-gradient(from   75deg at left  ,#0000, currentColor 1deg 30deg,#0000 31deg) left,\n    conic-gradient(from  -15deg at bottom,#0000, currentColor 1deg 30deg,#0000 31deg) bottom, \n    conic-gradient(from -105deg at right ,#0000, currentColor 1deg 30deg,#0000 31deg) right;\n  background-size: 100% 50%,50% 100%;\n  -webkit-mask: radial-gradient(circle 10px,#0000 90%,#000);\n  background-repeat: no-repeat;\n  animation: sh1 1.5s infinite linear;\n}\n\n@keyframes sh1 {\n \n  100% {\n    transform: rotate(1turn)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_spicy-eel-83.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxySpicyEel83',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loader, ninja loader */\n.loader {\n  width: 320rpx;\n  height: 320rpx;\n  color: #0000F4;\n  background: conic-gradient(from  165deg at top   ,#0000, currentColor 1deg 30deg,#0000 31deg) top,\n    conic-gradient(from   75deg at left  ,#0000, currentColor 1deg 30deg,#0000 31deg) left,\n    conic-gradient(from  -15deg at bottom,#0000, currentColor 1deg 30deg,#0000 31deg) bottom, \n    conic-gradient(from -105deg at right ,#0000, currentColor 1deg 30deg,#0000 31deg) right;\n  background-size: 100% 50%,50% 100%;\n  -webkit-\n  background-repeat: no-repeat;\n  animation: sh1 1.5s infinite linear;\n}\n\n@keyframes sh1 {\n \n  100% {\n    transform: rotate(1turn)\n  }\n}\n  \n\n",
+    "component_name": "GalaxySpicyEel83"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 796,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.418Z",
+  "updated_at": "2025-07-31T07:55:39.418Z"
+}

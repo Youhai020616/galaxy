@@ -1,0 +1,112 @@
+{
+  "id": "Baimyrzaev_foolish-mouse-95",
+  "name": "foolish-mouse-95",
+  "category": "buttons",
+  "author": "Baimyrzaev",
+  "description": "foolish-mouse-95 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n    <span>Button</span>\n    <div class=\"top\"></div>\n    <div class=\"left\"></div>\n    <div class=\"bottom\"></div>\n    <div class=\"right\"></div>\n</button>",
+    "css": "/* From Uiverse.io by Baimyrzaev - Tags: button */\nbutton {\n  padding: 20px 60px;\n  background-color: #000;\n  border: none;\n  font-size: 18px;\n  position: relative;\n  /* overflow: hidden; */\n  transition: 500ms;\n}\n\nbutton span {\n  color: gray;\n  position: relative;\n  transition: 500ms;\n  transition-delay: 500ms;\n  font-size: 16px;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 600;\n}\n\nbutton:before {\n  content: '';\n  position: absolute;\n  width: 0%;\n  height: 0%;\n  left: 50%;\n  right: 50%;\n  top: 50%;\n  bottom: 50%;\n  transition: 500ms;\n  transition-delay: 500ms;\n  background-color: red;\n  box-shadow: 0 0 10px red,\n   0 0 30px red, \n   0 0 50px red;\n}\n\nbutton div {\n  transition: 500ms;\n  position: absolute;\n  background-color: red;\n  box-shadow: 0 0 15px red, 0 0 30px red, 0 0 50px red;\n}\n\nbutton .top {\n  width: 15px;\n  height: 2px;\n  top: 0;\n  left: 0;\n}\n\nbutton .bottom {\n  width: 15px;\n  height: 2px;\n  bottom: 0;\n  right: 0;\n}\n\nbutton .left {\n  width: 2px;\n  height: 15px;\n  top: 0;\n  left: 0;\n}\n\nbutton .right {\n  width: 2px;\n  height: 15px;\n  bottom: 0;\n  right: 0;\n}\n\nbutton:hover {\n  color: #000;\n}\n\nbutton:hover span {\n  color: #000;\n}\n\nbutton:hover:before {\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n\nbutton:hover .top, \nbutton:hover .bottom {\n  width: 100%;\n}\n\nbutton:hover .left,\nbutton:hover .right {\n  height: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Baimyrzaev_foolish-mouse-95.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n    <text>Button</text>\n    <view class=\"top\"></view>\n    <view class=\"left\"></view>\n    <view class=\"bottom\"></view>\n    <view class=\"right\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFoolishMouse95',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Baimyrzaev - Tags: button */\nbutton {\n  padding: 40rpx 120rpx;\n  background-color: #000;\n  border: none;\n  font-size: 36rpx;\n  position: relative;\n  /* overflow: hidden; */\n  transition: 500ms;\n}\n\nbutton span {\n  color: gray;\n  position: relative;\n  transition: 500ms;\n  transition-delay: 500ms;\n  font-size: 32rpx;\n  text-transform: uppercase;\n  letter-spacing: 4rpx;\n  font-weight: 600;\n}\n\nbutton:before {\n  content: '';\n  position: absolute;\n  width: 0%;\n  height: 0%;\n  left: 50%;\n  right: 50%;\n  top: 50%;\n  bottom: 50%;\n  transition: 500ms;\n  transition-delay: 500ms;\n  background-color: red;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx red,\n   0 0 60rpx red, \n   0 0 100rpx red;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton div {\n  transition: 500ms;\n  position: absolute;\n  background-color: red;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 30rpx red, 0 0 60rpx red, 0 0 100rpx red;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton .top {\n  width: 30rpx;\n  height: 4rpx;\n  top: 0;\n  left: 0;\n}\n\nbutton .bottom {\n  width: 30rpx;\n  height: 4rpx;\n  bottom: 0;\n  right: 0;\n}\n\nbutton .left {\n  width: 4rpx;\n  height: 30rpx;\n  top: 0;\n  left: 0;\n}\n\nbutton .right {\n  width: 4rpx;\n  height: 30rpx;\n  bottom: 0;\n  right: 0;\n}\n\nbutton:hover {\n  color: #000;\n}\n\nbutton:hover span {\n  color: #000;\n}\n\nbutton:hover:before {\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n\nbutton:hover .top, \nbutton:hover .bottom {\n  width: 100%;\n}\n\nbutton:hover .left,\nbutton:hover .right {\n  height: 100%;\n}\n",
+    "component_name": "GalaxyFoolishMouse95"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1564,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.747Z",
+  "updated_at": "2025-07-31T07:55:32.747Z"
+}

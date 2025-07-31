@@ -1,0 +1,121 @@
+{
+  "id": "simontheonlyone_ordinary-starfish-54",
+  "name": "ordinary-starfish-54",
+  "category": "buttons",
+  "author": "simontheonlyone",
+  "description": "ordinary-starfish-54 组件 (animation, orange, button, heart, unique, text animation, focus, creative, minimal, interactive)",
+  "tags": [
+    "animation",
+    "orange",
+    "button",
+    "heart",
+    "unique",
+    "text animation",
+    "focus",
+    "creative",
+    "minimal",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"container\">\n  <span class=\"effect orange_effect\"></span>\n  <span class=\"effect white_effect\"></span>\n  <div class=\"heart heart_left\"></div>\n  <div class=\"heart heart_right\"></div>\n  <div class=\"like\">I love it</div>\n</button>",
+    "css": "/* From Uiverse.io by simontheonlyone - Tags: animation, orange, button, heart, unique, text animation, focus, creative, minimal */\n.container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  width: 6em;\n  height: 6em;\n  border: none;\n  border-radius: 1em;\n  background: #ddd;\n  box-shadow: 0 0 20px rgba(0, 0, 0, .4);\n  cursor: pointer;\n}\n\n.heart {\n  width: 2.4em;\n  height: 4.3em;\n  border: none;\n  border-radius: 10em;\n  pointer-events: none;\n}\n\n.heart_left {\n  background-color: rgb(252, 102, 56);\n  box-shadow: 0 0 5px rgba(0, 0, 0, .4);\n  transform: rotate(-38deg);\n  margin-right: -16px;\n  z-index: 2;\n}\n\n.heart_right {\n  background-color: rgb(199, 81, 45);\n  box-shadow: 0 0 5px rgba(0, 0, 0, .3);\n  transform: rotate(38deg);\n  z-index: 1;\n}\n\n.container:hover > .heart_left {\n  animation: like 450ms ease forwards;\n}\n\n@keyframes like {\n  0% {\n    margin-right: -16px;\n  }\n\n  25% {\n    transform: rotate(0deg);\n    margin-right: -32px;\n  }\n\n  50% {\n    transform: rotate(-38deg);\n    margin-right: -16px;\n  }\n\n  75% {\n    transform: rotate(0deg);\n    margin-right: -32px;\n  }\n\n  100% {\n    transform: rotate(-38deg);\n  }\n}\n\n.container:hover > .heart_right {\n  animation: loke 450ms ease;\n}\n\n@keyframes loke {\n  25% {\n    transform: rotate(0deg);\n    box-shadow: none;\n  }\n\n  50% {\n    transform: rotate(38deg);\n  }\n\n  75% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(38deg);\n  }\n}\n\n.orange_effect,\n.white_effect {\n  position: absolute;\n  inset: 40.5%;\n  border: none;\n  border-radius: .2em;\n  width: 1em;\n  height: 1em;\n  scale: 1;\n  opacity: 1;\n}\n\n.orange_effect {\n  background: rgba(255, 102, 55, .3);\n  transition: scale 250ms linear, opacity 500ms linear 270ms;\n}\n\n.container:hover > .orange_effect {\n  scale: 6;\n  opacity: 0;\n}\n\n.white_effect {\n  background: rgba(255, 134, 42, 0.3);\n  transition: scale 280ms linear 200ms, opacity 500ms linear 270ms;\n}\n\n.container:hover > .white_effect {\n  scale: 6;\n  opacity: 0;\n}\n\n.like {\n  position: absolute;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 10em;\n  min-height: 2.2em;\n  background: #e5e5e5;\n  box-shadow: 0 0 20px rgba(0, 0, 0, .15);\n  font-size: 15px;\n  letter-spacing: 3px;\n  border: none;\n  border-radius: .65em;\n  pointer-events: none;\n  scale: 0;\n  opacity: 0;\n}\n\n.container:focus .like {\n  animation: pop-up 400ms ease forwards;\n}\n\n@keyframes pop-up {\n  0% {\n    top: 0;\n  }\n\n  80%, 100% {\n    top: -60px;\n    scale: 1;\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/simontheonlyone_ordinary-starfish-54.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"container\"></button>\n  <text class=\"effect orange_effect\"></text>\n  <text class=\"effect white_effect\"></text>\n  <view class=\"heart heart_left\"></view>\n  <view class=\"heart heart_right\"></view>\n  <view class=\"like\">I love it</view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryStarfish54',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by simontheonlyone - Tags: animation, orange, button, heart, unique, text animation, focus, creative, minimal */\n.container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  width: 6em;\n  height: 6em;\n  border: none;\n  border-radius: 1em;\n  background: #ddd;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx rgba(0, 0, 0, .4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.heart {\n  width: 2.4em;\n  height: 4.3em;\n  border: none;\n  border-radius: 10em;\n  pointer-events: none;\n}\n\n.heart_left {\n  background-color: rgb(252, 102, 56);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx rgba(0, 0, 0, .4);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotate(-38deg);\n  margin-right: -32rpx;\n  z-index: 2;\n}\n\n.heart_right {\n  background-color: rgb(199, 81, 45);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 10rpx rgba(0, 0, 0, .3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: rotate(38deg);\n  z-index: 1;\n}\n\n.container:hover > .heart_left {\n  animation: like 450ms ease forwards;\n}\n\n@keyframes like {\n  0% {\n    margin-right: -32rpx;\n  }\n\n  25% {\n    transform: rotate(0deg);\n    margin-right: -64rpx;\n  }\n\n  50% {\n    transform: rotate(-38deg);\n    margin-right: -32rpx;\n  }\n\n  75% {\n    transform: rotate(0deg);\n    margin-right: -64rpx;\n  }\n\n  100% {\n    transform: rotate(-38deg);\n  }\n}\n\n.container:hover > .heart_right {\n  animation: loke 450ms ease;\n}\n\n@keyframes loke {\n  25% {\n    transform: rotate(0deg);\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  50% {\n    transform: rotate(38deg);\n  }\n\n  75% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(38deg);\n  }\n}\n\n.orange_effect,\n.white_effect {\n  position: absolute;\n  inset: 40.5%;\n  border: none;\n  border-radius: .2em;\n  width: 1em;\n  height: 1em;\n  scale: 1;\n  opacity: 1;\n}\n\n.orange_effect {\n  background: rgba(255, 102, 55, .3);\n  transition: scale 250ms linear, opacity 500ms linear 270ms;\n}\n\n.container:hover > .orange_effect {\n  scale: 6;\n  opacity: 0;\n}\n\n.white_effect {\n  background: rgba(255, 134, 42, 0.3);\n  transition: scale 280ms linear 200ms, opacity 500ms linear 270ms;\n}\n\n.container:hover > .white_effect {\n  scale: 6;\n  opacity: 0;\n}\n\n.like {\n  position: absolute;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 10em;\n  min-height: 2.2em;\n  background: #e5e5e5;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 40rpx rgba(0, 0, 0, .15);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  font-size: 30rpx;\n  letter-spacing: 6rpx;\n  border: none;\n  border-radius: .65em;\n  pointer-events: none;\n  scale: 0;\n  opacity: 0;\n}\n\n.container:focus .like {\n  animation: pop-up 400ms ease forwards;\n}\n\n@keyframes pop-up {\n  0% {\n    top: 0;\n  }\n\n  80%, 100% {\n    top: -120rpx;\n    scale: 1;\n    opacity: 1;\n  }\n}\n",
+    "component_name": "GalaxyOrdinaryStarfish54"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2758,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.876Z",
+  "updated_at": "2025-07-31T07:55:37.876Z"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "roroland_curly-stingray-36",
+  "name": "curly-stingray-36",
+  "category": "loaders",
+  "author": "roroland",
+  "description": "curly-stingray-36 组件 (3d, gradient, loader, text animation, particles, animation)",
+  "tags": [
+    "3d",
+    "gradient",
+    "loader",
+    "text animation",
+    "particles",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <p class=\"text\">\n    loading...\n  </p>\n</div>",
+    "css": "/* From Uiverse.io by roroland - Tags: 3d, gradient, loader, text animation, particles */\n.loader {\n  --col1: rgba(228, 19, 141, 0.925);\n  --col2: rgb(255, 179, 80);\n  font-size: 2em;\n  font-weight: 600;\n  perspective: 800px;\n  position: relative;\n}\n\n.loader::after,\n.loader::before,\n.loader .text::after,\n.loader .text::before {\n  perspective: 800px;\n  animation: anim 2s ease-in-out infinite, dotMove 10s ease-out alternate infinite, move 10s linear infinite 1s;\n  ;\n  content: '●';\n  color: var(--col1);\n  position: absolute;\n  translate: -60px 500px;\n  width: 5px;\n  height: 5px;\n}\n\n.loader::before {\n  animation-delay: 3s;\n  color: var(--col1);\n}\n\n.loader .text::before {\n  color: var(--col2);\n  animation-delay: 2s;\n}\n\n.loader .text::after {\n  color: var(--col2);\n}\n\n.loader .text {\n  animation: anim 20s linear infinite, move 10s linear infinite 1s;\n  color: transparent;\n  background-image: linear-gradient(90deg, \n  var(--col1) 0%,\n  var(--col2) 100%);\n  background-clip: text;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  transform: skew(5deg, -5deg);\n  -webkit-background-clip: text;\n  position: relative;\n}\n\n@keyframes anim {\n  0%, 100% {\n    text-shadow: 2px 0px 2px rgba(179, 158, 158, .5);\n  }\n\n  50% {\n    background-size: 0%;\n    background-position-x: left;\n    text-shadow: 2px 10px 6px rgba(179, 158, 158, 1);\n  }\n}\n\n@keyframes move {\n  50% {\n    translate: 0px 0px;\n    rotate: x 60deg;\n    transform: skew(-5deg, 5deg);\n  }\n}\n\n@keyframes dotMove {\n  0%, 100% {\n    translate: -60px 300px;\n  }\n\n  50% {\n    translate: 160px -250px;\n    scale: .5;\n    opacity: .85;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/roroland_curly-stingray-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text class=\"text\"></text>\n    loading...\n  </p>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCurlyStingray36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by roroland - Tags: 3d, gradient, loader, text animation, particles */\n.loader {\n  --col1: rgba(228, 19, 141, 0.925);\n  --col2: rgb(255, 179, 80);\n  font-size: 2em;\n  font-weight: 600;\n  perspective: 1600rpx;\n  position: relative;\n}\n\n.loader::after,\n.loader::before,\n.loader .text::after,\n.loader .text::before {\n  perspective: 1600rpx;\n  animation: anim 2s ease-in-out infinite, dotMove 10s ease-out alternate infinite, move 10s linear infinite 1s;\n  ;\n  content: '●';\n  color: var(--col1);\n  position: absolute;\n  translate: -120rpx 1000rpx;\n  width: 10rpx;\n  height: 10rpx;\n}\n\n.loader::before {\n  animation-delay: 3s;\n  color: var(--col1);\n}\n\n.loader .text::before {\n  color: var(--col2);\n  animation-delay: 2s;\n}\n\n.loader .text::after {\n  color: var(--col2);\n}\n\n.loader .text {\n  animation: anim 20s linear infinite, move 10s linear infinite 1s;\n  color: transparent;\n  background-image: linear-gradient(90deg, \n  var(--col1) 0%,\n  var(--col2) 100%);\n  background-clip: text;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  transform: skew(5deg, -5deg);\n  -webkit-background-clip: text;\n  position: relative;\n}\n\n@keyframes anim {\n  0%, 100% {\n    /* #ifdef H5 */\n  text-shadow: 4rpx 0rpx 4rpx rgba(179, 158, 158, .5);\n  /* #endif */\n  }\n\n  50% {\n    background-size: 0%;\n    background-position-x: left;\n    /* #ifdef H5 */\n  text-shadow: 4rpx 20rpx 12rpx rgba(179, 158, 158, 1);\n  /* #endif */\n  }\n}\n\n@keyframes move {\n  50% {\n    translate: 0rpx 0rpx;\n    rotate: x 60deg;\n    transform: skew(-5deg, 5deg);\n  }\n}\n\n@keyframes dotMove {\n  0%, 100% {\n    translate: -120rpx 600rpx;\n  }\n\n  50% {\n    translate: 320rpx -500rpx;\n    scale: .5;\n    opacity: .85;\n  }\n}\n",
+    "component_name": "GalaxyCurlyStingray36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1678,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.567Z",
+  "updated_at": "2025-07-31T07:55:42.567Z"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "tarantino421_fast-goose-21",
+  "name": "fast-goose-21",
+  "category": "buttons",
+  "author": "tarantino421",
+  "description": "fast-goose-21 组件 (button, music, hover button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "music",
+    "hover button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"box\">\n  <button class=\"button\">LISTEN</button>\n  <div class=\"music\">\n    <span class=\"soundwave\" style=\"--i: 12\"></span>\n    <span class=\"soundwave\" style=\"--i: 31\"></span>\n    <span class=\"soundwave\" style=\"--i: 25\"></span>\n    <span class=\"soundwave\" style=\"--i: 18\"></span>\n    <span class=\"soundwave\" style=\"--i: 11\"></span>\n    <span class=\"soundwave\" style=\"--i: 23\"></span>\n    <span class=\"soundwave\" style=\"--i: 16\"></span>\n    <span class=\"soundwave\" style=\"--i: 34\"></span>\n    <span class=\"soundwave\" style=\"--i: 19\"></span>\n    <span class=\"soundwave\" style=\"--i: 14\"></span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by tarantino421 - Tags: button, music, hover button */\n.box {\n  --clr-shadow__border: #3effff;\n  --clr-text: #F6F4EB;\n  --clr-soundwave: #83e4ac;\n  --clr-music: #30858d;\n  --size: 3rem;\n  position: relative;\n  outline: 1px solid var(--clr-shadow__border);\n}\n\n.button {\n  background: transparent;\n  padding: calc(var(--size) / 3) var(--size);\n  font-weight: 600;\n  font-size: 1.5rem;\n  border: none;\n  cursor: pointer;\n  color: var(--clr-text);\n  letter-spacing: 0.2rem;\n  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),-2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);\n}\n\n.music {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-end;\n  background: var(--clr-music);\n}\n\n.box:hover .music {\n  opacity: 1;\n}\n\n.soundwave {\n  width: 100%;\n  border: 1px solid var(--clr-music);\n  border-bottom: none;\n  background: linear-gradient(to top, var(--clr-soundwave) 70%, var(--clr-music));\n  animation: music-animation calc(0.03s * var(--i)) linear infinite;\n  opacity: 1;\n}\n\n@keyframes music-animation {\n  0%, 100% {\n    height: calc(0.06rem * var(--i));\n  }\n\n  10% {\n    height: calc(0.04rem * var(--i));\n  }\n\n  20% {\n    height: calc(0.05rem * var(--i));\n  }\n\n  30% {\n    height: calc(0.01rem * var(--i));\n  }\n\n  40% {\n    height: calc(0.07rem * var(--i));\n  }\n\n  50% {\n    height: calc(0.04rem * var(--i));\n  }\n\n  60% {\n    height: calc(0.08rem * var(--i));\n  }\n\n  70% {\n    height: calc(0.06rem * var(--i));\n  }\n\n  80% {\n    height: calc(0.09rem * var(--i));\n  }\n\n  90% {\n    height: calc(0.05rem * var(--i));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/tarantino421_fast-goose-21.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>\n  <button class=\"button\"></button>LISTEN</button>\n  <view class=\"music\"></view>\n    <text class=\"soundwave\" style=\"--i: 12\"></text>\n    <text class=\"soundwave\" style=\"--i: 31\"></text>\n    <text class=\"soundwave\" style=\"--i: 25\"></text>\n    <text class=\"soundwave\" style=\"--i: 18\"></text>\n    <text class=\"soundwave\" style=\"--i: 11\"></text>\n    <text class=\"soundwave\" style=\"--i: 23\"></text>\n    <text class=\"soundwave\" style=\"--i: 16\"></text>\n    <text class=\"soundwave\" style=\"--i: 34\"></text>\n    <text class=\"soundwave\" style=\"--i: 19\"></text>\n    <text class=\"soundwave\" style=\"--i: 14\"></text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastGoose21',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by tarantino421 - Tags: button, music, hover button */\n.box {\n  --clr-shadow__border: #3effff;\n  --clr-text: #F6F4EB;\n  --clr-soundwave: #83e4ac;\n  --clr-music: #30858d;\n  --size: 3rem;\n  position: relative;\n  outline: 2rpx solid var(--clr-shadow__border);\n}\n\n.button {\n  background: transparent;\n  padding: calc(var(--size) / 3) var(--size);\n  font-weight: 600;\n  font-size: 1.5rem;\n  border: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  color: var(--clr-text);\n  letter-spacing: 0.2rem;\n  /* #ifdef H5 */\n  text-shadow: 4rpx 0rpx var(--clr-shadow__border), 0rpx 4rpx var(--clr-shadow__border),-4rpx 0rpx var(--clr-shadow__border), 0rpx -4rpx var(--clr-shadow__border);\n  /* #endif */\n}\n\n.music {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-end;\n  background: var(--clr-music);\n}\n\n.box:hover .music {\n  opacity: 1;\n}\n\n.soundwave {\n  width: 100%;\n  border: 2rpx solid var(--clr-music);\n  border-bottom: none;\n  background: linear-gradient(to top, var(--clr-soundwave) 70%, var(--clr-music));\n  animation: music-animation calc(0.03s * var(--i)) linear infinite;\n  opacity: 1;\n}\n\n@keyframes music-animation {\n  0%, 100% {\n    height: calc(0.06rem * var(--i));\n  }\n\n  10% {\n    height: calc(0.04rem * var(--i));\n  }\n\n  20% {\n    height: calc(0.05rem * var(--i));\n  }\n\n  30% {\n    height: calc(0.01rem * var(--i));\n  }\n\n  40% {\n    height: calc(0.07rem * var(--i));\n  }\n\n  50% {\n    height: calc(0.04rem * var(--i));\n  }\n\n  60% {\n    height: calc(0.08rem * var(--i));\n  }\n\n  70% {\n    height: calc(0.06rem * var(--i));\n  }\n\n  80% {\n    height: calc(0.09rem * var(--i));\n  }\n\n  90% {\n    height: calc(0.05rem * var(--i));\n  }\n}\n\n\n\n\n\n\n\n\n",
+    "component_name": "GalaxyFastGoose21"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2383,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.927Z",
+  "updated_at": "2025-07-31T07:55:37.927Z"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "Shoh2008_hot-hound-11",
+  "name": "hot-hound-11",
+  "category": "loaders",
+  "author": "Shoh2008",
+  "description": "hot-hound-11 组件 (loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border-bottom: 3px solid #ff3d00;\n  box-sizing: border-box;\n  animation: drawLine 4s linear infinite;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  left: calc(100% + 14px);\n  bottom: -6px;\n  width: 16px;\n  height: 100px;\n  border-radius: 20px 20px 50px 50px;\n  background-repeat: no-repeat;\n  background-image: linear-gradient(#ff3d00 6px, transparent 0),\n    linear-gradient(45deg, rgba(0, 0, 0, 0.02) 49%, white 51%),\n    linear-gradient(315deg, rgba(0, 0, 0, 0.02) 49%, white 51%),\n    linear-gradient( to bottom, #ffffff 10%, #ff3d00 10%, #ff3d00 90%, #ffffff 90% );\n  background-size: 3px 3px, 8px 8px, 8px 8px, 16px 88px;\n  background-position: center bottom, left 88px, right 88px, left top;\n  transform: rotate(25deg);\n  animation: pencilRot 4s linear infinite;\n}\n\n@keyframes drawLine {\n  0%, 100% {\n    width: 0px\n  }\n\n  45%, 55% {\n    width: 200px\n  }\n}\n\n@keyframes pencilRot {\n  0%, 45% {\n    bottom: -6px;\n    left: calc(100% + 14px);\n    transform: rotate(25deg);\n  }\n\n  55%,\n  100% {\n    bottom: -12px;\n    left: calc(100% + 16px);\n    transform: rotate(220deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Shoh2008_hot-hound-11.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyHotHound11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Shoh2008 - Tags: loader */\n.loader {\n  position: relative;\n  height: 400rpx;\n  width: 400rpx;\n  border-bottom: 6rpx solid #ff3d00;\n  box-sizing: border-box;\n  animation: drawLine 4s linear infinite;\n}\n\n.loader:before {\n  content: \"\";\n  position: absolute;\n  left: calc(100% + 28rpx);\n  bottom: -12rpx;\n  width: 32rpx;\n  height: 200rpx;\n  border-radius: 40rpx 40rpx 100rpx 100rpx;\n  background-repeat: no-repeat;\n  background-image: linear-gradient(#ff3d00 12rpx, transparent 0),\n    linear-gradient(45deg, rgba(0, 0, 0, 0.02) 49%, white 51%),\n    linear-gradient(315deg, rgba(0, 0, 0, 0.02) 49%, white 51%),\n    linear-gradient( to bottom, #ffffff 10%, #ff3d00 10%, #ff3d00 90%, #ffffff 90% );\n  background-size: 6rpx 6rpx, 16rpx 16rpx, 16rpx 16rpx, 32rpx 176rpx;\n  background-position: center bottom, left 176rpx, right 176rpx, left top;\n  transform: rotate(25deg);\n  animation: pencilRot 4s linear infinite;\n}\n\n@keyframes drawLine {\n  0%, 100% {\n    width: 0rpx\n  }\n\n  45%, 55% {\n    width: 400rpx\n  }\n}\n\n@keyframes pencilRot {\n  0%, 45% {\n    bottom: -12rpx;\n    left: calc(100% + 28rpx);\n    transform: rotate(25deg);\n  }\n\n  55%,\n  100% {\n    bottom: -24rpx;\n    left: calc(100% + 32rpx);\n    transform: rotate(220deg);\n  }\n}\n",
+    "component_name": "GalaxyHotHound11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1241,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.370Z",
+  "updated_at": "2025-07-31T07:55:40.370Z"
+}

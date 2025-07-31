@@ -1,0 +1,119 @@
+{
+  "id": "tarantino421_nasty-wolverine-40",
+  "name": "nasty-wolverine-40",
+  "category": "buttons",
+  "author": "tarantino421",
+  "description": "nasty-wolverine-40 组件 (button, space, hover button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "space",
+    "hover button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"box\">\n  <button class=\"button\">SPACE</button>\n  <div class=\"space\">\n    <span style=\"--i: 31\" class=\"star\"></span>\n    <span style=\"--i: 12\" class=\"star\"></span>\n    <span style=\"--i: 57\" class=\"star\"></span>\n    <span style=\"--i: 93\" class=\"star\"></span>\n    <span style=\"--i: 23\" class=\"star\"></span>\n    <span style=\"--i: 70\" class=\"star\"></span>\n    <span style=\"--i: 6\" class=\"star\"></span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by tarantino421 - Tags: button, space, hover button */\n.box {\n  --clr-shadow__border: #d9a1ff;\n  --clr-text: #F6F4EB;\n  --clr-space: #120e1e;\n  --clr-space-gr: #271950;\n  --clr-star: #E9F8F9;\n  --size: 3rem;\n  position: relative;\n  outline: 1px solid var(--clr-shadow__border);\n}\n\n.button {\n  font-weight: 600;\n  font-size: 1.5rem;\n  letter-spacing: 0.2rem;\n  background: transparent;\n  padding: calc(var(--size) / 3) var(--size);\n  border: none;\n  cursor: pointer;\n  color: var(--clr-text);\n  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),\n  -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);\n}\n\n.space {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  gap: 1.5rem;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  display: flex;\n  background: linear-gradient( 160deg, var(--clr-space), var(--clr-space-gr));\n}\n\n.box:hover .space {\n  opacity: 1;\n}\n\n.star {\n  height: 4rem;\n  width: 0.3rem;\n  transition: 0.5s;\n  border-radius: 50px;\n  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);\n  position: relative;\n  background-color: var(--clr-star);\n  animation: space-animation calc(0.1s * var(--i)) linear infinite;\n}\n\n@keyframes space-animation {\n  0% {\n    transform: rotate(-30deg) translateY(calc(-52% * var(--i)));\n  }\n\n  100% {\n    transform: rotate(-30deg) translateY(calc(52% * var(--i)));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/tarantino421_nasty-wolverine-40.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"box\"></view>\n  <button class=\"button\"></button>SPACE</button>\n  <view class=\"space\"></view>\n    <text style=\"--i: 31\" class=\"star\"></text>\n    <text style=\"--i: 12\" class=\"star\"></text>\n    <text style=\"--i: 57\" class=\"star\"></text>\n    <text style=\"--i: 93\" class=\"star\"></text>\n    <text style=\"--i: 23\" class=\"star\"></text>\n    <text style=\"--i: 70\" class=\"star\"></text>\n    <text style=\"--i: 6\" class=\"star\"></text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNastyWolverine40',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by tarantino421 - Tags: button, space, hover button */\n.box {\n  --clr-shadow__border: #d9a1ff;\n  --clr-text: #F6F4EB;\n  --clr-space: #120e1e;\n  --clr-space-gr: #271950;\n  --clr-star: #E9F8F9;\n  --size: 3rem;\n  position: relative;\n  outline: 2rpx solid var(--clr-shadow__border);\n}\n\n.button {\n  font-weight: 600;\n  font-size: 1.5rem;\n  letter-spacing: 0.2rem;\n  background: transparent;\n  padding: calc(var(--size) / 3) var(--size);\n  border: none;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  color: var(--clr-text);\n  /* #ifdef H5 */\n  text-shadow: 4rpx 0rpx var(--clr-shadow__border), 0rpx 4rpx var(--clr-shadow__border),\n  -4rpx 0rpx var(--clr-shadow__border), 0rpx -4rpx var(--clr-shadow__border);\n  /* #endif */\n}\n\n.space {\n  width: 100%;\n  height: 100%;\n  bottom: 0%;\n  gap: 1.5rem;\n  transition: 0.5s ease-in-out;\n  z-index: -1;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  display: flex;\n  background: linear-gradient( 160deg, var(--clr-space), var(--clr-space-gr));\n}\n\n.box:hover .space {\n  opacity: 1;\n}\n\n.star {\n  height: 4rem;\n  width: 0.3rem;\n  transition: 0.5s;\n  border-radius: 100rpx;\n  \n  position: relative;\n  background-color: var(--clr-star);\n  animation: space-animation calc(0.1s * var(--i)) linear infinite;\n}\n\n@keyframes space-animation {\n  0% {\n    transform: rotate(-30deg) translateY(calc(-52% * var(--i)));\n  }\n\n  100% {\n    transform: rotate(-30deg) translateY(calc(52% * var(--i)));\n  }\n}\n\n\n\n\n\n\n\n\n",
+    "component_name": "GalaxyNastyWolverine40"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 clip-path 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1864,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.942Z",
+  "updated_at": "2025-07-31T07:55:37.942Z"
+}

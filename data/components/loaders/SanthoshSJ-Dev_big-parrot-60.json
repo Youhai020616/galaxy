@@ -1,0 +1,90 @@
+{
+  "id": "SanthoshSJ-Dev_big-parrot-60",
+  "name": "big-parrot-60",
+  "category": "loaders",
+  "author": "SanthoshSJ-Dev",
+  "description": "big-parrot-60 组件 (loader, spinner, gears, small, two, animation, gradient)",
+  "tags": [
+    "loader",
+    "spinner",
+    "gears",
+    "small",
+    "two",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"bg\">\n  <div class=\"loader\"></div>\n</div>",
+    "css": "/* From Uiverse.io by SanthoshSJ-Dev - Tags: loader, spinner, gears, small, two */\n.bg {\n  padding: 20px;\n  border-radius: 10px;\n  background-color: var(--base-color);\n  --base-color: #212121;\n /*use your base color*/\n}\n\n.loader {\n  width: 60px;\n  height: 40px;\n  position: relative;\n  display: inline-block;\n  background-color: var(--base-color);\n}\n\n.loader::before {\n  content: '';\n  left: 0;\n  top: 0;\n  position: absolute;\n  width: 36px;\n  height: 36px;\n  border-radius: 50%;\n  background-color: #FFF;\n  background-image: radial-gradient(circle 8px at 18px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 18px 0px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 0px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 36px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 18px 36px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 30px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 5px 30px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 5px 5px, var(--base-color) 100%, transparent 0);\n  background-repeat: no-repeat;\n  box-sizing: border-box;\n  animation: rotationBack 3s linear infinite;\n}\n\n.loader::after {\n  content: '';\n  left: 35px;\n  top: 15px;\n  position: absolute;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n  background-color: #FFF;\n  background-image: radial-gradient(circle 5px at 12px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 12px 0px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 0px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 24px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 12px 24px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 20px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 3px 20px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 3px 3px, var(--base-color) 100%, transparent 0);\n  background-repeat: no-repeat;\n  box-sizing: border-box;\n  animation: rotationBack 4s linear infinite reverse;\n}\n\n@keyframes rotationBack {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SanthoshSJ-Dev_big-parrot-60.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"bg\"></view>\n  <view class=\"loader\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBigParrot60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SanthoshSJ-Dev - Tags: loader, spinner, gears, small, two */\n.bg {\n  padding: 40rpx;\n  border-radius: 20rpx;\n  background-color: var(--base-color);\n  --base-color: #212121;\n /*use your base color*/\n}\n\n.loader {\n  width: 120rpx;\n  height: 80rpx;\n  position: relative;\n  display: inline-block;\n  background-color: var(--base-color);\n}\n\n.loader::before {\n  content: '';\n  left: 0;\n  top: 0;\n  position: absolute;\n  width: 72rpx;\n  height: 72rpx;\n  border-radius: 50%;\n  background-color: #FFF;\n  background-image: radial-gradient(circle 16rpx at 36rpx 36rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 36rpx 0rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 0rpx 36rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 72rpx 36rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 36rpx 72rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 60rpx 10rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 60rpx 10rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 60rpx 60rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 10rpx 60rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 8rpx at 10rpx 10rpx, var(--base-color) 100%, transparent 0);\n  background-repeat: no-repeat;\n  box-sizing: border-box;\n  animation: rotationBack 3s linear infinite;\n}\n\n.loader::after {\n  content: '';\n  left: 70rpx;\n  top: 30rpx;\n  position: absolute;\n  width: 48rpx;\n  height: 48rpx;\n  border-radius: 50%;\n  background-color: #FFF;\n  background-image: radial-gradient(circle 10rpx at 24rpx 24rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 24rpx 0rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 0rpx 24rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 48rpx 24rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 24rpx 48rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 40rpx 6rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 40rpx 6rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 40rpx 40rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 6rpx 40rpx, var(--base-color) 100%, transparent 0), radial-gradient(circle 5rpx at 6rpx 6rpx, var(--base-color) 100%, transparent 0);\n  background-repeat: no-repeat;\n  box-sizing: border-box;\n  animation: rotationBack 4s linear infinite reverse;\n}\n\n@keyframes rotationBack {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(-360deg);\n  }\n}  \n",
+    "component_name": "GalaxyBigParrot60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2723,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.220Z",
+  "updated_at": "2025-07-31T07:55:40.220Z"
+}

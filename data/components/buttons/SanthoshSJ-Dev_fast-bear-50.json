@@ -1,0 +1,116 @@
+{
+  "id": "SanthoshSJ-Dev_fast-bear-50",
+  "name": "fast-bear-50",
+  "category": "buttons",
+  "author": "SanthoshSJ-Dev",
+  "description": "fast-bear-50 组件 (simple, blue, button, fluid, animated, animation, interactive)",
+  "tags": [
+    "simple",
+    "blue",
+    "button",
+    "fluid",
+    "animated",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span class=\"button-text\">Hover me</span>\n  <div class=\"fill-container\"></div>\n</button>",
+    "css": "/* From Uiverse.io by SanthoshSJ-Dev - Tags: simple, blue, button, fluid, animated */\n.button {\n  position: relative;\n  padding: 24px 64px;\n  border-radius: 50px;\n  color: #fafafa;\n  text-transform: uppercase;\n  font-weight: 900;\n  letter-spacing: 2px;\n  background-color: #212121;\n  border: solid 1px #fafafa4d;\n  overflow: hidden;\n  cursor: pointer;\n  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);\n}\n\n.button .button-text {\n  position: relative;\n  z-index: 2;\n}\n\n.button .fill-container {\n  position: absolute;\n  left: 0;\n  top: 50%;\n  width: 100%;\n  padding-bottom: 100%;\n  transform: translateY(-50%) rotate(180deg);\n}\n\n.button .fill-container::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-color: blue;\n  border-radius: 50px;\n  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);\n  transform: translateY(-100%);\n}\n\n.button:hover {\n  border-color: blue;\n  transform: translateY(-4px);\n}\n\n.button:hover .fill-container {\n  transform: translateY(-50%) rotate(0);\n}\n\n.button:hover .fill-container::after {\n  transform: translateY(0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SanthoshSJ-Dev_fast-bear-50.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text class=\"button-text\">Hover me</text>\n  <view class=\"fill-container\"></view>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFastBear50',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SanthoshSJ-Dev - Tags: simple, blue, button, fluid, animated */\n.button {\n  position: relative;\n  padding: 48rpx 128rpx;\n  border-radius: 100rpx;\n  color: #fafafa;\n  text-transform: uppercase;\n  font-weight: 900;\n  letter-spacing: 4rpx;\n  background-color: #212121;\n  border: solid 2rpx #fafafa4d;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);\n}\n\n.button .button-text {\n  position: relative;\n  z-index: 2;\n}\n\n.button .fill-container {\n  position: absolute;\n  left: 0;\n  top: 50%;\n  width: 100%;\n  padding-bottom: 100%;\n  transform: translateY(-50%) rotate(180deg);\n}\n\n.button .fill-container::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-color: blue;\n  border-radius: 100rpx;\n  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);\n  transform: translateY(-100%);\n}\n\n.button:hover {\n  border-color: blue;\n  transform: translateY(-8rpx);\n}\n\n.button:hover .fill-container {\n  transform: translateY(-50%) rotate(0);\n}\n\n.button:hover .fill-container::after {\n  transform: translateY(0);\n}\n",
+    "component_name": "GalaxyFastBear50"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1224,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.524Z",
+  "updated_at": "2025-07-31T07:55:34.524Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "JaydipPrajapati1910_bright-fox-47",
+  "name": "bright-fox-47",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "bright-fox-47 组件 (red, loader, location, animation, gradient)",
+  "tags": [
+    "red",
+    "loader",
+    "location",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: red, loader, location  */\n.loader {\n  width: 44.8px;\n  height: 44.8px;\n  position: relative;\n  transform: rotate(45deg);\n}\n\n.loader:before,\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  border-radius: 50% 50% 0 50%;\n  background: #0000;\n  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, #ff4747);\n}\n\n.loader:after {\n  animation: pulse-ytk0dhmd 1s infinite;\n  transform: perspective(336px) translateZ(0px);\n}\n\n@keyframes pulse-ytk0dhmd {\n  to {\n    transform: perspective(336px) translateZ(168px);\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_bright-fox-47.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyBrightFox47',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: red, loader, location  */\n.loader {\n  width: 89.6rpx;\n  height: 89.6rpx;\n  position: relative;\n  transform: rotate(45deg);\n}\n\n.loader:before,\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  border-radius: 50% 50% 0 50%;\n  background: #0000;\n  background-image: radial-gradient(circle 22.4rpx at 50% 50%,#0000 94%, #ff4747);\n}\n\n.loader:after {\n  animation: pulse-ytk0dhmd 1s infinite;\n  transform: perspective(672rpx) translateZ(0rpx);\n}\n\n@keyframes pulse-ytk0dhmd {\n  to {\n    transform: perspective(672rpx) translateZ(336rpx);\n    opacity: 0;\n  }\n}\n  \n\n",
+    "component_name": "GalaxyBrightFox47"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 645,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.381Z",
+  "updated_at": "2025-07-31T07:55:39.381Z"
+}

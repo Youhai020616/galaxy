@@ -1,0 +1,89 @@
+{
+  "id": "bociKond_red-dingo-74",
+  "name": "red-dingo-74",
+  "category": "loaders",
+  "author": "bociKond",
+  "description": "red-dingo-74 组件 (green, loader, spinner, custom, variables, animation)",
+  "tags": [
+    "green",
+    "loader",
+    "spinner",
+    "custom",
+    "variables",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n</div>",
+    "css": "/* From Uiverse.io by bociKond - Source: https://10015.io - Tags: green, loader, spinner, custom, variables */\n.spinner {\n  position: relative;\n  width: 24.6px;\n  height: 24.6px;\n  animation-name: rotateSpin;\n  animation-duration: 2s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n  animation-direction: normal;\n  --clr: #3E885B;\n}\n\n@keyframes rotateSpin {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.spinner div {\n  width: 100%;\n  height: 100%;\n  background-color: var(--clr);\n  border-radius: 50%;\n  animation: spinnerAni 1s infinite backwards;\n}\n\n.spinner div:nth-child(1) {\n  animation-delay: 0.12s;\n  background-color: var(--clr);\n  opacity: .9;\n}\n\n.spinner div:nth-child(2) {\n  animation-delay: 0.24s;\n  background-color: var(--clr);\n  opacity: .8;\n}\n\n.spinner div:nth-child(3) {\n  animation-delay: 0.36s;\n  background-color: var(--clr);\n  opacity: .7;\n}\n\n.spinner div:nth-child(4) {\n  animation-delay: 0.48s;\n  background-color: var(--clr);\n  opacity: .6;\n}\n\n.spinner div:nth-child(5) {\n  animation-delay: 0.60s;\n  background-color: var(--clr);\n  opacity: .5;\n}\n\n@keyframes spinnerAni {\n  0% {\n    transform: rotate(0deg) translateY(-200%);\n  }\n\n  60%, 100% {\n    transform: rotate(360deg) translateY(-200%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bociKond_red-dingo-74.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyRedDingo74',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bociKond - Source: https://10015.io - Tags: green, loader, spinner, custom, variables */\n.spinner {\n  position: relative;\n  width: 49.2rpx;\n  height: 49.2rpx;\n  animation-name: rotateSpin;\n  animation-duration: 2s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n  animation-direction: normal;\n  --clr: #3E885B;\n}\n\n@keyframes rotateSpin {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.spinner div {\n  width: 100%;\n  height: 100%;\n  background-color: var(--clr);\n  border-radius: 50%;\n  animation: spinnerAni 1s infinite backwards;\n}\n\n.spinner div:nth-child(1) {\n  animation-delay: 0.12s;\n  background-color: var(--clr);\n  opacity: .9;\n}\n\n.spinner div:nth-child(2) {\n  animation-delay: 0.24s;\n  background-color: var(--clr);\n  opacity: .8;\n}\n\n.spinner div:nth-child(3) {\n  animation-delay: 0.36s;\n  background-color: var(--clr);\n  opacity: .7;\n}\n\n.spinner div:nth-child(4) {\n  animation-delay: 0.48s;\n  background-color: var(--clr);\n  opacity: .6;\n}\n\n.spinner div:nth-child(5) {\n  animation-delay: 0.60s;\n  background-color: var(--clr);\n  opacity: .5;\n}\n\n@keyframes spinnerAni {\n  0% {\n    transform: rotate(0deg) translateY(-200%);\n  }\n\n  60%, 100% {\n    transform: rotate(360deg) translateY(-200%);\n  }\n}\n",
+    "component_name": "GalaxyRedDingo74"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1403,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.057Z",
+  "updated_at": "2025-07-31T07:55:41.057Z"
+}

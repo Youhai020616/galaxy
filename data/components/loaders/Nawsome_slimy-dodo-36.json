@@ -1,0 +1,85 @@
+{
+  "id": "Nawsome_slimy-dodo-36",
+  "name": "slimy-dodo-36",
+  "category": "loaders",
+  "author": "Nawsome",
+  "description": "slimy-dodo-36 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loading\">\n  <div class=\"side front\"></div>\n  <div class=\"side back\"></div>\n  <div class=\"side top\"></div>\n  <div class=\"side bottom\"></div>\n  <div class=\"side left\"></div>\n  <div class=\"side right\"></div>\n</div>",
+    "css": "/* From Uiverse.io by Nawsome - Tags: loader */\n.loading {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 12px;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: loading_4123 2s linear infinite;\n}\n\n.side {\n  background: white;\n  border-radius: 12px;\n}\n\n.front, .back {\n  width: 100px;\n  height: 100px;\n}\n\n.front, .back {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\n.back {\n  transform: translateZ(-10px);\n}\n\n.left, .right {\n  width: 10px;\n  height: calc(100% - 12px);\n  top: 6px;\n  position: absolute;\n  background: #efefef;\n}\n\n.left {\n  left: 0;\n  transform-origin: 0;\n  transform: rotateY(90deg);\n}\n\n.right {\n  right: 0;\n  transform-origin: 100%;\n  transform: rotateY(-90deg);\n}\n\n.top, .bottom {\n  width: calc(100% - 12px);\n  height: 10px;\n  position: absolute;\n  left: 6px;\n  background: #efefef;\n}\n\n.top {\n  top: -10px;\n  transform-origin: 0 100%;\n  transform: rotateX(90deg);\n}\n\n.bottom {\n  bottom: -10px;\n  transform-origin: 0 0;\n  transform: rotateX(-90deg);\n}\n\n@keyframes loading_4123 {\n  0% {\n    transform: rotate(0);\n  }\n\n  50% {\n    transform: rotateY(180deg);\n  }\n\n  100% {\n    transform: rotateY(180deg) rotateX(-180deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Nawsome_slimy-dodo-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loading\"></view>\n  <view class=\"side front\"></view>\n  <view class=\"side back\"></view>\n  <view class=\"side top\"></view>\n  <view class=\"side bottom\"></view>\n  <view class=\"side left\"></view>\n  <view class=\"side right\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySlimyDodo36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Nawsome - Tags: loader */\n.loading {\n  width: 200rpx;\n  height: 200rpx;\n  background: white;\n  border-radius: 24rpx;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: loading_4123 2s linear infinite;\n}\n\n.side {\n  background: white;\n  border-radius: 24rpx;\n}\n\n.front, .back {\n  width: 200rpx;\n  height: 200rpx;\n}\n\n.front, .back {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\n.back {\n  transform: translateZ(-20rpx);\n}\n\n.left, .right {\n  width: 20rpx;\n  height: calc(100% - 24rpx);\n  top: 12rpx;\n  position: absolute;\n  background: #efefef;\n}\n\n.left {\n  left: 0;\n  transform-origin: 0;\n  transform: rotateY(90deg);\n}\n\n.right {\n  right: 0;\n  transform-origin: 100%;\n  transform: rotateY(-90deg);\n}\n\n.top, .bottom {\n  width: calc(100% - 24rpx);\n  height: 20rpx;\n  position: absolute;\n  left: 12rpx;\n  background: #efefef;\n}\n\n.top {\n  top: -20rpx;\n  transform-origin: 0 100%;\n  transform: rotateX(90deg);\n}\n\n.bottom {\n  bottom: -20rpx;\n  transform-origin: 0 0;\n  transform: rotateX(-90deg);\n}\n\n@keyframes loading_4123 {\n  0% {\n    transform: rotate(0);\n  }\n\n  50% {\n    transform: rotateY(180deg);\n  }\n\n  100% {\n    transform: rotateY(180deg) rotateX(-180deg);\n  }\n}\n",
+    "component_name": "GalaxySlimyDodo36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1436,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.834Z",
+  "updated_at": "2025-07-31T07:55:39.834Z"
+}

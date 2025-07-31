@@ -1,0 +1,82 @@
+{
+  "id": "ArnavK-09_swift-mule-33",
+  "name": "swift-mule-33",
+  "category": "loaders",
+  "author": "ArnavK-09",
+  "description": "swift-mule-33 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"p-3 animate-spin drop-shadow-2xl bg-gradient-to-bl from-pink-400 via-purple-400 to-indigo-600 md:w-48 md:h-48 h-32 w-32 aspect-square rounded-full\">\n  <div class=\"rounded-full h-full w-full bg-slate-100 dark:bg-zinc-900 background-blur-md\"></div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/loaders/ArnavK-09_swift-mule-33.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"p-3 animate-spin drop-shadow-2xl bg-gradient-to-bl from-pink-400 via-purple-400 to-indigo-600 md:w-48 md:h-48 h-32 w-32 aspect-square rounded-full\"></view>\n  <view class=\"rounded-full h-full w-full bg-slate-100 dark:bg-zinc-900 background-blur-md\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxySwiftMule33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxySwiftMule33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 272,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.966Z",
+  "updated_at": "2025-07-31T07:55:38.966Z"
+}

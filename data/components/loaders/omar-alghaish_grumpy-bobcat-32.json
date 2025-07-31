@@ -1,0 +1,85 @@
+{
+  "id": "omar-alghaish_grumpy-bobcat-32",
+  "name": "grumpy-bobcat-32",
+  "category": "loaders",
+  "author": "omar-alghaish",
+  "description": "grumpy-bobcat-32 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader-1\">\n  <div class=\"loader-2\"></div>\n  <div class=\"loader-3\"></div>\n  <div class=\"loader-4\"></div>\n</div>",
+    "css": "/* From Uiverse.io by omar-alghaish - Tags: loader */\n.loader-1 {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  border: 5px solid rgb(218, 203, 4);\n  border-left-color: transparent;\n  animation: animate_681 3s linear infinite;\n  position: relative;\n}\n\n.loader-2 {\n  width: 80px;\n  height: 80px;\n  border-radius: 50%;\n  border: 5px solid rgb(0, 119, 255);\n  border-top-color: transparent;\n  animation: animate_6810 .9s linear infinite;\n  position: absolute;\n  margin: 5px;\n}\n\n.loader-3 {\n  width: 60px;\n  height: 60px;\n  border-radius: 50%;\n  border: 5px solid rgb(30, 255, 0);\n  border-right-color: transparent;\n  animation: animate_681 2s linear  infinite;\n  position: absolute;\n  margin: 15px;\n}\n\n.loader-4 {\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  border: 5px solid rgb(194, 3, 92);\n  border-bottom-color: transparent;\n  animation: animate_6810 .7s linear  infinite;\n  position: absolute;\n  margin: 25px;\n}\n\n@keyframes animate_6810 {\n  0% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate_681 {\n  0% {\n    transform: rotate(-360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/omar-alghaish_grumpy-bobcat-32.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader-1\"></view>\n  <view class=\"loader-2\"></view>\n  <view class=\"loader-3\"></view>\n  <view class=\"loader-4\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGrumpyBobcat32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by omar-alghaish - Tags: loader */\n.loader-1 {\n  width: 200rpx;\n  height: 200rpx;\n  border-radius: 50%;\n  border: 10rpx solid rgb(218, 203, 4);\n  border-left-color: transparent;\n  animation: animate_681 3s linear infinite;\n  position: relative;\n}\n\n.loader-2 {\n  width: 160rpx;\n  height: 160rpx;\n  border-radius: 50%;\n  border: 10rpx solid rgb(0, 119, 255);\n  border-top-color: transparent;\n  animation: animate_6810 .9s linear infinite;\n  position: absolute;\n  margin: 10rpx;\n}\n\n.loader-3 {\n  width: 120rpx;\n  height: 120rpx;\n  border-radius: 50%;\n  border: 10rpx solid rgb(30, 255, 0);\n  border-right-color: transparent;\n  animation: animate_681 2s linear  infinite;\n  position: absolute;\n  margin: 30rpx;\n}\n\n.loader-4 {\n  width: 80rpx;\n  height: 80rpx;\n  border-radius: 50%;\n  border: 10rpx solid rgb(194, 3, 92);\n  border-bottom-color: transparent;\n  animation: animate_6810 .7s linear  infinite;\n  position: absolute;\n  margin: 50rpx;\n}\n\n@keyframes animate_6810 {\n  0% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate_681 {\n  0% {\n    transform: rotate(-360deg);\n  }\n}\n",
+    "component_name": "GalaxyGrumpyBobcat32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1203,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.494Z",
+  "updated_at": "2025-07-31T07:55:42.494Z"
+}

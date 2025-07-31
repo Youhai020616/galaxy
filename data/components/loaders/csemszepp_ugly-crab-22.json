@@ -1,0 +1,90 @@
+{
+  "id": "csemszepp_ugly-crab-22",
+  "name": "ugly-crab-22",
+  "category": "loaders",
+  "author": "csemszepp",
+  "description": "ugly-crab-22 组件 (loader, animated, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"centered\">\n\t<div class=\"blob-1\"></div>\n\t<div class=\"blob-2\"></div>\n</div>",
+    "css": "/* From Uiverse.io by csemszepp - Source: https://codepen.io/megatroncoder/pen/Xqeyva - Tags: loader, animated */\n.centered {\n  width: 400px;\n  height: 400px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  background: rgb(33 33 33 / var(--tw-bg-opacity))!important;\n  ;\n\tfilter: blur(10px) contrast(20);\n}\n\n.blob-1,.blob-2 {\n  width: 70px;\n  height: 70px;\n  position: absolute;\n  background: #fff;\n  border-radius: 50%;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n}\n\n.blob-1 {\n  left: 20%;\n  animation: osc-l 2.5s ease infinite;\n}\n\n.blob-2 {\n  left: 80%;\n  animation: osc-r 2.5s ease infinite;\n  background: #0ff;\n}\n\n@keyframes osc-l {\n  0% {\n    left: 20%;\n  }\n\n  50% {\n    left: 50%;\n  }\n\n  100% {\n    left: 20%;\n  }\n}\n\n@keyframes osc-r {\n  0% {\n    left: 80%;\n  }\n\n  50% {\n    left: 50%;\n  }\n\n  100% {\n    left: 80%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csemszepp_ugly-crab-22.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"centered\"></view>\n\t<view class=\"blob-1\"></view>\n\t<view class=\"blob-2\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyUglyCrab22',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csemszepp - Source: https://codepen.io/megatroncoder/pen/Xqeyva - Tags: loader, animated */\n.centered {\n  width: 800rpx;\n  height: 800rpx;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  background: rgb(33 33 33 / var(--tw-bg-opacity))!important;\n  ;\n\t\n}\n\n.blob-1,.blob-2 {\n  width: 140rpx;\n  height: 140rpx;\n  position: absolute;\n  background: #fff;\n  border-radius: 50%;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n}\n\n.blob-1 {\n  left: 20%;\n  animation: osc-l 2.5s ease infinite;\n}\n\n.blob-2 {\n  left: 80%;\n  animation: osc-r 2.5s ease infinite;\n  background: #0ff;\n}\n\n@keyframes osc-l {\n  0% {\n    left: 20%;\n  }\n\n  50% {\n    left: 50%;\n  }\n\n  100% {\n    left: 20%;\n  }\n}\n\n@keyframes osc-r {\n  0% {\n    left: 80%;\n  }\n\n  50% {\n    left: 50%;\n  }\n\n  100% {\n    left: 80%;\n  }\n}\n",
+    "component_name": "GalaxyUglyCrab22"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 967,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.176Z",
+  "updated_at": "2025-07-31T07:55:41.176Z"
+}

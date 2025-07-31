@@ -1,0 +1,94 @@
+{
+  "id": "doniaskima_clever-wombat-14",
+  "name": "clever-wombat-14",
+  "category": "loaders",
+  "author": "doniaskima",
+  "description": "clever-wombat-14 组件 (simple, neumorphism, flashy, loader, animation)",
+  "tags": [
+    "simple",
+    "neumorphism",
+    "flashy",
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: simple, neumorphism, flashy, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 100px;\n  height: 45px;\n  position: relative;\n}\n\n.loader:before,\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: #000;\n  box-shadow: 0 0 0 50px;\n  clip-path: polygon(-50px -20px,10% -12px,20% 0,calc(50% - 15px) 0,calc(50% - 10px) -20px,calc(50% - 8px) -15px,calc(50% + 8px) -15px,calc(50% + 10px) -20px,calc(50% + 15px) 0,80% 0,90% -12px,calc(100% + 50px) -20px,100% 80%,calc(100% + 10px) calc(100% + 10px),60% 100%,50% calc(100% + 15px),40% 100%,-10px calc(100% + 10px),0 80%);\n}\n\n.loader:after {\n  animation: l9 1s infinite;\n  transform: perspective(300px) translateZ(0px)\n}\n\n@keyframes l9 {\n  to {\n    transform: perspective(300px) translateZ(100px);\n    opacity: 0\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/doniaskima_clever-wombat-14.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyCleverWombat14',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: simple, neumorphism, flashy, loader */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: 200rpx;\n  height: 90rpx;\n  position: relative;\n}\n\n.loader:before,\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: #000;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0 100rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  \n}\n\n.loader:after {\n  animation: l9 1s infinite;\n  transform: perspective(600rpx) translateZ(0rpx)\n}\n\n@keyframes l9 {\n  to {\n    transform: perspective(600rpx) translateZ(200rpx);\n    opacity: 0\n  }\n}\n",
+    "component_name": "GalaxyCleverWombat14"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 clip-path 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 872,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.257Z",
+  "updated_at": "2025-07-31T07:55:41.257Z"
+}

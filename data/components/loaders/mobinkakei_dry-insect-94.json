@@ -1,0 +1,91 @@
+{
+  "id": "mobinkakei_dry-insect-94",
+  "name": "dry-insect-94",
+  "category": "loaders",
+  "author": "mobinkakei",
+  "description": "dry-insect-94 组件 (loading, loader, space, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "space",
+    "animation"
+  ],
+  "original": {
+    "html": "<span class=\"loader\"></span>",
+    "css": "/* From Uiverse.io by mobinkakei  - Tags: loading, loader, space */\n.loader {\n  position: relative;\n  width: 60px;\n  height: 60px;\n  background: #a19dad;\n  transform: rotateX(65deg) rotate(45deg);\n  // remove bellows command for perspective change\n  //transform: perspective(200px) rotateX(65deg) rotate(45deg);\n  color: #fff;\n  animation: layers1 1s linear infinite alternate;\n}\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: rgba(255, 255, 255, 0.7);\n  animation: layerTr 1s linear infinite alternate;\n}\n\n@keyframes layers1 {\n  0% {\n    box-shadow: 0px 0px 0 0px;\n  }\n  90%,\n  100% {\n    box-shadow: 20px 20px 0 -4px;\n  }\n}\n@keyframes layerTr {\n  0% {\n    transform: translate(0, 0) scale(1);\n  }\n  100% {\n    transform: translate(-25px, -25px) scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mobinkakei_dry-insect-94.html"
+  },
+  "uniapp": {
+    "template": "<text class=\"loader\"></text>",
+    "script": "export default {\n  name: 'GalaxyDryInsect94',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mobinkakei  - Tags: loading, loader, space */\n.loader {\n  position: relative;\n  width: 120rpx;\n  height: 120rpx;\n  background: #a19dad;\n  transform: rotateX(65deg) rotate(45deg);\n  // remove bellows command for perspective change\n  //transform: perspective(400rpx) rotateX(65deg) rotate(45deg);\n  color: #fff;\n  animation: layers1 1s linear infinite alternate;\n}\n.loader:after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: rgba(255, 255, 255, 0.7);\n  animation: layerTr 1s linear infinite alternate;\n}\n\n@keyframes layers1 {\n  0% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0 0rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n  90%,\n  100% {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 40rpx 40rpx 0 -8rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n@keyframes layerTr {\n  0% {\n    transform: translate(0, 0) scale(1);\n  }\n  100% {\n    transform: translate(-50rpx, -50rpx) scale(1);\n  }\n}\n\n",
+    "component_name": "GalaxyDryInsect94"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 832,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.337Z",
+  "updated_at": "2025-07-31T07:55:42.337Z"
+}

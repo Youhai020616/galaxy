@@ -1,0 +1,119 @@
+{
+  "id": "abhayexe_heavy-crab-27",
+  "name": "heavy-crab-27",
+  "category": "buttons",
+  "author": "abhayexe",
+  "description": "heavy-crab-27 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"join-button\">\n  Join Today\n  <span class=\"arrow\">\n    <svg fill=\"#000000\" xml:space=\"preserve\" viewBox=\"0 0 32.00 32.00\" id=\"Layer_1\" version=\"1.1\">\n      <g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g>\n      <g stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g>\n      <g id=\"SVGRepo_iconCarrier\">\n        <line y2=\"16\" x2=\"4\" y1=\"16\" x1=\"26\" stroke-miterlimit=\"10\" stroke-width=\"2.848\" stroke=\"#f3bff3\" fill=\"none\"></line>\n        <polyline points=\"18,7.5 26.5,16 18,24.5\" stroke-miterlimit=\"10\" stroke-width=\"2.848\" stroke=\"#f3bff3\" fill=\"none\"></polyline>\n      </g>\n    </svg>\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by abhayexe  - Tags: button */\n.join-button {\n  background: rgb(226, 136, 243);\n  background: linear-gradient(\n    180deg,\n    rgba(226, 136, 243, 1) 5%,\n    rgba(143, 76, 215, 1) 71%,\n    rgb(136, 37, 193) 93%,\n    rgb(98, 29, 176) 100%\n  );\n  border-top: 3px solid rgb(248, 205, 247);\n  border-bottom: 3px solid rgb(179, 64, 250);\n  border-left: 3px solid rgb(240, 162, 250);\n  border-right: 3px solid rgb(240, 162, 250);\n  color: rgba(244, 221, 249, 0.888);\n  text-shadow: 0px 1.5px #5000753d;\n  height: 70px;\n  border-radius: 20px;\n  padding: 15px 30px;\n  font-size: 18px;\n  font-weight: bold;\n  cursor: pointer;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n  transition: all 0.7s ease;\n  box-shadow:\n    -25px 25px 15px rgba(55, 1, 181, 0.272),\n    -5px 5px 2px rgb(91, 1, 126),\n    -15px 15px 10px rgba(116, 1, 126, 0.555);\n}\n.join-button svg {\n  height: 30px;\n  margin-bottom: -9px;\n  margin-left: 5px;\n  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.256));\n}\n.join-button:hover {\n  transform: translateY(5px);\n  box-shadow: -5px 5px 5px rgb(66, 1, 94);\n  background: rgb(91, 37, 193);\n  background: linear-gradient(\n    180deg,\n    rgba(91, 37, 193, 1) 5%,\n    rgba(143, 76, 215, 1) 57%,\n    rgba(226, 136, 243, 1) 100%\n  );\n}\n.join-button:active {\n  transition: transform 50ms ease-out;\n  box-shadow: -3px 3px 0px rgb(21, 0, 30);\n  transform: translateY(19px);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/abhayexe_heavy-crab-27.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"join-button\"></button>\n  Join Today\n  <text class=\"arrow\"></text>\n    <view fill=\"#000000\" xml:space=\"preserve\" viewBox=\"0 0 32.00 32.00\" id=\"Layer_1\" version=\"1.1\"></view>\n      <g stroke-width=\"0\" id=\"SVGRepo_bgCarrier\"></g>\n      <g stroke-linejoin=\"round\" stroke-linecap=\"round\" id=\"SVGRepo_tracerCarrier\"></g>\n      <g id=\"SVGRepo_iconCarrier\">\n        <line y2=\"16\" x2=\"4\" y1=\"16\" x1=\"26\" stroke-miterlimit=\"10\" stroke-width=\"2.848\" stroke=\"#f3bff3\" fill=\"none\"></line>\n        <polyline points=\"18,7.5 26.5,16 18,24.5\" stroke-miterlimit=\"10\" stroke-width=\"2.848\" stroke=\"#f3bff3\" fill=\"none\"></polyline>\n      </g>\n    </svg>\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHeavyCrab27',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by abhayexe  - Tags: button */\n.join-button {\n  background: rgb(226, 136, 243);\n  background: linear-gradient(\n    180deg,\n    rgba(226, 136, 243, 1) 5%,\n    rgba(143, 76, 215, 1) 71%,\n    rgb(136, 37, 193) 93%,\n    rgb(98, 29, 176) 100%\n  );\n  border-top: 6rpx solid rgb(248, 205, 247);\n  border-bottom: 6rpx solid rgb(179, 64, 250);\n  border-left: 6rpx solid rgb(240, 162, 250);\n  border-right: 6rpx solid rgb(240, 162, 250);\n  color: rgba(244, 221, 249, 0.888);\n  /* #ifdef H5 */\n  text-shadow: 0rpx 3rpx #5000753d;\n  /* #endif */\n  height: 140rpx;\n  border-radius: 40rpx;\n  padding: 30rpx 60rpx;\n  font-size: 36rpx;\n  font-weight: bold;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 8rpx 12rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.7s ease;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    -50rpx 50rpx 30rpx rgba(55, 1, 181, 0.272),\n    -10rpx 10rpx 4rpx rgb(91, 1, 126),\n    -30rpx 30rpx 20rpx rgba(116, 1, 126, 0.555);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.join-button svg {\n  height: 60rpx;\n  margin-bottom: -18rpx;\n  margin-left: 10rpx;\n  \n}\n.join-button:hover {\n  transform: translateY(10rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -10rpx 10rpx 10rpx rgb(66, 1, 94);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: rgb(91, 37, 193);\n  background: linear-gradient(\n    180deg,\n    rgba(91, 37, 193, 1) 5%,\n    rgba(143, 76, 215, 1) 57%,\n    rgba(226, 136, 243, 1) 100%\n  );\n}\n.join-button:active {\n  transition: transform 50ms ease-out;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -6rpx 6rpx 0rpx rgb(21, 0, 30);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(38rpx);\n}\n\n",
+    "component_name": "GalaxyHeavyCrab27"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2044,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.379Z",
+  "updated_at": "2025-07-31T07:55:35.379Z"
+}

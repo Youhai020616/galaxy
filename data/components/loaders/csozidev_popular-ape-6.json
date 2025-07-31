@@ -1,0 +1,88 @@
+{
+  "id": "csozidev_popular-ape-6",
+  "name": "popular-ape-6",
+  "category": "loaders",
+  "author": "csozidev",
+  "description": "popular-ape-6 组件 (simple, black, loader, loop, animation)",
+  "tags": [
+    "simple",
+    "black",
+    "loader",
+    "loop",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"block b_1\"></div>\n  <div class=\"block b_2\"></div>\n  <div class=\"block b_3\"></div>\n  <div class=\"block b_4\"></div>\n  <div class=\"block b_5\"></div>\n  <div class=\"block b_6\"></div>\n  <div class=\"block b_7\"></div>\n  <div class=\"block b_8\"></div>\n</div>",
+    "css": "/* From Uiverse.io by csozidev - Tags: simple, black, loader, loop */\n/* Simple loader made by: csozi | Website: www.csozi.hu*/\n\n.loader {\n  height: 50px;\n  width: 50px;\n  position: relative;\n}\n\n.block {\n  height: 10px;\n  width: 10px;\n  background-color: black;\n  position: absolute;\n  opacity: 0;\n}\n\n.b_1 {\n  top: 0;\n  left: 0;\n  animation: load 2s infinite;\n  animation-delay: 0;\n}\n\n.b_2 {\n  top: 0;\n  left: 20px;\n  animation: load 2s infinite;\n  animation-delay: 0.25s;\n}\n\n.b_3 {\n  top: 0;\n  right: 0;\n  animation: load 2s infinite;\n  animation-delay: 0.5s;\n}\n\n.b_4 {\n  top: 20px;\n  right: 0;\n  animation: load 2s infinite;\n  animation-delay: 0.75s;\n}\n\n.b_5 {\n  bottom: 0;\n  right: 0;\n  animation: load 2s infinite;\n  animation-delay: 1s;\n}\n\n.b_6 {\n  bottom: 0;\n  left: 20px;\n  animation: load 2s infinite;\n  animation-delay: 1.25s;\n}\n\n.b_7 {\n  bottom: 0;\n  left: 0;\n  animation: load 2s infinite;\n  animation-delay: 1.5s;\n}\n\n.b_8 {\n  top: 20px;\n  left: 0;\n  animation: load 2s infinite;\n  animation-delay: 1.75s;\n}\n\n@keyframes load {\n  0% {\n    opacity: 1;\n  }\n\n  85% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/csozidev_popular-ape-6.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"block b_1\"></view>\n  <view class=\"block b_2\"></view>\n  <view class=\"block b_3\"></view>\n  <view class=\"block b_4\"></view>\n  <view class=\"block b_5\"></view>\n  <view class=\"block b_6\"></view>\n  <view class=\"block b_7\"></view>\n  <view class=\"block b_8\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPopularApe6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by csozidev - Tags: simple, black, loader, loop */\n/* Simple loader made by: csozi | Website: www.csozi.hu*/\n\n.loader {\n  height: 100rpx;\n  width: 100rpx;\n  position: relative;\n}\n\n.block {\n  height: 20rpx;\n  width: 20rpx;\n  background-color: black;\n  position: absolute;\n  opacity: 0;\n}\n\n.b_1 {\n  top: 0;\n  left: 0;\n  animation: load 2s infinite;\n  animation-delay: 0;\n}\n\n.b_2 {\n  top: 0;\n  left: 40rpx;\n  animation: load 2s infinite;\n  animation-delay: 0.25s;\n}\n\n.b_3 {\n  top: 0;\n  right: 0;\n  animation: load 2s infinite;\n  animation-delay: 0.5s;\n}\n\n.b_4 {\n  top: 40rpx;\n  right: 0;\n  animation: load 2s infinite;\n  animation-delay: 0.75s;\n}\n\n.b_5 {\n  bottom: 0;\n  right: 0;\n  animation: load 2s infinite;\n  animation-delay: 1s;\n}\n\n.b_6 {\n  bottom: 0;\n  left: 40rpx;\n  animation: load 2s infinite;\n  animation-delay: 1.25s;\n}\n\n.b_7 {\n  bottom: 0;\n  left: 0;\n  animation: load 2s infinite;\n  animation-delay: 1.5s;\n}\n\n.b_8 {\n  top: 40rpx;\n  left: 0;\n  animation: load 2s infinite;\n  animation-delay: 1.75s;\n}\n\n@keyframes load {\n  0% {\n    opacity: 1;\n  }\n\n  85% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 1;\n  }\n}\n",
+    "component_name": "GalaxyPopularApe6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1412,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.205Z",
+  "updated_at": "2025-07-31T07:55:41.205Z"
+}

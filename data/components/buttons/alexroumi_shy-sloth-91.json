@@ -1,0 +1,111 @@
+{
+  "id": "alexroumi_shy-sloth-91",
+  "name": "shy-sloth-91",
+  "category": "buttons",
+  "author": "alexroumi",
+  "description": "shy-sloth-91 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> Click me!\n</button>",
+    "css": "/* From Uiverse.io by alexroumi - Tags: button */\nbutton {\n padding: 15px 25px;\n border: unset;\n border-radius: 15px;\n color: #212121;\n z-index: 1;\n background: #e8e8e8;\n position: relative;\n font-weight: 1000;\n font-size: 17px;\n -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);\n box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);\n transition: all 250ms;\n overflow: hidden;\n}\n\nbutton::before {\n content: \"\";\n position: absolute;\n top: 0;\n left: 0;\n height: 100%;\n width: 0;\n border-radius: 15px;\n background-color: #212121;\n z-index: -1;\n -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);\n box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);\n transition: all 250ms\n}\n\nbutton:hover {\n color: #e8e8e8;\n}\n\nbutton:hover::before {\n width: 100%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/alexroumi_shy-sloth-91.html"
+  },
+  "uniapp": {
+    "template": "<button></button> Click me!\n</button>",
+    "script": "export default {\n  name: 'GalaxyShySloth91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by alexroumi - Tags: button */\nbutton {\n padding: 30rpx 50rpx;\n border: unset;\n border-radius: 30rpx;\n color: #212121;\n z-index: 1;\n background: #e8e8e8;\n position: relative;\n font-weight: 1000;\n font-size: 34rpx;\n -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 16rpx 38rpx -6rpx rgba(0,0,0,0.27);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 16rpx 38rpx -6rpx rgba(0,0,0,0.27);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n transition: all 250ms;\n overflow: hidden;\n}\n\nbutton::before {\n content: \"\";\n position: absolute;\n top: 0;\n left: 0;\n height: 100%;\n width: 0;\n border-radius: 30rpx;\n background-color: #212121;\n z-index: -1;\n -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 16rpx 38rpx -6rpx rgba(0,0,0,0.27);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 16rpx 38rpx -6rpx rgba(0,0,0,0.27);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n transition: all 250ms\n}\n\nbutton:hover {\n color: #e8e8e8;\n}\n\nbutton:hover::before {\n width: 100%;\n}\n",
+    "component_name": "GalaxyShySloth91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 779,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.586Z",
+  "updated_at": "2025-07-31T07:55:35.586Z"
+}

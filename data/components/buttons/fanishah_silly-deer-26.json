@@ -1,0 +1,114 @@
+{
+  "id": "fanishah_silly-deer-26",
+  "name": "silly-deer-26",
+  "category": "buttons",
+  "author": "fanishah",
+  "description": "silly-deer-26 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<a href=\"#\" class=\"button\">\n  <span></span>\n  <span></span>\n  <span></span>\n  <span></span>\n  Button\n</a>",
+    "css": "/* From Uiverse.io by fanishah - Tags: button */\n.button {\n  position: relative;\n  padding: 12px 25px;\n  font-size: 1.5rem;\n  color: #1e9bff;\n  border: 2px solid rgba(0, 0, 0, 0.5);\n  border-radius: 4px;\n  text-shadow: 0 0 15px #1e9bff;\n  text-decoration: none;\n  text-transform: uppercase;\n  letter-spacing: 0.1rem;\n  transition: 0.5s;\n  z-index: 1;\n}\n\n.button:hover {\n  color: #fff;\n  border: 2px solid rgba(0, 0, 0, 0);\n  box-shadow: 0 0 0px #1e9bff;\n}\n\n.button::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: #1e9bff;\n  z-index: -1;\n  transform: scale(0);\n  transition: 0.5s;\n}\n\n.button:hover::before {\n  transform: scale(1);\n  transition-delay: 0.5s;\n  box-shadow: 0 0 10px #1e9bff,\n    0 0 30px #1e9bff,\n    0 0 60px #1e9bff;\n}\n\n.button span {\n  position: absolute;\n  background: #1e9bff;\n  pointer-events: none;\n  border-radius: 2px;\n  box-shadow: 0 0 10px #1e9bff,\n    0 0 20px #1e9bff,\n    0 0 30px #1e9bff,\n    0 0 50px #1e9bff,\n    0 0 100px #1e9bff;\n  transition: 0.5s ease-in-out;\n  transition-delay: 0.25s;\n}\n\n.button:hover span {\n  opacity: 0;\n  transition-delay: 0s;\n}\n\n.button span:nth-child(1),\n.button span:nth-child(3) {\n  width: 40px;\n  height: 4px;\n}\n\n.button:hover span:nth-child(1),\n.button:hover span:nth-child(3) {\n  transform: translateX(0);\n}\n\n.button span:nth-child(2),\n.button span:nth-child(4) {\n  width: 4px;\n  height: 40px;\n}\n\n.button:hover span:nth-child(1),\n.button:hover span:nth-child(3) {\n  transform: translateY(0);\n}\n\n.button span:nth-child(1) {\n  top: calc(50% - 2px);\n  left: -50px;\n  transform-origin: left;\n}\n\n.button:hover span:nth-child(1) {\n  left: 50%;\n}\n\n.button span:nth-child(3) {\n  top: calc(50% - 2px);\n  right: -50px;\n  transform-origin: right;\n}\n\n.button:hover span:nth-child(3) {\n  right: 50%;\n}\n\n.button span:nth-child(2) {\n  left: calc(50% - 2px);\n  top: -50px;\n  transform-origin: top;\n}\n\n.button:hover span:nth-child(2) {\n  top: 50%;\n}\n\n.button span:nth-child(4) {\n  left: calc(50% - 2px);\n  bottom: -50px;\n  transform-origin: bottom;\n}\n\n.button:hover span:nth-child(4 ) {\n  bottom: 50%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/fanishah_silly-deer-26.html"
+  },
+  "uniapp": {
+    "template": "<navigator href=\"#\" class=\"button\"></navigator>\n  <text></text>\n  <text></text>\n  <text></text>\n  <text></text>\n  Button\n</a>",
+    "script": "export default {\n  name: 'GalaxySillyDeer26',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by fanishah - Tags: button */\n.button {\n  position: relative;\n  padding: 24rpx 50rpx;\n  font-size: 1.5rem;\n  color: #1e9bff;\n  border: 4rpx solid rgba(0, 0, 0, 0.5);\n  border-radius: 8rpx;\n  /* #ifdef H5 */\n  text-shadow: 0 0 30rpx #1e9bff;\n  /* #endif */\n  text-decoration: none;\n  text-transform: uppercase;\n  letter-spacing: 0.1rem;\n  transition: 0.5s;\n  z-index: 1;\n}\n\n.button:hover {\n  color: #fff;\n  border: 4rpx solid rgba(0, 0, 0, 0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 0rpx #1e9bff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: #1e9bff;\n  z-index: -1;\n  transform: scale(0);\n  transition: 0.5s;\n}\n\n.button:hover::before {\n  transform: scale(1);\n  transition-delay: 0.5s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx #1e9bff,\n    0 0 60rpx #1e9bff,\n    0 0 120rpx #1e9bff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button span {\n  position: absolute;\n  background: #1e9bff;\n  pointer-events: none;\n  border-radius: 4rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx #1e9bff,\n    0 0 40rpx #1e9bff,\n    0 0 60rpx #1e9bff,\n    0 0 100rpx #1e9bff,\n    0 0 200rpx #1e9bff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: 0.5s ease-in-out;\n  transition-delay: 0.25s;\n}\n\n.button:hover span {\n  opacity: 0;\n  transition-delay: 0s;\n}\n\n.button span:nth-child(1),\n.button span:nth-child(3) {\n  width: 80rpx;\n  height: 8rpx;\n}\n\n.button:hover span:nth-child(1),\n.button:hover span:nth-child(3) {\n  transform: translateX(0);\n}\n\n.button span:nth-child(2),\n.button span:nth-child(4) {\n  width: 8rpx;\n  height: 80rpx;\n}\n\n.button:hover span:nth-child(1),\n.button:hover span:nth-child(3) {\n  transform: translateY(0);\n}\n\n.button span:nth-child(1) {\n  top: calc(50% - 4rpx);\n  left: -100rpx;\n  transform-origin: left;\n}\n\n.button:hover span:nth-child(1) {\n  left: 50%;\n}\n\n.button span:nth-child(3) {\n  top: calc(50% - 4rpx);\n  right: -100rpx;\n  transform-origin: right;\n}\n\n.button:hover span:nth-child(3) {\n  right: 50%;\n}\n\n.button span:nth-child(2) {\n  left: calc(50% - 4rpx);\n  top: -100rpx;\n  transform-origin: top;\n}\n\n.button:hover span:nth-child(2) {\n  top: 50%;\n}\n\n.button span:nth-child(4) {\n  left: calc(50% - 4rpx);\n  bottom: -100rpx;\n  transform-origin: bottom;\n}\n\n.button:hover span:nth-child(4 ) {\n  bottom: 50%;\n}\n",
+    "component_name": "GalaxySillyDeer26"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2223,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.676Z",
+  "updated_at": "2025-07-31T07:55:36.676Z"
+}

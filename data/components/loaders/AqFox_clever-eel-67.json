@@ -1,0 +1,85 @@
+{
+  "id": "AqFox_clever-eel-67",
+  "name": "clever-eel-67",
+  "category": "loaders",
+  "author": "AqFox",
+  "description": "clever-eel-67 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n</div>",
+    "css": "/* From Uiverse.io by AqFox - Tags: loader */\n.spinner {\n position: relative;\n width: 56px;\n height: 56px;\n animation: spinner-3a5251 1.25s infinite linear;\n}\n\n.spinner div {\n position: absolute;\n top: 50%;\n left: 50%;\n width: 0;\n height: 0;\n border-left: 3.6px solid transparent;\n border-right: 3.6px solid transparent;\n border-bottom: 10.8px solid #004dff;\n transform-origin: center 10.8px;\n}\n\n.spinner div:before,\n.spinner div:after {\n content: '';\n position: absolute;\n width: 0;\n height: 0;\n display: block;\n border-left: 10.8px solid transparent;\n border-right: 10.8px solid transparent;\n border-bottom: 7.2px solid #004dff;\n}\n\n.spinner div:before {\n transform: translate(-10.8px, 7.2px) rotate(35deg);\n}\n\n.spinner div:after {\n transform: translate(-10.8px, 7.2px) rotate(-35deg);\n}\n\n.spinner div:nth-child(1) {\n transform: translate(-50%, -10.8px) rotate(51.42857deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(2) {\n transform: translate(-50%, -10.8px) rotate(102.85714deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(3) {\n transform: translate(-50%, -10.8px) rotate(154.28571deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(4) {\n transform: translate(-50%, -10.8px) rotate(205.71429deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(5) {\n transform: translate(-50%, -10.8px) rotate(257.14286deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(6) {\n transform: translate(-50%, -10.8px) rotate(308.57143deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(7) {\n transform: translate(-50%, -10.8px) rotate(360deg) translate(0, 320%);\n}\n\n@keyframes spinner-3a5251 {\n to {\n  transform: rotate(360deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/AqFox_clever-eel-67.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCleverEel67',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AqFox - Tags: loader */\n.spinner {\n position: relative;\n width: 112rpx;\n height: 112rpx;\n animation: spinner-3a5251 1.25s infinite linear;\n}\n\n.spinner div {\n position: absolute;\n top: 50%;\n left: 50%;\n width: 0;\n height: 0;\n border-left: 7.2rpx solid transparent;\n border-right: 7.2rpx solid transparent;\n border-bottom: 21.6rpx solid #004dff;\n transform-origin: center 21.6rpx;\n}\n\n.spinner div:before,\n.spinner div:after {\n content: '';\n position: absolute;\n width: 0;\n height: 0;\n display: block;\n border-left: 21.6rpx solid transparent;\n border-right: 21.6rpx solid transparent;\n border-bottom: 14.4rpx solid #004dff;\n}\n\n.spinner div:before {\n transform: translate(-21.6rpx, 14.4rpx) rotate(35deg);\n}\n\n.spinner div:after {\n transform: translate(-21.6rpx, 14.4rpx) rotate(-35deg);\n}\n\n.spinner div:nth-child(1) {\n transform: translate(-50%, -21.6rpx) rotate(51.42857deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(2) {\n transform: translate(-50%, -21.6rpx) rotate(102.85714deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(3) {\n transform: translate(-50%, -21.6rpx) rotate(154.28571deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(4) {\n transform: translate(-50%, -21.6rpx) rotate(205.71429deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(5) {\n transform: translate(-50%, -21.6rpx) rotate(257.14286deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(6) {\n transform: translate(-50%, -21.6rpx) rotate(308.57143deg) translate(0, 320%);\n}\n\n.spinner div:nth-child(7) {\n transform: translate(-50%, -21.6rpx) rotate(360deg) translate(0, 320%);\n}\n\n@keyframes spinner-3a5251 {\n to {\n  transform: rotate(360deg);\n }\n}\n",
+    "component_name": "GalaxyCleverEel67"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1729,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.920Z",
+  "updated_at": "2025-07-31T07:55:38.920Z"
+}

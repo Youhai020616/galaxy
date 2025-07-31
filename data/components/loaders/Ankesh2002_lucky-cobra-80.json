@@ -1,0 +1,85 @@
+{
+  "id": "Ankesh2002_lucky-cobra-80",
+  "name": "lucky-cobra-80",
+  "category": "loaders",
+  "author": "Ankesh2002",
+  "description": "lucky-cobra-80 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Ankesh2002 - Tags: loader */\n.loader {\n  position: relative;\n  width: 164px;\n  height: 164px;\n}\n\n.loader::before , .loader::after {\n  content: '';\n  position: absolute;\n  width: 40px;\n  height: 40px;\n  background-color: #00bd26;\n  left: 50%;\n  top: 50%;\n  animation: rotate 1s ease-in infinite;\n}\n\n.loader::after {\n  width: 20px;\n  height: 20px;\n  background-color: #00bd26;\n  animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite;\n}\n\n@keyframes moveY {\n  0% , 100% {\n    top: 10%\n  }\n\n  45% , 55% {\n    top: 59%\n  }\n\n  60% {\n    top: 40%\n  }\n}\n\n@keyframes rotate {\n  0% {\n    transform: translate(-50%, -100%) rotate(0deg) scale(1 , 1)\n  }\n\n  25% {\n    transform: translate(-50%, 0%) rotate(180deg) scale(1 , 1)\n  }\n\n  45% , 55% {\n    transform: translate(-50%, 100%) rotate(180deg) scale(3 , 0.5)\n  }\n\n  60% {\n    transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)\n  }\n\n  75% {\n    transform: translate(-50%, 0%) rotate(270deg) scale(1 , 1)\n  }\n\n  100% {\n    transform: translate(-50%, -100%) rotate(360deg) scale(1 , 1)\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Ankesh2002_lucky-cobra-80.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyLuckyCobra80',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Ankesh2002 - Tags: loader */\n.loader {\n  position: relative;\n  width: 328rpx;\n  height: 328rpx;\n}\n\n.loader::before , .loader::after {\n  content: '';\n  position: absolute;\n  width: 80rpx;\n  height: 80rpx;\n  background-color: #00bd26;\n  left: 50%;\n  top: 50%;\n  animation: rotate 1s ease-in infinite;\n}\n\n.loader::after {\n  width: 40rpx;\n  height: 40rpx;\n  background-color: #00bd26;\n  animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite;\n}\n\n@keyframes moveY {\n  0% , 100% {\n    top: 10%\n  }\n\n  45% , 55% {\n    top: 59%\n  }\n\n  60% {\n    top: 40%\n  }\n}\n\n@keyframes rotate {\n  0% {\n    transform: translate(-50%, -100%) rotate(0deg) scale(1 , 1)\n  }\n\n  25% {\n    transform: translate(-50%, 0%) rotate(180deg) scale(1 , 1)\n  }\n\n  45% , 55% {\n    transform: translate(-50%, 100%) rotate(180deg) scale(3 , 0.5)\n  }\n\n  60% {\n    transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)\n  }\n\n  75% {\n    transform: translate(-50%, 0%) rotate(270deg) scale(1 , 1)\n  }\n\n  100% {\n    transform: translate(-50%, -100%) rotate(360deg) scale(1 , 1)\n  }\n}\n    \n",
+    "component_name": "GalaxyLuckyCobra80"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1105,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.917Z",
+  "updated_at": "2025-07-31T07:55:38.917Z"
+}

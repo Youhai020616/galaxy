@@ -1,0 +1,122 @@
+{
+  "id": "TISEPSE_smart-newt-43",
+  "name": "smart-newt-43",
+  "category": "buttons",
+  "author": "TISEPSE",
+  "description": "smart-newt-43 组件 (material design, black, button, animation, interactive)",
+  "tags": [
+    "material design",
+    "black",
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"vlrt\"><span class=\"green\"></span>Hover effect</button>",
+    "css": "/* From Uiverse.io by TISEPSE  - Tags: material design, black, button */\n.vlrt {\n  height: 75px;\n  width: 170px;\n  border-radius: 4px;\n  font-size: 18px;\n  border: 3px solid;\n  color: #f5f5f5;\n  border-color: #b6b6b6;\n  background-color: rgba(0, 0, 0, 0.15);\n  backdrop-filter: blur(50px);\n  transition: 0.2s;\n  position: relative;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.vlrt:hover {\n  border-color: #16ff00;\n  letter-spacing: 2px;\n  font-size: 19px;\n  color: #fefefe;\n  text-shadow: 0 0.3rem rgb(51, 51, 51);\n  box-shadow: #16ff00 0px -30px 40px -30px inset;\n}\n\n.vlrt .green {\n  content: \"\";\n  width: 25px;\n  height: 25px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: #16ff00;\n}\n\n.vlrt .green {\n  content: \"\";\n  width: 45px;\n  height: 45px;\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  background-color: rgb(182, 182, 182);\n  transform: rotate(49deg) translateX(-32px) translateY(0px);\n}\n\n.vlrt:hover .green {\n  background-color: #16ff00;\n  transition: 0.5s;\n}\n\n.vlrt:active {\n  letter-spacing: 0px;\n  text-shadow: 0 0rem #333;\n  transition: 0.1s;\n  background-color: #1abc9c;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/TISEPSE_smart-newt-43.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"vlrt\"></button><text class=\"green\"></text>Hover effect</button>",
+    "script": "export default {\n  name: 'GalaxySmartNewt43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by TISEPSE  - Tags: material design, black, button */\n.vlrt {\n  height: 150rpx;\n  width: 340rpx;\n  border-radius: 8rpx;\n  font-size: 36rpx;\n  border: 6rpx solid;\n  color: #f5f5f5;\n  border-color: #b6b6b6;\n  background-color: rgba(0, 0, 0, 0.15);\n  backdrop-\n  transition: 0.2s;\n  position: relative;\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.vlrt:hover {\n  border-color: #16ff00;\n  letter-spacing: 4rpx;\n  font-size: 38rpx;\n  color: #fefefe;\n  /* #ifdef H5 */\n  text-shadow: 0 0.3rem rgb(51, 51, 51);\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: #16ff00 0rpx -60rpx 80rpx -60rpx inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.vlrt .green {\n  content: \"\";\n  width: 50rpx;\n  height: 50rpx;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: #16ff00;\n}\n\n.vlrt .green {\n  content: \"\";\n  width: 90rpx;\n  height: 90rpx;\n  position: absolute;\n  top: 0rpx;\n  left: 0rpx;\n  background-color: rgb(182, 182, 182);\n  transform: rotate(49deg) translateX(-64rpx) translateY(0rpx);\n}\n\n.vlrt:hover .green {\n  background-color: #16ff00;\n  transition: 0.5s;\n}\n\n.vlrt:active {\n  letter-spacing: 0rpx;\n  /* #ifdef H5 */\n  text-shadow: 0 0rem #333;\n  /* #endif */\n  transition: 0.1s;\n  background-color: #1abc9c;\n}\n\n",
+    "component_name": "GalaxySmartNewt43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 backdrop-filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1184,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.973Z",
+  "updated_at": "2025-07-31T07:55:34.973Z"
+}

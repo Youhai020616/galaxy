@@ -1,0 +1,114 @@
+{
+  "id": "SoloResearchLab_fast-deer-30",
+  "name": "fast-deer-30",
+  "category": "buttons",
+  "author": "SoloResearchLab",
+  "description": "fast-deer-30 组件 (tooltip, action, button, smooth, interactive)",
+  "tags": [
+    "tooltip",
+    "action",
+    "button",
+    "smooth",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"button-group\">\n  <div class=\"button-container\">\n    <a title=\"Go to the home page\" href=\"#\">\n      <svg>\n        <path d=\"M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z\"></path>\n      </svg>\n    </a>\n    <a title=\"Go to post list page\" href=\"#\">\n      <svg>\n        <path d=\"M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z\"></path>\n        <path d=\"M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z\"></path>\n      </svg>\n    </a>\n    <a title=\"Go to about me page\" href=\"#\">\n      <svg>\n        <path fill-rule=\"evenodd\" d=\"M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z\"></path>\n      </svg>\n    </a>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by SoloResearchLab  - Website: https://uiverse.io/emmanuelh-dev/itchy-turtle-88 - Name: emmanuelh-dev - Tags: tooltip, action, button, smooth */\n.button-group {\n  display: flex;\n  background-color: white;\n  padding: 15px; /* 1.25rem assuming base font size is 12px */\n  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),\n    0px 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border-radius: 10px;\n}\n\n.button-container {\n  display: flex;\n  width: 100%;\n  padding: 15px; /* 1.5rem */\n  border-radius: 10px;\n}\n\n.button-container a {\n  color: #3b82f6; /* light-blue-light */\n  border: 2px solid transparent;\n  display: inline-flex;\n  align-items: center;\n  margin-right: 20px; /* 4 * 5 (assuming 1 unit = 5px) */\n  padding: 10px; /* 2.5 * 4 */\n  background-color: #f3f4f6; /* light-secondary */\n  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);\n  border-radius: 9999px;\n  font-size: 14px;\n  text-align: center;\n  transition: all 0.2s ease;\n}\n\n.button-container a:last-child {\n  margin-right: 0;\n}\n\n.button-container a:hover {\n  color: black;\n  border-color: #3b82f6; /* light-blue-light */\n  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n}\n\n.button-container a svg {\n  width: 20px; /* 5 * 4 */\n  height: 20px;\n  fill: currentColor;\n}\n\n/* Dark Mode Styles */\n@media (prefers-color-scheme: dark) {\n  .button-group {\n    background-color: #1f2937; /* box-dark */\n    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.5),\n      0px 2px 4px -1px rgba(0, 0, 0, 0.3);\n  }\n\n  .button-container {\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);\n  }\n\n  .button-container a {\n    color: #9ca3af; /* gray-400 */\n    background-color: #374151; /* button-curved-default-dark */\n    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);\n  }\n\n  .button-container a:hover,\n  .button-container a:focus,\n  .button-container a:active {\n    background-color: #4b5563; /* button-curved-pressed-dark */\n    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),\n      0px 2px 4px -1px rgba(0, 0, 0, 0.06);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/SoloResearchLab_fast-deer-30.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"button-group\"></view>\n  <view class=\"button-container\"></view>\n    <navigator title=\"Go to the home page\" href=\"#\"></navigator>\n      <view></view>\n        <path d=\"M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z\"></path>\n      </svg>\n    </a>\n    <navigator title=\"Go to post list page\" href=\"#\"></navigator>\n      <view></view>\n        <path d=\"M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z\"></path>\n        <path d=\"M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z\"></path>\n      </svg>\n    </a>\n    <navigator title=\"Go to about me page\" href=\"#\"></navigator>\n      <view></view>\n        <path fill-rule=\"evenodd\" d=\"M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z\"></path>\n      </svg>\n    </a>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastDeer30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SoloResearchLab  - Website: https://uiverse.io/emmanuelh-dev/itchy-turtle-88 - Name: emmanuelh-dev - Tags: tooltip, action, button, smooth */\n.button-group {\n  display: flex;\n  background-color: white;\n  padding: 30rpx; /* 1.25rem assuming base font size is 24rpx */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 8rpx 12rpx -2rpx rgba(0, 0, 0, 0.1),\n    0rpx 4rpx 8rpx -2rpx rgba(0, 0, 0, 0.06);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 20rpx;\n}\n\n.button-container {\n  display: flex;\n  width: 100%;\n  padding: 30rpx; /* 1.5rem */\n  border-radius: 20rpx;\n}\n\n.button-container a {\n  color: #3b82f6; /* light-blue-light */\n  border: 4rpx solid transparent;\n  display: inline-flex;\n  align-items: center;\n  margin-right: 40rpx; /* 4 * 5 (assuming 1 unit = 10rpx) */\n  padding: 20rpx; /* 2.5 * 4 */\n  background-color: #f3f4f6; /* light-secondary */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 2rpx 4rpx rgba(0, 0, 0, 0.05);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 19998rpx;\n  font-size: 28rpx;\n  text-align: center;\n  transition: all 0.2s ease;\n}\n\n.button-container a:last-child {\n  margin-right: 0;\n}\n\n.button-container a:hover {\n  color: black;\n  border-color: #3b82f6; /* light-blue-light */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 8rpx rgba(0, 0, 0, 0.1);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button-container a svg {\n  width: 40rpx; /* 5 * 4 */\n  height: 40rpx;\n  fill: currentColor;\n}\n\n/* Dark Mode Styles */\n@media (prefers-color-scheme: dark) {\n  .button-group {\n    background-color: #1f2937; /* box-dark */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 8rpx 12rpx -2rpx rgba(0, 0, 0, 0.5),\n      0rpx 4rpx 8rpx -2rpx rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  .button-container {\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 4rpx 8rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  .button-container a {\n    color: #9ca3af; /* gray-400 */\n    background-color: #374151; /* button-curved-default-dark */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 2rpx 6rpx rgba(0, 0, 0, 0.1), 0rpx 2rpx 4rpx rgba(0, 0, 0, 0.06);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n\n  .button-container a:hover,\n  .button-container a:focus,\n  .button-container a:active {\n    background-color: #4b5563; /* button-curved-pressed-dark */\n    /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 8rpx 12rpx -2rpx rgba(0, 0, 0, 0.1),\n      0rpx 4rpx 8rpx -2rpx rgba(0, 0, 0, 0.06);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  }\n}\n\n",
+    "component_name": "GalaxyFastDeer30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 2864,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.807Z",
+  "updated_at": "2025-07-31T07:55:34.807Z"
+}

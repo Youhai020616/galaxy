@@ -1,0 +1,115 @@
+{
+  "id": "vinodjangid07_breezy-liger-85",
+  "name": "breezy-liger-85",
+  "category": "buttons",
+  "author": "vinodjangid07",
+  "description": "breezy-liger-85 组件 (animation, gradient, button, hover, hover effect, interactive)",
+  "tags": [
+    "animation",
+    "gradient",
+    "button",
+    "hover",
+    "hover effect",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Button</button>",
+    "css": "/* From Uiverse.io by vinodjangid07  - Tags: animation, gradient, button, hover, hover effect */\n.button {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  width: 100px;\n  height: 40px;\n  font-size: 15px;\n  font-weight: 600;\n  color: white;\n  border: none;\n  background-size: 200% 200%;\n  background-color: #99fff7;\n  background-image: radial-gradient(\n      at 65% 89%,\n      hsla(249, 100%, 62%, 1) 0px,\n      transparent 50%\n    ),\n    radial-gradient(at 68% 76%, hsla(334, 100%, 74%, 1) 0px, transparent 50%),\n    radial-gradient(at 52% 39%, hsla(34, 100%, 71%, 1) 0px, transparent 50%),\n    radial-gradient(at 12% 37%, hsla(282, 100%, 66%, 1) 0px, transparent 50%),\n    radial-gradient(at 34% 9%, hsla(201, 100%, 63%, 1) 0px, transparent 50%),\n    radial-gradient(at 89% 18%, hsla(193, 100%, 74%, 1) 0px, transparent 50%),\n    radial-gradient(at 36% 37%, hsla(251, 100%, 65%, 1) 0px, transparent 50%);\n  background-position: left;\n  cursor: pointer;\n  border-radius: 10px;\n  transition: all 3s;\n}\n\n.button:hover {\n  background-position: right;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vinodjangid07_breezy-liger-85.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Button</button>",
+    "script": "export default {\n  name: 'GalaxyBreezyLiger85',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07  - Tags: animation, gradient, button, hover, hover effect */\n.button {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 20rpx;\n  width: 200rpx;\n  height: 80rpx;\n  font-size: 30rpx;\n  font-weight: 600;\n  color: white;\n  border: none;\n  background-size: 200% 200%;\n  background-color: #99fff7;\n  background-image: radial-gradient(\n      at 65% 89%,\n      hsla(249, 100%, 62%, 1) 0rpx,\n      transparent 50%\n    ),\n    radial-gradient(at 68% 76%, hsla(334, 100%, 74%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 52% 39%, hsla(34, 100%, 71%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 12% 37%, hsla(282, 100%, 66%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 34% 9%, hsla(201, 100%, 63%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 89% 18%, hsla(193, 100%, 74%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 36% 37%, hsla(251, 100%, 65%, 1) 0rpx, transparent 50%);\n  background-position: left;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border-radius: 20rpx;\n  transition: all 3s;\n}\n\n.button:hover {\n  background-position: right;\n}\n\n",
+    "component_name": "GalaxyBreezyLiger85"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1131,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.053Z",
+  "updated_at": "2025-07-31T07:55:38.053Z"
+}

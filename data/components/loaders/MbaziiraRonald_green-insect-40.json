@@ -1,0 +1,85 @@
+{
+  "id": "MbaziiraRonald_green-insect-40",
+  "name": "green-insect-40",
+  "category": "loaders",
+  "author": "MbaziiraRonald",
+  "description": "green-insect-40 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by MbaziiraRonald - Tags: loader */\n.loader {\n  height: 50px;\n  width: 50px;\n  background: transparent;\n  border: red 3px solid;\n  border-top: transparent;\n  border-radius: 50%;\n  animation: animate81323 0.8s linear infinite;\n}\n\n@keyframes animate81323 {\n  0% {\n    border: 3px solid rgb(255, 75, 75);\n    border-top: transparent;\n    border-left: transparent;\n    transform: rotate(0deg);\n  }\n\n  50% {\n    border: 3px dashed rgb(240, 41, 240);\n    border-top: transparent;\n    border-left: transparent;\n    transform: rotate(270deg);\n  }\n\n  100% {\n    border: 3px dotted rgb(28, 228, 28);\n    border-top: transparent;\n    border-left: transparent;\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/MbaziiraRonald_green-insect-40.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyGreenInsect40',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MbaziiraRonald - Tags: loader */\n.loader {\n  height: 100rpx;\n  width: 100rpx;\n  background: transparent;\n  border: red 6rpx solid;\n  border-top: transparent;\n  border-radius: 50%;\n  animation: animate81323 0.8s linear infinite;\n}\n\n@keyframes animate81323 {\n  0% {\n    border: 6rpx solid rgb(255, 75, 75);\n    border-top: transparent;\n    border-left: transparent;\n    transform: rotate(0deg);\n  }\n\n  50% {\n    border: 6rpx dashed rgb(240, 41, 240);\n    border-top: transparent;\n    border-left: transparent;\n    transform: rotate(270deg);\n  }\n\n  100% {\n    border: 6rpx dotted rgb(28, 228, 28);\n    border-top: transparent;\n    border-left: transparent;\n    transform: rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyGreenInsect40"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 735,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.670Z",
+  "updated_at": "2025-07-31T07:55:39.670Z"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "doniaskima_happy-turtle-32",
+  "name": "happy-turtle-32",
+  "category": "buttons",
+  "author": "doniaskima",
+  "description": "happy-turtle-32 组件 (button, animated, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animated",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-53\">\n  <div class=\"original\">Button</div>\n  <div class=\"letters\">\n    \n    <span>B</span>\n    <span>U</span>\n    <span>T</span>\n    <span>T</span>\n    <span>O</span>\n    <span>N</span>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by doniaskima - Tags: button, animated */\n.btn-53,\n.btn-53 *,\n.btn-53 :after,\n.btn-53 :before,\n.btn-53:after,\n.btn-53:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n\n.btn-53 {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  cursor: pointer;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  line-height: 1.5;\n  margin: 0;\n  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n}\n\n.btn-53:disabled {\n  cursor: default;\n}\n\n.btn-53:-moz-focusring {\n  outline: auto;\n}\n\n.btn-53 svg {\n  display: block;\n  vertical-align: middle;\n}\n\n.btn-53 [hidden] {\n  display: none;\n}\n\n.btn-53 {\n  border: 1px solid;\n  border-radius: 999px;\n  box-sizing: border-box;\n  display: block;\n  font-weight: 900;\n  overflow: hidden;\n  padding: 1.2rem 3rem;\n  position: relative;\n  text-transform: uppercase;\n}\n\n.btn-53 .original {\n  background: #fff;\n  color: #000;\n  display: grid;\n  inset: 0;\n  place-content: center;\n  position: absolute;\n  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);\n}\n\n.btn-53:hover .original {\n  transform: translateY(100%);\n}\n\n.btn-53 .letters {\n  display: inline-flex;\n}\n\n.btn-53 span {\n  opacity: 0;\n  transform: translateY(-15px);\n  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;\n}\n\n.btn-53 span:nth-child(2n) {\n  transform: translateY(15px);\n}\n\n.btn-53:hover span {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n.btn-53:hover span:nth-child(2) {\n  transition-delay: 0.1s;\n}\n\n.btn-53:hover span:nth-child(3) {\n  transition-delay: 0.2s;\n}\n\n.btn-53:hover span:nth-child(4) {\n  transition-delay: 0.3s;\n}\n\n.btn-53:hover span:nth-child(5) {\n  transition-delay: 0.4s;\n}\n\n.btn-53:hover span:nth-child(6) {\n  transition-delay: 0.5s;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/doniaskima_happy-turtle-32.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-53\"></button>\n  <view class=\"original\">Button</view>\n  <view class=\"letters\"></view>\n    \n    <text>B</text>\n    <text>U</text>\n    <text>T</text>\n    <text>T</text>\n    <text>O</text>\n    <text>N</text>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyHappyTurtle32',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by doniaskima - Tags: button, animated */\n.btn-53,\n.btn-53 *,\n.btn-53 :after,\n.btn-53 :before,\n.btn-53:after,\n.btn-53:before {\n  border: 0 solid;\n  box-sizing: border-box;\n}\n\n.btn-53 {\n  -webkit-tap-highlight-color: transparent;\n  -webkit-appearance: button;\n  background-color: #000;\n  background-image: none;\n  color: #fff;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;\n  font-size: 100%;\n  line-height: 1.5;\n  margin: 0;\n  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);\n  padding: 0;\n}\n\n.btn-53:disabled {\n  /* #ifdef H5 */\n  cursor: default;\n  /* #endif */\n}\n\n.btn-53:-moz-focusring {\n  outline: auto;\n}\n\n.btn-53 svg {\n  display: block;\n  vertical-align: middle;\n}\n\n.btn-53 [hidden] {\n  display: none;\n}\n\n.btn-53 {\n  border: 2rpx solid;\n  border-radius: 1998rpx;\n  box-sizing: border-box;\n  display: block;\n  font-weight: 900;\n  overflow: hidden;\n  padding: 1.2rem 3rem;\n  position: relative;\n  text-transform: uppercase;\n}\n\n.btn-53 .original {\n  background: #fff;\n  color: #000;\n  display: grid;\n  inset: 0;\n  place-content: center;\n  position: absolute;\n  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);\n}\n\n.btn-53:hover .original {\n  transform: translateY(100%);\n}\n\n.btn-53 .letters {\n  display: inline-flex;\n}\n\n.btn-53 span {\n  opacity: 0;\n  transform: translateY(-30rpx);\n  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;\n}\n\n.btn-53 span:nth-child(2n) {\n  transform: translateY(30rpx);\n}\n\n.btn-53:hover span {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n.btn-53:hover span:nth-child(2) {\n  transition-delay: 0.1s;\n}\n\n.btn-53:hover span:nth-child(3) {\n  transition-delay: 0.2s;\n}\n\n.btn-53:hover span:nth-child(4) {\n  transition-delay: 0.3s;\n}\n\n.btn-53:hover span:nth-child(5) {\n  transition-delay: 0.4s;\n}\n\n.btn-53:hover span:nth-child(6) {\n  transition-delay: 0.5s;\n}\n\n",
+    "component_name": "GalaxyHappyTurtle32"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 mask 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 2223,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.356Z",
+  "updated_at": "2025-07-31T07:55:36.356Z"
+}

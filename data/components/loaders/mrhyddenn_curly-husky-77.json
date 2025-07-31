@@ -1,0 +1,85 @@
+{
+  "id": "mrhyddenn_curly-husky-77",
+  "name": "curly-husky-77",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "curly-husky-77 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"dot\"></div>\n</div>\n<div class=\"loader\">\n    <div class=\"dot\"></div>\n</div>\n<div class=\"loader\">\n    <div class=\"dot\"></div>\n</div>\n<div class=\"loader\">\n    <div class=\"dot\"></div>\n</div>\n<div class=\"loader\">\n    <div class=\"dot\"></div>\n</div>\n<div class=\"loader\">\n    <div class=\"dot\"></div>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  height: 5px;\n  width: 1px;\n  position: absolute;\n  animation: rotate0234 3.5s linear infinite;\n}\n\n.loader .dot {\n  top: 30px;\n  height: 7px;\n  width: 7px;\n  background: #268fe4;\n  border-radius: 50%;\n  position: relative;\n}\n\n.text {\n  position: absolute;\n  bottom: -85px;\n  font-size: 25px;\n  font-weight: 400;\n  color: #26aee4;\n}\n\n@keyframes rotate0234 {\n  30% {\n    transform: rotate(220deg);\n  }\n\n  40% {\n    transform: rotate(450deg);\n    opacity: 1;\n  }\n\n  75% {\n    transform: rotate(720deg);\n    opacity: 1;\n  }\n\n  76% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 0;\n    transform: rotate(0deg);\n  }\n}\n\n.loader:nth-child(1) {\n  animation-delay: 0.15s;\n}\n\n.loader:nth-child(2) {\n  animation-delay: 0.3s;\n}\n\n.loader:nth-child(3) {\n  animation-delay: 0.45s;\n}\n\n.loader:nth-child(4) {\n  animation-delay: 0.6s;\n}\n\n.loader:nth-child(5) {\n  animation-delay: 0.75s;\n}\n\n.loader:nth-child(6) {\n  animation-delay: 0.9s;\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_curly-husky-77.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"dot\"></view>\n</div>\n<view class=\"loader\"></view>\n    <view class=\"dot\"></view>\n</div>\n<view class=\"loader\"></view>\n    <view class=\"dot\"></view>\n</div>\n<view class=\"loader\"></view>\n    <view class=\"dot\"></view>\n</div>\n<view class=\"loader\"></view>\n    <view class=\"dot\"></view>\n</div>\n<view class=\"loader\"></view>\n    <view class=\"dot\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCurlyHusky77',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: loader */\n.loader {\n  height: 10rpx;\n  width: 2rpx;\n  position: absolute;\n  animation: rotate0234 3.5s linear infinite;\n}\n\n.loader .dot {\n  top: 60rpx;\n  height: 14rpx;\n  width: 14rpx;\n  background: #268fe4;\n  border-radius: 50%;\n  position: relative;\n}\n\n.text {\n  position: absolute;\n  bottom: -170rpx;\n  font-size: 50rpx;\n  font-weight: 400;\n  color: #26aee4;\n}\n\n@keyframes rotate0234 {\n  30% {\n    transform: rotate(220deg);\n  }\n\n  40% {\n    transform: rotate(450deg);\n    opacity: 1;\n  }\n\n  75% {\n    transform: rotate(720deg);\n    opacity: 1;\n  }\n\n  76% {\n    opacity: 0;\n  }\n\n  100% {\n    opacity: 0;\n    transform: rotate(0deg);\n  }\n}\n\n.loader:nth-child(1) {\n  animation-delay: 0.15s;\n}\n\n.loader:nth-child(2) {\n  animation-delay: 0.3s;\n}\n\n.loader:nth-child(3) {\n  animation-delay: 0.45s;\n}\n\n.loader:nth-child(4) {\n  animation-delay: 0.6s;\n}\n\n.loader:nth-child(5) {\n  animation-delay: 0.75s;\n}\n\n.loader:nth-child(6) {\n  animation-delay: 0.9s;\n}\n",
+    "component_name": "GalaxyCurlyHusky77"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1318,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.407Z",
+  "updated_at": "2025-07-31T07:55:42.407Z"
+}

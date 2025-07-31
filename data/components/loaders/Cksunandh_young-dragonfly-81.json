@@ -1,0 +1,88 @@
+{
+  "id": "Cksunandh_young-dragonfly-81",
+  "name": "young-dragonfly-81",
+  "category": "loaders",
+  "author": "Cksunandh",
+  "description": "young-dragonfly-81 组件 (simple, loader, html, css, animation)",
+  "tags": [
+    "simple",
+    "loader",
+    "html",
+    "css",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"><i></i></div>",
+    "css": "/* From Uiverse.io by Cksunandh  - Tags: simple, loader, html, css */\n.loader i {\n  display: block;\n  width: 2px;\n  height: 85px;\n  margin-top: 18px;\n  background-color: rgba(61, 61, 61, 0.5);\n  overflow: hidden;\n  position: relative;\n}\n.loader i:before {\n  display: block;\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background-color: #fafafa;\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: loader-animation 2s infinite normal;\n}\n@keyframes loader-animation {\n  0% {\n    transform: translate3d(0, -100%, 0);\n  }\n  15% {\n    transform: translate3d(0, -98%, 0);\n  }\n  85% {\n    transform: translate3d(0, 98%, 0);\n  }\n  100% {\n    transform: translate3d(0, 100%, 0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Cksunandh_young-dragonfly-81.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"><i></i></view>",
+    "script": "export default {\n  name: 'GalaxyYoungDragonfly81',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Cksunandh  - Tags: simple, loader, html, css */\n.loader i {\n  display: block;\n  width: 4rpx;\n  height: 170rpx;\n  margin-top: 36rpx;\n  background-color: rgba(61, 61, 61, 0.5);\n  overflow: hidden;\n  position: relative;\n}\n.loader i:before {\n  display: block;\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background-color: #fafafa;\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: loader-animation 2s infinite normal;\n}\n@keyframes loader-animation {\n  0% {\n    transform: translate3d(0, -100%, 0);\n  }\n  15% {\n    transform: translate3d(0, -98%, 0);\n  }\n  85% {\n    transform: translate3d(0, 98%, 0);\n  }\n  100% {\n    transform: translate3d(0, 100%, 0);\n  }\n}\n\n",
+    "component_name": "GalaxyYoungDragonfly81"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 726,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.078Z",
+  "updated_at": "2025-07-31T07:55:39.078Z"
+}

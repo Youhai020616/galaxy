@@ -1,0 +1,87 @@
+{
+  "id": "Peary74_foolish-sloth-23",
+  "name": "foolish-sloth-23",
+  "category": "loaders",
+  "author": "Peary74",
+  "description": "foolish-sloth-23 组件 (loader, animated, google, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "google",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n\n  <div class=\"cercle\">\n  </div>\n  <div class=\"cercle\">\n  </div>\n  <div class=\"cercle\">\n  </div>\n  <div class=\"cercle\">\n  </div>\n\n</div>",
+    "css": "/* From Uiverse.io by Peary74 - Tags: loader, animated, google */\n.loader {\n  position: absolute;\n}\n\n.cercle {\n  position: absolute;\n  background: #3f7ee8;\n  border-radius: 50%;\n  width: 60px;\n  height: 60px;\n  top: -40px;\n  left: -70px;\n  animation: move-up6 .4s ease-in infinite alternate-reverse;\n}\n\n.cercle:nth-child(2) {\n  width: 25px;\n  height: 25px;\n  top: -2px;\n  left: -5px;\n  background: #de4032;\n  animation: move-down1 .4s ease-in infinite alternate-reverse;\n}\n\n.cercle:nth-child(3) {\n  width: 30px;\n  height: 30px;\n  top: 35px;\n  left: -7px;\n  background: #eeb205;\n  animation: move-updown1 .4s ease-in infinite alternate-reverse;\n}\n\n.cercle:nth-child(4) {\n  width: 12px;\n  height: 12px;\n  top: -10px;\n  left: 25px;\n  background: #31aa52;\n  animation: move-up6 .4s ease-in infinite alternate-reverse;\n}\n\n@keyframes move-up6 {\n  to {\n    transform: translateY(-5px);\n  }\n}\n\n@keyframes move-down1 {\n  to {\n    transform: translateY(5px);\n  }\n}\n\n@keyframes move-updown1 {\n  to {\n    transform: translateY(10px);\n  }\n\n  from {\n    transform: translateY(-7px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Peary74_foolish-sloth-23.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n\n  <view class=\"cercle\"></view>\n  </div>\n  <view class=\"cercle\"></view>\n  </div>\n  <view class=\"cercle\"></view>\n  </div>\n  <view class=\"cercle\"></view>\n  </div>\n\n</div>",
+    "script": "export default {\n  name: 'GalaxyFoolishSloth23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Peary74 - Tags: loader, animated, google */\n.loader {\n  position: absolute;\n}\n\n.cercle {\n  position: absolute;\n  background: #3f7ee8;\n  border-radius: 50%;\n  width: 120rpx;\n  height: 120rpx;\n  top: -80rpx;\n  left: -140rpx;\n  animation: move-up6 .4s ease-in infinite alternate-reverse;\n}\n\n.cercle:nth-child(2) {\n  width: 50rpx;\n  height: 50rpx;\n  top: -4rpx;\n  left: -10rpx;\n  background: #de4032;\n  animation: move-down1 .4s ease-in infinite alternate-reverse;\n}\n\n.cercle:nth-child(3) {\n  width: 60rpx;\n  height: 60rpx;\n  top: 70rpx;\n  left: -14rpx;\n  background: #eeb205;\n  animation: move-updown1 .4s ease-in infinite alternate-reverse;\n}\n\n.cercle:nth-child(4) {\n  width: 24rpx;\n  height: 24rpx;\n  top: -20rpx;\n  left: 50rpx;\n  background: #31aa52;\n  animation: move-up6 .4s ease-in infinite alternate-reverse;\n}\n\n@keyframes move-up6 {\n  to {\n    transform: translateY(-10rpx);\n  }\n}\n\n@keyframes move-down1 {\n  to {\n    transform: translateY(10rpx);\n  }\n}\n\n@keyframes move-updown1 {\n  to {\n    transform: translateY(20rpx);\n  }\n\n  from {\n    transform: translateY(-14rpx);\n  }\n}\n\n\n\n",
+    "component_name": "GalaxyFoolishSloth23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1238,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.950Z",
+  "updated_at": "2025-07-31T07:55:39.950Z"
+}

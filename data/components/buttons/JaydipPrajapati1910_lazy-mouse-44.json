@@ -1,0 +1,118 @@
+{
+  "id": "JaydipPrajapati1910_lazy-mouse-44",
+  "name": "lazy-mouse-44",
+  "category": "buttons",
+  "author": "JaydipPrajapati1910",
+  "description": "lazy-mouse-44 组件 (gradient, button, gradients, css, animation)",
+  "tags": [
+    "gradient",
+    "button",
+    "gradients",
+    "css",
+    "animation"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"button-overlay\"></div>\n  <span>Gradient Button</span>  \n</button>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: gradient, button, gradients, css */\n.button {\n  font-size: 19px;\n  border-radius: 12px;\n  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);\n  color: rgb(218, 218, 218);\n  border: none;\n  padding: 2px;\n  font-weight: 800;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n}\n\n.button span {\n  border-radius: 10px;\n  padding: 0.8em 1.3em;\n  padding-right: 1.2em;\n  text-shadow: 0px 0px 20px #4b4b4b;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  transition: all 0.3s;\n  background-image: linear-gradient(to right, #00F260, #f79dee, #0575E6, #64f38c,#e9e93e);\n  -webkit-background-clip: text;\n  color: transparent;\n  background-size: 300%;\n  background-position: -100%;\n  animation: animatedText 3s infinite alternate-reverse;\n}\n\n.button-overlay {\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;\n  filter: opacity(10%) contrast(105%);\n  -webkit-filter: opacity(10%) contrast(105%);\n}\n\n@keyframes animatedText {\n  to {\n    background-position: 100%;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JaydipPrajapati1910_lazy-mouse-44.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"button-overlay\"></view>\n  <text>Gradient Button</text>  \n</button>",
+    "script": "export default {\n  name: 'GalaxyLazyMouse44',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: gradient, button, gradients, css */\n.button {\n  font-size: 38rpx;\n  border-radius: 24rpx;\n  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);\n  color: rgb(218, 218, 218);\n  border: none;\n  padding: 4rpx;\n  font-weight: 800;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  overflow: hidden;\n}\n\n.button span {\n  border-radius: 20rpx;\n  padding: 0.8em 1.3em;\n  padding-right: 1.2em;\n  /* #ifdef H5 */\n  text-shadow: 0rpx 0rpx 40rpx #4b4b4b;\n  /* #endif */\n  width: 100%;\n  display: flex;\n  align-items: center;\n  gap: 24rpx;\n  transition: all 0.3s;\n  background-image: linear-gradient(to right, #00F260, #f79dee, #0575E6, #64f38c,#e9e93e);\n  -webkit-background-clip: text;\n  color: transparent;\n  background-size: 300%;\n  background-position: -100%;\n  animation: animatedText 3s infinite alternate-reverse;\n}\n\n.button-overlay {\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;\n  \n  -webkit-\n}\n\n@keyframes animatedText {\n  to {\n    background-position: 100%;\n  }\n}\n",
+    "component_name": "GalaxyLazyMouse44"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1315,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.480Z",
+  "updated_at": "2025-07-31T07:55:33.480Z"
+}

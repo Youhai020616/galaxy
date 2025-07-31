@@ -1,0 +1,114 @@
+{
+  "id": "Sujanthapast0_serious-rattlesnake-31",
+  "name": "serious-rattlesnake-31",
+  "category": "buttons",
+  "author": "Sujanthapast0",
+  "description": "serious-rattlesnake-31 组件 (button, 3d button, 2d button, animation, interactive)",
+  "tags": [
+    "button",
+    "3d button",
+    "2d button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  Button\n</button>",
+    "css": "/* From Uiverse.io by Sujanthapast0 - Tags: button, 3d button, 2d button */\nbutton {\n  border: 1px solid black;\n  padding: 12px 30px 12px 30px;\n  border-radius: 30px;\n  background-color: #fdceb6;\n  font-weight: bolder;\n  font-size: 15px;\n  box-shadow: 0px 0px 1px;\n  transform: all 2s esase;\n  transition-duration: .3s;\n}\n\nbutton:hover {\n  transform: translateY(-10px);\n  box-shadow: 0px 7px 1px rgb(0, 0, 0);\n  border: 1px solid black;\n}\n\nbutton:active {\n  transform: translateY(10px);\n  box-shadow: 0px 0px 1px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Sujanthapast0_serious-rattlesnake-31.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxySeriousRattlesnake31',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Sujanthapast0 - Tags: button, 3d button, 2d button */\nbutton {\n  border: 2rpx solid black;\n  padding: 24rpx 60rpx 24rpx 60rpx;\n  border-radius: 60rpx;\n  background-color: #fdceb6;\n  font-weight: bolder;\n  font-size: 30rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 2rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: all 2s esase;\n  transition-duration: .3s;\n}\n\nbutton:hover {\n  transform: translateY(-20rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 14rpx 2rpx rgb(0, 0, 0);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: 2rpx solid black;\n}\n\nbutton:active {\n  transform: translateY(20rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 2rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n  \n\n\n",
+    "component_name": "GalaxySeriousRattlesnake31"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 551,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.935Z",
+  "updated_at": "2025-07-31T07:55:34.935Z"
+}

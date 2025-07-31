@@ -1,0 +1,87 @@
+{
+  "id": "Subaashbala_massive-moth-6",
+  "name": "massive-moth-6",
+  "category": "loaders",
+  "author": "Subaashbala",
+  "description": "massive-moth-6 组件 (loader, animated, loading animation, animation)",
+  "tags": [
+    "loader",
+    "animated",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loaderContainer\">\n  <div class=\"particleContainer\">\n    <div></div>\n    <div></div>\n    <div></div>\n  </div>\n  <div class=\"particleContainer\">\n    <div></div>\n    <div></div>\n    <div></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Subaashbala  - Tags: loader, animated, loading animation */\n.loaderContainer {\n  display: flex;\n  width: 9em;\n  overflow: hidden;\n  gap: 0.5em;\n}\n.particleContainer {\n  display: flex;\n  gap: 0.5em;\n  animation: slide 2000ms linear infinite;\n}\n.particleContainer div {\n  width: 2.5em;\n  aspect-ratio: 1;\n  border-radius: 5px;\n  background: whitesmoke;\n  transform-origin: left bottom;\n  animation: squeeze 750ms ease-in-out infinite;\n}\n.particleContainer div:nth-child(2) {\n  animation-delay: 50ms;\n}\n.particleContainer div:last-child {\n  animation-delay: 100ms;\n}\n@keyframes squeeze {\n  0% {\n    transform: scale(1) translateY(0);\n  }\n  50% {\n    transform: scale(0.75);\n  }\n  75% {\n    transform: scale(1.05);\n  }\n  100% {\n    transform: sclae(1);\n  }\n}\n@keyframes slide {\n  from {\n    transform: translateX(0%);\n  }\n  to {\n    transform: translateX(calc(-50% + 1.25em));\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Subaashbala_massive-moth-6.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loaderContainer\"></view>\n  <view class=\"particleContainer\"></view>\n    <view></view>\n    <view></view>\n    <view></view>\n  </div>\n  <view class=\"particleContainer\"></view>\n    <view></view>\n    <view></view>\n    <view></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMassiveMoth6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Subaashbala  - Tags: loader, animated, loading animation */\n.loaderContainer {\n  display: flex;\n  width: 9em;\n  overflow: hidden;\n  gap: 0.5em;\n}\n.particleContainer {\n  display: flex;\n  gap: 0.5em;\n  animation: slide 2000ms linear infinite;\n}\n.particleContainer div {\n  width: 2.5em;\n  aspect-ratio: 1;\n  border-radius: 10rpx;\n  background: whitesmoke;\n  transform-origin: left bottom;\n  animation: squeeze 750ms ease-in-out infinite;\n}\n.particleContainer div:nth-child(2) {\n  animation-delay: 50ms;\n}\n.particleContainer div:last-child {\n  animation-delay: 100ms;\n}\n@keyframes squeeze {\n  0% {\n    transform: scale(1) translateY(0);\n  }\n  50% {\n    transform: scale(0.75);\n  }\n  75% {\n    transform: scale(1.05);\n  }\n  100% {\n    transform: sclae(1);\n  }\n}\n@keyframes slide {\n  from {\n    transform: translateX(0%);\n  }\n  to {\n    transform: translateX(calc(-50% + 1.25em));\n  }\n}\n\n",
+    "component_name": "GalaxyMassiveMoth6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1128,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.622Z",
+  "updated_at": "2025-07-31T07:55:40.622Z"
+}

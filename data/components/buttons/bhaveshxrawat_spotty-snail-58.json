@@ -1,0 +1,112 @@
+{
+  "id": "bhaveshxrawat_spotty-snail-58",
+  "name": "spotty-snail-58",
+  "category": "buttons",
+  "author": "bhaveshxrawat",
+  "description": "spotty-snail-58 组件 (button, gradient, interactive)",
+  "tags": [
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button><span> Grab it!</span>\n</button>",
+    "css": "/* From Uiverse.io by bhaveshxrawat - Tags: button */\nbutton {\n border: none;\n padding: 0.7em 2em;\n font-size: 18px;\n font-family: inherit;\n background-blend-mode: multiply;\n color: rgb(235, 234, 234);\n border-radius: 9px;\n background: linear-gradient(225deg, #181818, #2e2e2e);\n box-shadow: -5px 5px 10px #191919,\n             5px -5px 10px #292929;\n}\n\nbutton:hover {\n background: #212121;\n transition: background 1s ease;\n box-shadow: -5px 5px 10px #191919,\n             5px -5px 10px #292929;\n}\n\nbutton:active {\n transition: box-shadow .1s ease;\n border-radius: 9px;\n background: #212121;\n box-shadow: inset -5px 5px 10px #191919,\n              inset 5px -5px 10px #292929;\n}\n\nspan {\n opacity: 0.5;\n transition: opacity 0.2s ease;\n}\n\nbutton:hover span {\n opacity: 0.7;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/bhaveshxrawat_spotty-snail-58.html"
+  },
+  "uniapp": {
+    "template": "<button></button><text> Grab it!</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySpottySnail58',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bhaveshxrawat - Tags: button */\nbutton {\n border: none;\n padding: 0.7em 2em;\n font-size: 36rpx;\n font-family: inherit;\n background-blend-mode: multiply;\n color: rgb(235, 234, 234);\n border-radius: 18rpx;\n background: linear-gradient(225deg, #181818, #2e2e2e);\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -10rpx 10rpx 20rpx #191919,\n             10rpx -10rpx 20rpx #292929;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:hover {\n background: #212121;\n transition: background 1s ease;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -10rpx 10rpx 20rpx #191919,\n             10rpx -10rpx 20rpx #292929;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton:active {\n transition: box-shadow .1s ease;\n border-radius: 18rpx;\n background: #212121;\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -10rpx 10rpx 20rpx #191919,\n              inset 10rpx -10rpx 20rpx #292929;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nspan {\n opacity: 0.5;\n transition: opacity 0.2s ease;\n}\n\nbutton:hover span {\n opacity: 0.7;\n}\n",
+    "component_name": "GalaxySpottySnail58"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 817,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.976Z",
+  "updated_at": "2025-07-31T07:55:35.976Z"
+}

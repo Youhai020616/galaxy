@@ -1,0 +1,82 @@
+{
+  "id": "ahmedyasserdev_wise-newt-71",
+  "name": "wise-newt-71",
+  "category": "tooltips",
+  "author": "ahmedyasserdev",
+  "description": "wise-newt-71 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"group relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-green-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800\">\n  <span class=\"relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0\">Hover For Tooltip</span>\n  <div class=\"hidden group-hover:block\">\n    <div class=\"group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-white bg-purple-800\">\n      <div class=\"rounded-sm bg-black py-1 px-2\">\n        <p class=\"whitespace-nowrap\">This is a fancy tooltip.</p>\n      </div>\n      <div class=\"h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black\"></div>\n    </div>\n  </div>\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Tooltips/ahmedyasserdev_wise-newt-71.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"group relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-green-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800\"></button>\n  <text class=\"relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0\">Hover For Tooltip</text>\n  <view class=\"hidden group-hover:block\"></view>\n    <view class=\"group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-white bg-purple-800\"></view>\n      <view class=\"rounded-sm bg-black py-1 px-2\"></view>\n        <text class=\"whitespace-nowrap\">This is a fancy tooltip.</text>\n      </div>\n      <view class=\"h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black\"></view>\n    </div>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyWiseNewt71',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyWiseNewt71"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 973,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.613Z",
+  "updated_at": "2025-07-31T07:55:38.613Z"
+}

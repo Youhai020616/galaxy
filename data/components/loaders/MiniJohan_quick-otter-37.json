@@ -1,0 +1,87 @@
+{
+  "id": "MiniJohan_quick-otter-37",
+  "name": "quick-otter-37",
+  "category": "loaders",
+  "author": "MiniJohan",
+  "description": "quick-otter-37 组件 (simple, animation, white, loader)",
+  "tags": [
+    "simple",
+    "animation",
+    "white",
+    "loader"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n  <li class=\"orb\"></li>\n</div>",
+    "css": "/* From Uiverse.io by MiniJohan  - Tags: simple, animation, white, loader */\n.loader {\n  display: flex;\n  max-width: 350;\n  position: relative;\n  gap: 20px;\n  justify-content: space-evenly;\n  animation: rotate 3s linear infinite;\n  color: white;\n}\n\n.loading {\n}\n\n.orb {\n  width: 25px;\n  height: 25px;\n  background-color: rgb(255, 255, 255);\n  border-radius: 50%;\n  position: absolute;\n}\n\n.orb:nth-child(1) {\n  top: 20px;\n  left: 20px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(2) {\n  top: 20px;\n  right: 20px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(3) {\n  bottom: 20px;\n  left: 20px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(4) {\n  bottom: 20px;\n  right: 20px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(5) {\n  top: 20px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(6) {\n  bottom: 20px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(7) {\n  left: 20px;\n  top: -12.5px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(8) {\n  right: 20px;\n  top: -12.5px;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(9) {\n  top: -12.5px;\n  animation: bounce 1.5s ease 1.5s infinite;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0);\n  }\n\n  25% {\n    transform: rotate(90deg);\n  }\n\n  50% {\n    transform: rotate(180deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes bounce {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(0.5);\n  }\n}\n\n@keyframes bounce2 {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(0.5);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/MiniJohan_quick-otter-37.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n  <view class=\"orb\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyQuickOtter37',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by MiniJohan  - Tags: simple, animation, white, loader */\n.loader {\n  display: flex;\n  max-width: 350;\n  position: relative;\n  gap: 40rpx;\n  justify-content: space-evenly;\n  animation: rotate 3s linear infinite;\n  color: white;\n}\n\n.loading {\n}\n\n.orb {\n  width: 50rpx;\n  height: 50rpx;\n  background-color: rgb(255, 255, 255);\n  border-radius: 50%;\n  position: absolute;\n}\n\n.orb:nth-child(1) {\n  top: 40rpx;\n  left: 40rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(2) {\n  top: 40rpx;\n  right: 40rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(3) {\n  bottom: 40rpx;\n  left: 40rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(4) {\n  bottom: 40rpx;\n  right: 40rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(5) {\n  top: 40rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(6) {\n  bottom: 40rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(7) {\n  left: 40rpx;\n  top: -25rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(8) {\n  right: 40rpx;\n  top: -25rpx;\n  animation: bounce2 1.5s ease 1s infinite;\n}\n\n.orb:nth-child(9) {\n  top: -25rpx;\n  animation: bounce 1.5s ease 1.5s infinite;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0);\n  }\n\n  25% {\n    transform: rotate(90deg);\n  }\n\n  50% {\n    transform: rotate(180deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes bounce {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(0.5);\n  }\n}\n\n@keyframes bounce2 {\n  0% {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(0.5);\n  }\n}\n\n",
+    "component_name": "GalaxyQuickOtter37"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 1856,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.692Z",
+  "updated_at": "2025-07-31T07:55:39.692Z"
+}

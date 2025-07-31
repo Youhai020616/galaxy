@@ -1,0 +1,85 @@
+{
+  "id": "fanishah_dull-vampirebat-56",
+  "name": "dull-vampirebat-56",
+  "category": "loaders",
+  "author": "fanishah",
+  "description": "dull-vampirebat-56 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"bar bar1\"></div>\n    <div class=\"bar bar2\"></div>\n    <div class=\"bar bar3\"></div>\n    <div class=\"bar bar4\"></div>\n    <div class=\"bar bar5\"></div>\n    <div class=\"bar bar6\"></div>\n    <div class=\"bar bar7\"></div>\n    <div class=\"bar bar8\"></div>\n</div>",
+    "css": "/* From Uiverse.io by fanishah - Tags: loader */\n.loader {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  position: absolute;\n}\n\n.bar {\n  width: 10px;\n  height: 70px;\n  background: hsl(0, 100%, 50%);\n  display: inline-block;\n  transform-origin: bottom center;\n  border-top-right-radius: 20px;\n  border-top-left-radius: 20px;\n  animation: loader8913 1.2s linear infinite;\n}\n\n.bar1 {\n  animation-delay: 0.1s;\n}\n\n.bar2 {\n  animation-delay: 0.2s;\n}\n\n.bar3 {\n  animation-delay: 0.3s;\n}\n\n.bar4 {\n  animation-delay: 0.4s;\n}\n\n.bar5 {\n  animation-delay: 0.5s;\n}\n\n.bar6 {\n  animation-delay: 0.6s;\n}\n\n.bar7 {\n  animation-delay: 0.7s;\n}\n\n.bar8 {\n  animation-delay: 0.8s;\n}\n\n@keyframes loader8913 {\n  0% {\n    transform: scaleY(0.1);\n  }\n\n  50% {\n    transform: scaleY(1);\n    background: yellowgreen;\n  }\n\n  100% {\n    transform: scaleY(0.1);\n    background: transparent;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/fanishah_dull-vampirebat-56.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"bar bar1\"></view>\n    <view class=\"bar bar2\"></view>\n    <view class=\"bar bar3\"></view>\n    <view class=\"bar bar4\"></view>\n    <view class=\"bar bar5\"></view>\n    <view class=\"bar bar6\"></view>\n    <view class=\"bar bar7\"></view>\n    <view class=\"bar bar8\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyDullVampirebat56',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by fanishah - Tags: loader */\n.loader {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  position: absolute;\n}\n\n.bar {\n  width: 20rpx;\n  height: 140rpx;\n  background: hsl(0, 100%, 50%);\n  display: inline-block;\n  transform-origin: bottom center;\n  border-top-right-radius: 40rpx;\n  border-top-left-radius: 40rpx;\n  animation: loader8913 1.2s linear infinite;\n}\n\n.bar1 {\n  animation-delay: 0.1s;\n}\n\n.bar2 {\n  animation-delay: 0.2s;\n}\n\n.bar3 {\n  animation-delay: 0.3s;\n}\n\n.bar4 {\n  animation-delay: 0.4s;\n}\n\n.bar5 {\n  animation-delay: 0.5s;\n}\n\n.bar6 {\n  animation-delay: 0.6s;\n}\n\n.bar7 {\n  animation-delay: 0.7s;\n}\n\n.bar8 {\n  animation-delay: 0.8s;\n}\n\n@keyframes loader8913 {\n  0% {\n    transform: scaleY(0.1);\n  }\n\n  50% {\n    transform: scaleY(1);\n    background: yellowgreen;\n  }\n\n  100% {\n    transform: scaleY(0.1);\n    background: transparent;\n  }\n}\n\n",
+    "component_name": "GalaxyDullVampirebat56"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1177,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.014Z",
+  "updated_at": "2025-07-31T07:55:42.014Z"
+}

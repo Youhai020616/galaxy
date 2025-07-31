@@ -1,0 +1,113 @@
+{
+  "id": "Lakshay-art_chilly-goat-78",
+  "name": "chilly-goat-78",
+  "category": "buttons",
+  "author": "Lakshay-art",
+  "description": "chilly-goat-78 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <div class=\"main\">\n    <div class=\"rings\" id=\"ring1\"></div>\n    <div class=\"rings\" id=\"ring2\"></div>\n    <div class=\"asteriods-large\" id=\"asteriod1\"></div>\n    <div class=\"asteriods-large\" id=\"asteriod2\"></div>\n    <div class=\"asteriods-large\" id=\"asteriod3\"></div>\n    <div class=\"asteriods-large\" id=\"asteriod4\"></div>\n    <div class=\"asteriods-large\" id=\"asteriod5\"></div>\n    <div class=\"asteriods-small\" id=\"asteriod6\"></div>\n    <div class=\"asteriods-small\" id=\"asteriod7\"></div>\n    <div class=\"asteriods-small\" id=\"asteriod8\"></div>\n    <div class=\"asteriods-small\" id=\"asteriod9\"></div>\n    <div class=\"asteriods-small\" id=\"asteriod10\"></div>\n    <div id=\"saturn\"></div>\n    <div id=\"explore\">Explore</div>\n\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by Lakshay-art - Tags: button */\nbutton {\n  border: 0;\n  background: radial-gradient(ellipse at 50% 50%,black 20%,transparent 72%);\n  font-size: 17px;\n  height: 200px;\n  width: 300px;\n  zoom: 1.2;\n}\n\n.main {\n  width: 70px;\n  margin: auto;\n  position: relative;\n  transform: rotateZ(0deg);\n  isolation: isolate;\n  scale: 1;\n  transition: all 1.5s;\n}\n\n.main:hover {\n  transform: rotateZ(240deg);\n  scale: 2;\n  /* filter: drop-shadow(10px,10px,10px,white); */\n  filter: drop-shadow(-1px -1px 5px #69e9d6);\n}\n\n.rings {\n  position: absolute;\n  width: 200px;\n  height: 100px;\n  /* background-color: #000000; */\n  border-radius: 150px 150px 0 0;\n  background: radial-gradient(circle at 50% 100%,transparent 30%, #69e9d6 40%,#404D44 50%,#44867c 60%,#404D44 70%,transparent);\n}\n\n#saturn {\n  width: 70px;\n  height: 70px;\n  border-radius: 50%;\n  background: linear-gradient(80deg,#69e9d6,#404D44,#000000);\n}\n\n#ring1 {\n  transform: rotateX(80deg);\n  top: -20px;\n  left: -65px;\n}\n\n#ring2 {\n  transform: rotateX(-100deg);\n  left: -65px;\n  z-index: -1;\n  top: -3px;\n}\n\n.asteriods-large {\n  position: absolute;\n  width: 8px;\n  height: 10px;\n  border-radius: 15px 8px;\n  background: linear-gradient(220deg,#6f7776,#598ea3,#311515);\n  transform: rotateZ(0deg);\n  transition: all 3s;\n}\n\n#asteriod1 {\n  top: 8px;\n  height: 12px;\n  width: 12px;\n  border-radius: 50%;\n}\n\n#asteriod2 {\n  top: 35px;\n  height: 10px;\n  left: -55px;\n}\n\n#asteriod3 {\n  top: 35px;\n  height: 8px;\n  left: 85px;\n}\n\n#asteriod4 {\n  top: 40px;\n  height: 4px;\n  width: 4px;\n  left: -40px;\n}\n\n#asteriod5 {\n  top: 35px;\n  height: 4px;\n  width: 4px;\n  left: 82px;\n}\n\n.asteriods-small {\n  position: absolute;\n  width: 4px;\n  height: 3px;\n  border-radius: 15px 8px;\n  background: linear-gradient(80deg,#6f7776,#598ea3,#311515);\n  transform-origin: 50px 50px;\n  transform: rotateZ(0deg);\n  transition: all 3s;\n}\n\n#asteriod6 {\n  top: 6px;\n  left: -5px;\n  border-radius: 50%;\n}\n\n#asteriod7 {\n  top: 15px;\n  left: -35px;\n}\n\n#asteriod8 {\n  top: 35px;\n  left: 65px;\n}\n\n#asteriod9 {\n  top: 60px;\n  left: -10px;\n}\n\n#asteriod10 {\n  top: 15px;\n  left: 112px;\n}\n\n#explore {\n  position: absolute;\n  top: 32px;\n  font-size: 15px;\n  color: hsl(171, 59%, 74%);\n  left: 10px;\n  transition: all 3s;\n}\n\n.main:hover > .asteriods-large,.main:hover > .asteriods-small {\n  transform: translateX(28px);\n}\n\n.main:hover > #explore {\n  translate: -10px 20px;\n  transform: rotateZ(120deg);\n}\n\n.main:not(hover) > #explore {\n  translate: 0px;\n  transform: rotateZ(0deg);\n}\n\n.main:not(hover) > .asteriods-large,.main:not(hover) > .asteriods-small {\n  transform: translateX(0px);\n}\n\n.main:is(:active) > #explore {\n  translate: -100px 200px;\n}\n\n.main:is(:active) {\n  translate: -200px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Lakshay-art_chilly-goat-78.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view class=\"main\"></view>\n    <view class=\"rings\" id=\"ring1\"></view>\n    <view class=\"rings\" id=\"ring2\"></view>\n    <view class=\"asteriods-large\" id=\"asteriod1\"></view>\n    <view class=\"asteriods-large\" id=\"asteriod2\"></view>\n    <view class=\"asteriods-large\" id=\"asteriod3\"></view>\n    <view class=\"asteriods-large\" id=\"asteriod4\"></view>\n    <view class=\"asteriods-large\" id=\"asteriod5\"></view>\n    <view class=\"asteriods-small\" id=\"asteriod6\"></view>\n    <view class=\"asteriods-small\" id=\"asteriod7\"></view>\n    <view class=\"asteriods-small\" id=\"asteriod8\"></view>\n    <view class=\"asteriods-small\" id=\"asteriod9\"></view>\n    <view class=\"asteriods-small\" id=\"asteriod10\"></view>\n    <view id=\"saturn\"></view>\n    <view id=\"explore\">Explore</view>\n\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyChillyGoat78',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Lakshay-art - Tags: button */\nbutton {\n  border: 0;\n  background: radial-gradient(ellipse at 50% 50%,black 20%,transparent 72%);\n  font-size: 34rpx;\n  height: 400rpx;\n  width: 600rpx;\n  zoom: 1.2;\n}\n\n.main {\n  width: 140rpx;\n  margin: auto;\n  position: relative;\n  transform: rotateZ(0deg);\n  isolation: isolate;\n  scale: 1;\n  transition: all 1.5s;\n}\n\n.main:hover {\n  transform: rotateZ(240deg);\n  scale: 2;\n  /*  */\n  \n}\n\n.rings {\n  position: absolute;\n  width: 400rpx;\n  height: 200rpx;\n  /* background-color: #000000; */\n  border-radius: 300rpx 300rpx 0 0;\n  background: radial-gradient(circle at 50% 100%,transparent 30%, #69e9d6 40%,#404D44 50%,#44867c 60%,#404D44 70%,transparent);\n}\n\n#saturn {\n  width: 140rpx;\n  height: 140rpx;\n  border-radius: 50%;\n  background: linear-gradient(80deg,#69e9d6,#404D44,#000000);\n}\n\n#ring1 {\n  transform: rotateX(80deg);\n  top: -40rpx;\n  left: -130rpx;\n}\n\n#ring2 {\n  transform: rotateX(-100deg);\n  left: -130rpx;\n  z-index: -1;\n  top: -6rpx;\n}\n\n.asteriods-large {\n  position: absolute;\n  width: 16rpx;\n  height: 20rpx;\n  border-radius: 30rpx 16rpx;\n  background: linear-gradient(220deg,#6f7776,#598ea3,#311515);\n  transform: rotateZ(0deg);\n  transition: all 3s;\n}\n\n#asteriod1 {\n  top: 16rpx;\n  height: 24rpx;\n  width: 24rpx;\n  border-radius: 50%;\n}\n\n#asteriod2 {\n  top: 70rpx;\n  height: 20rpx;\n  left: -110rpx;\n}\n\n#asteriod3 {\n  top: 70rpx;\n  height: 16rpx;\n  left: 170rpx;\n}\n\n#asteriod4 {\n  top: 80rpx;\n  height: 8rpx;\n  width: 8rpx;\n  left: -80rpx;\n}\n\n#asteriod5 {\n  top: 70rpx;\n  height: 8rpx;\n  width: 8rpx;\n  left: 164rpx;\n}\n\n.asteriods-small {\n  position: absolute;\n  width: 8rpx;\n  height: 6rpx;\n  border-radius: 30rpx 16rpx;\n  background: linear-gradient(80deg,#6f7776,#598ea3,#311515);\n  transform-origin: 100rpx 100rpx;\n  transform: rotateZ(0deg);\n  transition: all 3s;\n}\n\n#asteriod6 {\n  top: 12rpx;\n  left: -10rpx;\n  border-radius: 50%;\n}\n\n#asteriod7 {\n  top: 30rpx;\n  left: -70rpx;\n}\n\n#asteriod8 {\n  top: 70rpx;\n  left: 130rpx;\n}\n\n#asteriod9 {\n  top: 120rpx;\n  left: -20rpx;\n}\n\n#asteriod10 {\n  top: 30rpx;\n  left: 224rpx;\n}\n\n#explore {\n  position: absolute;\n  top: 64rpx;\n  font-size: 30rpx;\n  color: hsl(171, 59%, 74%);\n  left: 20rpx;\n  transition: all 3s;\n}\n\n.main:hover > .asteriods-large,.main:hover > .asteriods-small {\n  transform: translateX(56rpx);\n}\n\n.main:hover > #explore {\n  translate: -20rpx 40rpx;\n  transform: rotateZ(120deg);\n}\n\n.main:not(hover) > #explore {\n  translate: 0rpx;\n  transform: rotateZ(0deg);\n}\n\n.main:not(hover) > .asteriods-large,.main:not(hover) > .asteriods-small {\n  transform: translateX(0rpx);\n}\n\n.main:is(:active) > #explore {\n  translate: -200rpx 400rpx;\n}\n\n.main:is(:active) {\n  translate: -400rpx;\n}\n\n\n",
+    "component_name": "GalaxyChillyGoat78"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3469,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.767Z",
+  "updated_at": "2025-07-31T07:55:33.767Z"
+}

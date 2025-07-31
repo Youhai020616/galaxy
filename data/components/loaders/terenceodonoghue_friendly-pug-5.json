@@ -1,0 +1,85 @@
+{
+  "id": "terenceodonoghue_friendly-pug-5",
+  "name": "friendly-pug-5",
+  "category": "loaders",
+  "author": "terenceodonoghue",
+  "description": "friendly-pug-5 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <span></span>\n  <span></span>\n  <span></span>\n</div>",
+    "css": "/* From Uiverse.io by terenceodonoghue - Tags: loader */\n.container {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  display: flex;\n  gap: 0.625em;\n  transform: translate(-50%, -50%);\n}\n\n.container span {\n  border-radius: 50%;\n  height: 1.5em;\n  width: 1.5em;\n}\n\n.container span::before {\n  content: \"\";\n  display: block;\n  border-radius: inherit;\n  height: inherit;\n  width: inherit;\n  background-color: inherit;\n  animation: ripple 1.8s ease-out infinite;\n  animation-delay: inherit;\n  z-index: -1;\n}\n\n.container span:nth-of-type(1) {\n  background-color: #84cdfa;\n}\n\n.container span:nth-of-type(2) {\n  background-color: #5ad1cd;\n  animation-delay: 0.2s;\n}\n\n.container span:nth-of-type(3) {\n  background-color: #9b59b6;\n  animation-delay: 0.4s;\n}\n\n@keyframes ripple {\n  from {\n    opacity: 1;\n    transform: scale(0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(3);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/terenceodonoghue_friendly-pug-5.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <text></text>\n  <text></text>\n  <text></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFriendlyPug5',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by terenceodonoghue - Tags: loader */\n.container {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  display: flex;\n  gap: 0.625em;\n  transform: translate(-50%, -50%);\n}\n\n.container span {\n  border-radius: 50%;\n  height: 1.5em;\n  width: 1.5em;\n}\n\n.container span::before {\n  content: \"\";\n  display: block;\n  border-radius: inherit;\n  height: inherit;\n  width: inherit;\n  background-color: inherit;\n  animation: ripple 1.8s ease-out infinite;\n  animation-delay: inherit;\n  z-index: -1;\n}\n\n.container span:nth-of-type(1) {\n  background-color: #84cdfa;\n}\n\n.container span:nth-of-type(2) {\n  background-color: #5ad1cd;\n  animation-delay: 0.2s;\n}\n\n.container span:nth-of-type(3) {\n  background-color: #9b59b6;\n  animation-delay: 0.4s;\n}\n\n@keyframes ripple {\n  from {\n    opacity: 1;\n    transform: scale(0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(3);\n  }\n}\n",
+    "component_name": "GalaxyFriendlyPug5"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 961,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.687Z",
+  "updated_at": "2025-07-31T07:55:42.687Z"
+}

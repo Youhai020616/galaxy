@@ -1,0 +1,115 @@
+{
+  "id": "LeHuyHieu_little-skunk-12",
+  "name": "little-skunk-12",
+  "category": "buttons",
+  "author": "LeHuyHieu",
+  "description": "little-skunk-12 组件 (button, box, animation, interactive)",
+  "tags": [
+    "button",
+    "box",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n  Button\n</button>",
+    "css": "/* From Uiverse.io by LeHuyHieu - Tags: button, box */\n.btn {\n  outline: none;\n  display: inline-block;\n  border: 1px solid #fff;\n  padding: .8rem 2rem;\n  border-radius: 5px;\n  background: transparent;\n  color: #fff;\n  font-size: 1rem;\n  transition: .3s;\n  cursor: pointer;\n  position: relative;\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  border-top: 2px solid #fff;\n  border-left: 2px solid #fff;\n  width: 0px;\n  height: 0px;\n  opacity: 0;\n  transition: .3s;\n}\n\n.btn::after {\n  content: '';\n  position: absolute;\n  right: 5px;\n  bottom: 5px;\n  border-bottom: 2px solid #fff;\n  border-right: 2px solid #fff;\n  width: 0px;\n  height: 0px;\n  opacity: 0;\n  transition: .3s;\n}\n\n.btn:hover {\n  box-shadow: 4px 4px 10px rgb(184, 184, 184);\n  transform: translateY(-5px);\n}\n\n.btn:hover::after, .btn:hover::before {\n  height: 20px;\n  width: 20px;\n  opacity: 1;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/LeHuyHieu_little-skunk-12.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n  Button\n</button>",
+    "script": "export default {\n  name: 'GalaxyLittleSkunk12',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by LeHuyHieu - Tags: button, box */\n.btn {\n  outline: none;\n  display: inline-block;\n  border: 2rpx solid #fff;\n  padding: .8rem 2rem;\n  border-radius: 10rpx;\n  background: transparent;\n  color: #fff;\n  font-size: 1rem;\n  transition: .3s;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  left: 10rpx;\n  top: 10rpx;\n  border-top: 4rpx solid #fff;\n  border-left: 4rpx solid #fff;\n  width: 0rpx;\n  height: 0rpx;\n  opacity: 0;\n  transition: .3s;\n}\n\n.btn::after {\n  content: '';\n  position: absolute;\n  right: 10rpx;\n  bottom: 10rpx;\n  border-bottom: 4rpx solid #fff;\n  border-right: 4rpx solid #fff;\n  width: 0rpx;\n  height: 0rpx;\n  opacity: 0;\n  transition: .3s;\n}\n\n.btn:hover {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 8rpx 8rpx 20rpx rgb(184, 184, 184);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translateY(-10rpx);\n}\n\n.btn:hover::after, .btn:hover::before {\n  height: 40rpx;\n  width: 40rpx;\n  opacity: 1;\n}\n",
+    "component_name": "GalaxyLittleSkunk12"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 935,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.793Z",
+  "updated_at": "2025-07-31T07:55:33.793Z"
+}

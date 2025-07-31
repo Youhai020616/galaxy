@@ -1,0 +1,85 @@
+{
+  "id": "pedertanberg_helpless-sheep-31",
+  "name": "helpless-sheep-31",
+  "category": "loaders",
+  "author": "pedertanberg",
+  "description": "helpless-sheep-31 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"><div></div></div>",
+    "css": "/* From Uiverse.io by pedertanberg - Tags: loader */\n.loader {\n display: inline-block;\n position: relative;\n width: 80px;\n height: 80px;\n transform: rotate(45deg);\n transform-origin: 40px 40px;\n}\n\n.loader div {\n top: 32px;\n left: 32px;\n position: absolute;\n width: 32px;\n height: 32px;\n background: red;\n animation: loader45 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);\n}\n\n.loader div:after,\n.loader div:before {\n content: \" \";\n position: absolute;\n display: block;\n width: 32px;\n height: 32px;\n background: red;\n}\n\n.loader div:before {\n left: -24px;\n border-radius: 50% 0 0 50%;\n}\n\n.loader div:after {\n top: -24px;\n border-radius: 50% 50% 0 0;\n}\n\n@keyframes loader45 {\n 0% {\n  transform: scale(0.95);\n }\n\n 5% {\n  transform: scale(1.1);\n }\n\n 39% {\n  transform: scale(0.85);\n }\n\n 45% {\n  transform: scale(1);\n }\n\n 60% {\n  transform: scale(0.95);\n }\n\n 100% {\n  transform: scale(0.9);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/pedertanberg_helpless-sheep-31.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"><view></view></view></div>",
+    "script": "export default {\n  name: 'GalaxyHelplessSheep31',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by pedertanberg - Tags: loader */\n.loader {\n display: inline-block;\n position: relative;\n width: 160rpx;\n height: 160rpx;\n transform: rotate(45deg);\n transform-origin: 80rpx 80rpx;\n}\n\n.loader div {\n top: 64rpx;\n left: 64rpx;\n position: absolute;\n width: 64rpx;\n height: 64rpx;\n background: red;\n animation: loader45 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);\n}\n\n.loader div:after,\n.loader div:before {\n content: \" \";\n position: absolute;\n display: block;\n width: 64rpx;\n height: 64rpx;\n background: red;\n}\n\n.loader div:before {\n left: -48rpx;\n border-radius: 50% 0 0 50%;\n}\n\n.loader div:after {\n top: -48rpx;\n border-radius: 50% 50% 0 0;\n}\n\n@keyframes loader45 {\n 0% {\n  transform: scale(0.95);\n }\n\n 5% {\n  transform: scale(1.1);\n }\n\n 39% {\n  transform: scale(0.85);\n }\n\n 45% {\n  transform: scale(1);\n }\n\n 60% {\n  transform: scale(0.95);\n }\n\n 100% {\n  transform: scale(0.9);\n }\n}\n",
+    "component_name": "GalaxyHelplessSheep31"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 933,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.530Z",
+  "updated_at": "2025-07-31T07:55:42.530Z"
+}

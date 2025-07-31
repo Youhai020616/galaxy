@@ -1,0 +1,85 @@
+{
+  "id": "dvhoang2106_orange-fox-63",
+  "name": "orange-fox-63",
+  "category": "loaders",
+  "author": "dvhoang2106",
+  "description": "orange-fox-63 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div></div>\n</div>",
+    "css": "/* From Uiverse.io by dvhoang2106 - Tags: loader */\n.spinner {\n display: inline-block;\n transform: translateZ(1px);\n}\n\n.spinner > div {\n display: inline-block;\n width: 64px;\n height: 64px;\n margin: 8px;\n border-radius: 50%;\n background: #fff;\n animation: spinner8344 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n}\n\n@keyframes spinner8344 {\n 0%,\n  100% {\n  animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);\n }\n\n 0% {\n  transform: rotateY(0deg);\n }\n\n 50% {\n  transform: rotateY(1800deg);\n  animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);\n }\n\n 100% {\n  transform: rotateY(3600deg);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/dvhoang2106_orange-fox-63.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOrangeFox63',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by dvhoang2106 - Tags: loader */\n.spinner {\n display: inline-block;\n transform: translateZ(2rpx);\n}\n\n.spinner > div {\n display: inline-block;\n width: 128rpx;\n height: 128rpx;\n margin: 16rpx;\n border-radius: 50%;\n background: #fff;\n animation: spinner8344 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n}\n\n@keyframes spinner8344 {\n 0%,\n  100% {\n  animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);\n }\n\n 0% {\n  transform: rotateY(0deg);\n }\n\n 50% {\n  transform: rotateY(1800deg);\n  animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);\n }\n\n 100% {\n  transform: rotateY(3600deg);\n }\n}\n",
+    "component_name": "GalaxyOrangeFox63"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 642,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.330Z",
+  "updated_at": "2025-07-31T07:55:41.330Z"
+}

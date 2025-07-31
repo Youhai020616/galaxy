@@ -1,0 +1,111 @@
+{
+  "id": "2Fl00rian6_empty-dolphin-52",
+  "name": "empty-dolphin-52",
+  "category": "buttons",
+  "author": "2Fl00rian6",
+  "description": "empty-dolphin-52 组件 (button, interactive)",
+  "tags": [
+    "button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>This is a button :)</button>",
+    "css": "/* From Uiverse.io by 2Fl00rian6 - Tags: button */\nbutton {\n background-color: rgb(20, 87, 244);\n border: 1px solid rgb(20, 87, 244);\n padding: 12px 20px;\n border-radius: 7px;\n transition: .3s;\n color: #fff;\n}\n\nbutton:hover {\n border: 1px solid rgb(20, 87, 244);\n background-color: transparent;\n color: rgb(20, 87, 244);\n}\n\nbutton:focus {\n box-shadow: 0px 0px 0px 5px rgba(20, 87, 244, 0.37), 0px 0px 0px 10px rgba(20, 87, 244, 0.38);\n outline: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/2Fl00rian6_empty-dolphin-52.html"
+  },
+  "uniapp": {
+    "template": "<button></button>This is a button :)</button>",
+    "script": "export default {\n  name: 'GalaxyEmptyDolphin52',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by 2Fl00rian6 - Tags: button */\nbutton {\n background-color: rgb(20, 87, 244);\n border: 2rpx solid rgb(20, 87, 244);\n padding: 24rpx 40rpx;\n border-radius: 14rpx;\n transition: .3s;\n color: #fff;\n}\n\nbutton:hover {\n border: 2rpx solid rgb(20, 87, 244);\n background-color: transparent;\n color: rgb(20, 87, 244);\n}\n\nbutton:focus {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 0rpx 10rpx rgba(20, 87, 244, 0.37), 0rpx 0rpx 0rpx 20rpx rgba(20, 87, 244, 0.38);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n outline: none;\n}\n",
+    "component_name": "GalaxyEmptyDolphin52"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 492,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.438Z",
+  "updated_at": "2025-07-31T07:55:32.438Z"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "Pradeepsaranbishnoi_jolly-robin-0",
+  "name": "jolly-robin-0",
+  "category": "buttons",
+  "author": "Pradeepsaranbishnoi",
+  "description": "jolly-robin-0 组件 (simple, neumorphism, skeuomorphism, 3d, button)",
+  "tags": [
+    "simple",
+    "neumorphism",
+    "skeuomorphism",
+    "3d",
+    "button"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"toggle\">\n    <input type=\"checkbox\">\n    <span class=\"button\"></span>\n    <span class=\"label\">☼</span>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Pradeepsaranbishnoi - Tags: simple, neumorphism, skeuomorphism, 3d, button */\n.toggle {\n  display: inline-block;\n}\n\n.toggle {\n  position: relative;\n  height: 100px;\n  width: 100px;\n}\n\n.toggle:before {\n  box-shadow: 0;\n  border-radius: 84.5px;\n  background: #fff;\n  position: absolute;\n  margin-left: -36px;\n  margin-top: -36px;\n  opacity: 0.2;\n  height: 72px;\n  width: 72px;\n  left: 50%;\n  top: 50%;\n}\n\n.toogle input:checked~.label {\n  color: rgba(255,0,0,0.8);\n}\n\n.toggle .button {\n  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);\n  box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);\n  border-radius: 68.8px;\n  position: absolute;\n  background: #eaeaea;\n  margin-left: -34.4px;\n  margin-top: -34.4px;\n  display: block;\n  height: 68.8px;\n  width: 68.8px;\n  left: 50%;\n  top: 50%;\n}\n\n.toggle .label {\n  transition: color 300ms ease-out;\n  line-height: 101px;\n  text-align: center;\n  position: absolute;\n  font-weight: 700;\n  font-size: 28px;\n  display: block;\n  opacity: 0.9;\n  height: 100%;\n  width: 100%;\n  color: rgba(0, 0, 0, 0.9);\n}\n\n.toggle input {\n  opacity: 0;\n  position: absolute;\n  cursor: pointer;\n  z-index: 1;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  top: 0;\n}\n\n.toggle input:active ~ .button {\n  filter: blur(0.5px);\n  box-shadow: 0 12px 25px -4px rgba(0, 0, 0, 0.4), inset 0 -8px 30px 1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 25px 0 rgba(0, 0, 0, 0.4), inset 0 0 10px 1px rgba(255, 255, 255, 0.6);\n}\n\n.toggle input:active ~ .label {\n  font-size: 26px;\n  color: rgba(0, 0, 0, 0.45);\n}\n\n.toggle input:checked ~ .button {\n  filter: blur(0.5px);\n  box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.4), inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.6);\n}\n\n.toggle input:checked ~ .label {\n  color: rgba(0, 0, 0, 0.8);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Pradeepsaranbishnoi_jolly-robin-0.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"toggle\"></view>\n    <input type=\"checkbox\"></input>\n    <text class=\"button\"></text>\n    <text class=\"label\">☼</text>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyJollyRobin0',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Pradeepsaranbishnoi - Tags: simple, neumorphism, skeuomorphism, 3d, button */\n.toggle {\n  display: inline-block;\n}\n\n.toggle {\n  position: relative;\n  height: 200rpx;\n  width: 200rpx;\n}\n\n.toggle:before {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 169rpx;\n  background: #fff;\n  position: absolute;\n  margin-left: -72rpx;\n  margin-top: -72rpx;\n  opacity: 0.2;\n  height: 144rpx;\n  width: 144rpx;\n  left: 50%;\n  top: 50%;\n}\n\n.toogle input:checked~.label {\n  color: rgba(255,0,0,0.8);\n}\n\n.toggle .button {\n  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 30rpx 50rpx -8rpx rgba(0, 0, 0, 0.5), inset 0 -6rpx 8rpx -2rpx rgba(0, 0, 0, 0.2), 0 -20rpx 30rpx -2rpx rgba(255, 255, 255, 0.6), inset 0 6rpx 8rpx -2rpx rgba(255, 255, 255, 0.2), inset 0 0 10rpx 2rpx rgba(255, 255, 255, 0.8), inset 0 40rpx 60rpx 0 rgba(255, 255, 255, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 137.6rpx;\n  position: absolute;\n  background: #eaeaea;\n  margin-left: -68.8rpx;\n  margin-top: -68.8rpx;\n  display: block;\n  height: 137.6rpx;\n  width: 137.6rpx;\n  left: 50%;\n  top: 50%;\n}\n\n.toggle .label {\n  transition: color 300ms ease-out;\n  line-height: 202rpx;\n  text-align: center;\n  position: absolute;\n  font-weight: 700;\n  font-size: 56rpx;\n  display: block;\n  opacity: 0.9;\n  height: 100%;\n  width: 100%;\n  color: rgba(0, 0, 0, 0.9);\n}\n\n.toggle input {\n  opacity: 0;\n  position: absolute;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  z-index: 1;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  top: 0;\n}\n\n.toggle input:active ~ .button {\n  \n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 24rpx 50rpx -8rpx rgba(0, 0, 0, 0.4), inset 0 -16rpx 60rpx 2rpx rgba(255, 255, 255, 0.9), 0 -20rpx 30rpx -2rpx rgba(255, 255, 255, 0.6), inset 0 16rpx 50rpx 0 rgba(0, 0, 0, 0.4), inset 0 0 20rpx 2rpx rgba(255, 255, 255, 0.6);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.toggle input:active ~ .label {\n  font-size: 52rpx;\n  color: rgba(0, 0, 0, 0.45);\n}\n\n.toggle input:checked ~ .button {\n  \n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 20rpx 50rpx -8rpx rgba(0, 0, 0, 0.4), inset 0 -16rpx 50rpx -2rpx rgba(255, 255, 255, 0.9), 0 -20rpx 30rpx -2rpx rgba(255, 255, 255, 0.6), inset 0 16rpx 40rpx 0 rgba(0, 0, 0, 0.2), inset 0 0 10rpx 2rpx rgba(255, 255, 255, 0.6);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.toggle input:checked ~ .label {\n  color: rgba(0, 0, 0, 0.8);\n}\n\n",
+    "component_name": "GalaxyJollyRobin0"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 2309,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.310Z",
+  "updated_at": "2025-07-31T07:55:34.310Z"
+}

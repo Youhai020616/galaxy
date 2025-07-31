@@ -1,0 +1,92 @@
+{
+  "id": "G4b413l_dry-turtle-84",
+  "name": "dry-turtle-84",
+  "category": "tooltips",
+  "author": "G4b413l",
+  "description": "dry-turtle-84 组件 (tooltip, button, button hover effect, animation, interactive)",
+  "tags": [
+    "tooltip",
+    "button",
+    "button hover effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip\">\n  Hover me\n  <div class=\"tooltiptext\">Hi there !</div>\n</div>",
+    "css": "/* From Uiverse.io by G4b413l  - Tags: tooltip, button, button hover effect  */\n.tooltip {\n  position: relative;\n  display: inline-block;\n  cursor: pointer;\n  background-color: #282828;\n  color: #f1f1f1;\n  padding: 1em 3em;\n  border-radius: 1em;\n}\n\n.tooltip .tooltiptext {\n  visibility: hidden;\n  width: 200px;\n  background-color: #28282817;\n  color: #282828;\n  text-align: center;\n  border-radius: 5px;\n  padding: 10px;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  transform: translateX(-50%);\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n\n.tooltip .tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  border-width: 8px;\n  border-style: solid;\n  border-color: #28282817 transparent transparent transparent;\n  transform: translateX(-50%);\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/G4b413l_dry-turtle-84.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip\"></view>\n  Hover me\n  <view class=\"tooltiptext\">Hi there !</view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyDryTurtle84',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l  - Tags: tooltip, button, button hover effect  */\n.tooltip {\n  position: relative;\n  display: inline-block;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background-color: #282828;\n  color: #f1f1f1;\n  padding: 1em 3em;\n  border-radius: 1em;\n}\n\n.tooltip .tooltiptext {\n  visibility: hidden;\n  width: 400rpx;\n  background-color: #28282817;\n  color: #282828;\n  text-align: center;\n  border-radius: 10rpx;\n  padding: 20rpx;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  transform: translateX(-50%);\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n\n.tooltip .tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  border-width: 16rpx;\n  border-style: solid;\n  border-color: #28282817 transparent transparent transparent;\n  transform: translateX(-50%);\n}\n\n",
+    "component_name": "GalaxyDryTurtle84"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 958,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.485Z",
+  "updated_at": "2025-07-31T07:55:38.485Z"
+}

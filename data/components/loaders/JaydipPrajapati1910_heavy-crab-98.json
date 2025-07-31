@@ -1,0 +1,92 @@
+{
+  "id": "JaydipPrajapati1910_heavy-crab-98",
+  "name": "heavy-crab-98",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "heavy-crab-98 组件 (loader, circle, gold, golden effect, animation)",
+  "tags": [
+    "loader",
+    "circle",
+    "gold",
+    "golden effect",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n\t<div></div>\n\t<div></div>\n\t<div></div>\n\t<div></div>\n\t<div></div>\n</div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: loader, circle, gold, golden effect  */\n.loader {\n  height: 30px;\n  display: inline-block;\n}\n\n.loader > div {\n  width: 10px;\n  height: 10px;\n  border-radius: 100%;\n  box-shadow: 0 0 10px orange;\n  background: #FFECBA;\n  float: left;\n  margin: 5px;\n  transform: scale(2);\n}\n\n.loader > div:nth-child(1) {\n  animation: anm-BL-53-move1 1s infinite linear;\n}\n\n.loader > div:nth-child(2) {\n  animation: anm-BL-53-move2 1s infinite linear;\n  animation-delay: 0.2s;\n}\n\n.loader > div:nth-child(3) {\n  animation: anm-BL-53-move3 1s infinite linear;\n  animation-delay: 0.3s;\n}\n\n.loader > div:nth-child(4) {\n  animation: anm-BL-53-move4 1s infinite linear;\n  animation-delay: 0.4s;\n}\n\n.loader > div:nth-child(5) {\n  animation: anm-BL-53-move5 1s infinite linear;\n  animation-delay: 0.5s;\n}\n\n@keyframes anm-BL-53-move1 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move2 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move3 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move4 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move5 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_heavy-crab-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n\t<view></view>\n\t<view></view>\n\t<view></view>\n\t<view></view>\n\t<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHeavyCrab98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: loader, circle, gold, golden effect  */\n.loader {\n  height: 60rpx;\n  display: inline-block;\n}\n\n.loader > div {\n  width: 20rpx;\n  height: 20rpx;\n  border-radius: 100%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 20rpx orange;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: #FFECBA;\n  float: left;\n  margin: 10rpx;\n  transform: scale(2);\n}\n\n.loader > div:nth-child(1) {\n  animation: anm-BL-53-move1 1s infinite linear;\n}\n\n.loader > div:nth-child(2) {\n  animation: anm-BL-53-move2 1s infinite linear;\n  animation-delay: 0.2s;\n}\n\n.loader > div:nth-child(3) {\n  animation: anm-BL-53-move3 1s infinite linear;\n  animation-delay: 0.3s;\n}\n\n.loader > div:nth-child(4) {\n  animation: anm-BL-53-move4 1s infinite linear;\n  animation-delay: 0.4s;\n}\n\n.loader > div:nth-child(5) {\n  animation: anm-BL-53-move5 1s infinite linear;\n  animation-delay: 0.5s;\n}\n\n@keyframes anm-BL-53-move1 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move2 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move3 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move4 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n\n@keyframes anm-BL-53-move5 {\n  50% {\n    background: #FFBB00;\n    transform: scale(1);\n  }\n}\n  \n\n",
+    "component_name": "GalaxyHeavyCrab98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1397,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.392Z",
+  "updated_at": "2025-07-31T07:55:39.392Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "pruthivithejan_horrible-emu-23",
+  "name": "horrible-emu-23",
+  "category": "buttons",
+  "author": "pruthivithejan",
+  "description": "horrible-emu-23 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"w-screen h-screen bg-[#fafafa]\">\n  <div class=\"flex justify-center items-center gap-12 h-full\">\n    <div class=\"bg-gradient-to-b from-stone-300/40 to-transparent p-[4px] rounded-[16px]\">\n      <button class=\"group p-[4px] rounded-[12px] bg-gradient-to-b from-white to-stone-200/40 shadow-[0_1px_3px_rgba(0,0,0,0.5)] active:shadow-[0_0px_1px_rgba(0,0,0,0.5)] active:scale-[0.995]\">\n        <div class=\"bg-gradient-to-b from-stone-200/40 to-white/80 rounded-[8px] px-2 py-2\">\n          <div class=\"flex gap-2 items-center font-sans\">\n            <span class=\"font-semibold\">Get Started</span>\n          </div>\n        </div>\n      </button>\n    </div>\n  </div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/pruthivithejan_horrible-emu-23.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"w-screen h-screen bg-[#fafafa]\"></view>\n  <view class=\"flex justify-center items-center gap-12 h-full\"></view>\n    <view class=\"bg-gradient-to-b from-stone-300/40 to-transparent p-[4px] rounded-[16px]\"></view>\n      <button class=\"group p-[4px] rounded-[12px] bg-gradient-to-b from-white to-stone-200/40 shadow-[0_1px_3px_rgba(0,0,0,0.5)] active:shadow-[0_0px_1px_rgba(0,0,0,0.5)] active:scale-[0.995]\"></button>\n        <view class=\"bg-gradient-to-b from-stone-200/40 to-white/80 rounded-[8px] px-2 py-2\"></view>\n          <view class=\"flex gap-2 items-center font-sans\"></view>\n            <text class=\"font-semibold\">Get Started</text>\n          </div>\n        </div>\n      </button>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyHorribleEmu23',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyHorribleEmu23"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 684,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.608Z",
+  "updated_at": "2025-07-31T07:55:37.608Z"
+}

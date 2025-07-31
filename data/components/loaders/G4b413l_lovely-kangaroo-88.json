@@ -1,0 +1,89 @@
+{
+  "id": "G4b413l_lovely-kangaroo-88",
+  "name": "lovely-kangaroo-88",
+  "category": "loaders",
+  "author": "G4b413l",
+  "description": "lovely-kangaroo-88 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"jelly-triangle\">\n<div class=\"jelly-triangle__dot\"></div>\n<div class=\"jelly-triangle__traveler\"></div>\n</div>\n<svg width=\"0\" height=\"0\" class=\"jelly-maker\">\n  <defs>\n    <filter id=\"uib-jelly-triangle-ooze\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"7.3\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"ooze\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"ooze\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "css": "/* From Uiverse.io by G4b413l - Tags: loader */\n.jelly-triangle {\n --uib-size: 42px;\n --uib-speed: 1.25s;\n --uib-color: #512727;\n position: relative;\n height: var(--uib-size);\n width: var(--uib-size);\n filter: url('#uib-jelly-triangle-ooze');\n}\n\n.jelly-triangle__dot,\n.jelly-triangle::before,\n.jelly-triangle::after {\n content: '';\n position: absolute;\n width: 33%;\n height: 33%;\n background: var(--uib-color);\n border-radius: 100%;\n}\n\n.jelly-triangle__dot {\n top: 6%;\n left: 30%;\n animation: grow0 var(--uib-speed) ease infinite;\n}\n\n.jelly-triangle::before {\n bottom: 6%;\n right: 0;\n animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)\n    infinite;\n}\n\n.jelly-triangle::after {\n bottom: 6%;\n left: 0;\n animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)\n    infinite;\n}\n\n.jelly-triangle__traveler {\n position: absolute;\n top: 6%;\n left: 30%;\n width: 33%;\n height: 33%;\n background: var(--uib-color);\n border-radius: 100%;\n animation: triangulate var(--uib-speed) ease infinite;\n}\n\n.jelly-maker {\n width: 0;\n height: 0;\n position: absolute;\n}\n\n@keyframes triangulate {\n 0%,\n  100% {\n  transform: none;\n }\n\n 33.333% {\n  transform: translate(120%, 175%);\n }\n\n 66.666% {\n  transform: translate(-95%, 175%);\n }\n}\n\n@keyframes grow0 {\n 0%,\n  100% {\n  transform: scale(1.5);\n }\n\n 20%,\n  70% {\n  transform: none;\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/G4b413l_lovely-kangaroo-88.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"jelly-triangle\"></view>\n<view class=\"jelly-triangle__dot\"></view>\n<view class=\"jelly-triangle__traveler\"></view>\n</div>\n<view width=\"0\" height=\"0\" class=\"jelly-maker\"></view>\n  <defs>\n    <filter id=\"uib-jelly-triangle-ooze\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"7.3\" result=\"blur\"></feGaussianBlur>\n      <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"ooze\"></feColorMatrix>\n      <feBlend in=\"SourceGraphic\" in2=\"ooze\"></feBlend>\n    </filter>\n  </defs>\n</svg>",
+    "script": "export default {\n  name: 'GalaxyLovelyKangaroo88',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by G4b413l - Tags: loader */\n.jelly-triangle {\n --uib-size: 84rpx;\n --uib-speed: 1.25s;\n --uib-color: #512727;\n position: relative;\n height: var(--uib-size);\n width: var(--uib-size);\n \n}\n\n.jelly-triangle__dot,\n.jelly-triangle::before,\n.jelly-triangle::after {\n content: '';\n position: absolute;\n width: 33%;\n height: 33%;\n background: var(--uib-color);\n border-radius: 100%;\n}\n\n.jelly-triangle__dot {\n top: 6%;\n left: 30%;\n animation: grow0 var(--uib-speed) ease infinite;\n}\n\n.jelly-triangle::before {\n bottom: 6%;\n right: 0;\n animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)\n    infinite;\n}\n\n.jelly-triangle::after {\n bottom: 6%;\n left: 0;\n animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)\n    infinite;\n}\n\n.jelly-triangle__traveler {\n position: absolute;\n top: 6%;\n left: 30%;\n width: 33%;\n height: 33%;\n background: var(--uib-color);\n border-radius: 100%;\n animation: triangulate var(--uib-speed) ease infinite;\n}\n\n.jelly-maker {\n width: 0;\n height: 0;\n position: absolute;\n}\n\n@keyframes triangulate {\n 0%,\n  100% {\n  transform: none;\n }\n\n 33.333% {\n  transform: translate(120%, 175%);\n }\n\n 66.666% {\n  transform: translate(-95%, 175%);\n }\n}\n\n@keyframes grow0 {\n 0%,\n  100% {\n  transform: scale(1.5);\n }\n\n 20%,\n  70% {\n  transform: none;\n }\n}\n",
+    "component_name": "GalaxyLovelyKangaroo88"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1878,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.298Z",
+  "updated_at": "2025-07-31T07:55:39.298Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "PriyanshuGupta28_little-zebra-36",
+  "name": "little-zebra-36",
+  "category": "loaders",
+  "author": "PriyanshuGupta28",
+  "description": "little-zebra-36 组件 (loader, 3d loader, 3d cude loader, animation, gradient)",
+  "tags": [
+    "loader",
+    "3d loader",
+    "3d cude loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"cube\">\n    <div class=\"side front\"></div>\n    <div class=\"side back\"></div>\n    <div class=\"side top\"></div>\n    <div class=\"side bottom\"></div>\n    <div class=\"side left\"></div>\n    <div class=\"side right\"></div>\n  </div>\n\n</div>",
+    "css": "/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, 3d loader, 3d cude loader */\n.loader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n}\n\n.cube {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: spin 2s infinite linear;\n}\n\n.side {\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  opacity: 0.8;\n}\n\n.front {\n  transform: translateZ(50px);\n  background: linear-gradient(45deg, #ff4e50, #f9d423);\n}\n\n.back {\n  transform: translateZ(-50px);\n  background: linear-gradient(45deg, #40e0d0, #ff8c00);\n}\n\n.top {\n  transform: rotateX(90deg) translateZ(50px);\n  background: linear-gradient(45deg, #800080, #00bfff);\n}\n\n.bottom {\n  transform: rotateX(90deg) translateZ(-50px);\n  background: linear-gradient(45deg, #008000, #ffff00);\n}\n\n.left {\n  transform: rotateY(90deg) translateZ(50px);\n  background: linear-gradient(45deg, #0000ff, #ff1493);\n}\n\n.right {\n  transform: rotateY(90deg) translateZ(-50px);\n  background: linear-gradient(45deg, #00ffff, #ff0000);\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/PriyanshuGupta28_little-zebra-36.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"cube\"></view>\n    <view class=\"side front\"></view>\n    <view class=\"side back\"></view>\n    <view class=\"side top\"></view>\n    <view class=\"side bottom\"></view>\n    <view class=\"side left\"></view>\n    <view class=\"side right\"></view>\n  </div>\n\n</div>",
+    "script": "export default {\n  name: 'GalaxyLittleZebra36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, 3d loader, 3d cude loader */\n.loader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n}\n\n.cube {\n  width: 200rpx;\n  height: 200rpx;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: spin 2s infinite linear;\n}\n\n.side {\n  position: absolute;\n  width: 200rpx;\n  height: 200rpx;\n  opacity: 0.8;\n}\n\n.front {\n  transform: translateZ(100rpx);\n  background: linear-gradient(45deg, #ff4e50, #f9d423);\n}\n\n.back {\n  transform: translateZ(-100rpx);\n  background: linear-gradient(45deg, #40e0d0, #ff8c00);\n}\n\n.top {\n  transform: rotateX(90deg) translateZ(100rpx);\n  background: linear-gradient(45deg, #800080, #00bfff);\n}\n\n.bottom {\n  transform: rotateX(90deg) translateZ(-100rpx);\n  background: linear-gradient(45deg, #008000, #ffff00);\n}\n\n.left {\n  transform: rotateY(90deg) translateZ(100rpx);\n  background: linear-gradient(45deg, #0000ff, #ff1493);\n}\n\n.right {\n  transform: rotateY(90deg) translateZ(-100rpx);\n  background: linear-gradient(45deg, #00ffff, #ff0000);\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}\n",
+    "component_name": "GalaxyLittleZebra36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1459,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.131Z",
+  "updated_at": "2025-07-31T07:55:40.131Z"
+}

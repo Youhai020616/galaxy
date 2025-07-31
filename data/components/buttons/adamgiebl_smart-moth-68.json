@@ -1,0 +1,111 @@
+{
+  "id": "adamgiebl_smart-moth-68",
+  "name": "smart-moth-68",
+  "category": "buttons",
+  "author": "adamgiebl",
+  "description": "smart-moth-68 组件 (icon, animation, button, send, fly, interactive)",
+  "tags": [
+    "icon",
+    "animation",
+    "button",
+    "send",
+    "fly",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <div class=\"svg-wrapper-1\">\n    <div class=\"svg-wrapper\">\n      <svg height=\"24\" width=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n        <path d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\" fill=\"currentColor\"></path>\n      </svg>\n    </div>\n  </div>\n  <span>Send</span>\n</button>",
+    "css": "/* From Uiverse.io by adamgiebl - Tags: icon, animation, button, send, fly */\nbutton {\n  font-family: inherit;\n  font-size: 20px;\n  background: royalblue;\n  color: white;\n  padding: 0.7em 1em;\n  padding-left: 0.9em;\n  display: flex;\n  align-items: center;\n  border: none;\n  border-radius: 16px;\n  overflow: hidden;\n  transition: all 0.2s;\n}\n\nbutton span {\n  display: block;\n  margin-left: 0.3em;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\nbutton:hover .svg-wrapper {\n  animation: fly-1 0.6s ease-in-out infinite alternate;\n}\n\nbutton:hover svg {\n  transform: translateX(1.2em) rotate(45deg) scale(1.1);\n}\n\nbutton:hover span {\n  transform: translateX(5em);\n}\n\nbutton:active {\n  transform: scale(0.95);\n}\n\n@keyframes fly-1 {\n  from {\n    transform: translateY(0.1em);\n  }\n\n  to {\n    transform: translateY(-0.1em);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/adamgiebl_smart-moth-68.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <view class=\"svg-wrapper-1\"></view>\n    <view class=\"svg-wrapper\"></view>\n      <view height=\"24\" width=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n        <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n        <path d=\"M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z\" fill=\"currentColor\"></path>\n      </svg>\n    </div>\n  </div>\n  <text>Send</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxySmartMoth68',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by adamgiebl - Tags: icon, animation, button, send, fly */\nbutton {\n  font-family: inherit;\n  font-size: 40rpx;\n  background: royalblue;\n  color: white;\n  padding: 0.7em 1em;\n  padding-left: 0.9em;\n  display: flex;\n  align-items: center;\n  border: none;\n  border-radius: 32rpx;\n  overflow: hidden;\n  transition: all 0.2s;\n}\n\nbutton span {\n  display: block;\n  margin-left: 0.3em;\n  transition: all 0.3s ease-in-out;\n}\n\nbutton svg {\n  display: block;\n  transform-origin: center center;\n  transition: transform 0.3s ease-in-out;\n}\n\nbutton:hover .svg-wrapper {\n  animation: fly-1 0.6s ease-in-out infinite alternate;\n}\n\nbutton:hover svg {\n  transform: translateX(1.2em) rotate(45deg) scale(1.1);\n}\n\nbutton:hover span {\n  transform: translateX(5em);\n}\n\nbutton:active {\n  transform: scale(0.95);\n}\n\n@keyframes fly-1 {\n  from {\n    transform: translateY(0.1em);\n  }\n\n  to {\n    transform: translateY(-0.1em);\n  }\n}\n\n\n",
+    "component_name": "GalaxySmartMoth68"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1397,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.502Z",
+  "updated_at": "2025-07-31T07:55:35.502Z"
+}

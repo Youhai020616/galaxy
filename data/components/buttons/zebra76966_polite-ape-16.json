@@ -1,0 +1,118 @@
+{
+  "id": "zebra76966_polite-ape-16",
+  "name": "polite-ape-16",
+  "category": "buttons",
+  "author": "zebra76966",
+  "description": "polite-ape-16 组件 (animation, gradient, button, click animation, interactive)",
+  "tags": [
+    "animation",
+    "gradient",
+    "button",
+    "click animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"rainbow-btn\">\n  <div class=\"content\">\n    <svg viewBox=\"0 0 16 16\" class=\"bi bi-lightning-charge-fill\" fill=\"currentColor\" height=\"25\" width=\"25\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z\"></path>\n    </svg>\n\n    Join now\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by zebra76966  - Tags: animation, gradient, button, click animation */\n.rainbow-btn {\n  border: 2px;\n  border-radius: 35px;\n  width: 18em;\n  font-size: 2rem;\n  padding: 28px 28px;\n  color: black;\n  background: transparent;\n  position: relative;\n  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);\n  transition: all 0.3s ease-in-out;\n  cursor: pointer;\n}\n\n.rainbow-btn::before {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: -1;\n  content: \"\";\n  height: 4.3em;\n  border-radius: 35px;\n  width: 18em;\n  filter: blur(1px);\n  background: radial-gradient(\n      at 0% 0%,\n      hsla(312, 66%, 67%, 1) 0px,\n      transparent 50%\n    ),\n    radial-gradient(at 28% 79%, hsla(355, 80%, 64%, 1) 0px, transparent 50%),\n    radial-gradient(at 100% 1%, hsla(279, 96%, 65%, 1) 0px, transparent 50%),\n    radial-gradient(at 5% 91%, hsla(289, 80%, 70%, 1) 0px, transparent 50%),\n    radial-gradient(at 50% 37%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),\n    radial-gradient(at 27% 38%, hsla(189, 0%, 100%, 1) 0px, transparent 50%),\n    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),\n    radial-gradient(at 64% 78%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),\n    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),\n    radial-gradient(at 72% 55%, hsla(240, 68%, 97%, 1) 0px, transparent 50%),\n    radial-gradient(at 51% 14%, hsla(28, 100%, 74%, 1) 0px, transparent 50%);\n}\n\n.rainbow-btn .content {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 20px 8px;\n  font-weight: 500;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n  border-radius: 25px;\n  box-shadow: inset 0 0 1px 2px rgba(255, 255, 255, 0.712);\n}\n.rainbow-btn .content::before {\n  content: \" \";\n  border: 10px double rgba(247, 201, 232, 0.5);\n  border-radius: 35px;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 17em;\n  height: 3em;\n  padding: 10px 8px;\n  position: absolute;\n  z-index: 2;\n}\n\n.rainbow-btn .content svg {\n  margin-right: 10px;\n}\n\n.rainbow-btn:hover {\n  scale: 1.1;\n}\n.rainbow-btn:focus {\n  scale: 0.9;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/zebra76966_polite-ape-16.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"rainbow-btn\"></button>\n  <view class=\"content\"></view>\n    <view viewBox=\"0 0 16 16\" class=\"bi bi-lightning-charge-fill\" fill=\"currentColor\" height=\"25\" width=\"25\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n      <path d=\"M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z\"></path>\n    </svg>\n\n    Join now\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPoliteApe16',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by zebra76966  - Tags: animation, gradient, button, click animation */\n.rainbow-btn {\n  border: 4rpx;\n  border-radius: 70rpx;\n  width: 18em;\n  font-size: 2rem;\n  padding: 56rpx 56rpx;\n  color: black;\n  background: transparent;\n  position: relative;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transition: all 0.3s ease-in-out;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.rainbow-btn::before {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: -1;\n  content: \"\";\n  height: 4.3em;\n  border-radius: 70rpx;\n  width: 18em;\n  \n  background: radial-gradient(\n      at 0% 0%,\n      hsla(312, 66%, 67%, 1) 0rpx,\n      transparent 50%\n    ),\n    radial-gradient(at 28% 79%, hsla(355, 80%, 64%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 100% 1%, hsla(279, 96%, 65%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 5% 91%, hsla(289, 80%, 70%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 50% 37%, hsla(28, 100%, 74%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 27% 38%, hsla(189, 0%, 100%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 64% 78%, hsla(340, 100%, 76%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 72% 55%, hsla(240, 68%, 97%, 1) 0rpx, transparent 50%),\n    radial-gradient(at 51% 14%, hsla(28, 100%, 74%, 1) 0rpx, transparent 50%);\n}\n\n.rainbow-btn .content {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 40rpx 16rpx;\n  font-weight: 500;\n  border: 6rpx solid rgba(255, 255, 255, 0.2);\n  border-radius: 50rpx;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 0 2rpx 4rpx rgba(255, 255, 255, 0.712);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n.rainbow-btn .content::before {\n  content: \" \";\n  border: 20rpx double rgba(247, 201, 232, 0.5);\n  border-radius: 70rpx;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 17em;\n  height: 3em;\n  padding: 20rpx 16rpx;\n  position: absolute;\n  z-index: 2;\n}\n\n.rainbow-btn .content svg {\n  margin-right: 20rpx;\n}\n\n.rainbow-btn:hover {\n  scale: 1.1;\n}\n.rainbow-btn:focus {\n  scale: 0.9;\n}\n\n",
+    "component_name": "GalaxyPoliteApe16"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2556,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.442Z",
+  "updated_at": "2025-07-31T07:55:38.442Z"
+}

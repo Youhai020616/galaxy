@@ -1,0 +1,115 @@
+{
+  "id": "AKAspidey01_jolly-tiger-60",
+  "name": "jolly-tiger-60",
+  "category": "buttons",
+  "author": "AKAspidey01",
+  "description": "jolly-tiger-60 组件 (neumorphism, flashy, button, gradient)",
+  "tags": [
+    "neumorphism",
+    "flashy",
+    "button",
+    "gradient"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <div class=\"button-inner-curve\">\n    <div class=\"icon\">\n      <svg class=\"\" xml:space=\"preserve\" style=\"enable-background:new 0 0 512 512\" viewBox=\"0 0 24 24\" y=\"0\" x=\"0\" height=\"20\" width=\"20\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g>\n          <g fill=\"#000\">\n            <path class=\"\" data-original=\"#000000\" opacity=\"1\" fill=\"#000000\" d=\"M14.22 21.63c-1.18 0-2.85-.83-4.17-4.8l-.72-2.16-2.16-.72c-3.96-1.32-4.79-2.99-4.79-4.17 0-1.17.83-2.85 4.79-4.18l8.49-2.83c2.12-.71 3.89-.5 4.98.58s1.3 2.86.59 4.98l-2.83 8.49c-1.33 3.98-3 4.81-4.18 4.81zM7.64 7.03c-2.78.93-3.77 2.03-3.77 2.75 0 .72.99 1.82 3.77 2.74l2.52.84c.22.07.4.25.47.47l.84 2.52c.92 2.78 2.03 3.77 2.75 3.77s1.82-.99 2.75-3.77l2.83-8.49c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22z\"></path>\n            <path class=\"\" data-original=\"#000000\" opacity=\"1\" fill=\"#000000\" d=\"M10.11 14.4c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06l3.58-3.59c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-3.58 3.59c-.14.15-.34.22-.53.22z\"></path>\n          </g>\n        </g>\n      </svg>\n    </div>\n    <p>Send Message</p>\n  </div>\n</button>",
+    "css": "/* From Uiverse.io by AKAspidey01  - Tags: neumorphism, flashy, button */\n.button {\n  cursor: pointer;\n  background: linear-gradient(145deg, #f0f0f0, #cacaca);\n  box-shadow: 5px 5px 21px #bababa, -5px -5px 21px #ffffff;\n  padding: 5px 5px;\n  border-radius: 12px;\n  border: 1px solid #000000bc;\n}\n.button-inner-curve {\n  border-radius: 50px;\n  background: #e0e0e0;\n  background: linear-gradient(145deg, #cacaca, #f0f0f0);\n  box-shadow: inset 5px 5px 15px #bababa, inset -5px -5px 15px #ffffff;\n  display: flex;\n  padding: 12px 15px 10px 15px;\n  align-items: center;\n  justify-content: center;\n  gap: 5px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/AKAspidey01_jolly-tiger-60.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <view class=\"button-inner-curve\"></view>\n    <view class=\"icon\"></view>\n      <view class=\"\" xml:space=\"preserve\" style=\"enable-background:new 0 0 512 512\" viewBox=\"0 0 24 24\" y=\"0\" x=\"0\" height=\"20\" width=\"20\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"></view>\n        <g>\n          <g fill=\"#000\">\n            <path class=\"\" data-original=\"#000000\" opacity=\"1\" fill=\"#000000\" d=\"M14.22 21.63c-1.18 0-2.85-.83-4.17-4.8l-.72-2.16-2.16-.72c-3.96-1.32-4.79-2.99-4.79-4.17 0-1.17.83-2.85 4.79-4.18l8.49-2.83c2.12-.71 3.89-.5 4.98.58s1.3 2.86.59 4.98l-2.83 8.49c-1.33 3.98-3 4.81-4.18 4.81zM7.64 7.03c-2.78.93-3.77 2.03-3.77 2.75 0 .72.99 1.82 3.77 2.74l2.52.84c.22.07.4.25.47.47l.84 2.52c.92 2.78 2.03 3.77 2.75 3.77s1.82-.99 2.75-3.77l2.83-8.49c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22z\"></path>\n            <path class=\"\" data-original=\"#000000\" opacity=\"1\" fill=\"#000000\" d=\"M10.11 14.4c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06l3.58-3.59c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-3.58 3.59c-.14.15-.34.22-.53.22z\"></path>\n          </g>\n        </g>\n      </svg>\n    </div>\n    <text>Send Message</text>\n  </div>\n</button>",
+    "script": "export default {\n  name: 'GalaxyJollyTiger60',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by AKAspidey01  - Tags: neumorphism, flashy, button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background: linear-gradient(145deg, #f0f0f0, #cacaca);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 42rpx #bababa, -10rpx -10rpx 42rpx #ffffff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  padding: 10rpx 10rpx;\n  border-radius: 24rpx;\n  border: 2rpx solid #000000bc;\n}\n.button-inner-curve {\n  border-radius: 100rpx;\n  background: #e0e0e0;\n  background: linear-gradient(145deg, #cacaca, #f0f0f0);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 10rpx 10rpx 30rpx #bababa, inset -10rpx -10rpx 30rpx #ffffff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  display: flex;\n  padding: 24rpx 30rpx 20rpx 30rpx;\n  align-items: center;\n  justify-content: center;\n  gap: 10rpx;\n}\n\n",
+    "component_name": "GalaxyJollyTiger60"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1784,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.471Z",
+  "updated_at": "2025-07-31T07:55:32.471Z"
+}

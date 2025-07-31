@@ -1,0 +1,267 @@
+{
+  "name": "galaxy-uniapp-mcp",
+  "version": "1.0.0",
+  "description": "Galaxy组件库到UniApp组件转换MCP服务",
+  "author": "Galaxy UniApp Team",
+  "license": "MIT",
+  "mcp": {
+    "server": {
+      "command": "node",
+      "args": ["mcp-server.js"],
+      "env": {}
+    },
+    "tools": [
+      {
+        "name": "analyze_uniapp_compatibility",
+        "description": "分析Galaxy组件在UniApp各平台的兼容性",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "component_id": {
+              "type": "string",
+              "description": "Galaxy组件ID"
+            },
+            "target_platforms": {
+              "type": "array",
+              "items": {
+                "enum": ["H5", "MP-WEIXIN", "MP-ALIPAY", "MP-BAIDU", "MP-TOUTIAO", "APP-PLUS"]
+              },
+              "description": "目标平台列表",
+              "default": ["H5", "MP-WEIXIN", "MP-ALIPAY", "APP-PLUS"]
+            },
+            "check_performance": {
+              "type": "boolean",
+              "description": "是否检查性能影响",
+              "default": true
+            }
+          },
+          "required": ["component_id"]
+        }
+      },
+      {
+        "name": "convert_to_uniapp_component",
+        "description": "将Galaxy组件转换为UniApp跨平台组件",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "component_id": {
+              "type": "string",
+              "description": "Galaxy组件ID"
+            },
+            "target_platforms": {
+              "type": "array",
+              "description": "目标平台",
+              "default": ["H5", "MP-WEIXIN", "MP-ALIPAY", "APP-PLUS"]
+            },
+            "design_width": {
+              "type": "number",
+              "description": "设计稿宽度(rpx)",
+              "default": 750
+            },
+            "enable_conditions": {
+              "type": "boolean",
+              "description": "启用条件编译",
+              "default": true
+            },
+            "optimize_for_mp": {
+              "type": "boolean",
+              "description": "小程序优化",
+              "default": true
+            },
+            "component_name": {
+              "type": "string",
+              "description": "自定义组件名称"
+            },
+            "props_config": {
+              "type": "object",
+              "description": "Props配置"
+            }
+          },
+          "required": ["component_id"]
+        }
+      },
+      {
+        "name": "search_uniapp_components",
+        "description": "搜索适合UniApp的Galaxy组件",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "搜索关键词"
+            },
+            "category": {
+              "type": "string",
+              "enum": ["buttons", "tooltips", "loaders"],
+              "description": "组件分类"
+            },
+            "author": {
+              "type": "string",
+              "description": "作者名称"
+            },
+            "tags": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "标签列表"
+            },
+            "platforms": {
+              "type": "array",
+              "items": {"enum": ["H5", "MP-WEIXIN", "MP-ALIPAY", "APP-PLUS"]},
+              "description": "支持的平台"
+            },
+            "complexity": {
+              "type": "string",
+              "enum": ["low", "medium", "high"],
+              "description": "复杂度级别"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "返回结果数量",
+              "default": 10,
+              "minimum": 1,
+              "maximum": 100
+            },
+            "offset": {
+              "type": "integer",
+              "description": "分页偏移量",
+              "default": 0,
+              "minimum": 0
+            }
+          }
+        }
+      },
+      {
+        "name": "generate_uniapp_project_integration",
+        "description": "生成UniApp项目集成代码和配置",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "要集成的组件ID列表"
+            },
+            "project_structure": {
+              "type": "object",
+              "description": "项目结构信息"
+            },
+            "global_styles": {
+              "type": "boolean",
+              "description": "是否生成全局样式",
+              "default": false
+            },
+            "auto_import": {
+              "type": "boolean",
+              "description": "是否启用自动导入",
+              "default": true
+            }
+          },
+          "required": ["components"]
+        }
+      },
+      {
+        "name": "list_available_components",
+        "description": "列出所有可用的Galaxy组件，支持排序和过滤",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["buttons", "tooltips", "loaders"],
+              "description": "按分类过滤"
+            },
+            "author": {
+              "type": "string",
+              "description": "按作者过滤"
+            },
+            "sort_by": {
+              "type": "string",
+              "enum": ["name", "author", "category", "created_at", "complexity"],
+              "description": "排序字段",
+              "default": "name"
+            },
+            "sort_order": {
+              "type": "string",
+              "enum": ["asc", "desc"],
+              "description": "排序顺序",
+              "default": "asc"
+            },
+            "include_stats": {
+              "type": "boolean",
+              "description": "是否包含统计信息",
+              "default": true
+            },
+            "include_preview": {
+              "type": "boolean",
+              "description": "是否包含预览链接",
+              "default": false
+            },
+            "limit": {
+              "type": "integer",
+              "description": "返回结果数量",
+              "default": 50,
+              "minimum": 1,
+              "maximum": 200
+            },
+            "offset": {
+              "type": "integer",
+              "description": "分页偏移量",
+              "default": 0,
+              "minimum": 0
+            }
+          }
+        }
+      },
+      {
+        "name": "get_component_details",
+        "description": "获取指定组件的详细信息",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "component_id": {
+              "type": "string",
+              "description": "组件ID"
+            },
+            "include_code": {
+              "type": "boolean",
+              "description": "是否包含源代码",
+              "default": false
+            },
+            "include_usage": {
+              "type": "boolean",
+              "description": "是否包含使用示例",
+              "default": true
+            }
+          },
+          "required": ["component_id"]
+        }
+      }
+    ],
+    "resources": [
+      {
+        "uri": "galaxy://components",
+        "name": "Galaxy组件库",
+        "description": "访问Galaxy组件库中的所有组件"
+      },
+      {
+        "uri": "galaxy://metadata",
+        "name": "组件元数据",
+        "description": "访问组件的元数据信息"
+      }
+    ]
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false,
+    "logging": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galaxy/uniapp-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/galaxy/uniapp-mcp/issues"
+  },
+  "homepage": "https://github.com/galaxy/uniapp-mcp#readme"
+}

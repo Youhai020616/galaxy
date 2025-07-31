@@ -1,0 +1,91 @@
+{
+  "id": "aadium_bright-lion-66",
+  "name": "bright-lion-66",
+  "category": "loaders",
+  "author": "aadium",
+  "description": "bright-lion-66 组件 (loader, glow, neon, animation)",
+  "tags": [
+    "loader",
+    "glow",
+    "neon",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div class=\"cover\"></div>\n</div>",
+    "css": "/* From Uiverse.io by aadium - Tags: loader, glow, neon */\n.loader {\n  width: 100px;\n  height: 100px;\n  background-image: #212121;\n  box-shadow: 0px 5px 10px #7fe8ff, 0px -5px 10px #99ff33, 5px 0px 10px#4cffb4, -5px 0px 10px #4cffb4,\n  inset 0px 5px 10px #99ff33, inset 0px -5px 10px #7fe8ff, inset 5px 0px 10px#4cffb4, inset -5px 0px 10px #4cffb4;\n  border-radius: 7em;\n  position: relative;\n  animation: rotate 1s linear infinite;\n}\n\n@keyframes rotate {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/aadium_bright-lion-66.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view class=\"cover\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBrightLion66',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by aadium - Tags: loader, glow, neon */\n.loader {\n  width: 200rpx;\n  height: 200rpx;\n  background-image: #212121;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 10rpx 20rpx #7fe8ff, 0rpx -10rpx 20rpx #99ff33, 10rpx 0rpx 20rpx#4cffb4, -10rpx 0rpx 20rpx #4cffb4,\n  inset 0rpx 10rpx 20rpx #99ff33, inset 0rpx -10rpx 20rpx #7fe8ff, inset 10rpx 0rpx 20rpx#4cffb4, inset -10rpx 0rpx 20rpx #4cffb4;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 7em;\n  position: relative;\n  animation: rotate 1s linear infinite;\n}\n\n@keyframes rotate {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyBrightLion66"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 602,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.849Z",
+  "updated_at": "2025-07-31T07:55:40.849Z"
+}

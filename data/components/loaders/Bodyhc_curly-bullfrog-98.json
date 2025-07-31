@@ -1,0 +1,89 @@
+{
+  "id": "Bodyhc_curly-bullfrog-98",
+  "name": "curly-bullfrog-98",
+  "category": "loaders",
+  "author": "Bodyhc",
+  "description": "curly-bullfrog-98 组件 (loading, loader, cube, loading animation, 3d loader, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "cube",
+    "loading animation",
+    "3d loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"wrapper\">\n  <div class=\"cube\">\n    <div class=\"side front\"></div>\n    <div class=\"side back\"></div>\n    <div class=\"side top\"></div>\n    <div class=\"side bottom\"></div>\n    <div class=\"side left\"></div>\n    <div class=\"side right\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by Bodyhc  - Tags: loading, loader, cube, loading animation, 3d loader */\n.wrapper {\n  perspective: 1000px;\n}\n.cube {\n  position: relative;\n  width: 200px;\n  height: 200px;\n  transform-style: preserve-3d;\n  animation: animate 4s linear infinite;\n}\n.side {\n  position: absolute;\n  width: 200px;\n  height: 200px;\n  display: grid;\n  background-color: #01b4f9;\n  border-radius: 10px;\n  place-content: center;\n  border: 3px solid #fff;\n}\n\n.front {\n  transform: translateZ(100px);\n}\n.back {\n  transform: rotateY(180deg) translateZ(100px);\n}\n.top {\n  transform: rotateX(90deg) translateZ(100px);\n}\n.bottom {\n  transform: rotateX(-90deg) translateZ(100px);\n}\n.left {\n  transform: rotateY(-90deg) translateZ(100px);\n}\n.right {\n  transform: rotateY(90deg) translateZ(100px);\n}\n\n@keyframes animate {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Bodyhc_curly-bullfrog-98.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"wrapper\"></view>\n  <view class=\"cube\"></view>\n    <view class=\"side front\"></view>\n    <view class=\"side back\"></view>\n    <view class=\"side top\"></view>\n    <view class=\"side bottom\"></view>\n    <view class=\"side left\"></view>\n    <view class=\"side right\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyCurlyBullfrog98',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Bodyhc  - Tags: loading, loader, cube, loading animation, 3d loader */\n.wrapper {\n  perspective: 2000rpx;\n}\n.cube {\n  position: relative;\n  width: 400rpx;\n  height: 400rpx;\n  transform-style: preserve-3d;\n  animation: animate 4s linear infinite;\n}\n.side {\n  position: absolute;\n  width: 400rpx;\n  height: 400rpx;\n  display: grid;\n  background-color: #01b4f9;\n  border-radius: 20rpx;\n  place-content: center;\n  border: 6rpx solid #fff;\n}\n\n.front {\n  transform: translateZ(200rpx);\n}\n.back {\n  transform: rotateY(180deg) translateZ(200rpx);\n}\n.top {\n  transform: rotateX(90deg) translateZ(200rpx);\n}\n.bottom {\n  transform: rotateX(-90deg) translateZ(200rpx);\n}\n.left {\n  transform: rotateY(-90deg) translateZ(200rpx);\n}\n.right {\n  transform: rotateY(90deg) translateZ(200rpx);\n}\n\n@keyframes animate {\n  0% {\n    transform: rotateX(0deg) rotateY(0deg);\n  }\n  100% {\n    transform: rotateX(360deg) rotateY(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyCurlyBullfrog98"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1200,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.010Z",
+  "updated_at": "2025-07-31T07:55:39.010Z"
+}

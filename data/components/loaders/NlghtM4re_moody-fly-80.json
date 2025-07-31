@@ -1,0 +1,94 @@
+{
+  "id": "NlghtM4re_moody-fly-80",
+  "name": "moody-fly-80",
+  "category": "loaders",
+  "author": "NlghtM4re",
+  "description": "moody-fly-80 组件 (blue, loader, smooth, shadow, glow, neon, animation)",
+  "tags": [
+    "blue",
+    "loader",
+    "smooth",
+    "shadow",
+    "glow",
+    "neon",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"container\">\n  <div class=\"top\">\n    <div class=\"square\">\n      <div class=\"square\">\n        <div class=\"square\">\n          <div class=\"square\">\n            <div class=\"square\"><div class=\"square\">\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"bottom\">\n    <div class=\"square\">\n      <div class=\"square\">\n        <div class=\"square\">\n          <div class=\"square\">\n            <div class=\"square\"><div class=\"square\">\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"left\">\n    <div class=\"square\">\n      <div class=\"square\">\n        <div class=\"square\">\n          <div class=\"square\">\n            <div class=\"square\"><div class=\"square\">\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"right\">\n    <div class=\"square\">\n      <div class=\"square\">\n        <div class=\"square\">\n          <div class=\"square\">\n            <div class=\"square\"><div class=\"square\">\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by NlghtM4re - Tags: blue, loader, smooth, shadow, glow, neon */\n.container {\n  position: absolute;\n  top: 45%;\n  left: 48%;\n}\n\n.square {\n  width: 8px;\n  height: 30px;\n  background: rgb(71, 195, 248);\n  border-radius: 10px;\n  display: block;\n  /*margin:10px;*/\n  -webkit-animation: turn 2.5s ease infinite;\n  animation: turn 2.5s ease infinite;\n  box-shadow: rgb(71, 195, 248) 0px 1px 15px 0px;\n}\n\n.top {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n\n.bottom {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n  -webkit-transform: rotate(-90deg);\n  transform: rotate(-90deg);\n}\n\n.left {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n}\n\n.right {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n  -webkit-transform: rotate(-180deg);\n  transform: rotate(-180deg);\n}\n\n@-webkit-keyframes turn {\n  0% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n\n  50% {\n    transform: translateX(400%) translateY(100%) rotate(90deg);\n  }\n\n  100% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n}\n\n@keyframes turn {\n  0% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n\n  70% {\n    transform: translateX(400%) translateY(100%) rotate(90deg);\n  }\n\n  100% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/NlghtM4re_moody-fly-80.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"container\"></view>\n  <view class=\"top\"></view>\n    <view class=\"square\"></view>\n      <view class=\"square\"></view>\n        <view class=\"square\"></view>\n          <view class=\"square\"></view>\n            <view class=\"square\"></view><view class=\"square\"></view>\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <view class=\"bottom\"></view>\n    <view class=\"square\"></view>\n      <view class=\"square\"></view>\n        <view class=\"square\"></view>\n          <view class=\"square\"></view>\n            <view class=\"square\"></view><view class=\"square\"></view>\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <view class=\"left\"></view>\n    <view class=\"square\"></view>\n      <view class=\"square\"></view>\n        <view class=\"square\"></view>\n          <view class=\"square\"></view>\n            <view class=\"square\"></view><view class=\"square\"></view>\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <view class=\"right\"></view>\n    <view class=\"square\"></view>\n      <view class=\"square\"></view>\n        <view class=\"square\"></view>\n          <view class=\"square\"></view>\n            <view class=\"square\"></view><view class=\"square\"></view>\n            </div></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyMoodyFly80',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by NlghtM4re - Tags: blue, loader, smooth, shadow, glow, neon */\n.container {\n  position: absolute;\n  top: 45%;\n  left: 48%;\n}\n\n.square {\n  width: 16rpx;\n  height: 60rpx;\n  background: rgb(71, 195, 248);\n  border-radius: 20rpx;\n  display: block;\n  /*margin:20rpx;*/\n  -webkit-animation: turn 2.5s ease infinite;\n  animation: turn 2.5s ease infinite;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: rgb(71, 195, 248) 0rpx 2rpx 30rpx 0rpx;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.top {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n\n.bottom {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n  -webkit-transform: rotate(-90deg);\n  transform: rotate(-90deg);\n}\n\n.left {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n}\n\n.right {\n  position: absolute;\n  left: 40%;\n  top: 50%;\n  -webkit-transform: rotate(-180deg);\n  transform: rotate(-180deg);\n}\n\n@-webkit-keyframes turn {\n  0% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n\n  50% {\n    transform: translateX(400%) translateY(100%) rotate(90deg);\n  }\n\n  100% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n}\n\n@keyframes turn {\n  0% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n\n  70% {\n    transform: translateX(400%) translateY(100%) rotate(90deg);\n  }\n\n  100% {\n    transform: translateX(0) translateY(0) rotate(0);\n  }\n}\n",
+    "component_name": "GalaxyMoodyFly80"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 2457,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.906Z",
+  "updated_at": "2025-07-31T07:55:39.906Z"
+}

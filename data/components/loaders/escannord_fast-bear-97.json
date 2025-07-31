@@ -1,0 +1,94 @@
+{
+  "id": "escannord_fast-bear-97",
+  "name": "fast-bear-97",
+  "category": "loaders",
+  "author": "escannord",
+  "description": "fast-bear-97 组件 (3d, black, loading, loader, realistic, animation, gradient)",
+  "tags": [
+    "3d",
+    "black",
+    "loading",
+    "loader",
+    "realistic",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <span style=\"--delay:1\" class=\"ball\"></span>\n  <span style=\"--delay:2\" class=\"ball\"></span>\n  <span style=\"--delay:3\" class=\"ball\"></span>\n  <span style=\"--delay:4\" class=\"ball\"></span>\n  <span style=\"--delay:5\" class=\"ball\"></span>\n  <span style=\"--delay:6\" class=\"ball\"></span>\n  <span style=\"--delay:7\" class=\"ball\"></span>\n  <span style=\"--delay:8\" class=\"ball\"></span>\n</div>",
+    "css": "/* From Uiverse.io by escannord  - Tags: 3d, black, loading, loader, realistic */\n.loader {\n  width: 220px;\n  height: 220px;\n  border-radius: 50%;\n  position: relative;\n  border: solid 5px transparent;\n  box-shadow: 5px 5px 5px rgb(88, 87, 87), inset 5px 5px 5px rgb(85, 80, 80),\n    inset -1px -1px 10px rgba(0, 0, 0, 0.432),\n    -1px -1px 10px rgba(0, 0, 0, 0.281);\n}\n\n.loader::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 180px;\n  height: 180px;\n  border-radius: 50%;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  box-shadow: 5px 5px 20px black, -2px -2px 40px black;\n  background: repeating-conic-gradient(\n    rgb(61, 59, 59) 0%,\n    rgb(248, 248, 246) 15%,\n    rgb(54, 52, 52) 33.33%\n  );\n}\n\n.ball {\n  width: 15px;\n  height: 15px;\n  display: inline-block;\n  background: radial-gradient(\n    circle at 8px 5px,\n    white 5%,\n    rgba(54, 53, 53, 0.685)\n  );\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) translateX(97.5px);\n  animation: rotate 5s calc(var(--delay) * 0.2s) infinite linear;\n}\n\n@keyframes rotate {\n  0% {\n    transform: translate(-50%, -50%) rotate(0deg) translateX(97.5px);\n  }\n\n  100% {\n    transform: translate(-50%, -50%) rotate(360deg) translateX(97.5px);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/escannord_fast-bear-97.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <text style=\"--delay:1\" class=\"ball\"></text>\n  <text style=\"--delay:2\" class=\"ball\"></text>\n  <text style=\"--delay:3\" class=\"ball\"></text>\n  <text style=\"--delay:4\" class=\"ball\"></text>\n  <text style=\"--delay:5\" class=\"ball\"></text>\n  <text style=\"--delay:6\" class=\"ball\"></text>\n  <text style=\"--delay:7\" class=\"ball\"></text>\n  <text style=\"--delay:8\" class=\"ball\"></text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyFastBear97',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by escannord  - Tags: 3d, black, loading, loader, realistic */\n.loader {\n  width: 440rpx;\n  height: 440rpx;\n  border-radius: 50%;\n  position: relative;\n  border: solid 10rpx transparent;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 10rpx rgb(88, 87, 87), inset 10rpx 10rpx 10rpx rgb(85, 80, 80),\n    inset -2rpx -2rpx 20rpx rgba(0, 0, 0, 0.432),\n    -2rpx -2rpx 20rpx rgba(0, 0, 0, 0.281);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.loader::before {\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 360rpx;\n  height: 360rpx;\n  border-radius: 50%;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 40rpx black, -4rpx -4rpx 80rpx black;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: repeating-conic-gradient(\n    rgb(61, 59, 59) 0%,\n    rgb(248, 248, 246) 15%,\n    rgb(54, 52, 52) 33.33%\n  );\n}\n\n.ball {\n  width: 30rpx;\n  height: 30rpx;\n  display: inline-block;\n  background: radial-gradient(\n    circle at 16rpx 10rpx,\n    white 5%,\n    rgba(54, 53, 53, 0.685)\n  );\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) translateX(195rpx);\n  animation: rotate 5s calc(var(--delay) * 0.2s) infinite linear;\n}\n\n@keyframes rotate {\n  0% {\n    transform: translate(-50%, -50%) rotate(0deg) translateX(195rpx);\n  }\n\n  100% {\n    transform: translate(-50%, -50%) rotate(360deg) translateX(195rpx);\n  }\n}\n\n",
+    "component_name": "GalaxyFastBear97"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1709,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.473Z",
+  "updated_at": "2025-07-31T07:55:41.473Z"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "BHARGAVPATEL1244_great-catfish-18",
+  "name": "great-catfish-18",
+  "category": "buttons",
+  "author": "BHARGAVPATEL1244",
+  "description": "great-catfish-18 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button> <span>Button</span>\n</button>",
+    "css": "/* From Uiverse.io by BHARGAVPATEL1244 - Tags: button */\nbutton {\n outline: none;\n cursor: pointer;\n border: none;\n padding: 0.9rem 2rem;\n margin: 0;\n font-family: inherit;\n font-size: inherit;\n position: relative;\n display: inline-block;\n letter-spacing: 0.05rem;\n font-weight: 700;\n font-size: 17px;\n border-radius: 500px;\n overflow: hidden;\n background: #66ff66;\n color: ghostwhite;\n}\n\nbutton span {\n position: relative;\n z-index: 10;\n transition: color 0.4s;\n}\n\nbutton:hover span {\n color: black;\n}\n\nbutton::before,\nbutton::after {\n position: absolute;\n top: 0;\n left: 0;\n width: 100%;\n height: 100%;\n z-index: 0;\n}\n\nbutton::before {\n content: \"\";\n background: #000;\n width: 120%;\n left: -10%;\n transform: skew(30deg);\n transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);\n}\n\nbutton:hover::before {\n transform: translate3d(100%, 0, 0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/BHARGAVPATEL1244_great-catfish-18.html"
+  },
+  "uniapp": {
+    "template": "<button></button> <text>Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyGreatCatfish18',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by BHARGAVPATEL1244 - Tags: button */\nbutton {\n outline: none;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n border: none;\n padding: 0.9rem 2rem;\n margin: 0;\n font-family: inherit;\n font-size: inherit;\n position: relative;\n display: inline-block;\n letter-spacing: 0.05rem;\n font-weight: 700;\n font-size: 34rpx;\n border-radius: 1000rpx;\n overflow: hidden;\n background: #66ff66;\n color: ghostwhite;\n}\n\nbutton span {\n position: relative;\n z-index: 10;\n transition: color 0.4s;\n}\n\nbutton:hover span {\n color: black;\n}\n\nbutton::before,\nbutton::after {\n position: absolute;\n top: 0;\n left: 0;\n width: 100%;\n height: 100%;\n z-index: 0;\n}\n\nbutton::before {\n content: \"\";\n background: #000;\n width: 120%;\n left: -10%;\n transform: skew(30deg);\n transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);\n}\n\nbutton:hover::before {\n transform: translate3d(100%, 0, 0);\n}\n\n",
+    "component_name": "GalaxyGreatCatfish18"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 888,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.735Z",
+  "updated_at": "2025-07-31T07:55:32.735Z"
+}

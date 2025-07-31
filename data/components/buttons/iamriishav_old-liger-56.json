@@ -1,0 +1,114 @@
+{
+  "id": "iamriishav_old-liger-56",
+  "name": "old-liger-56",
+  "category": "buttons",
+  "author": "iamriishav",
+  "description": "old-liger-56 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>\n  <span>\n  Hover me\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by iamriishav - Tags: button */\nbutton {\n  padding: 15px 30px;\n  border: none;\n  outline: none;\n  border-radius: 30px;\n  font-size: 1.5rem;\n  z-index: 1;\n  position: relative;\n  -webkit-box-shadow: 0 5px 15px rgba(33, 33, 33, .2);\n  box-shadow: 0 5px 15px rgba(33, 33, 33, .2);\n  overflow: hidden;\n  cursor: pointer;\n}\n\nbutton > span {\n  z-index: 2;\n}\n\nbutton::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border-radius: 30px;\n  background-color: #212121;\n  z-index: -1;\n  overflow: hidden;\n  -webkit-transform: scaleX(0);\n  -ms-transform: scaleX(0);\n  transform: scaleX(0);\n  -webkit-transform-origin: left;\n  -ms-transform-origin: left;\n  transform-origin: left;\n  -webkit-transition: -webkit-transform 0.2s ease-in;\n  transition: -webkit-transform 0.2s ease-in;\n  transition: transform 0.2s ease-in;\n}\n\nbutton:hover {\n  color: #e8e8e8;\n}\n\nbutton:hover::before {\n  -webkit-transform: scaleX(1);\n  -ms-transform: scaleX(1);\n  transform: scaleX(1);\n  -webkit-transform-origin: left;\n  -ms-transform-origin: left;\n  transform-origin: left;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/iamriishav_old-liger-56.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n  <text></text>\n  Hover me\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyOldLiger56',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by iamriishav - Tags: button */\nbutton {\n  padding: 30rpx 60rpx;\n  border: none;\n  outline: none;\n  border-radius: 60rpx;\n  font-size: 1.5rem;\n  z-index: 1;\n  position: relative;\n  -webkit-/* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 10rpx 30rpx rgba(33, 33, 33, .2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 10rpx 30rpx rgba(33, 33, 33, .2);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  overflow: hidden;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\nbutton > span {\n  z-index: 2;\n}\n\nbutton::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border-radius: 60rpx;\n  background-color: #212121;\n  z-index: -1;\n  overflow: hidden;\n  -webkit-transform: scaleX(0);\n  -ms-transform: scaleX(0);\n  transform: scaleX(0);\n  -webkit-transform-origin: left;\n  -ms-transform-origin: left;\n  transform-origin: left;\n  -webkit-transition: -webkit-transform 0.2s ease-in;\n  transition: -webkit-transform 0.2s ease-in;\n  transition: transform 0.2s ease-in;\n}\n\nbutton:hover {\n  color: #e8e8e8;\n}\n\nbutton:hover::before {\n  -webkit-transform: scaleX(1);\n  -ms-transform: scaleX(1);\n  transform: scaleX(1);\n  -webkit-transform-origin: left;\n  -ms-transform-origin: left;\n  transform-origin: left;\n}\n",
+    "component_name": "GalaxyOldLiger56"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1166,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.966Z",
+  "updated_at": "2025-07-31T07:55:36.966Z"
+}

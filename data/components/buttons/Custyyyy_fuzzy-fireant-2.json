@@ -1,0 +1,114 @@
+{
+  "id": "Custyyyy_fuzzy-fireant-2",
+  "name": "fuzzy-fireant-2",
+  "category": "buttons",
+  "author": "Custyyyy",
+  "description": "fuzzy-fireant-2 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button id=\"bottone1\"><strong>Discover features</strong></button>",
+    "css": "/* From Uiverse.io by Custyyyy - Tags: button */\n#bottone1 {\n padding-left: 33px;\n padding-right: 33px;\n padding-bottom: 16px;\n padding-top: 16px;\n border-radius: 9px;\n background: #d5f365;\n border: none;\n font-family: inherit;\n text-align: center;\n cursor: pointer;\n transition: 0.4s;\n}\n\n#bottone1:hover {\n box-shadow: 7px 5px 56px -14px #C3D900;\n}\n\n#bottone1:active {\n transform: scale(0.97);\n box-shadow: 7px 5px 56px -10px #C3D900;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Custyyyy_fuzzy-fireant-2.html"
+  },
+  "uniapp": {
+    "template": "<button id=\"bottone1\"></button><strong>Discover features</strong></button>",
+    "script": "export default {\n  name: 'GalaxyFuzzyFireant2',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Custyyyy - Tags: button */\n#bottone1 {\n padding-left: 66rpx;\n padding-right: 66rpx;\n padding-bottom: 32rpx;\n padding-top: 32rpx;\n border-radius: 18rpx;\n background: #d5f365;\n border: none;\n font-family: inherit;\n text-align: center;\n /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n transition: 0.4s;\n}\n\n#bottone1:hover {\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 14rpx 10rpx 112rpx -28rpx #C3D900;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n#bottone1:active {\n transform: scale(0.97);\n /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 14rpx 10rpx 112rpx -20rpx #C3D900;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n",
+    "component_name": "GalaxyFuzzyFireant2"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 506,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.028Z",
+  "updated_at": "2025-07-31T07:55:33.028Z"
+}

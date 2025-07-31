@@ -1,0 +1,116 @@
+{
+  "id": "misaraadel_dry-cow-55",
+  "name": "dry-cow-55",
+  "category": "buttons",
+  "author": "misaraadel",
+  "description": "dry-cow-55 组件 (button, creative, 3d button, css animation, hover idea, animation, interactive)",
+  "tags": [
+    "button",
+    "creative",
+    "3d button",
+    "css animation",
+    "hover idea",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn-shape\">\n    <span class=\"title\">\n      hover me\n    </span>\n</button>",
+    "css": "/* From Uiverse.io by misaraadel - Tags: button, creative, 3d button, css animation, hover idea */\n.btn-shape {\n  transition: all .3s linear;\n  width: 168px;\n  height: 50px;\n  display: flex;\n  align-items: center;\n  align-content: center;\n  justify-content: center;\n  outline: none;\n  background-color: #020202;\n  border-radius: 50px;\n  border: 0px;\n  position: relative;\n  z-index: 99;\n  cursor: pointer;\n}\n\n.btn-shape::after,\n.btn-shape::before {\n  content: '';\n  position: absolute;\n  background-color: #020202;\n  width: 100%;\n  opacity: 0;\n  height: 100%;\n  left: 0;\n  border-radius: 100px;\n  bottom: 0;\n  z-index: -2;\n  transition: all .3s linear;\n}\n\n.btn-shape span {\n  font-size: 16px;\n  font-weight: 700;\n  transition: all .3s linear;\n  color: #fff;\n  text-transform: capitalize;\n}\n\n.btn-shape:hover {\n  transform: translate(-12px, -12px);\n}\n\n.btn-shape:hover:after {\n  transform: translate(6px, 6px);\n  opacity: .5;\n}\n\n.btn-shape:hover::before {\n  transform: translate(12px, 12px);\n  opacity: .3;\n}\n\n.btn-shape:hover span {\n  animation: storm .4s linear both;\n}\n\n@keyframes storm {\n  0% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n\n  25% {\n    transform: translate3d(4px, 0, 0) translateZ(0);\n  }\n\n  50% {\n    transform: translate3d(-3px, 0, 0) translateZ(0);\n  }\n\n  75% {\n    transform: translate3d(2px, 0, 0) translateZ(0);\n  }\n\n  100% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/misaraadel_dry-cow-55.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn-shape\"></button>\n    <text class=\"title\"></text>\n      hover me\n    </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyDryCow55',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by misaraadel - Tags: button, creative, 3d button, css animation, hover idea */\n.btn-shape {\n  transition: all .3s linear;\n  width: 336rpx;\n  height: 100rpx;\n  display: flex;\n  align-items: center;\n  align-content: center;\n  justify-content: center;\n  outline: none;\n  background-color: #020202;\n  border-radius: 100rpx;\n  border: 0rpx;\n  position: relative;\n  z-index: 99;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.btn-shape::after,\n.btn-shape::before {\n  content: '';\n  position: absolute;\n  background-color: #020202;\n  width: 100%;\n  opacity: 0;\n  height: 100%;\n  left: 0;\n  border-radius: 200rpx;\n  bottom: 0;\n  z-index: -2;\n  transition: all .3s linear;\n}\n\n.btn-shape span {\n  font-size: 32rpx;\n  font-weight: 700;\n  transition: all .3s linear;\n  color: #fff;\n  text-transform: capitalize;\n}\n\n.btn-shape:hover {\n  transform: translate(-24rpx, -24rpx);\n}\n\n.btn-shape:hover:after {\n  transform: translate(12rpx, 12rpx);\n  opacity: .5;\n}\n\n.btn-shape:hover::before {\n  transform: translate(24rpx, 24rpx);\n  opacity: .3;\n}\n\n.btn-shape:hover span {\n  animation: storm .4s linear both;\n}\n\n@keyframes storm {\n  0% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n\n  25% {\n    transform: translate3d(8rpx, 0, 0) translateZ(0);\n  }\n\n  50% {\n    transform: translate3d(-6rpx, 0, 0) translateZ(0);\n  }\n\n  75% {\n    transform: translate3d(4rpx, 0, 0) translateZ(0);\n  }\n\n  100% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n}\n",
+    "component_name": "GalaxyDryCow55"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1510,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.266Z",
+  "updated_at": "2025-07-31T07:55:37.266Z"
+}

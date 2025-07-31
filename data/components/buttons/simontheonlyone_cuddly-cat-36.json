@@ -1,0 +1,115 @@
+{
+  "id": "simontheonlyone_cuddly-cat-36",
+  "name": "cuddly-cat-36",
+  "category": "buttons",
+  "author": "simontheonlyone",
+  "description": "cuddly-cat-36 组件 (green, button, active, animation)",
+  "tags": [
+    "green",
+    "button",
+    "active",
+    "animation"
+  ],
+  "original": {
+    "html": "<button>\n</button>",
+    "css": "/* From Uiverse.io by simontheonlyone - Tags: green, button, active */\nbutton {\n  position: relative;\n  width: 10em;\n  height: 4em;\n  border: none;\n  border-radius: 2.1em;\n  background-color: whitesmoke;\n  box-shadow: 0 0 30px rgba(0, 0, 0, .22);\n  cursor: pointer;\n  transition: all 100ms;\n}\n\nbutton:active {\n  transform: translate(5px, 5px);\n  box-shadow: none;\n}\n\nbutton::before {\n  content: '';\n  position: absolute;\n  inset: 43% 13%;\n  width: 5.5em;\n  height: .6em;\n  border: none;\n  border-radius: 3em;\n  background-color: rgb(0, 209, 0);\n  transition: all 300ms ease;\n}\n\nbutton::after {\n  content: '';\n  position: absolute;\n  inset: 43% 77%;\n  width: 1.1em;\n  height: .6em;\n  border: none;\n  border-radius: 1em;\n  background-color: rgb(0, 209, 0);\n  transition: all 300ms ease;\n}\n\nbutton:active::before,\nbutton:focus::before {\n  width: 1.1em;\n  background-color: red;\n}\n\nbutton:active::after,\nbutton:focus::after {\n  width: 5.5em;\n  inset: 43% 33%;\n  background-color: red;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/simontheonlyone_cuddly-cat-36.html"
+  },
+  "uniapp": {
+    "template": "<button></button>\n</button>",
+    "script": "export default {\n  name: 'GalaxyCuddlyCat36',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by simontheonlyone - Tags: green, button, active */\nbutton {\n  position: relative;\n  width: 10em;\n  height: 4em;\n  border: none;\n  border-radius: 2.1em;\n  background-color: whitesmoke;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 60rpx rgba(0, 0, 0, .22);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 100ms;\n}\n\nbutton:active {\n  transform: translate(10rpx, 10rpx);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: none;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\nbutton::before {\n  content: '';\n  position: absolute;\n  inset: 43% 13%;\n  width: 5.5em;\n  height: .6em;\n  border: none;\n  border-radius: 3em;\n  background-color: rgb(0, 209, 0);\n  transition: all 300ms ease;\n}\n\nbutton::after {\n  content: '';\n  position: absolute;\n  inset: 43% 77%;\n  width: 1.1em;\n  height: .6em;\n  border: none;\n  border-radius: 1em;\n  background-color: rgb(0, 209, 0);\n  transition: all 300ms ease;\n}\n\nbutton:active::before,\nbutton:focus::before {\n  width: 1.1em;\n  background-color: red;\n}\n\nbutton:active::after,\nbutton:focus::after {\n  width: 5.5em;\n  inset: 43% 33%;\n  background-color: red;\n}\n",
+    "component_name": "GalaxyCuddlyCat36"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1004,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.851Z",
+  "updated_at": "2025-07-31T07:55:37.851Z"
+}

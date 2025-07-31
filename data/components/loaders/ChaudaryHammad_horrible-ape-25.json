@@ -1,0 +1,92 @@
+{
+  "id": "ChaudaryHammad_horrible-ape-25",
+  "name": "horrible-ape-25",
+  "category": "loaders",
+  "author": "ChaudaryHammad",
+  "description": "horrible-ape-25 组件 (neumorphism, loader, spinner, circle loader, spin, css, cool loader, 3d loader, animation)",
+  "tags": [
+    "neumorphism",
+    "loader",
+    "spinner",
+    "circle loader",
+    "spin",
+    "css",
+    "cool loader",
+    "3d loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n    <div class=\"cube\">\n      <div class=\"face front\"></div>\n      <div class=\"face back\"></div>\n      <div class=\"face left\"></div>\n      <div class=\"face right\"></div>\n      <div class=\"face top\"></div>\n      <div class=\"face bottom\"></div>\n    </div>\n  </div>",
+    "css": "/* From Uiverse.io by ChaudaryHammad - Tags: neumorphism, loader, spinner, circle loader, spin, css, cool loader, 3d loader */\n.loader {\n  perspective: 800px;\n}\n\n.cube {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: spin 3s linear infinite;\n}\n\n.face {\n  width: 40px;\n  height: 40px;\n  position: absolute;\n  opacity: 0.8;\n}\n\n.front {\n  transform: translateZ(20px);\n  background-color: #3498db;\n}\n\n.back {\n  transform: translateZ(-20px);\n  background-color: #e74c3c;\n}\n\n.left {\n  transform: rotateY(90deg) translateZ(20px);\n  background-color: #2ecc71;\n}\n\n.right {\n  transform: rotateY(-90deg) translateZ(20px);\n  background-color: #f39c12;\n}\n\n.top {\n  transform: rotateX(90deg) translateZ(20px);\n  background-color: #9b59b6;\n}\n\n.bottom {\n  transform: rotateX(-90deg) translateZ(20px);\n  background-color: #e67e22;\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateX(0) rotateY(0) rotateZ(0);\n  }\n\n  100% {\n    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/ChaudaryHammad_horrible-ape-25.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n    <view class=\"cube\"></view>\n      <view class=\"face front\"></view>\n      <view class=\"face back\"></view>\n      <view class=\"face left\"></view>\n      <view class=\"face right\"></view>\n      <view class=\"face top\"></view>\n      <view class=\"face bottom\"></view>\n    </div>\n  </div>",
+    "script": "export default {\n  name: 'GalaxyHorribleApe25',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by ChaudaryHammad - Tags: neumorphism, loader, spinner, circle loader, spin, css, cool loader, 3d loader */\n.loader {\n  perspective: 1600rpx;\n}\n\n.cube {\n  width: 80rpx;\n  height: 80rpx;\n  position: relative;\n  transform-style: preserve-3d;\n  animation: spin 3s linear infinite;\n}\n\n.face {\n  width: 80rpx;\n  height: 80rpx;\n  position: absolute;\n  opacity: 0.8;\n}\n\n.front {\n  transform: translateZ(40rpx);\n  background-color: #3498db;\n}\n\n.back {\n  transform: translateZ(-40rpx);\n  background-color: #e74c3c;\n}\n\n.left {\n  transform: rotateY(90deg) translateZ(40rpx);\n  background-color: #2ecc71;\n}\n\n.right {\n  transform: rotateY(-90deg) translateZ(40rpx);\n  background-color: #f39c12;\n}\n\n.top {\n  transform: rotateX(90deg) translateZ(40rpx);\n  background-color: #9b59b6;\n}\n\n.bottom {\n  transform: rotateX(-90deg) translateZ(40rpx);\n  background-color: #e67e22;\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateX(0) rotateY(0) rotateZ(0);\n  }\n\n  100% {\n    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyHorribleApe25"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1313,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.043Z",
+  "updated_at": "2025-07-31T07:55:39.043Z"
+}

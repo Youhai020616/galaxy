@@ -1,0 +1,114 @@
+{
+  "id": "JamesAchiver_fluffy-newt-25",
+  "name": "fluffy-newt-25",
+  "category": "buttons",
+  "author": "JamesAchiver",
+  "description": "fluffy-newt-25 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <b>\n  Button\n  </b>\n</button>",
+    "css": "/* From Uiverse.io by JamesAchiver - Tags: button */\n.button {\n  position: relative;\n  padding: 0.5em 1.2em;\n  font-size: 1.8em;\n  font-family: Calibri;\n  background-color: #5b04bf;\n  border: none;\n  color: #FFF;\n  cursor: pointer;\n  align-items: center;\n  box-shadow: inset 0px 38px 25px 0 #5b04bf, inset 0 0px 0px 0px #084748a8, inset 0 69px 0px 0px #d74589af;\n  border-radius: 0.6em;\n}\n\n.button:hover {\n  padding: 0.7em 1.4em;\n  transition: 0.4s ease-in-out;\n  box-shadow: inset 0px 38px 25px 5px #5b04bf, inset 10px 40px 10px 0px #084748a8, inset 0 69px 0px 0px #31b0d7de;\n}\n\n.button:active {\n  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.3);\n  transform: translate(0.1em , 0.1em);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/JamesAchiver_fluffy-newt-25.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <b>\n  Button\n  </b>\n</button>",
+    "script": "export default {\n  name: 'GalaxyFluffyNewt25',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JamesAchiver - Tags: button */\n.button {\n  position: relative;\n  padding: 0.5em 1.2em;\n  font-size: 1.8em;\n  font-family: Calibri;\n  background-color: #5b04bf;\n  border: none;\n  color: #FFF;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  align-items: center;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 76rpx 50rpx 0 #5b04bf, inset 0 0rpx 0rpx 0rpx #084748a8, inset 0 138rpx 0rpx 0rpx #d74589af;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 0.6em;\n}\n\n.button:hover {\n  padding: 0.7em 1.4em;\n  transition: 0.4s ease-in-out;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0rpx 76rpx 50rpx 10rpx #5b04bf, inset 20rpx 80rpx 20rpx 0rpx #084748a8, inset 0 138rpx 0rpx 0rpx #31b0d7de;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:active {\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: translate(0.1em , 0.1em);\n}\n",
+    "component_name": "GalaxyFluffyNewt25"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 745,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.384Z",
+  "updated_at": "2025-07-31T07:55:33.384Z"
+}

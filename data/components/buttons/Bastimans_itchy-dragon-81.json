@@ -1,0 +1,116 @@
+{
+  "id": "Bastimans_itchy-dragon-81",
+  "name": "itchy-dragon-81",
+  "category": "buttons",
+  "author": "Bastimans",
+  "description": "itchy-dragon-81 组件 (button, animation, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button>Don't Click</button>",
+    "css": "/* From Uiverse.io by Bastimans - Tags: button */\nbutton {\n  background-color: #ffc600;\n /* sets the background color of the button to yellow */\n  color: #000000;\n /* sets the text color of the button to black */\n  padding: 12px 24px;\n /* adds some padding to the button */\n  border: none;\n /* remove the default border */\n  border-radius: 30px;\n /* rounds the corners of the button */\n  font-size: 18px;\n /* sets the font size of the button text */\n  font-weight: bold;\n /* sets the font weight of the button text to bold */\n  cursor: pointer;\n /* changes the cursor to a pointer when hovering over the button */\n  text-shadow: 2px 2px 3px #ffc600;\n /* adds a subtle shadow to the button text */\n  box-shadow: 2px 2px 3px #ffc600;\n /* adds a subtle shadow to the button */\n  transition: all 0.2s ease-in-out;\n /* adds transition effect when hovering over the button */\n}\n\nbutton:hover {\n  background-color: #000000;\n /* changes the background color of the button to black when hovered */\n  color: #ffc600;\n /* changes the text color of the button to yellow when hovered */\n  transform: scale(1.1);\n /* increases the size of the button slightly when hovered */\n}\n\nbutton:active {\n  transform: scale(0.97);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Bastimans_itchy-dragon-81.html"
+  },
+  "uniapp": {
+    "template": "<button></button>Don't Click</button>",
+    "script": "export default {\n  name: 'GalaxyItchyDragon81',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Bastimans - Tags: button */\nbutton {\n  background-color: #ffc600;\n /* sets the background color of the button to yellow */\n  color: #000000;\n /* sets the text color of the button to black */\n  padding: 24rpx 48rpx;\n /* adds some padding to the button */\n  border: none;\n /* remove the default border */\n  border-radius: 60rpx;\n /* rounds the corners of the button */\n  font-size: 36rpx;\n /* sets the font size of the button text */\n  font-weight: bold;\n /* sets the font weight of the button text to bold */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n /* changes the cursor to a pointer when hovering over the button */\n  /* #ifdef H5 */\n  text-shadow: 4rpx 4rpx 6rpx #ffc600;\n  /* #endif */\n /* adds a subtle shadow to the button text */\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 4rpx 4rpx 6rpx #ffc600;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n /* adds a subtle shadow to the button */\n  transition: all 0.2s ease-in-out;\n /* adds transition effect when hovering over the button */\n}\n\nbutton:hover {\n  background-color: #000000;\n /* changes the background color of the button to black when hovered */\n  color: #ffc600;\n /* changes the text color of the button to yellow when hovered */\n  transform: scale(1.1);\n /* increases the size of the button slightly when hovered */\n}\n\nbutton:active {\n  transform: scale(0.97);\n}\n\n",
+    "component_name": "GalaxyItchyDragon81"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1240,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:32.771Z",
+  "updated_at": "2025-07-31T07:55:32.771Z"
+}

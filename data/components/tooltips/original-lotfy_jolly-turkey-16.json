@@ -1,0 +1,100 @@
+{
+  "id": "original-lotfy_jolly-turkey-16",
+  "name": "jolly-turkey-16",
+  "category": "tooltips",
+  "author": "original-lotfy",
+  "description": "jolly-turkey-16 组件 (simple, material design, glassmorphism, flashy, tooltip, action, purple, pink, animation, gradient, interactive)",
+  "tags": [
+    "simple",
+    "material design",
+    "glassmorphism",
+    "flashy",
+    "tooltip",
+    "action",
+    "purple",
+    "pink",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"tooltip-container\">\n  <span class=\"tooltip\">this is a test</span>\n  <span class=\"text\">Tooltip</span>\n</div>",
+    "css": "/* From Uiverse.io by original-lotfy  - Tags: simple, material design, glassmorphism, flashy, tooltip, action, purple, pink */\n/* thsi is a test */\n.tooltip-container {\n  --background: #053c85;\n  position: relative;\n  background: linear-gradient(100deg, #9b40fc, #0acbec);\n  cursor: pointer;\n  transition: all 0.2s;\n  font-size: 17px;\n  padding: 0.7em 1.8em;\n  border-radius: 10px;\n}\n\n.tooltip-container > * {\n  border-radius: 10px;\n}\n\n.tooltip {\n  position: absolute;\n  width: 8rem;\n  top: 1rem;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.3em 0.6em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.4s;\n  background: linear-gradient(-100deg, #9b40fc, #0acbec);\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 0.6em;\n  width: 0.6em;\n  bottom: -0.9em;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  background: #4b5ef1;\n  box-shadow: 0px 0px 7px #0acbec;\n}\n\n.tooltip-container:hover .tooltip {\n  top: -120%;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}",
+    "file_path": "/mnt/persist/workspace/Tooltips/original-lotfy_jolly-turkey-16.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"tooltip-container\"></view>\n  <text class=\"tooltip\">this is a test</text>\n  <text class=\"text\">Tooltip</text>\n</div>",
+    "script": "export default {\n  name: 'GalaxyJollyTurkey16',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by original-lotfy  - Tags: simple, material design, glassmorphism, flashy, tooltip, action, purple, pink */\n/* thsi is a test */\n.tooltip-container {\n  --background: #053c85;\n  position: relative;\n  background: linear-gradient(100deg, #9b40fc, #0acbec);\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transition: all 0.2s;\n  font-size: 34rpx;\n  padding: 0.7em 1.8em;\n  border-radius: 20rpx;\n}\n\n.tooltip-container > * {\n  border-radius: 20rpx;\n}\n\n.tooltip {\n  position: absolute;\n  width: 8rem;\n  top: 1rem;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 0.3em 0.6em;\n  opacity: 0;\n  pointer-events: none;\n  transition: all 0.4s;\n  background: linear-gradient(-100deg, #9b40fc, #0acbec);\n}\n\n.tooltip::before {\n  position: absolute;\n  content: \"\";\n  height: 0.6em;\n  width: 0.6em;\n  bottom: -0.9em;\n  left: 50%;\n  transform: translate(-50%) rotate(45deg);\n  background: #4b5ef1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0rpx 0rpx 14rpx #0acbec;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.tooltip-container:hover .tooltip {\n  top: -120%;\n  opacity: 1;\n  visibility: visible;\n  pointer-events: auto;\n}\n\n",
+    "component_name": "GalaxyJollyTurkey16"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1155,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.733Z",
+  "updated_at": "2025-07-31T07:55:38.733Z"
+}

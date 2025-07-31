@@ -1,0 +1,118 @@
+{
+  "id": "RichestsoftSukhbir_big-liger-46",
+  "name": "big-liger-46",
+  "category": "buttons",
+  "author": "RichestsoftSukhbir",
+  "description": "big-liger-46 组件 (simple, minimalist, white, black, button, hover, hover effect, hover button, interactive)",
+  "tags": [
+    "simple",
+    "minimalist",
+    "white",
+    "black",
+    "button",
+    "hover",
+    "hover effect",
+    "hover button",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Hover Over Me</button>",
+    "css": "/* From Uiverse.io by RichestsoftSukhbir  - Tags: simple, minimalist, white, black, button, hover, hover effect, hover button */\n.button {\n  padding: 12px 25px;\n  background: #fff;\n  border: 1px solid #121212;\n  color: #121212;\n  font-weight: 700;\n  cursor: pointer;\n  border-radius: 50px;\n  position: relative;\n  z-index: 2;\n  overflow: hidden;\n  transition: all 0.5s ease;\n}\n.button::after {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background: #121212;\n  position: absolute;\n  bottom: -100%;\n  left: 0;\n  border-radius: 50%;\n  z-index: -1;\n  transition: all 0.5s ease;\n}\n.button:hover {\n  color: #fff;\n}\n.button:hover::after {\n  bottom: 0;\n  border-radius: 0;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/RichestsoftSukhbir_big-liger-46.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Hover Over Me</button>",
+    "script": "export default {\n  name: 'GalaxyBigLiger46',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by RichestsoftSukhbir  - Tags: simple, minimalist, white, black, button, hover, hover effect, hover button */\n.button {\n  padding: 24rpx 50rpx;\n  background: #fff;\n  border: 2rpx solid #121212;\n  color: #121212;\n  font-weight: 700;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  border-radius: 100rpx;\n  position: relative;\n  z-index: 2;\n  overflow: hidden;\n  transition: all 0.5s ease;\n}\n.button::after {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background: #121212;\n  position: absolute;\n  bottom: -100%;\n  left: 0;\n  border-radius: 50%;\n  z-index: -1;\n  transition: all 0.5s ease;\n}\n.button:hover {\n  color: #fff;\n}\n.button:hover::after {\n  bottom: 0;\n  border-radius: 0;\n}\n\n",
+    "component_name": "GalaxyBigLiger46"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 726,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.438Z",
+  "updated_at": "2025-07-31T07:55:34.438Z"
+}

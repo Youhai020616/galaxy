@@ -1,0 +1,88 @@
+{
+  "id": "cohencoo_ordinary-kangaroo-82",
+  "name": "ordinary-kangaroo-82",
+  "category": "loaders",
+  "author": "cohencoo",
+  "description": "ordinary-kangaroo-82 组件 (loading, loader, download, downloading, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "download",
+    "downloading",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"custom-loader\"></div>",
+    "css": "/* From Uiverse.io by cohencoo - Tags: loading, loader, download, downloading */\n.custom-loader {\n  width: 120px;\n  height: 22px;\n  border-radius: 20px;\n  color: #F4BF00;\n  border: 2px solid;\n  position: relative;\n}\n\n.custom-loader::before {\n  content: \"\";\n  position: absolute;\n  margin: 2px;\n  inset: 0 100% 0 0;\n  border-radius: inherit;\n  background: #F4BF00;\n  animation: p6 2s infinite;\n}\n\n@keyframes p6 {\n  100% {\n    inset: 0\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/cohencoo_ordinary-kangaroo-82.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"custom-loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyOrdinaryKangaroo82',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by cohencoo - Tags: loading, loader, download, downloading */\n.custom-loader {\n  width: 240rpx;\n  height: 44rpx;\n  border-radius: 40rpx;\n  color: #F4BF00;\n  border: 4rpx solid;\n  position: relative;\n}\n\n.custom-loader::before {\n  content: \"\";\n  position: absolute;\n  margin: 4rpx;\n  inset: 0 100% 0 0;\n  border-radius: inherit;\n  background: #F4BF00;\n  animation: p6 2s infinite;\n}\n\n@keyframes p6 {\n  100% {\n    inset: 0\n  }\n}\n",
+    "component_name": "GalaxyOrdinaryKangaroo82"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 476,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.133Z",
+  "updated_at": "2025-07-31T07:55:41.133Z"
+}

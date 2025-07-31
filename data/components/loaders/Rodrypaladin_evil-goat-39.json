@@ -1,0 +1,95 @@
+{
+  "id": "Rodrypaladin_evil-goat-39",
+  "name": "evil-goat-39",
+  "category": "loaders",
+  "author": "Rodrypaladin",
+  "description": "evil-goat-39 组件 (animation, red, loading, loader, modern, creative, multicolor, bounce animation)",
+  "tags": [
+    "animation",
+    "red",
+    "loading",
+    "loader",
+    "modern",
+    "creative",
+    "multicolor",
+    "bounce animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by Rodrypaladin - Tags: animation, red, loading, loader, modern, creative, multicolor, bounce animation */\n.loader {\n  width: 100px;\n  height: 100px;\n  background-color: orange;\n  border-radius: 50%;\n  box-shadow: -15px -15px 15px #ff6600, 15px -15px 15px #ff9100, 15px 15px 15px #ff5500, -15px 15px 15px #ffa600, -15px 0 15px #ff6600, 15px 0 15px #ffcc00;\n  animation: rotate 1s infinite;\n  transform: rotate(0) scale(0.8);\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(360deg) scale(0.8);\n  }\n\n  50% {\n    transform: rotate(0) scale(1.2);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/Rodrypaladin_evil-goat-39.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyEvilGoat39',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Rodrypaladin - Tags: animation, red, loading, loader, modern, creative, multicolor, bounce animation */\n.loader {\n  width: 200rpx;\n  height: 200rpx;\n  background-color: orange;\n  border-radius: 50%;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -30rpx -30rpx 30rpx #ff6600, 30rpx -30rpx 30rpx #ff9100, 30rpx 30rpx 30rpx #ff5500, -30rpx 30rpx 30rpx #ffa600, -30rpx 0 30rpx #ff6600, 30rpx 0 30rpx #ffcc00;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: rotate 1s infinite;\n  transform: rotate(0) scale(0.8);\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(360deg) scale(0.8);\n  }\n\n  50% {\n    transform: rotate(0) scale(1.2);\n  }\n}\n",
+    "component_name": "GalaxyEvilGoat39"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 601,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.178Z",
+  "updated_at": "2025-07-31T07:55:40.178Z"
+}

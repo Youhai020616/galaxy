@@ -1,0 +1,90 @@
+{
+  "id": "vk-uiux_grumpy-dolphin-30",
+  "name": "grumpy-dolphin-30",
+  "category": "loaders",
+  "author": "vk-uiux",
+  "description": "grumpy-dolphin-30 组件 (animation, loader, spinner, book, animated, css, css effect)",
+  "tags": [
+    "animation",
+    "loader",
+    "spinner",
+    "book",
+    "animated",
+    "css",
+    "css effect"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n</div>",
+    "css": "/* From Uiverse.io by vk-uiux - Source: vk-uiux - Tags: animation, loader, spinner, book, animated, css, css effect */\n.loader {\n  position: relative;\n  width: 33px;\n  height: 33px;\n  perspective: 67px;\n}\n\n.loader div {\n  width: 100%;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  left: 50%;\n  transform-origin: left;\n  animation: loader 2s infinite;\n}\n\n.loader div:nth-child(1) {\n  animation-delay: 0.15s;\n}\n\n.loader div:nth-child(2) {\n  animation-delay: 0.3s;\n}\n\n.loader div:nth-child(3) {\n  animation-delay: 0.45s;\n}\n\n.loader div:nth-child(4) {\n  animation-delay: 0.6s;\n}\n\n.loader div:nth-child(5) {\n  animation-delay: 0.75s;\n}\n\n@keyframes loader {\n  0% {\n    transform: rotateY(0deg);\n  }\n\n  50%, 80% {\n    transform: rotateY(-180deg);\n  }\n\n  90%, 100% {\n    opacity: 0;\n    transform: rotateY(-180deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vk-uiux_grumpy-dolphin-30.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n  <view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyGrumpyDolphin30',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vk-uiux - Source: vk-uiux - Tags: animation, loader, spinner, book, animated, css, css effect */\n.loader {\n  position: relative;\n  width: 66rpx;\n  height: 66rpx;\n  perspective: 134rpx;\n}\n\n.loader div {\n  width: 100%;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  left: 50%;\n  transform-origin: left;\n  animation: loader 2s infinite;\n}\n\n.loader div:nth-child(1) {\n  animation-delay: 0.15s;\n}\n\n.loader div:nth-child(2) {\n  animation-delay: 0.3s;\n}\n\n.loader div:nth-child(3) {\n  animation-delay: 0.45s;\n}\n\n.loader div:nth-child(4) {\n  animation-delay: 0.6s;\n}\n\n.loader div:nth-child(5) {\n  animation-delay: 0.75s;\n}\n\n@keyframes loader {\n  0% {\n    transform: rotateY(0deg);\n  }\n\n  50%, 80% {\n    transform: rotateY(-180deg);\n  }\n\n  90%, 100% {\n    opacity: 0;\n    transform: rotateY(-180deg);\n  }\n}\n",
+    "component_name": "GalaxyGrumpyDolphin30"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 928,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.826Z",
+  "updated_at": "2025-07-31T07:55:42.826Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "bociKond_green-mayfly-76",
+  "name": "green-mayfly-76",
+  "category": "loaders",
+  "author": "bociKond",
+  "description": "green-mayfly-76 组件 (simple, flashy, loader, animation, gradient)",
+  "tags": [
+    "simple",
+    "flashy",
+    "loader",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by bociKond - Source: https://10015.io/ - Tags: simple, flashy, loader */\n.loader {\n  width: 44.8px;\n  height: 44.8px;\n  color: #554cb5;\n  position: relative;\n  background: radial-gradient(11.2px,currentColor 94%,#0000);\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  inset: 0;\n  border-radius: 50%;\n  background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,\n          radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,\n          radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,\n          radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;\n  background-size: 22.4px 22.4px;\n  background-repeat: no-repeat;\n  animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);\n}\n\n@keyframes loader {\n  33% {\n    inset: -11.2px;\n    transform: rotate(0deg);\n  }\n\n  66% {\n    inset: -11.2px;\n    transform: rotate(90deg);\n  }\n\n  100% {\n    inset: 0;\n    transform: rotate(90deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bociKond_green-mayfly-76.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyGreenMayfly76',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bociKond - Source: https://10015.io/ - Tags: simple, flashy, loader */\n.loader {\n  width: 89.6rpx;\n  height: 89.6rpx;\n  color: #554cb5;\n  position: relative;\n  background: radial-gradient(22.4rpx,currentColor 94%,#0000);\n}\n\n.loader:before {\n  content: '';\n  position: absolute;\n  inset: 0;\n  border-radius: 50%;\n  background: radial-gradient(20.16rpx at bottom right,#0000 94%,currentColor) top    left,\n          radial-gradient(20.16rpx at bottom left ,#0000 94%,currentColor) top    right,\n          radial-gradient(20.16rpx at top    right,#0000 94%,currentColor) bottom left,\n          radial-gradient(20.16rpx at top    left ,#0000 94%,currentColor) bottom right;\n  background-size: 44.8rpx 44.8rpx;\n  background-repeat: no-repeat;\n  animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);\n}\n\n@keyframes loader {\n  33% {\n    inset: -22.4rpx;\n    transform: rotate(0deg);\n  }\n\n  66% {\n    inset: -22.4rpx;\n    transform: rotate(90deg);\n  }\n\n  100% {\n    inset: 0;\n    transform: rotate(90deg);\n  }\n}\n",
+    "component_name": "GalaxyGreenMayfly76"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1046,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.054Z",
+  "updated_at": "2025-07-31T07:55:41.054Z"
+}

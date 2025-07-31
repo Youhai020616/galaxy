@@ -1,0 +1,115 @@
+{
+  "id": "HecktorViegas_green-cow-45",
+  "name": "green-cow-45",
+  "category": "buttons",
+  "author": "HecktorViegas",
+  "description": "green-cow-45 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">\n  <span>Join Today</span>\n\n  <svg class=\"icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\">\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M17 8l4 4m0 0l-4 4m4-4H3\"></path>\n  </svg>\n</button>",
+    "css": "/* From Uiverse.io by HecktorViegas  - Tags: button */\n.button {\n  cursor: pointer;\n  display: flex;\n  text-wrap: nowrap;\n  align-items: center;\n  gap: 0.9rem;\n  padding: 1.5rem 2rem;\n  border-radius: 1.2rem;\n  background: linear-gradient(to bottom, #e3a8fc, #8d38cf);\n  box-sizing: border-box;\n  box-shadow:\n    -3px 5px 1.5px #5a2982,\n    -15px 12px 20px #5a2982ba;\n  border: none;\n  transform: rotate3d(2, -1, 1, 343deg) rotatex(27deg) scale(0.9);\n  color: #ffcaf7;\n  font-weight: bold;\n  font-size: 1.2rem;\n  transition: all 0.2s;\n}\n\n.button:before {\n  content: \"\";\n  width: 97%;\n  position: absolute;\n  height: 91%;\n  top: 4.5%;\n  z-index: -2;\n  left: 1.3%;\n  border-radius: 1.1rem;\n  box-shadow: inset 0 -5px 5px -1px #7926bc;\n  background: linear-gradient(to bottom, #d591ff, #7f2dc2);\n}\n\n.button:hover {\n  transition: all 0.2s;\n  transform: scale(1.2);\n  box-shadow: inset -0.5px -3px 3px 1px #7926bc;\n}\n\n.button:active {\n  transition: all 0.1s;\n  box-shadow: inset 2px 2px 3px #5a2982ba;\n  transform: scale(1.15);\n}\n\n.icon {\n  width: 1.8rem;\n  height: 1.8rem;\n}\n\n.button span {\n  background: -webkit-linear-gradient(#ffe4fe, #ffcaf7);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/HecktorViegas_green-cow-45.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>\n  <text>Join Today</text>\n\n  <view class=\"icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\"></view>\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M17 8l4 4m0 0l-4 4m4-4H3\"></path>\n  </svg>\n</button>",
+    "script": "export default {\n  name: 'GalaxyGreenCow45',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by HecktorViegas  - Tags: button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  display: flex;\n  text-wrap: nowrap;\n  align-items: center;\n  gap: 0.9rem;\n  padding: 1.5rem 2rem;\n  border-radius: 1.2rem;\n  background: linear-gradient(to bottom, #e3a8fc, #8d38cf);\n  box-sizing: border-box;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    -6rpx 10rpx 3rpx #5a2982,\n    -30rpx 24rpx 40rpx #5a2982ba;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border: none;\n  transform: rotate3d(2, -1, 1, 343deg) rotatex(27deg) scale(0.9);\n  color: #ffcaf7;\n  font-weight: bold;\n  font-size: 1.2rem;\n  transition: all 0.2s;\n}\n\n.button:before {\n  content: \"\";\n  width: 97%;\n  position: absolute;\n  height: 91%;\n  top: 4.5%;\n  z-index: -2;\n  left: 1.3%;\n  border-radius: 1.1rem;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 0 -10rpx 10rpx -2rpx #7926bc;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: linear-gradient(to bottom, #d591ff, #7f2dc2);\n}\n\n.button:hover {\n  transition: all 0.2s;\n  transform: scale(1.2);\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset -1rpx -6rpx 6rpx 2rpx #7926bc;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button:active {\n  transition: all 0.1s;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: inset 4rpx 4rpx 6rpx #5a2982ba;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: scale(1.15);\n}\n\n.icon {\n  width: 1.8rem;\n  height: 1.8rem;\n}\n\n.button span {\n  background: -webkit-linear-gradient(#ffe4fe, #ffcaf7);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n",
+    "component_name": "GalaxyGreenCow45"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1518,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.319Z",
+  "updated_at": "2025-07-31T07:55:33.319Z"
+}

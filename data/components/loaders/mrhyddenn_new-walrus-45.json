@@ -1,0 +1,92 @@
+{
+  "id": "mrhyddenn_new-walrus-45",
+  "name": "new-walrus-45",
+  "category": "loaders",
+  "author": "mrhyddenn",
+  "description": "new-walrus-45 组件 (gradient, loader, animation)",
+  "tags": [
+    "gradient",
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n    <div class=\"spinnerin\"></div>\n</div>",
+    "css": "/* From Uiverse.io by mrhyddenn - Tags: gradient, loader */\n.spinner {\n  width: 3em;\n  height: 3em;\n  cursor: not-allowed;\n  border-radius: 50%;\n  border: 2px solid #444;\n  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;\n  animation: rot55 0.7s linear infinite;\n}\n\n.spinnerin {\n  border: 2px solid #444;\n  width: 1.5em;\n  height: 1.5em;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n@keyframes rot55 {\n  to {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/mrhyddenn_new-walrus-45.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n    <view class=\"spinnerin\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyNewWalrus45',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mrhyddenn - Tags: gradient, loader */\n.spinner {\n  width: 3em;\n  height: 3em;\n  /* #ifdef H5 */\n  cursor: not-allowed;\n  /* #endif */\n  border-radius: 50%;\n  border: 4rpx solid #444;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: -20rpx -20rpx 20rpx #6359f8, 0rpx -20rpx 20rpx 0rpx #9c32e2, 20rpx -20rpx 20rpx #f36896, 20rpx 0 20rpx #ff0b0b, 20rpx 20rpx 20rpx 0rpx#ff5500, 0 20rpx 20rpx 0rpx #ff9500, -20rpx 20rpx 20rpx 0rpx #ffb700;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  animation: rot55 0.7s linear infinite;\n}\n\n.spinnerin {\n  border: 4rpx solid #444;\n  width: 1.5em;\n  height: 1.5em;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n@keyframes rot55 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n",
+    "component_name": "GalaxyNewWalrus45"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 719,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.429Z",
+  "updated_at": "2025-07-31T07:55:42.429Z"
+}

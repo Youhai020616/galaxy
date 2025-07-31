@@ -1,0 +1,124 @@
+{
+  "id": "elijahgummer_breezy-liger-35",
+  "name": "breezy-liger-35",
+  "category": "buttons",
+  "author": "elijahgummer",
+  "description": "breezy-liger-35 组件 (simple, animation, button, moon, sun, space, cool, gradient, interactive)",
+  "tags": [
+    "simple",
+    "animation",
+    "button",
+    "moon",
+    "sun",
+    "space",
+    "cool",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"galaxy-button\">\n  <button class=\"space-button\">\n    <span class=\"backdrop\"></span>\n    <span class=\"galaxy\"></span>\n    <label class=\"text\">Space</label>\n  </button>\n  <div class=\"bodydrop\"></div>\n</div>",
+    "css": "/* From Uiverse.io by elijahgummer  - Tags: simple, animation, button, moon, sun, space, cool */\n.text {\n  translate: 2% -6%;\n  letter-spacing: 0.01ch;\n  color: hsl(0 0% calc(60% + (var(--active) * 26%)));\n  z-index: 999;\n  padding: 0 34px;\n  font-weight: 600;\n}\n.text::before {\n  content: \"\";\n  position: absolute;\n  top: -290%;\n  left: 90%;\n  rotate: -45deg;\n  width: 5em;\n  height: 1px;\n  background: linear-gradient(90deg, #ffffff, transparent);\n  animation: 4s shootingStar ease-in-out infinite;\n  transition: 1s ease;\n  z-index: -1;\n  animation-delay: 1s;\n  display: none;\n}\n.text::after {\n  content: \"\";\n  display: none;\n  position: absolute;\n  top: -290%;\n  left: 10%;\n  rotate: -45deg;\n  width: 5em;\n  height: 1px;\n  background: linear-gradient(90deg, #ffffff, transparent);\n  animation: 7s shootingStar ease-in-out infinite;\n  animation-delay: 3s;\n}\n.space-button:hover .text::before,\n.space-button:hover .text::after {\n  display: block;\n}\n.galaxy::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 2px;\n  height: 2px;\n  border-radius: 50%;\n  opacity: 1;\n  box-shadow:\n    140px 20px #fff,\n    425px 20px #fff,\n    70px 120px #fff,\n    20px 130px #fff,\n    110px 80px #fff,\n    280px 80px #fff,\n    250px 350px #fff,\n    280px 230px #fff,\n    220px 190px #fff,\n    450px 100px #fff,\n    380px 80px #fff,\n    520px 50px #fff;\n  z-index: -1;\n  transition: all 1.5s ease-in-out;\n  animation: 1s glowing-stars linear alternate infinite;\n  animation-delay: 0.4s;\n}\n.galaxy::after {\n  content: \"\";\n  position: absolute;\n  top: -150px;\n  left: -65px;\n  width: 2px;\n  height: 2px;\n  border-radius: 50%;\n  opacity: 1;\n  box-shadow:\n    490px 330px #fff,\n    420px 300px #fff,\n    320px 280px #fff,\n    380px 350px #fff,\n    546px 170px #fff,\n    420px 180px #fff,\n    370px 150px #fff,\n    200px 250px #fff,\n    80px 20px #fff,\n    190px 50px #fff,\n    270px 20px #fff,\n    120px 230px #fff,\n    350px -1px #fff,\n    150px 369px #fff;\n  z-index: -1;\n  transition: all 2s ease-in-out;\n  animation: 1s glowing-stars linear alternate infinite;\n  animation-delay: 0.8s;\n}\n.space-button {\n  --cut: 0.1em;\n  --active: 0;\n  --bg: radial-gradient(\n        120% 120% at 126% 126%,\n        hsl(0 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,\n        /* Changed hue to 0 for red */ transparent 50%\n      )\n      calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,\n    radial-gradient(\n        120% 120% at 120% 120%,\n        hsl(0 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,\n        /* Changed hue to 0 for red */ transparent 70%\n      )\n      calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,\n    hsl(0 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%))); /* Changed hue to 0 for red */\n  background: var(--bg);\n  font-size: 1.4rem;\n  font-weight: 500;\n  border: 0;\n  cursor: pointer;\n  padding: 0.9em 1.3em;\n  display: flex;\n  align-items: center;\n  gap: 0.25em;\n  white-space: nowrap;\n  border-radius: 2rem;\n  position: relative;\n  box-shadow:\n    0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)\n      hsla(12, 97%, 61%, 0.3),\n    0 0.05em 0 0\n      hsl(0, calc(var(--active) * 97%), calc((var(--active) * 50%) + 30%)) inset,\n    0 -0.05em 0 0 hsl(0, calc(var(--active) * 97%), calc(var(--active) * 10%)) inset;\n\n  transition:\n    box-shadow 0.25s ease-out,\n    scale 0.25s,\n    background 0.25s;\n  scale: calc(1 + (var(--active) * 0.1));\n  transform-style: preserve-3d;\n  perspective: 100vmin;\n  overflow: hidden;\n}\n.space-button:active {\n  scale: 1;\n  --bg: radial-gradient(\n        120% 120% at 126% 126%,\n        hsl(245 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,\n        transparent 50%\n      )\n      calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,\n    radial-gradient(\n        120% 120% at 120% 120%,\n        hsl(245 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,\n        transparent 70%\n      )\n      calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,\n    hsl(245 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));\n  box-shadow:\n    0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)\n      hsl(245 97% 61% / 0.5),\n    0 0.05em 0 0\n      hsl(245 calc(var(--active) * 97%) calc((var(--active) * 50%) + 30%)) inset,\n    0 -0.05em 0 0 hsl(245 calc(var(--active) * 97%) calc(var(--active) * 10%)) inset;\n  background: var(--bg);\n}\n\n/* Apply wobble animation on active button */\n.space-button:active .text {\n  font-weight: 300;\n  animation:\n    wobble 0.6s ease-in-out infinite,\n    blurMove 1.5s ease-in-out infinite;\n  text-shadow:\n    5px 5px 20px rgba(255, 255, 255, 0.8),\n    10px 10px 30px rgba(255, 0, 255, 0.6);\n}\n\n/* Wobble animation */\n@keyframes wobble {\n  0%,\n  100% {\n    transform: translate(0, 0);\n  }\n  25% {\n    transform: translate(-2px, -10px);\n  }\n  50% {\n    transform: translate(2px, 3px);\n  }\n  75% {\n    transform: translate(-1px, 5px);\n  }\n}\n\n/* Blur move animation */\n@keyframes blurMove {\n  0%,\n  100% {\n    text-shadow:\n      5px 5px 20px rgba(255, 255, 255, 0.8),\n      10px 10px 30px rgba(255, 0, 255, 0.6);\n  }\n  50% {\n    filter: blur(1px);\n    text-shadow:\n      10px 10px 25px rgba(255, 255, 255, 0.8),\n      15px 15px 35px rgba(255, 0, 255, 0.6);\n  }\n}\n\n.galaxy:active::before {\n  animation: circling 2s linear infinite; /* Animation for circling effect */\n}\n.galaxy:active::after {\n  animation: circling 1.5s linear infinite; /* Animation for circling effect */\n}\n\n@keyframes circling {\n  0% {\n    transform: translate(-10px, -20%) rotate(0deg);\n  }\n  100% {\n    transform: translate(-10px, -20%) rotate(200deg);\n  }\n}\n.galaxy {\n  position: absolute;\n  width: 100%;\n  aspect-ratio: 1;\n  top: 50%;\n  left: 50%;\n  translate: -50% -50%;\n  overflow: hidden;\n  opacity: var(--active);\n  transition: opacity 0.25s;\n}\n\n@-webkit-keyframes move-x {\n  0% {\n    translate: -100px 0;\n  }\n  100% {\n    translate: 100px 0;\n  }\n}\n@keyframes move-x {\n  0% {\n    translate: -100px 0;\n  }\n  100% {\n    translate: 100px 0;\n  }\n}\n@-webkit-keyframes move-y {\n  0% {\n    transform: translate(0, -50px);\n  }\n  100% {\n    transform: translate(0, 50px);\n  }\n}\n@keyframes move-y {\n  0% {\n    transform: translate(0, -50px);\n  }\n  100% {\n    transform: translate(0, 50px);\n  }\n}\n\n.backdrop {\n  position: absolute;\n  inset: var(--cut);\n  background: var(--bg);\n  border-radius: 2rem;\n  transition: background 0.25s;\n}\n\n@supports (selector(:has(:is(+ *)))) {\n  body:has(button:is(:hover, :focus-visible)) {\n    --active: 1;\n    --play-state: running;\n  }\n  .bodydrop {\n    display: none;\n  }\n}\n\n.space-button:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {\n  --active: 1;\n  --play-state: running;\n}\n\n.space-button:is(:hover, :focus-visible) {\n  --active: 1;\n  --play-state: running;\n}\n\n.galaxy-button {\n  position: relative;\n}\n\n/* ANIMATIONS */\n@keyframes shootingStar {\n  0% {\n    transform: translateX(0) translateY(0);\n    opacity: 1;\n  }\n  50% {\n    transform: translateX(-55em) translateY(0);\n    opacity: 1;\n  }\n  70% {\n    transform: translateX(-70em) translateY(0);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0) translateY(0);\n    opacity: 0;\n  }\n}\n\n@keyframes glowing-stars {\n  0% {\n    opacity: 0;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/elijahgummer_breezy-liger-35.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"galaxy-button\"></view>\n  <button class=\"space-button\"></button>\n    <text class=\"backdrop\"></text>\n    <text class=\"galaxy\"></text>\n    <label class=\"text\"></label>Space</label>\n  </button>\n  <view class=\"bodydrop\"></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyBreezyLiger35',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by elijahgummer  - Tags: simple, animation, button, moon, sun, space, cool */\n.text {\n  translate: 2% -6%;\n  letter-spacing: 0.01ch;\n  color: hsl(0 0% calc(60% + (var(--active) * 26%)));\n  z-index: 999;\n  padding: 0 68rpx;\n  font-weight: 600;\n}\n.text::before {\n  content: \"\";\n  position: absolute;\n  top: -290%;\n  left: 90%;\n  rotate: -45deg;\n  width: 5em;\n  height: 2rpx;\n  background: linear-gradient(90deg, #ffffff, transparent);\n  animation: 4s shootingStar ease-in-out infinite;\n  transition: 1s ease;\n  z-index: -1;\n  animation-delay: 1s;\n  display: none;\n}\n.text::after {\n  content: \"\";\n  display: none;\n  position: absolute;\n  top: -290%;\n  left: 10%;\n  rotate: -45deg;\n  width: 5em;\n  height: 2rpx;\n  background: linear-gradient(90deg, #ffffff, transparent);\n  animation: 7s shootingStar ease-in-out infinite;\n  animation-delay: 3s;\n}\n.space-button:hover .text::before,\n.space-button:hover .text::after {\n  display: block;\n}\n.galaxy::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 4rpx;\n  height: 4rpx;\n  border-radius: 50%;\n  opacity: 1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    280rpx 40rpx #fff,\n    850rpx 40rpx #fff,\n    140rpx 240rpx #fff,\n    40rpx 260rpx #fff,\n    220rpx 160rpx #fff,\n    560rpx 160rpx #fff,\n    500rpx 700rpx #fff,\n    560rpx 460rpx #fff,\n    440rpx 380rpx #fff,\n    900rpx 200rpx #fff,\n    760rpx 160rpx #fff,\n    1040rpx 100rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: -1;\n  transition: all 1.5s ease-in-out;\n  animation: 1s glowing-stars linear alternate infinite;\n  animation-delay: 0.4s;\n}\n.galaxy::after {\n  content: \"\";\n  position: absolute;\n  top: -300rpx;\n  left: -130rpx;\n  width: 4rpx;\n  height: 4rpx;\n  border-radius: 50%;\n  opacity: 1;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    980rpx 660rpx #fff,\n    840rpx 600rpx #fff,\n    640rpx 560rpx #fff,\n    760rpx 700rpx #fff,\n    1092rpx 340rpx #fff,\n    840rpx 360rpx #fff,\n    740rpx 300rpx #fff,\n    400rpx 500rpx #fff,\n    160rpx 40rpx #fff,\n    380rpx 100rpx #fff,\n    540rpx 40rpx #fff,\n    240rpx 460rpx #fff,\n    700rpx -2rpx #fff,\n    300rpx 738rpx #fff;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  z-index: -1;\n  transition: all 2s ease-in-out;\n  animation: 1s glowing-stars linear alternate infinite;\n  animation-delay: 0.8s;\n}\n.space-button {\n  --cut: 0.1em;\n  --active: 0;\n  --bg: radial-gradient(\n        120% 120% at 126% 126%,\n        hsl(0 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,\n        /* Changed hue to 0 for red */ transparent 50%\n      )\n      calc(200rpx - (var(--active) * 200rpx)) 0 / 100% 100% no-repeat,\n    radial-gradient(\n        120% 120% at 120% 120%,\n        hsl(0 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,\n        /* Changed hue to 0 for red */ transparent 70%\n      )\n      calc(200rpx - (var(--active) * 200rpx)) 0 / 100% 100% no-repeat,\n    hsl(0 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%))); /* Changed hue to 0 for red */\n  background: var(--bg);\n  font-size: 1.4rem;\n  font-weight: 500;\n  border: 0;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  padding: 0.9em 1.3em;\n  display: flex;\n  align-items: center;\n  gap: 0.25em;\n  white-space: nowrap;\n  border-radius: 2rem;\n  position: relative;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)\n      hsla(12, 97%, 61%, 0.3),\n    0 0.05em 0 0\n      hsl(0, calc(var(--active) * 97%), calc((var(--active) * 50%) + 30%)) inset,\n    0 -0.05em 0 0 hsl(0, calc(var(--active) * 97%), calc(var(--active) * 10%)) inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n\n  transition:\n    box-shadow 0.25s ease-out,\n    scale 0.25s,\n    background 0.25s;\n  scale: calc(1 + (var(--active) * 0.1));\n  transform-style: preserve-3d;\n  perspective: 100vmin;\n  overflow: hidden;\n}\n.space-button:active {\n  scale: 1;\n  --bg: radial-gradient(\n        120% 120% at 126% 126%,\n        hsl(245 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,\n        transparent 50%\n      )\n      calc(200rpx - (var(--active) * 200rpx)) 0 / 100% 100% no-repeat,\n    radial-gradient(\n        120% 120% at 120% 120%,\n        hsl(245 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,\n        transparent 70%\n      )\n      calc(200rpx - (var(--active) * 200rpx)) 0 / 100% 100% no-repeat,\n    hsl(245 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow:\n    0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)\n      hsl(245 97% 61% / 0.5),\n    0 0.05em 0 0\n      hsl(245 calc(var(--active) * 97%) calc((var(--active) * 50%) + 30%)) inset,\n    0 -0.05em 0 0 hsl(245 calc(var(--active) * 97%) calc(var(--active) * 10%)) inset;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  background: var(--bg);\n}\n\n/* Apply wobble animation on active button */\n.space-button:active .text {\n  font-weight: 300;\n  animation:\n    wobble 0.6s ease-in-out infinite,\n    blurMove 1.5s ease-in-out infinite;\n  /* #ifdef H5 */\n  text-shadow:\n    10rpx 10rpx 40rpx rgba(255, 255, 255, 0.8),\n    20rpx 20rpx 60rpx rgba(255, 0, 255, 0.6);\n  /* #endif */\n}\n\n/* Wobble animation */\n@keyframes wobble {\n  0%,\n  100% {\n    transform: translate(0, 0);\n  }\n  25% {\n    transform: translate(-4rpx, -20rpx);\n  }\n  50% {\n    transform: translate(4rpx, 6rpx);\n  }\n  75% {\n    transform: translate(-2rpx, 10rpx);\n  }\n}\n\n/* Blur move animation */\n@keyframes blurMove {\n  0%,\n  100% {\n    /* #ifdef H5 */\n  text-shadow:\n      10rpx 10rpx 40rpx rgba(255, 255, 255, 0.8),\n      20rpx 20rpx 60rpx rgba(255, 0, 255, 0.6);\n  /* #endif */\n  }\n  50% {\n    \n    /* #ifdef H5 */\n  text-shadow:\n      20rpx 20rpx 50rpx rgba(255, 255, 255, 0.8),\n      30rpx 30rpx 70rpx rgba(255, 0, 255, 0.6);\n  /* #endif */\n  }\n}\n\n.galaxy:active::before {\n  animation: circling 2s linear infinite; /* Animation for circling effect */\n}\n.galaxy:active::after {\n  animation: circling 1.5s linear infinite; /* Animation for circling effect */\n}\n\n@keyframes circling {\n  0% {\n    transform: translate(-20rpx, -20%) rotate(0deg);\n  }\n  100% {\n    transform: translate(-20rpx, -20%) rotate(200deg);\n  }\n}\n.galaxy {\n  position: absolute;\n  width: 100%;\n  aspect-ratio: 1;\n  top: 50%;\n  left: 50%;\n  translate: -50% -50%;\n  overflow: hidden;\n  opacity: var(--active);\n  transition: opacity 0.25s;\n}\n\n@-webkit-keyframes move-x {\n  0% {\n    translate: -200rpx 0;\n  }\n  100% {\n    translate: 200rpx 0;\n  }\n}\n@keyframes move-x {\n  0% {\n    translate: -200rpx 0;\n  }\n  100% {\n    translate: 200rpx 0;\n  }\n}\n@-webkit-keyframes move-y {\n  0% {\n    transform: translate(0, -100rpx);\n  }\n  100% {\n    transform: translate(0, 100rpx);\n  }\n}\n@keyframes move-y {\n  0% {\n    transform: translate(0, -100rpx);\n  }\n  100% {\n    transform: translate(0, 100rpx);\n  }\n}\n\n.backdrop {\n  position: absolute;\n  inset: var(--cut);\n  background: var(--bg);\n  border-radius: 2rem;\n  transition: background 0.25s;\n}\n\n@supports (selector(:has(:is(+ *)))) {\n  body:has(button:is(:hover, :focus-visible)) {\n    --active: 1;\n    --play-state: running;\n  }\n  .bodydrop {\n    display: none;\n  }\n}\n\n.space-button:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {\n  --active: 1;\n  --play-state: running;\n}\n\n.space-button:is(:hover, :focus-visible) {\n  --active: 1;\n  --play-state: running;\n}\n\n.galaxy-button {\n  position: relative;\n}\n\n/* ANIMATIONS */\n@keyframes shootingStar {\n  0% {\n    transform: translateX(0) translateY(0);\n    opacity: 1;\n  }\n  50% {\n    transform: translateX(-55em) translateY(0);\n    opacity: 1;\n  }\n  70% {\n    transform: translateX(-70em) translateY(0);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0) translateY(0);\n    opacity: 0;\n  }\n}\n\n@keyframes glowing-stars {\n  0% {\n    opacity: 0;\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyBreezyLiger35"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 text-shadow 属性",
+        "不支持 filter 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 7505,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:36.497Z",
+  "updated_at": "2025-07-31T07:55:36.497Z"
+}

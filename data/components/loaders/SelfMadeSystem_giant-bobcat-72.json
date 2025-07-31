@@ -1,0 +1,89 @@
+{
+  "id": "SelfMadeSystem_giant-bobcat-72",
+  "name": "giant-bobcat-72",
+  "category": "loaders",
+  "author": "SelfMadeSystem",
+  "description": "giant-bobcat-72 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<svg style=\"position: absolute; width: 0; height: 0;\">\n  <filter id=\"goo\">\n  <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"12\"></feGaussianBlur>\n  <feColorMatrix values=\"0 0 0 0 0 \n            0 0 0 0 0 \n            0 0 0 0 0 \n            0 0 0 48 -7\"></feColorMatrix>\n</filter>\n</svg>\n\n<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by SelfMadeSystem - Tags: loader */\n.loader {\n  width: 12em;\n  height: 3em;\n  position: relative;\n  overflow: hidden;\n  border-bottom: 8px solid #000;\n  filter: url(#goo);\n}\n\n.loader::before {\n  content: '';\n  width: 22em;\n  height: 18em;\n  background: #f00;\n  position: absolute;\n  border-radius: 50%;\n  left: -2em;\n  bottom: -18em;\n  animation: wee1 2s linear infinite;\n}\n\n.loader::after {\n  content: '';\n  width: 16em;\n  height: 12em;\n  background: #0ff;\n  position: absolute;\n  border-radius: 50%;\n  left: -4em;\n  bottom: -12em;\n  animation: wee2 2s linear infinite 0.75s;\n}\n\n@keyframes wee1 {\n  0% {\n    transform: translateX(-10em) rotate(0deg);\n  }\n\n  100% {\n    transform: translateX(7em) rotate(180deg);\n  }\n}\n\n@keyframes wee2 {\n  0% {\n    transform: translateX(-8em) rotate(0deg);\n  }\n\n  100% {\n    transform: translateX(8em) rotate(180deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/SelfMadeSystem_giant-bobcat-72.html"
+  },
+  "uniapp": {
+    "template": "<view style=\"position: absolute; width: 0; height: 0;\"></view>\n  <filter id=\"goo\">\n  <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"12\"></feGaussianBlur>\n  <feColorMatrix values=\"0 0 0 0 0 \n            0 0 0 0 0 \n            0 0 0 0 0 \n            0 0 0 48 -7\"></feColorMatrix>\n</filter>\n</svg>\n\n<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyGiantBobcat72',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by SelfMadeSystem - Tags: loader */\n.loader {\n  width: 12em;\n  height: 3em;\n  position: relative;\n  overflow: hidden;\n  border-bottom: 16rpx solid #000;\n  \n}\n\n.loader::before {\n  content: '';\n  width: 22em;\n  height: 18em;\n  background: #f00;\n  position: absolute;\n  border-radius: 50%;\n  left: -2em;\n  bottom: -18em;\n  animation: wee1 2s linear infinite;\n}\n\n.loader::after {\n  content: '';\n  width: 16em;\n  height: 12em;\n  background: #0ff;\n  position: absolute;\n  border-radius: 50%;\n  left: -4em;\n  bottom: -12em;\n  animation: wee2 2s linear infinite 0.75s;\n}\n\n@keyframes wee1 {\n  0% {\n    transform: translateX(-10em) rotate(0deg);\n  }\n\n  100% {\n    transform: translateX(7em) rotate(180deg);\n  }\n}\n\n@keyframes wee2 {\n  0% {\n    transform: translateX(-8em) rotate(0deg);\n  }\n\n  100% {\n    transform: translateX(8em) rotate(180deg);\n  }\n}\n",
+    "component_name": "GalaxyGiantBobcat72"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 filter 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1196,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.265Z",
+  "updated_at": "2025-07-31T07:55:40.265Z"
+}

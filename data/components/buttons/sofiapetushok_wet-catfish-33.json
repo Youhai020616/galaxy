@@ -1,0 +1,114 @@
+{
+  "id": "sofiapetushok_wet-catfish-33",
+  "name": "wet-catfish-33",
+  "category": "buttons",
+  "author": "sofiapetushok",
+  "description": "wet-catfish-33 组件 (button, gradient, interactive)",
+  "tags": [
+    "button",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button\">Hover</button>",
+    "css": "/* From Uiverse.io by sofiapetushok  - Tags: button */\n.button {\n  cursor: pointer;\n  position: relative;\n  background: #1b1b1b;\n  border: none;\n  padding: 10px 15px;\n  border-radius: 8px;\n  overflow: hidden;\n  z-index: 1;\n  color: #fff;\n}\n\n.button::after {\n  position: absolute;\n  content: \"\";\n  top: 97%;\n  left: 0;\n  height: 100%;\n  width: 0;\n  background: linear-gradient(90deg, #14efff, #34ffc5, transparent);\n  transition: width 0.3s ease-in-out;\n  box-shadow: 0 0 50px 0 #14a1ff64;\n  border-radius: 50%;\n}\n.button:hover::after {\n  width: 200%;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/sofiapetushok_wet-catfish-33.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button\"></button>Hover</button>",
+    "script": "export default {\n  name: 'GalaxyWetCatfish33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by sofiapetushok  - Tags: button */\n.button {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  position: relative;\n  background: #1b1b1b;\n  border: none;\n  padding: 20rpx 30rpx;\n  border-radius: 16rpx;\n  overflow: hidden;\n  z-index: 1;\n  color: #fff;\n}\n\n.button::after {\n  position: absolute;\n  content: \"\";\n  top: 97%;\n  left: 0;\n  height: 100%;\n  width: 0;\n  background: linear-gradient(90deg, #14efff, #34ffc5, transparent);\n  transition: width 0.3s ease-in-out;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0 100rpx 0 #14a1ff64;\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  border-radius: 50%;\n}\n.button:hover::after {\n  width: 200%;\n}\n\n",
+    "component_name": "GalaxyWetCatfish33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 599,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.888Z",
+  "updated_at": "2025-07-31T07:55:37.888Z"
+}

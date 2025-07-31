@@ -1,0 +1,116 @@
+{
+  "id": "vinodjangid07_pretty-octopus-33",
+  "name": "pretty-octopus-33",
+  "category": "buttons",
+  "author": "vinodjangid07",
+  "description": "pretty-octopus-33 组件 (button, like, click effect, animation, interactive)",
+  "tags": [
+    "button",
+    "like",
+    "click effect",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"Btn\">\n  <span class=\"leftContainer\">\n    <svg fill=\"white\" viewBox=\"0 0 512 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"></path></svg>\n    <span class=\"like\">Like</span>\n  </span>\n  <span class=\"likeCount\">\n    2,050\n  </span>\n</button>",
+    "css": "/* From Uiverse.io by vinodjangid07 - Tags: button, like, click effect */\n.Btn {\n  width: 140px;\n  height: 35px;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  border: none;\n  border-radius: 5px;\n  overflow: hidden;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);\n  cursor: pointer;\n  background-color: transparent;\n}\n\n.leftContainer {\n  width: 60%;\n  height: 100%;\n  background-color: rgb(238, 0, 0);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 8px;\n}\n\n.leftContainer .like {\n  color: white;\n  font-weight: 600;\n}\n\n.likeCount {\n  width: 40%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: rgb(238, 0, 0);\n  font-weight: 600;\n  position: relative;\n  background-color: white;\n}\n\n.likeCount::before {\n  height: 8px;\n  width: 8px;\n  position: absolute;\n  content: \"\";\n  background-color: rgb(255, 255, 255);\n  transform: rotate(45deg);\n  left: -4px;\n}\n\n.Btn:hover .leftContainer {\n  background-color: rgb(219, 0, 0);\n}\n\n.Btn:active .leftContainer {\n  background-color: rgb(201, 0, 0);\n}\n\n.Btn:active .leftContainer svg {\n  transform: scale(1.15);\n  transform-origin: top;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/vinodjangid07_pretty-octopus-33.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"Btn\"></button>\n  <text class=\"leftContainer\"></text>\n    <view fill=\"white\" viewBox=\"0 0 512 512\" height=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"></path></view>\n    <text class=\"like\">Like</text>\n  </span>\n  <text class=\"likeCount\"></text>\n    2,050\n  </span>\n</button>",
+    "script": "export default {\n  name: 'GalaxyPrettyOctopus33',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vinodjangid07 - Tags: button, like, click effect */\n.Btn {\n  width: 280rpx;\n  height: 70rpx;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  border: none;\n  border-radius: 10rpx;\n  overflow: hidden;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 10rpx 10rpx 20rpx rgba(0, 0, 0, 0.089);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  background-color: transparent;\n}\n\n.leftContainer {\n  width: 60%;\n  height: 100%;\n  background-color: rgb(238, 0, 0);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 16rpx;\n}\n\n.leftContainer .like {\n  color: white;\n  font-weight: 600;\n}\n\n.likeCount {\n  width: 40%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: rgb(238, 0, 0);\n  font-weight: 600;\n  position: relative;\n  background-color: white;\n}\n\n.likeCount::before {\n  height: 16rpx;\n  width: 16rpx;\n  position: absolute;\n  content: \"\";\n  background-color: rgb(255, 255, 255);\n  transform: rotate(45deg);\n  left: -8rpx;\n}\n\n.Btn:hover .leftContainer {\n  background-color: rgb(219, 0, 0);\n}\n\n.Btn:active .leftContainer {\n  background-color: rgb(201, 0, 0);\n}\n\n.Btn:active .leftContainer svg {\n  transform: scale(1.15);\n  transform-origin: top;\n}\n\n",
+    "component_name": "GalaxyPrettyOctopus33"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1719,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.221Z",
+  "updated_at": "2025-07-31T07:55:38.221Z"
+}

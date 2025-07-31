@@ -1,0 +1,117 @@
+{
+  "id": "mobinkakei_wise-walrus-71",
+  "name": "wise-walrus-71",
+  "category": "buttons",
+  "author": "mobinkakei",
+  "description": "wise-walrus-71 组件 (3d, button, hover, animation, gradient, interactive)",
+  "tags": [
+    "3d",
+    "button",
+    "hover",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">3D button</button>",
+    "css": "/* From Uiverse.io by mobinkakei - Tags: 3d, button, hover */\n.btn {\n  --color1: #1a8516;\n  --color2: #236b19;\n  perspective: 1000px;\n  padding: 1em 1em;\n  background: linear-gradient(var(--color1), var(--color2));\n  border: none;\n  outline: none;\n  font-size: 20px;\n  text-transform: uppercase;\n  letter-spacing: 4px;\n  color: #fff;\n  text-shadow: 0 10px 10px #000;\n  cursor: pointer;\n  transform: rotateX(70deg) rotateZ(30deg);\n  transform-style: preserve-3d;\n  transition: transform 0.5s;\n}\n\n.btn::before {\n  content: \"\";\n  width: 100%;\n  height: 15px;\n  background-color: var(--color2);\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  transform: rotateX(90deg);\n  transform-origin: bottom;\n}\n\n.btn::after {\n  content: \"\";\n  width: 15px;\n  height: 100%;\n  background-color: var(--color1);\n  position: absolute;\n  top: 0;\n  right: 0;\n  transform: rotateY(-90deg);\n  transform-origin: right;\n}\n\n.btn:hover {\n  transform: rotateX(30deg) rotateZ(0);\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/mobinkakei_wise-walrus-71.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>3D button</button>",
+    "script": "export default {\n  name: 'GalaxyWiseWalrus71',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by mobinkakei - Tags: 3d, button, hover */\n.btn {\n  --color1: #1a8516;\n  --color2: #236b19;\n  perspective: 2000rpx;\n  padding: 1em 1em;\n  background: linear-gradient(var(--color1), var(--color2));\n  border: none;\n  outline: none;\n  font-size: 40rpx;\n  text-transform: uppercase;\n  letter-spacing: 8rpx;\n  color: #fff;\n  /* #ifdef H5 */\n  text-shadow: 0 20rpx 20rpx #000;\n  /* #endif */\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  transform: rotateX(70deg) rotateZ(30deg);\n  transform-style: preserve-3d;\n  transition: transform 0.5s;\n}\n\n.btn::before {\n  content: \"\";\n  width: 100%;\n  height: 30rpx;\n  background-color: var(--color2);\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  transform: rotateX(90deg);\n  transform-origin: bottom;\n}\n\n.btn::after {\n  content: \"\";\n  width: 30rpx;\n  height: 100%;\n  background-color: var(--color1);\n  position: absolute;\n  top: 0;\n  right: 0;\n  transform: rotateY(-90deg);\n  transform-origin: right;\n}\n\n.btn:hover {\n  transform: rotateX(30deg) rotateZ(0);\n}\n\n",
+    "component_name": "GalaxyWiseWalrus71"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 text-shadow 属性",
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 994,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.305Z",
+  "updated_at": "2025-07-31T07:55:37.305Z"
+}

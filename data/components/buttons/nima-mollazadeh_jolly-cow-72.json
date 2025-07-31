@@ -1,0 +1,120 @@
+{
+  "id": "nima-mollazadeh_jolly-cow-72",
+  "name": "jolly-cow-72",
+  "category": "buttons",
+  "author": "nima-mollazadeh",
+  "description": "jolly-cow-72 组件 (button, text, yellow, purple, centered, rectangular, contrast, split, bicolor, animation, interactive)",
+  "tags": [
+    "button",
+    "text",
+    "yellow",
+    "purple",
+    "centered",
+    "rectangular",
+    "contrast",
+    "split",
+    "bicolor",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<div class=\"back\">\n  <div class=\"button_base b_3d\">\n    <div>button</div>\n    <div>button</div>\n    <div>button</div>\n    <div>button</div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by nima-mollazadeh  - Tags: button, button, text, yellow, purple, centered, rectangular, contrast, split, bicolor */\n.button_base {\n  margin: 0;\n  border: 0;\n  font-size: 18px;\n  position: relative;\n  top: 50%;\n  left: 50%;\n  margin-top: -25px;\n  margin-left: -100px;\n  width: 200px;\n  height: 50px;\n  text-align: center;\n  box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  cursor: default;\n}\n\n.button_base:hover {\n  cursor: pointer;\n}\n\n.b_3d {\n  perspective: 500px;\n  -webkit-perspective: 500px;\n  -moz-perspective: 500px;\n  transform-style: preserve-3d;\n  -webkit-transform-style: preserve-3d;\n}\n\n.b_3d div {\n  position: absolute;\n  text-align: center;\n  padding: 10px;\n  border: #000000 solid 1px;\n  pointer-events: none;\n  box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n}\n\n.b_3d div:nth-child(1) {\n  color: #ffffff;\n  background-color: #7c00fe;\n  z-index: 0;\n  width: 100%;\n  height: 50px;\n  clip: rect(0px, 100px, 50px, 0px);\n  position: absolute;\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n  transform-origin: 50% 50% -25px;\n  -webkit-transform-origin: 50% 50% -25px;\n  -moz-transform-origin: 50% 50% -25px;\n}\n\n.b_3d div:nth-child(2) {\n  color: #000000;\n  background-color: #f9e400;\n  z-index: -1;\n  width: 100%;\n  height: 50px;\n  clip: rect(0px, 100px, 50px, 0px);\n  position: absolute;\n  transform: rotateX(90deg);\n  -webkit-transform: rotateX(90deg);\n  -moz-transform: rotateX(90deg);\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform-origin: 50% 50% -25px;\n  -webkit-transform-origin: 50% 50% -25px;\n  -moz-transform-origin: 50% 50% -25px;\n}\n\n.b_3d div:nth-child(3) {\n  color: #000000;\n  background-color: #f9e400;\n  z-index: 0;\n  width: 100%;\n  height: 50px;\n  clip: rect(0px, 200px, 50px, 100px);\n  position: absolute;\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n  transform-origin: 50% 50% -25px;\n  -webkit-transform-origin: 50% 50% -25px;\n  -moz-transform-origin: 50% 50% -25px;\n}\n\n.b_3d div:nth-child(4) {\n  color: #ffffff;\n  background-color: #7c00fe;\n  z-index: -1;\n  width: 100%;\n  height: 50px;\n  clip: rect(0px, 200px, 50px, 100px);\n  position: absolute;\n  transform: rotateX(-90deg);\n  -webkit-transform: rotateX(-90deg);\n  -moz-transform: rotateX(-90deg);\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform-origin: 50% 50% -25px;\n  -webkit-transform-origin: 50% 50% -25px;\n  -moz-transform-origin: 50% 50% -25px;\n}\n\n.b_3d:hover div:nth-child(1) {\n  background-color: #7c00fe;\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform: rotateX(-90deg);\n  -webkit-transform: rotateX(-90deg);\n  -moz-transform: rotateX(-90deg);\n}\n\n.b_3d:hover div:nth-child(2) {\n  color: #000000;\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n}\n\n.b_3d:hover div:nth-child(3) {\n  background-color: #f9e400;\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform: rotateX(90deg);\n  -webkit-transform: rotateX(90deg);\n  -moz-transform: rotateX(90deg);\n}\n\n.b_3d:hover div:nth-child(4) {\n  color: #ffffff;\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n}\n\n.back {\n  height: 200px;\n  float: left;\n  box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  counter-increment: bc;\n  padding: 0px 5px 5px 5px;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/nima-mollazadeh_jolly-cow-72.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"back\"></view>\n  <view class=\"button_base b_3d\"></view>\n    <view>button</view>\n    <view>button</view>\n    <view>button</view>\n    <view>button</view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyJollyCow72',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by nima-mollazadeh  - Tags: button, button, text, yellow, purple, centered, rectangular, contrast, split, bicolor */\n.button_base {\n  margin: 0;\n  border: 0;\n  font-size: 36rpx;\n  position: relative;\n  top: 50%;\n  left: 50%;\n  margin-top: -50rpx;\n  margin-left: -200rpx;\n  width: 400rpx;\n  height: 100rpx;\n  text-align: center;\n  box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  /* #ifdef H5 */\n  cursor: default;\n  /* #endif */\n}\n\n.button_base:hover {\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n}\n\n.b_3d {\n  perspective: 1000rpx;\n  -webkit-perspective: 1000rpx;\n  -moz-perspective: 1000rpx;\n  transform-style: preserve-3d;\n  -webkit-transform-style: preserve-3d;\n}\n\n.b_3d div {\n  position: absolute;\n  text-align: center;\n  padding: 20rpx;\n  border: #000000 solid 2rpx;\n  pointer-events: none;\n  box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n}\n\n.b_3d div:nth-child(1) {\n  color: #ffffff;\n  background-color: #7c00fe;\n  z-index: 0;\n  width: 100%;\n  height: 100rpx;\n  clip: rect(0rpx, 200rpx, 100rpx, 0rpx);\n  position: absolute;\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n  transform-origin: 50% 50% -50rpx;\n  -webkit-transform-origin: 50% 50% -50rpx;\n  -moz-transform-origin: 50% 50% -50rpx;\n}\n\n.b_3d div:nth-child(2) {\n  color: #000000;\n  background-color: #f9e400;\n  z-index: -1;\n  width: 100%;\n  height: 100rpx;\n  clip: rect(0rpx, 200rpx, 100rpx, 0rpx);\n  position: absolute;\n  transform: rotateX(90deg);\n  -webkit-transform: rotateX(90deg);\n  -moz-transform: rotateX(90deg);\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform-origin: 50% 50% -50rpx;\n  -webkit-transform-origin: 50% 50% -50rpx;\n  -moz-transform-origin: 50% 50% -50rpx;\n}\n\n.b_3d div:nth-child(3) {\n  color: #000000;\n  background-color: #f9e400;\n  z-index: 0;\n  width: 100%;\n  height: 100rpx;\n  clip: rect(0rpx, 400rpx, 100rpx, 200rpx);\n  position: absolute;\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n  transform-origin: 50% 50% -50rpx;\n  -webkit-transform-origin: 50% 50% -50rpx;\n  -moz-transform-origin: 50% 50% -50rpx;\n}\n\n.b_3d div:nth-child(4) {\n  color: #ffffff;\n  background-color: #7c00fe;\n  z-index: -1;\n  width: 100%;\n  height: 100rpx;\n  clip: rect(0rpx, 400rpx, 100rpx, 200rpx);\n  position: absolute;\n  transform: rotateX(-90deg);\n  -webkit-transform: rotateX(-90deg);\n  -moz-transform: rotateX(-90deg);\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform-origin: 50% 50% -50rpx;\n  -webkit-transform-origin: 50% 50% -50rpx;\n  -moz-transform-origin: 50% 50% -50rpx;\n}\n\n.b_3d:hover div:nth-child(1) {\n  background-color: #7c00fe;\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform: rotateX(-90deg);\n  -webkit-transform: rotateX(-90deg);\n  -moz-transform: rotateX(-90deg);\n}\n\n.b_3d:hover div:nth-child(2) {\n  color: #000000;\n  transition: all 0.2s ease;\n  -webkit-transition: all 0.2s ease;\n  -moz-transition: all 0.2s ease;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n}\n\n.b_3d:hover div:nth-child(3) {\n  background-color: #f9e400;\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform: rotateX(90deg);\n  -webkit-transform: rotateX(90deg);\n  -moz-transform: rotateX(90deg);\n}\n\n.b_3d:hover div:nth-child(4) {\n  color: #ffffff;\n  transition: all 0.2s ease 0.1s;\n  -webkit-transition: all 0.2s ease 0.1s;\n  -moz-transition: all 0.2s ease 0.1s;\n  transform: rotateX(0deg);\n  -webkit-transform: rotateX(0deg);\n  -moz-transform: rotateX(0deg);\n}\n\n.back {\n  height: 400rpx;\n  float: left;\n  box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  counter-increment: bc;\n  padding: 0rpx 10rpx 10rpx 10rpx;\n}\n\n",
+    "component_name": "GalaxyJollyCow72"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 4307,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:37.498Z",
+  "updated_at": "2025-07-31T07:55:37.498Z"
+}

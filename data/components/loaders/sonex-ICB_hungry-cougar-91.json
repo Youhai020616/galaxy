@@ -1,0 +1,91 @@
+{
+  "id": "sonex-ICB_hungry-cougar-91",
+  "name": "hungry-cougar-91",
+  "category": "loaders",
+  "author": "sonex-ICB",
+  "description": "hungry-cougar-91 组件 (simple, animation, loader, rotate, animated, creative, spin, loading animation)",
+  "tags": [
+    "simple",
+    "animation",
+    "loader",
+    "rotate",
+    "animated",
+    "creative",
+    "spin",
+    "loading animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by sonex-ICB  - Tags: simple, animation, loader, rotate, animated, creative, spin, loading animation */\n.loader {\n  border: 10px inset tomato;\n  padding: 12px;\n  transform: rotate(45deg);\n  animation: loader1 1s ease-in-out infinite;\n}\n@keyframes loader1 {\n  0% {\n    opacity: 0;\n  }\n  50% {\n    opacity: 1;\n    transform: scale(1.5);\n  }\n  100% {\n    opacity: 0;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/sonex-ICB_hungry-cougar-91.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyHungryCougar91',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by sonex-ICB  - Tags: simple, animation, loader, rotate, animated, creative, spin, loading animation */\n.loader {\n  border: 20rpx inset tomato;\n  padding: 24rpx;\n  transform: rotate(45deg);\n  animation: loader1 1s ease-in-out infinite;\n}\n@keyframes loader1 {\n  0% {\n    opacity: 0;\n  }\n  50% {\n    opacity: 1;\n    transform: scale(1.5);\n  }\n  100% {\n    opacity: 0;\n  }\n}\n\n",
+    "component_name": "GalaxyHungryCougar91"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 424,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.675Z",
+  "updated_at": "2025-07-31T07:55:42.675Z"
+}

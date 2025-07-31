@@ -1,0 +1,113 @@
+{
+  "id": "Kilian-DM_slimy-baboon-11",
+  "name": "slimy-baboon-11",
+  "category": "buttons",
+  "author": "Kilian-DM",
+  "description": "slimy-baboon-11 组件 (3d, button, animation, interactive)",
+  "tags": [
+    "3d",
+    "button",
+    "animation",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"button-3d\">button</button>",
+    "css": "/* From Uiverse.io by Kilian-DM - Tags: 3d, button */\n.button-3d {\n  display: inline-block;\n  padding: 0.5em 1em;\n  font-size: 1.06em;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #fff;\n  background-color: #8e44ad;\n  border: none;\n  border-radius: 0.25em;\n  box-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.3);\n  transform: perspective(1em) rotateX(-1deg) rotateY(1deg);\n  transition: all 0.2s ease-in-out;\n}\n\n.button-3d:hover {\n  transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);\n  background-color: #9b59b6;\n  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);\n}\n\n.button-3d:focus,\n.button-3d:active {\n  transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);\n  background-color: #e74c3c;\n  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);\n  outline: none;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Kilian-DM_slimy-baboon-11.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"button-3d\"></button>button</button>",
+    "script": "export default {\n  name: 'GalaxySlimyBaboon11',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Kilian-DM - Tags: 3d, button */\n.button-3d {\n  display: inline-block;\n  padding: 0.5em 1em;\n  font-size: 1.06em;\n  font-weight: bold;\n  text-transform: uppercase;\n  color: #fff;\n  background-color: #8e44ad;\n  border: none;\n  border-radius: 0.25em;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  transform: perspective(1em) rotateX(-1deg) rotateY(1deg);\n  transition: all 0.2s ease-in-out;\n}\n\n.button-3d:hover {\n  transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);\n  background-color: #9b59b6;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n}\n\n.button-3d:focus,\n.button-3d:active {\n  transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);\n  background-color: #e74c3c;\n  /* #ifdef H5 */\n  /* #ifdef H5 */\n  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);\n  /* #endif */\n  /* #ifdef MP */\n  border: 1rpx solid rgba(0,0,0,0.1);\n  /* #endif */\n  /* #endif */\n  outline: none;\n}\n",
+    "component_name": "GalaxySlimyBaboon11"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 box-shadow 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 856,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:33.742Z",
+  "updated_at": "2025-07-31T07:55:33.742Z"
+}

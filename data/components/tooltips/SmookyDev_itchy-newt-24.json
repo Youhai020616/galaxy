@@ -1,0 +1,82 @@
+{
+  "id": "SmookyDev_itchy-newt-24",
+  "name": "itchy-newt-24",
+  "category": "tooltips",
+  "author": "SmookyDev",
+  "description": "itchy-newt-24 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex flex-col items-center group cursor-pointer font-mono\">\n  <div class=\"relative px-6 py-2 after:absolute after:inset-0 z-50 w-full h-full after:bg-gradient-to-b after:from-rose-500 after:to-rose-500 after:hover:transition-all after:hover:translate-y-0 after:-z-10 after:-translate-y-[95%] after:hover:duration-[3s] text-center text-rose-300 overflow-hidden transition-all text-2xl\">\n    Blink 😀\n  </div>\n\n  <div class=\"absolute group-hover:mb-10 -translate-y-[150%] group-hover:-translate-y-full flex-col items-center duration-1000 group-hover:duration-700 group-hover:flex group-hover:opacity-100 transition-all group-hover:transition-all\">\n    <div class=\"transition-all h-10 duration-1000 grid grid-cols-12 grid-rows-4 group [&amp;_div]:w-full [&amp;_div]:text-transparent w-full [&amp;_div]:h-full [&amp;_div]:bg-rose-500 [&amp;_div]:text-center [&amp;_div]:flex [&amp;_div]:items-center [&amp;_div]:justify-center [&amp;_div]:text-[5px] [&amp;_div]:transition-all [&amp;_div]:duration-500 group-hover:[&amp;_div:nth-child(even)]:-skew-x-6 group-hover:[&amp;_div:nth-child(odd)]:bg-rose-700 group-hover:[&amp;_div:nth-child(even)]:bg-rose-700 group-hover:[&amp;_div:nth-child(odd)]:duration-500 group-hover:[&amp;_div:nth-child(even)]:duration-700 group-hover:[&amp;_div:nth-child(odd)]:animate-[pulse_1s_cubic-bezier(0.4,_0,_0.6,_1)_infinite] group-hover:[&amp;_div:nth-child(even)]:animate-[pulse_2s_cubic-bezier(0.4,_0,_0.6,_1)_infinite] group-hover:-translate-y-0 translate-y-[265%]\">\n      <div class=\"group-hover:-mx-4 group-hover:scale-150 group-hover:rotate-6\">\n        1\n      </div>\n      <div class=\"group-hover:-my-3 group-hover:scale-110 group-hover:rotate-6\">\n        2\n      </div>\n      <div class=\"group-hover:-group-hover:rotate-6 group-hover:scale-75\">\n        3\n      </div>\n      <div class=\"group-hover:-my-3 group-hover:scale-125 group-hover:rotate-6\">\n        4\n      </div>\n      <div class=\"group-hover:-group-hover:rotate-45 group-hover:scale-90\">\n        5\n      </div>\n      <div class=\"group-hover:-my-3 group-hover:scale-110 group-hover:rotate-45\">\n        6\n      </div>\n      <div class=\"group-hover:scale-125\">7</div>\n      <div class=\"group-hover:-my-3 group-hover:scale-150 group-hover:rotate-3\">\n        8\n      </div>\n      <div class=\"group-hover:-group-hover:rotate-45\">9</div>\n      <div class=\"group-hover:-my-3 group-hover:scale-95 group-hover:rotate-12\">\n        10\n      </div>\n      <div class=\"group-hover:scale-50\">11</div>\n      <div class=\"group-hover:-my-2 group-hover:scale-150 group-hover:rotate-6\">\n        12\n      </div>\n      <div class=\"group-hover:-my-3 group-hover:scale-95 group-hover:rotate-180\">\n        13\n      </div>\n      <div class=\"group-hover:-mx-2 group-hover:-my-px group-hover:rotate-6\">\n        14\n      </div>\n      <div class=\"group-hover:opacity-0\">15</div>\n      <div class=\"group-hover:-my-1 group-hover:scale-95 group-hover:-group-hover:rotate-12\">\n        16\n      </div>\n      <div class=\"group-hover:scale-50 group-hover:-group-hover:rotate-12\">\n        17\n      </div>\n      <div class=\"group-hover:scale-75 group-hover:rotate-3\">18</div>\n      <div class=\"group-hover:scale-75 group-hover:-group-hover:rotate-12\">\n        19\n      </div>\n      <div class=\"\">20</div>\n      <div class=\"group-hover:opacity-0\">21</div>\n      <div class=\"group-hover:rotate-45 group-hover:-my-1\">22</div>\n      <div class=\"group-hover:-my-1 group-hover:scale-95 group-hover:-group-hover:rotate-12\">\n        23\n      </div>\n      <div class=\"\">24</div>\n      <div class=\"group-hover:-mx-5 group-hover:scale-150 group-hover:rotate-6\">\n        25\n      </div>\n      <div class=\"group-hover:-mx-2 group-hover:-group-hover:rotate-12 group-hover:scale-[0.5]\">\n        26\n      </div>\n      <div class=\"group-hover:rotate-45 group-hover:-my-1\">27</div>\n      <div class=\"group-hover:scale-50 group-hover:rotate-12\">28</div>\n      <div class=\"group-hover:scale-x-110 group-hover:rotate-12\">29</div>\n      <div class=\"group-hover:scale-75\">30</div>\n      <div class=\"\">31</div>\n      <div class=\"group-hover:opacity-0\">32</div>\n      <div class=\"group-hover:-group-hover:rotate-45\">33</div>\n      <div class=\"\">34</div>\n      <div class=\"group-hover:scale-50 group-hover:rotate-12\">35</div>\n      <div class=\"\">36</div>\n      <div class=\"group-hover:-mx-1 group-hover:scale-125 group-hover:rotate-6\">\n        37\n      </div>\n      <div class=\"group-hover:-mx-y group-hover:scale-110 group-hover:rotate-45\">\n        38\n      </div>\n      <div class=\"group-hover:scale-50 group-hover:rotate-12\">39</div>\n      <div class=\"group-hover:-group-hover:rotate-45\">40</div>\n      <div class=\"group-hover:opacity-0\">41</div>\n      <div class=\"\">42</div>\n      <div class=\"group-hover:scale-75 group-hover:rotate-12\">43</div>\n      <div class=\"group-hover:-mx-y group-hover:scale-110 group-hover:-group-hover:rotate-45\">\n        44\n      </div>\n      <div class=\"group-hover:scale-50\">45</div>\n      <div class=\"group-hover:-mx-y group-hover:scale-110 group-hover:rotate-45\">\n        46\n      </div>\n      <div class=\"group-hover:mx-1 group-hover:scale-150 group-hover:rotate-6\">\n        47\n      </div>\n      <div class=\"group-hover:mx-1 group-hover:scale-125 group-hover:rotate-6\">\n        48\n      </div>\n    </div>\n\n    <span class=\"relative z-10 p-2 opacity-0 group-hover:opacity-100 leading-none whitespace-no-wrap bg-gradient-to-t from-rose-500 to-rose-700 text-sm shadow-lg transition-all text-rose-300 group-hover:text-lg\">Hope You Like It 😉</span>\n    <div class=\"w-3 h-3 -z-20 -mt-2 opacity-0 group-hover:opacity-100 rotate-45 bg-rose-500 transition-all\"></div>\n  </div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Tooltips/SmookyDev_itchy-newt-24.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex flex-col items-center group cursor-pointer font-mono\"></view>\n  <view class=\"relative px-6 py-2 after:absolute after:inset-0 z-50 w-full h-full after:bg-gradient-to-b after:from-rose-500 after:to-rose-500 after:hover:transition-all after:hover:translate-y-0 after:-z-10 after:-translate-y-[95%] after:hover:duration-[3s] text-center text-rose-300 overflow-hidden transition-all text-2xl\"></view>\n    Blink 😀\n  </div>\n\n  <view class=\"absolute group-hover:mb-10 -translate-y-[150%] group-hover:-translate-y-full flex-col items-center duration-1000 group-hover:duration-700 group-hover:flex group-hover:opacity-100 transition-all group-hover:transition-all\"></view>\n    <view class=\"transition-all h-10 duration-1000 grid grid-cols-12 grid-rows-4 group [&amp;_div]:w-full [&amp;_div]:text-transparent w-full [&amp;_div]:h-full [&amp;_div]:bg-rose-500 [&amp;_div]:text-center [&amp;_div]:flex [&amp;_div]:items-center [&amp;_div]:justify-center [&amp;_div]:text-[5px] [&amp;_div]:transition-all [&amp;_div]:duration-500 group-hover:[&amp;_div:nth-child(even)]:-skew-x-6 group-hover:[&amp;_div:nth-child(odd)]:bg-rose-700 group-hover:[&amp;_div:nth-child(even)]:bg-rose-700 group-hover:[&amp;_div:nth-child(odd)]:duration-500 group-hover:[&amp;_div:nth-child(even)]:duration-700 group-hover:[&amp;_div:nth-child(odd)]:animate-[pulse_1s_cubic-bezier(0.4,_0,_0.6,_1)_infinite] group-hover:[&amp;_div:nth-child(even)]:animate-[pulse_2s_cubic-bezier(0.4,_0,_0.6,_1)_infinite] group-hover:-translate-y-0 translate-y-[265%]\"></view>\n      <view class=\"group-hover:-mx-4 group-hover:scale-150 group-hover:rotate-6\"></view>\n        1\n      </div>\n      <view class=\"group-hover:-my-3 group-hover:scale-110 group-hover:rotate-6\"></view>\n        2\n      </div>\n      <view class=\"group-hover:-group-hover:rotate-6 group-hover:scale-75\"></view>\n        3\n      </div>\n      <view class=\"group-hover:-my-3 group-hover:scale-125 group-hover:rotate-6\"></view>\n        4\n      </div>\n      <view class=\"group-hover:-group-hover:rotate-45 group-hover:scale-90\"></view>\n        5\n      </div>\n      <view class=\"group-hover:-my-3 group-hover:scale-110 group-hover:rotate-45\"></view>\n        6\n      </div>\n      <view class=\"group-hover:scale-125\">7</view>\n      <view class=\"group-hover:-my-3 group-hover:scale-150 group-hover:rotate-3\"></view>\n        8\n      </div>\n      <view class=\"group-hover:-group-hover:rotate-45\">9</view>\n      <view class=\"group-hover:-my-3 group-hover:scale-95 group-hover:rotate-12\"></view>\n        10\n      </div>\n      <view class=\"group-hover:scale-50\">11</view>\n      <view class=\"group-hover:-my-2 group-hover:scale-150 group-hover:rotate-6\"></view>\n        12\n      </div>\n      <view class=\"group-hover:-my-3 group-hover:scale-95 group-hover:rotate-180\"></view>\n        13\n      </div>\n      <view class=\"group-hover:-mx-2 group-hover:-my-px group-hover:rotate-6\"></view>\n        14\n      </div>\n      <view class=\"group-hover:opacity-0\">15</view>\n      <view class=\"group-hover:-my-1 group-hover:scale-95 group-hover:-group-hover:rotate-12\"></view>\n        16\n      </div>\n      <view class=\"group-hover:scale-50 group-hover:-group-hover:rotate-12\"></view>\n        17\n      </div>\n      <view class=\"group-hover:scale-75 group-hover:rotate-3\">18</view>\n      <view class=\"group-hover:scale-75 group-hover:-group-hover:rotate-12\"></view>\n        19\n      </div>\n      <view class=\"\">20</view>\n      <view class=\"group-hover:opacity-0\">21</view>\n      <view class=\"group-hover:rotate-45 group-hover:-my-1\">22</view>\n      <view class=\"group-hover:-my-1 group-hover:scale-95 group-hover:-group-hover:rotate-12\"></view>\n        23\n      </div>\n      <view class=\"\">24</view>\n      <view class=\"group-hover:-mx-5 group-hover:scale-150 group-hover:rotate-6\"></view>\n        25\n      </div>\n      <view class=\"group-hover:-mx-2 group-hover:-group-hover:rotate-12 group-hover:scale-[0.5]\"></view>\n        26\n      </div>\n      <view class=\"group-hover:rotate-45 group-hover:-my-1\">27</view>\n      <view class=\"group-hover:scale-50 group-hover:rotate-12\">28</view>\n      <view class=\"group-hover:scale-x-110 group-hover:rotate-12\">29</view>\n      <view class=\"group-hover:scale-75\">30</view>\n      <view class=\"\">31</view>\n      <view class=\"group-hover:opacity-0\">32</view>\n      <view class=\"group-hover:-group-hover:rotate-45\">33</view>\n      <view class=\"\">34</view>\n      <view class=\"group-hover:scale-50 group-hover:rotate-12\">35</view>\n      <view class=\"\">36</view>\n      <view class=\"group-hover:-mx-1 group-hover:scale-125 group-hover:rotate-6\"></view>\n        37\n      </div>\n      <view class=\"group-hover:-mx-y group-hover:scale-110 group-hover:rotate-45\"></view>\n        38\n      </div>\n      <view class=\"group-hover:scale-50 group-hover:rotate-12\">39</view>\n      <view class=\"group-hover:-group-hover:rotate-45\">40</view>\n      <view class=\"group-hover:opacity-0\">41</view>\n      <view class=\"\">42</view>\n      <view class=\"group-hover:scale-75 group-hover:rotate-12\">43</view>\n      <view class=\"group-hover:-mx-y group-hover:scale-110 group-hover:-group-hover:rotate-45\"></view>\n        44\n      </div>\n      <view class=\"group-hover:scale-50\">45</view>\n      <view class=\"group-hover:-mx-y group-hover:scale-110 group-hover:rotate-45\"></view>\n        46\n      </div>\n      <view class=\"group-hover:mx-1 group-hover:scale-150 group-hover:rotate-6\"></view>\n        47\n      </div>\n      <view class=\"group-hover:mx-1 group-hover:scale-125 group-hover:rotate-6\"></view>\n        48\n      </div>\n    </div>\n\n    <text class=\"relative z-10 p-2 opacity-0 group-hover:opacity-100 leading-none whitespace-no-wrap bg-gradient-to-t from-rose-500 to-rose-700 text-sm shadow-lg transition-all text-rose-300 group-hover:text-lg\">Hope You Like It 😉</text>\n    <view class=\"w-3 h-3 -z-20 -mt-2 opacity-0 group-hover:opacity-100 rotate-45 bg-rose-500 transition-all\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyItchyNewt24',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyItchyNewt24"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 5661,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.564Z",
+  "updated_at": "2025-07-31T07:55:38.564Z"
+}

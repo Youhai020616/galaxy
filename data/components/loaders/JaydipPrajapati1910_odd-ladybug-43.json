@@ -1,0 +1,89 @@
+{
+  "id": "JaydipPrajapati1910_odd-ladybug-43",
+  "name": "odd-ladybug-43",
+  "category": "loaders",
+  "author": "JaydipPrajapati1910",
+  "description": "odd-ladybug-43 组件 (animation, loading, loader, animated, circle loader, loader circle)",
+  "tags": [
+    "animation",
+    "loading",
+    "loader",
+    "animated",
+    "circle loader",
+    "loader circle"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n  <div class=\"outer\">\n    <div class=\"inner tl\"></div>\n    <div class=\"inner tr\"></div>\n    <div class=\"inner br\"></div>\n    <div class=\"inner bl\"></div>\n  </div>\n</div>",
+    "css": "/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loading, loader, animated, circle loader, loader circle */\n.spinner {\n  position: absolute;\n  width: 128px;\n  height: 128px;\n  top: calc(50% - 64px);\n  left: calc(50% - 64px);\n  transform: perspective(206px) rotateX(45deg);\n}\n\n.outer {\n  box-sizing: border-box;\n  animation: spin 3s linear infinite;\n  height: 100%;\n}\n\n.inner {\n  position: absolute;\n  border-radius: 50%;\n  width: 64px;\n  height: 64px;\n}\n\n.tl {\n  top: 0;\n  left: 0;\n  border-top: 8px solid red;\n  border-left: 10px solid red;\n  animation: spin 1s ease-in-out infinite;\n}\n\n.tr {\n  top: 0;\n  right: 0;\n  border-top: 8px solid #0575E6;\n  border-right: 10px solid #0575E6;\n  animation: spin 1s ease-in-out infinite;\n}\n\n.br {\n  bottom: 0;\n  right: 0;\n  border-bottom: 8px solid  #00F260;\n  border-right: 10px solid  #00F260;\n  animation: spin 1s ease-in-out infinite;\n}\n\n.bl {\n  bottom: 0;\n  left: 0;\n  border-bottom: 8px solid  #e9e93e;\n  border-left: 10x solid #e9e93e;\n  animation: spin 1s ease-in-out infinite;\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/JaydipPrajapati1910_odd-ladybug-43.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n  <view class=\"outer\"></view>\n    <view class=\"inner tl\"></view>\n    <view class=\"inner tr\"></view>\n    <view class=\"inner br\"></view>\n    <view class=\"inner bl\"></view>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyOddLadybug43',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loading, loader, animated, circle loader, loader circle */\n.spinner {\n  position: absolute;\n  width: 256rpx;\n  height: 256rpx;\n  top: calc(50% - 128rpx);\n  left: calc(50% - 128rpx);\n  transform: perspective(412rpx) rotateX(45deg);\n}\n\n.outer {\n  box-sizing: border-box;\n  animation: spin 3s linear infinite;\n  height: 100%;\n}\n\n.inner {\n  position: absolute;\n  border-radius: 50%;\n  width: 128rpx;\n  height: 128rpx;\n}\n\n.tl {\n  top: 0;\n  left: 0;\n  border-top: 16rpx solid red;\n  border-left: 20rpx solid red;\n  animation: spin 1s ease-in-out infinite;\n}\n\n.tr {\n  top: 0;\n  right: 0;\n  border-top: 16rpx solid #0575E6;\n  border-right: 20rpx solid #0575E6;\n  animation: spin 1s ease-in-out infinite;\n}\n\n.br {\n  bottom: 0;\n  right: 0;\n  border-bottom: 16rpx solid  #00F260;\n  border-right: 20rpx solid  #00F260;\n  animation: spin 1s ease-in-out infinite;\n}\n\n.bl {\n  bottom: 0;\n  left: 0;\n  border-bottom: 16rpx solid  #e9e93e;\n  border-left: 10x solid #e9e93e;\n  animation: spin 1s ease-in-out infinite;\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  100% {\n    transform: rotate(360deg);\n  }\n}\n",
+    "component_name": "GalaxyOddLadybug43"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1340,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.399Z",
+  "updated_at": "2025-07-31T07:55:39.399Z"
+}

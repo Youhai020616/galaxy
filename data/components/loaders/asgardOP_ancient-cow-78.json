@@ -1,0 +1,92 @@
+{
+  "id": "asgardOP_ancient-cow-78",
+  "name": "ancient-cow-78",
+  "category": "loaders",
+  "author": "asgardOP",
+  "description": "ancient-cow-78 组件 (simple, purple, loading, loader, modern, css, effect loader, loading animation, animation)",
+  "tags": [
+    "simple",
+    "purple",
+    "loading",
+    "loader",
+    "modern",
+    "css",
+    "effect loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<ul>\n  <li>\n    <div class=\"loader\">\n      <div class=\"child\"></div>\n    </div>\n  </li>\n\n  <li>\n    <div class=\"text\"></div>\n  </li>\n</ul>",
+    "css": "/* From Uiverse.io by asgardOP  - Tags: simple, purple, loading, loader, modern, css, effect loader, loading animation */\n.loader {\n  width: 100px;\n  height: 3px;\n  background-color: rgb(15, 15, 15);\n  border-radius: 20px;\n  overflow: hidden;\n}\n\n.child {\n  width: 60px;\n  height: 3px;\n  background-color: rgb(107, 27, 255);\n  border-radius: 20px;\n  z-index: 0;\n  margin-left: -60px;\n  animation: go 1s 0s infinite;\n}\n\n@keyframes go {\n  from {\n    margin-left: -100px;\n    width: 80px;\n  }\n  to {\n    width: 30px;\n    margin-left: 110px;\n  }\n}\n\nul {\n  list-style: none;\n}\n\n.text {\n  width: 100px;\n  height: 30px;\n  background-color: transparent;\n  margin-top: 20px;\n  text-align: center;\n}\n\n.text::before {\n  content: \"Loading\";\n  color: white;\n  animation: text 1s 0s infinite;\n}\n\n@keyframes text {\n  0% {\n    content: \"Loading\";\n  }\n\n  30% {\n    content: \"Loading.\";\n  }\n\n  60% {\n    content: \"Loading..\";\n  }\n\n  100% {\n    content: \"Loading...\";\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/asgardOP_ancient-cow-78.html"
+  },
+  "uniapp": {
+    "template": "<view></view>\n  <view></view>\n    <view class=\"loader\"></view>\n      <view class=\"child\"></view>\n    </div>\n  </li>\n\n  <view></view>\n    <view class=\"text\"></view>\n  </li>\n</ul>",
+    "script": "export default {\n  name: 'GalaxyAncientCow78',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by asgardOP  - Tags: simple, purple, loading, loader, modern, css, effect loader, loading animation */\n.loader {\n  width: 200rpx;\n  height: 6rpx;\n  background-color: rgb(15, 15, 15);\n  border-radius: 40rpx;\n  overflow: hidden;\n}\n\n.child {\n  width: 120rpx;\n  height: 6rpx;\n  background-color: rgb(107, 27, 255);\n  border-radius: 40rpx;\n  z-index: 0;\n  margin-left: -120rpx;\n  animation: go 1s 0s infinite;\n}\n\n@keyframes go {\n  from {\n    margin-left: -200rpx;\n    width: 160rpx;\n  }\n  to {\n    width: 60rpx;\n    margin-left: 220rpx;\n  }\n}\n\nul {\n  list-style: none;\n}\n\n.text {\n  width: 200rpx;\n  height: 60rpx;\n  background-color: transparent;\n  margin-top: 40rpx;\n  text-align: center;\n}\n\n.text::before {\n  content: \"Loading\";\n  color: white;\n  animation: text 1s 0s infinite;\n}\n\n@keyframes text {\n  0% {\n    content: \"Loading\";\n  }\n\n  30% {\n    content: \"Loading.\";\n  }\n\n  60% {\n    content: \"Loading..\";\n  }\n\n  100% {\n    content: \"Loading...\";\n  }\n}\n\n",
+    "component_name": "GalaxyAncientCow78"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1101,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:40.978Z",
+  "updated_at": "2025-07-31T07:55:40.978Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "bociKond_happy-bear-29",
+  "name": "happy-bear-29",
+  "category": "buttons",
+  "author": "bociKond",
+  "description": "happy-bear-29 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"border-green-100 hover:border-green-200 text-green-900 rounded-lg border-4 cursor-pointer px-8 py-3 font-bold -skew-x-12 bg-gradient-to-bl from-green-400 to-green-300 opacity-80 hover:opacity-100 focus:opacity-100 focus:scale-105 transition-all duration-300 font-sans\">\n      Button\n    </button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/bociKond_happy-bear-29.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"border-green-100 hover:border-green-200 text-green-900 rounded-lg border-4 cursor-pointer px-8 py-3 font-bold -skew-x-12 bg-gradient-to-bl from-green-400 to-green-300 opacity-80 hover:opacity-100 focus:opacity-100 focus:scale-105 transition-all duration-300 font-sans\"></button>\n      Button\n    </button>",
+    "script": "export default {\n  name: 'GalaxyHappyBear29',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyHappyBear29"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 313,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.983Z",
+  "updated_at": "2025-07-31T07:55:35.983Z"
+}

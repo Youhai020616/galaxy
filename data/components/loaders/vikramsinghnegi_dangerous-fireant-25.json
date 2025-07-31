@@ -1,0 +1,88 @@
+{
+  "id": "vikramsinghnegi_dangerous-fireant-25",
+  "name": "dangerous-fireant-25",
+  "category": "loaders",
+  "author": "vikramsinghnegi",
+  "description": "dangerous-fireant-25 组件 (loader, LOADING, LOADER, animation, gradient)",
+  "tags": [
+    "loader",
+    "LOADING",
+    "LOADER",
+    "animation",
+    "gradient"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>",
+    "css": "/* From Uiverse.io by vikramsinghnegi  - Tags: loader, LOADING, LOADER */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: fit-content;\n  font-size: 17px;\n  font-family: monospace;\n  line-height: 1.4;\n  font-weight: bold;\n  padding: 30px 2px 50px;\n  background: linear-gradient(#000 0 0) 0 0/100% 100% content-box padding-box\n    no-repeat;\n  position: relative;\n  overflow: hidden;\n  animation: l10-0 2s infinite cubic-bezier(1, 175, 0.5, 175);\n}\n.loader::before {\n  content: \"Loading\";\n  display: inline-block;\n  animation: l10-2 2s infinite;\n}\n.loader::after {\n  content: \"\";\n  position: absolute;\n  width: 34px;\n  height: 28px;\n  top: 110%;\n  left: calc(50% - 16px);\n  background: linear-gradient(\n        90deg,\n        #0000 12px,\n        #f92033 0 22px,\n        #0000 0 26px,\n        #fdc98d 0 32px,\n        #0000\n      )\n      bottom 26px left 50%,\n    linear-gradient(90deg, #0000 10px, #f92033 0 28px, #fdc98d 0 32px, #0000 0)\n      bottom 24px left 50%,\n    linear-gradient(\n        90deg,\n        #0000 10px,\n        #643700 0 16px,\n        #fdc98d 0 20px,\n        #000 0 22px,\n        #fdc98d 0 24px,\n        #000 0 26px,\n        #f92033 0 32px,\n        #0000 0\n      )\n      bottom 22px left 50%,\n    linear-gradient(\n        90deg,\n        #0000 8px,\n        #643700 0 10px,\n        #fdc98d 0 12px,\n        #643700 0 14px,\n        #fdc98d 0 20px,\n        #000 0 22px,\n        #fdc98d 0 28px,\n        #f92033 0 32px,\n        #0000 0\n      )\n      bottom 20px left 50%,\n    linear-gradient(\n        90deg,\n        #0000 8px,\n        #643700 0 10px,\n        #fdc98d 0 12px,\n        #643700 0 16px,\n        #fdc98d 0 22px,\n        #000 0 24px,\n        #fdc98d 0 30px,\n        #f92033 0 32px,\n        #0000 0\n      )\n      bottom 18px left 50%,\n    linear-gradient(\n        90deg,\n        #0000 8px,\n        #643700 0 12px,\n        #fdc98d 0 20px,\n        #000 0 28px,\n        #f92033 0 30px,\n        #0000 0\n      )\n      bottom 16px left 50%,\n    linear-gradient(90deg, #0000 12px, #fdc98d 0 26px, #f92033 0 30px, #0000 0)\n      bottom 14px left 50%,\n    linear-gradient(\n        90deg,\n        #fdc98d 6px,\n        #f92033 0 14px,\n        #222a87 0 16px,\n        #f92033 0 22px,\n        #222a87 0 24px,\n        #f92033 0 28px,\n        #0000 0 32px,\n        #643700 0\n      )\n      bottom 12px left 50%,\n    linear-gradient(\n        90deg,\n        #fdc98d 6px,\n        #f92033 0 16px,\n        #222a87 0 18px,\n        #f92033 0 24px,\n        #f92033 0 26px,\n        #0000 0 30px,\n        #643700 0\n      )\n      bottom 10px left 50%,\n    linear-gradient(\n        90deg,\n        #0000 10px,\n        #f92033 0 16px,\n        #222a87 0 24px,\n        #feee49 0 26px,\n        #222a87 0 30px,\n        #643700 0\n      )\n      bottom 8px left 50%,\n    linear-gradient(\n        90deg,\n        #0000 12px,\n        #222a87 0 18px,\n        #feee49 0 20px,\n        #222a87 0 30px,\n        #643700 0\n      )\n      bottom 6px left 50%,\n    linear-gradient(90deg, #0000 8px, #643700 0 12px, #222a87 0 30px, #643700 0)\n      bottom 4px left 50%,\n    linear-gradient(90deg, #0000 6px, #643700 0 14px, #222a87 0 26px, #0000 0)\n      bottom 2px left 50%,\n    linear-gradient(90deg, #0000 6px, #643700 0 10px, #0000 0) bottom 0px left\n      50%;\n  background-size: 34px 2px;\n  background-repeat: no-repeat;\n  animation: inherit;\n  animation-name: l10-1;\n}\n@keyframes l10-0 {\n  0%,\n  30% {\n    background-position: 0 0px;\n  }\n  50%,\n  100% {\n    background-position: 0 -0.1px;\n  }\n}\n@keyframes l10-1 {\n  50%,\n  100% {\n    top: 109.5%;\n  }\n}\n@keyframes l10-2 {\n  0%,\n  30% {\n    transform: translateY(0);\n  }\n  80%,\n  100% {\n    transform: translateY(-260%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/vikramsinghnegi_dangerous-fireant-25.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>",
+    "script": "export default {\n  name: 'GalaxyDangerousFireant25',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by vikramsinghnegi  - Tags: loader, LOADING, LOADER */\n/* HTML: <div class=\"loader\"></div> */\n.loader {\n  width: fit-content;\n  font-size: 34rpx;\n  font-family: monospace;\n  line-height: 1.4;\n  font-weight: bold;\n  padding: 60rpx 4rpx 100rpx;\n  background: linear-gradient(#000 0 0) 0 0/100% 100% content-box padding-box\n    no-repeat;\n  position: relative;\n  overflow: hidden;\n  animation: l10-0 2s infinite cubic-bezier(1, 175, 0.5, 175);\n}\n.loader::before {\n  content: \"Loading\";\n  display: inline-block;\n  animation: l10-2 2s infinite;\n}\n.loader::after {\n  content: \"\";\n  position: absolute;\n  width: 68rpx;\n  height: 56rpx;\n  top: 110%;\n  left: calc(50% - 32rpx);\n  background: linear-gradient(\n        90deg,\n        #0000 24rpx,\n        #f92033 0 44rpx,\n        #0000 0 52rpx,\n        #fdc98d 0 64rpx,\n        #0000\n      )\n      bottom 52rpx left 50%,\n    linear-gradient(90deg, #0000 20rpx, #f92033 0 56rpx, #fdc98d 0 64rpx, #0000 0)\n      bottom 48rpx left 50%,\n    linear-gradient(\n        90deg,\n        #0000 20rpx,\n        #643700 0 32rpx,\n        #fdc98d 0 40rpx,\n        #000 0 44rpx,\n        #fdc98d 0 48rpx,\n        #000 0 52rpx,\n        #f92033 0 64rpx,\n        #0000 0\n      )\n      bottom 44rpx left 50%,\n    linear-gradient(\n        90deg,\n        #0000 16rpx,\n        #643700 0 20rpx,\n        #fdc98d 0 24rpx,\n        #643700 0 28rpx,\n        #fdc98d 0 40rpx,\n        #000 0 44rpx,\n        #fdc98d 0 56rpx,\n        #f92033 0 64rpx,\n        #0000 0\n      )\n      bottom 40rpx left 50%,\n    linear-gradient(\n        90deg,\n        #0000 16rpx,\n        #643700 0 20rpx,\n        #fdc98d 0 24rpx,\n        #643700 0 32rpx,\n        #fdc98d 0 44rpx,\n        #000 0 48rpx,\n        #fdc98d 0 60rpx,\n        #f92033 0 64rpx,\n        #0000 0\n      )\n      bottom 36rpx left 50%,\n    linear-gradient(\n        90deg,\n        #0000 16rpx,\n        #643700 0 24rpx,\n        #fdc98d 0 40rpx,\n        #000 0 56rpx,\n        #f92033 0 60rpx,\n        #0000 0\n      )\n      bottom 32rpx left 50%,\n    linear-gradient(90deg, #0000 24rpx, #fdc98d 0 52rpx, #f92033 0 60rpx, #0000 0)\n      bottom 28rpx left 50%,\n    linear-gradient(\n        90deg,\n        #fdc98d 12rpx,\n        #f92033 0 28rpx,\n        #222a87 0 32rpx,\n        #f92033 0 44rpx,\n        #222a87 0 48rpx,\n        #f92033 0 56rpx,\n        #0000 0 64rpx,\n        #643700 0\n      )\n      bottom 24rpx left 50%,\n    linear-gradient(\n        90deg,\n        #fdc98d 12rpx,\n        #f92033 0 32rpx,\n        #222a87 0 36rpx,\n        #f92033 0 48rpx,\n        #f92033 0 52rpx,\n        #0000 0 60rpx,\n        #643700 0\n      )\n      bottom 20rpx left 50%,\n    linear-gradient(\n        90deg,\n        #0000 20rpx,\n        #f92033 0 32rpx,\n        #222a87 0 48rpx,\n        #feee49 0 52rpx,\n        #222a87 0 60rpx,\n        #643700 0\n      )\n      bottom 16rpx left 50%,\n    linear-gradient(\n        90deg,\n        #0000 24rpx,\n        #222a87 0 36rpx,\n        #feee49 0 40rpx,\n        #222a87 0 60rpx,\n        #643700 0\n      )\n      bottom 12rpx left 50%,\n    linear-gradient(90deg, #0000 16rpx, #643700 0 24rpx, #222a87 0 60rpx, #643700 0)\n      bottom 8rpx left 50%,\n    linear-gradient(90deg, #0000 12rpx, #643700 0 28rpx, #222a87 0 52rpx, #0000 0)\n      bottom 4rpx left 50%,\n    linear-gradient(90deg, #0000 12rpx, #643700 0 20rpx, #0000 0) bottom 0rpx left\n      50%;\n  background-size: 68rpx 4rpx;\n  background-repeat: no-repeat;\n  animation: inherit;\n  animation-name: l10-1;\n}\n@keyframes l10-0 {\n  0%,\n  30% {\n    background-position: 0 0rpx;\n  }\n  50%,\n  100% {\n    background-position: 0 -0.2rpx;\n  }\n}\n@keyframes l10-1 {\n  50%,\n  100% {\n    top: 109.5%;\n  }\n}\n@keyframes l10-2 {\n  0%,\n  30% {\n    transform: translateY(0);\n  }\n  80%,\n  100% {\n    transform: translateY(-260%);\n  }\n}\n\n",
+    "component_name": "GalaxyDangerousFireant25"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "high",
+    "bundle_size": 3696,
+    "render_cost": "high",
+    "memory_usage": "high"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.730Z",
+  "updated_at": "2025-07-31T07:55:42.730Z"
+}

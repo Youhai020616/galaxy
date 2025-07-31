@@ -1,0 +1,82 @@
+{
+  "id": "ayman-ashine_terrible-puma-8",
+  "name": "terrible-puma-8",
+  "category": "tooltips",
+  "author": "ayman-ashine",
+  "description": "terrible-puma-8 组件",
+  "tags": [],
+  "original": {
+    "html": "<div class=\"flex flex-col items-center gap-2\">\n  <div class=\"group relative bg-zinc-300 p-2 rounded-full\">\n    <span>Top</span>\n    <div class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -top-2 -translate-y-full left-1/2 -translate-x-1/2\">\n      <span class=\"text-zinc-400 whitespace-nowrap\">Info</span>\n      <div class=\"bg-inherit rotate-45 p-1 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2\"></div>\n    </div>\n  </div>\n\n  <div class=\"group relative bg-zinc-300 p-2 rounded-full\">\n    <span>Left</span>\n    <div class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -left-2 -translate-x-full\">\n      <span class=\"text-zinc-400 whitespace-nowrap\">Info</span>\n      <div class=\"bg-inherit rotate-45 p-1 absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2\"></div>\n    </div>\n  </div>\n\n  <div class=\"group relative bg-zinc-300 p-2 rounded-full\">\n    <span>Right</span>\n    <div class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -right-2 translate-x-full\">\n      <span class=\"text-zinc-400 whitespace-nowrap\">Info</span>\n      <div class=\"bg-inherit rotate-45 p-1 absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2\"></div>\n    </div>\n  </div>\n\n  <div class=\"group relative bg-zinc-300 p-2 rounded-full\">\n    <span>Bottom</span>\n    <div class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -bottom-2 translate-y-full left-1/2 -translate-x-1/2\">\n      <span class=\"text-zinc-400 whitespace-nowrap\">Info</span>\n      <div class=\"bg-inherit rotate-45 p-1 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2\"></div>\n    </div>\n  </div>\n</div>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Tooltips/ayman-ashine_terrible-puma-8.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"flex flex-col items-center gap-2\"></view>\n  <view class=\"group relative bg-zinc-300 p-2 rounded-full\"></view>\n    <text>Top</text>\n    <view class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -top-2 -translate-y-full left-1/2 -translate-x-1/2\"></view>\n      <text class=\"text-zinc-400 whitespace-nowrap\">Info</text>\n      <view class=\"bg-inherit rotate-45 p-1 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2\"></view>\n    </div>\n  </div>\n\n  <view class=\"group relative bg-zinc-300 p-2 rounded-full\"></view>\n    <text>Left</text>\n    <view class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -left-2 -translate-x-full\"></view>\n      <text class=\"text-zinc-400 whitespace-nowrap\">Info</text>\n      <view class=\"bg-inherit rotate-45 p-1 absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2\"></view>\n    </div>\n  </div>\n\n  <view class=\"group relative bg-zinc-300 p-2 rounded-full\"></view>\n    <text>Right</text>\n    <view class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -right-2 translate-x-full\"></view>\n      <text class=\"text-zinc-400 whitespace-nowrap\">Info</text>\n      <view class=\"bg-inherit rotate-45 p-1 absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2\"></view>\n    </div>\n  </div>\n\n  <view class=\"group relative bg-zinc-300 p-2 rounded-full\"></view>\n    <text>Bottom</text>\n    <view class=\"bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -bottom-2 translate-y-full left-1/2 -translate-x-1/2\"></view>\n      <text class=\"text-zinc-400 whitespace-nowrap\">Info</text>\n      <view class=\"bg-inherit rotate-45 p-1 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2\"></view>\n    </div>\n  </div>\n</div>",
+    "script": "export default {\n  name: 'GalaxyTerriblePuma8',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyTerriblePuma8"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 1685,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:38.630Z",
+  "updated_at": "2025-07-31T07:55:38.630Z"
+}

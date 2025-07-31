@@ -1,0 +1,85 @@
+{
+  "id": "bhaveshxrawat_silly-panda-37",
+  "name": "silly-panda-37",
+  "category": "loaders",
+  "author": "bhaveshxrawat",
+  "description": "silly-panda-37 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<section class=\"area\">\n  <div class=\"ball\"></div>\n</section>",
+    "css": "/* From Uiverse.io by bhaveshxrawat - Tags: loader */\n.ball {\n position: relative;\n height: 15px;\n width: 15px;\n background-color: rgb(255, 44, 44);\n border-radius: 50%;\n animation: bounce 0.5s ease-in-out infinite both;\n}\n\n@keyframes bounce {\n 0%, 100% {\n  transform: translate(0px, 0px);\n }\n\n 50% {\n  transform: translate(0px, 50px) scale(1, 0.77);\n }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/bhaveshxrawat_silly-panda-37.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"area\"></view>\n  <view class=\"ball\"></view>\n</section>",
+    "script": "export default {\n  name: 'GalaxySillyPanda37',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by bhaveshxrawat - Tags: loader */\n.ball {\n position: relative;\n height: 30rpx;\n width: 30rpx;\n background-color: rgb(255, 44, 44);\n border-radius: 50%;\n animation: bounce 0.5s ease-in-out infinite both;\n}\n\n@keyframes bounce {\n 0%, 100% {\n  transform: translate(0rpx, 0rpx);\n }\n\n 50% {\n  transform: translate(0rpx, 100rpx) scale(1, 0.77);\n }\n}\n",
+    "component_name": "GalaxySillyPanda37"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 419,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.040Z",
+  "updated_at": "2025-07-31T07:55:41.040Z"
+}

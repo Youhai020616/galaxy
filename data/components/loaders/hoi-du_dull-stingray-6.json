@@ -1,0 +1,90 @@
+{
+  "id": "hoi-du_dull-stingray-6",
+  "name": "dull-stingray-6",
+  "category": "loaders",
+  "author": "hoi-du",
+  "description": "dull-stingray-6 组件 (white, loading, loader, spinner, spin, css, animation)",
+  "tags": [
+    "white",
+    "loading",
+    "loader",
+    "spinner",
+    "spin",
+    "css",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\"></div>\n\n\n\n    <span class=\"loading\">\n\n\n\n\n</span>",
+    "css": "/* From Uiverse.io by hoi-du - Tags: white, loading, loader, spinner, spin, css */\n<!DOCTYPE html>\n<html>\n<head>\n    <title>loading forever</title>\n    <meta charset=\"utf-8\">\n    <style>\n        body {\n  background-color: black;\n}\n\n.loading {\n  width: 50px;\n  height: 50px;\n  display: inline-block;\n  background-color: white;\n  margin: 10px;\n  border-radius: 0%;\n  animation-duration: 4s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n  animation-name: loadingAnimation;\n}\n\n@keyframes loadingAnimation {\n  0% {\n    border-radius: 50% 50% 50% 50%;\n    transform: rotate(0deg);\n  }\n\n  12.5% {\n    border-radius: 0% 50% 50% 50%;\n  }\n\n  25% {\n    border-radius: 0% 0% 50% 50%;\n    transform: rotate(90deg);\n  }\n\n  37.5% {\n    border-radius: 0% 0% 0% 50%;\n  }\n\n  50% {\n    border-radius: 0% 0% 0% 0%;\n    transform: rotate(180deg);\n  }\n\n  62.5% {\n    border-radius: 50% 0% 0% 0%;\n  }\n\n  75% {\n    border-radius: 50% 50% 0% 0%;\n    transform: rotate(270deg);\n  }\n\n  87.5% {\n    border-radius: 50% 50% 50% 0%;\n  }\n\n  100% {\n    border-radius: 50% 50% 50% 50%;\n    transform: rotate(360deg);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/hoi-du_dull-stingray-6.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\"></view>\n\n\n\n    <text class=\"loading\"></text>\n\n\n\n\n</span>",
+    "script": "export default {\n  name: 'GalaxyDullStingray6',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by hoi-du - Tags: white, loading, loader, spinner, spin, css */\n<!DOCTYPE html>\n<html>\n<head>\n    <title>loading forever</title>\n    <meta charset=\"utf-8\">\n    <style>\n        body {\n  background-color: black;\n}\n\n.loading {\n  width: 100rpx;\n  height: 100rpx;\n  display: inline-block;\n  background-color: white;\n  margin: 20rpx;\n  border-radius: 0%;\n  animation-duration: 4s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n  animation-name: loadingAnimation;\n}\n\n@keyframes loadingAnimation {\n  0% {\n    border-radius: 50% 50% 50% 50%;\n    transform: rotate(0deg);\n  }\n\n  12.5% {\n    border-radius: 0% 50% 50% 50%;\n  }\n\n  25% {\n    border-radius: 0% 0% 50% 50%;\n    transform: rotate(90deg);\n  }\n\n  37.5% {\n    border-radius: 0% 0% 0% 50%;\n  }\n\n  50% {\n    border-radius: 0% 0% 0% 0%;\n    transform: rotate(180deg);\n  }\n\n  62.5% {\n    border-radius: 50% 0% 0% 0%;\n  }\n\n  75% {\n    border-radius: 50% 50% 0% 0%;\n    transform: rotate(270deg);\n  }\n\n  87.5% {\n    border-radius: 50% 50% 50% 0%;\n  }\n\n  100% {\n    border-radius: 50% 50% 50% 50%;\n    transform: rotate(360deg);\n  }\n}\n\n    ",
+    "component_name": "GalaxyDullStingray6"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1199,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:42.197Z",
+  "updated_at": "2025-07-31T07:55:42.197Z"
+}

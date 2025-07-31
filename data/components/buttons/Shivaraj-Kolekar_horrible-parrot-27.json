@@ -1,0 +1,104 @@
+{
+  "id": "Shivaraj-Kolekar_horrible-parrot-27",
+  "name": "horrible-parrot-27",
+  "category": "buttons",
+  "author": "Shivaraj-Kolekar",
+  "description": "horrible-parrot-27 组件",
+  "tags": [],
+  "original": {
+    "html": "<button class=\"cursor-pointer text-gray-800 bg-white px-3 py-3 shadow-xl ring-2 ring-gray-900/5 border border-zinc-950/10 border-2 rounded-xl font-bold flex gap-2 text-lg\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 15 15\" height=\"28\" width=\"28\" class=\"mt-1 size-5\">\n    <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" fill=\"currentColor\" d=\"M1.20308 1.04312C1.00481 0.954998 0.772341 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568117 1.75196L3.92115 7.50002L0.568117 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.772341 13.9952 1.00481 14.045 1.20308 13.9569L14.7031 7.95693C14.8836 7.87668 15 7.69762 15 7.50002C15 7.30243 14.8836 7.12337 14.7031 7.04312L1.20308 1.04312ZM4.84553 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22092 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22092 7.10002 9 7.10002H4.84553Z\"></path>\n  </svg>\n  Send Message\n</button>",
+    "css": "",
+    "file_path": "/mnt/persist/workspace/Buttons/Shivaraj-Kolekar_horrible-parrot-27.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"cursor-pointer text-gray-800 bg-white px-3 py-3 shadow-xl ring-2 ring-gray-900/5 border border-zinc-950/10 border-2 rounded-xl font-bold flex gap-2 text-lg\"></button>\n  <view xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 15 15\" height=\"28\" width=\"28\" class=\"mt-1 size-5\"></view>\n    <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" fill=\"currentColor\" d=\"M1.20308 1.04312C1.00481 0.954998 0.772341 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568117 1.75196L3.92115 7.50002L0.568117 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.772341 13.9952 1.00481 14.045 1.20308 13.9569L14.7031 7.95693C14.8836 7.87668 15 7.69762 15 7.50002C15 7.30243 14.8836 7.12337 14.7031 7.04312L1.20308 1.04312ZM4.84553 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22092 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22092 7.10002 9 7.10002H4.84553Z\"></path>\n  </svg>\n  Send Message\n</button>",
+    "script": "export default {\n  name: 'GalaxyHorribleParrot27',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "",
+    "component_name": "GalaxyHorribleParrot27"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "low",
+    "bundle_size": 942,
+    "render_cost": "low",
+    "memory_usage": "low"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:34.645Z",
+  "updated_at": "2025-07-31T07:55:34.645Z"
+}

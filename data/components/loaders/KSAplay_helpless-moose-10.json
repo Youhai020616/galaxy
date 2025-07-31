@@ -1,0 +1,85 @@
+{
+  "id": "KSAplay_helpless-moose-10",
+  "name": "helpless-moose-10",
+  "category": "loaders",
+  "author": "KSAplay",
+  "description": "helpless-moose-10 组件 (loader, animation)",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"loader\">LOADING</div>",
+    "css": "/* From Uiverse.io by KSAplay - Tags: loader */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  font-weight: bold;\n  font-size: 12px;\n  color: #f2df95;\n  height: 150px;\n  width: 250px;\n  background-color: #907A24;\n  border-style: solid;\n  border-width: 50px 250px 50px 0px;\n  border-color: #C9B656 #AD9531 #87621B #AD9531;\n  animation: camera_effect 4s infinite linear;\n}\n\n@keyframes camera_effect {\n  0% {\n    border-width: 0px 250px 0px 0px;\n  }\n\n  10% {\n    border-width: 45px 250px 45px 0px;\n  }\n\n  20% {\n    border-width: 50px 160px 50px 0px;\n  }\n\n  30% {\n    border-width: 50px 80px 50px 80px;\n  }\n\n  45% {\n    border-width: 45px 75px 55px 85px;\n  }\n\n  55% {\n    border-width: 55px 70px 45px 90px;\n  }\n\n  65% {\n    border-width: 55px 85px 45px 75px;\n  }\n\n  70% {\n    border-width: 50px 80px 50px 80px;\n  }\n\n  80% {\n    border-width: 50px 0px 50px 160px;\n  }\n\n  90% {\n    border-width: 45px 0px 45px 250px;\n  }\n\n  100% {\n    border-width: 0px 0px 0px 250px;\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/KSAplay_helpless-moose-10.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"loader\">LOADING</view>",
+    "script": "export default {\n  name: 'GalaxyHelplessMoose10',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by KSAplay - Tags: loader */\n.loader {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  font-weight: bold;\n  font-size: 24rpx;\n  color: #f2df95;\n  height: 300rpx;\n  width: 500rpx;\n  background-color: #907A24;\n  border-style: solid;\n  border-width: 100rpx 500rpx 100rpx 0rpx;\n  border-color: #C9B656 #AD9531 #87621B #AD9531;\n  animation: camera_effect 4s infinite linear;\n}\n\n@keyframes camera_effect {\n  0% {\n    border-width: 0rpx 500rpx 0rpx 0rpx;\n  }\n\n  10% {\n    border-width: 90rpx 500rpx 90rpx 0rpx;\n  }\n\n  20% {\n    border-width: 100rpx 320rpx 100rpx 0rpx;\n  }\n\n  30% {\n    border-width: 100rpx 160rpx 100rpx 160rpx;\n  }\n\n  45% {\n    border-width: 90rpx 150rpx 110rpx 170rpx;\n  }\n\n  55% {\n    border-width: 110rpx 140rpx 90rpx 180rpx;\n  }\n\n  65% {\n    border-width: 110rpx 170rpx 90rpx 150rpx;\n  }\n\n  70% {\n    border-width: 100rpx 160rpx 100rpx 160rpx;\n  }\n\n  80% {\n    border-width: 100rpx 0rpx 100rpx 320rpx;\n  }\n\n  90% {\n    border-width: 90rpx 0rpx 90rpx 500rpx;\n  }\n\n  100% {\n    border-width: 0rpx 0rpx 0rpx 500rpx;\n  }\n}\n",
+    "component_name": "GalaxyHelplessMoose10"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1056,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:39.602Z",
+  "updated_at": "2025-07-31T07:55:39.602Z"
+}

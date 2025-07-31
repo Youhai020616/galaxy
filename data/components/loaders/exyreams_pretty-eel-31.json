@@ -1,0 +1,87 @@
+{
+  "id": "exyreams_pretty-eel-31",
+  "name": "pretty-eel-31",
+  "category": "loaders",
+  "author": "exyreams",
+  "description": "pretty-eel-31 组件 (loading, loader, loading animation, animation)",
+  "tags": [
+    "loading",
+    "loader",
+    "loading animation",
+    "animation"
+  ],
+  "original": {
+    "html": "<div class=\"spinner\">\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n<div></div>\n</div>",
+    "css": "/* From Uiverse.io by exyreams - Tags: loading, loader, loading animation */\n.spinner {\n  position: relative;\n  width: 80px;\n /* Adjust the width accordingly */\n  height: 16px;\n /* Keep the height the same */\n}\n\n.spinner div {\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  background-color: #004dff;\n  border-radius: 50%;\n  animation: spinner-4t3wzl 2s infinite linear;\n}\n\n.spinner div:nth-child(1) {\n  left: 0;\n  animation-delay: 0.15s;\n  background-color: rgba(0, 77, 255, 0.9);\n}\n\n.spinner div:nth-child(2) {\n  left: 25%;\n  animation-delay: 0.3s;\n  background-color: rgba(0, 77, 255, 0.8);\n}\n\n.spinner div:nth-child(3) {\n  left: 50%;\n  animation-delay: 0.45s;\n  background-color: rgba(0, 77, 255, 0.7);\n}\n\n.spinner div:nth-child(4) {\n  left: 75%;\n  animation-delay: 0.6s;\n  background-color: rgba(0, 77, 255, 0.6);\n}\n\n.spinner div:nth-child(5) {\n  left: 100%;\n  animation-delay: 0.75s;\n  background-color: rgba(0, 77, 255, 0.5);\n}\n\n@keyframes spinner-4t3wzl {\n  0% {\n    transform: rotate(0deg) translateX(-100%);\n  }\n\n  100% {\n    transform: rotate(360deg) translateX(-100%);\n  }\n}",
+    "file_path": "/mnt/persist/workspace/loaders/exyreams_pretty-eel-31.html"
+  },
+  "uniapp": {
+    "template": "<view class=\"spinner\"></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n<view></view>\n</div>",
+    "script": "export default {\n  name: 'GalaxyPrettyEel31',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by exyreams - Tags: loading, loader, loading animation */\n.spinner {\n  position: relative;\n  width: 160rpx;\n /* Adjust the width accordingly */\n  height: 32rpx;\n /* Keep the height the same */\n}\n\n.spinner div {\n  position: absolute;\n  width: 32rpx;\n  height: 32rpx;\n  background-color: #004dff;\n  border-radius: 50%;\n  animation: spinner-4t3wzl 2s infinite linear;\n}\n\n.spinner div:nth-child(1) {\n  left: 0;\n  animation-delay: 0.15s;\n  background-color: rgba(0, 77, 255, 0.9);\n}\n\n.spinner div:nth-child(2) {\n  left: 25%;\n  animation-delay: 0.3s;\n  background-color: rgba(0, 77, 255, 0.8);\n}\n\n.spinner div:nth-child(3) {\n  left: 50%;\n  animation-delay: 0.45s;\n  background-color: rgba(0, 77, 255, 0.7);\n}\n\n.spinner div:nth-child(4) {\n  left: 75%;\n  animation-delay: 0.6s;\n  background-color: rgba(0, 77, 255, 0.6);\n}\n\n.spinner div:nth-child(5) {\n  left: 100%;\n  animation-delay: 0.75s;\n  background-color: rgba(0, 77, 255, 0.5);\n}\n\n@keyframes spinner-4t3wzl {\n  0% {\n    transform: rotate(0deg) translateX(-100%);\n  }\n\n  100% {\n    transform: rotate(360deg) translateX(-100%);\n  }\n}\n",
+    "component_name": "GalaxyPrettyEel31"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    }
+  ],
+  "events": [],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1186,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:41.990Z",
+  "updated_at": "2025-07-31T07:55:41.990Z"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "Yaya12085_blue-shrimp-51",
+  "name": "blue-shrimp-51",
+  "category": "buttons",
+  "author": "Yaya12085",
+  "description": "blue-shrimp-51 组件 (button, animation, gradient, interactive)",
+  "tags": [
+    "button",
+    "animation",
+    "gradient",
+    "interactive"
+  ],
+  "original": {
+    "html": "<button class=\"btn\">\n  <svg>\n    <defs>\n        <linearGradient id=\"gradiant\">\n            <stop stop-color=\"#FF8282\" offset=\"0%\"></stop>\n            <stop stop-color=\"#E178ED\" offset=\"100%\"></stop>\n        </linearGradient>\n    </defs>\n     <rect height=\"50\" width=\"150\" stroke=\"url(#gradiant)\" fill=\"none\"></rect>\n  </svg>\n    <span>Button</span>\n</button>",
+    "css": "/* From Uiverse.io by Yaya12085 - Tags: button */\n.btn {\n  position: relative;\n  display: inline-block;\n  width: 150px;\n  height: 50px;\n  text-align: center;\n  text-transform: uppercase;\n  background-color: transparent;\n  cursor: pointer;\n  font-weight: 900;\n  font-size: 17px;\n  border: none;\n  outline: none;\n}\n\n.btn svg {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.btn svg rect {\n  stroke-width: 3;\n  stroke-dasharray: 0,0;\n  stroke-dashoffset: 0;\n  -webkit-transition: all .6s ease;\n  transition: all .6s ease;\n}\n\n.btn span {\n  background: rgba(255,130,130,1);\n  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n.btn:hover svg rect {\n  stroke-width: 4;\n  stroke-dasharray: 196, 543;\n  stroke-dashoffset: 437;\n}",
+    "file_path": "/mnt/persist/workspace/Buttons/Yaya12085_blue-shrimp-51.html"
+  },
+  "uniapp": {
+    "template": "<button class=\"btn\"></button>\n  <view></view>\n    <defs>\n        <linearGradient id=\"gradiant\">\n            <stop stop-color=\"#FF8282\" offset=\"0%\"></stop>\n            <stop stop-color=\"#E178ED\" offset=\"100%\"></stop>\n        </linearGradient>\n    </defs>\n     <rect height=\"50\" width=\"150\" stroke=\"url(#gradiant)\" fill=\"none\"></rect>\n  </svg>\n    <text>Button</text>\n</button>",
+    "script": "export default {\n  name: 'GalaxyBlueShrimp51',\n  props: {\n    // 根据组件类型动态生成props\n  },\n  data() {\n    return {\n      // 组件状态\n    };\n  },\n  methods: {\n    // 组件方法\n  }\n}",
+    "style": "\n/* From Uiverse.io by Yaya12085 - Tags: button */\n.btn {\n  position: relative;\n  display: inline-block;\n  width: 300rpx;\n  height: 100rpx;\n  text-align: center;\n  text-transform: uppercase;\n  background-color: transparent;\n  /* #ifdef H5 */\n  cursor: pointer;\n  /* #endif */\n  font-weight: 900;\n  font-size: 34rpx;\n  border: none;\n  outline: none;\n}\n\n.btn svg {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.btn svg rect {\n  stroke-width: 3;\n  stroke-dasharray: 0,0;\n  stroke-dashoffset: 0;\n  -webkit-transition: all .6s ease;\n  transition: all .6s ease;\n}\n\n.btn span {\n  background: rgba(255,130,130,1);\n  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n.btn:hover svg rect {\n  stroke-width: 4;\n  stroke-dasharray: 196, 543;\n  stroke-dashoffset: 437;\n}\n\n",
+    "component_name": "GalaxyBlueShrimp51"
+  },
+  "platforms": {
+    "h5": true,
+    "mp-weixin": true,
+    "mp-alipay": true,
+    "mp-baidu": true,
+    "mp-toutiao": true,
+    "app-plus": true
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": false,
+      "required": false,
+      "description": "是否禁用"
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "按钮",
+      "required": false,
+      "description": "按钮文字"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "default": "primary",
+      "required": false,
+      "description": "按钮类型"
+    }
+  ],
+  "events": [
+    {
+      "name": "click",
+      "description": "点击事件",
+      "parameters": [
+        "event"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "",
+      "description": "",
+      "props": []
+    }
+  ],
+  "compatibility": {
+    "h5": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    },
+    "mp-weixin": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "mp-alipay": {
+      "supported": true,
+      "issues": [
+        "不支持 cursor 属性"
+      ],
+      "alternatives": []
+    },
+    "app-plus": {
+      "supported": true,
+      "issues": [],
+      "alternatives": []
+    }
+  },
+  "performance": {
+    "complexity": "medium",
+    "bundle_size": 1253,
+    "render_cost": "medium",
+    "memory_usage": "medium"
+  },
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "",
+      "description": "",
+      "code": ""
+    }
+  ],
+  "created_at": "2025-07-31T07:55:35.207Z",
+  "updated_at": "2025-07-31T07:55:35.207Z"
+}
